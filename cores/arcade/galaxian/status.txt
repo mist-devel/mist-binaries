@@ -1,0 +1,8 @@
+Galaxian PACE core
+Based on pacedev.net repo revision 1410
+
+Screen: 640x480x60Hz, rotated 90 degrees.
+Control: Joystick required.  Panel buttons provide coin and start function.
+Joystick emulation via keyboard: No
+
+
