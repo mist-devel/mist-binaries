@@ -1,0 +1,19 @@
+Cores and firmware on the MIST board have a close relationship. Some
+changes in the firmware may have a counterpart in the core and vice
+versa. This may result in the fact that a core may not work with an older
+firmware anymore or that a newer firmware also needs a newer core.
+
+This document tries to collect these dependencies.
+
+Affected core: Atari ST
+-----------------------
+
+firmware_130812_acsi.upg requires core_130812.rbf
+  The Acsi handling has be cleaned up and firmware and core now support
+  two ACSI disk images
+
+Affected core: Minimig/Amiga
+----------------------------
+
+No incompatible changes have been made for the Amiga/Minimig so far
+
