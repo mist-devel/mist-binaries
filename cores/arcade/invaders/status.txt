@@ -1,0 +1,8 @@
+Invaders PACE core
+Based on pacedev.net repo revision 1525
+
+Screen: 800x600x60Hz
+Control: Joystick required.  Panel buttons provide coin and start function.
+Joystick emulation via keyboard: No
+Sound: Yes
+
