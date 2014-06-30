@@ -13,6 +13,8 @@ Current limitations:
 
 All MiST related files including the Quartus project files are in the 'mist' subdirectory.
 
+Homepage:
+http://ws0.org/tag/ma2601/
 
 Source files:
 https://github.com/wsoltys/tca2601
