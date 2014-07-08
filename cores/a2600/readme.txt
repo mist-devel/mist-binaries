@@ -2,10 +2,13 @@ Port of the A2601 FPGA implementation for the MiST
 ---------------------------------------------------------------------------------
 
 Buttons:
-- right MiST button -> Start
-- Keyboard 1        -> Select
-- Keyboard 2        -> BW/Color (yellow led on = Color)
-- Keyboard F12      -> OSD to select roms from the sd card (needs extension .a26)
+- F9 or right MiST button -> Start
+- F10        		  -> Select
+- F12	 	          -> OSD 
+
+OSD
+- select roms from the sd card (needs extension .a26)
+- Switch between ntsc/pal and color/b&w
 
 Current limitations:
 - supports only the common Atari bank switching schemes
