@@ -3,7 +3,10 @@ A colecovision core for the MiST
 
 Buttons:
 - Keyboard 0-9 	    -> 0-9
-- Keyboard Z        -> fire/jump (Y on German Keyboard)
+- Keyboard Z        -> fire button 1 (Y on German Keyboard)
+- Keyboard X        -> fire button 2
+- Keyboard Q        -> #
+- Keyboard W        -> *
 - Arrow Keys        -> Move
 - Keyboard F12      -> OSD to select roms from the sd card (needs extension .col)
 
