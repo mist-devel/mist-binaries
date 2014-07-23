@@ -9,6 +9,7 @@ Buttons:
 - Keyboard W        -> *
 - Arrow Keys        -> Move
 - Keyboard F12      -> OSD to select roms from the sd card (needs extension .col)
+- One player joystick support (140723)
 
 Homepage:
 http://ws0.org/tag/colecovision/
