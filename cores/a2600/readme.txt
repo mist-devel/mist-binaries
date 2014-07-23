@@ -9,6 +9,7 @@ Buttons:
 OSD
 - select roms from the sd card (needs extension .a26)
 - Switch between ntsc/pal and color/b&w
+- Select difficulty for left and right (140723)
 
 Current limitations:
 - supports only the common Atari bank switching schemes
