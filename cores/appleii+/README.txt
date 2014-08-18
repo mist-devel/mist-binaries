@@ -19,6 +19,3 @@ The call command will enter the Monitor. Type the call a second time if the * pr
 show the first time. 
 At the Monitor you can also type 6 and then Ctrl-P followed by return.
 See http://vectronicsappleworld.com/appleii/dos.html#bootdos
-
-Currently the joystick is attached to the paddle ports. It won't work nicely as the paddle/joystick
-was analogue and the MiST joystick sends digital signals.
