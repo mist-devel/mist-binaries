@@ -19,27 +19,46 @@ it. Furthermore the embedded ST must be able to use it and finally a
 PC may also need to access it to be able to exchange data with the
 MIST/ST.
 
-I haven't yet found a simple way to get a fully working setup.
+The most useful setup i've found so far is this:
 
-The best working approach so far is to use a Linux PC to create a
-partition of slightly less than 32MB size. Set partition type to 4 and
-forcing the use of two sectors per cluster using the command "mkdosfs
--s2 /dev/<yourpartition>" results in a file system understood by
-Windows, Linux, the MIST board itself and a ST running Hddriver.
+The current ACSI implementation of the MiST board is limited to 1GB
+(this is the limit of the original Atari ST harddisk interface). So
+these instruction will only give you access to up to 1GB of your SD
+card even if it's bigger.
 
-Then place core.rbf and tos.img and floppy disk images on that
-partition to be able to boot the mist board with it. Using hddriver
-9.03 from a floppy disk image allows to access this partition from
-within the ST. However, hddriver cannot be installed on this setup.
+Step 1: Start with an SD card of any size and put a tos.img (tos 2.06
+recommended) and a core.img and a floppy disk image containing
+hddriver (tested with 9.03) onto the card.
 
-Hddutil from the hddriver package has an option to create a file 
-system that is accessible by all systems involved and with the ability
-to let the ST boot from it. So far i have had to do some manual further
-tweaking to get this working.
+Step 2: Boot the MIST board from that card. While tos does the ram
+test enable "ACSI0 direct SD" in the Storage submenu of the OSD. Then
+select the hddriver floppy image and boot into TOS. Hddriver will load
+from disk and detect the card as ACSI device 0.
 
-The requirements of the mist don't differ from any other sd card
-solution and it's assumed that e.g. a sd card formatted for usage in
-the ultrasatan should also work in the MIST.
+Step 3: Launch hddrutil from the floppy disk image. Select the ACSI0
+drive in the window "Available Devices". Then pick
+"Medium"->"Partition" from the menu. This will show a capacity of not
+more than 1073.7MB. Click on "split" and split the available space
+into two partitions. Select "Compatibility" and Check "TOS". Click
+"ok" until the new partition is being done. Reboot.
+
+Step 4: Launch hddrutil again. Select drive C: in the list of the
+"Available Devices" and select "File"->"Install HDDRIVER" from the
+menu.  You now have a SD card with two DOS & TOS compatible partitions
+of nearly 512MB of which Windows can use the first one out of the box.
+
+Step 5: Reinstall core.rbf, tos.img and a few floppy images on the first
+partition. Reinsert the SD card into the MIST.
+
+Step 6: Boot the MIST. Again select "ACSI0 direct SD". You may save
+this setting permanently while the ST is doing its RAM test. Don't use
+the OSD to save settings later when the Atari runs and this will cause
+the Atari and the MISTs firmware to alter the same data on disk which
+will very likely corrupt the data on the card. But the moment when TOS
+tests its RAM is a safe moment to save the MIST settings on the card.
+
+Step 7: Swap the card between the MIST and your Windows PC to exchange
+files.
 
 Very useful information regarding this can be found in the
 Atari_HD_File_Sytem_Reference_Guide.pdf
