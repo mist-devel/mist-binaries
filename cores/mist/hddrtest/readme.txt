@@ -27,7 +27,7 @@ these instruction will only give you access to up to 1GB of your SD
 card even if it's bigger.
 
 Step 1: Start with an SD card of any size and put a tos.img (tos 2.06
-recommended) and a core.img and a floppy disk image containing
+recommended) and a core.rbf and a floppy disk image containing
 hddriver (tested with 9.03) onto the card.
 
 Step 2: Boot the MIST board from that card. While tos does the ram
