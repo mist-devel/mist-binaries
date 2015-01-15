@@ -4,6 +4,12 @@ HDDriver compatibility.
 This isn't extensively tested and should only be used if you are
 willing to risk data corruption.
 
+History:
+
+- 141119 initial release
+- 150115 DMA support completely rewritten. Now using a 16 byte FIFO
+  like a real ST
+
 ACSI0 Direct SD
 ---------------
 
