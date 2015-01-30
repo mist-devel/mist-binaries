@@ -1,6 +1,9 @@
 firmware_150130_r775
 ====================
 
+Update: Several people still report problems. So don't use this version.
+A new release will be prepared asap.
+
 This file has shortly been revoked (briefly renamed to
 firmware_150130_r775_BROKEN_DONT_USE.upg) since on two machines the
 update process failed and the board didn't boot at all, anymore. Later
