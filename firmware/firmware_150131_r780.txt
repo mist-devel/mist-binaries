@@ -1,0 +1,23 @@
+firmware_150131_r780
+====================
+
+This version fixes a severe bug in the self-update routines.
+
+This version introduces first support functions for the upcoming Acorn
+Archimedes core.
+
+This firmware suppoerts the latest changes in the Atari ST DMA and
+ACSI implementation and comes with a 16 bit DMA FIFO and supports the
+ICD protocol for harddisks bigger than 1GB.
+
+This firmware also supports a global ini file named mist.ini to be placed on
+SD card with fundamental parameters not configurable via the OSD. Currently
+only the minimig aga core supports this. If a mist.ini file with the 
+following contents is placed on the card:
+
+[mist]
+scandoubler_disable=1
+
+Then the minimig aga core disables its scan doubler and generates a TV
+compatible 15khz signal. It is planned that other cores also make use of this
+feature.
