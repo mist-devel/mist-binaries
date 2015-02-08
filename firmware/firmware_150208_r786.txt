@@ -1,0 +1,6 @@
+firmware_150208_r786
+====================
+
+This firmware includes changes for the 8 bit cores only. It allows the menu
+to contain several different file entries to e.g. upload program files or
+cartridge images.
