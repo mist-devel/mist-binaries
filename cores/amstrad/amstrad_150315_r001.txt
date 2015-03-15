@@ -1,0 +1,4 @@
+Monitoring plugged into bootloader.
+
+Strange thing : if I remove dir_entry output from data_io.v and its assignment, dir_entry_reg does infer into internal RAM and then the core can't fit.
+I think I have a work about saying what part of code shall infer or not into internal RAM. Perhaps I can win more internal RAM like this and unlock the missing VRAM 16KB.
