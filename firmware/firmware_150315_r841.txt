@@ -1,0 +1,4 @@
+firmware_150315_r841
+====================
+
+Fixed directory sort bug in Amstrad file selection.

@@ -1,4 +1,4 @@
 firmware_150313_r825
 ====================
 
-This version adds a small support routine for the upcoming Amdstrad core.
+This version adds a small support routine for the upcoming Amstrad core.
