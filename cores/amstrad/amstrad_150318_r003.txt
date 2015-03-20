@@ -1,0 +1,4 @@
+By default VRAM is scanned in x8000-BFFF and xC000-xFFFF, that's 10 and 11 base RAM bank.
+But some games does scan in other areas : 00 and 01 RAM bank. It is rare that video does scan more than 2 VRAM bank in a game.
+If you are out of area, I does output data x"FF" so it is easy to see when video is scanning out of area.
+unlocked games : XOR (LowerVRAM 01), Crazy Car (LowerVRAM 00), Crazy Car II (welcome overscan : LowerVRAM 10, game : LowerVRAM 00) 
