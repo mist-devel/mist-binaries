@@ -1,0 +1,143 @@
+=============================
+Atari 800XL core instructions
+=============================
+Mark Watson
+scrameta@gmail.com
+-------------------------------------------
+
+Cores available for DE1,MIST,MCC216 and Replay
+These cores differ a little in use.
+These instructions were for the MCC216.
+
+Brief notes for other cores:
+Replay: Copy atari800.bin and replay.ini to the root. No drive emulation yet, use the serial port with sio2pc software. Roms loaded from ini file.
+DE1: SW9: sdram only/sram then sdram, SD8: PAL/NTSC. Roms in atari800/rom and atari800/user. NB: RS232/GPIO SIO not connected yet
+MIST: Roms in atari800/rom and atari800/user. New firmware (as of June 20th) needed.
+MIST: Without keyboard its possible to use it! If you can remember these...
+MIST: mist button0=F11, mist button0+fire=F12, mist button0+stick=reboot
+MIST: mist button1=option, mist button1+fire=start, mist button1+stick=select
+CHAMELEON: Roms in atari800/rom and atari800/user.
+CHAMELEON: freeze button: toggle scanlines
+CHAMELEON: CDTV remote: mouse:joy1,joy:joy2!,power:reboot,stop,reset,rew:start,play:select,ff:option,genlock:choose/boot(aka f11),cd/tv:settings(aka f12)
+CHAMELEON: C64 keyboard matches Atari layout where possible:
+CHAMELEON: (ESC)1234567890<>(CAPS)(HELP)(DELETE)
+CHAMELEON: (CONTROL)QWERTYUIOP-=(TAB)
+CHAMELEON: (BREAK)(SHIFT LOCK)ASDFGHJKL;+*(RETURN)
+CHAMELEON: (INV)(SHIFT)ZXCVBNM,./(SHIFT)(F11/disk and boot)(F12/settings)
+CHAMELEON: F1/F2=START,F3/F4=SELECT,F5/F6=OPTION,F7/F8=RESET(F9),CONTROL+F7/F8=COLD START(F10)
+MCC216: As below... Official releases will lag but be better tested. This is a beta.
+MCCTV: Special/console keys (joystick 1):
+MCCTV: Start button or button 4  - Start
+MCCTV: Select button or button 3  - Select
+MCCTV: button 2  - Option
+MCCTV: left shoulder 1  - Reset
+MCCTV: left shoulder 2 - Cold start (clear base 64KB RAM and reset)
+MCCTV: right shoulder 1 - Select drive 1 and cold start
+
+
+-------------------------------------------
+
+The keyboard is mapped to match an Atari 800XL physical layout(See below).
+
+Special/console keys:
+F5  - Help
+F6  - Start
+F7  - Select
+F8  - Option
+F9  - Reset
+F10 - Cold start (clear base 64KB RAM and reset) 
+F11 - Select drive 1 and cold start
+	Use joystick to make selection in menu
+		Left - up several lines
+		Right - down several lines
+		Up - up 1 line
+		Down - down 1 line
+		Fire - select
+	Remember many titles require holding 'option'
+	Select "DIR .." to go up a directory
+	Select "DIR xxx" to go down a directory
+F12 - System settings menu
+	Use joystick to make selection
+	Turbo - system speed
+		Left/right to select
+		1x (default): is very compatible - speed closely matches original hardware ~1.7MHz
+		2x: ~3.4MHz - less compatible
+		4x: ~6.8MHz - less compatible
+		8x/16x: 13MHz, 27MHZ - limited by SDRAM latency, not quicker than 4x yet.
+	RAM
+		Left/right to select
+		64KB:  like 65XE
+		128KB: like 130XE, 64KB ext ram, switchable by antic/cpu
+		320KB(Compy shop)(default): 256KB ext ram, switchable by antic/cpu 
+		320KB(Rambo): 256KB ext ram, both antic/cpu switch together
+		576KB(Compy shop): 512KB ext ram, switchable by antic/cpu 
+		576KB(Rambo): 512KB ext ram, both antic/cpu switch together
+		1088KB: 1024KB ext ram, both antic/cpu switch together
+		4160KB: - very imcompatible!
+	ROM
+		Right/fire: File selector
+		Select a different system OS ROM - can by 16KB or 10KB
+	Drive
+		Left: Remove disk
+		Right: File selector
+		Fire: Put this disk in F1
+	Cartridge
+		Left: Remove cart
+		Right: File selector
+		Fire: Put this cart in
+
+System ROM:
+	Loaded from /System/rom/atari800/atarixl.rom
+
+Basic:
+	Loaded from /System/rom/atari800/ataribas.rom
+
+Disk images:
+	Default dir: /atari800/user
+	Supported types: 
+		.ATR - Atari disk image with header. single/medium/double density.
+		.XFD - Atari disk image without header. 
+		.XEX - Atari executable. A simple bootloader is loaded, not 100% compatible. 
+
+Cartridges:
+	Default dir: /atari800/user
+	Supported types:
+		.CAR - Atari 800 cartridge with header.
+		NB .BIN files can be converted using various programs - e.g. Atari800WinPlus.
+
+Important notes:
+	When running Atari software a lot of programs need to have basic disable. Hold option when pressing reset.
+
+Keyboard layout
+
+The keyboard is mapped to match an Atari 800XL physical layout.  On a UK keyboard this means the layout is:
+	Directly mapped:
+		ESCAPE,F1-F4,BREAK,CONTROL,SHIFT
+	By position:
+		1234567890<>(DELETE)
+		(TAB)QWERTYUIOP-=(RETURN)
+		(CAPS)ASDFGHJKL;+*
+		ZXCVBNM,./
+	Other:
+		Right alt = inverse video
+
+
+Features
+
+* Acid 800 test pass
+* 99% of software runs
+* Version for PAL/NTSC VGA/SVIDEO
+* Write support
+* Drive emulation
+
+Known issues
+
+* ~1% of programs fail
+* Keyboard layout board on UK PS2 keyboard, no remapping possible yet.
+* Copymate write verify fails
+* Entering menu during disk access may hang ZPU (used for drive emulation/menus)
+* Sometimes keyboard input fails - need to power off/on the MCC.
+* Hardware matches Atari very closely - including overscan corruption - this often shows up on VGA monitors.
+
+Enjoy !
+
