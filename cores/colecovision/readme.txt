@@ -8,14 +8,14 @@ Buttons:
 - Keyboard Q        -> #
 - Keyboard W        -> *
 - Arrow Keys        -> Move
-- Keyboard F12      -> OSD to select roms from the sd card (needs extension .col)
+- Keyboard F12      -> OSD to select roms from the sd card (needs extension .col or .bin)
 - One player joystick support (140723)
 
 Homepage:
 http://ws0.org/tag/colecovision/
 
 Source files:
-https://github.com/wsoltys/pacedev/tree/master/sw/synth/platform/colecovision/mist
+https://github.com/wsoltys/mist-cores/tree/master/fpga_colecovision
 
 Original Source
 https://svn.pacedev.net/repos/pace/sw/synth/platform/colecovision/
