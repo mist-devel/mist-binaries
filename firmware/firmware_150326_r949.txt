@@ -1,0 +1,4 @@
+firmware_150326_r949
+====================
+
+Adjusted Atari ST fire button mapping
