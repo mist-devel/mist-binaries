@@ -1,0 +1,21 @@
+64KB+512KB extended RAM (ram_test.dsk)
+256 UpperROMs (files ending by .e00 to .eFF)
+
+Amstrad CPC 6128 ROMs
+LowerROM is still OS6128.ROM
+BASIC1-1.e00 - UpperROM0
+AMSDOS.e07   - UpperROM7
+
+Assembler and text ROM :
+Maxam.e01   - UpperROM1
+Protext.e02 - UpperROM2
+
+A Game ROM sample :
+Light Force (UK) (Face A) (1986) [ROM].e03 - UpperROM3
+Light Force (UK) (Face B) (1986) [ROM].e04 - UpperROM4
+
+|MAXAM   for launching Maxam
+|PROTEXT for launching Protext
+|LIGHTFORCE  for launching Light Force
+
+Remark : if I put Light Force in 0A and 0B instead of 03 and 04, Arkanoid does crash.
