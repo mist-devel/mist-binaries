@@ -19,3 +19,16 @@ Light Force (UK) (Face B) (1986) [ROM].e04 - UpperROM4
 |LIGHTFORCE  for launching Light Force
 
 Remark : if I put Light Force in 0A and 0B instead of 03 and 04, Arkanoid does crash.
+
+=========================2015-03-29=
+I tested a few Games on the new Core.
+In Core 150328R4, Protex prevents 3Dstarfighter from working, It freezes. Removing Protext.e02 fixes it. If Lightforce and Protext are on the Core, 3D Starfighter crashes.
+
+Removing Maxam.e01 fixes Games with the Memory Full Error. Example Abracadabra.dsk.
+I have to check now 689 Disks again if removing Maxam.e01 makes more games playable.
+
+I let you know the Result.
+
+Regards
+
+Thomas
