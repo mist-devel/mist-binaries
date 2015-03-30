@@ -1,0 +1,3 @@
+amstrad_150328_r004's code refactored.
+
+Crazy Snake seems more stable.
