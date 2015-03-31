@@ -32,3 +32,7 @@ I let you know the Result.
 Regards
 
 Thomas
+=========================2015-03-31=
+r004 is moved to experimentals. It is more about "professional version".
+r003.1 is the official current candidate, game oriented, ROMVault tested.
+When a experimental version will unlock more games, it will became a candidate one.
