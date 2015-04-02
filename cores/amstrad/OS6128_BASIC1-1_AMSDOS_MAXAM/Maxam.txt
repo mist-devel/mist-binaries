@@ -1,0 +1,3 @@
+Removed from "game users" candidate r003.1
+Maxam is now available in "experimental" r004.1 ../nightly_builds/MAXAM_PROTEXT_RAMTEST
+Some games doesn't like ROM extensions (it's a Thomas Petto test result, unlocking then 64 more games), that's why I remove it from this "game users" oriented fork.
