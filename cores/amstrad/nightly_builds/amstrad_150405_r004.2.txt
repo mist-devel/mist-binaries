@@ -6,4 +6,4 @@ run
 
 This is the same as r004.1 except that I just set "DELTA_ASYNC = 4;" on asdram.v
 
-Stable version.
+Still stability problems in "Prince of Percia" launch.
