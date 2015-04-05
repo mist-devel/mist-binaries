@@ -1,0 +1,10 @@
+Same as amstrad_150318_r003 but not using Maxam.rom and also using renamed BASIC1-1.e00 and AMSDOS.e07 instead of BASIC1-1.ROM and AMSDOS.ROM
+
+Not using Maxam.rom does unlock somes games, as sayed Thomas Petto.
+
+Perhaps more stable than r004 and r004.1, as it doesn't map RAM and ROM added.
+
+It a special "oriented stable games" fork edition dedicated to Thomas Petto !
+
+r003.1 => r003.2
+Death code "Pif & Hercule" removed
