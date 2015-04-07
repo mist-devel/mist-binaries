@@ -1,0 +1,4 @@
+firmware_150407_r992
+====================
+
+Reduced Archimedes floppy debug output to accelerate floppy access somewhat.
