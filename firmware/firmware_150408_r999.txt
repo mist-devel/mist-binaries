@@ -1,0 +1,6 @@
+firmware_150408_r999
+====================
+
+Support for a few more Atari ST floppy formats (especially
+non-standard single sided formats) and basic support for Archie floppy
+image selection.
