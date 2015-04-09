@@ -1,0 +1,6 @@
+firmware_150409_r1004
+=====================
+
+Atari ST keymap adjustment. Atari ST keycode 2b (the key on the right
+lower side of the return key) is now mapped to the one left lower side
+on a european keyboard and on backslash (above return key) on us keyboard.
