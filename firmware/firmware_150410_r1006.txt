@@ -1,0 +1,16 @@
+firmware_150410_r1006
+=====================
+
+New mist.ini option allowing USB key codes to be replaced. E.g. if you want
+to exchange the keys 'a' and 'b' on your keyboard you'd want to have the
+USB HID keycodes 04 (the USB Usage ID of the key labeled 'a') and 05 
+to be exchanged the mist.ini would look like:
+
+[mist]
+key_remap=04,05
+key_remap=05,04
+
+This makes key 04 to be reported as key 05 and vice versa.
+
+The USB HID key codes (Usage ID) can be found in chapter 10 in
+http://www.usb.org/developers/hidpage/Hut1_12v2.pdf
