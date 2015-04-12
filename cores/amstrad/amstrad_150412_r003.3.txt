@@ -1,0 +1,5 @@
+OSD core name changed from "Amstrad" to "AMSTRAD"
+=> can add more games after a first boot on MiST-board...
+==> problem about msdos filename characters (about OSD config save)
+SDCARD hexa monitoring removed (7seg value is now x"00ABCDEF00")
+=> less aggressive in SDCARD accesses.
