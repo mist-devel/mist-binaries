@@ -13,6 +13,11 @@ Key mapping:
   -- 4    1   2   3  +      b  g  t  5
   -- 5    ce  0   .  =      n  h  y  6
   
+Player 1
+- Arrow keys and space for fire
+Player 2
+- Numkeys and Num0 for fire
+  
   Todo's:
   - Joystick support
   - Probably a different key mapping
