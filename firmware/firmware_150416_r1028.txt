@@ -1,0 +1,5 @@
+firmware_150416_r1028
+=====================
+
+Reduced max ikbd byte rate a little bit. Some games don't cope with the
+max rate that the ikbd allows. E.g. Bubble Bobble and Starglider need this.
