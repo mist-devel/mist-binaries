@@ -1,0 +1,4 @@
+firmware_150417_r1029
+=====================
+
+Fixes the last fix which made mouse/kbd loosing events.
