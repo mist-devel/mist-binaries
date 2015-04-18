@@ -1,0 +1,2 @@
+T80se_p
+Based on last merged version of T80, with original two edge-long MEM_RD (T1-T2) IO_RD (T1-TW) IO_WR (T2-TW)
