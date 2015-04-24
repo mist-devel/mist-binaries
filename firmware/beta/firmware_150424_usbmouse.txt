@@ -1,0 +1,16 @@
+firmware_150424_usbmouse
+------------------------
+
+This experimental firmware does not switch USB mice into boot mode
+anymore.
+
+The main reason for this is the acorn archimedes which supports a third
+mouse button while USB HID boot mode is limited to two mouse buttons.
+
+This may also solve problems with mice that were behaving strange as
+their boot mode implementation is broken. This is often the case with
+keyboard/touchpad combo devices.
+
+This update required some improvements in the generic USB HID parsers
+and some joysticks which previously weren't working at all may also
+benefit from this.
