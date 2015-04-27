@@ -1,0 +1,6 @@
+firmware_150427_usbmouse
+------------------------
+
+Update of the new beta hid parser mainly used for mice. This enables e.g.
+support for the Rii wireless keyboard/touchpad combo and fixes some 
+problems with analog joysticks.
