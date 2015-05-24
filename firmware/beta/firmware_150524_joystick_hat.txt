@@ -1,0 +1,26 @@
+firmware_150524_joystick_hat
+----------------------------
+
+This version adds support for the 'HAT' on USB joysticks. On gamepads this
+is typically the default config for the digital direction pad. This is now
+by default preferred over the analog axes which were used so far.
+
+Many gamepads allow to switch between digital and analog mode and had
+to be switched into digital mode to use the digital pad on the MIST. This 
+should now be enabled by default.
+
+You can always revert to the old behaviour by setting 
+
+joystick_ignore_hat=1
+
+in the mist.ini file.
+
+Furthermore the new USB HID parser can be prevented from being used
+for mice by using the following setting in mist.ini:
+
+mouse_boot_mode=1
+
+This reverts to the behaviour of firmware versions before 
+firmware_150424_usbmouse and is supposed to be used with mice that stopped
+working properly with the new parser. If you need to use this option please
+get in touch with me and consider sending me this mouse for investigation.
