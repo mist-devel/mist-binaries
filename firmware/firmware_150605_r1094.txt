@@ -1,0 +1,4 @@
+firmware_150605_r1094
+=====================
+
+Added latest changes for Minimig AGA core.
