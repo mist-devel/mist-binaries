@@ -1,0 +1,3 @@
+Test bench about stereo sound on amstrad_150613_r003.5
+run"stk
+up left is "disk", press enter on it, do enter one time on up left "dir", and then "load" : choose carpet (pressing space key), esc one time to go back to main menu, right arrow one time and space key to play song... in stereo !
