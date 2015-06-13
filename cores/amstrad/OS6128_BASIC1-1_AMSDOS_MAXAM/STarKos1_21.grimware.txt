@@ -1,3 +1,7 @@
 Test bench about stereo sound on amstrad_150613_r003.5
 run"stk
 up left is "disk", press enter on it, do enter one time on up left "dir", and then "load" : choose carpet (pressing space key), esc one time to go back to main menu, right arrow one time and space key to play song... in stereo !
+
+In main menu, just after having load a file, instead of executing "play song", do CTRL+F2, and then "play song" here you see patterns moving, and F1/F2/F3 does turn on/off each channel ABC
+audio left : channel A+B
+audio right : channel B+C
