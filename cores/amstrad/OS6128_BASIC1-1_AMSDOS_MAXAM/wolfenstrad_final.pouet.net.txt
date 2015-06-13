@@ -1,0 +1,2 @@
+Test bench about stereo sound on amstrad_150613_r003.5.1
+oes need OSD setting : LowerVRAM 01
