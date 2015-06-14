@@ -1,0 +1,8 @@
+Back to mono-sound [r003.5.2_alpha is classified experimental]...
+
+Color more regular (more original Amstrad like), blue at startup is more true blue of Amstrad...
+
+RED6(5)<=RED2(1);
+RED6(4)<=RED2(0);
+RED6(3..0)<="0000"; -- instead of "1111" when RED2>"00"
+

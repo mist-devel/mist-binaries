@@ -7,9 +7,3 @@ wolfenstrad succeeded only one time with it.
 Seems about TimeConstraints generating some not wanted 1000MHz clocks.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'FGPAmstrad_MiST_top.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 I need to repair Z80 WAIT_n (for high clocks problems) and write a TimeContraints file (just for low clocks problems) in order to solve that
-
-By the way, using RGB2 in
-RED6(5)<=RED2(1);
-RED6(4)<=RED2(0);
-RED6(3..0)<="0000";
-with show better colors (more like original ones)
