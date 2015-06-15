@@ -1,0 +1,3 @@
+FAT32 fixed (more robust) :
+* better definition about out of cluster range/end of cluster
+* better detection of end of DirEntry (32bytes of zeros)
