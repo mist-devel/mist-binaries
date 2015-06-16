@@ -1,3 +1,6 @@
 FAT32 fixed (more robust) :
 * better definition about out of cluster range/end of cluster
 * better detection of end of DirEntry (32bytes of zeros)
+
+After more tests, I have a glitch after two days of no use. I think it is about the "hello sdcard, can I play with ?" sequence that seem not run at boot time.
+So you can do this robust test : do load another dsk from OSD menu... and then it shall start ok.

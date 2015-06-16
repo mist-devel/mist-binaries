@@ -1,0 +1,8 @@
+Just added FPGAmstrad_MiST_top.sdc (a simple copy of /cores/mist/mist.sdc file), and back to stereo mode :)
+Seems more stable.
+
+==============STEREO MODE============================================================================
+Asked by Eric Forgeot.
+Stereo sound : AB and BC channel in left and right !
+Tested with STarKos1_21.dsk sound tracker (see OS6128_BASIC1-1_AMSDOS_MAXAM/STarKos1_21.grimware.txt)
+=====================================================================================================
