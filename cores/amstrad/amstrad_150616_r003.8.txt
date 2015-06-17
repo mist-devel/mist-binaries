@@ -6,3 +6,5 @@ Asked by Eric Forgeot.
 Stereo sound : AB and BC channel in left and right !
 Tested with STarKos1_21.dsk sound tracker (see OS6128_BASIC1-1_AMSDOS_MAXAM/STarKos1_21.grimware.txt)
 =====================================================================================================
+
+Stability evidence : Gryzor, at first screen do press ESC to switch from "FX" to "MUSIC", and press fire... music is now back !
