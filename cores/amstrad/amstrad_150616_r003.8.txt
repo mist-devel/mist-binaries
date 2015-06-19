@@ -8,3 +8,6 @@ Tested with STarKos1_21.dsk sound tracker (see OS6128_BASIC1-1_AMSDOS_MAXAM/STar
 =====================================================================================================
 
 Stability evidence : Gryzor, at first screen do press ESC to switch from "FX" to "MUSIC", and press fire... music is now back !
+
+Known bug : problem of robustness (tomorrow, it can do freeze at start screen), OSD menu is still accessible in this case.
+Temporary solution : do start Sega (SMS core) and load "Sonic the Hedgehog" cartridge, and go back to Amstrad core, it shall start ok...
