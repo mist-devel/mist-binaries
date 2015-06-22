@@ -11,3 +11,4 @@ Stability evidence : Gryzor, at first screen do press ESC to switch from "FX" to
 
 Known bug : problem of robustness (tomorrow, it can do freeze at start screen), OSD menu is still accessible in this case.
 Temporary solution : do start Sega (SMS core) and load "Sonic the Hedgehog" cartridge, and go back to Amstrad core, it shall start ok...
+Other solution : power off, power on (ARM MMC_Init() function is launched only during power on, seems a R3_OCR_BUSY bug, reading OCR another time shall do the stuff)
