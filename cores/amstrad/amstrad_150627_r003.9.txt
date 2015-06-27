@@ -1,0 +1,1 @@
+Jumpers added : "Brand name", so in menu OSD you can choose "Amstrad" instead of "Schneider", go right and "Save settings".
