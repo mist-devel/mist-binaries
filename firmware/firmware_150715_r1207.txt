@@ -1,0 +1,9 @@
+firmware_150715_r1207
+=====================
+
+Added support for "indirect SD card" for C64/C1541 implementation.
+
+This is useful for cores that expect to read data directly from
+non-FAT formatted SD cards. The C64/C1541 expects to have such kind of
+access. This firmware allows to redirect these accesses into files
+stored on SD card.
