@@ -1,0 +1,13 @@
+This is a fork of MiST firmware, to be merged with trunk one.
+mmc.h/c :
+* CRC16_buf : crc16 algorithm
+* MMC_Init with CRC16 mode activated
+* crc16 check on MMC_Read
+user_io.h/c :
+* while loop on user_io
+spi.h/c :
+* spi_block_write with 514 of data instead of 512 (512+crc16)
+
+Gain robustness in dsk changes.
+
+Tested with menu preference save and file written via CoreAmstrad (dump.dmp)
