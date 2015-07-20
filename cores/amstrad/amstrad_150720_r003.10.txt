@@ -1,0 +1,6 @@
+RAM init sequence (init + first refresh wait)
+RAM filling with zero sequence
+Missing disk message
+CRC16 compatible (amstrad_150720_r003.10.crc16.firmware.*)
+
+Gain robustness in first boot sequence.
