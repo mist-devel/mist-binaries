@@ -11,3 +11,17 @@ spi.h/c :
 Gain robustness in dsk changes.
 
 Tested with menu preference save and file written via CoreAmstrad (dump.dmp)
+
+#Known bug #################################################################
+From Eric Forgeot
+
+Problem with "firmware updater" on OSD menu (freeze),
+Have to use SAM-BA to update into another firmware https://code.google.com/p/mist-board/wiki/HowToInstallTheFirmware
+
+No more bad border effect found yet.
+
+=TODO=======================================================================
+I did use some while(true) on MMC_Read, in order to enter "simulation of user_io" (saying myself that simulation of sdcard could be "not error tolerate" (optimist simulation))
+I don't know if poll of MMC_Read architecture does run ok with "simulation of user_io" in case of "return (0);" (an error of crc on MMC_Read)
+
+So I was thinking about another return value of MMC_Read in case of "just timeout", something like "return (2);", cuting "while (true)" using a "break;" in this case. But I didn't implemented that part, that's what I have to do in order to remove the known bug.
