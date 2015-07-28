@@ -1,0 +1,3 @@
+MMC_ReadCRC "return(2);" correction
+
+Tested ok with firmware updater.
