@@ -1,5 +1,0 @@
-Amstrad firmware svn1193 fork (firmware with CRC16)
-
-MMC_ReadCRC "return(2);" correction
-
-Tested ok with firmware updater.
