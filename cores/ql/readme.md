@@ -1,5 +1,5 @@
-ql_XXXXXXX.tbf
---------------
+ql_XXXXXX.rbf
+=============
 
 Sinclair QL core for the MIST board.
 
@@ -20,3 +20,15 @@ Many games scanning the keymap won't work. Also no sound is implemented.
 Files can be loaded from microdrive images stored in MDV files in QLAY
 format. Thee files must be exactly 174930 bytes in size. Examples can
 be found in http://web.inter.nl.net/hcc/A.Jaw.Venema/psion.zip
+
+History
+-------
+
+* [ql_150820.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/ql/ql_150820.rbf)
+  - Adjusted pixel clock to 10.5Mhz
+  - Fixed NTSC/Microdrive collision
+  - Slower CPU (still too fast)
+  - Microdrive selection fix
+  - Code cleanup
+
+* [ql_150819.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/ql/ql_150819.rbf) Initial version
