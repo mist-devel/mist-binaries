@@ -24,11 +24,15 @@ be found in http://web.inter.nl.net/hcc/A.Jaw.Venema/psion.zip
 History
 -------
 
-* [ql_150820.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/ql/ql_150820.rbf)
+* [ql_150813.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/ql/ql_150813.rbf)
+  - Microdrive performance boost by playback of microdrive sectors in decending order
+  - Code cleanup
+
+* [ql_150811.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/ql/ql_150811.rbf)
   - Adjusted pixel clock to 10.5Mhz
   - Fixed NTSC/Microdrive collision
   - Slower CPU (still too fast)
   - Microdrive selection fix
   - Code cleanup
 
-* [ql_150819.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/ql/ql_150819.rbf) Initial version
+* [ql_150810.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/ql/ql_150810.rbf) Initial version
