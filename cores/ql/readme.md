@@ -24,6 +24,10 @@ be found in http://web.inter.nl.net/hcc/A.Jaw.Venema/psion.zip
 History
 -------
 
+* [ql_150817.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/ql/ql_150817.rbf)
+  - T48 core used to implement the IPC using the original firmware
+  - Full IPC compatibility incl. audio
+
 * [ql_150813.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/ql/ql_150813.rbf)
   - Microdrive performance boost by playback of microdrive sectors in decending order
   - Code cleanup
