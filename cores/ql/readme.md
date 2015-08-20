@@ -16,19 +16,24 @@ combination of both ready-to-use is available
 This core honours the scandoubler_disable setting in the mist.ini and can
 be used with the VGA to SCART cable.
 
-The latest version implement the complete 8049 IPC controller and thus
-fully support all keybaord monitoring modes as well as joysticks and
-audio.
+The core implements the complete 8049 IPC controller and thus fully
+supports all keybaord monitoring modes as well as joysticks and audio.
 
 Files can be loaded from microdrive images stored in MDV files in QLAY
 format. Thee files must be exactly 174930 bytes in size. Examples can
 be found in http://web.inter.nl.net/hcc/A.Jaw.Venema/psion.zip as well as
 in the [examples](https://github.com/mist-devel/mist-binaries/raw/master/cores/ql/examples) directory.
 
+If a matching [ql.rom](https://github.com/mist-devel/mist-binaries/raw/master/cores/ql/minerva+qlsd_ql.rom) is being used the built-in [QL-SD](http://www.dilwyn.me.uk/qlsd/index.html) allows to directly access a huge image file stored
+on SD card.
+
 History
 -------
 
-* [ql_150819.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/ql/ql_150819.rbf)
+* [ql_150820.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/ql/ql_150820.rbf)
+  - QL-SD support
+
+* [ql_150819.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/ql/old/ql_150819.rbf)
   - Fixed rtc speed
   - MDV tape direction configurable
   - QIMI compatible mouse
