@@ -1,0 +1,8 @@
+firmware_150825
+===============
+
+Honour SD card redirection also for write access.
+
+Reduced Amiga keyboard rate (100 keys/sec to 20 keys/sec).
+
+Keep scandoubler state over core reload/change.
