@@ -17,8 +17,7 @@ also into the root of the SD card and the system will boot into the
 desktop imediately.
 
 To use the Atari ST system font for the MISTs first boot messages the
-(Atari ST system
-font)[https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/system.fnt]
+[Atari ST system font](https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/system.fnt)
 may also be copied into the cards root.
 
 Other floppy disk images in .ST format can be selected in the OSD
