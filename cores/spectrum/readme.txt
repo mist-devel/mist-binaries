@@ -13,8 +13,7 @@ used to start the replay of the tape image in this format from the
 SD card.
 
 The MIST svn contains a tool that allows to convert from the more
-popular tzx file format to the csw1 format required by the MIST:
-https://code.google.com/p/mist-board/source/browse/#svn/trunk/tools/tzx2wav
+popular tzx file format to the csw1 format required by the MIST (see wiki)
 
 The command for this is:
 tzx2wav <file>.tzx -c1 <file>.csw
