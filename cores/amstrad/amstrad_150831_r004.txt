@@ -1,0 +1,11 @@
+This version is using a fully new implementation of FDC :
+* writing on disk is done directly on sdcard dsk file
+* change disk without have to reset
+* read irregular track-size disks supported
+* drive A and B : easy file copy using Sym-Commander
+This version does also implement officially :
+* RAM extension (+512KB)
+* ROM extension (+4MB) *.eZZ (lowerROM) *.e00-*.eFF (upperROM)
+This version does also fix :
+* "WinCPC" dsk format, welcome SymbOS :)
+* Bootloader FAT32 large SDCARD (>2GB)
