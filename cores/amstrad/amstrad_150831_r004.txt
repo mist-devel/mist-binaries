@@ -9,3 +9,7 @@ This version does also implement officially :
 This version does also fix :
 * "WinCPC" dsk format, welcome SymbOS :)
 * Bootloader FAT32 large SDCARD (>2GB)
+
+Notes :
+- for this version you need to defrag sdcard...
+- double side dsk are not supported yet (two disks on one dsk file)
