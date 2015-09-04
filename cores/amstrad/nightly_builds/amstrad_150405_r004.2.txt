@@ -1,9 +1,0 @@
-Simple RAM stability test OK in r004.2 (KO in r004) :
-10 print "ab"
-20 print "CD"
-30 goto 10
-run
-
-This is the same as r004.1 except that I just set "DELTA_ASYNC = 4;" on asdram.v
-
-Still stability problems in "Prince of Percia" launch.
