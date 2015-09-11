@@ -16,26 +16,26 @@ minimig.cop into the SD cards root directory for a nice boot
 animation.
 
 Source code can be found at
+http://somuch.guru/minimig/minimig-mist/
 https://github.com/rkrajnc/minimig-de1
 https://github.com/rkrajnc/minimig-mist
 https://github.com/robinsonb5/minimig_c3/tree/simplifiedsplitclock
 
-minimig-mist-v1.1 (2015-09-10)
-------------------------------
+minimig-mist-v1.1 (2015-09-10) from http://somuch.guru/minimig/minimig-mist/
+----------------------------------------------------------------------------
 
 This is minimig AGA for the MiST board release 1.1.
 
 
 In this zip file, there are several files:
-- minimig-mist-1_1.rbf         - the minimig core, place it on the root of your SD card
-- firmware.upg                 - firmware update, place it on the root of your SD card
-- firmware.bin                 - binary version of the firmware, used to update the ARM microcontroller through USB
-- hrtmon.rom                   - HRTmon monitor code, place it on the root of your SD card if you intend to use it
-- minimig.art                  - minimig core boot animation
-- minimig.bal                  - minimig core boot animation
-- minimig.cop                  - minimig core boot animation
-- aros.rom                     - AROS kickstart replacement, place in on the root of your SD card
-
+- minimig-mist-1_1.rbf - the minimig core, place it on the root of your SD card
+- firmware.upg         - firmware update, place it on the root of your SD card
+- firmware.bin         - binary version of the firmware, used to update the ARM microcontroller through USB
+- hrtmon.rom           - HRTmon monitor code, place it on the root of your SD card if you intend to use it
+- minimig.art          - minimig core boot animation
+- minimig.bal          - minimig core boot animation
+- minimig.cop          - minimig core boot animation
+- aros.rom             - AROS kickstart replacement, place in on the root of your SD card
 
 Release notes:
 The CPU in this release is slowed down a little, hopefully this will help with some of the problems some of you were having.
