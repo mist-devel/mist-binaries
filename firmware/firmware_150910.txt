@@ -1,0 +1,4 @@
+firmware_150910
+===============
+
+Support for 1MB Amiga ROMs and other changes required for the Minimig AGA V1.1
