@@ -11,6 +11,12 @@ gameboy.rom it will be loaded by default.
 
 History:
 
+gb_150914.rbf
+-------------
+
+- Fast boot option bypassing the logo animation
+- Sprite priority (e.g. Super Mario sprite vs. pipes)
+
 gb_150911.rbf
 -------------
 
