@@ -1,0 +1,12 @@
+Game unlocked : Atomic Driver
+
+DATABUS DMA (that is a bug in Amstrad 6128) is removed (alignement with JavaCPC) : no more INOUT
+PULL UP was added to DATABUS, so
+PRINT INP(&0800)
+does return 255
+CRTC has been debug : DATABUS DMA conflicts implemented : if A9_WRITE+IO_READ do write pull-up (255) and do return 255 (against freeze conflict do read ZZZZZZZZ)
+Not possible to A9_READ during DATABUS MEM_RD|MEM_WR (againsts freeze conflict VHDL)
+
+Know Can do also :
+PRINT INP(&0100) without strange reboot...
+PRINT INP(&0900) without strange reboot...
