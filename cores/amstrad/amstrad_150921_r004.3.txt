@@ -1,0 +1,20 @@
+FDC - double-sided disk (first step of 2 steps) :
+- readID does increment, MultiTrack is taken into account
+- SCAN() command added
+- DELETE() command added and faked (same as WRITE/READ)
+- physical HD/logical H/info TS implemented
+- ST1/ST2 protections taken into account
+- is_seeking state added
+
+TODO :
+- TRACK NOT FOUND
+- SECTOR NOT FOUND
+- seeking-end undo while changing disk
+- End of Cylinder (index flag)
+
+TEST :
+- Tested with PROTEXT and ROMDOS XL 4.0 : second disk drive can insert DOS D2 dsk (80tds)
+- A simple .bas file is saved as 4KB in t40ss DATA disk (without ROMDOS it is 1KB here), and in DOS D2 dsk.
+- A simple .bas file seem bad saved as 2KB in t80ds IBM disk, so one .bas on two does run fine (but nice pointed), but cat display some 750KB size, strange.
+- Since is_seeking state was added, FutureOS does detect disk but does not list correctly content yet.
+- Macadam ERE protected dsk does still lock, it has a missing TRACK in fact (TRACK NOT FOUND, I think)

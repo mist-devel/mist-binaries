@@ -1,0 +1,5 @@
+Added pull-up in DATABUS for unplugged ROMs (=>FillRAMWith 1 instead of FillRAMWith 0)
+|test
+does return now the message :
+Unknown command
+instead of freeze.
