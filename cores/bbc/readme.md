@@ -9,8 +9,18 @@ and can use it to load software from SD card. The limitations of the original
 mmbeed still apply and e.g. the SD card needs to be DAT16 formatted and the
 'beeb.mmb' file needs to be written first to the SD card before anything else.
 
-A 16k ROM image can be uploaded to Sideways ROM slot 13 using the OSD. 
+Sideways ROM/RAM
+----------------
 
-This is a work in prgress and e.g. the current version still has a
+A 16k ROM image can be uploaded to Sideways ROM slot 10 using the OSD. 
+An OSD option allows to map BASIC and SuperMMC from slots 12 and 14 (hi)
+down to slots 0 and 2 (low) giving the uploaded ROM and the RAM banks 
+priorty over SuperMMC and BASIC.
+
+Four RAM banks are present in slots 4,5,6 and 7.
+
+Status
+------
+
+This is a work in progress and e.g. the current version still has a
 major bug in the video timing and the display is slightly corrupted.
-
