@@ -22,7 +22,8 @@ priorty over SuperMMC and BASIC.
 
 Four RAM banks are present in slots 4,5,6 and 7.
 
-Status
-------
+Joysticks
+---------
 
-All major functions work. Joystick support is still missing.
+Two analog joysticks are supported on ADC channels 1-4. Digital joysticks
+are mapped to max/min values.
