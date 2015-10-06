@@ -1,0 +1,3 @@
+Game unlocked : R-Typeee (a 1987 game refactor published in 2012)
+
+FDC : multi bloc read.
