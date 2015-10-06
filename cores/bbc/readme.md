@@ -27,3 +27,13 @@ Joysticks
 
 Two analog joysticks are supported on ADC channels 1-4. Digital joysticks
 are mapped to max/min values.
+
+History
+-------
+
+* [bbc_151006.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_151006.rbf)
+  - CPU running at 2 MHz
+  - Swapped joysticks
+
+* [bbc_151005.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/old/bbc_151005.rbf)
+  - Joystick support
