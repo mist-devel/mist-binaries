@@ -12,6 +12,8 @@ and can use it to load software from SD card. The limitations of the original
 mmbeed still apply and e.g. the SD card needs to be DAT16 formatted and the
 'beeb.mmb' file needs to be written first to the SD card before anything else.
 
+One such file can be found at [here](http://www.retrocomputers.eu/bbc/).
+
 Sideways ROM/RAM
 ----------------
 
@@ -31,7 +33,10 @@ are mapped to max/min values.
 History
 -------
 
-* [bbc_151006.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_151006.rbf)
+* [bbc_151009.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_151009.rbf)
+  - Auto boot option
+
+* [bbc_151006.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/old/bbc_151006.rbf)
   - CPU running at 2 MHz
   - Swapped joysticks
 
