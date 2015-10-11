@@ -9,7 +9,7 @@ SD card
 This core includes os1.2, basic2 and SuperMMC. It implements a
 [MMBEEB](http://swhs.home.xs4all.nl/bbc/mmbeeb/) compatible interface
 and can use it to load software from SD card. The limitations of the original
-mmbeed still apply and e.g. the SD card needs to be DAT16 formatted and the
+mmbeed still apply and e.g. the SD card needs to be FAT16 formatted and the
 'beeb.mmb' file needs to be written first to the SD card before anything else.
 
 One such file can be found at [here](http://www.retrocomputers.eu/bbc/).
