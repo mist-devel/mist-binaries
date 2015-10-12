@@ -9,8 +9,10 @@ SD card
 This core includes os1.2, basic2 and SuperMMC. It implements a
 [MMBEEB](http://swhs.home.xs4all.nl/bbc/mmbeeb/) compatible interface
 and can use it to load software from SD card. The limitations of the original
-mmbeed still apply and e.g. the SD card needs to be DAT16 formatted and the
+mmbeed still apply and e.g. the SD card needs to be FAT16 formatted and the
 'beeb.mmb' file needs to be written first to the SD card before anything else.
+
+One such file can be found at [here](http://www.retrocomputers.eu/bbc/).
 
 Sideways ROM/RAM
 ----------------
@@ -27,3 +29,16 @@ Joysticks
 
 Two analog joysticks are supported on ADC channels 1-4. Digital joysticks
 are mapped to max/min values.
+
+History
+-------
+
+* [bbc_151009.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_151009.rbf)
+  - Auto boot option
+
+* [bbc_151006.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/old/bbc_151006.rbf)
+  - CPU running at 2 MHz
+  - Swapped joysticks
+
+* [bbc_151005.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/old/bbc_151005.rbf)
+  - Joystick support
