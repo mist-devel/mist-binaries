@@ -1,0 +1,4 @@
+Fix of r004.7 around "bad sector/track detection".
+Better multi-bloc write implementation.
+
+TODO : a better "command issue" system (command issue seems due to hurt of state machine (sending a command before having consume a previous one), and not due to "short result x80" in bad sector read)

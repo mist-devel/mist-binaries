@@ -1,3 +1,7 @@
 Game unlocked : R-Typeee (a 1987 game refactor published in 2012)
 
 FDC : multi bloc read.
+
+Bug found :
+Using a ss40t DATA in drive A: and a ds80t DOS D2 in drive B: (with ROMDOS ROM), sequence |a |b |a does freeze (ABNORMAL badly sent in "sector/track not found" case)
+This bug is fixed in r004.7.1
