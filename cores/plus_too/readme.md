@@ -36,7 +36,7 @@ Major components are still missing like keyboard, floppy write ...
 History
 -------
 
-* [PlusToo_151013.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/PlusToo_151013.rbf)
+* [plusToo_151013.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/plusToo_151013.rbf)
   - Initial release
   - No functional changes over the original version
 
