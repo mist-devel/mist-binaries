@@ -1,7 +1,7 @@
 Plus Too for the MiST board
 ===========================
 
-This is a port of the [Plus Too project](http://www.bigmessowires.com/plus-too/ to the MiST board).
+This is a port of the [Plus Too project](http://www.bigmessowires.com/plus-too/) to the MiST board.
 
 Usage
 -----
