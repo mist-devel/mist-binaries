@@ -19,7 +19,7 @@ desktop.
 The green texts at the screens bottom are debug information of the
 original Plus Too project.
 
-The necessary rom and disk images can be found in the original (Plus Too project archive)[http://www.bigmessowires.com/plustoo.zip].
+The necessary rom and disk images can be found in the original [Plus Too project archive](http://www.bigmessowires.com/plustoo.zip).
 
 State
 -----
