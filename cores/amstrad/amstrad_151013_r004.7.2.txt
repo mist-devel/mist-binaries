@@ -1,0 +1,4 @@
+Approved r004.7.2 final version, will not move until a certain time (until r005 :P), can be over tested !
+
+Command issue, is now truly a command issue (leaving badly command machine state)
+Removed not used components : so this is a final version purpose, end-user.
