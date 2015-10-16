@@ -36,7 +36,12 @@ Major components are still missing like keyboard, floppy write ...
 History
 -------
 
-* [plusToo_151013.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/plusToo_151013.rbf)
+* [plusToo_151016.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/plusToo_151016.rbf)
+  - Simplified internal timing
+  - Reduced SDRAM clock to 65MHz
+  - Added keyboard support
+
+* [plusToo_151013.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/old/plusToo_151013.rbf)
   - Initial release
   - No functional changes over the original version
 
