@@ -8,18 +8,26 @@ Usage
 
 - Copy the core onto a sd card naming it core.rbf for auto boot
 - Copy the a Mac Plus rom onto the SD card under the name plus_too.rom
-- Copy a disk image in Plus Too format (e.g. Disk608-800K.bin) onto the SD card
+- Copy disk images in dsk format (e.g. [Disk605.dsk](http://www.rolli.ch/MacPlus/Archives/ZIP/Disk605.zip)) onto the SD card
 
 Boot the MIST. After a few seconds the floppy disk icon should
 appear. Open the on screen display using the F12 key and select the
-disk image. The upload of the disk image will take a few seconds after
-which Plus Too is being reset. Plus Too will then boot into the MacOS
-desktop.
+a disk image. The upload of the disk image will take a few seconds. Plus Too will then boot into the MacOS desktop.
 
-The green texts at the screens bottom are debug information of the
-original Plus Too project.
+The necessary rom images can be found in the original [Plus Too project archive](http://www.bigmessowires.com/plustoo.zip).
 
-The necessary rom and disk images can be found in the original [Plus Too project archive](http://www.bigmessowires.com/plustoo.zip).
+Floppy disk image format
+------------------------
+
+Floppy disk images need to be in raw disk format. Double sided 800k disk images have to be exactly 819200 bytes in size. Single sided 400k disk images have to be exactly 409600 bytes in size.
+
+Both the internal as well as the external floppy disk are supported. The first entry in the OSD refers to the internal floppy disk, the second one to the external floppy disk.
+
+Currently floppy disk images cannot be uploaded while the Mac accesses a floppy disk. Thus it's recommended to wait for the desktop to appear until a second floppy can be inserted.
+
+Before uploading a different disk image it's recommended to eject the previously inserted disk image from within MacOS.
+
+System floppy disk images in matching dsk format can be found at [here](http://www.rolli.ch/MacPlus/welcome.html).
 
 State
 -----
@@ -36,7 +44,15 @@ Major components are still missing like keyboard, floppy write ...
 History
 -------
 
-* [plusToo_151016.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/plusToo_151016.rbf)
+* [plusToo_151026.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/plusToo_151026.rbf)
+  - Floppy disk image format changed to standard dsk format
+  - Support for both floppies
+  - Added ability to eject disk images
+  - Mouse counter wrapping fixed
+  - Some more simplifications
+  - Removed debug video overlay
+
+* [plusToo_151016.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/old/plusToo_151016.rbf)
   - Simplified internal timing
   - Reduced SDRAM clock to 65MHz
   - Added keyboard support
