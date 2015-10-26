@@ -29,18 +29,6 @@ Before uploading a different disk image it's recommended to eject the previously
 
 System floppy disk images in matching dsk format can be found at [here](http://www.rolli.ch/MacPlus/welcome.html).
 
-State
------
-
-The MiST Plus Too port is in the same state as the original Plus
-Too. It's thus unfinished. Basically only the mouse is working as well
-as a read only floppy. 
-
-Some dbug features of the original Plus Too are missing as the MIST
-board does not have the necessary buttons, switches and LEDs.
-
-Major components are still missing like keyboard, floppy write ...
-
 History
 -------
 
