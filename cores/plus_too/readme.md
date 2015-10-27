@@ -32,7 +32,10 @@ System floppy disk images in matching dsk format can be found at [here](http://w
 History
 -------
 
-* [plusToo_151026.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/plusToo_151026.rbf)
+* [plusToo_151027.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/plusToo_151027.rbf)
+  - Basic audio support
+
+* [plusToo_151026.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/old/plusToo_151026.rbf)
   - Floppy disk image format changed to standard dsk format
   - Support for both floppies
   - Added ability to eject disk images
