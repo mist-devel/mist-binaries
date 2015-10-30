@@ -2,8 +2,13 @@ This the MiST port of a reconstruction of an 1980s-era Apple ][+ implemented in 
 Original for the DE2: http://www1.cs.columbia.edu/~sedwards/apple2fpga/
 Port for the MiST: http://ws0.org/tag/apple2/
 
-Changes:
-- added a 16KB RAM expansion seen as language card
+Features:
+- disk loading via osd (no write support yet)
+- joystick support
+- scanlines
+- color, amber, green and black&white monitor
+- language card in slot 0
+- Saturn 128k RAM expansion in slot 5 (get the utility disks from here: http://apple2online.com/index.php?p=1_28)
 
 On the "Apple ][" boot screen open the OSD with F12 and choose a nibblelized disk. It will boot
 the disk automatically. Use dsk2nib to convert AppleII disk images to .nib images. 
