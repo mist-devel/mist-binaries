@@ -27,7 +27,7 @@ Currently floppy disk images cannot be uploaded while the Mac accesses a floppy 
 
 Before uploading a different disk image it's recommended to eject the previously inserted disk image from within MacOS.
 
-System floppy disk images in matching dsk format can be found at [here](http://www.rolli.ch/MacPlus/welcome.html).
+System floppy disk images in matching dsk format can be found at [here](http://www.rolli.ch/MacPlus/welcome.html). Some nice applicatons on 400k dsk images can be found [here](http://tkc8800.com/page/Macintosh-128k-512k-disk-images).
 
 History
 -------
