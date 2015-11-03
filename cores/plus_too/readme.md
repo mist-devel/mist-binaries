@@ -27,7 +27,7 @@ Currently floppy disk images cannot be uploaded while the Mac accesses a floppy 
 
 Before uploading a different disk image it's recommended to eject the previously inserted disk image from within MacOS.
 
-System floppy disk images in matching dsk format can be found at [here](http://www.rolli.ch/MacPlus/welcome.html). Some nice applicatons on 400k dsk images can be found [here](http://tkc8800.com/page/Macintosh-128k-512k-disk-images).
+Some system floppy disk images in matching dsk format can be found at [here](http://www.rolli.ch/MacPlus/welcome.html). Some nice applicatons on 400k dsk images can be found [here](http://tkc8800.com/page/Macintosh-128k-512k-disk-images). Official system disk images are available from apple e.g. via [ftp](http://ftp.iinet.net.au/pub/apple/US/Macintosh/System/Older_System/System_6.0.x/). Under Linux these can be converted into the desired dsk format using [Linux stuffit](http://web.archive.org/web/20060205025441/http://www.stuffit.com/downloads/files/stuffit520.611linux-i386.tar.gz), unar and [dc2dsk](http://www.bigmessowires.com/dc2dsk.c) in that order.
 
 History
 -------
