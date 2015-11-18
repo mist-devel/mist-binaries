@@ -29,10 +29,18 @@ Before uploading a different disk image it's recommended to eject the previously
 
 Some system floppy disk images in matching dsk format can be found at [here](http://www.rolli.ch/MacPlus/welcome.html). Some nice applicatons on 400k dsk images can be found [here](http://tkc8800.com/page/Macintosh-128k-512k-disk-images). Official system disk images are available from apple e.g. via [ftp](http://ftp.iinet.net.au/pub/apple/US/Macintosh/System/Older_System/System_6.0.x/). Under Linux these can be converted into the desired dsk format using [Linux stuffit](http://web.archive.org/web/20060205025441/http://www.stuffit.com/downloads/files/stuffit520.611linux-i386.tar.gz), unar and [dc2dsk](http://www.bigmessowires.com/dc2dsk.c) in that order.
 
+Hard disk support
+-----------------
+
+
+
 History
 -------
 
-* [plusToo_151027.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/plusToo_151027.rbf)
+* [plusToo_151118.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/plusToo_151118.rbf)
+  - Initial SCSI support
+
+* [plusToo_151027.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/old/plusToo_151027.rbf)
   - Basic audio support
 
 * [plusToo_151026.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/old/plusToo_151026.rbf)
