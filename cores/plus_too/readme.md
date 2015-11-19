@@ -42,10 +42,18 @@ It has been tested that OS 6.0.8 can format the SCSI disk as well as doing a ful
 
 A matching harddisk image file can be found [here](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/hdd_empty.zip). This is a 20MB harddisk image with correct partitioning information and a basic SCSI driver installed. The data partition itself is empty and unformatted. After booting the Mac will thus ask whether the disk is to be initialized. Saying yes and giving the disk a name will result im a usable file system. You don't need to use the Setup tool to format this disk as it is already formatted. But you can format it if you want to. This is only been tested with OS 6.0.8.
 
+CPU Speed
+---------
+
+The CPU speed can be adjusted from "normal" which is roughly Mac Plus speed to "Fast" which is about 2.5 times faster. In fast mode some of the initial SCSI transfers time out and thus the core cannot boot from SCSI disk in this mode. But once it has booted to the desktop the turbo can be enabled and further SCSI disk transfers will work.
+
 History
 -------
 
-* [plusToo_151118.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/plusToo_151118.rbf)
+* [plusToo_151119.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/plusToo_151119.rbf)
+  - Faster CPU option
+
+* [plusToo_151118.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/old/plusToo_151118.rbf)
   - Initial SCSI HDD support
 
 * [plusToo_151027.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/old/plusToo_151027.rbf)
