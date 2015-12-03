@@ -3,3 +3,5 @@ Amstrad firmware svn1193 fork (firmware with CRC16)
 MMC_ReadCRC "return(2);" correction
 
 Tested ok with firmware updater.
+
+2015/12/03 : original firmware_150910.upg tested OK a week long, CRC16 is validated as useless (in performance/robustness way), this fork is closed.
