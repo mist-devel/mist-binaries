@@ -1,0 +1,4 @@
+firmware_151118
+===============
+
+Some acceleration of block file IO for SD card emulation to prevent SCSI timeouts in the Macintosh (Plus Too) SCSI implementation. This change does not affect any other core. Only update if you want to use the Macintosh SCSI HDD implementation.

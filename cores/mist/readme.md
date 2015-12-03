@@ -22,3 +22,12 @@ may also be copied into the cards root.
 
 Other floppy disk images in .ST format can be selected in the OSD
 (open with F12).
+
+History
+-------
+
+* [core_151123.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/core_151123.rbf)
+  - STE/YM audio mixer adjustments. Fixes Anarcho Ride
+
+* [core_151122.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/old/core_151122.rbf)
+  - CPU illegal instruction fix. Fixes MAGIC 6.20 ROM
