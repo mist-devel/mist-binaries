@@ -11,7 +11,7 @@ See the [wiki page](https://github.com/mist-devel/mist-board/wiki/CoreDocSpectru
 History
 -------
 
-* [spectrum_151204.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/spectrum/old/spectrum_151204.rbf)
+* [spectrum_151204.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/spectrum/spectrum_151204.rbf)
   - SDRAM timing relaxed
   - Improved memory access interleaving
   - Reset timing adjusted
