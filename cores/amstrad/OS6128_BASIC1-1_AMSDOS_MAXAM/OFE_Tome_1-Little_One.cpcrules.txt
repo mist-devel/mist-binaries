@@ -1,2 +1,0 @@
-http://cpcrulez.fr/Scene_Demos/index.php
-Does need OSD setting : LowerVRAM 01

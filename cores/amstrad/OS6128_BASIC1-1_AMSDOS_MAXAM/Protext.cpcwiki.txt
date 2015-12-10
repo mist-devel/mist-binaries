@@ -1,5 +1,0 @@
-Optional ROM extension.
-
-http://www.cpcwiki.eu/index.php/Protext
-
-Hidden command (Colored Protext ?) : |cp

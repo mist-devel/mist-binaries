@@ -1,5 +1,0 @@
-http://www.cpc-power.com/index.php?page=detail&num=630
-
-NOT in the Tosec Set.
-
-LowerVRAM 0011

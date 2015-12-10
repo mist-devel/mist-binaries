@@ -1,1 +1,0 @@
-Check RAM extension true size.
