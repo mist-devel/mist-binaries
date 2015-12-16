@@ -17,13 +17,13 @@ Insert the SD card into your MIST and reboot. After a few seconds you should be 
 
 Now you can copy a dsk image like e.g. the [AST-EQUINOX demo](http://cpcrulez.fr/Scene_Demos/index.php?download=YqXJmarLlrvj292Im7vl&p=Scene_Demos) onto your SD card and boot the MIST with this. On the main screen open the OSD with F12 and choose the "AST-Equinox.dsk" disk image.
 
-Then enter:
+Then enter
 
  `cat`
 
-to list the contents of the disk is listed.
+to list the contents of the disk.
 
-Or just type
+Or type
 
  `run"EQUINOX`
 
