@@ -1,4 +1,4 @@
-This the MiST port of [FPGAmstrad](http://www.cpcwiki.eu/index.php/FPGAmstrad) project
+MIST port of the [FPGAmstrad](http://www.cpcwiki.eu/index.php/FPGAmstrad) project
 ----------------------------------------
 
 Please read the cores [Wiki](http://github.com/mist-devel/mist-board/wiki/CoreDocAmstrad) page for more details.
