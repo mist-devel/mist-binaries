@@ -1,17 +1,23 @@
 ZX Spectrum for MIST
 --------------------
 
-This is a port of Mike Stirlings [ZX Spectrum on FPGA" project](http://www.mike-stirling.com/retro-fpga/zx-spectrum-on-an-fpga/).
+This is a port of [Goran Devic's Sinclair ZX Spectrum on the A-Z80](http://www.devic.us/hacks/sinclair-zx-spectrum-z80/). The port has been done by [sorgelig](https://github.com/sorgelig). The CPU is also available via [opencores](http://opencores.org/project,a-z80). The full source code is available from [sorgelig's guthub repository](https://github.com/sorgelig/ZX_Spectrum-128K_MIST/tree/master/releases).
+
+Previous versions were based on Mike Stirlings [ZX Spectrum on FPGA" project](http://www.mike-stirling.com/retro-fpga/zx-spectrum-on-an-fpga/).
 
 Usage
 -----
 
-See the [wiki page](https://github.com/mist-devel/mist-board/wiki/CoreDocSpectrum) for further details and instructions how to setup the DIVMMC.
+See the [wiki page](https://github.com/mist-devel/mist-board/wiki/CoreDocSpectrum) for further details and instructions how to setup the DIVMMC. 
 
 History
 -------
 
-* [spectrum_151204.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/spectrum/spectrum_151204.rbf)
+* [spectrum_151228.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/spectrum/spectrum_151204.rbf)
+  - Whole new port by [sorgelig](https://github.com/sorgelig)
+  - Based on [Goran Devic's Sinclair ZX Spectrum on the A-Z80](http://www.devic.us/hacks/sinclair-zx-spectrum-z80/)
+
+* [spectrum_151204.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/spectrum/old/spectrum_151204.rbf)
   - SDRAM timing relaxed
   - Improved memory access interleaving
   - Reset timing adjusted
