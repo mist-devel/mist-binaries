@@ -13,7 +13,10 @@ See the [wiki page](https://github.com/mist-devel/mist-board/wiki/CoreDocSpectru
 History
 -------
 
-* [spectrum_151228.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/spectrum/spectrum_151204.rbf)
+* [spectrum_151230.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/spectrum/spectrum_151230.rbf)
+  - Option to autoload ESXDOS at boot time
+
+* [spectrum_151228.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/spectrum/old/spectrum_151228.rbf)
   - Whole new port by [sorgelig](https://github.com/sorgelig)
   - Based on [Goran Devic's Sinclair ZX Spectrum on the A-Z80](http://www.devic.us/hacks/sinclair-zx-spectrum-z80/)
 
