@@ -9,6 +9,7 @@ Features:
 - color, amber, green and black&white monitor
 - language card in slot 0
 - Saturn 128k RAM expansion in slot 5 (get the utility disks from here: http://apple2online.com/index.php?p=1_28)
+- Mockingboard model A (two AY-3-8913 chips for six audio channels) in slot 4
 
 On the "Apple ][" boot screen open the OSD with F12 and choose a nibblelized disk. It will boot
 the disk automatically. Use dsk2nib to convert AppleII disk images to .nib images. 
