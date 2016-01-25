@@ -21,6 +21,13 @@ https://github.com/rkrajnc/minimig-de1
 https://github.com/rkrajnc/minimig-mist
 https://github.com/robinsonb5/minimig_c3/tree/simplifiedsplitclock
 
+minimig-mist-v1.1 (2016-01-xx)
+------------------------------
+
+These are development versions using an updated CPU core. The bitfield instructions in
+68020 mode have been fixed. This required some significant changes and may have introduced
+new problems. These versions are thus considered beta.
+
 minimig-mist-v1.1 (2015-09-10) from http://somuch.guru/minimig/minimig-mist/
 ----------------------------------------------------------------------------
 
