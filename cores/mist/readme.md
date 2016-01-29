@@ -26,7 +26,10 @@ Other floppy disk images in .ST format can be selected in the OSD
 History
 -------
 
-* [core_151123.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/core_151123.rbf)
+* [core_160129.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/core_160129.rbf)
+  - 68020 bitfield fixes and barrel shifter 
+
+* [core_151123.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/old/core_151123.rbf)
   - STE/YM audio mixer adjustments. Fixes Anarcho Ride
 
 * [core_151122.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/old/core_151122.rbf)
