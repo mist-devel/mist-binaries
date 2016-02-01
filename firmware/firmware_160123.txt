@@ -1,0 +1,8 @@
+firmware_160123
+===============
+
+This update adds support for the BK0011M cores harddisk emulation. It
+also fixes a minor bug in the Ethernet driver.
+
+For developers it adds the ability to download new cores via JTAG without
+changing the DIP-1 switch.
