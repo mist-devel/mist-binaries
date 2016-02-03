@@ -1,0 +1,5 @@
+Merge of r004.8.2 with r005c18.
+r004.8.3 is unvalidated (regression on Tetris95 : problem giving your name for score)
+scandoubler is unvalidated for CoreAmstrad (no mode 2)
+r005 is r004.8.2 with TV mode (in OSD menu, at bottom), and VGA mode (no scandoubler)
+ps2 clock built instead of generated (shall be more safer)
