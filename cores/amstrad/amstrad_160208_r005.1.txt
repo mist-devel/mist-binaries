@@ -1,0 +1,2 @@
+FDC ST0_INVALID_COMMAND_ISSUE correction
+CPC Aventure game unlocked : message "Please insert side 2 and press SPACE." is now displayed, so you can reach the Castle :)
