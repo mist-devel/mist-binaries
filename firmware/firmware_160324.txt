@@ -1,0 +1,6 @@
+firmware_160324
+===============
+
+Include changes required for the latest Amiga AGA 1.2 core.
+
+Small amiga keymap change for international (non-US) keyboards (PC insert key maps to amiga backslash).
