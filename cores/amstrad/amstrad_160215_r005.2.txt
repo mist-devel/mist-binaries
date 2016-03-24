@@ -1,0 +1,2 @@
+Yamaha latches debug : unlock animated Welcome screens keyboard "press F1 or F2"/"press a key"
+(Yamaha PORT A is used to read keyboard in CPC)

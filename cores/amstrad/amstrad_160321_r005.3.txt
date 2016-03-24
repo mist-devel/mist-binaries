@@ -1,0 +1,2 @@
+RAM controller optimization (performance)
+Some MiST-board platform did not successfully started CoreAmstrad, now they can use it.
