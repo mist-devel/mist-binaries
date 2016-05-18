@@ -13,6 +13,9 @@ See the [wiki page](https://github.com/mist-devel/mist-board/wiki/CoreDocSpectru
 History
 -------
 
+* [spectrum_160514.rbf] (https://github.com/mist-devel/mist-binaries/raw/master/cores/spectrum/spectrum_160514.rbf)
+  -  Various fixes and better timings for 128K and 48K modes.
+
 * [spectrum_151230.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/spectrum/spectrum_151230.rbf)
   - Option to autoload ESXDOS at boot time
 
