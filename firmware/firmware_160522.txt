@@ -1,0 +1,6 @@
+firmware_160522
+===============
+
+Fixed bug whereby the OSD was controlled only by USB gamepad when connected
+Increased max number of joypad mapping in MIST.INI to 8
+
