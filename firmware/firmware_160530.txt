@@ -1,0 +1,7 @@
+firmware_160530
+===============
+- new Joystick test screen (Joy 1 only for now)
+- new About screen (copied from Minimig)
+- new logo for MiST (replacing Minimig log)
+- added help scroll text on various screens
+- minor fixes to joy->key mapping
