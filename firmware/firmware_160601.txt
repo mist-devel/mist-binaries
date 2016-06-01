@@ -1,0 +1,5 @@
+firmware_160601
+===============
+- fixed OSD control from joystick (up/down selection)
+- fixed unselectable "exit" in 8-bit menu
+- accelerated text scrolling
