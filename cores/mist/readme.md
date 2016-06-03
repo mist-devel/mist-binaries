@@ -26,7 +26,10 @@ Other floppy disk images in .ST format can be selected in the OSD
 History
 -------
 
-* [core_160129.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/core_160129.rbf)
+* [core_160603.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/core_160603.rbf)
+  - Modify AmigaOS related fix to make [EmuTOS](https://sourceforge.net/projects/emutos/files/emutos/0.9.6/emutos-256k-0.9.6.zip/download) work again
+
+* [core_160129.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/old/core_160129.rbf)
   - 68020 bitfield fixes and barrel shifter 
 
 * [core_151123.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/old/core_151123.rbf)
