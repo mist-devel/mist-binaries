@@ -1,5 +1,6 @@
 firmware_160605
 ===============
+- added test screen for joystick 2
 - added display of "USB raw" status in Joystick Test screen, to help in mapping
 - added display of currently loaded core name in FW & Core screen
 - allow cores to override their name by passing a version string ("V0;info")
