@@ -1,0 +1,7 @@
+firmware_160606
+===============
+- added joystick aliases (for joysticks known by the firmware e.g. iBuffalo SNES pad)
+- improved USB display (should be slightly more intuitive)
+- fixes to core name display
+- added core name to scrolling helptext
+- minor fix to button reporting for USB joy 1
