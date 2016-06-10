@@ -1,0 +1,7 @@
+firmware_160610
+===============
+- added write support for SAM Coupe' core
+- added 8BitDo SF30 default mapping
+- added new Inputs devices sub-menu for USB tests
+- added simple keyboard test
+- added screen to show VID/PID of connected devices
