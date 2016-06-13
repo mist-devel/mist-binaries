@@ -1,0 +1,4 @@
+firmware_160613
+===============
+- Keyboard test screen: added display of PS/2 extended scancodes and USB modifier keys
+
