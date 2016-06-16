@@ -1,0 +1,7 @@
+firmware_160616
+===============
+- Minimig: added joystick, keyboard tests, and USB status display to OSD.
+- Minimig: new MIST.INI option, 'key_menu_as_rgui', set to 1 to bind 'Menu' USB key to Right Amiga key
+- 8Bit core: bind Menu key to OSD open
+- 8Bit core: ability for cores to declare custom labels e.g. "Load *.DSK 1 / Load *.DSK 2"
+- Code refactoring to reduce binary size (saved ~2 KB)
