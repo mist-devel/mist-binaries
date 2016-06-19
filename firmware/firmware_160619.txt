@@ -1,0 +1,4 @@
+firmware_160619
+===============
+- New Turbo Button function; buttons A and B can be set to repeat at different intervals.
+- Allow cores to list and select a file using multiple file extensions.
