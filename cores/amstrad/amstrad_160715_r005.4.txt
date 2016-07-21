@@ -1,0 +1,13 @@
+Two upperROM set : if you press "space" during a reset_key ("page up" key), upperROM files used are *.f00 to *.fFF instead of *.e00 to *.eFF.
+*.eZZ is still used in both case.
+
+Personnaly I have :
+- ParaDOSv1.2.f07
+- BASIC1-1-french.f00
+- MAXAM.e05
+- PROTEXT.e06
+- ParaDOSv1.2.e07
+- BASIC1-1-french.e00
+- OS6128-french.eZZ
+
+By using this functionality I can insert PROTEXT and MAXAM ROM by default, and still play Asphalt after a "space"+"page up" quick reset.
