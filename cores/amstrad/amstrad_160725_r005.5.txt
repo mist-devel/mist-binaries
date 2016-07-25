@@ -1,0 +1,5 @@
+SOUND_CLK mapped from GateArray... better sound clock synchronize.
+
+Unlocked demo : -Circles
+Unlocked game : Saboteur 2
+Stabilized games : Abracadabra et les voleurs de temps, Sim City
