@@ -1,0 +1,8 @@
+firmware_160721
+===============
+Restored PS2 keyboard in Keyboard Test
+New option to reset settings for a core (in system menu)
+
+
+
+

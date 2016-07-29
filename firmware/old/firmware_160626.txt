@@ -1,0 +1,8 @@
+firmware_160626
+===============
+This is an interim release to fix incompatibilities with the Amiga core.
+Turbo function and PS2 keyboard display are disabled for now (related to incompatibility, need to be reworked).
+
+
+
+
