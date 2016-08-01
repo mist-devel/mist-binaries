@@ -33,6 +33,15 @@ ram.
 
 Afterwards type ```RUN``` to run the game.
 
+Using the 1541 floppy
+---------------------
+
+You can also load from floppy images in D64 format using the built-in
+1541. Use ```Mount D64``` from the OSD to insert a floppy disk image
+in D64 format. The simply use the regular C16 methods to access the 
+floppy disk. In most cases ```LOAD "*",8``` and a subsequent ```RUN```
+will be what you want.
+
 Using a SCART TV
 ----------------
 
@@ -42,7 +51,10 @@ scandoubler. Using the [appropriate cable](https://github.com/mist-devel/mist-bo
 History
 -------
 
-* [c16_160801.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_160801.rbf)
+* [c16_160801-2.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_160801-2.rbf)
+  - C1541 floppy disk implementation (read only)
+
+* [c16_160801.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/old/c16_160801.rbf)
   - OSD option to switch between 16k and 64k
 
 * [c16_160729.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/old/c16_160729.rbf)
