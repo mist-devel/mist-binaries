@@ -51,7 +51,10 @@ scandoubler. Using the [appropriate cable](https://github.com/mist-devel/mist-bo
 History
 -------
 
-* [c16_160801-2.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_160801-2.rbf)
+* [c16_160811.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_160811.rbf)
+  - Fixed C1541 disk image chaneg detection
+
+* [c16_160801-2.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/old/c16_160801-2.rbf)
   - C1541 floppy disk implementation (read only)
 
 * [c16_160801.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/old/c16_160801.rbf)
