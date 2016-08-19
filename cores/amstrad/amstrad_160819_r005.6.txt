@@ -1,0 +1,8 @@
+Refactor of r005.5
+mist.ini scandoubler parameter
+OSD menu : removed mode TV (see mist.ini)
+testbench : arnoldemu testbench (ppi psg cpctest)
+dsk : begin of sk bit implementation (not validated), some seek error management (not validated)
+Games unlocked :
+Sigma7
+Pac-land
