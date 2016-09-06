@@ -1,0 +1,5 @@
+No more "UpperVRAM/LowerVRAM" in OSD, all video ram is now implemented.
+Using external RAM as RAM and VRAM.
+Games unlocked :
+- Crazy Car II
+- Tintin sur la Lune
