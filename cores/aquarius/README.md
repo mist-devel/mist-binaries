@@ -15,5 +15,10 @@ Copy the game you want to run onto the SD card renaming it to ```aquarius.rom```
 History
 -------
 
+* [core_160908_112119.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/aquarius/core_160908_112119.rbf)
+  - Limit RAM to 20KB o improve compatibility
+	- Support multikeys on pad
+	- Fix sound in Advanced D&D
+
 * [core_160831_114220.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/aquarius/core_160831_114220.rbf)
   - Initial release
