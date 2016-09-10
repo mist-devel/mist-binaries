@@ -1,0 +1,5 @@
+firmware_160910
+===============
+- Added mappings for 8bitdo SFC30 and FC30 gamepads
+- Fixed display glitch in joystick test OSD screen
+
