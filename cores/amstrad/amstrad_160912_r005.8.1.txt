@@ -1,0 +1,2 @@
+RAM optimization (refresh commands)
+Bottom of vertical border fixed.
