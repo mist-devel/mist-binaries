@@ -1,0 +1,2 @@
+GateArray r52 clock propagation kick
+Batman demo sound seems more cool (less slow)

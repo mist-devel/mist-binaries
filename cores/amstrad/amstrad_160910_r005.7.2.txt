@@ -1,0 +1,4 @@
+New palette heuristic.
+Batman demo : Jocker effect.
+
+Known bad effet : TrailBlazer at left... but still playable.
