@@ -1,0 +1,5 @@
+Border calibration for 800x600 VGA :
+
+Border 768×576 in brown (to help manual calibration)
+Border 768×544 in orange (true resolution of Amstrad)
+vertical offset of 1/2 char (border at top is bigger than bottom one, as in original Amstrad)
