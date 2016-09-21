@@ -13,6 +13,8 @@ You will also need a Kickstart ROM image file, which you can obtain by copying K
 The minimig can also use HDF harddisk images, which can be created with WinUAE.
 
 Recommended minimig config:
+* for ECS: Kickstart 1.3, CPU 68000, Turbo NONE, Chipset ECS, chipRAM 0.5MB, slowRAM 0.5MB
+* for AGA: Kickstart 3.1, CPU 68020, Turbo NONE, Chipset AGA, chipRAM 2.0MB, slowRAM 0.0MB, fastRAM = 24MB
 
 FILES
 ====================
