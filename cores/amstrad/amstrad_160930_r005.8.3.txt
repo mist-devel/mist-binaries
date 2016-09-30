@@ -1,0 +1,4 @@
+A small bug found in GA, just a delta-time offset, Hell while listening A Step Behond Demo (by DirtyMind). Fixed.
+Demo concerned :
+- RTS
+- A Step Beyond
