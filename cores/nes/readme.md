@@ -25,3 +25,18 @@ scandoubler_disable=1
 * Tab - select
 * Space - fire 1
 * Left Alt - fire 2
+
+## Powerpad (<https://en.wikipedia.org/wiki/Power_Pad>) emulation support
+The powerpad/Family Trainer/Family Fun Fitness accessory is emulated through
+the keyboard.
+
+Side A:
+*    O  O    -   T R
+* O  O  O  O - H G F D
+*    O  O    -   B V   
+
+Side B:
+* 1  2  3  4 - E R T Y
+* 5  6  7  8 - D F G H
+* 9 10 11 12 - C V B N 
+
