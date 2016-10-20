@@ -63,8 +63,8 @@ echo Atari5200...
 DIR=${CORES}/atari5200/
 copy_latest_core ${DIR} atari5200.rbf
 mkdir -p atari5200
-if [ -d ${ROMS}/atari5200 ]; then
-	${XCP} ${ROMS}/atari5200/* atari5200/
+if [ -d ${ROMS}/starter_pack_files/atari5200/rom ]; then
+	${XCP} ${ROMS}/starter_pack_files/atari5200/rom/* atari5200/
 fi
 
 # Apple II+
