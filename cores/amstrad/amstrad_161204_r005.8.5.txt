@@ -1,0 +1,4 @@
+mode 3
+VBLANK in CRTC1 status register (not(VDISP) ?)
+
+feel better in Arkanoid (more regular ball)
