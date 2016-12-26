@@ -5,6 +5,8 @@ This is a port of the OneChipMSX (http://de.wikipedia.org/wiki/1chipMSX) to the
 MIST board. This is a work in progress by Alastair Robinson. The source
 code is available at https://github.com/robinsonb5/OneChipMSX
 
+The source code can be found at https://github.com/robinsonb5/OneChipMSX
+
 Quick start
 -----------
 
@@ -19,3 +21,15 @@ version of MSX-DOS" error each time you are trying to run a program
 under MSXDOS2. In order to get rid of this use the command 
   SET EXPERT = ON , 
 you can put this command into an AUTOEXEC.BAT file.
+
+History
+-------
+
+* [ocmsx_161226.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/msx/ocmsx_161226.rbf)
+  - AMR fixed the timing of SDRAM controller for newer RAM chips used on 2016er MISTs
+
+* [ocmsx_141022_r364.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/msx/old/ocmsx_141022_r364.rbf)
+
+* [ocmsx_141012_r359.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/msx/old/ocmsx_141012_r359.rbf)
+
+* [ocmsx_141010_r356.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/msx/old/ocmsx_141010_r356.rbf)
