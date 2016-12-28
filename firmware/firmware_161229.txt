@@ -1,4 +1,4 @@
-firmware_160910
+firmware_161229
 ===============
 - Added special support for Keyrah v2 (for those who would like to use Amiga 1200 case with US/UK keyboard):
   - Left side blank key is used as FN key.
