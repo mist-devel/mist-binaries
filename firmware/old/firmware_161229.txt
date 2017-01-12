@@ -3,8 +3,8 @@ firmware_161229
 - Added special support for Keyrah v2 (for those who would like to use Amiga 1200 case with US/UK keyboard):
   - Left side blank key is used as FN key.
   - Right side blank key is used as Right Ctrl.
-  - LCtrl + LAmiga + LAmiga - For Amiga: reset, For 8bit cores: emulate right button on MiST Case (usually reset).
-  - FN + LCtrl + LAmiga + LAmiga - Hard reset (load core.rbf).
+  - LCtrl + LAmiga + RAmiga - For Amiga: reset, For 8bit cores: emulate right button on MiST Case (usually reset).
+  - FN + LCtrl + LAmiga + RAmiga - Hard reset (load core.rbf).
   - FN + KP(, FN + KP) - switch mouse/joystick emulation.
   - FN + 1-9,0,-,=,\,[,],.,enter - emulate keypad for A600 keyboard.
   - FN + 1 - F11.
@@ -22,3 +22,4 @@ firmware_161229
 - MiST will try hard reset if fatal error happened (no card inserted or no FAT partition found), so it will start automatically when proper SD card will be inserted.
 - Added auto-repeat for LEFT/RIGHT keys in OSD for better file list navigation.
 - Added FW update OSD dialog for Menu core (press ESC/F12/FN).
+- Enable Keyboard LEDs (Caps Lock, Num Lock, Scroll Lock) control from FPGA.

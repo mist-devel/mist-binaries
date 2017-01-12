@@ -1,0 +1,7 @@
+firmware_170112
+===============
+- Added YPbPr video mode INI setting (see WiKi). Att to developer: each core has to be updated in order
+  to add YPbPr output. Convenient video mixing module is provided. You can find it in all Sorgelig's cores.
+- Keyrah: FN+F3..F6 - mouse/joystick direct emulation selection. (F17..F20 - on other keyboards).
+- Scandoubler toggle by OSD button for all cores.
+- Per core INI settings override. (INI WiKi will be updated soon).
