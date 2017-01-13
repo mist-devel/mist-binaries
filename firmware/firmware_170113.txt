@@ -1,0 +1,3 @@
+firmware_170113
+===============
+- Send INI config to FPGA earlier (fix Minimig nag screen synchro).
