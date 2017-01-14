@@ -1,0 +1,4 @@
+firmware_170114
+===============
+- Prevent pass modifier keys while OSD is active. Fix modifier codes in keyboard test for non-8bit cores.
+- Remap key INSERT to \ for Minimig core.
