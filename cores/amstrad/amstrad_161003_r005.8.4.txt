@@ -1,2 +1,0 @@
-Asked by Salva Perugorria Lorente
-Removed fix fix colored border, replaced by fix color border.
