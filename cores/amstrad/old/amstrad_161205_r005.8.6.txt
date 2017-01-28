@@ -1,0 +1,2 @@
+mode 3 with 4 colors (theory seen in internet)
+horizontal hardware offset +8, following winape testbench plustest.dsk (2nd test) : Batman demo, Super Cauldron and Prehistorik II calibration screen are now by default centered correctly.

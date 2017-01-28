@@ -1,0 +1,4 @@
+"Les Sucres en Morceaux" theory about green screen in CPC.
+Soleil Vert demo unlocked.
+
+z80.waitn_hack disabled : Pinball Dreams CPC game unlocked
