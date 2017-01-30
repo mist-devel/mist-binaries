@@ -1,0 +1,5 @@
+Quasar CRTC Diff.
+CRTC1 detection ok : From Scratch Vanity (but crach) Still Rising Vanity (-Pulpo does crach)
+Better feeling in games.
+
+or not (experimental)

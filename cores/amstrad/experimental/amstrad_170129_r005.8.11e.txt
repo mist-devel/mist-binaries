@@ -1,3 +1,0 @@
-Scanlines (pair lines are 1/2 darker)
-
-Experimental forked version (FPGAmstrad_amstrad_motherboard.HACK_Z80=false)
