@@ -15,7 +15,7 @@ Then copy at least the following ROM files into the root directory of your SD ca
 
 Insert the SD card into your MIST and reboot. After a few seconds you should be presented the familiar Amstrad basic screen.
 
-Now you can copy a dsk image like e.g. the [AST-EQUINOX demo](http://cpcrulez.fr/Scene_Demos/index.php?download=YqXJmarLlrvj292Im7vl&p=Scene_Demos) onto your SD card and boot the MIST with this. On the main screen open the OSD with F12 and choose the "AST-Equinox.dsk" disk image.
+Now you can copy a dsk image like e.g. the [AST-EQUINOX demo](https://github.com/mist-devel/mist-binaries/raw/master/cores/amstrad/ROMs/AST-Equinox.dsk) onto your SD card and boot the MIST with this. On the main screen open the OSD with F12 and choose the "AST-Equinox.dsk" disk image.
 
 Then enter
 
