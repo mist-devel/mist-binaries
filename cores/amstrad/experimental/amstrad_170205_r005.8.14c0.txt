@@ -1,0 +1,3 @@
+OSD menu : can select CRTC 0 or 1.
+
+arnoldemu testbench - cpctest OK
