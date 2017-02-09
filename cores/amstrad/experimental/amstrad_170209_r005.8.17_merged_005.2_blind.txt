@@ -1,0 +1,4 @@
+005.2 does run Arkanoid II in HACK_Z80 OK
+Sound is OK so interrupts are OK !!!!!!!!!
+But graphics are not OK at all, have to do a merge.
+Have fun with demo and sound without graphics ;)
