@@ -1,0 +1,7 @@
+firmware_170207
+===============
+- 3 combos for reset to choose in INI. Option to disable Keyrah customizations.
+- More noticeable LED blinking while firmware update.
+- Disable OSD on/off action if OSD button has been used for scandoubler toggle.
+- Use user button while keeping OSD button pressed to switch between RGB and YPbPr modes.
+- INI option to preserve choosen mode (YPbPr/Scandoubler) between cores.
