@@ -1,0 +1,6 @@
+clock edge : switching GA edge, and interrupt process edge.
+
+WakeUp! demo sound ok but not graphics. Arkanoid II ok... and we are not in experimental mode.
+Still Rising has vertical cut, but Jocker is displayed
+Saboteur II doesn't run.
+Prehistoric II is perfect (it's result of work based of a merge of r005.2 "Prehistoric II unlocked", that's why)
