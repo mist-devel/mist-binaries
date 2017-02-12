@@ -1,0 +1,9 @@
+-IO_ACK trigger in edge, not in state (better in some scrolling...)
+-WAIT_n generator ignoring M1 while IO_ACK
+
+In OSD :
+-CRTC0 or CRTC1, detected as it by WakeUp! demo. CRTC1 by default.
+-MEM_wr : quick and slow. quick by default.
+
+quick : Arkanoid II, Prehistoric II. Ecole demo. Pinball Dreams
+slow : Saboteur 2. Still Rising demo.

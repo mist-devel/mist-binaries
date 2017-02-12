@@ -1,2 +1,0 @@
-doc_Pierre_Guerrier_CRTC CRTC Diff.
-Still Rising Vanity running (without freeze, no half scroller)
