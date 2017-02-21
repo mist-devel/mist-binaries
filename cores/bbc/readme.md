@@ -14,6 +14,13 @@ mmbeed still apply and e.g. the SD card needs to be FAT16 formatted and the
 
 One such file can be found at [here](http://www.retrocomputers.eu/bbc/).
 
+If using the beeb.mmb file, once the BBC is booted type "*MENU" to start
+the menu. You can also set it to start automatically by setting "Auto boot"
+in the OSD.
+
+This core supports VGA and RGB 15khz. Use the setting in mist.ini
+or hold down the middle button to switch between the two modes.
+
 Sideways ROM/RAM
 ----------------
 
@@ -32,6 +39,10 @@ are mapped to max/min values.
 
 History
 -------
+
+* [bbc_170221.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_170221.rbf)
+  - RGB 15khz OSD and dull colours fixes. 
+  - Castle Quest works.
 
 * [bbc_151009.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_151009.rbf)
   - Auto boot option
