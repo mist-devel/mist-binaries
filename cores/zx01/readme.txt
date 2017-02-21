@@ -7,11 +7,13 @@ SD cards root.
 
 Add some ZX81 programs (*.p) files to the SD card.
 
+The mist.ini file is supported to switch between VGA and 15khz TV.
+
 Put the SD card into the MIST and boot it. After a few seconds you
 should see the familiar white screen with the inverted K in the lower
 left corner. 
 
-You ZX81 is up and running. 
+Your ZX81 is up and running. 
 
 How to load a file
 ------------------
@@ -29,6 +31,8 @@ key and then two times SHIFT-'p'. Press return. The screen will switch
 off since the tape loading logic of a ZX81 re-uses parts of the video
 system. Old TV sets displayed some flickering black and white
 lines. Modern screen don't cope at all with this. This is ok.
+
+To delete characters on the command line hit SHIFT-'0'.
 
 Now start the tape replay by pressing the rightmost button on the
 MISTs front panel. If you have speakers connected to your MIST you'll
