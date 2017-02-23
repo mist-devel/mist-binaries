@@ -45,7 +45,7 @@ return to run them.
 Limitations
 -----------
 
-The ZX81 video is party generated via the CPU. A perfect CPU timing is
+The ZX81 video is partly generated via the CPU. A perfect CPU timing is
 thus required for perfect video. This is true for simple text modes
 but it's even more critical with hirez video modes.
 
