@@ -31,6 +31,11 @@ priorty over SuperMMC and BASIC.
 
 Four RAM banks are present in slots 4,5,6 and 7.
 
+Keyboard
+--------
+
+The BREAK key maps to the PrintScr key.
+
 Joysticks
 ---------
 
@@ -39,6 +44,10 @@ are mapped to max/min values.
 
 History
 -------
+
+* [bbc_170216.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_170226.rbf)
+  - Planetoid, Snapper etc now work (m6522 related games).
+  - m6522 improvements and clock improvements.
 
 * [bbc_170221.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_170221.rbf)
   - RGB 15khz OSD and dull colours fixes. 
