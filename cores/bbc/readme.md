@@ -45,7 +45,10 @@ are mapped to max/min values.
 History
 -------
 
-* [bbc_170216.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_170226.rbf)
+* [bbc_170227.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_170227.rbf)
+  - Fix broken sound.
+
+* [bbc_170226.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_170226.rbf)
   - Planetoid, Snapper etc now work (m6522 related games).
   - Fix SHIFT and CONTROL pausing games.
   - m6522 improvements and clock improvements.
