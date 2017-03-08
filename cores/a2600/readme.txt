@@ -14,6 +14,9 @@ OSD
 Current limitations:
 - supports only the common Atari bank switching schemes (F8, F6, F4)
 
+Supports mist.ini scandoubler_disable for RGB 15khz, or you can hold the middle MiST
+button to switch between modes.
+
 All MiST related files including the Quartus project files are in the 'mist' subdirectory.
 The cpu65xx core was added with permission of Peter Wendrich.
 
