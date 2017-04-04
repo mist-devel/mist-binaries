@@ -1,0 +1,3 @@
+TV mode experimental : xorTV.
+Another TV mode experimental : applying Gerald HSYNC/VSYNC width formula.
+Just a merge with r005.8.14 and several experimental versions around TV mode (thanks a lot at Atari Forum for experimental tests)

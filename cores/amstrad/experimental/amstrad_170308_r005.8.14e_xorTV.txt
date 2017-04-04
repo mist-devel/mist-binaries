@@ -1,8 +1,0 @@
-Experimental version using
-
---assign VGA_HS = scandoubler_disable?!(video_hs^video_vs):sd_hs;
---assign VGA_VS = scandoubler_disable?1'b1:sd_vs;
---HSYNC_out<=canal_hsync when mode='0' else canal_hsyncTV;
---VSYNC_out<=canal_vsync when mode='0' else canal_vsyncTV;
-HSYNC_out<=canal_hsync when mode='0' else not(canal_hsyncTV xor canal_vsyncTV);
-VSYNC_out<=canal_vsync when mode='0' else '1';

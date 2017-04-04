@@ -1,3 +1,0 @@
-Mix of current FDC work (in middle of work...)
-and amstrad_170308_r005.8.14e_xorTV.rbf
-with OSD normally in TV mode.
