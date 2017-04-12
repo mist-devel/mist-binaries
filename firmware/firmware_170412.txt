@@ -1,0 +1,3 @@
+firmware_170412
+===============
+- INI option to enable/disable LED animation on V1.3+ boards
