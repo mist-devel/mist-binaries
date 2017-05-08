@@ -1,0 +1,16 @@
+TV mode, experimental
+Border. Result of 5 calibrations around borders, not tested.
+
+To test you can do :
+
+border 0
+
+TV off/TV on
+
+See where is displayed Amstrad welcome message.
+
+border 2
+
+TV off/TV on
+
+See if displayed Amstrad didn't move.
