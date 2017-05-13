@@ -1,0 +1,12 @@
+TV mode experimental : parrot comparison, border.
+In theory, simple_GateArrayInterrupt.vhd shall have :
+	vsync_azrael<=etat_monitor_vhsync(2);
+	hsync_azrael<=etat_monitor_hsync(2);
+	if hSyncCount=2+4 then
+In practice here we have :
+	vsync_azrael<=etat_monitor_vhsync(1);
+	hsync_azrael<=etat_monitor_hsync(1);
+	if hSyncCount=1+4 then
+This way screen is nicely centered but CPCWiki rule "The HSYNC is modified before being sent to the monitor. It happens 2us after the HSYNC from the CRTC and lasts 4us when HSYNC length is greater or equal to 6.
+If R2=46, and HSYNC width is 14 then monitor hsync starts at 48 and lasts until 51." is not respected.
+Test about centering screen are done using "BORDER 0", this way border is ignored and does interact with HSYNC/VSYNC screen synchronisation.
