@@ -1,37 +1,32 @@
-This is a port of fpgagen - The  Genesis / Megadrive core to additional platform(s), currently MiST is supported.
+This is a port of fpgagen - Genesis/Megadrive core to additional platform(s)
+MiST, Turbo Chameleon 64, Altera/Terasic DE2 board
 
 The core shall be considered a work in progress as there are multiple issues:
-1. The monitor looses sync during game loading, just wait until the picture appears again
-2. Sprite flickering on heavy scenes, or on large sprites
-3. No sound yet, the Z80 is in but not any sound chip
-4. Rom file formats supported are .bin and .gen, no support for .smd files
-5. 15 kHz video mode not supported yet, only VGA works
-6. Only joystick B is connected, joystick swapping not supported yet
-7. Build for Altera DE1 board is currently broken
+1. Sprite flickering on heavy scenes, or on large sprites
+2. No LFO modulation of the FM sound
+3. Rom file formats supported are .bin and .gen, no support for .smd files
+4. The design does not fit on the Altera/Terasic DE1 board anymore
 
 ==== Installing the core ====
 If you are not buidling the core, copy the following files to the root of your sdcard:
-fpgagen-alpha_20170116.rbf
-Config_VGA/FPGAGEN.CFG
+fpgagen.rbf
+Config_VGA/FPGAGEN.CFG, or Config_TV/FPGAGEN.CFG (for 15 kHz video)
 
-Then rename the file fpgagen-alpha_20170116.rbf to core.rbf
+Then rename the file fpgagen.rbf to core.rbf
 
 ==== Building and installing the core ====
-Get the sources:
-git clone https://github.com/phoboz/fpgagen
-
-The project depends on a submodule (ZPUFlex), so you need to type in the following commands after checkout.
+The project depends on submodules, so you need to type in the following commands after checkout.
 
 cd fpgagen
 git submodule init
 git submodule update
 
-The load the Quartus II project file, and build:
+Then load the Quartus II project file, and build:
 fpgagen/syn/mist/fpgagen.qpf
 
 When you have built the core, copy the following files to the root of your sdcard:
 fpgagen/syn/mist/fpgagen.rbf
-fpgagen/Configs/VGA/FPGAGEN.CFG
+fpgagen/Configs/VGA/FPGAGEN.CFG, or fpgagen/Configs/TV/FPGAGEN.CFG (for 15 kHz video)
 
 Then rename the file fpgagen.rbf to core.rbf
 
