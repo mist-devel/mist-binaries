@@ -1,0 +1,4 @@
+Robustness : less compiling warnings
+- less "others=>'Z'" useless wires
+- removed some useless variables/functions
+- renamed MIST_CLOCKS instance "clock" instead of "inst13" in main schematic, FPGAmstrad_MiST_top.sdc clock|altpll_component|auto_generated|pll1|clk[2] formula seems now applied.
