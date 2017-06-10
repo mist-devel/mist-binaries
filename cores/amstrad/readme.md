@@ -6,7 +6,7 @@ Please read the cores [Wiki](http://github.com/mist-devel/mist-board/wiki/CoreDo
 Quick start
 -----------
 
-Copy the latest [core](https://github.com/mist-devel/mist-binaries/raw/master/cores/amstrad/amstrad_151013_r004.7.2.rbf) onto an FAT32 formatted SD card and rename it to `core.rbf`.
+Copy the latest [core](https://github.com/mist-devel/mist-binaries/raw/master/cores/amstrad/amstrad_170610_r005.8.14.3.rbf) onto an FAT32 formatted SD card and rename it to `core.rbf`.
 
 Then copy at least the following ROM files into the root directory of your SD card:
   - [AMSDOS.e07](https://github.com/mist-devel/mist-binaries/raw/master/cores/amstrad/ROMs/AMSDOS.e07)
