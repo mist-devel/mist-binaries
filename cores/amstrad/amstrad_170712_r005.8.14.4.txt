@@ -1,0 +1,5 @@
+Green OSD while screen is in green mode.
+
+Ligther pixels while bootloading : more luck to have a centered screen with some stupid screens.
+
+Another tip : pressing page-up (the quick reset button) during a long time force ligther pixels (usefull when using multi-core using a stupid screen : do switch core, do press, do turn off/on screen, do unpress, tadam !)
