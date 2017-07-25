@@ -3,4 +3,4 @@ Green OSD while screen is in green mode.
 800x600@71.18Hz
 Tested on SAMSUNG 16/9 "SyncMaster B2430" VGA, image incorrect until you press "AUTO" button at bottom of screen.
 
-To test.
+Tested OK on 4/3.
