@@ -1,0 +1,5 @@
+Using T80se.T2Write=1 better scores at WinAPE plustest.dsk testbench Z80 instructions timing
+MEM_wr=slow (theory value, quick is a hacked value accelerating MEM_wr)
+
+Still Rising demo : less garbage pixels, can be run completly using MEM_wr=slow
+Logon's run - 3D meets the aging bits : better, can be run completly using MEM_wr=slow
