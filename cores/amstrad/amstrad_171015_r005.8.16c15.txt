@@ -1,0 +1,10 @@
+A fork of r005.8.16c3 (r005.8.16c4 is invalidated)
+A Principe Of Concept applied to correct instruction timing one per one (I just applyed it to 2A instruction, that is them ok under plustest.dsk - "testbench 5")
+
+Removed "MEM_wr:slow|quick" and replaced by "VGA:vram72Hz|scandb50Hz".
+scandb50Hz is a merge of a strong very old work (rOO5.0c18 2015) around scandoubler, now I have enougth place to put both implemented (PS : mode TV is still here, see scandoubler in mist.ini)
+I don't like personnaly scandoubler with CPC, because it doesn't run fine with basic mode 2.
+But as it permits showing the background flying 1943 airplane on "Logon's run - 3D meets the aging bits 2017" demo, it's cool to keep this feature.
+It will certainly also permits to progress with graphicals testbenchs also.
+
+It's still in progress, but some would have lot of fun playing with scandb50Hz.
