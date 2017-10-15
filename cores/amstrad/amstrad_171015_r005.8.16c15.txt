@@ -7,4 +7,6 @@ I don't like personnaly scandoubler with CPC, because it doesn't run fine with b
 But as it permits showing the background flying 1943 airplane on "Logon's run - 3D meets the aging bits 2017" demo, it's cool to keep this feature.
 It will certainly also permits to progress with graphicals testbenchs also.
 
++ scandoubler green
+
 It's still in progress, but some would have lot of fun playing with scandb50Hz.
