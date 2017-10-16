@@ -1,0 +1,32 @@
+vague 2, instruction timing, 8 instructions still "unvalid"
+
+-Battro demo OK.
+-Logon's run - meets the aging bits : space invaders is better centered.
+-Trailblazer - left palette offset is now OK.
+
+simple_GateArrayInterrupt.vhd
+constant latences:LATENCE_ARRAY :=(
+	16=> 2, --x"10" DJNZ, e
+	34=>0, --x"22" LD (nn), HL, ok using MEM_wr:low ?
+	42=>2, --x"2A" validated LD HL, (nn)
+	192=> 1, --unvalided x"C0" RET nz : RET cc, inverse of RET z.
+	197=>0, --x"C5" PUSH bc : PUSH qq (same as F5), ok using MEM_wr:low
+	199=>1, --x"C7" RST 00h : RST p.
+	200=> 1, --unvalided x"C8" RET z : RET cc.
+	207=>1, --x"CF" RST 08h : RST p.
+	208=> 1, --unvalided x"D0" RET nc : RET cc, inverse of RET c.
+	213=>0, --x"D5" PUSH de : PUSH qq (same as F5), ok using MEM_wr:low
+	215=>1, --x"D7" RST 10h : RST p.
+	216=> 1, --unvalided x"D8" RET c : RET cc.
+	223=>1, --x"DF" RST 18h : RST p.
+	224=> 1, --unvalided x"E0" RET po : RET cc, inverse of RET pe.
+	229=>0, --x"E5" PUSH hl : PUSH qq (same as F5), ok using MEM_wr:low
+	231=>1, --x"E7" RST 20h : RST p.
+	232=> 1, --unvalided x"E8" RET pe : RET cc.
+	239=>1, --x"EF" RST 28h : RST p.
+	240=> 1, --unvalided x"F0" RET p : RET cc, inverse of RET m.
+	245=>0, --x"F5" PUSH af : PUSH qq, ok using MEM_wr:low
+	247=>1, --x"F7" RST 30h : RST p.
+	248=> 1, --unvalided x"F8" RET m : RET cc.
+	255=>1, --x"FF" RST 38h : RST p.
+	others=>0);
