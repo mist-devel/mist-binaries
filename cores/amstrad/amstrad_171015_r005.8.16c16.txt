@@ -10,3 +10,7 @@ It will certainly also permits to progress with graphicals testbenchs also.
 + scandoubler green
 
 It's still in progress, but some would have lot of fun playing with scandb50Hz.
+
+r005.8.16c15 and r005.8.16c16 are the same, c16 is the one with "scandoubler green" implemented on it in fact.
+
+r005.8.16c20 does pass all plustest's 5th testbench, but is not enough mature for me yet.

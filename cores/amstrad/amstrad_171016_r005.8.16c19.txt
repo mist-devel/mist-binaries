@@ -1,2 +1,0 @@
-WinAPE plustest.dsk 's 5 testbench does pass (instruction timing)
-WakeUp! does detect CRTC0 without saying "Emulators sucks".
