@@ -1,0 +1,3 @@
+Edge of WAIT_n generator completly revisited, WAIT_n are now inserted before 2nd T.
+LatencesCPC.java => full theorical/documented WAIT_n generator delays added, somes plustest.dsk testbench does fail, but in first range of instructions, it's not about bad value of delaying : all instruction are covered by original doc versus plustest testbench results on true CPC. Problem is somewhere else.
+No edge for IO_ACK readen by gatearray, just a state approch => old plustest.dsk testbench is back : it does pass. No influence into plustest.dsk, so problem seems not by here also.
