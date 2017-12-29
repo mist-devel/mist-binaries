@@ -15,7 +15,7 @@ The OSD is called by F12 key.
 
 When the Z1013 is running, you can load .z80-files via the OSD direct into the memory.
 Name, type, load address, end address and start address of the loaded file is show on top of screen.
-To start a loaded progem use *J <start address>*.
+To start a loaded progem use **J <start address>**.
 The original keyboard layout is a littlebit strange, so expect unusal keys to control the games.
 
 The Z1013 core was developed and sucessfully tested with ARM firmware version ATH160123.
@@ -25,7 +25,7 @@ The Z1013 core was developed and sucessfully tested with ARM firmware version AT
 - 16kByte RAM
 - keyboard input (switchable layout en/de)
 - file load from SD card for z80-files with headersave format
-- switchable color scheme black&whith (original) and blue/yellow
+- switchable color scheme black&white (original) and blue/yellow
 
 
 ## Limitations
