@@ -9,13 +9,15 @@ The original Z1013 was sold as a kit (without case and power supply).
 This Z1013.01 emulation use 2 MHz clock frequency and is equipped with 16 kByte RAM.
 
 ### Buttons
-| left button   | reset MiST (reload core from SD card)
-| middle button | open/close OSD (on screen display)
-| right button  | reset Z1013
+| button | function
+| ---    | ---
+| left   | reset MiST (reload core from SD card)
+| middle | open/close OSD (on screen display)
+| right  | reset Z1013
 
 
 ### OSD options
-The OSD is called by F12 key.
+The OSD is called by F12 key (or the middle button on MiST).
 
 | feature           | values
 | ---               | ---
