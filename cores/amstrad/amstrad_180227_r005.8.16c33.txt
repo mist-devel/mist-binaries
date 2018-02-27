@@ -1,0 +1,5 @@
+Merged with r005.8.15.2 :
+- same OSD menu, with scandb50Hz|vram72Hz option
+- scanlines is always ON (option removed from OSD)
+- here OSD WAIT_n:quick|slow is in fact the same implementation than last MEM_wr:quick|slow
+- DEMO "Logon's run - 3D meets the aging bits" is back (OSD VGA:scandb50Hz & WAIT_n:slow)
