@@ -1,6 +1,0 @@
-Instructions using 5T during M1 cycle does need 2 WAIT_n insertion. Problem is that I don't know exactly when inserting them,
-Resulting WinAPE plustest.dsk testbench Z80 instructions timing border effect (previous instruction tested saying "I'm incorrect" but it was a correct one)
-MEM_wr=slow (theory value, quick is a hacked value accelerating MEM_wr)
-
-Still Rising demo : no more garbage pixels in plasma using MEM_wr=slow
-30YMD : you can now use the main menu "cursor" using MEM_wr=slow
