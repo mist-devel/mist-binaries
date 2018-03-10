@@ -73,6 +73,45 @@ MiST additions:
 
 ![Z1013 with OSD (center), online help (right) and status line (top)](https://raw.githubusercontent.com/boert/Z1013-mist/master/documentation/Screenshot_Z1013_on_MiST.jpg)
 
+## First example
+Enter the following lines on the monitor prompt:
+```
+M 300
+3E 00
+21 00 EC
+11 01 EC
+01 00 04
+77
+ED B0
+3C
+C2 02 03
+FF
+;
+J 300
+```
+
+### Explanation
+The Z1013 is based on a Z80/U880D CPU. It can be directly programmed with Z80 opcodes.
+```M 300``` starts editing the memory:
+```
+LOC   OBJECT CODE   LINE   STMT SOURCE CODE
+                       1      1         org     00300h  ; start the program at address 300h
+                       2      2
+0300  3e 00            3      3         ld a, 000h      ; clear register A
+                       4      4 next:
+0302  21 00 ec         5      5         ld hl, 0ec00h   ; EC00h = screen buffer
+0305  11 01 ec         6      6         ld de, 0ec01h   ; 
+0308  01 00 04         7      7         ld bc, 00400h   ; 32x32 = size of screen
+030b  77               8      8         ld (hl), a      ; set first position to reg A
+030c  ed b0            9      9         ldir            ; fill complete screen with A
+030e  3c              10     10         inc a           ; next character
+030f  c2 02 03        11     11         jp nz, next     ; loop through all characters
+0312  ff              12     12         rst 38h         ; jump back to operating system
+```
+The ```;``` stops editing.
+With ```J 300``` (jump) the program is started at address 300h.
+
+
 ## Project structure
 
 | Directory              | remark 
