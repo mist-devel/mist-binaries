@@ -1,5 +1,0 @@
-DEMO "Logon's run - 3D meets the aging bits" is OK
-Z80 latences array using integers (0 1 2), in order to prove that plustest'instruction timing test is not suffisant here : adding latences does pass OK the testbench but "Logon's run" doesn't pass in this case.
-Not theorical (from documented instructions in doc) latences are ones not commented as "human calibrate"
-
-So problem is outside of this testbench area.

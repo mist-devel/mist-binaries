@@ -1,2 +1,0 @@
-Some Sorgelig ideas merged (around T80 itself and also use of RFSH_n wire)
-HACK_Z80=false in main schematics... it's better for enabling correctly the new version of WAIT_n generator :/
