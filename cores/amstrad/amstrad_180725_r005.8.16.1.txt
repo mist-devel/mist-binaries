@@ -2,3 +2,5 @@ WAIT_n generator seems pass quick good plustest.dsk instruction timing test (exc
 + PhX is quite nice using options WAIT_n:slow VGA:vram72Hz.
 + Logon's run - 2D meets the aging bits still passing with options : WAIT_n:slow VGA:scandb50Hz
 Thanks Sorgelig to get me back on this project :)
+
++ Pinball Dreams OK
