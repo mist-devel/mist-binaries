@@ -1,0 +1,5 @@
+Merged with r005.8.16c33 :
+- same OSD menu, with scandb50Hz|vram72Hz option
+- scanlines is always ON (option removed from OSD)
++ Logon's run - 2D meets the aging bits passing with options : WAIT_n:slow VGA:scandb50Hz
+- here OSD WAIT_n:quick|slow is using the new implementation (not yet calibrated completely) vs plustest.bin Instruction Timing testbench

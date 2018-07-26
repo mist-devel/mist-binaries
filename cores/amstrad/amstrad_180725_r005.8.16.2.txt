@@ -1,0 +1,8 @@
+WAIT_n generator seems pass quick good plustest.dsk instruction timing test (except ED B1/B9 that is not implemented in T80)
++ PhX is quite nice using options WAIT_n:slow VGA:vram72Hz.
++ Logon's run - 2D meets the aging bits still passing with options : WAIT_n:slow VGA:scandb50Hz
+Thanks Sorgelig to get me back on this project :)
+
++ Pinball Dreams OK
+
++ OSD options : VGA:vram72Hz|scanlines72Hz|scandb50Hz (scanlines does turn back into an option, as asked by DanyPPC)
