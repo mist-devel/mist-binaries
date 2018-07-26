@@ -6,3 +6,5 @@ Thanks Sorgelig to get me back on this project :)
 + Pinball Dreams OK
 
 + OSD options : VGA:vram72Hz|scanlines72Hz|scandb50Hz (scanlines does turn back into an option, as asked by DanyPPC)
+
++ commando
