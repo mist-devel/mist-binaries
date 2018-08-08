@@ -1,0 +1,5 @@
+firmware_180808
+===============
+- Support more than 7 OSD options.
+- Support '?' in requested file extensions.
+
