@@ -1,0 +1,3 @@
+firmware_180810
+===============
+- Support 2 mounted images at the same time.
