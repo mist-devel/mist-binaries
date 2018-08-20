@@ -29,11 +29,15 @@ How to load a file
 The ZX81 originally used cassette tapes for mass storage. ZX8X supports
 instant loading of tape images.
 
-To load a program select a *.p program from the MiST menu using F12.
-In ZX8X core enter 'load ""' by first pressing the 'j'
+To load a program select a .p program (ZX81) or .o (ZX80) from the MiST 
+menu using F12. In ZX8X core enter 'load ""' by first pressing the 'j'
 key and then two times SHIFT-'p'. Press return. The game should load,
 some games will start automatically, others require you to enter the 
 "run" command by pressing the 'r' key and return.
+
+If there's no opened file, the standard ROM load routine is executed, 
+and it can receive tape data from the UART port. Reset (ALT-F11 or the 
+Reset OSD option) closes the .o or .p file.
 
 
 Limitations
