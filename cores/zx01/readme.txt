@@ -1,6 +1,8 @@
 ZX80/ZX81 core for MiST quick start guide
 -----------------------------------------
 
+The source code is here https://github.com/gyurco/ZX8X_MiST
+
 Update to the latest firmware (using e.g. a Atari ST core) and copy the 
 latest ZX8X core to SD card. Name the core "core.rbf" and place it in the
 SD cards root.
