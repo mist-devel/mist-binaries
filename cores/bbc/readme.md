@@ -45,7 +45,7 @@ are mapped to max/min values.
 History
 -------
 
-* [bbc_180823.rbf]
+* bbc_180823.rbf
   - Replaced the CPU and the VIA from hoglet67's (David Banks) repo
   - Changed sd_card and user_io's async clock usage (inspiration from Sorgelig's mist_io)
   - Changed SMMC rom to MMFS, so an SDHC card with FAT32 (up to 8GB) can be used, too. However it's more convenient to copy the BEEB.MMB to a FAT image called bbc.vhd, and copy this to the SD card's root folder.
