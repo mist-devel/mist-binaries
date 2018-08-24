@@ -16,7 +16,7 @@ History
 * [spectrum_20180804.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/spectrum/spectrum_20180804.rbf)
   - Many fixes and enhancements.
 
-* [spectrum_160514.rbf] (https://github.com/mist-devel/mist-binaries/raw/master/cores/spectrum/old/spectrum_160514.rbf)
+* [spectrum_160514.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/spectrum/old/spectrum_160514.rbf)
   - Various fixes and better timings for 128K and 48K modes.
 
 * [spectrum_151230.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/spectrum/old/spectrum_151230.rbf)
