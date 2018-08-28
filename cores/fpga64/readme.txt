@@ -1,11 +1,20 @@
 FPGA64 on MIST
 --------------
 
-These are ports of the FPGA64 C64 core by Peter Wendrich distributed with
-his kind permission. The latest ports are based in Dar FPGAs work and includes
+There are two cores to choose from: fpga64 (6581 SID) or c64_8580 (8580 SID).
+
+This is the port of the FPGA64 C64 core by Peter Wendrich distributed with
+his kind permission. The later ports are based on Dar FPGAs work and includes
 a c1541 floppy implementation.
 
-The c1541 enabled core needs at least firmware_150715_r1207.
+The c1541 enabled core needs at least firmware_150715_r1207, but not later than
+170412 due to the change in D64 handling.
+
+The c64_8580 is Gehstock's port using the 8580 SID chip. This requires
+firmware 180810 or later.
+
+Not sure, then choose c64_8580 as this is a later port and supports the
+latest firmware.
 
 Usage
 -----
