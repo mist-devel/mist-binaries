@@ -1,16 +1,19 @@
 BBC Micro for MIST
 ==================
 
-This is a port of Mike Sterlings great [BBC Micro on FPGA](http://www.mike-stirling.com/retro-fpga/bbc-micro-on-an-fpga/) with major changes by Stephen Leary. 
+This is a port of Mike Sterlings great [BBC Micro on FPGA](http://www.mike-stirling.com/retro-fpga/bbc-micro-on-an-fpga/) with major changes by Stephen Leary and David Banks. 
 
 SD card
 -------
 
-This core includes os1.2, basic2 and SuperMMC. It implements a
+This core includes os1.2, basic2 and MMFS. It implements a
 [MMBEEB](http://swhs.home.xs4all.nl/bbc/mmbeeb/) compatible interface
 and can use it to load software from SD card. The limitations of the original
-mmbeed still apply and e.g. the SD card needs to be FAT16 formatted and the
-'beeb.mmb' file needs to be written first to the SD card before anything else.
+MMFS still apply and e.g. the SD card needs to be FAT16/FAT32 (without partitions)
+formatted and the 'beeb.mmb' file needs to be written first to the SD card before anything else.
+Also the size limit of the file system is 8 GB. However you can make an image file, called bbc.vhd,
+"format" this image to FAT16, and copy the BEEB.MMB into this image. This way you can simply
+put the bbc.vhd file to the root of the SD card, next to the core.
 
 One such file can be found at [here](http://stardot.org.uk/files/mmb/higgy_mmbeeb-v1.0.zip).
 
