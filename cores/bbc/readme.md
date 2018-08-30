@@ -37,13 +37,17 @@ Four RAM banks are present in slots 4,5,6 and 7.
 Keyboard
 --------
 
-The BREAK key maps to the PrintScr key.
+The BREAK key maps to the PrintScr key. BREAK is effectively the reset button.
 
 Joysticks
 ---------
 
 Two analog joysticks are supported on ADC channels 1-4. Digital joysticks
 are mapped to max/min values.
+
+Games
+-----
+New to the BBC? Here's a selection of the best games to try: Arcadians, Chuckie Egg, Elite, Monsters, Planetoid, Snapper.
 
 History
 -------
