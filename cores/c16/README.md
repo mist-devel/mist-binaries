@@ -13,13 +13,10 @@ Copy the latest core version onto a SD card and rename it to ```core.rbf```.
 Alternate kernals/NTSC
 ----------------------
 
-By default the core will boot the built-in PAL kernal which will run
-the C16 in PAL video mode. Thus your screen needs to support 50Hz PAL
-timing. In order to get a NTSC setup you need to place a c16 NTSC
-kernal on the SD card and rename to ```C16.ROM```. This kernal will then be
-uploaded into the core on boot time and replace the built-in PAL
-kernal. This can also be used to run the kernal version of the diag264
-roms.
+There are two versions of the core built, one for PAL and one for NTSC systems.
+They contain the appropriate kernal versions, so no need to load it separately.
+However you can replace the kernal (e.g. with the diag264 roms) by putting it
+to the SD Card and rename it to ```C16.ROM```.
 
 Loading and running programs
 ----------------------------
@@ -51,8 +48,13 @@ scandoubler. Using the [appropriate cable](https://github.com/mist-devel/mist-bo
 History
 -------
 
-* [c16_160811.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_160811.rbf)
-  - Fixed C1541 disk image chaneg detection
+* [c16_180830_PAL.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_180830_PAL.rbf),
+  [c16_180830_NTSC.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_180830_NTSC.rbf)
+  - Updated C1541 to a read-write version
+  - Updated the CPU to an improved version of the T65 (both the machine and C1541)
+
+* [c16_160811.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/old/c16_160811.rbf)
+  - Fixed C1541 disk image change detection
 
 * [c16_160801-2.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/old/c16_160801-2.rbf)
   - C1541 floppy disk implementation (read only)
