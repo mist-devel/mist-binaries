@@ -16,6 +16,8 @@ firmware 180810 or later.
 Not sure, then choose c64_8580 as this is a later port and supports the
 latest firmware.
 
+Gehstock's source https://github.com/Gehstock/Mist_FPGA/tree/master/Commodore%20-%2064_MiST
+
 Usage
 -----
 
