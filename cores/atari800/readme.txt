@@ -1,9 +1,9 @@
 Atari800 core for MiST by Mark Watson
 
 (Website looks to have been removed!)
-Original Binaries - http://www.scrameta.net/autobuild/
-Source - http://www.scrameta.net/autobuild/
-Manual - http://ssh.scrameta.net/Atari%20800%20FPGA%20Manual.pdf
+Original Binaries - http://www.64kib.com/autobuild/
+Source - http://www.64kib.com/atarixlfpga_svn/trunk/atari_800xl/
+Manual - http://www.64kib.com/Atari%20800%20FPGA%20Manual.pdf
 Thread - http://atariage.com/forums/topic/213827-potential-new-hardware/
 
 Quickstart:
