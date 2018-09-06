@@ -1,6 +1,5 @@
 Atari800 core for MiST by Mark Watson
 
-(Website looks to have been removed!)
 Original Binaries - http://www.64kib.com/autobuild/
 Source - http://www.64kib.com/atarixlfpga_svn/trunk/atari_800xl/
 Manual - http://www.64kib.com/Atari%20800%20FPGA%20Manual.pdf
