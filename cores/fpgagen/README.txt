@@ -13,7 +13,7 @@ tg68 CPU core with the latest version of the tg68k. This should have
 no functional changes. But it might be worthwile to check both versions
 in case of compatibility issues.
 
-Furthermore that version adds support for [YPbPr cables](https://github.com/mist-devel/mist-board/wiki/YPbPr_Cable).
+Furthermore that version adds support for YPbPr cables (see https://github.com/mist-devel/mist-board/wiki/YPbPr_Cable).
 
 ==== Installing the core ====
 This core does not support the MiST menu, i.e. F12 key.
