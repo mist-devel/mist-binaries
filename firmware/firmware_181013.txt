@@ -1,0 +1,3 @@
+firmware_181013
+===============
+- Support extra buttons on USB gamepads/joysticks

@@ -15,12 +15,12 @@ in case of compatibility issues.
 
 Furthermore that version adds support for YPbPr cables (see https://github.com/mist-devel/mist-board/wiki/YPbPr_Cable).
 
+Newer versions are using the standard MiST OSD and ROM loader.
+
 ==== Installing the core ====
-This core does not support the MiST menu, i.e. F12 key.
 
 Copy the following files to the root of your sdcard:
-- Copy the latest rbf file (i.e. fpgagen-beta_20180420.rbf) and rename it core.rbf
-- Copy Config_VGA/FPGAGEN.CFG, or Config_TV/FPGAGEN.CFG (for 15 kHz video) to FPGAGEN.CFG
+- Copy the latest rbf file (i.e. fpgagen-beta_20180930.rbf) and rename it core.rbf
 - Copy mist.ini - This remaps the controller buttons to Buffalo SNES, and you can customise
 it to your controller.
 - Copy your .bin games to the sdcard.

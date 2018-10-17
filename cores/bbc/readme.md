@@ -11,9 +11,8 @@ MMBEEB (SD card to user port) compatible interface
 and can use it to load software from SD card. The limitations of the original
 MMFS still apply and e.g. the SD card needs to be FAT16/FAT32 (without partitions)
 formatted and the 'beeb.mmb' file needs to be written first to the SD card before anything else.
-Also the size limit of the file system is 8 GB. However you can make an image file, called bbc.vhd,
-"format" this image to FAT16, and copy the 'beeb.mmb' into this image. This way you can simply
-put the bbc.vhd file to the root of the SD card, next to the core.
+Also the size limit of the file system is 8 GB. However you can copy 'beeb.mmb' to the SD card, rename
+it to bbc.vhd and MMFS will use it without the need of a FAT filesystem.
 
 One such file can be found at [here](http://stardot.org.uk/files/mmb/higgy_mmbeeb-v1.0.zip).
 
