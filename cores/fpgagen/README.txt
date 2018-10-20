@@ -3,10 +3,11 @@ This is a port of fpgagen - Genesis/Megadrive core. Original project
 Robinsonb5 on forum http://www.atari-forum.com/viewtopic.php?f=115&t=31029&start=175#p343793 
 has done additional porting work for the MiST.
 
-The core shall be considered a work in progress as there are multiple issues:
-1. Sprite flickering on heavy scenes, or on large sprites
-2. No LFO modulation of the FM sound and other FM sound issues
-3. Rom file formats supported are .bin and .gen, no support for .smd files
+Some usage tips:
+
+1. The core rquires at least firmware version 20181013.
+2. Rom file formats supported are .bin and .gen, no support for .smd files
+3. If the controls seems to not work, try switch to 3 buttons mode in the OSD
 
 The fpgagen-beta_20180910_tg68k+ypbpr.rbf core replaces the very old
 tg68 CPU core with the latest version of the tg68k. This should have
