@@ -43,6 +43,7 @@ it to your controller.
 
   - [Original core by Torlus](https://github.com/Torlus/fpgagen)
   - [TG68K CPU core by Tobias Gubener](https://opencores.org/project/tg68)
+  - [FX68K CPU core by Jorge Cwik]
   - [T80 CPU core by Daniel Wallner](https://opencores.org/project/t80/overview)
   - [Initial MIST port by Robinsonb5](https://github.com/robinsonb5/fpgagen)
   - [JT12 YM2612 sound core by Jose Tejada](https://github.com/jotego/jt12)
