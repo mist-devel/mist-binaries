@@ -1,0 +1,3 @@
+firmware_181013
+===============
+- Skip parsing of the extension part of the first (invisible) entry
