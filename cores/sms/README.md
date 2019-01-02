@@ -16,6 +16,9 @@ fire button since many SMS games expect a second fire button.
 History
 -------
 
+* [sms_190102.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190102.rbf)
+  - FM sound and many fixes, based on the MiSTer port.
+
 * [sms_160603.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_160603.rbf)
   - Audio clock adjustment
 
