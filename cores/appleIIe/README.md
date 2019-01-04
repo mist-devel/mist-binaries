@@ -4,6 +4,7 @@ This the MiST port of a reconstruction of an 1980s-era Apple//e (enhanced),
 based on the Apple ][+ implemented in VHDL for FPGAs.
 * Original for the DE2: http://www1.cs.columbia.edu/~sedwards/apple2fpga/
 * Port for the MiST: http://ws0.org/tag/apple2/
+* Current [source code](https://github.com/gyurco/mist-cores/tree/master/apple2fpga)
 
 Features:
 - 6502 or 65C02 CPU
@@ -20,5 +21,5 @@ the disk automatically. Use dsk2nib to convert AppleII disk images to .nib image
 The disk emulation is read only.
 
 If you press reset (the right button on the MiST) you'll enter Applesoft with the ] prompt.
-From here you have some limited commands. See: http://www.landsnail.com/a2ref.htm
-If you want to boot another disk choose a .nib image via the OSD and choose Cold Reset
+From here you have some limited commands. See: http://www.landsnail.com/a2ref.htm.
+If you want to boot another disk choose a .nib image via the OSD and choose Cold Reset.
