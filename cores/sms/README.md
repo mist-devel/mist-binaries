@@ -1,5 +1,5 @@
-Sega Master System Core for MiST
---------------------------------
+Sega Master System and Game Gear Core for MiST
+----------------------------------------------
 
 This core is a port of Bens Sega Master System implementation for the
 Papilio. See http://fpga-hacks.blogspot.de/
@@ -13,8 +13,14 @@ started immediately.
 It's recommended to use a USB joystick or gamepad with more the one
 fire button since many SMS games expect a second fire button.
 
+Source code lives together with the MiSTer port:
+https://github.com/MiSTer-devel/SMS_MiSTer
+
 History
 -------
+
+* [sms_190105.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190105.rbf)
+  - Fixed a lot of bugs.
 
 * [sms_190102.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190102.rbf)
   - FM sound and many fixes, based on the MiSTer port.
