@@ -4,12 +4,13 @@ This the MiST port of a reconstruction of an 1980s-era Apple//e (enhanced),
 based on the Apple ][+ implemented in VHDL for FPGAs.
 * Original for the DE2: http://www1.cs.columbia.edu/~sedwards/apple2fpga/
 * Port for the MiST: http://ws0.org/tag/apple2/
-* Current [source code](https://github.com/gyurco/mist-cores/tree/master/apple2fpga)
+* Current [source code](https://github.com/gyurco/apple2efpga) on GitHub
 
 Features:
 - 6502 or 65C02 CPU
 - disk loading via osd (no write support yet)
 - joystick support
+- tape input from the UART RX pin
 - 15kHz TV and 30kHz VGA support (optional YPbPr output)
 - scanlines
 - color, amber, green and black&white monitor
