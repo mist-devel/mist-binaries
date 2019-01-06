@@ -1,4 +1,4 @@
-A colecovision core for the MiST
+A Colecovision and SG-1000 core for the MiST
 ---------------------------------------------------------------------------------
 
 Buttons:
@@ -13,6 +13,8 @@ Buttons:
 
 Support for the MegaCart (ROMs up to 1MB) and SuperGameModule (32k RAM, AY-8910 sound chip) added
 from the 181127 version.
+
+SG-1000 mode supports the Dahjee Type A RAM expansion module automatically.
 
 Homepage:
 http://ws0.org/tag/colecovision/
