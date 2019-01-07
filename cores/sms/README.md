@@ -18,6 +18,9 @@ https://github.com/MiSTer-devel/SMS_MiSTer
 
 History
 -------
+* [sms_190107.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190107.rbf)
+  - Added Korean mapper (Sangokushi 3, Dodgeball King)
+  - Fixed some bugs
 
 * [sms_190105.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190105.rbf)
   - Fixed a lot of bugs.
