@@ -16,8 +16,29 @@ fire button since many SMS games expect a second fire button.
 Source code lives together with the MiSTer port:
 https://github.com/MiSTer-devel/SMS_MiSTer
 
+Backup RAM support
+------------------
+
+Some game carts have a battery-backed RAM, where high scores or other states
+are preserved. You can use this on MiST with a bit of preparation:
+
+- Create an empty file on the SD-Card, with .sav extension (with 8192 bytes length).
+- After loading the ROM, choose "Mount *.SAV" OSD option, and select the
+  files created previously. The game will reset, after the RAM content has loaded.
+- To preserve the Backup RAM state, choose "Write Save RAM" from the OSD menu.
+  A loaded Backup RAM is indicated by the yellow LED. If it doesn't lit, saving is not
+  possible.
+
+A list of games with Backup RAM: http://www.smspower.org/Tags/MemoryBackup
+
+* Note: only 8K backup RAM is supported (maybe some carts have up to 32K, but
+  seems all uses only 8K).
+
 History
 -------
+* [sms_190111.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190111.rbf)
+  - 8K Backup RAM support
+
 * [sms_190107.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190107.rbf)
   - Added Korean mapper (Sangokushi 3, Dodgeball King)
   - Fixed some bugs
