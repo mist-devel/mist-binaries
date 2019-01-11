@@ -2,8 +2,8 @@ Port of the A2601 FPGA implementation for the MiST
 ---------------------------------------------------------------------------------
 
 Buttons:
-- F9 or right MiST button -> Start
-- F10        		  -> Select
+- Win key         -> Start
+- Alt key    		  -> Select
 - F12	 	          -> OSD 
 
 OSD
