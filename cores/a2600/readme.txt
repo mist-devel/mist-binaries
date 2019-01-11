@@ -3,12 +3,13 @@ Port of the A2601 FPGA implementation for the MiST
 
 Buttons:
 - Win key         -> Start
-- Alt key    		  -> Select
-- F12	 	          -> OSD 
+- Alt key         -> Select
+- F12             -> OSD
 
 OSD
 - Select roms from the sd card (needs extension .a26 or .bin)
 - Special extensions (.e0, .3f, .fe) allows to force a specific mapper
+- P2 extension for Pitfall II Lost Caverns allows to use the DPC chip
 - Switch between ntsc/pal and color/b&w
 - Select difficulty for left and right (140723)
 
