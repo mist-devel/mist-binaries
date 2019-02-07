@@ -11,7 +11,8 @@ a c1541 floppy implementation.
 - Cartridge support
 - RGB and YPbPr output, optionally with scandoubler (VGA)
 - 6581 and 8580 SID support
-- Stereo 6581 at D420 and D500 addresses
+- Stereo SIDs at D420 and D500 addresses
+- Pseudo stereo mode (SID 6580 on left, 8580 on right, driven by the same data)
 - 4 player interface support (up to 4 joysticks)
 
 ## Usage
@@ -27,6 +28,6 @@ memory of the embedded c64. After injection the program can simply be
 started using the basic "run" command. As shown in the beginning of this
 video: https://www.youtube.com/watch?v=tnboiECYXVo
 
-The kernal+basic+1541 ROMs can be overriden by putting a new C64.rom to
-the root folder of the SD card. The file size can be 16k (kernal+basic)
-or 32k (kernal+basic+1541).
+The basic+kernal+1541 ROMs can be overriden by putting a new C64.rom to
+the root folder of the SD card. The file size can be 16k (basic+kernal)
+or 32k (basic+kernal+1541).
