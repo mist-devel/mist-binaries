@@ -22,10 +22,11 @@ appropriate JiffyDOS version.
 PAL/NTSC version
 ----------------
 
-There are two versions of the core built, one for PAL and one for NTSC systems.
-They contain the appropriate kernal versions, so no need to load them separately.
-However you can replace the kernal with alternative versions with the method
-described above.
+The TED chip can switch PAL/NTSC modes on the fly. The Kernal sets the
+appropriate register, so with changing the Kernal ROM, it is possible to switch
+the video standard. The default is PAL mode.
+You can load a new Kernal from the OSD menu, or permamently replace it
+with alternative versions with the method described above.
 
 Loading and running programs
 ----------------------------
@@ -53,9 +54,15 @@ Using a SCART TV
 
 The C16 core supports the MiST's ability to disable the built-in VGA
 scandoubler. Using the [appropriate cable](https://github.com/mist-devel/mist-board/wiki/ScartCable) the C16 core can thus drive a standard SCART TV.
+You can use [component output](https://github.com/mist-devel/mist-board/wiki/YPbPr_Cable), too.
 
 History
 -------
+* [c16_190214.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_190214_PAL.rbf)
+  - One core version for PAL/NTSC
+  - Loadable Kernal ROM from the OSD menu
+  - Disk change detection fix
+  - Bigger OSD on VGA
 
 * [c16_180905_PAL.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_180905_PAL.rbf),
   [c16_180905_NTSC.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_180905_NTSC.rbf)

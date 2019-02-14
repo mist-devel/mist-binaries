@@ -9,11 +9,13 @@ a c1541 floppy implementation.
 - Can use .CRT, .PRG and .D64 files
 - 1541 writeable floppy drive
 - Cartridge support
+- PAL/NTSC modes
 - RGB and YPbPr output, optionally with scandoubler (VGA)
 - 6581 and 8580 SID support
 - Stereo SIDs at D420 and D500 addresses
 - Pseudo stereo mode (SID 6580 on left, 8580 on right, driven by the same data)
 - 4 player interface support (up to 4 joysticks)
+- UART support (RX and TX on M,B and C pins of the User port)
 
 ## Usage
 
