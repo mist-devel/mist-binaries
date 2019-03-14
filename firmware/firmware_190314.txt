@@ -1,0 +1,6 @@
+firmware_190314
+===============
+- Same sources/functionalities than version 190303
+- Fixes some side effects supposely due to compilation tools versions (issue #60)
+- Firmware self-update capability tested ok.
+
