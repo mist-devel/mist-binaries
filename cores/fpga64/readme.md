@@ -12,6 +12,7 @@ a c1541 floppy implementation.
 - PAL/NTSC modes
 - RGB and YPbPr output, optionally with scandoubler (VGA)
 - 6581 and 8580 SID support
+- 1351 Mouse on both controller ports
 - Stereo SIDs at D420 and D500 addresses
 - Pseudo stereo mode (SID 6580 on left, 8580 on right, driven by the same data)
 - 4 player interface support (up to 4 joysticks)
