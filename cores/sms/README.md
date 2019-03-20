@@ -36,6 +36,9 @@ A list of games with Backup RAM: http://www.smspower.org/Tags/MemoryBackup
 
 History
 -------
+* [sms_190320.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190320.rbf)
+  - BIOS fix for Shadow Dancer
+
 * [sms_190111.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190111.rbf)
   - 8K Backup RAM support
 
