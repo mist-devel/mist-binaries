@@ -9,6 +9,7 @@ a c1541 floppy implementation.
 - Can use .CRT, .PRG and .D64 files
 - 1541 writeable floppy drive
 - Cartridge support
+- TAP file loading
 - PAL/NTSC modes
 - RGB and YPbPr output, optionally with scandoubler (VGA)
 - 6581 and 8580 SID support
