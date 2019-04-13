@@ -35,3 +35,10 @@ video: https://www.youtube.com/watch?v=tnboiECYXVo
 The basic+kernal+1541 ROMs can be overriden by putting a new C64.rom to
 the root folder of the SD card. The file size can be 16k (basic+kernal)
 or 32k (basic+kernal+1541).
+
+# Special keys:
+
+- F9  - Pound
+- F10 - Plus
+- F11 - Restore/Freeze
+- CTRL+F11 - Reset
