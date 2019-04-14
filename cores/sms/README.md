@@ -36,6 +36,12 @@ A list of games with Backup RAM: http://www.smspower.org/Tags/MemoryBackup
 
 History
 -------
+* [sms_190414.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190414.rbf)
+  - Extra height modes are implemented (theflynn49)
+  - Some general VPD fixes (theflynn49)
+  - Hanging Game Gear fix (theflynn49)
+  - Option to disable BIOS
+
 * [sms_190320.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190320.rbf)
   - BIOS fix for Shadow Dancer
 
