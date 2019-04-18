@@ -1,0 +1,8 @@
+firmware_190418
+===============
+- Update current joystick status in OSD USB status screen
+- Debounce virtual joystick keyboard with more than one USB joystick
+- Add Speedlink SL-650212 Competition Pro Extra USB to known devices
+- IKBD keyboard mouse emulation and pause/unpause fix
+- New ini option: joystick_emu_fixed_index
+- Buffer addressing fix and max. line length increase to 90 in ini_parser
