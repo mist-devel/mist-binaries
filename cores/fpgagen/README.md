@@ -54,7 +54,7 @@ https://forum.digitpress.com/forum/showthread.php?134961-NES-SNES-Genny-Games-wi
   5. While lot of effort went into emulating the correct VRAM access timings of the Sega VDP, it's
      still not perfect. So you can turn off this emulation with the "VRAM Speed" option. "Slow" setting
      means the VRAM access times are emulated, "Fast" when not. This might be required for Sonic I and
-     Clue.
+     Clue. Note: from core relase 20190420, it seems this setting is not needed anymore!
   6. Some carts have an SRAM or EEPROM to allow saving game states. SRAM is always enabled at 2MB (if
      the cart size < 2MB, or the game uses bank switching to page in), and you can turn on a "fake"
      EEPROM at 2MB in the OSD. For example, it allows NBA Jam TE to run. Note: use "Fake EEPROM"
