@@ -10,6 +10,7 @@ a c1541 floppy implementation.
 - 1541 writeable floppy drive
 - Cartridge support
 - TAP file loading
+- Load from real tape using the UART RX pin
 - PAL/NTSC modes
 - RGB and YPbPr output, optionally with scandoubler (VGA)
 - 6581 and 8580 SID support
@@ -36,9 +37,10 @@ The basic+kernal+1541 ROMs can be overriden by putting a new C64.rom to
 the root folder of the SD card. The file size can be 16k (basic+kernal)
 or 32k (basic+kernal+1541).
 
-# Special keys:
+## Special keys:
 
 - F9  - Pound
 - F10 - Plus
 - F11 - Restore/Freeze
 - CTRL+F11 - Reset
+- Page Up - Start/Stop tape
