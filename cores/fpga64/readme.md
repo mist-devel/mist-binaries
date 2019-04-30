@@ -11,6 +11,7 @@ a c1541 floppy implementation.
 - Cartridge support
 - TAP file loading
 - Load from real tape using the UART RX pin
+- Save to real tape through audio output
 - PAL/NTSC modes
 - RGB and YPbPr output, optionally with scandoubler (VGA)
 - 6581 and 8580 SID support
