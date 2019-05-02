@@ -49,6 +49,12 @@ in D64 format. The simply use the regular C16 methods to access the
 floppy disk. In most cases ```LOAD "*",8``` and a subsequent ```RUN```
 will be what you want.
 
+SID extension
+-------------
+
+Selectable SID versions are in the OSD menu. Enabling one of them maps
+the SID to the FD40-FD5F and FE80-FE9F addresses.
+
 Using a SCART TV
 ----------------
 
@@ -58,14 +64,19 @@ You can use [component output](https://github.com/mist-devel/mist-board/wiki/YPb
 
 History
 -------
-* [c16_190214.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_190214_PAL.rbf)
+
+* [c16_190502.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_190502.rbf)
+  - TAP file playback
+  - SID extension
+
+* [c16_190214.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/old/c16_190214.rbf)
   - One core version for PAL/NTSC
   - Loadable Kernal ROM from the OSD menu
   - Disk change detection fix
   - Bigger OSD on VGA
 
-* [c16_180905_PAL.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_180905_PAL.rbf),
-  [c16_180905_NTSC.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_180905_NTSC.rbf)
+* [c16_180905_PAL.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/old/c16_180905_PAL.rbf),
+  [c16_180905_NTSC.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/old/c16_180905_NTSC.rbf)
   - Updates and bug fixes to C1541 makes it work with every tested fastloader without timing hacks
   - Fixed PRG loader
   - All ROMs are replaceable
