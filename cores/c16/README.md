@@ -8,16 +8,15 @@ The source code of the modified version is available [in the mist-board reposito
 Usage
 -----
 
-Copy the latest core version onto a SD card and rename it to ```core.rbf```.
+Copy the latest core version onto a SD card and rename it to ```core.rbf```. Also
+copy ``C16.ROM`` to the root of the SD card.
 
-Alternative ROMs
-----------------
+ROMs
+----
 
-It's possible to replace one or all of the three ROMs (C1541, Kernal and Basic) by
-putting them in a file on the SD Card and name it to ```C16.ROM```. The format is
-C1541 + Kernal + Basic, 16k each. Partially replacing ROMs are allowed, e.g. just
-changeing the 1541's ROM to JiffyDOS, you need only a 16k ```C16.ROM``` with the
-appropriate JiffyDOS version.
+From 20190504 release, ``C16.ROM`` is required to put at the root directory of the SD-Card.
+The format of this file is C1541 + Kernal + Basic + (Function LOW + Function HIGH).
+Function ROMs are optional.
 
 PAL/NTSC version
 ----------------
@@ -65,7 +64,14 @@ You can use [component output](https://github.com/mist-devel/mist-board/wiki/YPb
 History
 -------
 
-* [c16_190502.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_190502.rbf)
+* [c16_190504.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_190504.rbf)
+  - Fix composite sync for scandoubled display
+  - ROM is moved to SDRAM to free up FPGA BRAM. This means C16.ROM is now mandatory, no more built-in ROMs!
+  - Function ROMs can be used
+  - SID 6581 filters are enabled
+  - TED sounds are a bit louder now
+
+* [c16_190502.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/old/c16_190502.rbf)
   - TAP file playback
   - SID extension
 
