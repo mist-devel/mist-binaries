@@ -64,7 +64,10 @@ You can use [component output](https://github.com/mist-devel/mist-board/wiki/YPb
 History
 -------
 
-* [c16_190504.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_190504.rbf)
+* [c16_190507.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_190507.rbf)
+  - Fix a ROM corruption issue
+
+* [c16_190504.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/old/c16_190504.rbf)
   - Fix composite sync for scandoubled display
   - ROM is moved to SDRAM to free up FPGA BRAM. This means C16.ROM is now mandatory, no more built-in ROMs!
   - Function ROMs can be used
