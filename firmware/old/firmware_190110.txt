@@ -1,0 +1,4 @@
+firmware_190110
+===============
+- Don't hardcode settings for Vid:0079, Pid:0011 controllers
+- Safety checks for mounted file reads/writes

@@ -1,4 +1,4 @@
-A colecovision core for the MiST
+A Colecovision and SG-1000 core for the MiST
 ---------------------------------------------------------------------------------
 
 Buttons:
@@ -9,7 +9,13 @@ Buttons:
 - Keyboard W        -> *
 - Arrow Keys        -> Move
 - Keyboard F12      -> OSD to select roms from the sd card (needs extension .col or .bin)
-- One player joystick support (140723)
+- Two player joystick support
+- Expansion module 2 support (steering wheel in some games)
+
+Support for the MegaCart (ROMs up to 1MB) and SuperGameModule (32k RAM, AY-8910 sound chip) added
+from the 181127 version.
+
+SG-1000 mode supports the Dahjee Type A RAM expansion module automatically.
 
 Homepage:
 http://ws0.org/tag/colecovision/

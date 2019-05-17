@@ -1,0 +1,3 @@
+firmware_180812
+===============
+- Map Atari ST keypad '(' and ')' keys to PC PrintScr and End

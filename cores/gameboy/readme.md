@@ -11,6 +11,12 @@ gameboy.rom it will be loaded by default.
 
 History:
 
+gb_190216.rbf
+-------------
+
+- Many updates
+- Game Boy Color support
+
 gb_150914.rbf
 -------------
 

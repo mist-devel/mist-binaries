@@ -33,6 +33,10 @@ Plus two additional files:
 
 RELEASE NOTES
 ====================
+minimig_mist-20190418
+
+Some internal fixes for stability
+Enable CD32 Pad support
 
 minimig_mist-20160224 (2016-02-24)
 

@@ -1,18 +1,20 @@
 BBC Micro for MIST
 ==================
 
-This is a port of Mike Sterlings great [BBC Micro on FPGA](http://www.mike-stirling.com/retro-fpga/bbc-micro-on-an-fpga/) with major changes by Stephen Leary. 
+This is a port of Mike Sterlings great [BBC Micro on FPGA](http://www.mike-stirling.com/retro-fpga/bbc-micro-on-an-fpga/) with major changes by Stephen Leary and David Banks. 
 
 SD card
 -------
 
-This core includes os1.2, basic2 and SuperMMC. It implements a
-[MMBEEB](http://swhs.home.xs4all.nl/bbc/mmbeeb/) compatible interface
+This core includes os1.2, basic2 and MMFS. It implements a
+MMBEEB (SD card to user port) compatible interface
 and can use it to load software from SD card. The limitations of the original
-mmbeed still apply and e.g. the SD card needs to be FAT16 formatted and the
-'beeb.mmb' file needs to be written first to the SD card before anything else.
+MMFS still apply and e.g. the SD card needs to be FAT16/FAT32 (without partitions)
+formatted and the 'beeb.mmb' file needs to be written first to the SD card before anything else.
+Also the size limit of the file system is 8 GB. However you can copy 'beeb.mmb' to the SD card, rename
+it to bbc.vhd and MMFS will use it without the need of a FAT filesystem.
 
-One such file can be found at [here](http://www.retrocomputers.eu/bbc/).
+One such file can be found at [here](http://stardot.org.uk/files/mmb/higgy_mmbeeb-v1.0.zip).
 
 If using the beeb.mmb file, once the BBC is booted type "*MENU" to start
 the menu. You can also set it to start automatically by setting "Auto boot"
@@ -34,7 +36,7 @@ Four RAM banks are present in slots 4,5,6 and 7.
 Keyboard
 --------
 
-The BREAK key maps to the PrintScr key.
+The BREAK key maps to the PrintScr key. BREAK is effectively the reset button.
 
 Joysticks
 ---------
@@ -42,22 +44,34 @@ Joysticks
 Two analog joysticks are supported on ADC channels 1-4. Digital joysticks
 are mapped to max/min values.
 
+Games
+-----
+New to the BBC? Here's a selection of the best games to try: Arcadians, Chuckie Egg, Elite, Monsters, Planetoid, Snapper.
+
 History
 -------
+* [bbc_190129.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_190129.rbf)
+  - Fixed the IO Voltage level (2.5V -> 3.3V)
+  - Added YPbPr output
 
-* [bbc_170227.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_170227.rbf)
+* [bbc_180823.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/old/bbc_180823.rbf)
+  - Replaced the CPU and the VIA from hoglet67's (David Banks) repo
+  - Changed sd_card and user_io's async clock usage (inspiration from Sorgelig's mist_io)
+  - Changed SMMC rom to MMFS, so an SDHC card with FAT32 (up to 8GB) can be used, too. However it's more convenient to copy the BEEB.MMB to a FAT image called bbc.vhd, and copy this to the SD card's root folder.
+
+* [bbc_170227.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/old/bbc_170227.rbf)
   - Fix broken sound.
 
-* [bbc_170226.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_170226.rbf)
+* [bbc_170226.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/old/bbc_170226.rbf)
   - Planetoid, Snapper etc now work (m6522 related games).
   - Fix SHIFT and CONTROL pausing games.
   - m6522 improvements and clock improvements.
 
-* [bbc_170221.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_170221.rbf)
+* [bbc_170221.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/old/bbc_170221.rbf)
   - RGB 15khz OSD and dull colours fixes. 
   - Castle Quest works.
 
-* [bbc_151009.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_151009.rbf)
+* [bbc_151009.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/old/bbc_151009.rbf)
   - Auto boot option
 
 * [bbc_151006.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/old/bbc_151006.rbf)

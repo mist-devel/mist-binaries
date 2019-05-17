@@ -1,0 +1,4 @@
+firmware_190517
+===============
+- Fix Amiga CD32 pad configuration
+- Fix Joystick 2 test OSD screen

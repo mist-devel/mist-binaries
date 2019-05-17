@@ -26,8 +26,11 @@ Other floppy disk images in .ST format can be selected in the OSD
 History
 -------
 
-* [core_160603.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/core_160603.rbf)
-  - Modify AmigaOS related fix to make [EmuTOS](https://sourceforge.net/projects/emutos/files/emutos/0.9.6/emutos-256k-0.9.6.zip/download) work again
+* [core_181017.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/core_181017.rbf)
+  - Make ym2149 i/o bidirectional. Fixing some games using the printer port to connect two more joysticks
+
+* [core_180908.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/old/core_180908.rbf)
+  - YPbPr component video support
 
 * [core_160129.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/mist/old/core_160129.rbf)
   - 68020 bitfield fixes and barrel shifter 
