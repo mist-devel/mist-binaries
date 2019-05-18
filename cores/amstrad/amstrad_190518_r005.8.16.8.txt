@@ -1,4 +1,5 @@
 Tape+Disc version of CPC, reading .CDT files. Inserting file does start to play the tape itself.
+The Reset Key (page up) does reset the CPC, even while running a CDT :)
 
 Fruity Franck CDT ok
 
