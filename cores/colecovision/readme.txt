@@ -17,6 +17,9 @@ from the 181127 version.
 
 SG-1000 mode supports the Dahjee Type A RAM expansion module automatically.
 
+Sega Keyboard (SK-1100) added in release 190525, effectively extending SG-1000 to SC-3000.
+Tape input from UART_RX pin also supported in this mode.
+
 Homepage:
 http://ws0.org/tag/colecovision/
 
