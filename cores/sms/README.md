@@ -36,29 +36,34 @@ A list of games with Backup RAM: http://www.smspower.org/Tags/MemoryBackup
 
 History
 -------
-* [sms_190414.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190414.rbf)
+* [sms_190524.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190524.rbf)
+  - Support for Mode2 games
+  - Support for some SG-1000 games (with standard mappers, and Mode2 only)
+  - Support for some MSX-SMS dual compatible games
+
+* [sms_190414.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/old/sms_190414.rbf)
   - Extra height modes are implemented (theflynn49)
   - Some general VPD fixes (theflynn49)
   - Hanging Game Gear fix (theflynn49)
   - Option to disable BIOS
 
-* [sms_190320.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190320.rbf)
+* [sms_190320.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/old/sms_190320.rbf)
   - BIOS fix for Shadow Dancer
 
-* [sms_190111.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190111.rbf)
+* [sms_190111.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/old/sms_190111.rbf)
   - 8K Backup RAM support
 
-* [sms_190107.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190107.rbf)
+* [sms_190107.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/old/sms_190107.rbf)
   - Added Korean mapper (Sangokushi 3, Dodgeball King)
   - Fixed some bugs
 
-* [sms_190105.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190105.rbf)
+* [sms_190105.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/old/sms_190105.rbf)
   - Fixed a lot of bugs.
 
-* [sms_190102.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190102.rbf)
+* [sms_190102.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/old/sms_190102.rbf)
   - FM sound and many fixes, based on the MiSTer port.
 
-* [sms_160603.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_160603.rbf)
+* [sms_160603.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/old/sms_160603.rbf)
   - Audio clock adjustment
 
 * [sms_140819_r315.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/old/sms_140819_r315.rbf)
