@@ -1,4 +1,4 @@
-firmware_190517
+firmware_190601
 ===============
 - Fix core chooser after using rom=xxx loading via ini
 - Can load cores from directories marked as SYSTEM
