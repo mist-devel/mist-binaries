@@ -1,0 +1,6 @@
+firmware_190601
+===============
+- Fix core chooser after using rom=xxx loading via ini
+- Can load cores from directories marked as SYSTEM
+- Case-insesitive core name comparison in ini parser
+- Show the version string in the OSD scrolling text
