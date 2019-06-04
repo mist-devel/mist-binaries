@@ -11,13 +11,14 @@
 - F12                                                  -> OSD
 
 ## Mapper support:
-- F4, F6, F8 - standard Atari mappers, autodetected by ROM size
+- F4, F6, F8 - standard Atari mappers, autodetected from the ROM size
 - E0 - Parker Bros. mapper, need .E0 file extension
 - 3F - Used for Tigervision 8K ROMs, need .3F file extension
 - FE - Activision mapper, used in Robot Tank and Decathlon, use .FE file extension
 - FA - CBS RAM Plus titles, use .FA file extension
 - CV - Commavid titles, use .CV file extension
 - P2 - Pitfall II Lost Caverns (DPC chip), use .P2 extension
+- E7 - M-Network cart (Bump'n'Jump, Burgertime), use .E7 extension
 
 Some titles use an extra 128 byte RAM (called SuperChip). Unfortunately it cannot be
 autodected easily, so use the Load SuperChip OSD option to load these titles, or set
@@ -27,7 +28,7 @@ SuperChip, rename it to digdug.f6s, and it'll work with the normal Load OSD item
 ## Current limitations:
 - no support for DPC+, SaveKey and other custom EPROM/RAM/bank switching solutions
   on carts
-- some games doesn't provide a stable sync, it may have problems using VGA/scandoubler
+- some games don't provide a stable sync, they might have problems using VGA/scandoubler
   or modern LCD TVs
 
 Homepage:
