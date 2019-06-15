@@ -1,8 +1,0 @@
-refactoring of tape player :
--pause : silent using x"7F" (middle of wave signal)
--datalen : 3bytes long (not validated)
--toggle or else pulse_value
--bit0/bit1 length transmit before BLOCK
--debug on (because it is a candidate version)
-
-No new games unlocked, so no release by here.
