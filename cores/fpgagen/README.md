@@ -10,6 +10,7 @@ The cores main features
     - VGA
     - SCART RGB (TV)
     - YPbPr component
+  - SVP chip for Virtua Racing (in separate downloadable core)
 
 By now the core runs most games perfectly incl. the Titan Overdrive demo. Some games using
 special and undocumented hardware features show visual or accousic artifacts or may not
