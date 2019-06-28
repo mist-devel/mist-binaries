@@ -1,8 +1,8 @@
-# MIST port of fpgagen - Genesis/Megadrive core
+# MIST port of fpgagen - Genesis/Mega Drive core
 
-This core implements a Sega Genesis/Megadrigve for the MIST.
+This core implements a Sega Genesis/Mega Drive for the MIST.
 
-The cores main features
+The core's main features
   - Complete 68k and z80 CPU implementations
   - Video controller (VDP)
   - Stereo sound
@@ -10,6 +10,8 @@ The cores main features
     - VGA
     - SCART RGB (TV)
     - YPbPr component
+  - 3/6 buttons controller support
+  - SEGA Mouse
   - SVP chip for Virtua Racing (in separate downloadable core)
 
 By now the core runs most games perfectly incl. the Titan Overdrive demo. Some games using
@@ -21,7 +23,7 @@ run at all.
 ## Installing the core
 
 Copy the following files to the root of your sdcard:
-  - Copy the latest rbf file (i.e. fpgagen_20181026.rbf) and rename it core.rbf
+  - Copy the latest rbf file (i.e. fpgagen_20181026.rbf) and rename it core.rbf (or load it from the menu core)
   - Copy mist.ini - This remaps the controller buttons to Buffalo SNES, and you can customise
 it to your controller.
   - Copy your .bin/.md/.gen cartridge images to the sdcard (preferrably into a genesis subdirectory)
@@ -52,12 +54,7 @@ https://forum.digitpress.com/forum/showthread.php?134961-NES-SNES-Genny-Games-wi
   2. Rom file formats supported are .bin and .gen, no support for .smd files
   3. If the controls seems to not work, try switch to 3 buttons mode in the OSD
   4. Includes support for [YPbPr cables](https://github.com/mist-devel/mist-board/wiki/YPbPr_Cable)
-  5. While lot of effort went into emulating the correct VRAM access timings of the Sega VDP, it's
-     still not perfect. So you can turn off this emulation with the "VRAM Speed" option. "Slow" setting
-     means the VRAM access times are emulated, "Fast" when not. This might be required for Sonic I and
-     Clue. Note: from core release 20190420, it seems this setting is not needed anymore! Note2: the option
-     is removed in release 20190430.
-  6. Some carts have an SRAM or EEPROM to allow saving game states. SRAM is always enabled at 2MB (if
+  5. Some carts have an SRAM or EEPROM to allow saving game states. SRAM is always enabled at 2MB (if
      the cart size < 2MB, or the game uses bank switching to page in), and you can turn on a "fake"
      EEPROM at 2MB in the OSD. For example, it allows NBA Jam TE to run. Note: use "Fake EEPROM"
      option only on games which require it, because its control address can clash with the normal cart ROM.
