@@ -5,6 +5,8 @@ Copyright (c) 2016-2017 Jozsef Laszlo (rbendr@gmail.com)
 
 http://joco.homeserver.hu/fpga/mist_ht1080z_en.html
 
+![HT1080Z](ht1080z.jpg)
+
 CAS file loading (by DrOG)
 --------------------------
 
