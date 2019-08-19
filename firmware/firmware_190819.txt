@@ -1,0 +1,4 @@
+firmware_190819
+===============
+- Minimig fixes from retrofun
+- Support for the new ST(e) core, MiSTery
