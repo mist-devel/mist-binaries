@@ -4,6 +4,7 @@
 # * Adds [Hi] to filename for HiROM games. 
 # * Removes headers and renames to SFC format.
 # * Renames ROM files to NSRT standard.
+# * Generates SAV files with correct size for support games.
 # * Moves unsupported ROMS to subdirectory.
 # Requires NSRT Linux https://www.romhacking.net/utilities/401/
 # Version 20190926
