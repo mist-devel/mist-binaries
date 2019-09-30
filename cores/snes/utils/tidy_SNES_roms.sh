@@ -6,11 +6,13 @@
 # * Renames ROM files to NSRT standard.
 # * Generates SAV files with correct size for support games.
 # * Moves unsupported ROMS to subdirectory.
+# * Organises files into subdirectories based on first letter.
 # Requires NSRT Linux https://www.romhacking.net/utilities/401/
-# Version 20190926
+# Version 20190930
 
 # User Settings
 OPT_SAVES=yes    #Create SAV files? [yes/no]
+OPT_SUB=no     #Organise in subdirectories based on first letter
 
 #############################################
 # Nothing to change below here!
@@ -21,7 +23,7 @@ mkdir _unsupported 2>/dev/null
 echo "============================"
 echo "Rename and remove headers..."
 echo "============================"
-./nsrt -remhead -lowext -rename * >/dev/null
+./nsrt -remhead -lowext -rename *.sfc *.smc *.bin *.fig >/dev/null
 [[ $? -ne 0 ]] && exit 1
 
 ./nsrt -infocsv *.sfc 2>/dev/null | tail -n +2 >list.csv
@@ -37,6 +39,8 @@ do
     LOHI=$(echo "$LINE" | awk -F "\"," '{print substr($5,2)}')
     CHIP=$(echo "$LINE" | awk -F "\"," '{print substr($8,2)}')
 
+    NEWFILE=$FILE
+
     echo ${FILE}
     #echo ${FILE}___${SRAM}__${LOHI}___${CHIP}___
 
@@ -46,7 +50,8 @@ do
     fi
 
     if [[ $LOHI = "HiROM" ]] && [[ ! $FILE =~ "[Hi].sfc" ]]; then
-       mv "$FILE" "${FILE/%.sfc}[Hi].sfc"
+       NEWFILE=${FILE/%.sfc}[Hi].sfc
+       mv "$FILE" "$NEWFILE"
     fi
 
     #Generate SAV files
@@ -55,5 +60,13 @@ do
         dd if=/dev/zero of="${FILE/%.sfc}.sav" bs=1 count=${SRAM}k 2>/dev/null
         [[ $? -ne 0 ]] && exit 1
     fi
+
+    #Move to sub directories
+    if [[ $OPT_SUB = "yes" ]] ; then
+        mkdir ${NEWFILE::1} >/dev/null 2>&1
+        mv "${NEWFILE}" ${NEWFILE::1}/
+    fi 
     
 done <list.csv
+
+rm list.csv
