@@ -33,6 +33,11 @@ Plus two additional files:
 
 RELEASE NOTES
 ====================
+minimig_mist-20191005
+
+A couple of 68020 CPU fixes from Retrofun
+4-player interface support
+
 minimig_mist-20190418
 
 Some internal fixes for stability
