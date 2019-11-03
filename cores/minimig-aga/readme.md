@@ -33,7 +33,7 @@ Plus two additional files:
 
 RELEASE NOTES
 ====================
-minimig_mist-20191102
+minimig_mist-20191103
 
 Many more CPU fixes
 24 bit wide address bus in 68000 mode - that means the max. Fast RAM is 8MB, but that's the correct behavior
