@@ -1,6 +1,0 @@
-firmware_191102
-===============
-- Unused cart area is pulled up in ST cores
-- Multiple profiles support for ST cores
-- Archimedes IDE interface support
-- Changed 24MB Fast RAM option to 8MB in Minimig's 68000 mode
