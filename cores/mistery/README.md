@@ -22,6 +22,7 @@
 ## Usage:
 
 Put the core.rbf and the TOS as tos.img to the SD-Card. TOS/hard disc/floppy images are selectable in the OSD (F12).
+Toggle between ST/STe joystick ports with F11.
 
 The latest core needs at least firmware version 20191129.
 
