@@ -1,3 +1,10 @@
+firmware_200208
+===============
+- Support Arduino based keyboards
+- Add csync_disable option to mist.ini
+- Fix ini_parser for mist.ini files > 1024 bytes
+- Introduce ARC metadata files (mostly for arcade usage)
+
 firmware_191129
 ===============
 - Direct SD->FPGA transfer for MiSTery ACSI (core update needed)
