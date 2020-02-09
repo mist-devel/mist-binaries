@@ -33,6 +33,12 @@ Plus two additional files:
 
 RELEASE NOTES
 ====================
+minimig_mist-20200209
+
+- Honor csync_disable in mist.ini
+- Blitter D-pointer fix by sonycman
+- CPU byte mirroring fix by Till Harbaum
+
 minimig_mist-20191212
 
 - All the latest CPU fixes/missing instruction implementations from Tobiflex
@@ -45,13 +51,13 @@ minimig_mist-20191103
 
 minimig_mist-20191005
 
-A couple of 68020 CPU fixes from Retrofun
-4-player interface support
+- A couple of 68020 CPU fixes from Retrofun
+- 4-player interface support
 
 minimig_mist-20190418
 
-Some internal fixes for stability
-Enable CD32 Pad support
+- Some internal fixes for stability
+- Enable CD32 Pad support
 
 minimig_mist-20160224 (2016-02-24)
 
