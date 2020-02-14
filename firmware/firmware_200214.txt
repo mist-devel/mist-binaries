@@ -1,3 +1,8 @@
+firmware_200214
+===============
+- Support for NAME in ARC files (core name override)
+- Analogue joystick range scaling and dead zone management (rampa069)
+
 firmware_200208
 ===============
 - Support Arduino based keyboards
