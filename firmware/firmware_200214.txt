@@ -1,6 +1,7 @@
 firmware_200214
 ===============
 - Support for NAME in ARC files (core name override)
+- ROM loading from the same directory as the RBF
 - Analogue joystick range scaling and dead zone management (rampa069)
 
 firmware_200208
