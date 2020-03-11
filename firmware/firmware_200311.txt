@@ -1,3 +1,7 @@
+firmware_200311
+===============
+- Synthesize a directory entry for ROM upload, used in DIO_FILE_INFO
+
 firmware_200215
 ===============
 - Fix ROM= entry handling in mist.ini
