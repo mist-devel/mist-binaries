@@ -34,8 +34,10 @@ memory of the embedded c64. After injection the program can simply be
 started using the basic "run" command. As shown in the beginning of this
 video: https://www.youtube.com/watch?v=tnboiECYXVo
 
-The basic+kernal+1541 ROMs can be overriden by putting a new C64.rom to
-the root folder of the SD card. The file size can be 16k (basic+kernal)
+## ROM file
+
+You must put a C64.ROM file to the root of the SD Card. The ROM format is
+basic+kernal+1541. The file size can be 16k (basic+kernal)
 or 32k (basic+kernal+1541).
 
 ## Special keys:
