@@ -34,6 +34,8 @@ memory of the embedded c64. After injection the program can simply be
 started using the basic "run" command. As shown in the beginning of this
 video: https://www.youtube.com/watch?v=tnboiECYXVo
 
+You need at least firmware version **200311**!
+
 ## ROM file
 
 You must put a C64.ROM file to the root of the SD Card. The ROM format is
