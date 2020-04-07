@@ -33,6 +33,12 @@ Plus two additional files:
 
 RELEASE NOTES
 ====================
+minimig_mist-20200407
+
+- CPU update (DIVS.W fix, extended address mode fixes)
+- Denise/Lisa read color table, BPLCON2 RDRAM implementation (by retrofun)
+- Return $FFFF for IRQ write strobe reads (fixes Chuck Yeager's AFT2)
+
 minimig_mist-20200209
 
 - Honor csync_disable in mist.ini
