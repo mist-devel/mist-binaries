@@ -36,6 +36,12 @@ video: https://www.youtube.com/watch?v=tnboiECYXVo
 
 You need at least firmware version **200311**!
 
+## C64GS
+
+Copy the C64GS.ROM and the C64GS.ARC file next to the C64.RBF file
+(it's important to remove any version string from the filename - pure
+C64.RBF will work). You can choose C64 or C64GS from the core selector then.
+
 ## ROM file
 
 You must put a C64.ROM file to the root of the SD Card. The ROM format is
