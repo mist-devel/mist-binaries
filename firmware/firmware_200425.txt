@@ -1,3 +1,8 @@
+firmware_200425
+===============
+- Increase maximum size of embedded options in ARC files to 512 bytes
+- Add DEFAULT setting support to ARC files
+
 firmware_200311
 ===============
 - Synthesize a directory entry for ROM upload, used in DIO_FILE_INFO
