@@ -7,6 +7,7 @@
 - Cycle accurate Blitter offered by Jorge Cwik
 - Mostly cycle accurate shifter based on [schematics made from reverse engineering](http://www.atari-forum.com/viewtopic.php?t=29658)
 - MegaSTe 16 MHz CPU mode
+- Turbo bus - double RAM access speed
 - RAM size up to 14MB
 - Support for all TOS versions
 - 2 Floppy disc drives
@@ -22,15 +23,13 @@
 ## Usage:
 
 Put the core.rbf and the TOS as tos.img to the SD-Card. TOS/hard disc/floppy images are selectable in the OSD (F12).
-Toggle between ST/STe joystick ports with F11.
-
-The latest core needs at least firmware version 20191129.
+With F11, you can toggle between normal and STe joystick ports.
 
 ## Current issues/limitations:
 
 - Some MFP imperfections
 - Some bugs in ST mode
-- No RAM cache for Mega STe
+- No RAM cache for Mega STe (but the cache control selects turbo bus speed)
 - Missing Ethernec support
 - No RTC
 - Only fake LMC1992
@@ -41,5 +40,5 @@ The latest core needs at least firmware version 20191129.
 ## Thanks to:
 
 - Till Harbaum for the MiST board, original MiST core, new IKBD code
-- Jorge Cwik for the FX68K CPU core and shifter decap
+- Jorge Cwik for the FX68K CPU core, FX ST Blitter code and shifter decap
 - Christian Zietz for recovering the schematics of the GSTMCU
