@@ -1,3 +1,13 @@
+firmware_200516
+===============
+- Add Save CMOS RAM option to Archie (needs core update)
+- Sub-menu support in OSD ("P" config string)
+- OSD fonts can be replaced by a SYSTEM.FNT file (8x8 fonts, 768 or 1024 byte length file)
+- Allow specifing profile names in mist.ini for Atari ST and Minimig (check sample mist.ini)
+- Support loading CORE.ARC file as the default core
+- Fix quoted string handling in comments in mist.ini
+- Fix automatic changeing into the core directory in some cases
+
 firmware_200425
 ===============
 - Increase maximum size of embedded options in ARC files to 512 bytes
