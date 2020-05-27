@@ -58,6 +58,7 @@ https://forum.digitpress.com/forum/showthread.php?134961-NES-SNES-Genny-Games-wi
      the cart size < 2MB, or the game uses bank switching to page in), and you can turn on a "fake"
      EEPROM at 2MB in the OSD. For example, it allows NBA Jam TE to run. Note: use "Fake EEPROM"
      option only on games which require it, because its control address can clash with the normal cart ROM.
+  6. SVP version is only for Virtua Racing!
 
 ## Contributors
 

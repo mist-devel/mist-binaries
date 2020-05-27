@@ -19,6 +19,7 @@
 - CV - Commavid titles, use .CV file extension
 - P2 - Pitfall II Lost Caverns (DPC chip), use .P2 extension
 - E7 - M-Network cart (Bump'n'Jump, Burgertime), use .E7 extension
+- UA - UA-Ltd. (Pleaides prototype), use .UA extension
 
 Some titles use an extra 128 byte RAM (called SuperChip). Unfortunately it cannot be
 autodected easily, so use the Load SuperChip OSD option to load these titles, or set

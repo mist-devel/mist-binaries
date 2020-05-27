@@ -33,10 +33,37 @@ Plus two additional files:
 
 RELEASE NOTES
 ====================
+minimig_mist-20200407
+
+- CPU update (DIVS.W fix, extended address mode fixes)
+- Denise/Lisa read color table, BPLCON2 RDRAM implementation (by retrofun)
+- Return $FFFF for IRQ write strobe reads (fixes Chuck Yeager's AFT2)
+
+minimig_mist-20200209
+
+- Honor csync_disable in mist.ini
+- Blitter D-pointer fix by sonycman
+- CPU byte mirroring fix by Till Harbaum
+
+minimig_mist-20191212
+
+- All the latest CPU fixes/missing instruction implementations from Tobiflex
+- Hopefully fix the boot problem without Slow RAM (thanks to sonycman)
+
+minimig_mist-20191103
+
+- Many more CPU fixes
+- 24 bit wide address bus in 68000 mode - that means the max. Fast RAM is 8MB, but that's the correct behavior
+
+minimig_mist-20191005
+
+- A couple of 68020 CPU fixes from Retrofun
+- 4-player interface support
+
 minimig_mist-20190418
 
-Some internal fixes for stability
-Enable CD32 Pad support
+- Some internal fixes for stability
+- Enable CD32 Pad support
 
 minimig_mist-20160224 (2016-02-24)
 

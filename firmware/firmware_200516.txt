@@ -1,0 +1,49 @@
+firmware_200516
+===============
+- Add Save CMOS RAM option to Archie (needs core update)
+- Sub-menu support in OSD ("P" config string)
+- OSD fonts can be replaced by a SYSTEM.FNT file (8x8 fonts, 768 or 1024 byte length file)
+- Allow specifing profile names in mist.ini for Atari ST and Minimig (check sample mist.ini)
+- Support loading CORE.ARC file as the default core
+- Fix quoted string handling in comments in mist.ini
+- Fix automatic changeing into the core directory in some cases
+
+firmware_200425
+===============
+- Increase maximum size of embedded options in ARC files to 512 bytes
+- Add DEFAULT setting support to ARC files
+
+firmware_200311
+===============
+- Synthesize a directory entry for ROM upload, used in DIO_FILE_INFO
+
+firmware_200215
+===============
+- Fix ROM= entry handling in mist.ini
+
+firmware_200214
+===============
+- Support for NAME in ARC files (core name override)
+- ROM loading from the same directory as the RBF
+- Analogue joystick range scaling and dead zone management (rampa069)
+
+firmware_200208
+===============
+- Support Arduino based keyboards
+- Add csync_disable option to mist.ini
+- Fix ini_parser for mist.ini files > 1024 bytes
+- Introduce ARC metadata files (mostly for arcade usage)
+
+firmware_191129
+===============
+- Direct SD->FPGA transfer for MiSTery ACSI (core update needed)
+- Direct SD->FPGA transfer for other cores' ROM upload (core updates needed)
+- Some minimig and OSD related fixes from Retrofun
+- More complete input device test OSD
+
+firmware_191102
+===============
+- Unused cart area is pulled up in ST cores
+- Multiple profiles support for ST cores
+- Archimedes IDE interface support
+- Changed 24MB Fast RAM option to 8MB in Minimig's 68000 mode

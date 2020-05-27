@@ -26,7 +26,8 @@ scandoubler_disable=1
 * Space - fire 1
 * Left Alt - fire 2
 
-## Powerpad (<https://en.wikipedia.org/wiki/Power_Pad>) emulation support
+## [Powerpad](https://en.wikipedia.org/wiki/Power_Pad) emulation support
+
 The powerpad/Family Trainer/Family Fun Fitness accessory is emulated through
 the keyboard.
 
@@ -40,3 +41,21 @@ Side B:
 * 5  6  7  8 - D F G H
 * 9 10 11 12 - C V B N 
 
+## FDS image support
+
+Famicom Disk System images are supported through Loopy's FDS mapper. It needs
+a modified FDS BIOS, can be found in the [NES PowerPak](https://www.retrousb.com/product_info.php?products_id=34).
+Get FDSBIOS.BIN from the archive, and load using the OSD Load FDS BIOS option before
+loading an FDS file.
+
+If a game requires a disk swap, hold down the PgUp key for a while. If the automatic
+mechanism determining the requested disk side doesn't work, select it using the
+OSD Disk Side option.
+
+## NSF music files
+
+They're played using Loopy's NSF player. Just load the NSF file and enjoy.
+
+## Backup RAM support / FDS image save
+
+TODO

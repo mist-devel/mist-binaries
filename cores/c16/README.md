@@ -63,8 +63,10 @@ You can use [component output](https://github.com/mist-devel/mist-board/wiki/YPb
 
 History
 -------
-
-* [c16_190507.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_190507.rbf)
+* [c16_190921.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/c16_190921.rbf)
+  - TED fixes (Alpharay scrolling, Pets Rescue title screen, Adventure Park loading)
+  
+* [c16_190507.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/old/c16_190507.rbf)
   - Fix a ROM corruption issue
 
 * [c16_190504.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/c16/old/c16_190504.rbf)
