@@ -1,0 +1,2 @@
+WAIT_n=quick : Gyurco GA simple formula (plusttest.dsk instruction speed test 5 OK test 9 KO)
+Cannot use T80pa because I'm not using the same sysbus as Gyurco.
