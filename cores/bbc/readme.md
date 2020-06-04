@@ -72,7 +72,11 @@ A collection of disk images can be found at: http://www.bbcmicro.co.uk/
 
 History
 -------
-* [bbc_200530.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_200530.rbf)
+* [bbc_200604.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_200604.rbf)
+  - Updated the PSG (STNICC demo!)
+  - Updated the FDC (just because)
+
+* [bbc_200530.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/old/bbc_200530.rbf)
   - Updated VIA, Teletext chip, CRTC, ULA
   - Added Master 128 mode
   - Added an WD1770 FDC for Master mode (but supporting the i8271 FM images)
