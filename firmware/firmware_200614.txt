@@ -1,3 +1,9 @@
+firmware_200614
+===============
+- Some fixes in OSD menu handling (CPS1)
+- Add joystick_db9_fixed_index (by PunisherHD92)
+- Support two mice for Minimig
+
 firmware_200516
 ===============
 - Add Save CMOS RAM option to Archie (needs core update)
