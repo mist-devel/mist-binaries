@@ -1,3 +1,9 @@
+firmware_200622
+===============
+- Fix memory corruption in SYSTEM.FNT loading (freezing)
+- Generic second mouse and wheel movement support (first core using it: Speed Ball arcade)
+- Honor DEFAULT in ARC file when resetting settings
+
 firmware_200614
 ===============
 - Some fixes in OSD menu handling (CPS1)
