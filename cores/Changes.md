@@ -1,3 +1,7 @@
+**zxspectrum_200625**
+- Fix 7MHz CPU turbo
+- Some adjusments in GS, seems to work better
+
 **mistery-200621**
 - Implement ST mode differences in GSTMCU (Closure finally runs in ST mode!)
 - Fix FDC when a command is terminated during SD Card access
