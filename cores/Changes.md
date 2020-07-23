@@ -1,3 +1,9 @@
+**Amstrad_200723.rbf**
+- The alternative Amstrad CPC core from Sorgelig added to mist-binaries
+- New GA based on reverse-engineered decapped chip
+- FDC improvements
+- Playcity 6 channel sound + Z80 CTC expansion support
+
 **zxspectrum_200625**
 - Fix 7MHz CPU turbo
 - Some adjusments in GS, seems to work better
