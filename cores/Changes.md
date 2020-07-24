@@ -1,3 +1,6 @@
+**Amstrad_200724.rbf**
+- Fix FDC writes
+
 **Amstrad_200723.rbf**
 - The alternative Amstrad CPC core from Sorgelig added to mist-binaries
 - New GA based on reverse-engineered decapped chip
