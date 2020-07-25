@@ -1,3 +1,7 @@
+**mistery-200725**
+- FDC force IRQ command should start the motor
+- USB-RTC support (read-only)
+
 **Amstrad_200724.rbf**
 - Fix FDC writes
 
