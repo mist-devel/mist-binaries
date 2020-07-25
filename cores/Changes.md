@@ -1,3 +1,7 @@
+**minimig_mist_200725**
+- Don't read the mouse twice
+- USB-RTC support (read-only)
+
 **mistery-200725**
 - FDC force IRQ command should start the motor
 - USB-RTC support (read-only)
