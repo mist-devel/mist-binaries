@@ -1,3 +1,8 @@
+firmware_200725
+===============
+- Fix long-standing ADF write corruption bug
+- Generic USB-RTC support
+
 firmware_200622
 ===============
 - Fix memory corruption in SYSTEM.FNT loading (freezing)
