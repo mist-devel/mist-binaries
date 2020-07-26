@@ -1,3 +1,6 @@
+**archimedes_200726.rbf**
+- USB-RTC support (read-only)
+
 **minimig_mist_200725**
 - Don't read the mouse twice
 - USB-RTC support (read-only)
