@@ -1,3 +1,7 @@
+**archimedes_200808.rbf**
+- Fix audio clock
+- Add reset to Amber (by Robert Peip)
+
 **archimedes_200726.rbf**
 - USB-RTC support (read-only)
 
