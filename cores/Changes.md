@@ -1,3 +1,9 @@
+**zxspectrum_200809.rbf**
+- ULA and CPU timing fixes
+- Implement the snow effect
+- Update PSG
+- Beeper + PSG volume mixing adjustment
+
 **archimedes_200808.rbf**
 - Fix audio clock
 - Add reset to Amber (by Robert Peip)
