@@ -1,3 +1,6 @@
+**gb_200810.rbf**
+- Lot of fixes from paulb-nl and brNX. GBC games are really good!
+
 **zxspectrum_200809.rbf**
 - ULA and CPU timing fixes
 - Implement the snow effect
