@@ -1,3 +1,7 @@
+**a2600_200812.rbf**
+- TIA fixes: Playfield mirroring, playfield score flag, (no) collisions in blanks.
+  Canyon Bomber, Tutankham, Caverns games are fixed
+
 **gb_200810.rbf**
 - Lot of fixes from paulb-nl and brNX. GBC games are really good!
 
