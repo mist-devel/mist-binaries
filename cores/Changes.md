@@ -1,3 +1,10 @@
+**fpgagen_200821.rbf**
+- Bus arbitration rework
+- ZRAM access rework
+- Pages in OSD
+- Update jt12
+- DMA COPY cycle-exactness
+
 **msx_mist_200821.rbf**
 - CPU update
 - RTC support
