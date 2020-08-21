@@ -1,3 +1,7 @@
+**msx_mist_200821.rbf**
+- CPU update
+- RTC support
+
 **a2600_200812.rbf**
 - TIA fixes: Playfield mirroring, playfield score flag, (no) collisions in blanks.
   Canyon Bomber, Tutankham, Caverns games are fixed
