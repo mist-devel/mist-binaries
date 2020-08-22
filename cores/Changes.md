@@ -1,3 +1,8 @@
+**zxspectrum_200822.rbf**
+- Further ULA timing fixes (Timing_Tests-128k_v.1.0)
+- Increase GS clock to 14 MHz
+- Fix hires Timex mode
+
 **fpgagen_200821.rbf**
 - Bus arbitration rework
 - ZRAM access rework
