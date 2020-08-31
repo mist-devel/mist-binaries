@@ -1,3 +1,10 @@
+**a2600_200831.rbf**
+
+- TIA: fix divider by 6 (E.T., but affects all C,D,E audio waveforms)
+- Update the DPC mask flags after changing the counters (Pitfall II)
+- TIA: transparent latches for the color registers (D.K.VCS)
+- TIA: don't apply pf_score when pf_priority=1 (Bobby is Going Home)
+
 **zxspectrum_200822.rbf**
 - Further ULA timing fixes (Timing_Tests-128k_v.1.0)
 - Increase GS clock to 14 MHz
