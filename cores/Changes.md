@@ -1,3 +1,6 @@
+**Ti994a_200907.rbf**
+- New core
+
 **a2600_200831.rbf**
 
 - TIA: fix divider by 6 (E.T., but affects all C,D,E audio waveforms)
