@@ -1,3 +1,8 @@
+**Ti994a_200908.rbf**
+- Cart file type auto detection
+- Mask cart unused address bits (detected from .d type)
+- Add some keyboard shortcuts
+
 **Ti994a_200907.rbf**
 - New core
 
