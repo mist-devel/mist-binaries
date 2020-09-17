@@ -21,7 +21,7 @@ formatted and the 'beeb.mmb' file needs to be written first to the SD card befor
 Also the size limit of the file system is 8 GB. However you can copy 'beeb.mmb' to the SD card, rename
 it to bbc.vhd and MMFS will use it without the need of a FAT filesystem.
 
-One such file can be found at [here](http://stardot.org.uk/files/mmb/higgy_mmbeeb-v1.0.zip).
+One such file can be found at [here](http://www.stardot.org.uk/files/mmb/higgy_mmbeeb-v1.2.zip).
 
 If using the beeb.mmb file, once the BBC is booted type "*MENU" to start
 the menu. You can also set it to start automatically by setting "Auto boot"
