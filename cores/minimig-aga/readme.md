@@ -27,11 +27,11 @@ minimig_boot_art.zip
 - minimig.bal          - minimig core boot animation
 - minimig.cop          - minimig core boot animation
 
-Plus two additional files:
+Plus three additional files:
 - aros.rom             - AROS kickstart replacement, place in on the root of your SD card
 - hrtmon.rom           - HRTmon monitor code, place it on the root of your SD card if you intend to use it
 
-- WheelDriver.adf      - driver for mouse wheel
+- MinimigUtils.adf     - drivers for RTG, Akiko(Chunky2Planar), FAT95 and mouse wheel
 
 RELEASE NOTES
 ====================

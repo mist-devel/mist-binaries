@@ -1,3 +1,7 @@
+**minimig_mist_rtg_200923.rbf**
+- RTG and C2P support by Alastair M. Robinson
+- TG68K updates with stack frame fixes in 68010+ modes
+
 **Ti994a_200908.rbf**
 - Cart file type auto detection
 - Mask cart unused address bits (detected from .d type)
