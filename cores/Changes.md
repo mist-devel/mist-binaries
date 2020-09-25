@@ -1,3 +1,8 @@
+**c64_200925.rbf**
+- Paged OSD
+- CTRL-F11 as soft reset
+- Some internal updates
+
 **minimig_mist_rtg_200923.rbf**
 - RTG and C2P support by Alastair M. Robinson
 - TG68K updates with stack frame fixes in 68010+ modes

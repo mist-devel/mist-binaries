@@ -53,5 +53,5 @@ or 32k (basic+kernal+1541).
 - F9  - Pound
 - F10 - Plus
 - F11 - Restore/Freeze
-- CTRL+F11 - Reset
+- CTRL+F11 - Soft reset
 - Page Up - Start/Stop tape
