@@ -1,3 +1,7 @@
+**zxspectrum_201002.rbf**
+- Use the original PSG from MikeJ
+- General Sound register access fixes (e.g. Alienate demo)
+
 **c64_200925.rbf**
 - Paged OSD
 - CTRL-F11 as soft reset
