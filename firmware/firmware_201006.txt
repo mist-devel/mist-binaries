@@ -1,3 +1,10 @@
+firmware_201006
+===============
+- Add clock_freq setting to override Minimig master clock
+- Fix detection of SD card capacity for blocksize > 512
+- Support DB9 joystick remap
+- Fix joystick test for DB9
+
 firmware_200725
 ===============
 - Fix long-standing ADF write corruption bug
