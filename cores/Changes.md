@@ -1,3 +1,8 @@
+**minimig_mist_rtg_201006.rbf**
+- Significant performance increase of the Fast RAM cache
+- Master clock is switched between PAL (28.375 MHz) and NTSC (28.6363 MHz)
+- The old video filters for chipset video are re-enabled
+
 **zxspectrum_201002.rbf**
 - Use the original PSG from MikeJ
 - General Sound register access fixes (e.g. Alienate demo)
