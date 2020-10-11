@@ -1,3 +1,8 @@
+firmware_201011
+===============
+- Fix the clock_freq setting
+- Add a mouse_speed setting to scale the mouse movement by percentage
+
 firmware_201006
 ===============
 - Add clock_freq setting to override Minimig master clock
