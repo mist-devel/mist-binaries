@@ -1,3 +1,9 @@
+**minimig_mist_rtg_201017.rbf**
+- Fix the RAM selector (applied only at reset)
+- Fix Chip RAM mirrors (Kickstart 1.2 works again)
+- Slight Fast RAM cache improvement
+- TG68K update - all instructions pass the tester
+
 **minimig_mist_rtg_201006.rbf**
 - Significant performance increase of the Fast RAM cache
 - Master clock is switched between PAL (28.375 MHz) and NTSC (28.6363 MHz)
