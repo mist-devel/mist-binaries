@@ -36,7 +36,10 @@ A list of games with Backup RAM: http://www.smspower.org/Tags/MemoryBackup
 
 History
 -------
-* [sms_190524.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_190524.rbf)
+* [sms_200604.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/sms_200604.rbf)
+  - Add multitap and lightgun via mouse support
+
+* [sms_190524.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/sms/old/sms_190524.rbf)
   - Support for Mode2 games
   - Support for some SG-1000 games (with standard mappers, and Mode2 only)
   - Support for some MSX-SMS dual compatible games

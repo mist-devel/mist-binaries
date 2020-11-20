@@ -1,3 +1,32 @@
+firmware_201011
+===============
+- Fix the clock_freq setting
+- Add a mouse_speed setting to scale the mouse movement by percentage
+
+firmware_201006
+===============
+- Add clock_freq setting to override Minimig master clock
+- Fix detection of SD card capacity for blocksize > 512
+- Support DB9 joystick remap
+- Fix joystick test for DB9
+
+firmware_200725
+===============
+- Fix long-standing ADF write corruption bug
+- Generic USB-RTC support
+
+firmware_200622
+===============
+- Fix memory corruption in SYSTEM.FNT loading (freezing)
+- Generic second mouse and wheel movement support (first core using it: Speed Ball arcade)
+- Honor DEFAULT in ARC file when resetting settings
+
+firmware_200614
+===============
+- Some fixes in OSD menu handling (CPS1)
+- Add joystick_db9_fixed_index (by PunisherHD92)
+- Support two mice for Minimig
+
 firmware_200516
 ===============
 - Add Save CMOS RAM option to Archie (needs core update)
