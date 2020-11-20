@@ -1,0 +1,2 @@
+reset on simple_gatearray_interrupt
+=> moustache stress test stabilized
