@@ -1,3 +1,8 @@
+**a2600_201121**
+- Fix 2k cart mirroring
+- Fix 8k cart default bank
+- TIA: fix center signal (Bird and Beans)
+
 **minimig_mist_rtg_201017.rbf**
 - Fix the RAM selector (applied only at reset)
 - Fix Chip RAM mirrors (Kickstart 1.2 works again)
