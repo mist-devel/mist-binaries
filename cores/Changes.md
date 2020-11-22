@@ -1,3 +1,12 @@
+**minimig_mist_rtg_201122.rbf**
+- Fix border blank (by AMR)
+- Add +4MB Fast RAM (+2MB if Slow RAM is enabled) (by AMR)
+- Enable the cache for Turbo Chip RAM
+- 32 bit access to normal Chip RAM in AGA
+- Slow RAM is always Turbo in AGA
+- Gayle IDE irq flag fix
+- Swap left&right audio channels
+
 **MiSTery-201122.rbf**
 - Add Ethernec support
 - Gauntlet II interface fix
