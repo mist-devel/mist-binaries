@@ -1,3 +1,9 @@
+**MiSTery-201122.rbf**
+- Add Ethernec support
+- Gauntlet II interface fix
+- Add composite-like blending
+- Connect 2nd fire button on joyport0
+
 **a2600_201121**
 - Fix 2k cart mirroring
 - Fix 8k cart default bank
