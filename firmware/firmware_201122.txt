@@ -1,3 +1,10 @@
+firmware_201122
+===============
+- IDE handling cleanup
+- Send Ethernet config periodically to the FPGA
+- Add 0b95:772B noname USB Ethernet adapter
+- Composite blending setting for MiST2
+
 firmware_201011
 ===============
 - Fix the clock_freq setting
