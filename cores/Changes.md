@@ -1,3 +1,7 @@
+**MiSTery-201126.rbf**
+- Fix some reset issues (shifter desync, extra RAM)
+- Simulate up and down keypresses with the mouse wheel
+
 **minimig_mist_rtg_201122.rbf**
 - Fix border blank (by AMR)
 - Add +4MB Fast RAM (+2MB if Slow RAM is enabled) (by AMR)
