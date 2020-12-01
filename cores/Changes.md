@@ -1,3 +1,6 @@
+**Ti994a_201201.rbf**
+- Add a PHP1240-compatible single-density disk controller
+
 **MiSTery-201126.rbf**
 - Fix some reset issues (shifter desync, extra RAM)
 - Simulate up and down keypresses with the mouse wheel
