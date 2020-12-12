@@ -8,7 +8,7 @@ This core has been started as a port of [CoreAmstrad by Renaud Hélias](https://
 * Precise CRTC model supporting many tricks of Types 1 and 0.
 * 2 disk drives
 * Disk write support.
-* Close to real disk drive emulation with support of most protections.
+* Close to real disk drive emulation with support of some protections.
 * Selectable CPC 6128/664 mode with separate ROM sets.
 * Multiface 2.
 * Several monochrome modes and 2 types of palette (GA/ASIC).
@@ -22,7 +22,7 @@ This core has been started as a port of [CoreAmstrad by Renaud Hélias](https://
 
 
 ## Installation
-place RBF and **amstrad.rom** into root of SD card. Or on **MiSTer** you can rename ROM to boot.rom and put it into Amstrad folder.
+Place RBF and **amstrad.rom** into root of SD card. Or on **MiSTer** you can rename ROM to boot.rom and put it into Amstrad folder.
 
 ## Disk support
 Put some *.DSK files into Amstrad folder and mount it from OSD menu.
@@ -46,23 +46,34 @@ Every page is 16KB. It's possible to load larger ROM. In this case every 16KB bl
 * eZZ - LowROM(OS)
 * eZ0 - LowROM(OS) + Page 0(Basic) + subsequent pages depending on size.
 
-#### Notes
+### Notes
 - You can load several expansions. With every load the system will reboot. System ROM also can be replaced the same way.
 To restore original ROM you have to reload the core (Alt-F12).
 
-### Video output
-Some demos sets up the CRTC to emit sync signals which are only compatible with the original Amstrad monitor, or CRT displays.
-Enabling "Video & Audio => Sync signals: Filtered" tries to change these signals to be more LCD compatible,
-however it doesn't work in every case.
+### MiSTer specific
+You can define boot extensions to automatically load at start of core. Use following name rules:
+* boot.eXX  - load to both 664 and 6128 configs
+* boot0.eXX - load to 6128 config
+* boot1.eXX - load to 664 config
+
+whehe XX is 00-FF, ZZ, Z0.
 
 ## CDT tape files
-CDT supported in very basic form for retro feeling and for some very specific apps. There is no way to rewind or fast forward the file.
-USER LED will while playback.
+CDT supported in very basic form for retro feeling and for some very specific apps. There is no way to rewind or fast forward the file. 
+USER LED will lit if there is a tape in the memory and still have data to play and blink while playback.
+
+Control keys (MiSTer):
+* Alt+F1 - mute/unmute the tape sound
+* Alt+F2 - force playback
+* Alt+F3 - force pause
+* Alt+F2+F3 - unload the tape (turn off the LED)
+
+CDT playback respects the tape motor state, so using F2/F3 is not required during playback.
 
 ## RAM
 CPC664 model has only 64KB RAM - use this model for programs not compatible with 128KB RAM.
 
-CPC6128 model has 64KB+512KB (1MB with Y-MEM) RAM. Upper 448KB are visible in special OS ROM or application aware of 512KB (1MB) expansion.
+CPC6128 model has 64KB+512KB RAM. Upper 448KB are visible in special OS ROM or application aware of 512KB expansion.
 
 ## Multiface 2
 * Multiface 2 can be activated with F11.
@@ -72,7 +83,9 @@ CPC6128 model has 64KB+512KB (1MB with Y-MEM) RAM. Upper 448KB are visible in sp
 * For loading a saved game, MF2 must be visible.
 * ROM version is 8D.
 
-## Source code
+## MiST specific notes
+- Some demos sets up the CRTC to emit sync signals which are only compatible with the original Amstrad monitor, or CRT displays.
+Enabling "Video & Audio => Sync signals: Filtered" tries to change these signals to be more LCD compatible,
+however it doesn't work in every case.
 
-- https://github.com/sorgelig/Amstrad_MiST
-- https://github.com/gyurco/Amstrad_MiST
+- Reset is possbile with Alt+F11

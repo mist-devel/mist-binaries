@@ -1,3 +1,7 @@
+**Amstrad_201212.rbf**
+- Change VSYNC triggering in the CRTC (Onescreen Colonies #0)
+- Add Alt-F11 as reset
+
 **zxspectrum_201212.rbf**
 - Fix Kempston mouse
 - Z80 (both 128K and 48K) and SNA (48K only) snapshot loading
