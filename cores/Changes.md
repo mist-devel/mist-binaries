@@ -1,3 +1,9 @@
+**zxspectrum_201212.rbf**
+- Fix Kempston mouse
+- Z80 (both 128K and 48K) and SNA (48K only) snapshot loading
+- More joystick options
+- Tape input polarity and EAR output feedback fix
+
 **Ti994a_201201.rbf**
 - Add a PHP1240-compatible single-density disk controller
 
