@@ -1,3 +1,9 @@
+firmware_201220
+===============
+- 64 bit status word support
+- .RAM file support mostly to save/load small non-volatile contents (e.g. CMOS RAM or NVRAM in arcades)
+- Always put ".." on the top of the directory list (thanks to retrofun)
+
 firmware_201126
 ===============
 - Fix unnecessary RDB generation for some HDF images
