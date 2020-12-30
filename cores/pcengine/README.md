@@ -1,10 +1,8 @@
 # MIST port of fpgapce - PC Engine core
 
-Current development sources and releases can be found at:
+Current development sources can be found at:
 
-https://github.com/gyurco/FPGAPCE
-
-https://github.com/gyurco/FPGAPCE/releases
+https://github.com/gyurco/TurboGrafx16_MiSTer/tree/mist
 
 # Contributions
 

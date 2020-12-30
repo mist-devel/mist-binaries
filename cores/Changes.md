@@ -1,3 +1,6 @@
+**tgfx16_201230.rbf**
+- New TurboGrafx16 core based on srg320's code
+
 **Amstrad_201212.rbf**
 - Change VSYNC triggering in the CRTC (Onescreen Colonies #0)
 - Add Alt-F11 as reset
