@@ -12,6 +12,7 @@ The core's main features
     - YPbPr component
   - 3/6 buttons controller support
   - SEGA Mouse
+  - Lightgun support (single Menacer or single/dual Justifiers via mice)
   - SVP chip for Virtua Racing (in separate downloadable core)
 
 By now the core runs most games perfectly incl. the Titan Overdrive demo. Some games using

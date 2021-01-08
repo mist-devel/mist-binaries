@@ -1,3 +1,10 @@
+**fpgagen_210108.rbf**
+- VDP T80 interrupt length fix (Metal Blast 2277)
+- VDP Vcounter reload with NTSC/V30 mode fix (SOR2 Simpsons hack)
+- Allow using the save RAM in Sonic Delta 40Mbit ROM hack
+- CRAM dots option
+- Lightgun support (single Menacer or single/dual Justifier) via mice
+
 **tgfx16_201230.rbf**
 - New TurboGrafx16 core based on srg320's code
 
