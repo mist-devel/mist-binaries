@@ -1,3 +1,7 @@
+**Amstrad_201223.rbf**
+- CDT player fixes
+- Add a progressbar for CDT playback
+
 **fpgagen_210108.rbf**
 - VDP T80 interrupt length fix (Metal Blast 2277)
 - VDP Vcounter reload with NTSC/V30 mode fix (SOR2 Simpsons hack)
