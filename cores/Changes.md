@@ -1,3 +1,7 @@
+**MiSTery-210130.rbf**
+- Blitter force dest read fix regarding to endmasks
+- Add selectable 68020 CPU (TG68K)
+
 **Amstrad_201223.rbf**
 - CDT player fixes
 - Add a progressbar for CDT playback
