@@ -1,3 +1,10 @@
+firmware_200130
+===============
+- Allow to use the 3rd mouse button in cores
+- Menu navigation fixes in paged mode
+- Add AX88772A USB ID
+- Enable 68020 CPU for MiSTery
+
 firmware_201220
 ===============
 - 64 bit status word support
