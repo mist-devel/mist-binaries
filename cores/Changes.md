@@ -1,3 +1,6 @@
+**atari800_210130.rbf**
+- New version with standard video settings and OSD
+
 **MiSTery-210130.rbf**
 - Blitter force dest read fix regarding to endmasks
 - Add selectable 68020 CPU (TG68K)
