@@ -1,3 +1,7 @@
+**vic20_210205.rbf**
+- Same VIA is used in the machine and 1541
+- Lot of VIC-I fixes (RL, IMPO3 demos are much better)
+
 **atari800_210130.rbf**
 - New version with standard video settings and OSD
 
