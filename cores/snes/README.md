@@ -7,5 +7,7 @@ SNES core by srg320 MiST port
 - Save/Load Backup RAM.
 - Video support: VGA, RGB, YPbPr.
 
+The snes_mistica rbf files have timing changes for more stability on the Mistica.
+
 Please read the docs:
 https://github.com/mist-devel/mist-board/wiki/CoreDocSNES
