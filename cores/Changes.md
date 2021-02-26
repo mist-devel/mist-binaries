@@ -1,3 +1,8 @@
+**zxspectrum_210226.rbf**
+- Fix F10 and F11 shortcut keys
+- TZXPlayer update from Amstad CPC
+- TZXPlayer improvement: different length of header and data tones
+
 **snes_mist_210226.rbf**
 - Updates from upstream
 - Add Justifier lightgun option
