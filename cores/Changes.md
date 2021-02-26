@@ -1,3 +1,7 @@
+**snes_mist_210226.rbf**
+- Updates from upstream
+- Add Justifier lightgun option
+
 **vic20_210205.rbf**
 - Same VIA is used in the machine and 1541
 - Lot of VIC-I fixes (RL, IMPO3 demos are much better)
