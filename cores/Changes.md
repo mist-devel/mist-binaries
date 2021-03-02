@@ -1,3 +1,7 @@
+**C64_210302.rbf**
+- Simulate tape momentum in the TAP player
+- Add a progressbar for tape playing
+
 **nes_210302.rbf**
 - APU rewrite by Kitrinx
 - Fixes for mappers 18,30,32,88,97,38,165
