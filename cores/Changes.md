@@ -1,6 +1,11 @@
+**nes_210302.rbf**
+- APU rewrite by Kitrinx
+- Fixes for mappers 18,30,32,88,97,38,165
+- Backup RAM support
+
 **zxspectrum_210226.rbf**
 - Fix F10 and F11 shortcut keys
-- TZXPlayer update from Amstad CPC
+- TZXPlayer update from Amstrad CPC
 - TZXPlayer improvement: different length of header and data tones
 
 **snes_mist_210226.rbf**

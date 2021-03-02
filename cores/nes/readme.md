@@ -58,4 +58,7 @@ They're played using Loopy's NSF player. Just load the NSF file and enjoy.
 
 ## Backup RAM support / FDS image save
 
-TODO
+* Create an empty SAV file on the SD-Card to store the backup RAM data. The size of this file should be 8 kbytes for
+ordinary cart saves, and the size of the .FDS file (usually ~128 kbytes) for disk saves.
+* After loading the NES/FDS file, choose the "Mount SRAM" option from the OSD, and select the .SAV file. The yellow LED will lit.
+* You can load/save the backup RAM contents from/to the SD Card via the "Load SRAM" and the "Save SRAM" OSD items.
