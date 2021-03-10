@@ -11,6 +11,8 @@ Binaries here are using the standard MiST settings and OSD.
 Quickstart:
 - Copy A800XL.ROM and the .rbf file to the same directory on your SD Card.
 - Alternative BASIC and OS ROMs can be loaded via the first Load ROM option in the OSD.
+- Create a directory A800XL on your SD Card and put your disks or game rom images in there.
+- Select a disk/rom from the OSD and then press F10, or "Cold Reset" from the OSD.
 - Keyboard shortcuts:
   F6 - Start
   F7 - Select
