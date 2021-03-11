@@ -1,3 +1,9 @@
+**plusToo_210311.rbf**
+- FX68K/TG68K selectable CPUs
+- RTC/PRAM support (can boot OS 7.5)
+- Two harddisks support without (reasonable) size limt
+- Use the cycle-exact VIA from Gideon
+
 **ZXN_210307.rbf**
 - New core
 

@@ -32,9 +32,11 @@ Some system floppy disk images in matching dsk format can be found at [here](htt
 Hard disk support
 -----------------
 
-This Plus Too core implements the SCSI interface of the Macintosh Plus together with a 20MB harddisk. The core implements only a subset of the SCSI commands. This is currently sufficient to read and write the disk, to boot from it and to format it using the setup tools that come with MacOS 6.0.8.
+This Plus Too core implements the SCSI interface of the Macintosh Plus together with a maximum of two harddisks. The core implements only a subset of the SCSI commands. This is currently sufficient to read and write the disk, to boot from it and to format it using the setup tools that come with MacOS 6.0.8.
+Mac OS 7.5.5 also booted successfully from an 512MB pre-made image.
 
-The harddisk image to be used can be selected from the "Mount *.img" entry in the on-screen-display. If no image is selected the entire SD card is being used. Caution: This will allow you to format the entire SD card in Macintosh file system format which will prevent the MIST from booting from that card since the MIST cannot boot from a Macintosh HDD. Instead select a IMG file first so all HDD i/o is redirected into that file. The format of the disk image is the same as being used by the SCSI2SD project which is documented [here](http://www.codesrc.com/mediawiki/index.php?title=HFSFromScratch).
+The harddisk image(s) to be used can be selected from the "Mount *.IMG,VHD" entry in the on-screen-display. Alternatively, a **plus_too.vhd** file in the root directory can be used to automatically mount the first hard disk.
+If no image is selected the entire SD card is being used. Caution: This will allow you to format the entire SD card in Macintosh file system format which will prevent the MIST from booting from that card since the MIST cannot boot from a Macintosh HDD. Instead select a IMG file first so all HDD i/o is redirected into that file. The format of the disk image is the same as being used by the SCSI2SD project which is documented [here](http://www.codesrc.com/mediawiki/index.php?title=HFSFromScratch).
 
 Unlike the floppy the SCSI disk is writable and data can be written to the disk from within the core. Since the Mac has some quite short timeouts in the SCSI drivers at least the [firmware version 151118](https://github.com/mist-devel/mist-binaries/tree/master/firmware) is needed when writing to SCSI disk. 
 
@@ -45,10 +47,10 @@ A matching harddisk image file can be found [here](https://github.com/mist-devel
 CPU Speed
 ---------
 
-The CPU speed can be adjusted from "normal" which is roughly Mac Plus speed to "Fast" which is about 2.5 times faster. In fast mode some of the initial SCSI transfers time out and thus the core cannot boot from SCSI disk in this mode. But once it has booted to the desktop the turbo can be enabled and further SCSI disk transfers will work.
+The CPU speed can be adjusted from 8 MHz which together with the FX68K CPU core, is exactly the original Mac Plus speed to 16MHz which is about 2 times faster (a bit slower with the FX68K, faster with TG68K).
 
-History
--------
+Old history
+-----------
 
 * [plusToo_151119.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/plusToo_151119.rbf)
   - Faster CPU option
