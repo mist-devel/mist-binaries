@@ -5,4 +5,4 @@ To be able to run the core, you'll need a NextOS distribution. You can copy the 
 - 28 MHz CPU mode is not implemented, but remapped to 14 MHz.
 - 14 MHz mode is using extra wait states when layer 2 display is in use. This might break things, if they expect a cycle-exact implementation. Also sometimes DMA fails @14MHz.
 ## Source
-The core is using the unmodified sources from https://gitlab.com/SpectrumNext/ZX_Spectrum_Next_FPGA. Only Xilinx specific parts were exhanged by generic ones.
+The core is based on the sources from https://gitlab.com/SpectrumNext/ZX_Spectrum_Next_FPGA. Modifications needed are uploaded to https://gitlab.com/gyurco/ZX_Spectrum_Next_FPGA/-/tree/altera_sdram_changes.
