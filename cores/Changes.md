@@ -1,3 +1,7 @@
+**ZXN_210317.rbf**
+- Enable 28 MHz mode
+- Some internal fixes
+
 **plusToo_210311.rbf**
 - FX68K/TG68K selectable CPUs
 - RTC/PRAM support (can boot OS 7.5)
