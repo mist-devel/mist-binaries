@@ -1,3 +1,8 @@
+**ZXN_210322.rbf**
+- Stabilty improvements
+- Increase the performance of the SD Card
+- Add tzxplayer
+
 **ZXN_210317.rbf**
 - Enable 28 MHz mode
 - Some internal fixes
