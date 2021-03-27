@@ -1,3 +1,8 @@
+**ZXN_210327.rbf**
+- Fix an off-by-one error of the TZX playing
+- Port the CPU fixes from the pure ZX core
+- Add Sinclair and Cursor joysticks
+
 **ZXN_210322.rbf**
 - Stabilty improvements
 - Increase the performance of the SD Card
