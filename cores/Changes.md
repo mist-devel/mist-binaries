@@ -1,3 +1,8 @@
+**plusToo_210329.rbf**
+- Implement the video back buffer
+- Keyboard/Keypad fix
+- 16 MHz was not enabled for TG68K, fixed
+
 **ZXN_210327.rbf**
 - Fix an off-by-one error of the TZX playing
 - Port the CPU fixes from the pure ZX core

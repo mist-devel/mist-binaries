@@ -47,7 +47,7 @@ A matching harddisk image file can be found [here](https://github.com/mist-devel
 CPU Speed
 ---------
 
-The CPU speed can be adjusted from 8 MHz which together with the FX68K CPU core, is exactly the original Mac Plus speed to 16MHz which is about 2 times faster (a bit slower with the FX68K, faster with TG68K).
+The CPU speed can be adjusted from 8 MHz which together with the FX68K CPU core, is exactly the original Mac Plus speed (a bit faster, since no contention with the video RAM access), to 16MHz which is about 2 times faster (a bit slower with the FX68K, faster with TG68K).
 
 Old history
 -----------
