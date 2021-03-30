@@ -1,4 +1,12 @@
-firmware_200130
+firmware_210330
+===============
+- Don't switch SPI clock for ACSI reads
+- <corename>.hd0/.hd1 can be used instead of a single vhd (useful for plus_too)
+- sdram64 option added to mist.ini (cores can get info if the SDRAM chip is upgraded to 64MB)
+- Allow umounting with backspace from OSD (core support is needed)
+- DIR= option added to ARC files, it can specify a new default directory
+
+firmware_210130
 ===============
 - Allow to use the 3rd mouse button in cores
 - Menu navigation fixes in paged mode
