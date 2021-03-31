@@ -1,3 +1,8 @@
+**c16_210331.rbf**
+- TED: revert a wrong change (thanks to Istvan Hegedus).
+- Update T65/1541
+- Allow unmountig of disks from the OSD (requires firmware 210330)
+
 **C64_210331.rbf**
 - Adjust motor momentum timing (fixes some loaders)
 - Allow unmountig of disks from the OSD (requires firmware 210330)
