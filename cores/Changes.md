@@ -1,3 +1,10 @@
+**zxspectrum_210331.rbf**
+- TZXplayer update
+- Allow unmountig of disks from the OSD (requires firmware 210330)
+- Get rid of GLUK ROM
+- Add DivMMC RAM/ROM extension (hint: ESXDOS)
+- T80 interrupt acknowledge fixes (not really affecting the Speccy)
+
 **plusToo_210329.rbf**
 - Implement the video back buffer
 - Keyboard/Keypad fix

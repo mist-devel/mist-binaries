@@ -16,10 +16,12 @@ Some verilog models from Till Harbaum [Spectrum](https://github.com/mist-devel/m
 - Memory snapshot save/load in +D and Multiface.
 - Native TAP with turbo loading. Fast loading for TAP, CSW and TZX.
 - Kempston Mouse and Joystick.
-- Sinclair Joystick I
-- Turbo-Sound interface (dual YM2149 sound chips)
-- General Sound Interface
-- Audio in from real [tape device](http://www.atari-forum.com/viewtopic.php?p=298401#p298401)
+- Sinclair Joystick 1,2.
+- Cursor joystick.
+- DivMMC and ZXMMC compatible SD Card interface, optionally with 8K ROM and 256K RAM (for ESXDOS use).
+- Turbo-Sound interface (dual YM2149 sound chips).
+- General Sound Interface.
+- Audio in from real [tape device](http://www.atari-forum.com/viewtopic.php?p=298401#p298401).
 
 **Core requires MiST firmware update to build 2016/06/26 or newer!**
 
@@ -99,17 +101,20 @@ You will be able to use bare Multiface ROM by simple subsequent presses of **RSh
 **Note:** Multiface 128 expose its port, thus if game has protection against Multiface, it won't work, unless you press (o)ff before you exit from the Multiface menu. Thus using +D snapshot is prefered.
 When using the Spectrum +2A/3 mode, the Multiface 3 is supported. There's no Genie for the +3, but there are useful toolkit routines in the stock ROM.
 
-### ROM Format:
+### MMC Cards:
+DivMMC or ZXMMC compatible SD Card interfaces can be enabled in the OSD. DivMMC optionally supports 8K built in ROM and 256K RAM. The default **spectrum.rom** file contains ESXDOS 0.8.8 preloaded
+into the ROM. This is only DIVMMC.BIN, you'll need /BIN /SYS and /TMP also on the default SD Card (or in a **spectrum.vhd** file). Multiface and PlusD NMI menus are disabled when
+ESXDOS is enabled, since the built-in Beta Disk Interface and PlusD interface also won't work. If a tape file is loaded via the OSD (indicated by the yellow LED), the DIVMMC tape hooks are disbled.
 
-You can create your own ***spectrum.rom***, for example to replace +3 ROMs with +3e.
-The format is: Boot (GLUK) + TRDOS + 128 ROM0 + 128 ROM1 + +3 ROM0/1/2/3 + PlusD + MF128 + MF3 + 48K ROM + GS(low) + GS(high). Each part is 16k.
+### ROM Format:
+You can create your own **spectrum.rom**, for example to replace +3 ROMs with +3e.
+The format is: ESXMMC.BIN(2x) + TRDOS + 128 ROM0 + 128 ROM1 + +3 ROM0/1/2/3 + PlusD + MF128 + MF3 + 48K ROM + GS(low) + GS(high). Each part is 16k.
 
 ### Special Keys:
 - Ctrl+F11 - warm reset
-- Alt+F11 - cold reset will disk unload
-- Ctrl+Alt+F11 - reset to ROM0 menu
-- F11 - enter +D snapshot menu (or ROM0 menu if IMG/MGT not mounted)
-- RShift+F11 - enter Multiface 128 menu
+- Alt+F11 - cold reset
+- F11 - enter +D snapshot menu (if IMG/MGT is mounted), enter ESXDOS NMI menu (if ESXDOS is enabled)
+- RShift+F11 - enter Multiface 128 menu (or ESXDOS NMI menu if ESXDOS is enabled)
 - F12 - OSD menu
 
 ### Download precompiled binaries and system ROMs:
