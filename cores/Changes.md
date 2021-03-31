@@ -1,7 +1,11 @@
+**C64_210331.rbf**
+- Adjust motor momentum timing (fixes some loaders)
+- Allow unmountig of disks from the OSD (requires firmware 210330)
+
 **Ti994a_210331.rbf**
 - SDRAM controller update
 - Allow unmountig of disks from the OSD (requires firmware 210330)
- 
+
 **zxspectrum_210331.rbf**
 - TZXplayer update
 - Allow unmountig of disks from the OSD (requires firmware 210330)
