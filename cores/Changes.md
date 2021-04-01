@@ -1,3 +1,7 @@
+**atari800_210402.rbf**
+- Add a joystick swap option
+- Allow unmountig of disks from the OSD (requires firmware 210330)
+
 **c16_210331.rbf**
 - TED: revert a wrong change (thanks to Istvan Hegedus).
 - Update T65/1541
