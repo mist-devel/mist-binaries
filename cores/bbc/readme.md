@@ -61,8 +61,9 @@ thus to work with them, changing from the default MMFS to DFS is needed:
 
 *CO. FILE 9
 
-This command selects ROM slot 9 for the default filing system. After a reset, DFS will
-be the default. The easiest way to boot from floppy is to set Auto boot to ON, and press reset
+This command selects ROM slot 9 for the default filing system. It can be saved permanently via
+the "Save CMOS" option in the OSD. After a reset, DFS will be the default.
+The easiest way to boot from floppy is to set Auto boot to ON, and press reset
 (or simply hold SHIFT and press PrtScrn).
 
 Games
@@ -70,7 +71,7 @@ Games
 New to the BBC? Here's a selection of the best games to try: Arcadians, Chuckie Egg, Elite, Monsters, Planetoid, Snapper.
 A collection of disk images can be found at: http://www.bbcmicro.co.uk/
 
-History
+Old history
 -------
 * [bbc_200604.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_200604.rbf)
   - Updated the PSG (STNICC demo!)
