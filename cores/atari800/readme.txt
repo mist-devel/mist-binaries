@@ -19,7 +19,6 @@ Quickstart:
   F8 - Option
   F9 - Reset
   F10 - Cold reset
-  F11 - Cold reset with disk unload
 - Some games require the Basic ROM to be disabled when running, to do this
   press F8 while reset.
 - Start games with F6(Start).
