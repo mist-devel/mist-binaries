@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
+#include <ctype.h>
 #include <zip.h>
 
 #include "mdv.h"
@@ -580,31 +581,22 @@ void zip_import(char *name) {
     if(!file) 
       fprintf(stderr, "Error opening zip file %s, skipping it\n", name);
     else {
-      int len;
+      zip_uint16_t len;
       file_t b, *qdos = NULL;
-      const char *extra = zip_get_file_extra(zip, i, &len, 0);
+      const char *extra = NULL;
 
       // parse extra fields
-      while(len) {
-	unsigned short x_id = *(unsigned short*)extra;
-	unsigned short x_len = *(unsigned short*)(extra+2);
-
+      extra = zip_file_extra_field_get_by_id(zip, i, 0xfb4a, 0, &len, ZIP_FL_CENTRAL);
 	// an extra field contains the qdos directory entry for
 	// executables
-	if(x_id == 0xfb4a) {
-	  if(x_len != sizeof(zip_extra_qdos_t)) 
+	if(extra) {
+	  if(len != (sizeof(file_t) + 8))
 	    fprintf(stderr, "Warning extra entry size mismatch, ignoring it\n");
 	  else {
-	    zip_extra_qdos_t *qdos_extra = NULL;
-	    qdos_extra = (zip_extra_qdos_t*)(extra+4);
-	    qdos = &qdos_extra->file;
+	    qdos = (file_t *)(extra + 8);
 	    //	    show_file_entry(qdos);
 	  }
 	}
-
-	len -= 4+x_len;
-	extra += 4+x_len;
-      }
 
       // chekk file size vs 
       struct zip_stat sb;
