@@ -111,10 +111,11 @@ You can create your own **spectrum.rom**, for example to replace +3 ROMs with +3
 The format is: ESXMMC.BIN(2x) + TRDOS + 128 ROM0 + 128 ROM1 + +3 ROM0/1/2/3 + PlusD + MF128 + MF3 + 48K ROM + GS(low) + GS(high). Each part is 16k.
 
 ### Special Keys:
-- Ctrl+F11 - warm reset
+- F10 - enter +D snapshot menu (if IMG/MGT is mounted), otherwise enter Multiface menu. Enter ESXDOS NMI menu if ESXDOS is enabled.
+- RShift+F10 - enter Multiface 128 menu (or ESXDOS NMI menu if ESXDOS is enabled)
+- F11 - warm reset
 - Alt+F11 - cold reset
-- F11 - enter +D snapshot menu (if IMG/MGT is mounted), enter ESXDOS NMI menu (if ESXDOS is enabled)
-- RShift+F11 - enter Multiface 128 menu (or ESXDOS NMI menu if ESXDOS is enabled)
+- Ctrl+F11 - warm reset with auto load
 - F12 - OSD menu
 
 ### Download precompiled binaries and system ROMs:

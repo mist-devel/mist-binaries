@@ -1,3 +1,7 @@
+**zxspectrum_210424.rbf**
+- Adjust Pentagon interrupt and border timings
+- Don't mix NMI key with reset (F10 - NMI, F11 - Reset)
+
 **bbc_210402.rbf**
 - Use 48 MHz main clock to be synchronous with both the Teletext and ULA
 - FDC update (fix write corruption)
