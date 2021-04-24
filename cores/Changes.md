@@ -1,3 +1,7 @@
+**sms_210424.rbf**
+- Boost PSG and FM volume, and replace the DAC (by robinsonb5)
+- Adjust VDP collision flag (for Donkey homebrew)
+
 **zxspectrum_210424.rbf**
 - Adjust Pentagon interrupt and border timings
 - Don't mix NMI key with reset (F10 - NMI, F11 - Reset)
