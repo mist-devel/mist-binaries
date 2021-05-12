@@ -17,4 +17,8 @@ This reads the GamesCart.mdv images, erases it. Sets it's name to "Gunner",
 imports all files from the ZIP archive gunner.zip and writes the updated
 mdv images back to disk under the name gunner.mdv
 
-The resulting image can then be used with the MIST QL core ...
+The resulting image can then be used with the MIST QL core or QL Microdrive emulators
+
+It can also be used to create new empty MDV images:
+
+mdvtool create name MyMD write myblank.mdv
