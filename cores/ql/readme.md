@@ -43,7 +43,7 @@ To run the unzip program on this QL-SD drive:
 
 `make_dir win1_tempdir`
 
-`data_use win1_tempdir
+`data_use win1_tempdir`
 
 `ex unzip;"file.zip"`
 
