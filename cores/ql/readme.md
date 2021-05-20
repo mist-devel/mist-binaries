@@ -35,7 +35,7 @@ QL-SD can be viewed as a hard drive for the QL. If you have a QL-SD file called 
 
 A sample QL-SD file and the required ql.rom is in the QL-SD.zip file. This contains a number of games and the Psion applications and also has unzip. Format an SD card and extract this ZIP file first and then copy other files to the SD card, this is to stop and fragmentation which QL-SD cannot cope with. It will be mounted read/write in the QL core.
 
-To run the Quill application on this QL-SD use the command `lrun win1_a_quill_boot`. The '_' is like '\' in DOS.
+To run the Quill application on this QL-SD use the command `lrun win1_a_quill_boot`. The `_` is like `\` in DOS.
 
 If you want to manipulate the QL-SD file on an emulator, SMSQmulator is recommended. Just mount the QXL.WIN file in the emulator and mount a NFA directory so you can copy files onto the QXL.WIN files using the NFA directory, e.g. `copy nfa1_file to win1_file`
 
