@@ -27,22 +27,26 @@ After starting the computer, select a microdrive MDV in the OSD:
 
 Pressing `<ALT><ENTER>` will bring back the last command on the command line.
 
-You can change the default directory using the `data_use` command, which is like DOS cd command. So setting `data_use win1_`. Directories are supported on the QL, use `make_dir`. Other directory command to use `ddown`, `dup`.
+You can change the default directory using the `data_use` command, which is like DOS cd command. So setting `data_use win1_` means you can just enter `dir`. Directories are supported on the QL, use `make_dir`. Other directory commands to use `ddown, dup`.
 
 ## QL-SD
 
 QL-SD can be viewed as a hard drive for the QL. If you have a QL-SD file called QXL.WIN (and the relevant .rom file) in the root directory of the SD card this will be mounted at boot. The drive is called `win1_` and you can manipulate files just the same as on the `mdv1_` drive.
 
-A sample QL-SD file and the required ql.rom is in the QL-SD.zip file. This contains a number of games and the Psion applications and also has unzip. It will be mounted read/write in the QL core. Format an SD card and extract this ZIP file first and then copy other files to the SD card, this is to stop and fragmentation which QL-SD cannot cope with.
+A sample QL-SD file and the required ql.rom is in the QL-SD.zip file. This contains a number of games and the Psion applications and also has unzip. Format an SD card and extract this ZIP file first and then copy other files to the SD card, this is to stop and fragmentation which QL-SD cannot cope with. It will be mounted read/write in the QL core.
 
-To run the Quill application on this QL-SD use the command `lrun win1_a_quill_boot`. The `_` is like the `\` in DOS.
+To run the Quill application on this QL-SD use the command `lrun win1_a_quill_boot`. The '_' is like '\' in DOS.
 
 If you want to manipulate the QL-SD file on an emulator, SMSQmulator is recommended. Just mount the QXL.WIN file in the emulator and mount a NFA directory so you can copy files onto the QXL.WIN files using the NFA directory, e.g. `copy nfa1_file to win1_file`
 
-To run the unzip program on this QL-SD drive do the following:
+To run the unzip program on this QL-SD drive:
+
 `make_dir win1_tempdir`
+
 `data_use win1_tempdir
+
 `ex unzip;"file.zip"`
+
 The files will have been extracted into the win1_tempdir directory.
 
 History
