@@ -1,3 +1,6 @@
+**tgfx16_210525.rbf**
+- CD support (need recent firmware)
+
 **sms_210424.rbf**
 - Boost PSG and FM volume, and replace the DAC (by robinsonb5)
 - Adjust VDP collision flag (for Donkey homebrew)
