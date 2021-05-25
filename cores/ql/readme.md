@@ -15,7 +15,7 @@ Be careful when copying files from a PC to the QL, there's a header in the QL fi
 
 ## Commands to get started
  
-There's a comprehensive [User Manual](https://archive.org/download/sinclair-ql-user-guide/Sinclair%20QL%20User%20Guide.pdf) that came with the QL that is worth reading. [Toolkit-2](http://www.dilwyn.me.uk/pe/TK2.pdf) contains the important command to manipulate files and drives.
+There's a comprehensive [User Manual](https://archive.org/details/sinclair-ql-user-guide) that came with the QL that is worth reading. [Toolkit-2](http://www.dilwyn.me.uk/pe/TK2.pdf) contains the important command to manipulate files and drives.
 
 After starting the computer, select a microdrive MDV in the OSD:
 
