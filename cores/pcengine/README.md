@@ -8,6 +8,7 @@ This is a MiST port of [fpgapce](https://github.com/Torlus/fpgapce) with many ad
 ### Features:
 - SuperGrafx support
 - CD-ROM support
+- Saves
 - 384K, 768K and SF2 special ROM mapper support
 - Multitap up to 5 controllers (4 reported to work)
 - 6 buttons controller support
