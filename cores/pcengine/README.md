@@ -1,4 +1,6 @@
-# MIST port of fpgapce - PC Engine/TurboGrafx-16 core
+# PC Engine/TurboGrafx-16 core
+
+This is a MiST port of [fpgapce](https://github.com/Torlus/fpgapce) with many additional enhancements.
 
 - [Binaries](https://github.com/mist-devel/mist-binaries/tree/master/cores/pcengine)
 - [Sources](https://github.com/gyurco/TurboGrafx16_MiSTer/tree/mist)
@@ -56,7 +58,7 @@ Only CUE files with single image file (FILE keyword) are supported!
 
 Almost all released games are working, Davis Cup Tennis and Andre Panza Kick Boxing have issues.
 
-## Gameplay videos of the older core versions
+## Gameplay videos of older core versions
 
 - [Devil's Crush](http://www.youtube.com/watch?feature=player_embedded&v=eqkAILkPe5I)
 - [Super Star Soldier](http://www.youtube.com/watch?feature=player_embedded&v=4l58HPSzfjQ)
