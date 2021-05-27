@@ -37,11 +37,15 @@ Only CUE files with single image file (FILE keyword) are supported!
 
 ### Usage
 
-- Load a BIOS with the first OSD option (as it would be a normal HuCard).
+- Load a BIOS (usually syscard3.pce) with the first OSD option (as it would be a normal HuCard).
 - Mount the CUE file via the "Mount CD" option
-- Optionally mount a SAV file (size: 2KB - 2048 byte). Before the first use,
-  it must be formatted from the BIOS menu. Use the "Write Save RAM" option to
+- Optionally mount a SAV file (size: 2KB - 2048 byte). Before the first use, it must be formatted from the BIOS menu. Use the "Write Save RAM" option to
   save its contents to the SD Card.
+  Generate SAV files with the following Windows command (BIN in this is for the CD-ROM titles only):
+  
+  `for %f in (*.bin) do fsutil file createnew "%~nf.sav" 2048`
+  
+- Start the game with RUN
 
 ## Contributions
 
