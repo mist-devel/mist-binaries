@@ -35,6 +35,8 @@ Copy the PCE ROMS to the TGFX16 folder to automatically list them when you selec
 
 Only CUE files with single image file (FILE keyword) are supported!
 
+Some CD-ROM files have split BIN files (such as the archive in the cloud redump files). Combine them with old program "CDmage 1.02.1 Beta 5" (Windows 32bit) to create one BIN file, steps: open CUE, Save and use defaults. 
+
 ### Usage
 
 - Load a BIOS (usually syscard3.pce) with the first OSD option (as it would be a normal HuCard).
