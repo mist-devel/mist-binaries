@@ -25,6 +25,12 @@ After starting the computer, select a microdrive MDV in the OSD:
 
 `view mdv1_file` (view a file)
 
+`load mdv1_file` (loads the basic file)
+
+`list` (list the basic file)
+
+`ed` (Edits the basic file, <ESC> to quit)
+
 Pressing `<ALT><ENTER>` will bring back the last command on the command line.
 
 You can change the default directory using the `data_use` command, which is like DOS cd command. So setting `data_use win1_` means you can just enter `dir`. Directories are supported on the QL, use `make_dir`. Other directory commands to use `ddown, dup`.
