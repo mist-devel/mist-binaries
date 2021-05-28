@@ -29,7 +29,7 @@ After starting the computer, select a microdrive MDV in the OSD:
 
 `list` (list the basic file)
 
-`ed` (Edits the basic file, <ESC> to quit)
+`ed` (Edits the basic file, `<ESC>` to quit)
 
 Pressing `<ALT><ENTER>` will bring back the last command on the command line.
 
