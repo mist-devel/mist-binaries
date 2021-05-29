@@ -1,3 +1,6 @@
+**tgfx16_210529.rbf**
+- Fix several reported bugs and glitches (need a firmware update for all fixes - will released soon)
+
 **tgfx16_210525.rbf**
 - CD support (need recent firmware)
 
