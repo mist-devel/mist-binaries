@@ -38,8 +38,13 @@ Copy the PCE ROMS to the TGFX16 folder to automatically list them when you selec
 Only CUE files with single image file (FILE keyword) are supported!
 
 Some CD-ROM files have split BIN files (such as the archive in the cloud redump files). Combine them with old program "CDmage 1.02.1 Beta 5" (Windows 32bit) to create one BIN file, steps: open CUE, Save and use defaults. 
+Or you can use CHDMAN from MAME:
 
-CHD files can be converted to the required format with CHDMAN from MAME:
+```
+chdman createcd -i input.cue -o output.chd
+```
+
+After that, CHD files can be converted to the required format:
 
 ```
 chdman extractcd -i input.chd -o output.cue -ob output.img
@@ -47,7 +52,8 @@ chdman extractcd -i input.chd -o output.cue -ob output.img
 
 ### Usage
 
-- Load a BIOS (usually syscard3.pce) with the first OSD option (as it would be a normal HuCard).
+- Load a BIOS (usually syscard3.pce) with the first OSD option (as it would be a normal HuCard). Hint: move and rename the syscard3.pce file to tgfx16.rom in the root directory, and the BIOS will auto-load with the core.
+  A BIOS file with .sgx extension will allow the use the CD in SuperGrafx mode.
 - Mount the CUE file via the "Mount CD" option
 - Optionally mount a SAV file (size: 2KB - 2048 byte). Before the first use, it must be formatted from the BIOS menu. Use the "Write Save RAM" option to
   save its contents to the SD Card.
