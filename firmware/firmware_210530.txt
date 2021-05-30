@@ -1,3 +1,12 @@
+firmware_210530
+===============
+- PCE-CD: fix a BCD->binary conversion in PCECD_COMM_GETDIRINFO
+- PCE-CD: slow down sector reads for HuVideo
+- Enhance max. kickstart file name to 79 (sorry, need to reset and resave Minimig configs again)
+- Support LBA28 mode for IDE (>8GiB image support for Minimig, up to 137 GiB on exFAT)
+- Display a warning if HDF indexing fails (and continue with reduced performance)
+- Fix one char extension selection (affects ZX81, TI99/4A)
+
 firmware_210525
 ===============
 Major update!
