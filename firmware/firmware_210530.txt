@@ -6,6 +6,8 @@ firmware_210530
 - Support LBA28 mode for IDE (>8GiB image support for Minimig, up to 137 GiB on exFAT)
 - Display a warning if HDF indexing fails (and continue with reduced performance)
 - Fix one char extension selection (affects ZX81, TI99/4A)
+Re-uploaded!
+- Fixed MODE1/2048 track type parsing
 
 firmware_210525
 ===============
