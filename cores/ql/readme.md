@@ -11,7 +11,7 @@ Microdrives will self boot if you select an MDV and reset. This will look for a 
 
 There's a big collection of QL programs and related material at http://www.dilwyn.me.uk
 
-Be careful when copying files from a PC to the QL, there's a header in the QL file that gets stripped when extracting ZIP files on the PC. You should unzip the ZIP files on the QL. 
+Be careful when copying files from a PC to the QL, there's metadata in the QL file that gets stripped when extracting ZIP files on the PC. You should unzip the ZIP files on the QL. 
 
 ## Commands to get started
  
@@ -43,7 +43,7 @@ A sample QL-SD file and the required ql.rom is in the QL-SD.zip file. This conta
 
 To run the Quill application on this QL-SD use the command `lrun win1_a_quill_boot`. The `_` is like `\` in DOS.
 
-If you want to manipulate the QL-SD file on an emulator, SMSQmulator is recommended. Just mount the QXL.WIN file in the emulator and mount a NFA directory so you can copy files onto the QXL.WIN files using the NFA directory, e.g. `copy nfa1_file to win1_file`
+If you want to manipulate the QL-SD file on an emulator, SMSQmulator is recommended. Just mount the QXL.WIN file in the emulator and mount a NFA directory so you can copy files onto the QXL.WIN files using the NFA directory, e.g. `copy nfa1_file to win1_file`. You can also use the Java program [QxlWinReader](http://www.wlenerz.com/qlstuff/#qxlwinr) but this appears to have problems with executables, it works fine with basic and text files.
 
 To run the unzip program on this QL-SD drive:
 
