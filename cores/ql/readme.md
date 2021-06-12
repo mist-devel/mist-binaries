@@ -5,7 +5,7 @@ This core needs a QL rom image on the SD card named ql.rom. The included ql.rom 
 
 In the OSD settings increase the memory to 640k from the default 128k. In most cases using 640k will always work fine.
 
-Files can be loaded from microdrive images stored in MDV files in QLAY format (vDrive MDVs are not compatible). The files must be exactly 174930 bytes in size. The MDVTOOL in the tools directory can manipulate the MDV files. There are some samples in the examples directory. 
+Files can be loaded from microdrive images stored in MDV files in QLAY format (vDrive MDVs are not compatible). The files must be exactly 174930 bytes in size. The MDVTOOL in the tools directory can manipulate the MDV files. There are some samples in the Games directory. NOTE: All software in the Games directory and QL-SD.zip is freeware or public domain.
 
 Microdrives will self boot if you select an MDV and reset. This will look for a file called BOOT on the microdrive and run it. You can also start a program on an MDV be typing 'lrun mdv1_boot'.
 
@@ -40,6 +40,8 @@ You can change the default directory using the `data_use` command, which is like
 QL-SD can be viewed as a hard drive for the QL. If you have a QL-SD file called QXL.WIN (and the relevant .rom file) in the root directory of the SD card this will be mounted at boot. The drive is called `win1_` and you can manipulate files just the same as on the `mdv1_` drive.
 
 A sample QL-SD file and the required ql.rom is in the QL-SD.zip file. This contains a number of games and the Psion applications and also has unzip. Format an SD card and extract this ZIP file first and then copy other files to the SD card, this is to stop and fragmentation which QL-SD cannot cope with. It will be mounted read/write in the QL core.
+
+NOTE: The QL-SD ql.rom file is not compatible with all software running from MDV1 so you may need to switch back to the normal ql.rom to get some MDV1 software working.
 
 To run the Quill application on this QL-SD use the command `lrun win1_a_quill_boot`. The `_` is like `\` in DOS.
 
