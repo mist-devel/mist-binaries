@@ -71,6 +71,10 @@ Games
 New to the BBC? Here's a selection of the best games to try: Arcadians, Chuckie Egg, Elite, Monsters, Planetoid, Snapper.
 A collection of disk images can be found at: http://www.bbcmicro.co.uk/
 
+Source code
+-----------
+https://github.com/mist-devel/beeb
+
 Old history
 -------
 * [bbc_200604.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/bbc_200604.rbf)
@@ -112,3 +116,5 @@ Old history
 
 * [bbc_151005.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/bbc/old/bbc_151005.rbf)
   - Joystick support
+
+
