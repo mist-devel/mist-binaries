@@ -7,6 +7,8 @@ In the OSD settings increase the memory to 640k from the default 128k. In most c
 
 Files can be loaded from microdrive images stored in MDV files in QLAY format (vDrive MDVs are not compatible). The files must be exactly 174930 bytes in size. The MDVTOOL in the tools directory can manipulate the MDV files. There are some samples in the Games directory. NOTE: All software in the Games directory and QL-SD.zip is freeware or public domain.
 
+The mdump2qlay program in tools will convert mdump image files to QLAY suitable for the QL core.
+
 Microdrives will self boot if you select an MDV and reset. This will look for a file called BOOT on the microdrive and run it. You can also start a program on an MDV be typing 'lrun mdv1_boot'.
 
 There's a big collection of QL programs and related material at http://www.dilwyn.me.uk
@@ -15,7 +17,7 @@ Be careful when copying files from a PC to the QL, there's metadata in the QL fi
 
 ## Commands to get started
  
-There's a comprehensive [User Manual](https://archive.org/details/sinclair-ql-user-guide) that came with the QL that is worth reading. [Toolkit-2](http://www.dilwyn.me.uk/pe/TK2.pdf) contains the important command to manipulate files and drives.
+There's a comprehensive [User Manual](https://archive.org/details/sinclair-ql-user-guide) that came with the QL that is worth reading. [Toolkit-2](http://www.dilwyn.me.uk/pe/TK2.pdf) contains the important commands to manipulate files and drives.
 
 After starting the computer, select a microdrive MDV in the OSD:
 
