@@ -1,3 +1,7 @@
+**fpgagen_210616.rbf**
+- Try again to simulate RAM refresh delays
+- Fix writing save RAM to SD Card
+
 **tgfx16_210529.rbf**
 - Fix several reported bugs and glitches (need a firmware update for all fixes - will released soon)
 
