@@ -1,3 +1,7 @@
+**snes_mist_210618.rbf**
+- Fix SAV file writing
+- Updates from upstream
+
 **fpgagen_210616.rbf**
 - Try again to simulate RAM refresh delays
 - Fix writing save RAM to SD Card
