@@ -1,3 +1,13 @@
+firmware_210618
+===============
+- Compiled in thumb mode
+- Fix a nasty long-standing buffer overflow in Minimig menu code
+- 4 IDE drive support on Minimig (need IDEFix/ATAPIMagic)
+- INI config format for Minimig (last time it has to be recreated)
+- PCECD fix for playing the last track
+- VHD= in ARC file
+- And some other minor updates
+
 firmware_210530
 ===============
 - PCE-CD: fix a BCD->binary conversion in PCECD_COMM_GETDIRINFO
