@@ -1,3 +1,9 @@
+**minimig_mist_rtg_210618.rbf**
+- Add support for secondary IDE channel (need IDEFix/ATAPIMagic)
+- 64 MB RAM support
+- Tentative CIA fix for OS3.1.4 time gain problem
+- RTG now supports 16 bit as well as 15 bit
+
 **snes_mist_210618.rbf**
 - Fix SAV file writing
 - Updates from upstream

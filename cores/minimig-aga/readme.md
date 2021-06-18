@@ -33,7 +33,7 @@ Plus three additional files:
 
 - MinimigUtils.adf     - drivers for RTG, Akiko(Chunky2Planar), FAT95 and mouse wheel
 
-RELEASE NOTES
+OLD RELEASE NOTES
 ====================
 
 minimig_mist-200614
