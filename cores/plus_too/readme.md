@@ -35,10 +35,12 @@ Hard disk support
 This Plus Too core implements the SCSI interface of the Macintosh Plus together with a maximum of two harddisks. The core implements only a subset of the SCSI commands. This is currently sufficient to read and write the disk, to boot from it and to format it using the setup tools that come with MacOS 6.0.8.
 Mac OS 7.5.5 also booted successfully from an 512MB pre-made image.
 
-The harddisk image(s) to be used can be selected from the "Mount *.IMG,VHD" entry in the on-screen-display. Alternatively, a **plus_too.vhd** file in the root directory can be used to automatically mount the first hard disk.
+The harddisk image(s) to be used can be selected from the "Mount *.IMG,VHD,HD?" entry in the on-screen-display. Alternatively, a **plus_too.vhd** file in the root directory can be used to automatically mount the first hard disk.
+If you have more than one disk image, plus_too.hd[0-3] can be also used.
+
 If no image is selected the entire SD card is being used. Caution: This will allow you to format the entire SD card in Macintosh file system format which will prevent the MIST from booting from that card since the MIST cannot boot from a Macintosh HDD. Instead select a IMG file first so all HDD i/o is redirected into that file. The format of the disk image is the same as being used by the SCSI2SD project which is documented [here](http://www.codesrc.com/mediawiki/index.php?title=HFSFromScratch).
 
-Unlike the floppy the SCSI disk is writable and data can be written to the disk from within the core. Since the Mac has some quite short timeouts in the SCSI drivers at least the [firmware version 151118](https://github.com/mist-devel/mist-binaries/tree/master/firmware) is needed when writing to SCSI disk. 
+Unlike the floppy the SCSI disk is writable and data can be written to the disk from within the core. Since the Mac has some quite short timeouts in the SCSI drivers at least the [firmware version 210618](https://github.com/mist-devel/mist-binaries/tree/master/firmware) is needed when writing to SCSI disk and support the 3rd and 4th SCSI drives.
 
 It has been tested that OS 6.0.8 can format the SCSI disk as well as doing a full installation from floppy disk to the harddisk. But keep in mind that this is an early work in progress and expect data loss when working with HDD images.
 
@@ -48,6 +50,17 @@ CPU Speed
 ---------
 
 The CPU speed can be adjusted from 8 MHz which together with the FX68K CPU core, is exactly the original Mac Plus speed (a bit faster, since no contention with the video RAM access), to 16MHz which is about 2 times faster (a bit slower with the FX68K, faster with TG68K).
+
+SE mode
+-------
+
+The core automatically switches to Macintosh SE mode, when an SE 256K ROM is used as the ROM file. The changes in SE mode:
+- The bigger ROM supports some new features
+- SCSI speed is increased
+- ADB used as a keyboard and mouse interface
+- The parameter RAM size is 256 bytes
+
+Using the attached [ARC file](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/plusSE.ARC) the SE ROM can be named as plus_se.rom, and can co-exists with the original Mac Plus ROM.
 
 Old history
 -----------

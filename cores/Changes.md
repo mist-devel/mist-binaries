@@ -1,3 +1,8 @@
+**plusToo_210620.rbf**
+- Support Macintosh SE mode (automatically switched if a 256KB SE ROM is used)
+- Support 4 SCSI drives (need at least firmware 210618!)
+- Greatly increased SCSI performance
+
 **minimig_mist_rtg_210618.rbf**
 - Add support for secondary IDE channel (need IDEFix/ATAPIMagic)
 - 64 MB RAM support
