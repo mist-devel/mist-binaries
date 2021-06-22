@@ -62,6 +62,8 @@ The core automatically switches to Macintosh SE mode, when an SE 256K ROM is use
 
 Using the attached [ARC file](https://github.com/mist-devel/mist-binaries/raw/master/cores/plus_too/plusSE.ARC) the SE ROM can be named as plus_se.rom, and can co-exists with the original Mac Plus ROM.
 
+**WARNING:** Due to a bug in the MOVEP instruction on TG68K, SCSI data corruption happens. Don't use this CPU in SE mode!
+
 Old history
 -----------
 
