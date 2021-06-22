@@ -1,3 +1,7 @@
+**plusToo_210622.rbf**
+- Fix SCSI bugs: data corruption, 3rd and 4th drives, GET CAPACITY command
+- Add fake VERIFY commands to SCSI - some formatters are using it
+
 **plusToo_210620.rbf**
 - Support Macintosh SE mode (automatically switched if a 256KB SE ROM is used)
 - Support 4 SCSI drives (need at least firmware 210618!)
