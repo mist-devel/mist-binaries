@@ -1,3 +1,7 @@
+**plusToo_210625.rbf**
+- TG68K update: MOVEP fix for SCSI (works now in SE mode)
+- Speed up ADB transmission for TG68K/16MHz mode
+
 **plusToo_210622.rbf**
 - Fix SCSI bugs: data corruption, 3rd and 4th drives, GET CAPACITY command
 - Add fake VERIFY commands to SCSI - some formatters are using it
