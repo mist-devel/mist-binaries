@@ -1,4 +1,4 @@
-// mdump2qlay v1.0
+// mdump2qlay v1.1
 // converts mdump (q-emulator) mdv images into qlay mdv format 
 //
 // (c) 2015 by Till Harbaum
@@ -212,8 +212,13 @@ int main(int argc, char **argv) {
   int sectors = mdump_hdr.sectors0;
 
   if (opt_i) {
+    //Get medium name from next sector
+    char tempbuf[12];
+    fread(&tempbuf, 12, 1, in);
+
     printf("MDV info: \n");
     printf("       mdump version: %d\n", mdump_hdr.flags&0xFF);
+    printf("         Medium name: \"%.10s\"\n", &tempbuf[2]);
     printf("   Number of sectors: %d (original MDV %d)\n", mdump_hdr.sectors0, mdump_hdr.sectors1);
     printf("  Offset to MDV data: %d\n", mdump_hdr.offset_MDV);
     printf("Bytes per MDV sector: %d\n", mdump_hdr.bytes_MDV);
@@ -221,6 +226,7 @@ int main(int argc, char **argv) {
     printf("  Offset sector data: %d\n", mdump_hdr.sector_data);
     printf(" Offset block header: %d\n", mdump_hdr.block_header);
     printf("\n");
+    fclose(in);
     return 0;
   }
 
@@ -315,10 +321,21 @@ int main(int argc, char **argv) {
     return -1;
   }
 
-  if(fwrite(buffer, sizeof(mdv_entry_t), MAX_SECTORS, out) != MAX_SECTORS) {
-    fprintf(stderr, "Error writing qlay image\n");
-    perror("Error:");
-    return -1;
+
+  // Write all sectors to output file,
+  // First write sector 0 then others in reverse order
+  for(i=MAX_SECTORS;i>0;i--) {
+    unsigned char cursec;
+
+    cursec=i;
+    if(cursec == MAX_SECTORS) cursec = 0;
+
+    if(!fwrite(&buffer[cursec], sizeof(mdv_entry_t), 1, out)) {
+      fprintf(stderr, "Error writing qlay image\n");
+      perror("Error:");
+      return -1;
+    }
+
   }
 
   fclose(out);
