@@ -1,15 +1,14 @@
-/* mdvtool */
-/* another quick'n dirty tool to deal with microdrive images
- * Original author unknown */
-
-/* 
- * Create MDV function added 
- * Fixed ZIP import
- * Squished a few bugs 
- * 
- * (c)2019 Jason Lucas
- * 
- *  */
+// mdvtool */
+// another quick'n dirty tool to deal with microdrive images
+// Original author Till Harbaum */
+//
+// Create MDV function added 
+// Fixed ZIP import
+// Squished a few bugs 
+// (c)2019 Jason Lucas
+// 
+// Additional fixes squidrpi
+// 
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -116,7 +115,7 @@ int mdv_check_mapping(void) {
       int me_bh = 256*buffer[phys].sec.file + buffer[phys].sec.block;
 
       if(me != me_bh)
-	printf("%3d: %04x / %04x\n",  i, me, me_bh);
+  printf("%3d: %04x / %04x\n",  i, me, me_bh);
     } else {
       // this sector must not be used at all
       
@@ -131,7 +130,7 @@ int mdv_check_mapping(void) {
   return 0;
 }
 
-void file_dump_chain(int f) {	
+void file_dump_chain(int f) {  
   int j;
 
   // dump block chain
@@ -143,44 +142,44 @@ void file_dump_chain(int f) {
 }
 void mdv_create(void){
   if (!strlen(medium_name)) strncpy(medium_name,"MD        ",10);
-	printf("Creating mdv\n");
-	int rand=random();
-	
-	for(int c=0;c<MAX_SECTORS;c++){
+  printf("Creating mdv\n");
+  int rand=random();
+  
+  for(int c=0;c<MAX_SECTORS;c++){
 
-		buffer[c].hdr.preamble[10]=0xFF;
-		buffer[c].hdr.preamble[11]=0xFF;
-		buffer[c].hdr.ff=0xFF;
-		buffer[c].hdr.snum=c;
-		buffer[c].hdr.rnd=rand;
-		buffer[c].sec.bh_preamble[10]=0xFF;
-		buffer[c].sec.bh_preamble[11]=0xFF;
-		buffer[c].sec.data_preamble[6]=0xFF;
-		buffer[c].sec.data_preamble[7]=0xFF;
-		buffer[c].sec.file=0xFD;
-		strncpy(buffer[c].hdr.name,medium_name,10);
-		for(int d=0;d<512;d++) buffer[c].sec.data[d]=0x00;
-		for(int d=0;d<120;d++) buffer[c].sec.extra_byte[d]=0x5A;		
-		if(c==0){ //Sector 0 - File map
-			buffer[c].sec.file=0x80;
-			for(int d=0;d<512;d+=2) {
-				buffer[c].sec.data[d]=0xFD;
-				buffer[c].sec.data[d+1]=0x00;
-			}
-			buffer[c].sec.data[0]=0xF8;
-			buffer[c].sec.data[2]=0x00;
-		}
-		if(c==1){//Root Dir
-			buffer[c].sec.file=0x00;
+    buffer[c].hdr.preamble[10]=0xFF;
+    buffer[c].hdr.preamble[11]=0xFF;
+    buffer[c].hdr.ff=0xFF;
+    buffer[c].hdr.snum=c;
+    buffer[c].hdr.rnd=rand;
+    buffer[c].sec.bh_preamble[10]=0xFF;
+    buffer[c].sec.bh_preamble[11]=0xFF;
+    buffer[c].sec.data_preamble[6]=0xFF;
+    buffer[c].sec.data_preamble[7]=0xFF;
+    buffer[c].sec.file=0xFD;
+    strncpy(buffer[c].hdr.name,medium_name,10);
+    for(int d=0;d<512;d++) buffer[c].sec.data[d]=0x00;
+    for(int d=0;d<120;d++) buffer[c].sec.extra_byte[d]=0x5A;    
+    if(c==0){ //Sector 0 - File map
+      buffer[c].sec.file=0x80;
+      for(int d=0;d<512;d+=2) {
+        buffer[c].sec.data[d]=0xFD;
+        buffer[c].sec.data[d+1]=0x00;
+      }
+      buffer[c].sec.data[0]=0xF8;
+      buffer[c].sec.data[2]=0x00;
+    }
+    if(c==1){//Root Dir
+      buffer[c].sec.file=0x00;
       //Set Dir length to 1 entry (64 bytes)
-			buffer[c].sec.data[2]=0x00;
+      buffer[c].sec.data[2]=0x00;
       buffer[c].sec.data[3]=0x40;
-		}
-		buffer[c].hdr.csum=sum(&buffer[c].hdr.ff,14);
-		buffer[c].sec.bh_csum=sum(&buffer[c].sec.file,2);
-		buffer[c].sec.data_csum=sum(buffer[c].sec.data,512);
-	}
-	return ;
+    }
+    buffer[c].hdr.csum=sum(&buffer[c].hdr.ff,14);
+    buffer[c].sec.bh_csum=sum(&buffer[c].sec.file,2);
+    buffer[c].sec.data_csum=sum(buffer[c].sec.data,512);
+  }
+  return ;
 
 }
 
@@ -262,31 +261,31 @@ int mdv_load(char *name) {
       
       // check preamble
       if(check_preamble(sec->bh_preamble, 10) != 0) {
-	fprintf(stderr, "Sector @%d: Block header preamble check failed\n", i);
-	return -1;
+        fprintf(stderr, "Sector @%d: Block header preamble check failed\n", i);
+        return -1;
       }
       
       if(sec->bh_csum != sum(&sec->file, 2)) {
-	printf("WARNING: Sector @%d(%d): Block header checksum failed\n", i, hdr->snum);
+        printf("WARNING: Sector @%d(%d): Block header checksum failed\n", i, hdr->snum);
       }
       
       if(sec->data_csum != sum(sec->data, 512)) {
-	printf("WARNING: Sector @%d(%d): Data checksum failed %x != %x\n", 
-	       i, hdr->snum, sec->data_csum, sum(sec->data, 512));
+        printf("WARNING: Sector @%d(%d): Data checksum failed %x != %x\n", 
+               i, hdr->snum, sec->data_csum, sum(sec->data, 512));
       }
       
       // save the file index if it's not a free sector (file == 253)
       if(sec->file == 253)
-	free++;
+        free++;
       else {
-	if(files[sec->file][sec->block] != 255) {
-	  fprintf(stderr, "Sector @%d: Multiple file/block %d/%d\n",
-		  i, sec->file, sec->block);
-	  return -1;
-	}
-	
-	used++;
-	files[sec->file][sec->block] = hdr->snum;
+        if(files[sec->file][sec->block] != 255) {
+          fprintf(stderr, "Sector @%d: Multiple file/block %d/%d\n",
+                  i, sec->file, sec->block);
+          return -1;
+        }
+  
+        used++;
+        files[sec->file][sec->block] = hdr->snum;
       }
     }
   }
@@ -298,8 +297,8 @@ int mdv_load(char *name) {
     if(sector_table[i] != 255) {
       // for every sector != 0 the previous sector must also exist
       if(sector_table[i] > 0) {
-	if(get_index(sector_table[i]-1) == -1) 
-	  fprintf(stderr, "WARNING: Missing sector %d\n", sector_table[i]-1);
+        if(get_index(sector_table[i]-1) == -1) 
+          fprintf(stderr, "WARNING: Missing sector %d\n", sector_table[i]-1);
       }
     }
   }
@@ -324,16 +323,15 @@ void mdv_files_check() {
     int j, bused = 0;
     for(j=0;j<256;j++) {
       if(files[i][j] != 255) {
-	bused++;
+        bused++;
 
-	if((j > 0) && (files[i][j-1] == 255)) 
-	  printf("File %d: Missing entry for block %d\n", i, j-1);
+        if((j > 0) && (files[i][j-1] == 255)) 
+          printf("File %d: Missing entry for block %d\n", i, j-1);
       }
     }
 
     if(bused) 
-      if((i > 0)&&(i < 128))
-	used++;
+      if((i > 0)&&(i < 128)) used++;
   }
 
   printf("Number of regular files: %d\n", used);
@@ -435,8 +433,8 @@ void mdv_files_list_chain(int f) {
 
 void show_file_entry(file_t *f) {
   printf("%16s %5d %s, V:%x, U:%d, B:%d", f->name,
-	 SWAP32(f->length), (f->type<=1)?(f->type?"EXEC":"DATA"):"????",
-	 SWAP32(f->version), SWAP32(f->last_update), SWAP32(f->last_backup));
+   SWAP32(f->length), (f->type<=1)?(f->type?"EXEC":"DATA"):"????",
+   SWAP32(f->version), SWAP32(f->last_update), SWAP32(f->last_backup));
 
   if(f->type == 1)
     printf(" info: %d/%d", SWAP32(f->info[0]), SWAP32(f->info[1]));
@@ -453,8 +451,8 @@ void mdv_files_list_chains() {
     if(s) {
       printf("=== file %d ===\n", f);
       if((f>0) && (f<128)) {
-	printf("Directory entry: ");
-	show_file_entry((file_t*)s->data);
+        printf("Directory entry: ");
+        show_file_entry((file_t*)s->data);
       }
       mdv_files_list_chain(f);
     }
@@ -537,7 +535,6 @@ void file_write(file_t *file, char *data) {
   for(int c=0;c<strlen(file->name);c++){
     if(file->name[c]=='.') file->name[c]='_';
   }
-
   
   printf("Writing file '%s' with %d bytes to mdv image ...\n",file->name, SWAP32(file->length));
 
@@ -677,7 +674,7 @@ void zip_import(char *name) {
         else {
           if(qdos && (sb.size != SWAP32(qdos->length)))
             printf("WARNING: qdos/zip file size mismatch\n");
-	  
+    
           if(!qdos) {
             // create qdos file entry of none was given
             memset(&b, 0, sizeof(b));
@@ -686,7 +683,7 @@ void zip_import(char *name) {
             strcpy(b.name, name);
             qdos = &b;
           }
-	  
+    
           // load file contents into memory
           char *buffer = (char*)malloc(sb.size);
           if(zip_fread(file, buffer, SWAP32(qdos->length)) != SWAP32(qdos->length)) 
@@ -738,14 +735,9 @@ void file_import(char *name) {
 }
 
 void mdv_write(char *name) {
-  printf("Writing mdv %s\n", name);
-
-  // adjust checksums
   int i;
-  for(i=0;i<MAX_SECTORS;i++) {
-    if(buffer[i].hdr.ff == 0xff)
-      buffer[i].sec.data_csum = sum(buffer[i].sec.data, 512);
-  }
+
+  printf("Writing mdv %s\n", name);
 
   FILE *out = fopen(name, "wb");
   if(!out) {
@@ -753,16 +745,29 @@ void mdv_write(char *name) {
     return;
   }
 
-  if(fwrite(buffer, sizeof(mdv_entry_t), MAX_SECTORS, out) != MAX_SECTORS) {
-    perror("fwrite()");
-    fclose(out);
-    return;
+  // Write all sectors to output file,
+  // First write sector 0 then others in reverse order
+  for(i=MAX_SECTORS;i>0;i--) {
+    unsigned char cursec;
+
+    cursec=i;
+    if(cursec == MAX_SECTORS) cursec = 0;
+
+    // adjust checksums
+    if(buffer[cursec].hdr.ff == 0xff)
+      buffer[cursec].sec.data_csum = sum(buffer[cursec].sec.data, 512);
+
+    // write a sector at a time
+    if(!fwrite(&buffer[cursec], sizeof(mdv_entry_t), 1, out)) {
+      fprintf(stderr, "Error writing qlay image\n");
+      perror("fwrite()");
+      return;
+    }
+
   }
 
   fclose(out);
 }
-
-
 
 
 void mdv_erase(void) {
@@ -771,7 +776,6 @@ void mdv_erase(void) {
   // mark all sectors as free
   int i;
   for(i=0;i<MAX_SECTORS;i++) {
-//    unsigned short phys = get_index(i);
 
     // set new mapping entry
 
@@ -781,22 +785,22 @@ void mdv_erase(void) {
 
     if(sec) {
       if(file) {
-		printf("erasing file %d, block %d\n", file, block); 
-	
-	files[file][block] = 0xff;
-	buffer[0].sec.data[2*i] = 0xfd;
-	buffer[0].sec.data[2*i+1] = 0x00;
-	
-	// adjust headers
-	sec->file = 0xfd;
-	sec->block = 0x00;
-	sec->bh_csum = sum(&sec->file, 2);
+        printf("erasing file %d, block %d\n", file, block); 
+  
+        files[file][block] = 0xff;
+        buffer[0].sec.data[2*i] = 0xfd;
+        buffer[0].sec.data[2*i+1] = 0x00;
+  
+        // adjust headers
+        sec->file = 0xfd;
+        sec->block = 0x00;
+        sec->bh_csum = sum(&sec->file, 2);
       } else {
-	// leave directory intact
-	//	printf("keeping dir block %d\n", block);
+        // leave directory intact
+        //  printf("keeping dir block %d\n", block);
 
-	// but erase it
-	memset(sec->data, 0, 512);
+        // but erase it
+        memset(sec->data, 0, 512);
       }
     }
   }
@@ -825,41 +829,38 @@ void mdv_rename(char *name) {
       buffer[i].hdr.csum = sum(&buffer[i].hdr.ff, 14);
     }
   }
-	
+  
 }
 
 int main(int argc, char **argv) {
-
 
   assert(sizeof(hdr_t) == 28);
   assert(sizeof(sector_t) == 658);
   assert(sizeof(file_t) == 64);
 
+  if(argc < 3) {
+    printf("Usage: mdvtool <mdv> commands\n");
+    printf("   or: mdvtool create commands\n");
+    printf("Commands:\n");
+    printf("   create               - create a new MDV image\n");
+    printf("   dir                  - list MDV contents\n");
+    printf("   check_files          - check file integrity\n");
+    printf("   file_chains          - list chain of sectors for each file\n");
+    printf("   check_mapping        - check the sector mapping\n");
+    printf("   show_mapping         - show physical/loginal sector mapping\n");
+    printf("   export file_name     - export a file from the MDV image\n");
+    printf("   erase                - erase the MDV image\n");
+    printf("   name image_name      - rename the MDV image\n");
+    printf("   import file_name     - import a file to the MDV image\n");
+    printf("   zip_import file_name - import an entire ZIP archive\n");
+    printf("   write file_name      - write the MDV image\n"); 
+    return 0;
+  }
 
-    if(argc < 3) {
-      printf("Usage: mdvtool <mdv> commands\n");
-      printf("   or: mdvtool create commands\n");
-      printf("Commands:\n");
-      printf("   create               - create a new MDV image\n");
-      printf("   dir                  - list MDV contents\n");
-      printf("   check_files          - check file integrity\n");
-      printf("   file_chains          - list chain of sectors for each file\n");
-      printf("   check_mapping        - check the sector mapping\n");
-      printf("   show_mapping         - show physical/loginal sector mapping\n");
-      printf("   export file_name     - export a file from the MDV image\n");
-      printf("   erase                - erase the MDV image\n");
-      printf("   name image_name      - rename the MDV image\n");
-      printf("   import file_name     - import a file to the MDV image\n");
-      printf("   zip_import file_name - import an entire ZIP archive\n");
-      printf("   write file_name      - write the MDV image\n"); 
-      return 0;
-    }
-
-    if(mdv_load(argv[1]) < 0) {
-      mdv_close();
-      return -1;
-    }
-
+  if(mdv_load(argv[1]) < 0) {
+    mdv_close();
+    return -1;
+  }
 
   int c = 2;
   while(c < argc) {
@@ -870,8 +871,8 @@ int main(int argc, char **argv) {
 
     else if(!strcasecmp(argv[c], "export")) {
       if(++c >= argc) {
-		printf("export needs a file name as parameter\n");
-		return 0;
+        printf("export needs a file name as parameter\n");
+        return 0;
       }
 
       file_export(argv[c]);
@@ -879,8 +880,8 @@ int main(int argc, char **argv) {
     
     else if(!strcasecmp(argv[c], "import")) {
       if(++c >= argc) {
-		printf("import needs a file name as parameter\n");
-		return 0;
+        printf("import needs a file name as parameter\n");
+        return 0;
       }
 
       file_import(argv[c]);
@@ -888,8 +889,8 @@ int main(int argc, char **argv) {
 
     else if(!strcasecmp(argv[c], "name")) {
       if(++c >= argc) {
-		printf("name needs an image name as parameter\n");
-		return 0;
+        printf("name needs an image name as parameter\n");
+        return 0;
       }
 
       mdv_rename(argv[c]);
@@ -897,8 +898,8 @@ int main(int argc, char **argv) {
 
     else if(!strcasecmp(argv[c], "zip_import")) {
       if(++c >= argc) {
-		printf("zip_import needs a file name as parameter\n");
-		return 0;
+        printf("zip_import needs a file name as parameter\n");
+        return 0;
       }
 
       zip_import(argv[c]);
@@ -906,8 +907,8 @@ int main(int argc, char **argv) {
 
     else if(!strcasecmp(argv[c], "write")) {
       if(++c >= argc) {
-		printf("write needs a file name as parameter\n");
-		return 0;
+        printf("write needs a file name as parameter\n");
+        return 0;
       }
 
       mdv_write(argv[c]);
