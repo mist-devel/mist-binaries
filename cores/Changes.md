@@ -1,3 +1,7 @@
+**ql_210627.rbf**
+- Second microdrive support added. Games that require MDV2_ support, like "QL Pawn", are now supported.
+- Selectable ROM added
+
 **plusToo_210625.rbf**
 - TG68K update: MOVEP fix for SCSI (works now in SE mode)
 - Speed up ADB transmission for TG68K/16MHz mode
