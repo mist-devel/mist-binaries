@@ -10,10 +10,11 @@ information as it is not required to replicate a microdrive.
 
 The mdump format can be read by Q-emulator. QLAY format can be read by MiST QL core, QL2K & Q-emulator.
 
-The mdump image contains a header and then multiple sectors.
+The mdump image contains a header and then multiple sectors. The header size 
+is in "offset to MDV sector data" but is usually 46 bytes.
 
 =================
-HEADER (46 bytes)
+HEADER (usually 46 bytes)
 
 (The source code defines the format below in the mdump_hdr_t structure)
 0   ID "Mdv*Dump"
