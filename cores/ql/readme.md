@@ -63,7 +63,16 @@ The files will have been extracted into the win1_tempdir directory.
 
 History
 -------
-* [ql_210627.rbf](https://github.com/mist-devel/mist-binaries/raw/master/cores/ql/ql_210627.rbf)
+* ql_210703.rbf
+  - Switchable speed to get closer to original QL speed (now about 2-3x).
+  - BUS improvements to attempt reduction in bus access speed including use of clkena_in to replicate DTACK waits.
+  - Updated TG68K to latest version.
+  - Reworked IPC communication logic in ZX8302 and added a COMDATA latch.
+  - IPC code uses Hermes, fixes missing key-presses.
+  - Eliminate most async clocks, better reliability?
+  - Removed MDV reverse optionas this is unecessary, use "mdvtool file.mdv write file_new.mdv" to fix incorrect sector order of an MDV file.
+
+* ql_210627.rbf
   - Second microdrive support added. Games that require MDV2_ support, like "QL Pawn", are now supported.
   - Selectable ROM added
   - Games/Software moved to "QL Software Collection" on archive.org
