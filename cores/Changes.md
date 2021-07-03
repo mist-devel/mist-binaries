@@ -1,3 +1,10 @@
+**ql_210703.rbf**
+- Switchable speed to get closer to original QL speed.
+- BUS improvements to attempt reduction in bus access speed including use of clkena_in to replicate DTACK waits.
+- Reworked IPC communication logic in ZX8302 and added a COMDATA latch.
+- IPC code uses Hermes, fixes missing key-presses.
+- Eliminate most async clocks.
+
 **ql_210627.rbf**
 - Second microdrive support added. Games that require MDV2_ support, like "QL Pawn", are now supported.
 - Selectable ROM added
