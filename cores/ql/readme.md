@@ -43,7 +43,19 @@ You can also load to the second microdrive by select OSD > "Load MDV2". Then acc
 
 QL-SD can be viewed as a hard drive for the QL. If you have a QL-SD file called QXL.WIN (and the relevant .rom file) in the root directory of the SD card this will be mounted at boot. The drive is called `win1_` and you can manipulate files just the same as on the `mdv1_` drive.
 
-The sample QL-SD QXL.WIN and relevant ROM ql_sd.rom files should be in the root of the SD card. To use this QL-SD select the ROM file in the OSD "Load *.ROM". This contains a number of games and the Psion applications and also has unzip. Format an SD card and extract this ZIP file first and then copy other files to the SD card, this is to stop and fragmentation which QL-SD cannot cope with. It will be mounted read/write in the QL core.
+The sample QL-SD QXL.WIN contains a number of games, the Psion applications and also has unzip. The QXL.win and relevant ROM ql-sd.rom files should be in the root of the SD card. To use this QL-SD select the ROM file in the OSD "Load *.ROM". It will be mounted read/write in the QL core.
+
+Format an SD card and extract the ZIP file first on the PC, copy the QXL.win to the SD card, to stop fragmentation which QL-SD cannot cope with. 
+Then copy the following to the SD card:
+* ql.rbf as core.rbf
+* ql_SD.rom
+* js.rom (optional from http://www.dilwyn.me.uk/qlrom/index.html)
+* create a directory called "QL" and copy your MDV images into it
+* Insert the SD card in the Mist, switch it on
+* F12 choose the ql-sd.rom as ROM
+* press F1 on the start screen 
+* to boot from a Microdrive image with the ql-sd.rom hold CTRL and press F1
+* for some older games select the JS.rom and press F2
 
 NOTE: The QL-SD ql_sd.rom file is not compatible with all software running from MDV1 so it is not the default ROM file.
 
