@@ -1,9 +1,9 @@
 # PC Engine/TurboGrafx-16 core
 
-This is a MiST port of [fpgapce](https://github.com/Torlus/fpgapce) with many additional enhancements.
+This is a MiST port of [TurboGrafx16](https://github.com/MiSTer-devel/TurboGrafx16_MiSTer) by srg320.
 
 - [Binaries](https://github.com/mist-devel/mist-binaries/tree/master/cores/pcengine)
-- [Sources](https://github.com/gyurco/TurboGrafx16_MiSTer/tree/mist)
+- [Sources](https://github.com/mist-devel/TurboGrafx16_FPGA)
 
 ### Features:
 - SuperGrafx support
@@ -71,6 +71,7 @@ chdman extractcd -i input.chd -o output.cue -ob output.img
 - [Alastair Robinson's updates](https://github.com/robinsonb5/fpgapce)
 - [MiSTer improvements, CPU, VDP rewrite and CD support by srg320](https://github.com/MiSTer-devel/TurboGrafx16_MiSTer)
 - MiST port by Gyurco
+- Turbo Chameleon port by robinsonb5
 
 ## Notes ##
 
