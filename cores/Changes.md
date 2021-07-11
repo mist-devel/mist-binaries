@@ -1,3 +1,7 @@
+**MiSTery-210711.rbf**
+- Fix extra RAM selection (works with TG68K now)
+- Various updates of components (FX68K, TG68K, FDC)
+
 **tgfx16_210705.rbf**
 - New SDRAM controller and cofi module by robinsonb5
 - Fix sprite rendering in hires mode
