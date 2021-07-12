@@ -1,3 +1,6 @@
+**msx_mist_210712.rbf**
+- Update common MiST components - support multiple write SD Card command
+
 **MiSTery-210711.rbf**
 - Fix extra RAM selection (works with TG68K now)
 - Various updates of components (FX68K, TG68K, FDC)
