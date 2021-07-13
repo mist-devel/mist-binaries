@@ -3,17 +3,21 @@ Sinclair QL core for the MIST board
 
 This core needs a QL rom image on the SD card named ql.rom. The included ql.rom should work OK and includes the Toolkit-2 extension which is required for most software. The Toolkit 2 also has much improved file commands.
 
-In the OSD settings increase the memory to 640k from the default 128k. In most cases using 640k will always work fine.
+In the OSD settings increase the memory to 640k from the default 128k. In most cases using 640k will always work fine. The disadvantage is that the boot times will be slower as the QL has to scan more memory.
 
-Files can be loaded from microdrive images stored in MDV files in QLAY format (vDrive & mdump MDVs are not compatible). They are mounted read-only. The files must be exactly 174930 bytes in size. The MDVTOOL in the tools directory can manipulate the MDV files. There are some samples in the Games directory. NOTE: All software in the Games directory and QL-SD.zip is freeware or public domain. A collection is available on archive.org.
+The speed is switable using "QL Speed" in the OSD. It defaults to be near the original speed of the QL hardware. Switch this off and it runs 3-4x faster than the original QL hardware. The slower speed uses a crude slow down method which is not very accurate but gives a good approximation of the original hardware.
 
-The MDUMP2QLAY program in tools will convert MDUMP (version 1 & 2) image files to QLAY suitable for the QL core.
+Files can be loaded from microdrive images stored in MDV files in QLAY format (vDrive & mdump .mdv files are not compatible). They are mounted read-only. The files must be exactly 174930 bytes in size. The [MDVTOOL](https://github.com/mist-devel/mist-binaries/tree/master/cores/ql/tools/mdvtool) program can manipulate the MDV files. There are some samples in the "QL" directory. NOTE: All software in the "QL" directory and QL-SD.zip is freeware or public domain. A software collection is available on archive.org.
+
+The [MDUMP2QLAY](https://github.com/mist-devel/mist-binaries/tree/master/cores/ql/tools/mdump2qlay) program will convert MDUMP (version 1 & 2) image files to QLAY suitable for the QL core.
 
 Microdrives will self boot if you select an MDV and reset. This will look for a file called BOOT on the microdrive and run it. You can also start a program on an MDV be typing 'lrun mdv1_boot'.
 
 There's a big collection of QL programs and related material at http://www.dilwyn.me.uk
 
 Be careful when copying files from a PC to the QL, there's metadata in the QL file that gets stripped when extracting ZIP files on the PC. You should unzip the ZIP files on the QL. 
+
+If you find an MDV that was not created with latest MDVTOOL or MDUMP2QLAY and it is slow, it is possible the sectors are in the wrong order. Run it through mdvtool to fix the sector order, e.g. "mdvtool old.mdv write new.mdv" 
 
 ## Commands to get started
  
@@ -75,6 +79,9 @@ The files will have been extracted into the win1_tempdir directory.
 
 History
 -------
+* ql_210713.rbf
+  - Improved speed to be near the original QL hardware speed. This is a fairly crude slow down method so it is not 100% accurate.
+
 * ql_210703.rbf
   - Switchable speed to get closer to original QL speed (now about 2-3x).
   - BUS improvements to attempt reduction in bus access speed including use of clkena_in to replicate DTACK waits.
