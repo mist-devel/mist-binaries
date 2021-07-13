@@ -1,3 +1,6 @@
+**ql_210713.rbf**
+- Improved speed to be near the original QL hardware speed.
+
 **msx_mist_210712.rbf**
 - Update common MiST components - support multiple write SD Card command
 
