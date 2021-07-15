@@ -1,3 +1,11 @@
+firmware_210715
+===============
+- Bidirectional PS2 support (accepts some keyboard/mouse control commands)
+- Add total number of sector reporting for IDE LBA mode (fixes HDToolBox size reporting)
+- New Minimig features menu (by retrofun)
+- Menu scrolling fix with subpages
+- Directory listing fix when one directory is a prefix of another
+
 firmware_210618
 ===============
 - Compiled in thumb mode
