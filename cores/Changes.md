@@ -1,3 +1,6 @@
+**Next186_210715.rbf**
+- New core
+
 **ql_210713.rbf**
 - Improved speed to be near the original QL hardware speed.
 
