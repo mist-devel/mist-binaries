@@ -1,3 +1,6 @@
+**ql_210627.rbf**
+- Improved video positioning.
+
 **Next186_210715.rbf**
 - New core
 

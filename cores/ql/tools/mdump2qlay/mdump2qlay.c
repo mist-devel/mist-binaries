@@ -144,7 +144,7 @@ int main(int argc, char **argv) {
   char outfile[FILENAME_MAX];
   strcpy(outfile, argv[arg_file]);
   outfile[strlen(outfile)-4] = '\0';
-  strcat(outfile, "_QLAY.mdv");
+  strcat(outfile, "_qlay.mdv");
 
   // do some sanity tests in the internal structures
   assert(sizeof(hdr_t) == 28);

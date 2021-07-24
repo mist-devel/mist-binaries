@@ -79,6 +79,10 @@ The files will have been extracted into the win1_tempdir directory.
 
 History
 -------
+
+* ql_210724.rbf
+  - Improved video positioning.
+
 * ql_210713.rbf
   - Improved speed to be near the original QL hardware speed. This is a fairly crude slow down method so it is not 100% accurate.
 
