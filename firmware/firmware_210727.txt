@@ -1,3 +1,9 @@
+firmware_210727
+===============
+- Add more PS2 mouse commands (fixes some Next186 mouse using progs - by retrofun)
+- Don't send a mount msg to the core when mounting is failed (fixes Next186 native SD use)
+- Fix core.arc loading
+
 firmware_210715
 ===============
 - Bidirectional PS2 support (accepts some keyboard/mouse control commands)
