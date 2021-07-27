@@ -1,11 +1,12 @@
 Minimig-AGA for MIST
 ====================
 http://somuch.guru/minimig/minimig-mist
+https://github.com/minimig-dev/MinimigAGA-MiST-TC64
 
 REQUIREMENTS
 ====================
 
-To use this minimig core on the MiST board, you will at the minimum need an SD/SDHC card, formatted with the FAT32 filesystem, an USB keyboard and a compatible monitor / TV. Joysticks & mouse can be emulated on the keyboard. You will probably want to attach a set of speakers or headphones, a real Amiga or USB mouse and a real Amiga joystick or an USB gamepad. The MiST board is needed, too, of course!
+To use this minimig core on the MiST board, you will at the minimum need an SD/SDHC card, formatted with the FAT32/exFAT filesystem, an USB keyboard and a compatible monitor / TV. Joysticks & mouse can be emulated on the keyboard. You will probably want to attach a set of speakers or headphones, a real Amiga or USB mouse and a real Amiga joystick or an USB gamepad. The MiST board is needed, too, of course!
 
 You will also need a Kickstart ROM image file, which you can obtain by copying Kickstart ROM IC from your actual Amiga, or by buying an Amiga Forever software pack. The Kickstart image should be placed on the root of the SD card with the name kick.rom.
 

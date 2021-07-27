@@ -1,3 +1,8 @@
+**minimig_mist_rtg_210727.rbf**
+- Don't freeze on writing 256 sectors
+- Make the secondary IDE disabling effective
+- Configurable audio filter mode & power LED off-state (by retrofun)
+
 **ql_210627.rbf**
 - Improved video positioning.
 
