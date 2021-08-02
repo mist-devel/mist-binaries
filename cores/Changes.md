@@ -1,3 +1,14 @@
+**Next186_210802.rbf**
+- Many improvements in PIC, PIT and PC Speaker
+- MPU-401 interface (by squidrpi)
+- More frequent cache flushes reducing VGA artifacts (however reducing the performance, too)
+- EGA/VGA VDE register fix
+- Joystick support
+- Cache the whole phyisical address space
+- NMI button (useful for Turbo Debugger)
+
+The BIOS also needs to be updated!
+
 **minimig_mist_rtg_210727.rbf**
 - Don't freeze on writing 256 sectors
 - Make the secondary IDE disabling effective

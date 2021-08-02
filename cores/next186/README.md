@@ -16,6 +16,10 @@ and the **Next186.ROM** BIOS file next to the **RBF**.
 
 The core requires firmware version at least **210715**.
 
+This core has several compatibility issues (but slowly improving). Here's a spreadsheet with
+hint and tips for some titles:
+https://docs.google.com/spreadsheets/d/1r07Ubfzquz2FxnKp4GROk8_Kq6kTlVW7YxVTmBDR_c4/edit#gid=0
+
 # Source code
 
 - [Original code on opencores.org](https://opencores.org/projects/next186_soc_pc)
