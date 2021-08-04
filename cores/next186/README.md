@@ -10,7 +10,7 @@ Modifications from the original core:
 - DSP coprocessor is disabled currently (out of BRAM), MP3 playing is not possible.
 - MPU 401 MIDI output.
 
-# Usage
+## Usage
 
 You'll need an installed MS-DOS (up to v6.22) on the SD-Card (or on a **Next186.VHD** file),
 and the **Next186.ROM** BIOS file next to the **RBF**. 
@@ -23,18 +23,18 @@ This core has several compatibility issues (but slowly improving). Here's a spre
 hint and tips for some titles:
 https://docs.google.com/spreadsheets/d/1r07Ubfzquz2FxnKp4GROk8_Kq6kTlVW7YxVTmBDR_c4/edit#gid=0
 
-# Settings
+### Settings
 
 - CPU Speed: Maximum, /2, /3, /4 - Normally it is OK to use Maximum but quite a few games work better when set to /3 
 - MIDI: MPU401, COM1 - MPU401 enables the standard MIDI out port, COM1 enables COM1 serial rs232 out of the MIDI port.
 - NMI: Hardware interrupt useful for debugging in DOS.
 
-# VHD Support
+### VHD Support
 
 You can mount a VHD file in Windows 10 using "Disk Management" > Attach VHD. You can then write files directly to the VHD as normal. Make sure file names are no more than 8 characters long.
 To mount a VHD in MacOS use `hdiutil attach -imagekey diskimage-class=CRawDiskImage Next186.vhd`
 
-# MIDI out
+### MIDI out
 
 MPU 401 MIDI out is supported at the default 330 address. Interrupts are not support and not required for MIDI out. 
 
@@ -45,7 +45,7 @@ Some games may require a slower CPU /3 speed to work correctly with the MT-32 wh
 You can also control the MT32-Pi from DOS using [mt32-pi-control](https://github.com/gmcn42/mt32-pi-control/tree/main/dos_bin)
 
 
-# Source code
+## Source code
 
 - [Original code on opencores.org](https://opencores.org/projects/next186_soc_pc)
 - [MiST port](https://github.com/gyurco/Next186)
