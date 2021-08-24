@@ -1,3 +1,8 @@
+**zxspectrum_210824.rbf**
+- Add Issue2/Issue3 selector
+- Option to disable snowing (unrainer)
+- Sinclair II joystick and Kempston mouse fix
+
 **Next186_210802.rbf**
 - Many improvements in PIC, PIT and PC Speaker
 - MPU-401 interface (by squidrpi)
