@@ -1,3 +1,6 @@
+**nes_210824.rbf**
+- Fix backup RAM reading/writing from/to the SD card
+
 **zxspectrum_210824.rbf**
 - Add Issue2/Issue3 selector
 - Option to disable snowing (unrainer)
