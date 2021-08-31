@@ -17,6 +17,7 @@ a c1541 floppy implementation.
 - 6581 and 8580 SID support
 - 1351 Mouse on both controller ports
 - Stereo SIDs at D420 and D500 addresses
+- C128-style turbo mode (with always ON option)
 - Pseudo stereo mode (SID 6580 on left, 8580 on right, driven by the same data)
 - 4 player interface support (up to 4 joysticks)
 - UART support (RX and TX on M,B and C pins of the User port)
@@ -35,6 +36,29 @@ started using the basic "run" command. As shown in the beginning of this
 video: https://www.youtube.com/watch?v=tnboiECYXVo
 
 You need at least firmware version **200311**!
+
+## Dual-SID
+
+The second SID's address is $D420 and $D500 in stereo modes.
+
+## Turbo modes
+
+Software selectable turbo mode mimics the $D030 (53296) port of the C128.
+
+```
+POKE 53296,1
+```
+will turn ON turbo,
+```
+POKE 53296,0
+```
+will turn OFF turbo.
+
+Note that the 2 MHz CPU operation steals the cycles from the VIC-II chip,
+so it's wise to enable it only in the vertical border/blank period.
+The **Turbo: ON** option does exactly that.
+
+The 1541 disk drive doesn't work with enabled turbo.
 
 ## C64GS
 

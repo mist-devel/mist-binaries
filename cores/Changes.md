@@ -1,3 +1,8 @@
+**C64_210901.rbf**
+- Fix some cases when the ROM/Tape downloading fails
+- Use the ID values in the BAM for the whole disk on 1541
+- Add C128-style 2 MHz turbo mode
+
 **nes_210824.rbf**
 - Fix backup RAM reading/writing from/to the SD card
 
