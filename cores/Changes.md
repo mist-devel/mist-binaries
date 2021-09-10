@@ -1,3 +1,7 @@
+**tgfx16_210910.rbf**
+- Fix YPbPr mode
+- Updates from upstream
+
 **C64_210901.rbf**
 - Fix some cases when the ROM/Tape downloading fails
 - Use the ID values in the BAM for the whole disk on 1541
