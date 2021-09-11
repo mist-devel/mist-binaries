@@ -1,3 +1,17 @@
+firmware_210911
+===============
+- Add missing keys for UK keyboard in set1 - for Next186 (by squidrpi)
+- DB9 joystick can be used for OSD navigation
+- A new RTC config page in the OSD (needs USB-RTC)
+- Send 'mod' value to the core loaded from 'core.arc'
+- Implement MMC_WriteMultiple, use it in IDE and ACSI
+- USB HID fixes:
+  - partial fix for Retroflag SNES USB gamepad (see mist-binaries issue#109)
+  - signed joystick axis fix
+  - HAT switch fix
+- Use a bigger sector buffer for directory browsing (slight performance increase)
+- Refactor the code to make it easier to port the firmware to another MCU
+
 firmware_210727
 ===============
 - Add more PS2 mouse commands (fixes some Next186 mouse using progs - by retrofun)
