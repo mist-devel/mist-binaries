@@ -1,3 +1,7 @@
+firmware_210911 (hotfix)
+========================
+- Revert external buffer use for directory browsing (was broken in exFAT)
+
 firmware_210911
 ===============
 - Add missing keys for UK keyboard in set1 - for Next186 (by squidrpi)
