@@ -1,3 +1,8 @@
+firmware_211001
+===============
+- Fix for retrobit gamepads
+- Fix extension handling for short extensions (again)
+
 firmware_210911 (hotfix)
 ========================
 - Revert external buffer use for directory browsing (was broken in exFAT)
