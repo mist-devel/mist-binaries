@@ -1,3 +1,6 @@
+**nes_211003.rbf**
+- Add lot of selectable palettes
+
 **tgfx16_210910.rbf**
 - Fix YPbPr mode
 - Updates from upstream
