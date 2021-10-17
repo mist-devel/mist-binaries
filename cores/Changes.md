@@ -1,3 +1,8 @@
+**msx_mist-211017.rbf**
+- Update to OCM-PLD v3.9
+- MIDI OUT supoort
+- Casette input/DAC output changes (hopefully fixes)
+
 **nes_211003.rbf**
 - Add lot of selectable palettes
 
