@@ -1,3 +1,9 @@
+firmware_211121
+===============
+- Use hardware-controlled NPCS lines for SPI
+- Add mass-storage device support (MiST as USB drive - need mass_storage=1 in mist.ini)
+- Add Xbox360 controller support (digital parts only, tested with a Retroflag classic USB gamepad)
+
 firmware_211001
 ===============
 - Fix for retrobit gamepads
