@@ -1,3 +1,6 @@
+**msx_mist-211124.rbf**
+- Fix keyboard FIFO overflow
+
 **msx_mist-211017.rbf**
 - Update to OCM-PLD v3.9
 - MIDI OUT supoort
