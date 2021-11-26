@@ -1,3 +1,7 @@
+**colecovision_211126.rbf**
+- Increase keyboard FIFO size to avoid overflow
+- Change SDRAM drive strength to 8mA
+- Update the CPU and other components
 
 **Ti994a_211126.rbf**
 - Use higher SDRAM clock
