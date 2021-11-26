@@ -1,3 +1,8 @@
+**vic20_211127.rbf**
+- VIC-I color-pixel data alignment fix (thanks, AMR!)
+- Audio filter simplifications / improvements by AMR
+- 1541 update from C64/C16, add disk unmounting to OSD
+
 **colecovision_211126.rbf**
 - Increase keyboard FIFO size to avoid overflow
 - Change SDRAM drive strength to 8mA
