@@ -1,3 +1,8 @@
+
+**Ti994a_211126.rbf**
+- Use higher SDRAM clock
+- Change SDRAM drive strength to 8mA
+
 **msx_mist-211124.rbf**
 - Fix keyboard FIFO overflow
 
