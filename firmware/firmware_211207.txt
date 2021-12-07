@@ -1,3 +1,10 @@
+firmware_120721
+===============
+- Add support for the second stick on gamepads (4 axes/gamepad). Tested only on one model yet.
+- Add analogue joystick scaling (joystick_analog_multiplier, joystick_analog_offset options)
+- Restructured menu engine. Easier maintenability, less flash space. As this is a
+  rather large change, report any issues or menu navigation anomalies.
+
 firmware_211121
 ===============
 - Use hardware-controlled NPCS lines for SPI
