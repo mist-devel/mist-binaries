@@ -1,3 +1,8 @@
+**minimig_mist_rtg_211207.rbf**
+- Add analogue joystick support (turn on in Chipset menu)
+- Digital joystick also affects POT registers (fix Jimmy White's whirlwind snooker)
+- Update RTG, support screen dragging, update the utility disk (by AMR)
+
 **vic20_211127.rbf**
 - VIC-I color-pixel data alignment fix (thanks, AMR!)
 - Audio filter simplifications / improvements by AMR
