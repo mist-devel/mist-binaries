@@ -1,3 +1,8 @@
+**Amstrad_211211.rbf**
+- Some FDC updates
+- Fix some CRTC behavior (especially CRTC0 ones)
+- Allow umounting disk images from the OSD
+
 **minimig_mist_rtg_211207.rbf**
 - Add analogue joystick support (turn on in Chipset menu)
 - Digital joystick also affects POT registers (fix Jimmy White's whirlwind snooker)
