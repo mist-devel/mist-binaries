@@ -1,3 +1,9 @@
+**C64_211220.rbf**
+- CIA Timer fixes
+- VIC-II: latch xscroll one pixel later (Happy 2021 demo)
+- Keyboard numpad symbol support
+- REU up to 16 MB with original timings and bus arbitration
+
 **Amstrad_211211.rbf**
 - Some FDC updates
 - Fix some CRTC behavior (especially CRTC0 ones)

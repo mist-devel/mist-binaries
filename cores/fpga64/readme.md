@@ -13,6 +13,7 @@ a c1541 floppy implementation.
 - Load from real tape using the UART RX pin
 - Save to real tape through audio output
 - PAL/NTSC modes
+- RAM Expansion Unit up to 16 MB
 - RGB and YPbPr output, optionally with scandoubler (VGA)
 - 6581 and 8580 SID support
 - 1351 Mouse on both controller ports
