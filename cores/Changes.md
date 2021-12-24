@@ -1,3 +1,6 @@
+**C64_211224.rbf**
+- Merry "Treu Love" Christmas!
+
 **C64_211220.rbf**
 - CIA Timer fixes
 - VIC-II: latch xscroll one pixel later (Happy 2021 demo)
