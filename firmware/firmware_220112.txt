@@ -1,4 +1,14 @@
-firmware_120721
+firmware_220112
+===============
+- Fix some issues regarding to the new menu engine (thanks retrofun to fix Minimig profile loading).
+- Query the device descriptor only once for USB devices. This might prevent (un)expected mode switch.
+- Convert [corename].CFG files to INI format. The old file will still load,
+  but Save settings will write in INI.
+- Add a MISTCFG.INI file for global settings, writeable for the firmware itself.
+- Add an interactive joystick map configuration to the Input Test OSD page. Read the scrolling helptext for usage.
+- Send a default date to the cores if no USB-RTC found.
+
+firmware_211207
 ===============
 - Add support for the second stick on gamepads (4 axes/gamepad). Tested only on one model yet.
 - Add analogue joystick scaling (joystick_analog_multiplier, joystick_analog_offset options)
