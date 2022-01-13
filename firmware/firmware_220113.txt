@@ -1,3 +1,7 @@
+firmware_220113
+===============
+- Fixes regarding to joystick_remap parsing
+
 firmware_220112
 ===============
 - Fix some issues regarding to the new menu engine (thanks retrofun to fix Minimig profile loading).
