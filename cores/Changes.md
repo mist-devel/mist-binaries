@@ -1,3 +1,6 @@
+**vic20_220114.rbf**
+- Mega-Cart support (Mega-Thanks to AMR!)
+
 **C64_211224.rbf**
 - Merry "Treu Love" Christmas!
 

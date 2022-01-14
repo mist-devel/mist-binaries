@@ -9,6 +9,7 @@
 - PAL/NTSC Display (with optional scandoubler for VGA monitors and YPbPr component output)
 - PRG/CART loading
 - 1541 Disk Drive support
+- Mega-Cart support
 
 ### CART/PRG loading
 CRT and PRG files usually has the load address in the first two bytes. If a particular file
@@ -27,6 +28,8 @@ so you have to figure out what a particular game requires.
  - 3k Extension: $0400
  - 8k+ Extensions: $2000, $4000, $6000
  - 8k ROM/RAM: $a000
+
+If the Mega-Cart is used, then managing the RAM expansion configuration is done in its menu.
 
 ### ROM file:
 A VIC20.ROM file is mandatory at the root of the SD Card.
