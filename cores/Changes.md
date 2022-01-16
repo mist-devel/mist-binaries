@@ -1,3 +1,13 @@
+**apple1_220115.rbf**
+- Extend free RAM to ~64K
+- Load programs via F12 osd menu
+- Full working ACI audio cassette interface via UART_RX/AUDIO_L
+- Accurate CPU clock speed and RAM refresh lost cycles
+- NTSC output and integration with mist_video
+- 5x7 display character matrix as in the real machine
+- Crosstalk pixel artifacts as in the real machine
+- F1 and F5 keys for CLS and RESET
+
 **vic20_220114.rbf**
 - Mega-Cart support (Mega-Thanks to AMR!)
 
