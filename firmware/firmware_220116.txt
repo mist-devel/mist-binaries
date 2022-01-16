@@ -3,6 +3,7 @@ firmware_220116
 - Workaround a problem reported with some SD Cards
 - Revert sending a default date to the cores if no USB-RTC found
 - IDE: use H=1, S=32 for hdf files within valid cylinder range (by retrofun)
+- Fix missing R3 in the input configurator (thx retrofun)
 
 firmware_220113
 ===============
