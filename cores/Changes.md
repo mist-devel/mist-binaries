@@ -1,3 +1,7 @@
+**MiSTery-220116.rbf**
+- Support ED floppy disks
+- Hide the RTC chip if no valid date arrives from the firmware
+
 **apple1_220115.rbf**
 - Extend free RAM to ~64K
 - Load programs via F12 osd menu
