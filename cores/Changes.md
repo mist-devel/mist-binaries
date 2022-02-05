@@ -1,3 +1,8 @@
+**menu_pal_220205.rbf**
+**menu_ntsc_220205.rbf**
+- Menu with background image support
+- PAL(50Hz) and NTSC(60Hz) versions
+
 **MiSTery-220116.rbf**
 - Support ED floppy disks
 - Hide the RTC chip if no valid date arrives from the firmware
