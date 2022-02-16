@@ -1,3 +1,7 @@
+**tgfx16_220216.rbf**
+- Enable vertical overscan blanking
+- Fixes from upstream by srg320 & dshadoff
+
 **menu_pal_220205.rbf**
 **menu_ntsc_220205.rbf**
 - Menu with background image support
