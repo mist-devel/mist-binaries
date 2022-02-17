@@ -7,7 +7,8 @@ Modifications from the original core:
 - Added a standard MiST BIOS loader, the Next186.ROM will be loaded when the core starts.
 - Selectable CPU speed (Maximum, half, third, quarter).
 - CPU clock is 50 MHz, SDRAM clock is 100 MHz.
-- DSP coprocessor is disabled currently (out of BRAM), MP3 playing is not possible.
+- DSP coprocessor is enabled, but too slow for MP3 playing.
+- Using JTOPL2 as FM chip.
 - MPU 401 MIDI output.
 
 ## Usage
@@ -26,6 +27,7 @@ https://docs.google.com/spreadsheets/d/1r07Ubfzquz2FxnKp4GROk8_Kq6kTlVW7YxVTmBDR
 ### Settings
 
 - CPU Speed: Maximum, /2, /3, /4 - Normally it is OK to use Maximum but quite a few games work better when set to /3 
+- ISA Bus Wait: 1,2,3,4 us - Delay reading/writing AdLib ports. Might affect detectability/sound playback.
 - MIDI: MPU401, COM1 - MPU401 enables the standard MIDI out port, COM1 enables COM1 serial rs232 out of the MIDI port.
 - NMI: Hardware interrupt useful for debugging in DOS.
 
