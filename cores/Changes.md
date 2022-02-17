@@ -1,3 +1,12 @@
+**Next186_220217.rbf**
+- Switch Adlib to JTOPL2
+- Selectable Fake286 option (normally the CPU will behave & detected as 80186 now).
+  Patch by Aitor Gómez. Need special version of FDXMS and EMU386 (see below).
+- There are useful utilities in the DOS directory
+- Some easy VGA fixes
+- Prevent mouse FIFO overflow (like in Battle Chess)
+- The SDRAM controller works with 64MB modules (still using 32MB only)
+
 **tgfx16_220216.rbf**
 - Enable vertical overscan blanking
 - Fixes from upstream by srg320 & dshadoff
