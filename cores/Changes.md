@@ -1,3 +1,7 @@
+**menu_220220.rbf**
+- Together with **firmware_220220**, menu core has its own menu
+- Use direct transfer to load the background image
+
 **Next186_220217.rbf**
 - Switch Adlib to JTOPL2
 - Selectable Fake286 option (normally the CPU will behave & detected as 80186 now).
