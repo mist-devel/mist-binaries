@@ -1,3 +1,12 @@
+firmware_220220
+===============
+- Tweak USB enumeration to support some joysticks (again)
+- Fix Princess Maker 2 hang at the end of the intro (PCECD)
+- Autofire toggle for other cores, not just Minimig
+- Menu core can have its own menu
+- FatFs: use a cache for directory traversing
+- Always parse the 'V'ersion string in the OSD menu
+
 firmware_220116
 ===============
 - Workaround a problem reported with some SD Cards
