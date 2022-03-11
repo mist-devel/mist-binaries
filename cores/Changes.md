@@ -1,3 +1,10 @@
+**Next186_220311**
+- JTOPL2 timer fix (affects AdLib detectability)
+- Cache/VGA coherency changes - lot less cache flushes
+- More speed options
+- CGA mode support (BIOS modes 04h, 05h, 06h)
+- Note: BIOS functions are missing to write text in graphics modes
+
 **menu_220220.rbf**
 - Together with **firmware_220220**, menu core has its own menu
 - Use direct transfer to load the background image
