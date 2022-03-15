@@ -1,3 +1,7 @@
+**apple1_220315.rbf**
+- Fixed bug when loading programs in the range $4000-$BFFF
+- Added debounce filter to cassette input (ACI) to reduce loading errors
+
 **Next186_220311**
 - JTOPL2 timer fix (affects AdLib detectability)
 - Cache/VGA coherency changes - lot less cache flushes
