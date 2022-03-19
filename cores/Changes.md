@@ -1,8 +1,12 @@
+**Next186_220319.rbf**
+- Implement programmable CRTC timings (Battle Isle 2, Flashback using it for custom video modes)
+- Fix VGA address wraparound (Raiden, Alien Breed, etc.)
+
 **apple1_220315.rbf**
 - Fixed bug when loading programs in the range $4000-$BFFF
 - Added debounce filter to cassette input (ACI) to reduce loading errors
 
-**Next186_220311**
+**Next186_220311.rbf**
 - JTOPL2 timer fix (affects AdLib detectability)
 - Cache/VGA coherency changes - lot less cache flushes
 - More speed options
