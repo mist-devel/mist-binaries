@@ -1,3 +1,7 @@
+firmware_220329
+===============
+- Cubase dongle support in the Atari ST menu
+
 firmware_220220
 ===============
 - Tweak USB enumeration to support some joysticks (again)
