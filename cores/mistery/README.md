@@ -16,8 +16,10 @@
 - [Real IKBD](https://github.com/harbaum/ikbd) with HD63701 MCU
 - Real MIDI input/output using MiST's UART pins
 - Serial/parallel port redirect to USB
+- Internal Cubase dongle
 - Gauntlet type 4 joystick interface support
 - STe controller port support
+- RP5C15 RTC Chip
 - Ethernet interface in cartridge port (Ethernec) support
 - [USB-RTC](https://github.com/mist-devel/mist-board/wiki/UsbRtc) support
 - Optional scandoubled/YPbPr video output
@@ -29,8 +31,6 @@ With F11, you can toggle between normal and STe joystick ports.
 
 ## Current issues/limitations:
 
-- Some MFP imperfections
-- Some bugs in ST mode
 - No RAM cache for Mega STe (but the cache control selects turbo bus speed)
 - Only fake LMC1992
 - PAL clock only (32.084 MHz)

@@ -1,3 +1,6 @@
+**MiSTery-220329.rbf**
+- Internal Cubase dongle support (update the firmware, too!)
+
 **Next186_220319.rbf**
 - Implement programmable CRTC timings (Battle Isle 2, Flashback using it for custom video modes)
 - Fix VGA address wraparound (Raiden, Alien Breed, etc.)
