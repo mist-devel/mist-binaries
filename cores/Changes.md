@@ -1,3 +1,6 @@
+**MiSTery-220401.rbf**
+- Support the Cubase 2 dongle as well
+
 **MiSTery-220329.rbf**
 - Internal Cubase dongle support (update the firmware, too!)
 
