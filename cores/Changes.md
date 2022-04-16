@@ -1,3 +1,8 @@
+**Next186_220416.rbf**
+- More VGA improvements
+- Flush the instruction queue on reg->mem writes (fixes Army Moves and other Dinamic games)
+- Preliminary Tandy sound and video support
+
 **MiSTery-220401.rbf**
 - Support the Cubase 2 dongle as well
 
