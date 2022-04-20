@@ -1,3 +1,9 @@
+**fpgagen_220420.rbf**
+- Update JT12
+- Return FM status register as in Model 1 (fixes Hellfire)
+- Clear RAM after ROM loading (fixes Handy Harvy)
+- Merge robinsonb5's DeMISTify branch with some SDRAM controller updates
+
 **Next186_220416.rbf**
 - More VGA improvements
 - Flush the instruction queue on reg->mem writes (fixes Army Moves and other Dinamic games)
