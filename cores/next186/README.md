@@ -10,6 +10,8 @@ Modifications from the original core:
 - DSP coprocessor is enabled, but too slow for MP3 playing.
 - Using JTOPL2 as FM chip.
 - MPU 401 MIDI output.
+- More complete VGA implementation (programmable CRTC, some compatibility fixes, CGA modes support).
+- Cache controller tweaks to flush VGA data on-demand.
 
 ## Usage
 
