@@ -20,6 +20,7 @@ Some verilog models from Till Harbaum [Spectrum](https://github.com/mist-devel/m
 - Cursor joystick.
 - DivMMC and ZXMMC compatible SD Card interface, optionally with 8K ROM and 256K RAM (for ESXDOS use).
 - Turbo-Sound interface (dual YM2149 sound chips).
+- Covox at #FB port and SounDrive at #0F,#1F,#4F,#5F ports
 - General Sound Interface.
 - Audio in from real [tape device](http://www.atari-forum.com/viewtopic.php?p=298401#p298401).
 

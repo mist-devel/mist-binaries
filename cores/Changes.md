@@ -1,3 +1,10 @@
+**zxspectrum_220505.rbf**
+- Add CRC_ON_OFF command to SD card driver (for Wildplayer DivMMC)
+- Fix unreadable menu when scandoubled disabled
+- Add Covox at #FB port and SounDrive at #0F,#1F,#4F,#5F ports
+- Increase brightness for colors without BRIGHTNESS bit
+Thanks to Eugene Lozovoy (UzixLS) for these patches!
+
 **fpgagen_220420.rbf**
 - Update JT12
 - Return FM status register as in Model 1 (fixes Hellfire)
