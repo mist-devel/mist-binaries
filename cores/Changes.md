@@ -1,3 +1,12 @@
+**Next186_220508.rbf**
+- Implement 40 char text modes
+- Expand hcounter to 11 bit (fixes Simpsons arcade)
+- Implement the preset row scan CRTC register
+- Option to hide Adlib (for games like Dimo's Quest)
+- Add /32 speed option (for near XT speed)
+- Output active negative syncs
+- Increased BIOS size to 16K (The core won't work with the old BIOS! Also update the FONT.EXE from font-BIOS16k.zip)
+
 **zxspectrum_220505.rbf**
 - Add CRC_ON_OFF command to SD card driver (for Wildplayer DivMMC)
 - Fix unreadable menu when scandoubled disabled
