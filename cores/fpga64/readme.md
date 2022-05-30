@@ -6,7 +6,7 @@ a c1541 floppy implementation.
 
 ## Features
 
-- Can use .CRT, .PRG and .D64 files
+- Can use .CRT, .PRG, .D64 and .G64 files
 - 1541 writeable floppy drive
 - Cartridge support
 - TAP file loading
@@ -21,7 +21,8 @@ a c1541 floppy implementation.
 - C128-style turbo mode (with always ON option)
 - Pseudo stereo mode (SID 6580 on left, 8580 on right, driven by the same data)
 - 4 player interface support (up to 4 joysticks)
-- UART support (RX and TX on M,B and C pins of the User port)
+- UART support (RX and TX on M,B and C pins of the User port, or with UP9600 wiring)
+- ACIA 6850 based MIDI interfaces
 
 ## Usage
 
@@ -60,6 +61,11 @@ so it's wise to enable it only in the vertical border/blank period.
 The **Turbo: ON** option does exactly that.
 
 The 1541 disk drive doesn't work with enabled turbo.
+
+## MIDI interfaces
+
+The 6850 ACIA based interfaces are reachable on the addresses described on this page:
+https://codebase64.org/doku.php?id=base:c64_midi_interfaces
 
 ## C64GS
 

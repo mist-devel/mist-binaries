@@ -1,3 +1,10 @@
+**C64_220530.rbf**
+- 1541 fix for Krill's loader
+- Prophet64 cartridge support with second SID
+- 6850 ACIA based MIDI interfaces
+- UP9600 wiring of the user port
+- G64 support for 1541 (loads some protected disks)
+
 **Next186_220508.rbf**
 - Implement 40 char text modes
 - Expand hcounter to 11 bit (fixes Simpsons arcade)
