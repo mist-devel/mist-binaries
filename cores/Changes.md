@@ -1,3 +1,8 @@
+**apple2e_220605.rbf**
+- Generic updates in mist-modules/mockingboard/CPU/etc.
+- Disk write support (tested in DOS 3.3 only)
+- Apple keys are mapped to left/right ALT
+
 **C64_220530.rbf**
 - 1541 fix for Krill's loader
 - Prophet64 cartridge support with second SID

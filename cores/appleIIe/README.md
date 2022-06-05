@@ -8,7 +8,7 @@ based on the Apple ][+ implemented in VHDL for FPGAs.
 
 Features:
 - 6502 or 65C02 CPU
-- disk loading via osd (no write support yet)
+- disk loading via OSD (read/write support)
 - joystick support
 - tape input from the UART RX pin
 - 15kHz TV and 30kHz VGA support (optional YPbPr output)
