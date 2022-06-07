@@ -1,3 +1,6 @@
+**intv_20220607.rbf**
+- Mattel Intellivision, by Grabulosaure and Kitrinx, ported to MiST and DeMiSTified platforms by Alastair M. Robinson
+
 **apple2e_220605.rbf**
 - Generic updates in mist-modules/mockingboard/CPU/etc.
 - Disk write support (tested in DOS 3.3 only)
