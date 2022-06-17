@@ -1,3 +1,6 @@
+**atari800_220617.rbf**
+- Support for ATX and XFD disk images
+
 **intv_20220607.rbf**
 - Mattel Intellivision, by Grabulosaure and Kitrinx, ported to MiST and DeMiSTified platforms by Alastair M. Robinson
 
