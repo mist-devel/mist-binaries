@@ -1,3 +1,15 @@
+firmware_220629
+===============
+- Close the OSD after NVRAM save (#93)
+- Increase max. RBF filename to 32 in ARC files
+- Enable PGUP/PGDN keys in the menus
+- Save 32/64 bit values in hexa format in CFG files
+- Correct Delete key in PS2 Set 1 (affects Next186)
+- Add Retro Games THEGAMEPAD USB IDs (retrofun)
+- Add keypad Enter as select key for menu items (retrofun)
+- Fix the 'V' string in the helptext, too (#88)
+- Reconnect the USB device when a new core was loaded
+
 firmware_220329
 ===============
 - Cubase dongle support in the Atari ST menu
