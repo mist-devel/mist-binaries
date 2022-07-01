@@ -1,3 +1,7 @@
+firmware_220701
+===============
+- Add selective ack for SD IO, for easier support of multiple disk images
+
 firmware_220629
 ===============
 - Close the OSD after NVRAM save (#93)
