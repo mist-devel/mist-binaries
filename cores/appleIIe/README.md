@@ -24,3 +24,5 @@ The disk emulation is read only.
 If you press reset (the right button on the MiST) you'll enter Applesoft with the ] prompt.
 From here you have some limited commands. See: http://www.landsnail.com/a2ref.htm.
 If you want to boot another disk choose a .nib image via the OSD and choose Cold Reset.
+
+**Note:** you'll need at least firmware version **220701**

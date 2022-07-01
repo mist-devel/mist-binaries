@@ -1,3 +1,7 @@
+**apple2e_220701.rbf**
+- Fix disk writes when dirty track buffer left in memory before disk change
+- Add support for 2 disks. Need at least firmware version 220701!
+
 **atari800_220617.rbf**
 - Support for ATX and XFD disk images
 
