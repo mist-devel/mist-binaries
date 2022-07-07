@@ -14,6 +14,7 @@ The core's main features
   - SEGA Mouse
   - Lightgun support (single Menacer or single/dual Justifiers via mice)
   - SVP chip for Virtua Racing (in separate downloadable core)
+  - Sega Teamplay/EA 4 Way Play/J-CART multitap support
 
 By now the core runs most games perfectly incl. the Titan Overdrive demo. Some games using
 special and undocumented hardware features show visual or accousic artifacts or may not

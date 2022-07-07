@@ -1,3 +1,8 @@
+**fpgagen_220706.rbf**
+- Update jt12/jt89
+- Multitap support
+- Fix 68K RAM writes from Z80 (fixes Mamono Hunter Yohko)
+
 **apple2e_220701.rbf**
 - Fix disk writes when dirty track buffer left in memory before disk change
 - Add support for 2 disks. Need at least firmware version 220701!
