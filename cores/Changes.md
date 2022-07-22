@@ -1,3 +1,7 @@
+**pet2001_220722.rbf**
+- New core, ported from https://github.com/skibo/Pet2001_Nexys3 by way of the MiSTer port.
+- Uses SDRAM for ROM and Tape.
+
 **fpgagen_220706.rbf**
 - Update jt12/jt89
 - Multitap support
