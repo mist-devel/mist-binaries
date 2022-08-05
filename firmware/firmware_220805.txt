@@ -1,3 +1,11 @@
+firmware_220805
+===============
+- Resurrect USB storage driver (host) - an USB drive can be used instead of the SD Card
+- Fix saving of Minimig's dither settings
+- Fix a possible disk corruption during Minimig floppy writes (Heimdall 2 save disk)
+- Add joystick_dead_range setting (useful for paddles)
+- Other internal fixes and changes for timers and USB
+
 firmware_220701
 ===============
 - Add selective ack for SD IO, for easier support of multiple disk images
