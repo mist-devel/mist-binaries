@@ -1,0 +1,3 @@
+merge last T80
+undo two bad T80 timing updates, cause BATMAN is slow in some part with them. BATMAN CRTC1 ok
+PHX is ok until fish, thanking are not displayed but sound is here, demo run on loop ok.
