@@ -1,3 +1,9 @@
+**minimig_mist_rtg_220821.rbf**
+- Fixed bitplane offset bug which broke blitterscreens with sprite masks (by AMR)
+- Implemented ToD clock bug, fixes music for Torvak the Warrior (by AMR)
+- Tweaked bitplane shifting, fixes offset logo in 3le-Passengers (by AMR)
+- ATAPI CDROM support
+
 **pet2001_220722.rbf**
 - New core, ported from https://github.com/skibo/Pet2001_Nexys3 by way of the MiSTer port.
 - Uses SDRAM for ROM and Tape.
