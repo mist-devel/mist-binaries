@@ -1,3 +1,8 @@
+firmware_220821
+===============
+- Switch boot from SD/USB with user button (by retrofun)
+- ATAPI CDROM support in the IDE module
+
 firmware_220805
 ===============
 - Resurrect USB storage driver (host) - an USB drive can be used instead of the SD Card
