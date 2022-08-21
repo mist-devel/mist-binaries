@@ -1,3 +1,7 @@
+**Next186_220821.rbf**
+- Some VGA fixes
+- IDE support (Primary slave/Secondary master and slave)
+
 **minimig_mist_rtg_220821.rbf**
 - Fixed bitplane offset bug which broke blitterscreens with sprite masks (by AMR)
 - Implemented ToD clock bug, fixes music for Torvak the Warrior (by AMR)

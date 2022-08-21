@@ -12,3 +12,4 @@
 - MP3PLAY_22Aug2017.rar - MP3 player (but the CPU is too slow for it)
 - ESP8266_SLIP.7z
 - waveplay.zip
+- VIDE-CDD.SYS - ATAPI CDROM driver
