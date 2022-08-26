@@ -1,3 +1,7 @@
+firmware_220826
+===============
+- Many IDE/ATAPI related fixes
+
 firmware_220821
 ===============
 - Switch boot from SD/USB with user button (by retrofun)
