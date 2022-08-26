@@ -1,3 +1,7 @@
+**Amstrad_220826.rbf**
+- FDC & CRTC related fixes
+- Symbiface II support with IDE and RTC
+
 **Next186_220821.rbf**
 - Some VGA fixes
 - IDE support (Primary slave/Secondary master and slave)

@@ -83,6 +83,10 @@ CPC6128 model has 64KB+512KB RAM. Upper 448KB are visible in special OS ROM or a
 * For loading a saved game, MF2 must be visible.
 * ROM version is 8D.
 
+## Symbiface 2
+IDE, mouse and RTC peripherals are implemented with a Symbiface 2 compatible interface.
+For IDE, put an Amstrad.hd0 or Amstrad.vhd file to the root directory of the SD Card, it'll be used as master drive.
+
 ## MiST specific notes
 - Some demos sets up the CRTC to emit sync signals which are only compatible with the original Amstrad monitor, or CRT displays.
 Enabling "Video & Audio => Sync signals: Filtered" tries to change these signals to be more LCD compatible,
