@@ -1,3 +1,6 @@
+**Next186_220826.rbf**
+- IDE/ATAPI CDROM related fixes
+
 **Amstrad_220826.rbf**
 - FDC & CRTC related fixes
 - Symbiface II support with IDE and RTC
