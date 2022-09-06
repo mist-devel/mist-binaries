@@ -1,3 +1,6 @@
+**minimig_mist_rtg_220906.rbf**
+- CD audio playback
+
 **Next186_220826.rbf**
 - IDE/ATAPI CDROM related fixes
 
