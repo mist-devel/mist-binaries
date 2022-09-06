@@ -1,3 +1,9 @@
+firmware_220906
+===============
+- Some IDE/ATAPI related fixes
+- Support playback of CD Audio
+- Load optional <corename>.R0[1-6] files at core boot
+
 firmware_220826
 ===============
 - Many IDE/ATAPI related fixes
