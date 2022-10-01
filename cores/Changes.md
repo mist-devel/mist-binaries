@@ -1,3 +1,6 @@
+**Intellivision_20221001.rbf**
+- Updated ROM loading, should now work with Intellicart .rom files.
+
 **minimig_mist_rtg_220906.rbf**
 - CD audio playback
 
