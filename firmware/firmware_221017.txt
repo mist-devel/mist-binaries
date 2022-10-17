@@ -1,3 +1,11 @@
+firmware_221017
+===============
+- Tweak USB storage recognition (by retrofun)
+- Show information of booted storage device in OSD system menu (by retrofun)
+- Increase max. core/dir/vhdname size to 16 in ARC files
+- Fix F12 code in PS2/set1 (affects Next186)
+- Use the proper CRC value for CMD12 in SD card multiple read access
+
 firmware_220906
 ===============
 - Some IDE/ATAPI related fixes
