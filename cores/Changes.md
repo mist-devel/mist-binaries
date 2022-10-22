@@ -1,3 +1,8 @@
+**vic20_221022.rbf**
+- Update 1541
+- Fix VIA's port latching (Robotic Liberation!)
+- Update MiST modules
+
 **Intellivision_20221001.rbf**
 - Updated ROM loading, should now work with Intellicart .rom files.
 
