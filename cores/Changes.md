@@ -1,3 +1,7 @@
+**zxspectrum_221024.rbf**
+- ESXDOS ROM updated to 0.8.9
+- Currah uSpeech support based on Dar's SP0256 implementation
+
 **vic20_221022.rbf**
 - Update 1541
 - Fix VIA's port latching (Robotic Liberation!)

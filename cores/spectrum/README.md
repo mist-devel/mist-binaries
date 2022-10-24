@@ -20,7 +20,8 @@ Some verilog models from Till Harbaum [Spectrum](https://github.com/mist-devel/m
 - Cursor joystick.
 - DivMMC and ZXMMC compatible SD Card interface, optionally with 8K ROM and 256K RAM (for ESXDOS use).
 - Turbo-Sound interface (dual YM2149 sound chips).
-- Covox at #FB port and SounDrive at #0F,#1F,#4F,#5F ports
+- Covox at #FB port and SounDrive at #0F,#1F,#4F,#5F ports.
+- Currah uSpeech interface.
 - General Sound Interface.
 - Audio in from real [tape device](http://www.atari-forum.com/viewtopic.php?p=298401#p298401).
 
@@ -105,11 +106,12 @@ When using the Spectrum +2A/3 mode, the Multiface 3 is supported. There's no Gen
 ### MMC Cards:
 DivMMC or ZXMMC compatible SD Card interfaces can be enabled in the OSD. DivMMC optionally supports 8K built in ROM and 256K RAM. The default **spectrum.rom** file contains ESXDOS 0.8.8 preloaded
 into the ROM. This is only DIVMMC.BIN, you'll need /BIN /SYS and /TMP also on the default SD Card (or in a **spectrum.vhd** file). Multiface and PlusD NMI menus are disabled when
-ESXDOS is enabled, since the built-in Beta Disk Interface and PlusD interface also won't work. If a tape file is loaded via the OSD (indicated by the yellow LED), the DIVMMC tape hooks are disbled.
+ESXDOS is enabled, since the built-in Beta Disk Interface and PlusD interface also won't work. If a tape file is loaded via the OSD (indicated by the yellow LED), the DIVMMC tape hooks are disabled.
 
 ### ROM Format:
 You can create your own **spectrum.rom**, for example to replace +3 ROMs with +3e.
-The format is: ESXMMC.BIN(2x) + TRDOS + 128 ROM0 + 128 ROM1 + +3 ROM0/1/2/3 + PlusD + MF128 + MF3 + 48K ROM + GS(low) + GS(high). Each part is 16k.
+The format is: ESXMMC.BIN(2x) + TRDOS + 128 ROM0 + 128 ROM1 + +3 ROM0/1/2/3 + PlusD + MF128 + MF3 + 48K ROM + GS(low) + GS(high) + Currah uSpeech(2x).
+Each part is 16k, except uSpeech, which is 4k.
 
 ### Special Keys:
 - F10 - enter +D snapshot menu (if IMG/MGT is mounted), otherwise enter Multiface menu. Enter ESXDOS NMI menu if ESXDOS is enabled.
