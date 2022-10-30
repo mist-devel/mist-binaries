@@ -1,3 +1,9 @@
+**Oric_221030.rbf**
+- Some updates and cleanups since the last released version
+- Internal TAP playback support
+- VIA6522 updated to the latest from the Commodore cores
+- ROM resides in SDRAM now (an oric.rom is required)
+
 **zxspectrum_221024.rbf**
 - ESXDOS ROM updated to 0.8.9
 - Currah uSpeech support based on Dar's SP0256 implementation
