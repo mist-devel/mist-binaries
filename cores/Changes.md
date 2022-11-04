@@ -1,3 +1,6 @@
+**Oric_221104.rbf**
+- Fix the refresh logic in the SDRAM controller
+
 **Oric_221030.rbf**
 - Some updates and cleanups since the last released version
 - Internal TAP playback support
