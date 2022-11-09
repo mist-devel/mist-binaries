@@ -1,3 +1,10 @@
+**C64_220530.rbf**
+- Adjust blanking/sync timings according to prelimiary VIC-II datasheet/Christian Bauer's VIC-II docs
+- T65: rework interrupt dispatching
+- CPUPort: bit 5 is low when input
+- Update VIA
+- C64.R02 can be used as a default cart image
+
 **Oric_221104.rbf**
 - Fix the refresh logic in the SDRAM controller
 
