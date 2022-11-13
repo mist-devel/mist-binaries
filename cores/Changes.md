@@ -1,3 +1,9 @@
+**apple2e_221113.rbf**
+- Fix the floating bus values
+- Correct the vertical counter advancing (make Cycle Counting Megademo from VMW work)
+- NTSC/PAL mode switch option
+- Update T65 and mist-modules
+
 **C64_220530.rbf**
 - Adjust blanking/sync timings according to prelimiary VIC-II datasheet/Christian Bauer's VIC-II docs
 - T65: rework interrupt dispatching
