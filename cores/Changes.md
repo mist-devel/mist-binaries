@@ -1,3 +1,6 @@
+**ep128_221116.rbf**
+- New core by Kyp
+
 **apple2e_221113.rbf**
 - Fix the floating bus values
 - Correct the vertical counter advancing (make Cycle Counting Megademo from VMW work)
