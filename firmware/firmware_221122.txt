@@ -1,3 +1,11 @@
+firmware_221122
+===============
+- Fix ASIX USB network adapter detection
+- Fix crash when Minimig is loaded from a subdirectory
+- Some OSD drawing code optimizations
+- Load a default ARC file when the FPGA is initialized from JTAG
+- Give time to initialize the FPGA when loaded from JTAG
+
 firmware_221017
 ===============
 - Tweak USB storage recognition (by retrofun)
