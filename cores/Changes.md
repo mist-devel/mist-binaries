@@ -1,3 +1,11 @@
+**TVC_230113.rbf**
+- Enhanced from the original core (originally by József László)
+- Rewritten some parts to synchronous code
+- Updated the various components, like the T80 CPU and MC8645 CRTC
+- Cartridge and FDC support
+- Some additional fixes, like digi sound is working now
+- 15kHz (original) and 31kHz(scandoubled) video outputs are supported in one core
+
 **ep128_221116.rbf**
 - New core by Kyp
 
