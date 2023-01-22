@@ -1,3 +1,8 @@
+**zxspectrum_230122.rbf**
+- Replace WD1772
+- Fix PlusD interface
+- Disable Covox/Sndrive during TRDOS/PlusD use
+
 **TVC_230113.rbf**
 - Enhanced from the original core (originally by József László)
 - Rewritten some parts to synchronous code
