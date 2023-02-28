@@ -1,3 +1,9 @@
+**C64_230228.rbf**
+- Add a normal reset without removing the cartridge
+- Fix cartridge (C64.R02) file autoload
+- Add support for cart type 36 (Retro Replay)
+- Fix a regression with VIC-II data fetch when AEC is asserted
+
 **zxspectrum_230122.rbf**
 - Replace WD1772
 - Fix PlusD interface
