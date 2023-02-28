@@ -1,3 +1,6 @@
+**TVC_230113.rbf**
+- Fix sound divider and interrupt generator
+
 **C64_230228.rbf**
 - Add a normal reset without removing the cartridge
 - Fix cartridge (C64.R02) file autoload
