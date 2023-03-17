@@ -18,8 +18,7 @@ Features:
 - Mockingboard model A (two AY-3-8913 chips for six audio channels) in slot 4
 
 On the "Apple II/e" boot screen open the OSD with F12 and choose a nibblelized disk. It will boot
-the disk automatically. Use dsk2nib to convert AppleII disk images to .nib images. 
-The disk emulation is read only.
+the disk automatically. Use dsk2nib to convert AppleII disk images to .nib images.
 
 If you press reset (the right button on the MiST) you'll enter Applesoft with the ] prompt.
 From here you have some limited commands. See: http://www.landsnail.com/a2ref.htm.
