@@ -1,3 +1,8 @@
+**msx_mist-230331.rbf**
+- Update to OCM-PLD 3.9.1
+- Add a Mount VHD option to the OSD
+- Fix the SD Card emulation for Nextor kernels
+
 **TVC_230228.rbf**
 - Fix sound divider and interrupt generator
 
