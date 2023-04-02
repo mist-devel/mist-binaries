@@ -1,3 +1,8 @@
+**C64_230402.rbf**
+- Allow to set the mouse port manually in the OSD
+- PRG injection should set some ZP variables +1 beyond the end
+- VIC-II: fix NTSC bus access slots
+
 **ZXN-230331.rbf**
 - Rebase to the latest ISSUE4 release
 - Update mist-modules
