@@ -1,3 +1,7 @@
+**snes_mist_230420.rbf**
+- Update with the latest upstream changes since the last release
+- SFC player option (exit from it with reset)
+
 **C64_230402.rbf**
 - Allow to set the mouse port manually in the OSD
 - PRG injection should set some ZP variables +1 beyond the end
