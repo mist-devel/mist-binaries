@@ -1,3 +1,6 @@
+**PCXT_mist_230421.rbf**
+- New core
+
 **snes_mist_230420.rbf**
 - Update with the latest upstream changes since the last release
 - SFC player option (exit from it with reset)
