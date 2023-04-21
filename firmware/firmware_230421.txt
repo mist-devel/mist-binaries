@@ -1,3 +1,9 @@
+firmware_230421
+===============
+- New system status menu page (by retrofun)
+- IDE improvements for non-Amiga use cases
+- Disable joysticks when OSD is open
+
 firmware_221122
 ===============
 - Fix ASIX USB network adapter detection
