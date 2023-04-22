@@ -88,7 +88,7 @@ The second D-SUB joystick port works as a Sinclar Joystick 1 (emulates keys 6,7,
 ### Snapshots:
 Core supports snapshot functionality of +D. In order to use it, you need to mount IMG or MGT image. ROM includes preloaded G+DOS image, thus you can mount IMG/MGT at any time (even while playing the game). **Note #1**: preloaded G+DOS has been patched to allow disk change on-the-fly. So, if you will load G+DOS from disk, then be careful - it may corrupt previous saves if you will change the disk! **Note #2:** only one disk image can be mounted at any time. Thus make sure if you use game from TRD image, the game won't save anything later to its disk. 
 
-To save snapshot using +D (preferred way), press **F11 key**. You will see stripes on border and game will freeze. You can press following keys:
+To save snapshot using +D (preferred way), press **F10 key**. You will see stripes on border and game will freeze. You can press following keys:
 - 3 - to save the screen.
 - 4 - to save 48K snapshot.
 - 5 - to save 128K snapshot.
@@ -97,9 +97,9 @@ Original +D ROM requires to press additional Y/N keys in 128K mode to choose the
 To load snapshot, just mount IMG/MGT and go to basic prompt where type **CAT 1** to list its content. Note the number of snapshot file. Then type **LOAD pX** where X is the number of shapshot file. For other disk commands please find and read G+DOS (MGT +D) manual.
 
 ### Multiface 128 and Multiface 3:
-You can enter Multiface ROM using **RShift+F11**. Multiface 128 includes preloaded debugger (Genie) where you can trace or modify the game.
-If you prefer to use bare Multiface 128 ROM then do following procedure: Press and hold **ESC**, then press **RShift+F11**.
-You will be able to use bare Multiface ROM by simple subsequent presses of **RShift+F11** till core reload. Multiface provides snapshot functionality by saving to IMG/MGT disks. Please find and read Multiface 128 manual.
+You can enter Multiface ROM using **RShift+F10**. Multiface 128 includes preloaded debugger (Genie) where you can trace or modify the game.
+If you prefer to use bare Multiface 128 ROM then do following procedure: Press and hold **ESC**, then press **RShift+F10**.
+You will be able to use bare Multiface ROM by simple subsequent presses of **RShift+F10** till core reload. Multiface provides snapshot functionality by saving to IMG/MGT disks. Please find and read Multiface 128 manual.
 **Note:** Multiface 128 expose its port, thus if game has protection against Multiface, it won't work, unless you press (o)ff before you exit from the Multiface menu. Thus using +D snapshot is prefered.
 When using the Spectrum +2A/3 mode, the Multiface 3 is supported. There's no Genie for the +3, but there are useful toolkit routines in the stock ROM.
 
