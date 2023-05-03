@@ -1,3 +1,6 @@
+**snes_mist_230503.rbf**
+- Fix in the scandoubler to handle the NTSC short line
+
 **PCXT_mist_230421.rbf**
 - New core
 
