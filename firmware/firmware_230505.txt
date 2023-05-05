@@ -1,3 +1,8 @@
+firmware_230505
+===============
+- Handle BUTTONS line in ARC files (use a recent MRA tool to add it to ARCs)
+- Display the real RBF name in the system menu if the core is loaded from an ARC file
+
 firmware_230421
 ===============
 - New system status menu page (by retrofun)
