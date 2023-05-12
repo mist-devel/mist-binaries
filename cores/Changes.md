@@ -1,3 +1,7 @@
+**msx_mist_230512.rbf**
+- Fix the MIDI/WiFi module use
+- Option to choose between MIDI/WiFi mode for the UART pins
+
 **snes_mist_230503.rbf**
 - Fix in the scandoubler to handle the NTSC short line
 
