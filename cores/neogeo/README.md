@@ -4,18 +4,18 @@ This is the port of the [NeoGeo FPGA implementation](https://github.com/MiSTer-d
 
 ## Limitations
 The original Neo Geo system has big RAM/ROM memories, which don't fit into the BRAM of the MiST's FPGA. A new SDRAM controller was written, which can
-read two 32 bit words simultaneously in just 8 cycles using bank interleaving, and running at 96MHz. Both 32MiB and 64MiB equipped MiSTs are supported,
-the later obviously can load more games.
+read one 64 bit and one 32 bit word simultaneously in just 12 cycles using bank interleaving, and running at 120MHz. Later on, it was replaced by
+a 96MHz variant reading two 32 bit words in 8 cycles. Both 32MiB and 64MiB equipped MiSTs are supported, the later obviously can load more games.
 
 The limitation of ROM sizes for both variants:
 
 **32 MiB** - supports  ~6 MiB PROMS and 24 MiB CROM+VROMs (in any size combination)
 
-**64 MiB** - supports ~14 MiB PROMS and 48 MiB CROM+VROMs (in any size combinaion. Note: PROM size is not a real limitiation in this case.)
+**64 MiB** - supports ~14 MiB PROMS and 48 MiB CROM+VROMs (in any size combination. Note: PROM size is not a real limitiation in this case.)
 
 ## Usage
 
-Internal ROMs (System ROM, SFIX, LO ROM and SM1 ROM) can be created from MAME's neogeo.zip with the help of the MRA files.
+Internal ROMs (System ROM, SFIX, LO ROM and SM1 ROM) can be created from MAME's neogeo.zip with the help of the [MRA files](https://github.com/mist-devel/mist-board/wiki/CoreDocArcade#mra-and-arc-files).
 
 TerraOnion .NEO file format was choosen as the supported cart format, as it conveniently merges all the various ROMs in one file. The following utilities can be used to create such files:
 
@@ -27,6 +27,26 @@ TerraOnion .NEO file format was choosen as the supported cart format, as it conv
 
 Note: Core doesn't support encrypted ROMs. Make sure the ROM has no encrypted parts before use. MAME ROM pack includes many encrypted ROMs so it's not recommended for inexperienced users. Using the .neo conversion tool with a MAME ROM set will result in some ROMs still being encrypted. There is an alternate .neo conversion tool for the Darksoft ROM set that will give you a fully decrypted set.
 
+## Controls
+
+| NeoGeo | MiST    |
+|--------|---------|
+| A      | A       |
+| B      | B       |
+| C      | X       |
+| D      | Y       |
+| Start  | Start   |
+| Select | Select  |
+| Coin1  | L       |
+| Coin2  | R       |
+
+Mouse (trackball) support for the game Irritating Maze can be selected in the OSD. Middle mouse button is Start. **Note:** this game requires its own system BIOS.
+
+## Memory Card
+
+A 8K (8192 bytes) empty file can be used as a memory card. It can be loaded-unloaded and saved via the OSD (use a .SAV extension). Hint: rename it to **NeoGeo.vhd** and it'll be auto-mounted. One memory card
+can store progress and high score information for a couple of games.
+
 ## Sidenotes:
 
 The core was inherently unstable. While Furrtek (Sean Gonsalves) did a very good and tedious job reverse-engineering and documenting the original Neo-Geo chipset,
@@ -35,11 +55,11 @@ or the more recent Quartus tool is better synthesizing such code, but it still b
 (even with combinatorial output) used as clocks, which are glitching, the compiler cannot check if flip-flops clocked by these signals meet setup and hold times, resulting
 in very unstable cores.
 
-At the end, the core's HDL was converted into synchronous code, using a simulator to check if it still produces the same signals as before. At the end, all latches were eliminated,
-and almost all generated clock usages were removed.
+At the end, the core's HDL was converted into synchronous code, using a simulator to check if it still produces the same signals as before. Finally all latches were eliminated,
+and all generated clock usages were removed.
 
 Thanks to all who supported this conversion!
 
 ## Source code
 
-The source code can be find at [GitHub](https://github.com/gyurco/NeoGeo_MiSTer/tree/mist).
+The source code can be find at [GitHub](https://github.com/gyurco/NeoGeo_FPGA/tree/mist/mist).

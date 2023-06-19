@@ -1,3 +1,11 @@
+**NeoGeo_230620.rbf**
+
+- Fixes and some optimizations in the SDRAM controller
+- Finished the conversion to synchronous logic. No more latches/generated clocks!
+- Use upstream jt12
+- Memcard save/load support
+- Revisit button assignments
+
 **NeoGeo_230607.rbf**
 - New port
 
