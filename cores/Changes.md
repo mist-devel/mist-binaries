@@ -1,3 +1,6 @@
+**NeoGeo_230705.rbf**
+- CD support
+
 **NeoGeo_230620.rbf**
 
 - Fixes and some optimizations in the SDRAM controller

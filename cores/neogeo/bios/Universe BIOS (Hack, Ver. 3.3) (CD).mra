@@ -1,7 +1,7 @@
 <misterromdescription>
-    <name>Europe MVS (Ver. 2)</name>
+    <name>Universe BIOS (Hack, Ver. 3.3) (CD)</name>
     <mameversion>0245</mameversion>
-    <setname>neogeo</setname>
+    <setname>unibios33cd</setname>
     <year>1991</year>
     <manufacturer>SNK</manufacturer>
     <category>BIOS</category>
@@ -10,16 +10,10 @@
 
     <buttons names="A,B,Select,Start,C,D,Coin1,Coin2"/>
 
-    <rom index="0" zip="neogeo.zip" md5="None">
-      <part name="sp-s2.sp1"/>
-      <part name="sp-s2.sp1"/>
-      <part name="sp-s2.sp1"/>
-      <part name="sp-s2.sp1"/>
+    <rom index="0" zip="neocdz.zip" md5="None">
+      <part name="uni-bioscd33.rom"/>
 
       <part name="000-lo.lo"/>
-      <part name="sfix.sfix"/>
-      <part name="sm1.sm1"/>
-      <part name="sm1.sm1"/>
     </rom>
 
 </misterromdescription>

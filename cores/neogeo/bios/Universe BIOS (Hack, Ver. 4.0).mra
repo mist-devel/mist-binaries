@@ -8,6 +8,8 @@
     <rbf>NeoGeo</rbf>
     <rotation>horizontal</rotation>
 
+    <buttons names="A,B,Select,Start,C,D,Coin1,Coin2"/>
+
     <rom index="0" zip="neogeo.zip" md5="None">
       <part name="uni-bios_4_0.rom"/>
       <part name="uni-bios_4_0.rom"/>
