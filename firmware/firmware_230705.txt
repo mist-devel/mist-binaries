@@ -1,3 +1,7 @@
+firmware_230705
+===============
+- Neo Geo CD support
+
 firmware_230505
 ===============
 - Handle BUTTONS line in ARC files (use a recent MRA tool to add it to ARCs)
