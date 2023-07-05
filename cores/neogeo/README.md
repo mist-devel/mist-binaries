@@ -47,10 +47,10 @@ Mouse (trackball) support for the game Irritating Maze can be selected in the OS
 A 8K (8192 bytes) empty file can be used as a memory card. It can be loaded-unloaded and saved via the OSD (use a .SAV extension). Hint: rename it to **NeoGeo.vhd** and it'll be auto-mounted. One memory card
 can store progress and high score information for a couple of games.
 
-## CD supoort
+## CD support
 
 From the core version **230705**, Neo Geo CD is supported (thanks to the work of paulb-nl). It needs at least firmware version **230705**. The CD file format must be CUE + a single binary.
-Also it needs a CD BIOS, too (Hint: use ARC files to load it automatically). Universe BIOS 3.3 (CD version) is recommended, as it handles both the top-loader and CDZ variants.
+Also it needs a CD BIOS, too (Hint: use [ARC files](https://github.com/mist-devel/mist-board/wiki/ARC-Files) to load it automatically). Universe BIOS 3.3 (CD version) is recommended, as it handles both the top-loader and CDZ variants.
 
 To convert CHD files to the required format, MAME's **chdman** utility can be handy:
 
@@ -73,4 +73,4 @@ Thanks to all who supported this conversion!
 
 ## Source code
 
-The source code can be find at [GitHub](https://github.com/gyurco/NeoGeo_FPGA/tree/mist/mist).
+The source code can be find at [GitHub](https://github.com/gyurco/NeoGeo_FPGA/tree/mist/mist).
