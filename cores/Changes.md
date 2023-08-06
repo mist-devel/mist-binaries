@@ -1,3 +1,7 @@
+**NeoGeo_230806.rbf**
+- Timer fix in PAL mode
+- Some CD related fixes (Double Dragon, Karnov's Revenge)
+
 **NeoGeo_230705.rbf**
 - CD support
 
