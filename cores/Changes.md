@@ -1,3 +1,6 @@
+**ZXN_230902.rbf**
+- Update to the latest core (3.02)
+
 **NeoGeo_230806.rbf**
 - Timer fix in PAL mode
 - Some CD related fixes (Double Dragon, Karnov's Revenge)
