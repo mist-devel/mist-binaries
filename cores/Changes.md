@@ -1,3 +1,6 @@
+**snes_mist_231202.rbf**
+- Add an NTSC-DeJitter video mode, which breaks 100% cycle accuracy, but works better on some displays
+
 **ZXN_230902.rbf**
 - Update to the latest core (3.02)
 
