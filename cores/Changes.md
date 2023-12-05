@@ -1,3 +1,7 @@
+**C64_231205.rbf**
+- Add the extended Magic Desk cartridge format
+- VIC-II: apply color change (background mainly) one pixel earlier (fixes many demos with one-pixel glitches, like Edge of Disgrace or The Space is Broken)
+
 **snes_mist_231202.rbf**
 - Add an NTSC-DeJitter video mode, which breaks 100% cycle accuracy, but works better on some displays
 
