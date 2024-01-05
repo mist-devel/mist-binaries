@@ -1,3 +1,7 @@
+**C64_240105.rbf**
+- Lot of VIC-II accuracy improvements
+- Selectable VIC-II variant
+
 **C64_231205.rbf**
 - Add the extended Magic Desk cartridge format
 - VIC-II: apply color change (background mainly) one pixel earlier (fixes many demos with one-pixel glitches, like Edge of Disgrace or The Space is Broken)
