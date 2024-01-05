@@ -1,3 +1,6 @@
+**Atari7800_240105.rbf**
+- New core based on k7800 (c) by Jamie Blanks (Kitrinx)
+
 **C64_240105.rbf**
 - Lot of VIC-II accuracy improvements
 - Selectable VIC-II variant
