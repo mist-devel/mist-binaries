@@ -1,3 +1,17 @@
+firmware_240105
+===============
+- Add joystick_disable_swap option
+- Fix 'T' menu option if it's above 32 bit
+- Add RAMFUNC to timer functions to prevent firmware upgrade locks
+- Precheck the firmware before upgrade with the same code as the upgrade, so if it passes, then high chances the upgrade will work, too
+- Add ATA commands 21h,31h (by xolod79, for UNEON core)
+- Add a BIGOSD feature for 16 line OSDs (by the expense of 2 M9K blocks on the FPGA side), can be requested by a core
+- Some more small internal fixes/cleanups
+
+firmware_231214-intermediate
+============================
+- An intermediate firmware fixing a firmware upgrade bug with previous versions. Check the readme.md file for important details.
+
 firmware_230705
 ===============
 - Neo Geo CD support
