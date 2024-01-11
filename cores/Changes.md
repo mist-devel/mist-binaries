@@ -1,3 +1,8 @@
+**menu_240111.rbf**
+- More close to VGA timings (at least in NTSC mode)
+- Large OSD (need firmware version at least 240105!)
+- Background image changed to 640x312 (reload/resize menu.rom, if using it)
+
 **Atari7800_240105.rbf**
 - New core based on k7800 (c) by Jamie Blanks (Kitrinx)
 

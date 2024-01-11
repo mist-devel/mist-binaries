@@ -6,6 +6,8 @@ Put [this core](https://github.com/sorgelig/Menu_MIST/tree/master/release) to th
 
 From **menu** and **firmware** **220220**, the menu core has its own settings menu, where you can switch PAL/NTSC mode and rotate it for Arcade use.
 
+From version **240111** you'll need a firmware version at least **240105**. If you have a previous firmware, and you don't want to upgrade for some unknown reasons, use a previous menu core, too.
+
 ### Background image
 
 A BMP file with the dimensions of 512x312 and 32 bit color depth can be added as a background image. Just upload this BMP as MENU.ROM to the root of the SD Card.
