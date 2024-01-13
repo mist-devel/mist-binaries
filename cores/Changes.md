@@ -1,3 +1,6 @@
+**menu_240113.rbf**
+- Shorter hsync/longer back ports at 15kHz
+
 **menu_240111.rbf**
 - More close to VGA timings (at least in NTSC mode)
 - Large OSD (need firmware version at least 240105!)
