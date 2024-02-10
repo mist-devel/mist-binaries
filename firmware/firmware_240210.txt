@@ -1,3 +1,10 @@
+firmware_240210
+===============
+- Rescan directory, if the OSD size is changed
+- Continously check SD card status, reinitialize if removed and reinserted
+- USB: fix race condition between SOF IRQ check and reset
+- Prevent stuck joystick when opening the OSD
+
 firmware_240105
 ===============
 - Add joystick_disable_swap option
