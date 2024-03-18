@@ -22,3 +22,6 @@ Quickstart:
 - Some games require the Basic ROM to be disabled when running, to do this
   press F8 while reset.
 - Start games with F6(Start).
+
+32KB ROM files (like A800XL.ROM) consist of:
+2 x BASIC (8K) + OS (16K)
