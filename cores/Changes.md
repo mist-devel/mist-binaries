@@ -1,3 +1,8 @@
+**c16_240405.rbf**
+- Open bus reads from some free ares (fixes Giana Sisters)
+- Use PCM sound output from TED instead of PWM for better sound quality
+- Update 1541
+
 **menu_240113.rbf**
 - Shorter hsync/longer back porch at 15kHz
 
