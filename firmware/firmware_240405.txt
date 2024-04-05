@@ -1,3 +1,10 @@
+firmware_240405
+===============
+- Enable middle mouse button for minimig core (by retrofun)
+- A more efficient method for retrieving the config string added (need mist-modules update in the cores)
+- Allow bigger block sizes to be used by cores for VHD I/O
+- Full wired XBox360 controller support
+
 firmware_240210
 ===============
 - Rescan directory, if the OSD size is changed
