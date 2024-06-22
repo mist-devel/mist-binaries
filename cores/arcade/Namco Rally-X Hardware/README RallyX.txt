@@ -1,0 +1,25 @@
+---------------------------------------------------------------------------------
+-- 
+-- Arcade: Rally-X  port to MiST
+-- 19 September 2019
+-- From: https://github.com/MrX-8B/MiSTer-Arcade-RallyX
+-- Enhanced with Konami/SEGA games
+-- Time Pilot sound board by DarFpga
+-- TODO:
+--  - Starfield generator for Tactician
+--
+-- Usage:
+-- - Create ROM and ARC files from the MRA files using the MRA utility.
+--   Example: mra -A -z /path/to/mame/roms "Rally-X.mra"
+-- - Copy the ROM files to the root of the SD Card
+-- - Copy the RBF and ARC files to the same folder on the SD Card
+--
+---------------------------------------------------------------------------------
+-- FPGA New Rally-X for Spartan-3 Starter Board
+------------------------------------------------
+-- Copyright (c) 2005 MiSTer-X
+---------------------------------------------------------------------------------
+-- T80/T80s - Version : 0242
+-----------------------------
+-- Z80 compatible microprocessor core
+-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)

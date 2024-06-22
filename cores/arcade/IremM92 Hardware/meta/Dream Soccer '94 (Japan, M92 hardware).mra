@@ -1,0 +1,106 @@
+<misterromdescription>
+    <name>Dream Soccer '94 (Japan, M92 hardware)</name>
+    <mameversion>0245</mameversion>
+    <parent>dsoccr94</parent>
+    <setname>dsoccr94j</setname>
+    <year>1994</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Sport</category>
+    <rbf>IremM92</rbf>
+    <rotation>horizontal</rotation>
+
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Shoot/Speed Up,Pass/Sliding Tackle,-,-,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="00 00 00" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="2:00,2:30,3:00,1:30" name="Time"></dip>
+        <dip bits="2,3" ids="Normal,Easy,Hard,Very Easy" name="Difficulty"></dip>
+        <dip bits="4" ids="Match Mode,Power Mode" name="Game Mode"></dip>
+        <dip bits="5" ids="Start,Button 1" name="Starting Button"></dip>
+        <dip bits="6" ids="Off,On" name="Demo Sounds"></dip>
+        <dip bits="7" ids="Off,On" name="Service Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Screen"></dip>
+
+        <dip bits="12,15" ids="1C/1C,2C/1C,3C/1C,4C/1C,5C/1C,6C/1C,1C/2C,1C/3C,1C/4C,1C/5C,1C/6C,2C/3C,3C/2C,4C/3C,2S/1C,Free Play" name="Coin Mode"></dip>
+
+        <dip bits="16,17" ids="1000,2000,1500,500" name="Player Power"></dip>
+    </switches>
+
+    <rom index="0" zip="dsoccr94.zip|dsoccr94j.zip" md5="None">
+        <!-- board type -->
+        <part>86</part>
+        
+        <!-- maincpu -->
+        <part>00 10 00 00</part>
+        <interleave output="16">
+            <part name="a3_-h0-e.bin" crc="8de1dbcd" map="10" />
+            <part name="a3_-l0-e.bin" crc="d3df8bfd" map="01" />
+        </interleave>
+        <interleave output="16">
+            <part name="ds_h1-c.rom"  crc="6109041b" map="10" />
+            <part name="ds_l1-c.rom"  crc="97a01f6b" map="01" />
+        </interleave>
+
+        <!-- gfx1 tiles -->
+        <part>01 40 00 00</part>
+        <interleave output="32">
+            <part name="c0.bin" crc="83ea8a47" map="0001" />
+            <part name="c1.bin" crc="64063e6d" map="0010" />
+            <part name="c2.bin" crc="cc1f621a" map="0100" />
+            <part name="c3.bin" crc="515829e1" map="1000" />
+        </interleave>
+
+        <!-- gfx2 wide sprites -->
+        <part>06 40 00 00</part>
+        <interleave output="64">
+            <part name="a3-o00-w.bin" crc="b094e5ad" map="00010000" />
+            <part name="a3-o01-w.bin" crc="91f34018" map="00000001" />
+            <part name="a3-o10-w.bin" crc="edddeef4" map="00100000" />
+            <part name="a3-o11-w.bin" crc="274a9526" map="00000010" />
+            <part name="a3-o20-w.bin" crc="32064393" map="01000000" />
+            <part name="a3-o21-w.bin" crc="57bae3d9" map="00000100" />
+            <part name="a3-o30-w.bin" crc="be838e2f" map="10000000" />
+            <part name="a3-o31-w.bin" crc="bf899f0d" map="00001000" />
+        </interleave>
+
+        <!-- soundcpu -->
+        <part>03 02 00 00</part>
+        <interleave output="16">
+            <part name="ds_sh0.rom" crc="23fe6ffc" map="10" />
+            <part name="ds_sl0.rom" crc="768132e5" map="01" />
+        </interleave>
+
+        <!-- soundcpu key -->
+        <part>04 00 01 00</part>
+        <part>
+	        90 d1 90 90 90 79 2e 90 90 90 5a 0f 90 90 43 90
+	        90 90 e8 50 90 90 90 a0 5d 22 90 90 b2 3a 90 90
+	        f6 8a 41 90 90 81 90 90 90 90 2b 58 90 90 90 c6
+	        90 90 b9 90 90 2a 90 3c 90 80 26 90 b0 90 47 90
+	        90 90 0a 55 90 90 90 88 90 90 87 90 90 b4 0c 90
+	        73 53 90 90 3b 1f 90 90 90 90 90 90 90 90 90 90
+	        f7 90 90 90 90 1e 90 90 c3 90 a3 74 90 32 42 75
+	        fc 90 b8 90 33 90 5e 90 90 aa 90 90 04 90 9c ba
+	        90 90 24 89 90 90 ea 90 23 90 90 90 bb 90 90 c7
+	        90 8e 90 52 90 18 90 72 90 90 90 90 b6 90 90 90
+	        fa 90 90 90 90 90 90 90 b1 90 90 90 90 57 78 a2
+	        90 3d 51 90 90 bf 46 2c 90 90 fb 90 90 90 90 38
+	        56 90 cf 90 08 90 90 90 5b 07 90 90 90 20 9d 90
+	        03 90 90 90 90 90 bc 86 59 90 02 90 ff d2 8b 90
+	        90 d0 90 90 90 90 90 e9 06 90 5f f3 90 b5 90 90
+	        eb 90 90 90 90 90 83 90 36 90 90 90 90 bd fe 90
+        </part>
+
+        <!-- iremg20 -->
+        <part>05 10 00 00</part>
+   		<part name="ds_da0.rom" crc="67fc52fd" />
+    </rom>
+     <!--hiscore support. see hiscore.sv for modified header values-->
+     <rom index="3" md5="none">
+       <part>
+       00 00 00 F0 05 FF 00 01 00 0F 00 01 00 01 02 00
+       00 0e ad 6d 00 80 10 04 
+       </part>
+    </rom>
+    <nvram index="4" size="128"></nvram>
+</misterromdescription>

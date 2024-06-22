@@ -1,0 +1,48 @@
+<misterromdescription>
+    <name>Discs of Tron (Upright)</name>
+    <mameversion>0218</mameversion>
+    <setname>dotron</setname>
+    <mratimestamp>20200220223650</mratimestamp>
+    <year>1983</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Movie / TV / Comic</category>
+    <category>Sports / Speed Ball</category>
+    <rbf>mcr3</rbf>
+    <rom index="1">
+	<part>08</part>
+    </rom>
+    <rom index="0" zip="dotron.zip" md5="4a3ffc048e2389d20dc91f250e8b4b4b">
+	<part crc="ba0da15f" name="loc-pg0.1c"/>
+	<part crc="dc300191" name="loc-pg1.2c"/>
+	<part crc="ab0b3800" name="loc-pg2.3c"/>
+	<part crc="f98c9f8e" name="loc-pg1.4c"/>
+	<part repeat="8192">FF</part>
+
+	<part crc="57a2b1ff" name="loc-g.cp4"/>
+	<part crc="3bb4d475" name="loc-h.cp3"/>
+	<part crc="57a2b1ff" name="loc-g.cp4"/>
+	<part crc="3bb4d475" name="loc-h.cp3"/>
+	<part crc="ce957f1a" name="loc-e.cp6"/>
+	<part crc="d26053ce" name="loc-f.cp5"/>
+	<part crc="ce957f1a" name="loc-e.cp6"/>
+	<part crc="d26053ce" name="loc-f.cp5"/>
+	<part crc="ef45d146" name="loc-c.cp8"/>
+	<part crc="5e8a3ef3" name="loc-d.cp7"/>
+	<part crc="ef45d146" name="loc-c.cp8"/>
+	<part crc="5e8a3ef3" name="loc-d.cp7"/>
+	<part crc="b35f5374" name="loc-a.cp0"/>
+	<part crc="565a5c48" name="loc-b.cp9"/>
+	<part crc="b35f5374" name="loc-a.cp0"/>
+	<part crc="565a5c48" name="loc-b.cp9"/>
+
+	<part crc="40167124" name="loc-bg2.6f"/>
+	<part crc="40167124" name="loc-bg2.6f"/>
+	<part crc="bb2d7a5d" name="loc-bg1.5f"/>
+	<part crc="bb2d7a5d" name="loc-bg1.5f"/>
+
+	<part crc="6d39bf19" name="sound0.a7"/>
+	<part crc="ac872e1d" name="sound1.a8"/>
+	<part crc="e8ef6519" name="sound2.a9"/>
+	<part crc="6b5aeb02" name="sound3.a10"/>
+    </rom>
+</misterromdescription>

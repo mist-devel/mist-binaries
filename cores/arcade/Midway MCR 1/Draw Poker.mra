@@ -1,0 +1,42 @@
+<misterromdescription>
+    <name>Draw Poker</name>
+    <mameversion>0216</mameversion>
+    <mratimestamp>201912310000</mratimestamp>
+    <year>1980</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Action</category>
+    <rbf>MCR1</rbf>
+    <setname>dpoker</setname>
+    <switches>
+	<dip bits="7"    name="Lamps"   ids="Off,On"/>
+	<dip bits="8"    name="Music"   ids="On,Off"/>
+	<dip bits="9"    name="Novelty" ids="On,Off"/>
+	<dip bits="10"   name="Cards after 5th" ids="Face Up,Logo Up"/>
+	<dip bits="11"   name="Currency" ids="Ike Dollars,Other"/>
+	<dip bits="12"   name="Background" ids="Green,Blue"/>
+    </switches>
+    <rom index="1"><part>2</part></rom>
+
+    <rom index="0" zip="dpoker.zip" md5="c7de5d92f544a11393d0d0d5d8386347" type="merged|nonmerged">
+	<part name="vppp.b3"/>
+	<part name="vppp.b4"/>
+	<part name="vppp.b5"/>
+	<part name="vppp.d4"/>
+	<part name="vppp.d5"/>
+	<part name="vppp.d6"/>
+	<part name="vppp.d7"/>
+	<part repeat="0x1000">FF</part>
+
+	<part name="vssp.a7"/>
+	<part name="vssp.a8"/>
+	<part repeat="0x2000">FF</part>
+
+	<part name="vpfg.e1"/>
+	<part name="vpfg.d1"/>
+	<part name="vpfg.b1"/>
+	<part name="vpfg.a1"/>
+
+	<part name="vpbg.g4"/>
+	<part name="vpbg.g5"/>
+    </rom>
+</misterromdescription>

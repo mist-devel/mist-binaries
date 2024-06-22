@@ -1,0 +1,34 @@
+<misterromdescription>
+    <name>Tron</name>
+    <mameversion>0218</mameversion>
+    <mratimestamp>202002110000</mratimestamp>
+    <year>1982</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Action</category>
+    <rbf>MCR2</rbf>
+    <setname>tron</setname>
+    <switches>
+	<dip bits="8"    name="Allow Continue" ids="No,Yes"/>
+    </switches>
+    <rom index="1">
+	<part>1</part>
+    </rom>
+    <rom index="0" zip="tron.zip" md5="8b232b334aa20263ab1c3a77796f8885" type="merged|nonmerged">
+	<part crc="0de0471a" name="pro0.d2"/>
+	<part crc="8ddf8717" name="scpu_pgb.d3"/>
+	<part crc="4241e3a0" name="scpu_pgc.d4"/>
+	<part crc="035d2fe7" name="scpu_pgd.d5"/>
+	<part crc="24c185d8" name="scpu_pgc.d6"/>
+	<part crc="38c4bbaf" name="scpu_pgd.d7"/>		
+	<part crc="765e6eba" name="ssi_0a.a7"/>			
+	<part crc="1b90ccdd" name="ssi_0b.a8"/>
+	<part crc="3a4bc629" name="ssi_0c.a9"/>
+	<part repeat="4096">00</part>		
+	<part crc="1a9ed2f5" name="scpu_bgg.g3"/>
+	<part crc="3220f974" name="scpu_bgh.g4"/>			
+	<part crc="bc036d1d" name="vga.e1"/>
+	<part crc="58ee14d3" name="vgb.dc1"/>
+	<part crc="3329f9d4" name="vgc.cb1"/>
+	<part crc="9743f873" name="vga.a1"/>
+    </rom>
+</misterromdescription>

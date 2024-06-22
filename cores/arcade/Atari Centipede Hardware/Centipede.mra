@@ -1,0 +1,37 @@
+<misterromdescription>
+	<name>Centipede (revision 3)</name>
+	<mameversion>0218</mameversion>
+	<setname>centiped3</setname>
+	<mratimestamp>20200225084106</mratimestamp>
+	<year>1980</year>
+	<manufacturer>Atari</manufacturer>
+	<category>Maze / Bugs</category>
+	<category>Maze / Centipede</category>
+	<category>Maze / Spiders</category>
+	<rbf>centiped</rbf>
+	<switches base="8">
+		<dip bits="0,1" name="Language"       ids="English,German,French,Spanish"/>
+		<dip bits="2,3" name="Lives"          ids="2,3,4,5"/>
+		<dip bits="4,5" name="Bonus Life"     ids="10000,12000,15000,20000"/>
+		<dip bits="6"   name="Difficulty"     ids="Hard,Easy"/>
+		<dip bits="7"   name="Credit minimum" ids="1,2"/>
+	</switches>
+	<rom index="0" zip="centiped.zip" md5="aea9553e49f86567338a9aab170d2360">
+		<!-- CPU ROM -->
+		<part crc="5ab0d9de" name="136001-307.d1"/>
+		<part crc="4c07fd3e" name="136001-308.e1"/>
+		<part crc="ff69b424" name="136001-309.fh1"/>
+		<part crc="44e40fa4" name="136001-310.j1"/>
+		<part crc="5ab0d9de" name="136001-307.d1"/>
+		<part crc="4c07fd3e" name="136001-308.e1"/>
+		<part crc="ff69b424" name="136001-309.fh1"/>
+		<part crc="44e40fa4" name="136001-310.j1"/>
+
+		<!-- GFX -->
+		<part crc="880acfb9" name="136001-211.f7"/>
+		<part crc="b1397029" name="136001-212.hj7"/>
+
+		<!-- LUT -->
+		<part crc="6fa3093a" name="136001-213.p4"/>
+	</rom>
+</misterromdescription>

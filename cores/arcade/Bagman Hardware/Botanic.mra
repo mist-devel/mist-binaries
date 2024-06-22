@@ -1,0 +1,36 @@
+<misterromdescription>
+	<name>Botanic (English - Spanish, set 1)</name>
+	<mameversion>0220</mameversion>
+	<setname>botanic</setname>
+	<mratimestamp>20200427161917</mratimestamp>
+	<year>1983</year>
+	<manufacturer>Itisa</manufacturer>
+	<category>Maze / Bugs</category>
+	<category>Platform</category>
+	<rbf>bagman</rbf>
+	<switches default="EB" base="8">
+		<dip bits="0,1" name="Lives" ids="2,5,4,3"/>
+		<dip bits="2"   name="Coinage" ids="1c/1cr,2c/1cr"/>
+		<dip bits="3,4" name="Invulnerability Fruits" ids="2,3"/>
+		<dip bits="5"   name="Language" ids="Spanish/Fruits Off,English/Fruits On"/>
+	</switches>
+	<rom index="1">
+		<part>02</part>
+	</rom>
+	<rom index="0" zip="botanic.zip" md5="3d834121fe171b5be594900bbf98194c">
+		<part crc="907f01c7" name="5.9e"/>
+		<part crc="ff2533fb" name="06.9f"/>
+		<part crc="b7c544ef" name="07.9j"/>
+		<part crc="2df22793" name="08.9k"/>
+		<part crc="f7d908ec" name="09.9m"/>
+		<part crc="7ce9fbc8" name="10.9n"/>
+		<part repeat="40960">00</part>
+		<part crc="bea449a6" name="2.1e"/>
+		<part crc="a1148d89" name="1.1c"/>
+		<part crc="a5deb8ed" name="4.1j"/>
+		<part crc="70be5565" name="3.1f"/>
+		<part repeat="8192">00</part>
+		<part crc="a8a2ddd2" name="prom.3p"/>
+		<part crc="edf88f34" name="prom.3r"/>
+	</rom>
+</misterromdescription>

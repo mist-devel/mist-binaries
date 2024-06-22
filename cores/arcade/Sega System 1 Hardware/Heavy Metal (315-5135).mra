@@ -1,0 +1,85 @@
+<misterromdescription>
+	<name>Heavy Metal (315-5135)</name>
+	<mameversion>0229</mameversion>
+	<setname>hvymetal</setname>
+	<year>1985</year>
+	<manufacturer>Sega</manufacturer>
+	<players>2</players>
+	<joystick>8-way</joystick>
+	<rotation>horizontal</rotation>
+	<category>Shooter</category>
+	<rbf>segasys1</rbf>
+	<buttons names="Shoot,Bomb,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,Start,Select,R,C"/>
+	<switches base="8" default="FF,7C">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		-->
+		<dip bits="9" name="Demo Sound" ids="On,Off"/>
+		<dip bits="10,11" name="Lives" ids="Infinite,5,4,3"/>
+		<dip bits="12,13" name="Bonus Life" ids="100k,70k 150k,60k 120k,50k 100k"/>
+		<dip bits="14" name="Difficulty" ids="Hard,Easy"/>
+		<dip bits="15" name="Allow Continue" ids="Yes,No"/>
+	</switches>
+	<rom index="1">
+		<part>00</part>
+	</rom>
+	<rom index="0" md5="746022eb13498170e91ce1ea05d51e60" zip="hvymetal.zip">
+		<!-- soundcpu, size: 0x8000 -->
+		<part crc="b64ac7f0" name="epr-6787.120"/>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part crc="59195bb9" name="epr-6790a.1"/>
+		<part crc="83e1d18a" name="epr-6789a.2"/>
+		<part crc="6ecefd57" name="epr-6788a.3"/>
+
+		<!-- sprites, size: 0x20000 -->
+		<part crc="0af61aee" name="epr-6778.117"/>
+		<part crc="91d7a197" name="epr-6777.110"/>
+		<part crc="55b31df5" name="epr-6780.4"/>
+		<part crc="e03a2b28" name="epr-6779.5"/>
+
+		<!-- tiles, size: 0x18000 -->
+		<interleave output="32">
+			<part crc="58a3d038" name="epr-6795.62"/>
+			<part crc="487407c2" name="epr-6793.64"/>
+			<part crc="a7dcd042" name="epr-6791.66"/>
+			<part crc="a7dcd042" name="epr-6791.66"/>
+		</interleave>
+
+		<interleave output="32">
+			<part crc="d8b08a55" name="epr-6796.61"/>
+			<part crc="89eb3793" name="epr-6794.63"/>
+			<part crc="d0be5e33" name="epr-6792.65"/>
+			<part crc="d0be5e33" name="epr-6792.65"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x0100 -->
+		<part crc="648350b8" name="pr5317.4"/>
+
+		<!-- color_proms, size: 0x0300 -->
+		<part crc="146f16fb" name="pr7036.3"/>
+		<part crc="50b201ed" name="pr7035.2"/>
+		<part crc="dfb5f139" name="pr7034.1"/>
+
+		<!-- encryption_device: 315-5135 -->
+		<part>
+			88 a8 80 a0 a0 80 a8 88 88 a8 80 a0 88 80 08 00
+			a0 80 a8 88 88 a8 80 a0 88 a8 80 a0 88 80 08 00
+			a0 80 a8 88 88 80 08 00 88 80 08 00 88 80 08 00
+			a0 80 a8 88 88 80 08 00 88 80 08 00 28 08 a8 88
+			a0 20 a8 28 88 a8 80 a0 a0 20 a8 28 88 a8 80 a0
+			a0 20 a8 28 88 a8 80 a0 88 a8 80 a0 28 08 a8 88
+			28 a8 08 88 a0 20 a8 28 a0 20 a8 28 28 a8 08 88
+			28 a8 08 88 a0 20 a8 28 28 08 a8 88 28 a8 08 88 
+		</part>
+		<!-- skip self test (jp $4ab6) -->
+		<!--
+		<patch offset="0x8005">9e</patch>
+		-->
+	</rom>
+	<mratimestamp>20210623000000</mratimestamp>
+</misterromdescription>

@@ -1,0 +1,27 @@
+---------------------------------------------------------------------------------
+-- 
+-- Arcade: Moon Patrol port to MiST
+-- 19 December 2017
+-- 
+---------------------------------------------------------------------------------
+-- Uses PACE framework by http://pacedev.net/
+---------------------------------------------------------------------------------
+-- Moon patrol sound board by Dar (darfpga@aol.fr)
+-- http://darfpga.blogspot.fr
+---------------------------------------------------------------------------------
+-- cpu68 - Version 9th Jan 2004 0.8
+-- 6800/01 compatible CPU core 
+-- GNU public license - December 2002 : John E. Kent
+---------------------------------------------------------------------------------
+-- 
+-- 
+-- Keyboard and Joystick controls :
+--
+--   ESC     or Button C     : Coin
+--   1, 2    or Button Start : Start
+--   SPACE   or Button A     : Fire
+--   ALT, UP or Button B     : Jump
+--   LEFT,RIGHT              : Increase/Decrease the speed
+--
+--
+---------------------------------------------------------------------------------

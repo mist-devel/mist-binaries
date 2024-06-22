@@ -1,0 +1,89 @@
+<misterromdescription>
+	<name>Yamato</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<year>1980</year>
+	<manufacturer>Sega</manufacturer>
+
+	<setname>yamato</setname>
+	<parent>cclimber</parent>
+	<mameversion>0216</mameversion>
+	<rbf>cclimber</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>horizontal</rotation>
+	<flip></flip>
+
+	<players>2 (alternating)</players>
+	<joystick>8-way</joystick>
+	<special_controls>twin stick</special_controls>
+	<num_buttons>4</num_buttons>
+	<button_names></button_names>
+
+	<switches default="80" base="8">
+		<dip bits="0,1"   name="Lives" ids="3,4,5,6"/>
+		<dip bits="2,4"   name="Coinage" ids="1C_1C,2C_1C,3C_1C,4C_1C,1C_2C,1C_3C,2C_3C,Free Play"/>
+		<dip bits="5"     name="Bonus_Life" ids="Every 30000,Every 50000"/>
+		<dip bits="6"     name="Speed" ids="Slow,Fast"/>
+		<dip bits="7"     name="Cabinet" ids="Cokctail,Upright"/>
+	</switches>
+
+	<rom index="1"><part>1A</part></rom>
+	<rom index="0" md5="58b3408afaac6f6be78a28798dc07f80" type="merged|nonmerged" zip="yamato.zip">
+		<!-- main cpu 32K -->
+		<part crc="20895096" name="2.5de"/>
+		<part crc="57a696f9" name="3.5f"/>
+		<part crc="59a468e8" name="4.5jh"/>
+		<part repeat="0x1000">FF</part>
+		<part crc="35987485" name="11.5a"/>
+
+		<!-- audio CPU 8K -->
+		<part crc="3aad9e3c" name="1.5v"/>
+		<part repeat="0x1800">FF</part>
+
+		<!-- gfx1 background tiles 16K -->
+		<part crc="161121f5" name="10.11k"/>
+		<part crc="56e84cc4" name="9.11h"/>
+
+		<!-- gfx2 big sprite tiles 8K -->
+		<part crc="28024d9a" name="8.11c"/>
+		<part crc="4a179790" name="7.11a"/>
+
+		<!-- misc 8K -->
+		<part crc="7761ad24" name="5.5lm"/>
+		<part crc="da48444c" name="6.5n"/>
+
+		<!-- palette1 2*256 byte -->
+		<part crc="ef2053ab" name="1.bpr"/>
+		<part crc="2281d39f" name="2.bpr"/>
+		<part crc="ef2053ab" name="1.bpr"/>
+		<part crc="2281d39f" name="2.bpr"/>
+		<part crc="ef2053ab" name="1.bpr"/>
+		<part crc="2281d39f" name="2.bpr"/>
+		<part crc="ef2053ab" name="1.bpr"/>
+		<part crc="2281d39f" name="2.bpr"/>
+
+		<part crc="9e6341e3" name="3.bpr"/>
+		<part crc="1c97dc0b" name="4.bpr"/>
+		<part crc="9e6341e3" name="3.bpr"/>
+		<part crc="1c97dc0b" name="4.bpr"/>
+		<part crc="9e6341e3" name="3.bpr"/>
+		<part crc="1c97dc0b" name="4.bpr"/>
+		<part crc="9e6341e3" name="3.bpr"/>
+		<part crc="1c97dc0b" name="4.bpr"/>
+
+		<!-- palette2 32 byte -->
+		<part crc="edd6c05f" name="5.bpr"/>
+
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+</misterromdescription>

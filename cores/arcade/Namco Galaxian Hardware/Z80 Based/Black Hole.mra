@@ -1,0 +1,32 @@
+<misterromdescription>
+	<name>Black Hole</name>
+	<mameversion>0216</mameversion>
+	<mratimestamp>201911270000</mratimestamp>
+	<year>1981</year>
+	<manufacturer>TDS & MINTS</manufacturer>
+	<category>Space / Shooter</category>
+	<setname>blkhole</setname>
+	<rbf>galaxian</rbf>
+	<switches default="00,1F,02">
+		<dip bits="16" name="Bonus Life After" ids="5000,10000"/>
+		<dip bits="17"    name="Cabinet" ids="Cocktail,Upright"/>
+	</switches>
+	<rom index="1">
+		<part>03</part>
+	</rom>  
+	<rom index="0" zip="blkhole.zip" md5="c4a5705706f6ff4fbf6e921b26ce78e4" type="merged|nonmerged">
+		<part crc="64998819" name="bh1"/>
+		<part crc="26f26ce4" name="bh2"/>
+		<part crc="3418bc45" name="bh3"/>
+		<part crc="735ff481" name="bh4"/>
+		<part crc="3f657be9" name="bh5"/>
+		<part crc="a057ab35" name="bh6"/>
+		<part crc="a057ab35" name="bh6"/>
+		<part crc="a057ab35" name="bh6"/>
+		<part crc="975ba821" name="bh7"/>
+		<part crc="975ba821" name="bh7"/>
+		<part crc="03d11020" name="bh8"/>
+		<part crc="03d11020" name="bh8"/>
+		<part crc="c3ac9467" name="6l.bpr"/>
+	</rom>
+</misterromdescription>

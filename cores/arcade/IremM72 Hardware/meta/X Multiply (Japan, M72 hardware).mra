@@ -1,0 +1,86 @@
+<misterromdescription>
+    <name>X Multiply (Japan, M72 hardware)</name>
+    <mameversion>0245</mameversion>
+    <setname>xmultiplm72</setname>
+    <parent>xmultipl</parent>
+    <year>1989</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Shooter</category>
+    <rbf>IremM72</rbf>
+    <rotation>horizontal</rotation>
+
+    <joystick>8-way</joystick>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,R,L" names="Fire,-,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="00,02" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="Normal,Very Easy,Easy,Hard" name="Difficulty"></dip>
+        <dip bits="2,3" ids="3,1,2,4" name="Lives"></dip>
+        <dip bits="4,7" ids="1C/1P,2C/1P,3C/1P,4C/1P,5C/1P,6C/1P,1C/2P,1C/3P,1C/4P,1C/5P,1C/6P,2C/3P,4C/2P,5C/3P,8C/3P,Free Play" name="Coin Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Picture"></dip>
+        <dip bits="9" ids="Cocktail,Upright" name="Cabinet type"></dip>
+        <dip bits="11" ids="On,Off" name="Demo Sound"></dip>
+        <dip bits="12" ids="Off,On" name="Upright Double Mode"></dip>
+        <dip bits="13" ids="On,Off" name="Continues"></dip>
+        <dip bits="15" ids="Off,On" name="Diagnostic Test"></dip>
+    </switches>
+
+    <rom index="0" zip="xmultiplm72.zip|xmultipl.zip" md5="None">
+        <!-- board type -->
+        <part>02</part>
+        <!-- maincpu -->
+        <part>00 08 00 00</part>
+        <interleave output="16">
+            <part name="xm_c-l3-.ic34" crc="93fdd200" map="01"/>
+            <part name="xm_c-h3-.ic43" crc="20685021" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="xm_c-l0-.ic37" crc="06a9e213" map="01"/>
+            <part name="xm_c-h0-.ic40" crc="9438dd8a" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="xm_c-l0-.ic37" crc="06a9e213" map="01"/>
+            <part name="xm_c-h0-.ic40" crc="9438dd8a" map="10"/>
+        </interleave>
+
+        <!-- sprites -->
+        <part>01 10 00 00</part>
+        <interleave output="32">
+            <part name="t44.00.ic53" crc="db45186e" map="0001" />
+            <part name="t46.10.ic51" crc="f0c465a4" map="0010" />
+            <part name="t48.20.ic49" crc="4129944f" map="0100" />
+            <part name="t50.30.ic47" crc="e322543e" map="1000" />
+        </interleave>
+        <interleave output="32">
+            <part name="t45.01.ic52" crc="4d0764d4" map="0001" />
+            <part name="t47.11.ic50" crc="1263b24b" map="0010" />
+            <part name="t49.21.ic48" crc="2346e6f9" map="0100" />
+            <part name="t51.31.ic46" crc="229bf7b1" map="1000" />
+        </interleave>
+
+        <!-- gfx2 -->
+        <part>02 08 00 00</part>
+        <interleave output="32">
+            <part name="t53.a0" crc="1a082494" map="0001"/>
+            <part name="t54.a1" crc="076c16c5" map="0010"/>
+            <part name="t55.a2" crc="25d877a5" map="0100"/>
+            <part name="t56.a3" crc="5b1213f5" map="1000"/>
+        </interleave>
+
+        <!-- gfx2 -->
+        <part>03 08 00 00</part>
+        <interleave output="32">
+            <part name="t57.b0" crc="0a84e0c7" map="0001"/>
+            <part name="t58.b1" crc="a874121d" map="0010"/>
+            <part name="t59.b2" crc="69deb990" map="0100"/>
+            <part name="t60.b3" crc="14c69f99" map="1000"/>
+        </interleave>
+
+        <!-- mcu -->
+        <part>04 00 10 00</part>
+        <part name="xm_c-pr-.ic1" crc="c8ceb3cd"/>
+
+        <!-- samples -->
+        <part>05 02 00 00</part>
+        <part name="t52.v0.ic44" crc="2db1bd80"/>
+    </rom>
+</misterromdescription>

@@ -1,0 +1,40 @@
+<misterromdescription>
+    <name>Timber</name>
+    <mameversion>0216</mameversion>
+    <mratimestamp>201912310000</mratimestamp>
+    <year>1983</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Action</category>
+    <rbf>mcr3</rbf>
+    <setname>timber</setname>
+    <switches>
+	<dip bits="10"   name="Demo Sounds" ids="Off,On"/>
+	<dip bits="9"    name="Cabinet" ids="Upright,Cocktail"/>
+    </switches>
+    <rom index="1">
+	<part>06</part>
+    </rom>
+    <rom index="0" zip="timber.zip" md5="b3cc9427936e29b9eb69e1146c9f9762" type="merged|nonmerged">
+	<part crc="377032ab" name="timpg0.bin"/>
+	<part crc="fd772836" name="timpg1.bin"/>
+	<part crc="632989f9" name="timpg2.bin"/>
+	<part crc="dae8a0dc" name="timpg3.bin"/>
+	<part repeat="8192">FF</part>
+
+	<part crc="81de4a73" name="timfg1.bin"/>
+	<part crc="7f3a4f59" name="timfg0.bin"/>
+	<part crc="37c03272" name="timfg3.bin"/>
+	<part crc="e2c2885c" name="timfg2.bin"/>
+	<part crc="eb636216" name="timfg5.bin"/>
+	<part crc="b7105eb7" name="timfg4.bin"/>
+	<part crc="d9c27475" name="timfg7.bin"/>
+	<part crc="244778e8" name="timfg6.bin"/>
+
+	<part crc="b1cb2651" name="timbg1.bin"/>
+	<part crc="2ae352c4" name="timbg0.bin"/>
+
+	<part crc="c615dc3e" name="tima7.bin"/>
+	<part crc="83841c87" name="tima8.bin"/>
+	<part crc="22bcdcd3" name="tima9.bin"/>
+    </rom>
+</misterromdescription>

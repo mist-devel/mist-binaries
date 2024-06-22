@@ -1,0 +1,68 @@
+<misterromdescription>
+    <name>SAR - Search And Rescue (World)</name>
+    <setname>searchar</setname>
+    <rbf>SNK68</rbf>
+    <mameversion>0245</mameversion>
+    <year>1989</year>
+    <manufacturer>SNK</manufacturer>
+    <region>World</region>
+
+    <switches default="01,00" base="16" page_id="1" page_name="Switches">
+        <!-- DSW1 -->
+        <dip name="Monitor Screen" bits="7" ids="Normal,Invert"/>
+        <dip name="Bonus Occurence" bits="6" ids="Second,Every"/>
+        <dip name="Play Pricing" bits="4,5" ids="1/1-1/2,3/1-1/5,2/1-1/3,4/1-1/6"/>
+        <dip name="Hero Count" bits="2,3" ids="3,4,2,5"/>
+        <dip name="Unknown" bits="1" ids="Off,On"/>
+        <dip name="Control Type" bits="0" ids="Rotary,8-Way"/>
+        <!-- DSW2 -->
+        <dip name="Difficulty" bits="14,15" ids="Normal,Hard,Easy,Hardest"/>
+        <dip name="Game Mode" bits="12,13" ids="Demo Sound On,Never Finish,Demo Sound Off,Stop Video"/>
+        <dip name="Extend" bits="10,11" ids="50/100K,90/180K,70/140K,None"/>
+        <dip name="Continue" bits="9" ids="Yes,No"/>
+        <dip name="Test Mode" bits="8" ids="Normal Game,Manual Test"/>
+    </switches>
+
+    <buttons names="Fire/Power Up,Jump,-,P1 Start,P2 Start,Coin A,Coin B,Pause,Rotate CW,Rotate CCW" default="A,B,X,Y,R,L,Start,Select,R1,L1"/>
+
+    <rom index="1">
+        <part>08</part>
+    </rom>
+
+    <rom index="0" zip="searchar.zip" md5="None">
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="bhw.2" crc="e1430138" map="01"/>
+            <part name="bhw.3" crc="ee1f9374" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="bhw.1" crc="62b60066" map="01"/>
+            <part name="bhw.4" crc="16d8525c" map="10"/>
+        </interleave>
+        <!-- soundcpu - starts at 0x80000 -->
+        <part name="bh.5" crc="53e2fa76"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- upd - starts at 0xA0000 -->
+        <part name="bh.v1" crc="07a6114b"/>
+        <!-- gfx1 - starts at 0xC0000 -->
+        <interleave output="16">
+            <part name="bh.7" crc="b0f1b049" map="01"/>
+            <part name="bh.8" crc="174ddba7" map="10"/>
+        </interleave>
+        <part repeat="0x30000"> FF</part>
+        <!-- gfx2 - starts at 0x100000 -->
+        <interleave output="32">
+            <part name="bh.c1" crc="1fb8f0ae" map="0021"/>
+            <part name="bh.c2" crc="7c803767" map="2100"/>
+        </interleave>
+        <interleave output="32">
+            <part name="bh.c3" crc="fd8bc407" map="0021"/>
+            <part name="bh.c4" crc="eede7c43" map="2100"/>
+        </interleave>
+        <interleave output="32">
+            <part name="bh.c5" crc="1d30acc3" map="0021"/>
+            <part name="bh.c6" crc="9f785cd9" map="2100"/>
+        </interleave>
+        <!-- Total 0x400000 bytes - 4096 kBytes -->
+    </rom>
+</misterromdescription>

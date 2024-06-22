@@ -1,0 +1,57 @@
+<misterromdescription>
+	<name>Vortex</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1980</year>
+	<manufacturer>Zilec Electronics</manufacturer>
+	<category>Shooter - Multidirectional</category>
+
+	<setname>vortex</setname>
+	<parent>vortex</parent>
+	<mameversion>0226</mameversion>
+	<rbf>spaceinvaders</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (ccw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>2-way horizontal</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="A,Start,Select,R,L" names="Fire - Hold Thrust,-,-,-,Start 1P,Start 2P,Coin,Pause"></buttons>
+
+	<switches base="16" default="00,00,80">
+		<dip bits="0,1" ids="2,3,4,5" name="Ships"></dip>
+		<dip bits="23" ids="2C_1C,1C_1C" name="Coinage"></dip>
+	</switches>
+
+	<rom index="1">
+		<part>02</part>
+	</rom>
+	<rom index="0" md5="none" zip="vortex.zip">
+		<part crc="577417a6" name="1.t36"></part>
+		<part crc="126d0049" name="2.t35"></part>
+		<part crc="4a2510b3" name="3.t34"></part>
+		<part crc="da0274fe" name="4.t33"></part>
+		<part crc="a3de49d6" name="5.t32"></part>
+		<part crc="271085d0" name="6.t31"></part>
+		<part repeat="4096">00</part>
+		<part repeat="2048">FF</part>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

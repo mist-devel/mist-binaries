@@ -1,0 +1,76 @@
+<misterromdescription>
+	<name>Van-Van Car</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1983</year>
+	<manufacturer>Sanritsu</manufacturer>
+	<category>Maze</category>
+
+	<setname>vanvan</setname>
+	<parent>vanvan</parent>
+	<mameversion>0220</mameversion>
+	<rbf>pacman</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (ccw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FF,FF,F0,00" base="8" page_id="1" page_name="Switches">
+		<dip bits="16" ids="Upright,Cocktail" name="Cabinet"></dip>
+		<dip bits="17" ids="On,Off" name="Flip Screen"></dip>
+		<dip bits="18,19" ids="70k and 200k,40k and 140k,20k and 100k,Never" name="Bonus Life after"></dip>
+		<dip bits="20,21" ids="6,5,4,3" name="Lives"></dip>
+		<dip bits="22,23" ids="2c/1cr,1c/3cr,1c/2cr,1c/1cr" name="Coinage"></dip>
+		<dip bits="25" ids="Off,On" name="Invulnerability"></dip>
+		<dip bits="27" ids="Off,On" name="Missile effect"></dip>
+		</switches>
+
+	<rom index="1">
+		<part>0C</part>
+		</rom>
+	<rom index="0" md5="c1f4eeb2065671d958016120a7c3bcb0" zip="vanvan.zip">
+		<part crc="cf1b2df0" name="van-1.50"></part>
+		<part crc="df58e1cb" name="van-2.51"></part>
+		<part crc="15571e24" name="van-3.52"></part>
+		<part crc="b724cbe0" name="van-4.53"></part>
+		<part crc="db67414c" name="van-5.39"></part>
+		<part crc="db67414c" name="van-5.39"></part>
+		<part crc="db67414c" name="van-5.39"></part>
+		<part crc="db67414c" name="van-5.39"></part>
+		<part crc="60efbe66" name="van-20.18"></part>
+		<part crc="5dd53723" name="van-21.19"></part>
+		<part crc="60efbe66" name="van-20.18"></part>
+		<part crc="5dd53723" name="van-21.19"></part>
+		<part crc="4b803d9f" name="6301-1.37"></part>
+		<part crc="4b803d9f" name="6301-1.37"></part>
+		<part crc="4b803d9f" name="6301-1.37"></part>
+		<part crc="ce1d9503" name="6331-1.6"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+		00 00 48 09 00 06 00 00
+		00 00 4C 60 00 F0 00 00
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="62"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

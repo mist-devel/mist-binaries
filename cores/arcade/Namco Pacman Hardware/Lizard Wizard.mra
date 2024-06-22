@@ -1,0 +1,74 @@
+<misterromdescription>
+	<name>Lizard Wizard</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1985</year>
+	<manufacturer>Techstar</manufacturer>
+	<manufacturer>Sunn</manufacturer>
+	<category>Arena</category>
+
+	<setname>lizwiz</setname>
+	<parent>lizwiz</parent>
+	<mameversion>0220</mameversion>
+	<rbf>pacman</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (simultaneous)</players>
+	<joystick>8-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FF,FF,BB" base="8" page_id="1" page_name="Switches">
+		<dip bits="16,17" ids="2c/1cr,1c/1cr,1c/2cr,Free Play" name="Coinage" values="1,3,2,0"></dip>
+		<dip bits="18,19" ids="5,4,3,2" name="Lives"></dip>
+		<dip bits="20,21" ids="150K,125K,100K,75K" name="Bonus Life after"></dip>
+		<dip bits="22" ids="Hard,normal" name="Difficulty"></dip>
+		</switches>
+
+	<rom index="1">
+		<part>06</part>
+		</rom>
+	<rom index="0" md5="17ba9e5b1df00c1652a9c054f1996d3f" zip="lizwiz.zip">
+		<part crc="32bc1990" name="6e.cpu"></part>
+		<part crc="ef24b414" name="6f.cpu"></part>
+		<part crc="30bed83d" name="6h.cpu"></part>
+		<part crc="dd09baeb" name="6j.cpu"></part>
+		<part crc="f6dea3a6" name="wiza"></part>
+		<part crc="f27fb5a8" name="wizb"></part>
+		<part crc="f6dea3a6" name="wiza"></part>
+		<part crc="f27fb5a8" name="wizb"></part>
+		<part crc="45059e73" name="5e.cpu"></part>
+		<part crc="d2469717" name="5f.cpu"></part>
+		<part crc="45059e73" name="5e.cpu"></part>
+		<part crc="d2469717" name="5f.cpu"></part>
+		<part crc="a9cc86bf" name="82s126.1m"></part>
+		<part crc="5fdca536" name="4a.cpu"></part>
+		<part crc="77245b66" name="82s126.3m"></part>
+		<part crc="7549a947" name="7f.cpu"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+		00 00 4D AF 00 3C 4D 01
+		00 00 43 ED 00 06 00 40
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="66"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

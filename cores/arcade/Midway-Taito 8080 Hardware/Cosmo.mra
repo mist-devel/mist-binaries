@@ -1,0 +1,96 @@
+<misterromdescription>
+	<name>Cosmo</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1979</year>
+	<manufacturer>TDS &amp; MINTS</manufacturer>
+	<category>Shooter - Gallery</category>
+
+	<setname>cosmo</setname>
+	<parent>invaders</parent>
+	<mameversion>0226</mameversion>
+	<rbf>spaceinvaders</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>2-way horizontal</joystick>
+	<special_controls></special_controls>
+	<num_buttons>2</num_buttons>
+	<buttons default="A,Start,Select,R,L" names="Fire,-,-,-,Start 1P,Start 2P,Coin,Pause"></buttons>
+
+	<switches base="16" default="00,00,00">
+		<dip bits="16" ids="3,5" name="Lives"></dip>
+	</switches>
+
+	<rom index="1">
+		<part>14</part>
+	</rom>
+	<rom index="0" md5="none" zip="cosmo.zip">
+		<part crc="445c9a98" name="1.36"></part>
+		<part crc="df3eb731" name="2.35"></part>
+		<part crc="772c813f" name="3.34"></part>
+		<part crc="279f66e6" name="4.33"></part>
+		<part crc="cefb18df" name="5.32"></part>
+		<part crc="b037f6c4" name="6.31"></part>
+		<part crc="c3831ea2" name="7.42"></part>
+		<part repeat="2048">00</part>
+		<part crc="bd8576f1" name="n-1.7d"></part>
+		<part crc="48f1ade5" name="n-2.6e"></part>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 20 00 00 00 FF 00 02 00 02 00 01 00 FF 02 00
+		00 00 20 38 00 03 00 00
+		00 00 2E 22 00 01 7C 7C
+		00 00 2E 42 00 01 82 82
+		00 00 2E 62 00 01 82 82
+		00 00 2E 82 00 01 82 82
+		00 00 2E A2 00 01 7C 7C
+		00 00 2F 22 00 01 00 00
+		00 00 2F 42 00 01 00 00
+		00 00 2F 62 00 01 00 00
+		00 00 2F 82 00 01 00 00
+		00 00 2F A2 00 01 00 00
+		00 00 30 22 00 01 00 00
+		00 00 30 42 00 01 00 00
+		00 00 30 62 00 01 00 00
+		00 00 30 82 00 01 00 00
+		00 00 30 A2 00 01 00 00
+		00 00 31 22 00 01 00 00
+		00 00 31 42 00 01 00 00
+		00 00 31 62 00 01 00 00
+		00 00 31 82 00 01 00 00
+		00 00 31 A2 00 01 00 00
+		00 00 32 22 00 01 00 00
+		00 00 32 42 00 01 00 00
+		00 00 32 62 00 01 00 00
+		00 00 32 82 00 01 00 00
+		00 00 32 A2 00 01 00 00
+		00 00 33 22 00 01 00 00
+		00 00 33 42 00 01 00 00
+		00 00 33 62 00 01 00 00
+		00 00 33 82 00 01 00 00
+		00 00 33 A2 00 01 00 00
+		00 00 34 22 00 01 00 00
+		00 00 34 42 00 01 00 00
+		00 00 34 62 00 01 00 00
+		00 00 34 82 00 01 00 00
+		00 00 34 A2 00 01 00 00
+		</part>
+	</rom>
+	<nvram index="4" size="38"></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

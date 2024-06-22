@@ -1,0 +1,94 @@
+<misterromdescription>
+	<name>Phoenix</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Amstar, Set 1</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1980</year>
+	<manufacturer>Amstar</manufacturer>
+	<category>Shooter - Gallery</category>
+
+	<setname>phoenix</setname>
+	<parent>phoenix</parent>
+	<mameversion>0220</mameversion>
+	<rbf>phoenix</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>2-way horizontal</joystick>
+	<special_controls></special_controls>
+	<num_buttons>2</num_buttons>
+	<button_names></button_names>
+
+	<switches default="0" base="8">
+		<dip bits="0,1" ids="3,4,5,6" name="Lives"></dip>
+		<dip bits="2,3" ids="3K 30K,4K 40K,5K 50K,6K 60K" name="Bonus Life"></dip>
+		<dip bits="4"   ids="1C_1C,2C_1C" name="Coinage"></dip>
+	</switches>
+
+	<rom index="1"><part>00</part></rom>
+	<rom index="0" md5="aebeef2fb155d5481cb827520f7d26d8" zip="phoenix.zip">
+		<!-- CPU 16k -->
+		<part crc="9f68086b" name="ic45"></part>
+		<part crc="273a4a82" name="ic46"></part>
+		<part crc="3d4284b9" name="ic47"></part>
+		<part crc="cb5d9915" name="ic48"></part>
+		<part crc="a105e4e7" name="h5-ic49.5a"></part>
+		<part crc="ac5e9ec1" name="h6-ic50.6a"></part>
+		<part crc="2eab35b4" name="h7-ic51.7a"></part>
+		<part crc="aff8e9c5" name="h8-ic52.8a"></part>
+
+		<!-- bg 4k -->
+		<part crc="3c7e623f" name="ic23.3d"></part>
+		<part crc="59916d3b" name="ic24.4d"></part>
+
+		<!-- fg 4k -->
+		<part crc="53413e8f" name="b1-ic39.3b"></part>
+		<part crc="0be2ba91" name="b2-ic40.4b"></part>
+
+		<!-- proms 2x256 -->
+		<part crc="79350b25" name="mmi6301.ic40"/>
+		<part crc="e176b768" name="mmi6301.ic41"/>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		 00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+		 00 00 43 89 00 03 00 00 
+		 00 00 41 E1 00 01 20 20 
+		 00 00 41 C1 00 01 20 20 
+		 00 00 41 A1 00 01 20 20 
+		 00 00 41 81 00 01 20 20 
+		 00 00 41 61 00 01 20 20 
+		 00 00 41 41 00 01 20 20 
+		 00 00 43 81 00 03 00 00 
+		 00 00 43 01 00 01 20 20 
+		 00 00 42 E1 00 01 20 20 
+		 00 00 42 C1 00 01 20 20 
+		 00 00 42 A1 00 01 20 20 
+		 00 00 42 81 00 01 20 20 
+		 00 00 42 61 00 01 20 20 
+		 00 00 43 85 00 03 00 00 
+		 00 00 40 C1 00 01 20 20 
+		 00 00 40 A1 00 01 20 20 
+		 00 00 40 81 00 01 20 20 
+		 00 00 40 61 00 01 20 20 
+		 00 00 40 41 00 01 20 20 
+		 00 00 40 21 00 01 20 20 
+		</part>
+		</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="27"></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

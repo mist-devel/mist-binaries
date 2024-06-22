@@ -1,0 +1,87 @@
+<misterromdescription>
+	<name>Gatsbee</name>
+	<region/>
+	<year>1984</year>
+	<bootleg>yes</bootleg>
+	<alternative>Galaga</alternative>
+	<series>Galaxian</series>
+	<manufacturer>hack (Uchida)</manufacturer>
+	<category>Shooter - Gallery</category>
+
+	<setname>gatsbee</setname>
+	<parent>galaga</parent>
+	<mameversion>0220</mameversion>
+	<rbf>galaga</rbf>
+	<about/>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way horizontal</joystick>
+	<special_controls/>
+	<num_buttons>1</num_buttons>
+	<button_names/>
+
+	<switches base="8" default="08,68" page_id="1" page_name="Switches">
+		<!-- DIP Switch 6K -->
+		<dip bits="0,1"   name="Difficulty"  ids="Easy(Rank A),Hardest(Rank D),Hard(Rank C),Medium(Rank B)"/>
+		<dip bits="3"     name="Demo Sounds" ids="Off,On"/>
+		<dip bits="4"     name="Freeze"      ids="Off,On"/>
+		<dip bits="5"     name="Rack Test"   ids="Off,On"/>
+		<dip bits="7"     name="Cabinet"     ids="Upright,Cocktail"/>
+
+		<!-- DIP Switch 6J -->
+		<dip bits="8,10"  name="Coinage"     ids="1 Coin/1 Cr.,2 Coins/1 Cr.,1 Coin/3 Cr.,4 Coins/1 Cr.,1 Coin/2 Cr.,3 Coins/1 Cr.,2 Coins/3 Cr.,Free Play"/>
+		<dip bits="11,13" name="Bonus"	     ids="30k 80k,20k 80k every 80k,30k 120k every 120k,20k 60k every 60k,20k 60k,20k 70k every 70k,30k 100k every 100k,Nothing"/>
+		<dip bits="14,15" name="Lives"       ids="5,3,4,2"/>
+
+		<!-- Service switches -->
+		<dip bits="16" name="Self-test mode"  ids="Off,On"/>
+		<dip bits="17" name="Service trigger" ids="Off,On"/>
+	</switches>
+
+	<rom index="1"/>
+	<rom index="0" md5="9d301ad0f2ac3803b6473cbec81638f3" type="merged" zip="galaga.zip|namco51.zip|namco54.zip">
+		<!-- main cpu -->
+		<part crc="9fb8e28b" name="1.4b"/>
+		<part crc="bf6cb840" name="2.4c"/>
+		<part crc="3604e2dd" name="3.4d"/>
+		<part crc="bf9f613b" name="4.4e"/>
+
+		<!-- cpu 2 -->
+		<part crc="3102fccd" name="gg1-5.3f"/>
+
+		<!-- cpu 3 -->
+		<part crc="8995088d" name="gg1-7.2c"/>
+
+		<!-- cpu 4 - not used -->
+		<!--
+		<part crc="001b70bc" name="gallag.6"/>
+		-->
+
+		<!-- gfx2 -->
+		<part crc="22e339d5" name="9.6a"/>
+		<part crc="60dcf940" name="10.7a"/>
+
+		<!-- gfx1 -->
+		<part crc="b324f650" name="8.5r"/>
+
+		<!-- namco mcus -->
+		<part crc="c2f57ef8" name="51xx.bin"/>
+		<part crc="ee7357e0" name="54xx.bin"/>
+	</rom>
+	<rom index="2"/>
+	<rom index="3" md5="none">
+		<part>
+			00 32 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+			00 00 8A 20 2D 00 0E 00
+			00 00 83 ED 06 00 24 00
+		</part>
+	</rom>
+	<rom index="4"/>
+	<nvram index="4" size="51"/>
+
+	<mratimestamp>20210730104830</mratimestamp>
+</misterromdescription>

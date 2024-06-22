@@ -1,0 +1,29 @@
+<misterromdescription>
+    <name>Speed Coin</name>
+    <mameversion>0209</mameversion>
+    <rbf>scramble</rbf>
+    <switches>
+	<dip bits="7"   name="Lives"       ids="3,5"/>
+	<dip bits="11"  name="Difficulty"  ids="Easy,Hard"/>
+    </switches>
+    <rom index="1"><part>7</part></rom>
+    <rom index="0" zip="spdcoin.zip" md5="ec50d25a33e7eb34bd53e66648cd65a6" type="merged">
+	<part name="spdcoin.2c"/>
+	<part name="spdcoin.2e"/>
+	<part name="spdcoin.2c"/>
+	<part name="spdcoin.2e"/>
+	<part name="spdcoin.2c"/>
+	<part name="spdcoin.2e"/>
+	<part name="spdcoin.2c"/>
+	<part name="spdcoin.2e"/>
+
+	<part name="spdcoin.5c"/>
+	<part name="spdcoin.5d"/>
+	<part name="spdcoin.5c"/>
+	<part name="spdcoin.5d"/>
+
+	<part name="spdcoin.5f"/>
+	<part name="spdcoin.5h"/>
+	<part name="spdcoin.clr"/>
+    </rom>
+</misterromdescription>

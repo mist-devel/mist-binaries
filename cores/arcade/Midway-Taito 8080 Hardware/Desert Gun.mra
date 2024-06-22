@@ -1,0 +1,29 @@
+<misterromdescription>
+	<name>Desert Gun</name>
+	<mameversion>0226</mameversion>
+	<setname>desertgu</setname>
+	<mratimestamp>20201030010603</mratimestamp>
+	<year>1977</year>
+	<manufacturer>Dave Nutting Associates / Midway</manufacturer>
+	<category>Sports / Shooting</category>
+	<rbf>spaceinvaders</rbf>
+	<mameinfo parent="0" cpp="mw8080bw" input="desertgu"/>
+	<display type="raster" rotate="0"/>
+	<switches base="16" default="00,00,00">
+		<dip bits="18,19" name="Language" ids="English,German,French,Danish"/>
+		<dip bits="20,21" name="Extended Time At" ids="5k,7k,9k,Test Mode"/>
+	</switches>
+	<buttons names="Fire,-,-,-,Start 1P,Start 2P,Coin" default="A,Start,Select,R"/>
+	<rom index="0" zip="desertgu.zip" md5="none">
+		<part crc="c0030d7c" name="9316.1h"/>
+		<part crc="1ddde10b" name="9316.1g"/>
+		<part crc="808e46f1" name="9316.1f"/>
+		<part crc="ac64dc62" name="desertgu.e"/>
+		<part repeat="4096">00</part>
+		<part repeat="4096">00</part>
+		<part repeat="2048">FF</part>
+	</rom>
+	<rom index="1">
+		<part>1F</part>
+	</rom>
+</misterromdescription>

@@ -1,0 +1,33 @@
+<misterromdescription>
+	<name>Claybuster</name>
+	<mameversion>0226</mameversion>
+	<setname>claybust</setname>
+	<mratimestamp>20201030010603</mratimestamp>
+	<year>1978</year>
+	<manufacturer>Model Racing</manufacturer>
+	<category>Sports / Shooting</category>
+	<rbf>spaceinvaders</rbf>
+	<mameinfo parent="0" cpp="8080bw" input="claybust"/>
+	<display type="raster" rotate="0"/>
+	<switches base="16" default="00,00,40">
+		<dip bits="21,22,23"   name="Coinage" ids="1C_1C" values="2"/>
+	</switches>
+	<buttons names="Fire,-,-,-,Start 1P,Start 2P,Coin" default="A,Start,Select,R"/>
+	<rom index="0" zip="claybust.zip" md5="none">
+		<part crc="90810582" name="0.a1"/>
+		<part crc="5ce6fb0e" name="1.a2"/>
+		<part crc="d4c1d523" name="2.a4"/>
+		<part crc="1ca00825" name="3.a5"/>
+		<part crc="09a21120" name="4.a6"/>
+		<part crc="92cd4da8" name="5.a8"/>
+		<part repeat="2048">00</part>
+		<part repeat="2048">00</part>
+		<part repeat="2048">00</part>
+		<part repeat="2048">00</part>
+		<part repeat="2048">00</part>
+		<part repeat="2048">FF</part>
+	</rom>
+	<rom index="1">
+		<part>18</part>
+	</rom>
+</misterromdescription>

@@ -1,0 +1,102 @@
+<misterromdescription>
+    <name>Hook (World)</name>
+    <mameversion>0245</mameversion>
+    <setname>hook</setname>
+    <year>1992</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Brawler</category>
+    <rbf>IremM92</rbf>
+    <rotation>horizontal</rotation>
+
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Attack,Jump,-,-,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="00 00 00" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="2,3,4,1" name="Lives"></dip>
+        <dip bits="2,3" ids="Normal,Easy,Hard,Very Easy" name="Difficulty"></dip>
+
+        <dip bits="5" ids="Start,Any" name="Start Button"></dip>
+
+        <dip bits="6" ids="Off,On" name="Demo Sounds"></dip>
+        <dip bits="7" ids="Off,On" name="Service Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Screen"></dip>
+
+        <dip bits="9" ids="2 Players,4 Players" name="Cabinet"></dip>
+        
+        <dip bits="12,15" ids="1C/1C,2C/1C,3C/1C,4C/1C,5C/1C,6C/1C,1C/2C,1C/3C,1C/4C,1C/5C,1C/6C,2C/3C,3C/2C,4C/3C,2S/1C,Free Play" name="Coin Mode"></dip>
+    </switches>
+
+    <rom index="0" zip="hook.zip" md5="None">
+        <!-- board type -->
+        <part>00</part>
+        
+        <!-- maincpu -->
+        <part>00 0c 00 00</part>
+        <interleave output="16">
+            <part name="h-h0-d.3h" crc="40189ff6" map="10" />
+            <part name="h-l0-d.5h" crc="14567690" map="01" />
+        </interleave>
+        <interleave output="16">
+            <part name="h-h1.rom" crc="264ba1f0" map="10" />
+            <part name="h-l1.rom" crc="f9913731" map="01" />
+        </interleave>
+
+        <!-- gfx1 tiles -->
+        <part>01 10 00 00</part>
+        <interleave output="32">
+            <part name="hook-c0.rom" crc="dec63dcf" map="0001" />
+            <part name="hook-c1.rom" crc="e4eb0b92" map="0010" />
+            <part name="hook-c2.rom" crc="a52b320b" map="0100" />
+            <part name="hook-c3.rom" crc="7ef67731" map="1000" />
+        </interleave>
+
+        <!-- gfx2 sprites -->
+        <part>02 40 00 00</part>
+        <interleave output="32">
+            <part name="hook-000.rom" crc="ccceac30" map="0001" />
+            <part name="hook-010.rom" crc="8ac8da67" map="0010" />
+            <part name="hook-020.rom" crc="8847af9a" map="0100" />
+            <part name="hook-030.rom" crc="239e877e" map="1000" />
+        </interleave>
+
+        <!-- soundcpu -->
+        <part>03 02 00 00</part>
+        <interleave output="16">
+            <part name="h-sh0.rom" crc="86a4e56e" map="10" />
+            <part name="h-sl0.rom" crc="10fd9676" map="01" />
+        </interleave>
+
+        <!-- soundcpu key -->
+        <part>04 00 01 00</part>
+        <part>
+        	b6 20 22 90 0f 57 59 c6 eb 90 b0 bb 3b 90 90 90
+            36 90 90 90 90 90 90 90 90 fe 90 90 90 90 90 a0
+            2e 90 0b 90 90 58 90 90 90 90 90 90 90 80 90 90
+            33 90 90 bf 55 90 90 90 53 90 90 90 90 90 90 90
+            47 74 90 b1 b4 90 90 88 90 90 38 cf 90 8e 90 90
+            90 c7 90 32 90 52 3c 90 90 90 90 90 90 90 83 72
+            90 73 90 5a 90 43 90 90 90 90 41 e9 bd 90 b2 d2
+            90 aa a2 90 90 90 90 90 90 90 90 26 90 90 8a 90
+            90 90 90 90 90 90 90 18 90 9d 90 90 90 5d 90 46
+            90 90 90 f6 c3 a3 1e 07 5f 81 90 0c 90 b8 90 75
+            90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 79
+            90 5e 90 90 06 90 ff 90 5b 24 90 2b 90 90 90 02
+            86 90 90 fb 90 90 50 fc 08 90 90 90 03 90 b9 90
+            90 bc e8 1f fa 42 90 90 89 90 23 87 90 2a 90 90
+            8b 90 f3 ea 04 2c b5 90 0a 90 51 90 90 3a 90 9c
+            90 90 78 90 ba 90 90 90 90 90 90 90 d0 56 90 90
+        </part>
+
+        <!-- iremg20 -->
+        <part>05 08 00 00</part>
+        <part name="hook-da.rom"  crc="88cd0212" />
+    </rom>
+     <!--hiscore support. see hiscore.sv for modified header values-->
+     <rom index="3" md5="none">
+       <part>
+       00 00 00 F0 05 FF 00 01 00 0F 00 01 00 01 02 00
+       00 0e a6 ad 00 ec 00 4f
+       </part>
+    </rom>
+    <nvram index="4" size="236"></nvram>
+</misterromdescription>

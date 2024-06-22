@@ -1,0 +1,88 @@
+<misterromdescription>
+    <name>Kid Niki - Radical Ninja</name>
+    <mameversion>0216</mameversion>
+    <setname>kidniki</setname>
+    <manufacturer>Irem</manufacturer>
+    <rbf>iremm62</rbf>
+    <switches>
+        <!-- DSW1 -->
+        <dip bits="8,9" name="Lives"      ids="3,2,4,5"/>
+        <dip bits="10"  name="Difficulty" ids="Normal,Hard"/>
+        <dip bits="11"  name="Bonus Life" ids="50000,80000"/>
+    </switches>
+    <rom index="1"><part>7</part></rom>
+    <rom index="0" zip="kidniki.zip" md5="63cf7764a51bae694ce95dfe518a96f3" type="merged|nonmerged">
+      <!-- CPU1, 128k -->
+      <part name="ky_a-4e-g.bin"/>
+      <part name="dr03.4cd"/>
+      <part name="ky_t-8k-g.bin"/>
+      <part name="dr12.8l"/>
+
+      <!-- SND CPU2, 64k -->
+      <part repeat="0x4000">FF</part>
+      <part name="dr00.3a"/>
+      <part name="dr01.3cd"/>
+      <part name="dr02.3f"/>
+
+      <!-- GFX1, 128k -->
+      <interleave output="32">
+          <part name="dr06.2b"  map="0001"/>
+          <part name="dr07.2dc" map="0010"/>
+          <part name="dr05.2a"  map="0100"/>
+          <part name="dr05.2a"  map="1000"/>
+      </interleave>
+
+      <!-- GFX2, 256k -->
+      <interleave output="32">
+          <part name="dr21.4k"  map="0001"/>
+          <part name="dr14.3p"  map="0010"/>
+          <part name="dr16.4cb" map="0100"/>
+          <part name="dr16.4cb" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="dr19.4f" map="0001"/>
+          <part name="dr24.4p" map="0010"/>
+          <part name="dr18.4e" map="0100"/>
+          <part name="dr18.4e" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="dr22.4l"  map="0001"/>
+          <part name="dr23.4nm" map="0010"/>
+          <part name="dr17.4dc" map="0100"/>
+          <part name="dr17.4dc" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="dr20.4jh" map="0001"/>
+          <part name="dr13.3nm" map="0010"/>
+          <part name="dr15.4a"  map="0100"/>
+          <part name="dr15.4a"  map="1000"/>
+      </interleave>
+
+      <!-- GFX3, 64k -->
+      <interleave output="32">
+          <part name="dr10.4n" map="0001"/>
+          <part name="dr09.4m" map="0010"/>
+          <part name="dr08.4l" map="0100"/>
+          <part name="dr08.4l" map="1000"/>
+      </interleave>
+
+      <!-- spr_color_proms, 3*256b -->
+      <part name="dr30.1m"/>
+      <part name="dr31.1n"/>
+      <part name="dr29.1l"/>
+
+      <!-- chr_color_proms, 3*256b -->
+      <part name="dr25.3f"/>
+      <part name="dr26.3h"/>
+      <part name="dr27.3j"/>
+
+      <!-- fg_color_proms, 3*256b -->
+      <part name="dr25.3f"/>
+      <part name="dr26.3h"/>
+      <part name="dr27.3j"/>
+
+      <!-- spr_height_prom -->
+      <part name="dr32.5p"/>
+
+    </rom>
+</misterromdescription>

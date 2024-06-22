@@ -1,0 +1,116 @@
+<misterromdescription>
+	<name>Rafflesia (315-5162)</name>
+	<setname>raflesia</setname>
+	<rbf>segasys1</rbf>
+	<mameversion>0229</mameversion>
+	<year>1986</year>
+	<manufacturer>Coreland / Sega</manufacturer>
+	<players>2</players>
+	<joystick>8-way</joystick>
+	<rotation>vertical/ccw</rotation>
+	<region>World</region>
+	<buttons names="Single Shot,Rapid Shot,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="2"/>
+	<switches base="8" default="FF,FC">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		-->
+		<dip name="Demo Sounds" bits="9" ids="On,Off"/>
+		<dip name="Lives" bits="10,11" ids="Infinite,5,4,3"/>
+		<dip name="Bonus Life" bits="12,13" ids="None,50k,100k/200k,30k,80k/150k,20k,70k/120k"/>
+	</switches>
+	<rom index="1">
+		<part>06</part>
+	</rom>
+	<rom index="0" zip="raflesia.zip" type="merged" md5="5876854279f4286aa9faddcaa04be390">
+		<!-- soundcpu, size: 0x10000 -->
+		<part crc="14387666" name="epr-7420.120"/>
+		<part crc="14387666" name="epr-7420.120"/>
+		<part crc="14387666" name="epr-7420.120"/>
+		<part crc="14387666" name="epr-7420.120"/>
+
+		<!-- maincpu, size: 0x10000 -->
+		<part crc="88a0c6c6" name="epr-7411.116"/>
+		<part crc="d3b8cddf" name="epr-7412.109"/>
+		<part crc="b7e688b3" name="epr-7413.96"/>
+		<part crc="b7e688b3" name="epr-7413.96"/>
+		<part crc="b7e688b3" name="epr-7413.96"/>
+		<part crc="b7e688b3" name="epr-7413.96"/>
+
+		<!-- sprites, size: 0x20000 -->
+		<part crc="f09fc057" name="epr-7407.117"/>
+		<part crc="819fedb8" name="epr-7409.04"/>
+		<part crc="3189f33c" name="epr-7408.110"/>
+		<part crc="ced74789" name="epr-7410.05"/>
+		<part crc="f09fc057" name="epr-7407.117"/>
+		<part crc="819fedb8" name="epr-7409.04"/>
+		<part crc="3189f33c" name="epr-7408.110"/>
+		<part crc="ced74789" name="epr-7410.05"/>
+
+		<!-- tiles, size: 0x18000 -->
+		<interleave output="32">
+			<part crc="bfd5f34c" name="epr-7419.62"/>
+			<part crc="e63501bc" name="epr-7417.64"/>
+			<part crc="1a8d6bd6" name="epr-7415.66"/>
+			<part crc="1a8d6bd6" name="epr-7415.66"/>
+		</interleave>
+
+		<interleave output="32">
+			<part crc="f8cbc9b6" name="epr-7418.61"/>
+			<part crc="093e5693" name="epr-7416.63"/>
+			<part crc="5d20f218" name="epr-7414.65"/>
+			<part crc="5d20f218" name="epr-7414.65"/>
+		</interleave>
+
+		<interleave output="32">
+			<part crc="bfd5f34c" name="epr-7419.62"/>
+			<part crc="e63501bc" name="epr-7417.64"/>
+			<part crc="1a8d6bd6" name="epr-7415.66"/>
+			<part crc="1a8d6bd6" name="epr-7415.66"/>
+		</interleave>
+
+		<interleave output="32">
+			<part crc="f8cbc9b6" name="epr-7418.61"/>
+			<part crc="093e5693" name="epr-7416.63"/>
+			<part crc="5d20f218" name="epr-7414.65"/>
+			<part crc="5d20f218" name="epr-7414.65"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x100 -->
+		<part crc="648350b8" name="pr-5317.76"/>
+
+		<!-- color proms, size: 0x300 -->
+	<part repeat="0x300">00</part>
+
+		<!-- encryption_device: 315-5162 -->
+		<part>
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+
+			04 04 04 04 04 04 04 04 04 04 04 04 04 04 04 05
+			05 05 05 05 05 05 05 05 05 05 05 05 05 05 05 06
+			06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 07
+			07 07 07 07 07 07 07 07 07 07 07 07 07 07 07 08
+			08 08 08 08 08 08 08 08 08 08 08 08 08 08 08 09
+			09 09 09 09 09 09 09 09 09 09 09 09 09 09 09 0a
+			0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0b
+			0b 0b 0b 0b 0b 0b 0b 0b 0b 0b 0b 0b 0b 0b 0b 0c
+		</part>
+	</rom>
+	<rom index="3" md5="none">
+		<part>
+			00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+			00 00 D3 00 00 50 00 4A 00 00 C0 17 00 03 00 02
+		</part>
+	</rom>
+	<nvram index="4" size="83"/>
+</misterromdescription>

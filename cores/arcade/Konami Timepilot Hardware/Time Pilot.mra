@@ -1,0 +1,36 @@
+<misterromdescription>
+	<name>Time Pilot</name>
+	<mameversion>0220</mameversion>
+	<setname>timeplt</setname>
+	<mratimestamp>20200427161917</mratimestamp>
+	<year>1982</year>
+	<manufacturer>Konami</manufacturer>
+	<category>Army / Dog-Fight</category>
+	<rbf>timeplt</rbf>
+	<switches default="FF,FF" base="8">
+		<dip bits="8,9"   name="Lives"      ids="255 (Cheat),5,4,3"/>
+		<dip bits="10"    name="Cabinet"    ids="Upright, Cocktail"/>
+		<dip bits="11"    name="Bonus Life" ids="20k/60k,10k/50k"/>
+		<dip bits="12,14" name="Difficulty" ids="8,7,6,5,4,3,2,1"/>
+		<dip bits="15"    name="Demo Sounds"ids="On,Off"/>
+	</switches>
+	<rom index="0" zip="timeplt.zip" md5="c63400ec9a4d6530f5a2f6798585047b">
+		<!-- Main CPU 24k -->
+		<part crc="1551f1b9" name="tm1"/>
+		<part crc="58636cb5" name="tm2"/>
+		<part crc="ff4e0d83" name="tm3"/>
+		<!-- GFX1 8k -->
+		<part crc="c2507f40" name="tm6"/>
+		<!-- GFX2 16k -->
+		<part crc="7e437c3e" name="tm4"/>
+		<part crc="e8ca87b9" name="tm5"/>
+		<!-- Sound CPU 8k -->
+		<part crc="d66da813" name="tm7"/>
+		<part crc="d66da813" name="tm7"/>
+		<!-- LUTs -->
+		<part name="timeplt.e9"/>
+		<part name="timeplt.e12"/>
+		<part name="timeplt.b4"/>
+		<part name="timeplt.b5"/>
+	</rom>
+</misterromdescription>

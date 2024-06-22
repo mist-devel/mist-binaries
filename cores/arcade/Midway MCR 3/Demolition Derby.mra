@@ -1,0 +1,37 @@
+<misterromdescription>
+    <name>Demolition Derby</name>
+    <mameversion>0216</mameversion>
+    <mratimestamp>201912310000</mratimestamp>
+    <year>1984</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Action</category>
+    <rbf>mcr3</rbf>
+    <setname>demoderm</setname>
+    <switches>
+	<dip bits="8"    name="Cabinet" ids="2P Upright,4P Cocktail"/>
+	<dip bits="9"    name="Difficulty" ids="Normal,Hard"/>
+	<dip bits="10"   name="Free Play" ids="Off,On"/>
+	<dip bits="11"   name="Reward Screen" ids="Expanded,Limited"/>
+    </switches>
+    <rom index="1">
+	<part>04</part>
+    </rom>
+    <rom index="0" zip="demoderb.zip|demoderm.zip" md5="0063f035348ccdbf21c2566cb4893498" type="merged|nonmerged">
+	<part crc="2e24527b" name="pro0.3b"/>
+	<part crc="034c00fc" name="pro1.5b"/>
+	<part crc="e57a4de6" name="dd_fg-0.a4"/>
+	<part crc="55aa667f" name="dd_fg-4.a3"/>
+	<part crc="70259651" name="dd_fg-1.a6"/>
+	<part crc="5fe99007" name="dd_fg-5.a5"/>
+	<part crc="6cab7b95" name="dd_fg-2.a8"/>
+	<part crc="abfb9a8b" name="dd_fg-6.a7"/>
+	<part crc="801d9b86" name="dd_fg-3.a10"/>
+	<part crc="0ec3f60a" name="dd_fg-7.a9"/>
+	<part crc="a35d13b8" repeat="2" name="bg0.15a"/>
+	<part crc="22ca93f3" repeat="2" name="bg1.14b"/>
+	<part crc="eca33b2c" name="tcs_u5.bin"/>
+	<part crc="3490289a" name="tcs_u4.bin"/>
+	<part crc="eca33b2c" name="tcs_u5.bin"/>
+	<part crc="3490289a" name="tcs_u4.bin"/>
+    </rom>
+</misterromdescription>

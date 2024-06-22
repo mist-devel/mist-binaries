@@ -1,0 +1,104 @@
+<misterromdescription>
+	<name>Pitfall II (315-5093)</name>
+	<setname>pitfall2</setname>
+	<rbf>segasys1</rbf>
+	<mameversion>0229</mameversion>
+	<year>1985</year>
+	<manufacturer>Sega</manufacturer>
+	<players>2</players>
+	<joystick>8-way</joystick>
+	<rotation>horizontal</rotation>
+	<region>World</region>
+	<rom index="0" zip="pitfall2.zip" type="merged" md5="37d37eed5b1efe1372942dfca5172be9">
+		<!-- soundcpu - starts at 0xC000 -->
+		<part name="epr-6462.120" crc="86bb9185"/>
+		<part name="epr-6462.120" crc="86bb9185"/>
+		<part name="epr-6462.120" crc="86bb9185"/>
+		<part name="epr-6462.120" crc="86bb9185"/>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part name="epr-6456a.116" crc="bcc8406b"/>
+		<part name="epr-6457a.109" crc="a016fd2a"/>
+		<part name="epr-6458a.96" crc="5c30b3e8"/>
+		<part name="epr-6458a.96" crc="5c30b3e8"/>
+		<part name="epr-6458a.96" crc="5c30b3e8"/>
+		<part name="epr-6458a.96" crc="5c30b3e8"/>
+
+		<!-- sprites, size: 0x20000 -->
+		<part name="epr-6454a.117" crc="a5d96780"/>
+		<part name="epr-6455.05" crc="32ee64a1"/>
+		<part name="epr-6454a.117" crc="a5d96780"/>
+		<part name="epr-6455.05" crc="32ee64a1"/>
+		<part name="epr-6454a.117" crc="a5d96780"/>
+		<part name="epr-6455.05" crc="32ee64a1"/>
+		<part name="epr-6454a.117" crc="a5d96780"/>
+		<part name="epr-6455.05" crc="32ee64a1"/>
+
+		<!-- tiles, size: 0x18000 -->
+		<interleave output="32">
+			<part name="epr-6474a.62" crc="9f1711b9"/>
+			<part name="epr-6472a.64" crc="e0f34a11"/>
+			<part name="epr-6470a.66" crc="1439729f"/>
+			<part name="epr-6470a.66" crc="1439729f"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-6473a.61" crc="8e53b8dd"/>
+			<part name="epr-6471a.63" crc="d5bc805c"/>
+			<part name="epr-6469a.65" crc="e4ac6921"/>
+			<part name="epr-6469a.65" crc="e4ac6921"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-6474a.62" crc="9f1711b9"/>
+			<part name="epr-6472a.64" crc="e0f34a11"/>
+			<part name="epr-6470a.66" crc="1439729f"/>
+			<part name="epr-6470a.66" crc="1439729f"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-6473a.61" crc="8e53b8dd"/>
+			<part name="epr-6471a.63" crc="d5bc805c"/>
+			<part name="epr-6469a.65" crc="e4ac6921"/>
+			<part name="epr-6469a.65" crc="e4ac6921"/>
+		</interleave>
+
+		<!-- lookup_proms - starts at 0x22000 -->
+		<part name="pr-5317.76" crc="648350b8"/>
+
+		<!-- color proms, size: 0x300 -->
+		<part repeat="0x300">00</part>
+
+		<!-- encryption_device: 315-5093 -->
+		<part>
+			a0 80 a8 88 a0 80 a8 88 08 88 28 a8 28 a8 20 a0
+			a0 80 a8 88 a0 80 a8 88 a0 a8 20 28 a0 a8 20 28
+			a0 80 a8 88 20 00 a0 80 28 a8 20 a0 20 00 a0 80
+			a0 a8 20 28 a0 a8 20 28 28 a8 20 a0 a0 a8 20 28
+			20 00 a0 80 80 88 a0 a8 80 88 a0 a8 80 88 a0 a8
+			a0 a8 20 28 a0 80 a8 88 80 88 a0 a8 28 a8 20 a0
+			20 00 a0 80 80 88 a0 a8 80 88 a0 a8 20 00 a0 80
+			a0 a8 20 28 a0 80 a8 88 80 88 a0 a8 28 a8 20 a0
+		</part>
+	</rom>
+	<rom index="1">
+		<part>00</part>
+	</rom>
+	<rom index="3" md5="none">
+		<part>
+			00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+			00 00 D3 00 00 38 00 41 00 00 C0 00 00 04 00 00
+		</part>
+	</rom>	
+	<nvram index="4" size="60"/>
+	<switches base="8" default="FF,DC">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		<dip name="Demo Sounds" bits="9" ids="On,Off"/>
+		<dip name="Lives" bits="10,11" ids="Infinite,5,4,3"/>
+		<dip name="Bonus Life" bits="12" ids="30k/70k,20k/50k"/>
+		<dip name="Allow Continue" bits="13" ids="Yes,No"/>
+		<dip name="Time" bits="14" ids="2 Minutes,3 Minutes"/>
+	</switches>
+	<buttons names="Jump,-,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="1"/>
+</misterromdescription>

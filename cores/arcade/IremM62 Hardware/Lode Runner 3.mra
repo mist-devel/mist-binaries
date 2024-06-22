@@ -1,0 +1,92 @@
+<misterromdescription>
+    <name>Lode Runner 3</name>
+    <mameversion>0216</mameversion>
+    <setname>ldrun3</setname>
+    <manufacturer>Irem</manufacturer>
+    <rbf>iremm62</rbf>
+    <switches>
+        <!-- DSW1 -->
+        <dip bits="8,9"   name="Timer" ids="Slow,Medium,Fast,Fastest"/>
+        <dip bits="10,11" name="Lives" ids="3,2,4,5"/>
+    </switches>
+    <rom index="1"><part>2</part></rom>
+    <rom index="0" zip="ldrun3.zip" md5="a32c8e0a4927c70199174dea1600e761" type="merged|nonmerged">
+      <!-- CPU1, 128k -->
+      <part name="lr3a4eb.bin"/>
+      <part name="lr3a4db.bin"/>
+      <part name="lr3a4bb.bin"/>
+      <part name="lr3a4bb.bin"/>
+
+      <part name="lr3a4eb.bin"/>
+      <part name="lr3a4db.bin"/>
+      <part name="lr3a4bb.bin"/>
+      <part name="lr3a4bb.bin"/>
+
+      <!-- SND CPU2, 64k -->
+      <part name="lr3-a-3d"/>
+      <part name="lr3-a-3f"/>
+
+      <part name="lr3-a-3d"/>
+      <part name="lr3-a-3f"/>
+
+      <!-- GFX1, 128k -->
+      <interleave output="32">
+          <part name="lr3-n-2a" map="0001"/>
+          <part name="lr3-n-2c" map="0010"/>
+          <part name="lr3-n-2b" map="0100"/>
+          <part name="lr3-n-2b" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="lr3-n-2a" map="0001"/>
+          <part name="lr3-n-2c" map="0010"/>
+          <part name="lr3-n-2b" map="0100"/>
+          <part name="lr3-n-2b" map="1000"/>
+      </interleave>
+
+      <!-- GFX2, 256k -->
+      <interleave output="32">
+          <part name="lr3b4kb.bin" map="0001"/>
+          <part name="lr3b3nb.bin" map="0010"/>
+          <part name="snxb4cb.bin" map="0100"/>
+          <part name="snxb4cb.bin" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="snxb4fb.bin" map="0001"/>
+          <part name="snxb4nb.bin" map="0010"/>
+          <part name="snxb4eb.bin" map="0100"/>
+          <part name="snxb4eb.bin" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="lr3b4kb.bin" map="0001"/>
+          <part name="lr3b3nb.bin" map="0010"/>
+          <part name="snxb4cb.bin" map="0100"/>
+          <part name="snxb4cb.bin" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="snxb4fb.bin" map="0001"/>
+          <part name="snxb4nb.bin" map="0010"/>
+          <part name="snxb4eb.bin" map="0100"/>
+          <part name="snxb4eb.bin" map="1000"/>
+      </interleave>
+
+      <!-- GFX3, 64k -->
+      <part repeat="0x10000">FF</part>
+
+      <!-- spr_color_proms, 3*256b -->
+      <part name="lr3-b-1m"/>
+      <part name="lr3-b-1n"/>
+      <part name="lr3-b-1l"/>
+
+      <!-- chr_color_proms, 3*256b -->
+      <part name="lr3-n-2l"/>
+      <part name="lr3-n-2k"/>
+      <part name="lr3-n-2m"/>
+
+      <!-- fg_color_proms, 3*256b -->
+      <part repeat="0x300">FF</part>
+
+      <!-- spr_height_prom -->
+      <part name="lr3-b-5p"/>
+
+    </rom>
+</misterromdescription>

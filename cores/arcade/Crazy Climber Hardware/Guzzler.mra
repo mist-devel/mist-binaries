@@ -1,0 +1,88 @@
+<misterromdescription>
+	<name>Guzzler</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1980</year>
+	<manufacturer>Tehkan</manufacturer>
+	<category>Platform - Climb</category>
+
+	<setname>guzzler</setname>
+	<parent>cclimber</parent>
+	<mameversion>0216</mameversion>
+	<rbf>cclimber</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>horizontal</rotation>
+	<flip></flip>
+
+	<players>2 (alternating)</players>
+	<joystick>8-way</joystick>
+	<special_controls>twin stick</special_controls>
+	<num_buttons>4</num_buttons>
+	<button_names></button_names>
+
+	<switches default="00,10" base="8">
+		<dip bits="0,1"   name="Lives" ids="3,4,5,Infinite"/>
+		<dip bits="2,3"   name="Bonus Life" ids="30K/every 100K,20K/every 50K,30K only"/>
+		<dip bits="4,5"   name="Coin A" ids="1C_1C,2C_1C,1C_2C,1C_3C"/>
+		<dip bits="6,7"   name="Coin B" ids="1C_1C,2C_1C,1C_2C,1C_3C"/>
+
+		<dip bits="12"    name="Cabinet" ids="Cocktail,Upright"/>
+		<dip bits="13"    name="High Score" ids="10 Letters,3 Letters"/>
+		<dip bits="14,15" name="Difficulty" ids="Easy,Medium,Hard,Hardest"/>
+	</switches>
+
+	<rom index="1"><part>23</part></rom>
+	<rom index="0" md5="a000799b647c5e94302b1c9d6a1f4e5c" type="merged|nonmerged" zip="guzzler.zip">
+		<!-- main cpu 32K -->
+		<part crc="" name="guzz-01.bin"/>
+		<part crc="" name="guzz-02.bin"/>
+		<part crc="" name="guzz-03.bin"/>
+		<part crc="" name="guzz-04.bin"/>
+
+		<!-- audio cpu 8K -->
+		<part crc="" name="guzz-12.bin"/>
+		<part crc="" name="guzz-12.bin"/>
+
+		<!-- gfx1 background tiles 16K -->
+		<part crc="" name="guzz-13.bin"/>
+		<part crc="" name="guzz-13.bin"/>
+		<part crc="" name="guzz-14.bin"/>
+		<part crc="" name="guzz-14.bin"/>
+
+		<!-- gfx2 big sprite tiles 8K -->
+		<part crc="" name="guzz-11.bin"/>
+		<part crc="" name="guzz-10.bin"/>
+
+		<!-- misc 8K -->
+		<part crc="" name="guzz-15.bin"/>
+		<part crc="" name="guzz-09.bin"/>
+
+		<!-- palette1 64 byte -->
+		<part crc="f86930c1" name="guzzler.003"/>
+		<part crc="b566ea9e" name="guzzler.002"/>
+		<!-- palette2 32 byte -->
+		<part crc="69089495" name="guzzler.001"/>
+
+		<!-- padding -->
+		<part repeat="0x3de0">00</part>
+		<!-- main cpu misc -->
+		<part crc="61ee00b7" name="guzz-16.bin"/>
+		
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

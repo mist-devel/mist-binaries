@@ -1,0 +1,80 @@
+<misterromdescription>
+    <name>Dragon Breed (Japan, M72 hardware)</name>
+    <mameversion>0245</mameversion>
+    <setname>dbreedjm72</setname>
+    <parent>dbreed</parent>
+    <year>1989</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Shooter</category>
+    <rbf>IremM72</rbf>
+    <rotation>horizontal</rotation>
+
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,R,L" names="Fire,Jump,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="00,0A" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="3,2,4,5" name="Lives"></dip>
+        <dip bits="2,3" ids="Normal,Easy,Hard,Very Easy" name="Difficulty"></dip>
+        <dip bits="4,7" ids="1C/1P,2C/1P,3C/1P,4C/1P,5C/1P,6C/1P,1C/2P,1C/3P,1C/4P,1C/5P,1C/6P,2C/3P,4C/2P,5C/3P,8C/3P,Free Play" name="Coin Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Picture"></dip>
+        <dip bits="9" ids="Cocktail,Upright" name="Cabinet type"></dip>
+        <dip bits="11" ids="Off,On" name="Demo Sound"></dip>
+        <dip bits="12" ids="On,Off" name="Continues"></dip>
+        <dip bits="13" ids="Off,On" name="Freeze Picture"></dip>
+        <dip bits="15" ids="Off,On" name="Diagnostic Test"></dip>
+    </switches>
+    <!-- ROM data -->
+    <rom index="0" zip="dbreedjm72.zip|dbreed.zip" md5="none">
+        <!-- board type -->
+        <part>02</part>
+        <!-- maincpu -->
+        <part>00 08 00 00</part>
+        <interleave output="16">
+            <part name="db_c-l3.ic34" crc="9c1abc85" map="01"/>
+            <part name="db_c-h3.ic43" crc="43425d67" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="db_c-l0.ic37" crc="ed0f5e06" map="01"/>
+            <part name="db_c-h0.ic40" crc="5aa79fb2" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="db_c-l0.ic37" crc="ed0f5e06" map="01"/>
+            <part name="db_c-h0.ic40" crc="5aa79fb2" map="10"/>
+        </interleave>
+
+        <!-- sprites -->
+        <part>01 08 00 00</part>
+        <interleave output="32">
+            <part name="db_k800m.00" crc="c027a8cf" map="0001" />
+            <part name="db_k801m.10" crc="093faf33" map="0010" />
+            <part name="db_k802m.20" crc="055b4c59" map="0100" />
+            <part name="db_k803m.30" crc="8ed63922" map="1000" />
+        </interleave>
+
+        <!-- gfx2 -->
+        <part>02 08 00 00</part>
+        <interleave output="32">
+            <part name="db_k804m.a0" crc="4c83e92e" map="0001"/>
+            <part name="db_k805m.a1" crc="835ef268" map="0010"/>
+            <part name="db_k806m.a2" crc="5117f114" map="0100"/>
+            <part name="db_k807m.a3" crc="8eb0c978" map="1000"/>
+        </interleave>
+
+        <!-- gfx2 -->
+        <part>03 08 00 00</part>
+        <interleave output="32">
+            <part name="db_k804m.b0" crc="4c83e92e" map="0001"/>
+            <part name="db_k805m.b1" crc="835ef268" map="0010"/>
+            <part name="db_k806m.b2" crc="5117f114" map="0100"/>
+            <part name="db_k807m.b3" crc="8eb0c978" map="1000"/>
+        </interleave>
+
+        <!-- mcu -->
+        <part>04 00 10 00</part>
+        <part name="db_c-pr-.ic1" crc="8bf2910c"/>
+
+        <!-- samples -->
+        <part>05 02 00 00</part>
+        <part name="db_c-v0.ic44" crc="312f7282"/>
+    </rom>
+</misterromdescription>

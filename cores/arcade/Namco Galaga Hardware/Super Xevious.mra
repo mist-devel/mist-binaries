@@ -1,0 +1,50 @@
+<misterromdescription>
+  <name>Super Xevious</name>
+  <rbf>Xevious</rbf>
+  <setname>sxevious</setname>
+
+  <switches default="FF,7F" base=8>
+      <dip bits="0,1"   name="Coin A"  ids="2C_3C,2C_1C,1C_2C,1C_1C"/>
+      <dip bits="5,6"   name="Lives"   ids="5,2,1,3"/>
+      <dip bits="7"     name="Cabinet" ids="Cocktail,Upright"/>
+
+      <dip bits="9"     name="Flags Award Bonus Life" ids="No,Yes"/>
+      <dip bits="10,11" name="Coin B"  ids="1C_6C,1C_3C,1C_2C,1C_1C"/>
+      <dip bits="13,14" name="Difficulty"  ids="Hardest,Hard,Easy,Normal"/>
+      <dip bits="15"    name="Freeze"  ids="Off,On"/>
+  </switches>
+
+  <rom index="1"><part>1</part></rom>
+  <rom index="0" zip="xevious.zip" md5="1b707668eb52408088e47c0f823f9fed">
+    <!-- CPU1 -->
+    <part name="sxevious/cpu_3p.rom"/>
+    <part name="sxevious/cpu_3m.rom"/>
+    <part name="sxevious/xv3_3.2m"/>
+    <part name="sxevious/xv3_4.2l"/>
+
+    <!-- CPU2 -->
+    <part name="sxevious/xv3_5.3f"/>
+    <part name="sxevious/xv3_6.3j"/>
+
+    <!-- CPU3 -->
+    <part name="xvi_7.2c"/>
+
+    <!-- Foreground -->
+    <part name="xvi_12.3b"/>
+
+    <!-- Background pattern -->
+    <part name="xvi_13.3c"/>
+    <part name="xvi_14.3d"/>
+
+    <!-- Sprites -->
+    <part name="xvi_15.4m"/>
+    <part name="xvi_17.4p"/>
+    <part name="xvi_16.4n"/>
+    <part name="xvi_18.4r"/>
+
+    <!-- Background tilemaps -->
+    <part name="xvi_9.2a"/>
+    <part name="xvi_10.2b"/>
+    <part name="xvi_11.2c"/>
+  </rom>
+</misterromdescription>

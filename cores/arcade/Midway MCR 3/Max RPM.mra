@@ -1,0 +1,28 @@
+<misterromdescription>
+    <name>Max RPM (ver 2)</name>
+    <mameversion>0217</mameversion>
+    <mratimestamp>20200202</mratimestamp>
+    <year>1986</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Action</category>
+    <rbf>mcr3</rbf>
+    <setname>maxrpm</setname>
+    <switches>
+	<dip bits="8" name="Free Play" ids="On,Off"/>
+    </switches>
+    <rom index="1">
+	<part>03</part>
+    </rom>
+    <rom index="0" zip="maxrpm.zip" md5="5db0174a5e50422c027850a810a7b81d" type="merged|nonmerged">
+	<part crc="3f9ec35f" name="pro.0"/>
+	<part crc="f628bb30" name="pro.1"/>
+	<part crc="1d1435c1" name="fg-0"/>
+	<part crc="e54b7f2a" name="fg-1"/>
+	<part crc="38be8505" name="fg-2"/>
+	<part crc="9ae3eb52" name="fg-3"/>
+	<part crc="e3fb693a" name="bg-0"/>
+	<part crc="50d1db6c" name="bg-1"/>
+	<part crc="55c3b759" name="turbskwk.u5"/>
+	<part crc="31a2da2e" name="turbskwk.u4"/>
+    </rom>
+</misterromdescription>

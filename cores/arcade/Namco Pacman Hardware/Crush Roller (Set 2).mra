@@ -1,0 +1,87 @@
+<misterromdescription>
+	<name>Crush Roller</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Set 2</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1981</year>
+	<manufacturer>Alpha Denshi</manufacturer>
+	<manufacturer>Kural Esco Electric, Ltd.</manufacturer>
+	<category>Maze</category>
+
+	<setname>crush2</setname>
+	<parent>crush3</parent>
+	<mameversion>0220</mameversion>
+	<rbf>pacman</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>0</num_buttons>
+	<button_names></button_names>
+
+	<switches default="EF,FF,11" base="8" page_id="1" page_name="Switches">
+		<dip bits="4" ids="Upright,Cocktail" name="Cabinet"></dip>
+		<dip bits="16,17" ids="2c/1cr,1c/1cr,1c/2cr,Free Play" name="Coinage" values="3,1,2,0"></dip>
+		<dip bits="18,19" ids="3,4,5,6" name="Lives"></dip>
+		<dip bits="20" ids="Hard,Easy" name="First Pattern"></dip>
+		<dip bits="21" ids="On,Off" name="Teleport Holes"></dip>
+		</switches>
+
+	<rom index="1">
+		<part>03</part>
+		</rom>
+	<rom index="0" md5="f8b85c0ec812b2a9d8ff7d78d2f7db25" zip="crush.zip|crush2.zip">
+		<part crc="f276592e" name="tp1"></part>
+		<part crc="3d302abe" name="tp5a"></part>
+		<part crc="25f42e70" name="tp2"></part>
+		<part crc="98279cbe" name="tp6"></part>
+		<part crc="8377b4cb" name="tp3"></part>
+		<part crc="d8e76c8c" name="tp7"></part>
+		<part crc="90b28fa3" name="tp4"></part>
+		<part crc="10854e1b" name="tp8"></part>
+		<part crc="f276592e" name="tp1"></part>
+		<part crc="3d302abe" name="tp5a"></part>
+		<part crc="25f42e70" name="tp2"></part>
+		<part crc="98279cbe" name="tp6"></part>
+		<part crc="8377b4cb" name="tp3"></part>
+		<part crc="d8e76c8c" name="tp7"></part>
+		<part crc="90b28fa3" name="tp4"></part>
+		<part crc="10854e1b" name="tp8"></part>
+		<part crc="c7617198" name="tpa"></part>
+		<part crc="e129d76a" name="tpc"></part>
+		<part crc="d1899f05" name="tpb"></part>
+		<part crc="d35d1caf" name="tpd"></part>
+		<part crc="d35d1caf" name="tpd"></part>
+		<part crc="d35d1caf" name="tpd"></part>
+		<part crc="d35d1caf" name="tpd"></part>
+		<part crc="d35d1caf" name="tpd"></part>
+		<part crc="a9cc86bf" name="82s126.1m"></part>
+		<part crc="63efb927" name="2s140.4a"></part>
+		<part crc="77245b66" name="82s126.3m"></part>
+		<part crc="2fc650bd" name="82s123.7f"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+		00 00 43 D2 00 02 49 48
+		00 00 4C 80 00 03 00 00
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="5"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

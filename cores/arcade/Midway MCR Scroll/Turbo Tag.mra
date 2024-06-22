@@ -1,0 +1,38 @@
+<misterromdescription>
+    <name>Turbo Tag</name>
+    <mameversion>0216</mameversion>
+    <mratimestamp>202001010000</mratimestamp>
+    <year>1983</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Action</category>
+    <setname>turbotag</setname>
+    <rom index="0" zip="turbotag.zip" md5="dd89b487b8905dc62765b35bdbc322f3" type="merged|nonmerged">
+	<part name="ttprog0.bin"/>
+	<part name="ttprog1.bin"/>
+	<part name="ttprog2.bin"/>
+	<part name="ttprog3.bin"/>
+	<part name="ttprog4.bin"/>
+	<part name="ttprog5.bin"/>
+	<part name="ttprog5.bin"/>
+
+	<part name="ttprog5.bin"/>
+
+	<part name="ttu17.bin"/>
+	<part name="ttu18.bin"/>
+	<part name="ttu7.bin"/>
+	<part name="ttu8.bin"/>
+	<part name="ttfg1.bin"/>
+	<part name="ttfg0.bin"/>
+	<part name="ttfg3.bin"/>
+	<part name="ttfg2.bin"/>
+	<part name="ttfg5.bin"/>
+	<part name="ttfg4.bin"/>
+	<part name="ttfg7.bin"/>
+	<part name="ttfg6.bin"/>
+	<part name="ttbg0.bin"/>
+	<part name="ttbg1.bin"/>
+	<part name="ttbg2.bin"/>
+	<part name="ttbg3.bin"/>
+	<part name="ttan.bin"/>
+    </rom>
+</misterromdescription>

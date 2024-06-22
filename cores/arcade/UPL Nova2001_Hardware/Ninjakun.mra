@@ -1,0 +1,82 @@
+<misterromdescription>
+	<name>Ninjakun Majou no Bouken</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1984</year>
+	<manufacturer>UPL</manufacturer>
+	<manufacturer>Taito</manufacturer>
+	<category>Platform - Climb</category>
+
+	<setname>ninjakun</setname>
+	<parent>ninjakun</parent>
+	<mameversion>0220</mameversion>
+	<rbf>ninjakun</rbf>
+	<about author="MrX-8B" source="https://github.com/MiSTer-devel/Arcade-NinjaKun_MiSTer" twitter="@MrX_8B" webpage="https://patreon.com/MrX_8B"></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>horizontal</rotation>
+	<flip></flip>
+
+	<players>2 (alternating)</players>
+	<joystick>2-way horizontal</joystick>
+	<special_controls></special_controls>
+	<num_buttons>2</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FC,C7" base="8" page_id="1" page_name="Switches">
+		<dip bits="0" name="Cabinet" ids="Upright,Cocktail"/>
+		<dip bits="1,2" name="Lives" ids="5,2,3,4"/>
+		<dip bits="3" name="First Bonus" ids="40000,30000"/>
+		<dip bits="4,5" name="Second Bonus" ids="No Bonus,Every 90000,Every 70000,Every 50000"/>
+		<dip bits="6" name="Demo Sounds" ids="Yes,No"/>
+		<dip bits="7" name="Difficulty" ids="Hard,Normal"/>
+		<dip bits="11" name="High Score Names" ids="3 Letters,8 Letters"/>
+		<dip bits="12" name="Allow Continue" ids="Yes,No"/>
+		<dip bits="14" name="Free Play" ids="Yes,No"/>
+		<dip bits="15" name="Infinite Lives" ids="Yes,No"/>
+	</switches>
+
+	<rom index="1"><part>0</part></rom>
+	<rom index="0" zip="ninjakun.zip" md5="99e80f22f7a77cf1d574ce89486b385f">
+		<!-- gfx1 -->
+		<part crc="a74c4297" name="ninja-6.7n"/>
+		<part crc="53a72039" name="ninja-7.7p"/>
+		<part crc="4a99d857" name="ninja-8.7s"/>
+		<part crc="dede49e4" name="ninja-9.7t"/>
+		<!-- gfx2 -->
+		<part crc="0d55664a" name="ninja-10.2c"/>
+		<part crc="12ff9597" name="ninja-11.2d"/>
+		<part crc="e9b75807" name="ninja-12.4c"/>
+		<part crc="1760ed2c" name="ninja-13.4d"/>
+		<!-- main cpu -->
+		<part crc="1c1dc141" name="ninja-1.7a"/>
+		<part crc="39cc7d37" name="ninja-2.7b"/>
+		<part crc="d542bfe3" name="ninja-3.7d"/>
+		<part crc="a57385c6" name="ninja-4.7e"/>
+		<!-- sub cpu -->
+		<part crc="164a42c4" name="ninja-5.7h"/>
+		<part crc="39cc7d37" name="ninja-2.7b"/>
+		<part crc="d542bfe3" name="ninja-3.7d"/>
+		<part crc="a57385c6" name="ninja-4.7e"/>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		17 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+		00 00 E0 A3 00 37 00 20
+		00 00 C0 8C 00 07 22 10
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="62"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

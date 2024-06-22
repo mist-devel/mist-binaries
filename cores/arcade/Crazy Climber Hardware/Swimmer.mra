@@ -1,0 +1,89 @@
+<misterromdescription>
+	<name>Swimmer</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1980</year>
+	<manufacturer>Tehkan</manufacturer>
+	<category>Platform - Climb</category>
+
+	<setname>swimmer</setname>
+	<parent>cclimber</parent>
+	<mameversion>0216</mameversion>
+	<rbf>cclimber</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>horizontal</rotation>
+	<flip></flip>
+
+	<players>2 (alternating)</players>
+	<joystick>8-way</joystick>
+	<special_controls>twin stick</special_controls>
+	<num_buttons>4</num_buttons>
+	<button_names></button_names>
+
+	<switches default="00,10" base="8">
+		<dip bits="0,1"   name="Lives" ids="3,4,5,Infinite"/>
+		<dip bits="2,3"   name="Bonus Life" ids="10000,20000,30000"/>
+		<dip bits="4,5"   name="Coin A" ids="1C_1C,2C_1C,1C_2C,1C_3C"/>
+		<dip bits="6,7"   name="Coin B" ids="1C_1C,2C_1C,1C_2C,1C_3C"/>
+
+		<dip bits="12"    name="Cabinet" ids="Cocktail,Upright"/>
+		<dip bits="13"    name="Demo Sounds" ids="Off,On"/>
+		<dip bits="14,15" name="Difficulty" ids="Easy,Medium,Hard,Hardest"/>
+	</switches>
+
+	<rom index="1"><part>3</part></rom>
+	<rom index="0" md5="e8b61080faabb291d4e597b1a1fcaf71" type="merged|nonmerged" zip="swimmer.zip">
+		<!-- main cpu 32K -->
+		<part crc="" name="sw1"/>
+		<part crc="" name="sw2"/>
+		<part crc="" name="sw3"/>
+		<part crc="" name="sw4"/>
+		<part crc="" name="sw5"/>
+		<part crc="" name="sw6"/>
+		<part crc="" name="sw7"/>
+		<part crc="" name="sw8"/>
+
+		<!-- audio cpu 8K -->
+		<part crc="" name="sw12.4k"/>
+		<part crc="" name="sw12.4k"/>
+
+		<!-- gfx1 background tiles 16K -->
+		<part crc="" name="sw15.18k"/>
+		<part crc="" name="sw15.18k"/>
+		<part crc="" name="sw14.18l"/>
+		<part crc="" name="sw14.18l"/>
+
+		<!-- gfx2 big sprite tiles 8K -->
+		<part crc="" name="sw23.6c"/>
+		<part crc="" name="sw23.6c"/>
+		<part crc="" name="sw22.5c"/>
+		<part crc="" name="sw22.5c"/>
+
+		<!-- misc 8K -->
+		<part crc="" name="sw13.18m"/>
+		<part crc="" name="sw21.4c"/>
+		<part crc="" name="sw21.4c"/>
+
+		<!-- palette1 64 byte -->
+		<part crc="" name="24s10.13b"/>
+		<part crc="" name="24s10.13a"/>
+		<!-- palette2 32 byte -->
+		<part crc="71317756" name="18s030.12c"/>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

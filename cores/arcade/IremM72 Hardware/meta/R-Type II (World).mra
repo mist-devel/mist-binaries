@@ -1,0 +1,72 @@
+<misterromdescription>
+    <name>R-Type II (World)</name>
+    <mameversion>0245</mameversion>
+    <setname>rtype2</setname>
+    <year>1989</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Shooter</category>
+    <rbf>IremM72</rbf>
+    <rotation>horizontal</rotation>
+
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,R,L" names="Fire,Pod Control,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="00,08" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="3,2,1,5" name="Lives"></dip>
+        <dip bits="2,3" ids="Normal,Easy,Hard,Hardest" name="Difficulty"></dip>
+        <dip bits="4,7" ids="1C/1P,2C/1P,3C/1P,4C/1P,5C/1P,6C/1P,1C/2P,1C/3P,1C/4P,1C/5P,1C/6P,2C/3P,4C/2P,5C/3P,8C/3P,Free Play" name="Coin Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Picture"></dip>
+        <dip bits="9" ids="On,Off" name="Demo Sound"></dip>
+        <dip bits="11,12" ids="Cocktail,Upright,Upright (2P)" name="Cabinet type"></dip>
+        <dip bits="13" ids="Off,On" name="Stop Mode"></dip>
+        <dip bits="15" ids="Off,On" name="Diagnostic Test"></dip>
+    </switches>
+
+    <rom index="0" zip="rtype2.zip" md5="None">
+        <!-- board type -->
+        <part>13</part>
+        <!-- maincpu -->
+        <part>00 08 00 00</part>
+        <interleave output="16">
+        	<part name ="rt2-a-h0-d.54" crc="d8ece6f4" map="10"/>
+        	<part name ="rt2-a-l0-d.60" crc="32cfb2e4" map="01"/>
+        </interleave>
+        <interleave output="16">
+	        <part name ="rt2-a-h1-d.53" crc="4f6e9b15" map="10"/>
+	        <part name ="rt2-a-l1-d.59" crc="0fd123bf" map="01"/>
+        </interleave>
+
+        <!-- sprites -->
+        <part>01 08 00 00</part>
+        <interleave output="32">
+            <part name ="ic31.6l" crc="2cd8f913" map="0001" />
+            <part name ="ic21.4l" crc="5033066d" map="0010" />
+            <part name ="ic32.6m" crc="ec3a0450" map="0100" />
+            <part name ="ic22.4m" crc="db6176fc" map="1000" />
+        </interleave>
+
+        <!-- gfx2 -->
+        <part>02 10 00 00</part>
+        <interleave output="32">
+            <part name ="ic50.7s" crc="f3f8736e" map="0001" />
+            <part name ="ic56.8s" crc="4cb80d66" map="0010" />
+            <part name ="ic65.9r" crc="2dc9c71a" map="0100" />
+            <part name ="ic63.9m" crc="a6ad67f2" map="1000" />
+        </interleave>
+        <interleave output="32">
+            <part name ="ic51.7u" crc="b4c543af" map="0001" />
+            <part name ="ic57.8u" crc="bee128e0" map="0010" />
+            <part name ="ic66.9u" crc="7533c428" map="0100" />
+            <part name ="ic64.9p" crc="3686d555" map="1000" />
+        </interleave>
+
+        <!-- samples -->
+        <part>05 02 00 00</part>
+        <part name ="ic14.4c" crc="637172d5" />
+
+        <!-- sound rom -->
+        <part>08 01 00 00</part>
+        <part name ="ic17.4f" crc="73ffecb4" />
+
+    </rom>
+</misterromdescription>

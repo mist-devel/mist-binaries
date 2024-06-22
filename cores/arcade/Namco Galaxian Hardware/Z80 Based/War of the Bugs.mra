@@ -1,0 +1,34 @@
+<misterromdescription>
+	<name>War of the Bugs or Monsterous Manouvers in a Mushroom Maze</name>
+	<mameversion>0216</mameversion>
+	<setname>warofbug</setname>
+	<mratimestamp>201911270000</mratimestamp>
+	<year>1981</year>
+	<manufacturer>Armenia / Food and Fun Corp</manufacturer>
+	<category>Maze / Bugs</category>
+	<category>Maze / Centipede</category>
+        <rbf>galaxian</rbf>
+        <switches default="00,3F,F2">
+                <dip bits="5"     name="Cabinet" ids="Upright,Cocktail"/>
+                <dip bits="16,17" name="Lives" ids="1,2,3,4"/>
+                <dip bits="19" name="Bonus Life After" ids="50k,75k"/>
+        </switches>
+        <rom index="1">
+                <part>0E</part>
+        </rom>
+	<rom index="0" zip="warofbug.zip" md5="8144c0785b188d739f3abebc761f4bb8" type="merged|nonmerged">
+		<part name="warofbug.u"/>
+		<part name="warofbug.v"/>
+		<part name="warofbug.w"/>
+		<part name="warofbug.y"/>
+		<part name="warofbug.z"/>
+		<part name="warofbug.z"/>
+		<part name="warofbug.z"/>
+		<part name="warofbug.z"/>
+		<part name="warofbug.1k"/>
+		<part name="warofbug.1k"/>
+		<part name="warofbug.1j"/>
+		<part name="warofbug.1j"/>
+		<part name="warofbug.clr"/>
+	</rom>
+</misterromdescription>

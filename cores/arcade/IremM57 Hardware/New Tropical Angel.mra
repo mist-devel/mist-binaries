@@ -1,0 +1,74 @@
+<misterromdescription>
+  <name>New Tropical Angel</name>
+  <region>World</region>
+  <homebrew>no</homebrew>
+  <bootleg>no</bootleg>
+  <version></version>
+  <alternative></alternative>
+  <platform>Irem M57</platform>
+  <series></series>
+  <year>1983</year>
+  <manufacturer>Irem</manufacturer>
+  <category>Sports</category>
+
+  <setname>newtangl</setname>
+  <parent>troangel</parent>
+  <mameversion>0222</mameversion>
+  <rbf>TropicalAngel</rbf>
+  <about></about>
+
+  <resolution>15kHz</resolution>
+  <rotation>Horizontal</rotation>
+  <flip></flip>
+
+  <players>2</players>
+  <joystick>2-way</joystick>
+  <special_controls></special_controls>
+  <num_buttons>2</num_buttons>
+  <buttons default="A,B,Start,Select" names="Gas,Reverse,Start,Coin"></buttons>
+
+  <switches default="00,02" base="8" page_id="1" page_name="Switches">
+    <!-- DSW1 -->
+    <dip bits="0,1" name="Time" ids="180/160/140/120,160/140/120/100,140/120/100/80,120/100/100/80"/>
+    <dip bits="2" name="Crash Loss Time" ids="5 Sec,10 Sec"/>
+    <dip bits="3" name="Background Sound" ids="Boat,Music"/>
+
+    <!-- <dip bits="4,5" name="Coin A" ids="conditional dips unused"/> -->
+    <!-- <dip bits="6,7" name="Coin B" ids="conditional dips unused"/> -->
+    <dip bits="4,7" name="Coinage" ids="1 Coin/1 Player,2 Coins/1 Player,3 Coins/1 Player,4 Coins/1 Player,5 Coins/1 Player,6 Coins/1 Player,Free Play,Free Play,1 Coin/2 Players,1 Coin/3 Players,1 Coin/4 Players,1 Coin/5 Players,1 Coin/6 Players,Free Play,Free Play,Free Play"/>
+    <!-- Coin mode below needs to be Mode 1 for coinage above because MiSTer framework doesn't support conditional DIPS -->
+
+    <!-- DSW2 0100-->
+    <dip bits="8" name="Flip Screen" ids="Off,On"/>
+    <dip bits="9" name="Cabinet" ids="Cocktail,Upright"/>
+    <dip bits="10" name="Coin Mode" ids="Mode 1,Mode 2"/>
+    <dip bits="11" name="Analog Accelerator" ids="No,Yes"/>
+
+    <dip bits="12" name="Stop Mode (Cheat)" ids="Off,On"/>
+    <dip bits="13" name="Unused" ids="Off,On"/>
+    <dip bits="14" name="Invulnerability" ids="Off,On"/>
+    <dip bits="15" name="Service Mode" ids="Off,On"/>
+  </switches>
+
+  <rom index="0" zip="troangel.zip|newtangl.zip" md5="none" type="merged|nonmerged">
+
+  <part crc="3c6299a8" name="3k"/>
+  <part crc="8d09056c" name="3m"/>
+  <part crc="17b5a775" name="3n"/>
+  <part crc="2e5fa773" name="3q"/>
+  <part crc="ea8a05cb" name="ta-s-1a-"/>
+  <part crc="e49f7ad8" name="ta-a-3e"/>
+  <part crc="06eef241" name="ta-a-3d"/>
+  <part crc="7ff5482f" name="ta-a-3c"/>
+  <part crc="89409130" name="5j"/>
+  <part crc="f8cff29d" name="ta-b-5h"/>
+  <part crc="5460a467" name="5e"/>
+  <part crc="cd473d47" name="ta-b-5d"/>
+  <part crc="4a20637a" name="5c"/>
+  <part crc="0012792a" name="ta-b-5a"/>
+  <part crc="01de1167" name="ta-a-5a"/>
+  <part crc="efd11d4b" name="ta-a-5b"/>
+  <part crc="ed3e2aa4" name="ta-b-3d"/>
+  <part crc="f94911ea" name="ta-b-1b"/>
+
+</rom>

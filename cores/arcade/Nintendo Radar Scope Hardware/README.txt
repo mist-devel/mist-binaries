@@ -1,0 +1,33 @@
+---------------------------------------------------------------------------------
+-- 
+-- Arcade: Donkey Kong port to MiST
+-- Jan 2021
+--
+-- Usage:
+-- - Create ROM and ARC files from the MRA files using the MRA utility.
+--   Example: mra -A -z /path/to/mame/roms "Donkey Kong.mra"
+-- - Copy the ROM files to the root of the SD Card
+-- - Copy the RBF and ARC files to the same folder on the SD Card
+--
+-- Bugs/limitations:
+-- - Some sounds are missing in some games
+-- - Grid drawing delay is not implemented in Radar Scope
+--
+---------------------------------------------------------------------------------
+-- Based on:
+-- FPGA DONKEY KONG TOP
+-- Version : 4.00
+-- Copyright(c) 2003 - 2004 Katsumi Degawa , All rights reserved
+---------------------------------------------------------------------------------
+-- 
+-- 
+-- Keyboard inputs :
+--
+--   ESC,5       		: Coin
+--   F2,2        		: Start 2 players
+--   F1,1        		: Start 1 player
+--   UP,DOWN,LEFT,RIGHT arrows 	: Movements
+--   CTRL       		: Jump/Fire
+
+-- Joystick support.
+---------------------------------------------------------------------------------

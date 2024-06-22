@@ -1,0 +1,81 @@
+<misterromdescription>
+	<name>Ali Baba and 40 Thieves</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1982</year>
+	<manufacturer>Sega</manufacturer>
+	<category>Maze</category>
+
+	<setname>alibaba</setname>
+	<parent>alibaba</parent>
+	<mameversion>0220</mameversion>
+	<rbf>pacman</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FF,FF,C9" base="8" page_id="1" page_name="Switches">
+		<dip bits="15" ids="Cocktail,Upright" name="Cabinet"></dip>
+		<dip bits="16,17" ids="2c/1cr,1c/1cr,1c/2cr,Free Play" name="Coinage" values="3,1,2,0"></dip>
+		<dip bits="18,19" ids="1,2,3,5" name="Lives"></dip>
+		<dip bits="20,21" ids="10000,15000,20000,none" name="Bonus Life After"></dip>
+		<dip bits="22" ids="Hard,normal" name="Difficulty"></dip>
+		</switches>
+
+	<rom index="1">
+		<part>0A</part>
+		</rom>
+	<rom index="0" md5="ac9f54abb0b408a9481235d239888099" zip="alibaba.zip">
+		<part crc="38d701aa" name="6e"></part>
+		<part crc="3d0e35f3" name="6f"></part>
+		<part crc="823bee89" name="6h"></part>
+		<part crc="474d032f" name="6k"></part>
+		<part crc="5ab315c1" name="6l"></part>
+		<part crc="5ab315c1" name="6l"></part>
+		<part crc="438d0357" name="6m"></part>
+		<part crc="438d0357" name="6m"></part>
+		<part crc="438d0357" name="6m"></part>
+		<part crc="438d0357" name="6m"></part>
+		<part crc="85bcb8f8" name="5e"></part>
+		<part crc="38e50862" name="5h"></part>
+		<part crc="b5715c86" name="5f"></part>
+		<part crc="713086b3" name="5k"></part>
+		<part crc="85bcb8f8" name="5e"></part>
+		<part crc="38e50862" name="5h"></part>
+		<part crc="b5715c86" name="5f"></part>
+		<part crc="713086b3" name="5k"></part>
+		<part crc="a9cc86bf" name="82s126.1m"></part>
+		<part crc="3eb3a8e4" name="82s129.a4"></part>
+		<part crc="77245b66" name="82s126.3m"></part>
+		<part crc="2fc650bd" name="82s123.e7"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 04 00
+		00 00 4E 88 00 04 00 00
+		00 00 43 ED 00 06 40 40
+		00 00 43 D1 00 01 48 48
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="11"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

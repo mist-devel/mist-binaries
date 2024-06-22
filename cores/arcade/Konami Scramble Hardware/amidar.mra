@@ -1,0 +1,32 @@
+<misterromdescription>
+    <name>Amidar (Scramble hardware)</name>
+    <rbf>scramble</rbf>
+    <mameversion>0209</mameversion>
+    <switches>
+	<dip bits="7,8" name="Lives" ids="3,4,5,Unl"/>
+    </switches>
+    <rom index="1"><part>1</part></rom>
+    <rom index="0" zip="amidar.zip" md5="33b3ea63f123eb052e3ca852c2bc9181" type="merged">
+	<part name="amidars/am2d"/>
+	<part name="amidars/am2e"/>
+	<part name="amidars/am2f"/>
+	<part name="amidars/am2h"/>
+	<part name="amidars/am2j"/>
+	<part name="amidars/am2l"/>
+	<part name="amidars/am2m"/>
+	<part name="amidars/am2p"/>
+	<part name="amidars/am2d"/>
+	<part name="amidars/am2e"/>
+	<part name="amidars/am2f"/>
+	<part name="amidars/am2h"/>
+	<part name="amidars/am2j"/>
+	<part name="amidars/am2l"/>
+	<part name="amidars/am2m"/>
+	<part name="amidars/am2p"/>
+	<part name="s1.5c"/>
+	<part name="s2.5d"/>
+	<part name="amidarb/6.5h"/>
+	<part name="amidarb/5.5f"/>
+	<part name="amidar.clr"/>
+    </rom>
+</misterromdescription>

@@ -1,0 +1,39 @@
+<misterromdescription>
+	<name>Power Surge</name>
+	<mameversion>0220</mameversion>
+	<setname>psurge</setname>
+	<mratimestamp>20200427161917</mratimestamp>
+	<year>1982</year>
+	<manufacturer>Konami</manufacturer>
+	<rbf>timeplt</rbf>
+	<switches default="FF,FF" base="8">
+		<dip bits="3"     name="Intital Energy"    ids="4,6"/>
+		<dip bits="4,5"   name="Lives"             ids="6,5,4,3"/>
+		<dip bits="7"     name="Cabinet"           ids="Cocktail,Upright"/>
+
+		<dip bits="8,9"   name="Coin A"            ids="1C_5C,1C_3C,2C_1C,1C_1C"/>
+		<dip bits="10,11" name="Coin B"            ids="1C_5C,1C_3C,2C_1C,1C_1C"/>
+		<dip bits="12"    name="Infinite Shots"    ids="On,Off"/>
+		<dip bits="15"    name="Stop at Junctions" ids="Yes,No"/>
+	</switches>
+	<rom index="1"><part>01</part></rom>
+	<rom index="0" zip="psurge.zip" md5="c89e6e06aea07ba0d3e6133f356f2598">
+		<!-- Main CPU -->
+		<part crc="1551f1b9" name="p1"/>
+		<part crc="58636cb5" name="p2"/>
+		<part crc="ff4e0d83" name="p3"/>
+		<!-- GFX1 -->
+		<part crc="c2507f40" name="p4"/>
+		<!-- GFX2 -->
+		<part crc="7e437c3e" name="p5"/>
+		<part crc="e8ca87b9" name="tm5"/>
+		<!-- Sound CPU -->
+		<part crc="d66da813" name="p6"/>
+		<part crc="d66da813" name="p7"/>
+		<!-- LUTs -->
+		<part name="timeplt.e9"/>
+		<part name="timeplt.e12"/>
+		<part name="timeplt.b4"/>
+		<part name="timeplt.b5"/>
+	</rom>
+</misterromdescription>

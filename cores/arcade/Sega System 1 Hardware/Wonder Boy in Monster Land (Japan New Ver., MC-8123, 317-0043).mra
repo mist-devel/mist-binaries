@@ -1,0 +1,67 @@
+<misterromdescription>
+	<name>Wonder Boy in Monster Land (Japan New Ver., MC-8123, 317-0043)</name>
+	<setname>wbml</setname>
+	<rbf>segasys1</rbf>
+	<mameversion>0229</mameversion>
+	<year>1986</year>
+	<manufacturer>Escape (Sega license)</manufacturer>
+	<players>2</players>
+	<joystick>4-way</joystick>
+	<rotation>horizontal</rotation>
+	<region>World</region>
+	<buttons names="Action/Run,Jump,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="2"/>
+	<switches base="8" default="FF,FC">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		-->
+		<dip name="Demo Sounds" bits="9" ids="On,Off"/>
+		<dip name="Lives" bits="10,11" ids="Free Play,5,4,3"/>
+		<dip name="Bonus Life" bits="12" ids="30/120/210/300k,30/100/170/240k"/>
+		<dip name="Allow Continue" bits="13" ids="No,Yes"/>
+		<dip name="Difficulty" bits="14" ids="Hard,Easy"/>
+	</switches>
+	<rom index="1">
+		<part>05</part>
+	</rom>
+	<rom index="0" zip="wbml.zip" type="merged" md5="ad4204a5e3232a5836e47ca967bfcaf6">
+		<!-- soundcpu, size: 0x8000 -->
+		<part name="epr-11037.126"/>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part name="epr-11031a.90"/>
+		<part name="epr-11032.91"/>
+		<part name="epr-11033.92"/>
+
+		<!-- sprites, size: 0x20000 -->
+		<part name="epr-11028.87"/>
+		<part name="epr-11027.86"/>
+		<part name="epr-11030.89"/>
+		<part name="epr-11029.88"/>
+
+		<!-- tiles, size: 0x18000 -->
+		<interleave output="32">
+			<part name="epr-11034.4"/>
+			<part name="epr-11035.5"/>
+			<part name="epr-11036.6"/>
+			<part name="epr-11036.6"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x100 -->
+		<part name="pr5317.37"/>
+
+		<!-- color proms, size: 0x300 -->
+		<part name="pr11026.20"/>
+		<part name="pr11025.14"/>
+		<part name="pr11024.8"/>
+
+		<part repeat="0x1C00">00</part>
+
+		<!-- decryption key, size: 0x2000 -->
+		<part name="317-0043.key"/>
+
+	</rom>
+</misterromdescription>

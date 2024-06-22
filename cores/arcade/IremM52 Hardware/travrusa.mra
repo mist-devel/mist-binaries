@@ -1,0 +1,28 @@
+<misterromdescription>
+    <name>Traverse USA - Zippy Race</name>
+    <mameversion>0216</mameversion>
+    <setname>travrusa</setname>
+    <mratimestamp>201911270000</mratimestamp>
+    <year>1983</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Racing / Motorbike</category>
+    <rbf>travrusa</rbf>
+    <rom index="1"><part>0</part></rom>
+    <rom index="0" zip="travrusa.zip" md5="67d6330459d5180670c25842fc3d1d11" type="merged|nonmerged">
+	<part name="zr1-0.m3"/>
+	<part name="zr1-5.l3"/>
+	<part name="zr1-6a.k3"/>
+	<part name="zr1-7.j3"/>
+	<part name="mr10.1a"/>
+	<part name="mr10.1a"/>
+	<part name="zippyrac.001"/>
+	<part name="mr8.3c"/>
+	<part name="mr9.3a"/>
+	<part name="zr1-8.n3"/>
+	<part name="zr1-9.l3"/>
+	<part name="zr1-10.k3"/>
+	<part name="mmi6349.ij"/>
+	<part name="tbp24s10.3"/>
+	<part name="tbp18s.2"/>
+    </rom>
+</misterromdescription>

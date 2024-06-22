@@ -1,0 +1,70 @@
+<misterromdescription>
+	<name>Jump Shot</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1985</year>
+	<manufacturer>Bally</manufacturer>
+	<manufacturer>Midway</manufacturer>
+	<category>Sports</category>
+
+	<setname>jumpshot</setname>
+	<parent>jumpshot</parent>
+	<mameversion>0220</mameversion>
+	<rbf>pacman</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (simultaneous)</players>
+	<joystick>8-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FF,FF,FB" base="8" page_id="1" page_name="Switches">
+		<dip bits="15" ids="Cocktail,Upright" name="Cabinet"></dip>
+		<dip bits="16,17" ids="1:00,1:30,2:00,2:30" name="Time" values="0,2,3,1"></dip>
+		<dip bits="18" ids="Darker,Lighter" name="Skin Tone P1"></dip>
+		<dip bits="19" ids="Darker,Lighter" name="Skin Tone P2"></dip>
+		<dip bits="20" ids="Off,On" name="Free Play"></dip>
+		<dip bits="21" ids="1 Credit,2 Credit" name="2 Players Game"></dip>
+		</switches>
+
+	<rom index="1">
+		<part>10</part>
+		</rom>
+	<rom index="0" md5="0a1ec1cbf481037d3afdc7a27fd3bc9c" zip="jumpshot.zip">
+		<part crc="f00def9a" name="6e"></part>
+		<part crc="f70deae2" name="6f"></part>
+		<part crc="894d6f68" name="6h"></part>
+		<part crc="f15a108a" name="6j"></part>
+		<part crc="f00def9a" name="6e"></part>
+		<part crc="f70deae2" name="6f"></part>
+		<part crc="894d6f68" name="6h"></part>
+		<part crc="f15a108a" name="6j"></part>
+		<part crc="d9fa90f5" name="5e"></part>
+		<part crc="2ec711c1" name="5f"></part>
+		<part crc="d9fa90f5" name="5e"></part>
+		<part crc="2ec711c1" name="5f"></part>
+		<part crc="a9cc86bf" name="82s126.1m"></part>
+		<part crc="0399f39f" name="prom.4a"></part>
+		<part crc="77245b66" name="82s126.3m"></part>
+		<part crc="872b42f3" name="prom.7f"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

@@ -1,0 +1,110 @@
+<misterromdescription>
+	<name>Up'n Down (315-5030)</name>
+	<setname>upndown</setname>
+	<rbf>segasys1</rbf>
+	<mameversion>0229</mameversion>
+	<year>1983</year>
+	<manufacturer>Sega</manufacturer>
+	<players>2</players>
+	<joystick>8-way</joystick>
+	<rotation>vertical/ccw</rotation>
+	<region>World</region>
+	<rom index="0" zip="upndown.zip" type="merged" md5="dd117de01b1a03b0061d7215a208a20d">
+		<!-- soundcpu, size: 0x8000 -->
+		<part crc="cf4e4c45" name="epr-5535.3"/>
+		<part crc="cf4e4c45" name="epr-5535.3"/>
+		<part crc="cf4e4c45" name="epr-5535.3"/>
+		<part crc="cf4e4c45" name="epr-5535.3"/>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part crc="038c82da" name="epr5516a.129"/>
+		<part crc="6930e1de" name="epr5517a.130"/>
+		<part crc="2a370c99" name="epr-5518.131"/>
+		<part crc="9d664a58" name="epr-5519.132"/>
+		<part crc="208dfbdf" name="epr-5520.133"/>
+		<part crc="e7b8d87a" name="epr-5521.134"/>
+		<part crc="208dfbdf" name="epr-5520.133"/>
+		<part crc="e7b8d87a" name="epr-5521.134"/>
+		<part crc="208dfbdf" name="epr-5520.133"/>
+		<part crc="e7b8d87a" name="epr-5521.134"/>
+		<part crc="208dfbdf" name="epr-5520.133"/>
+		<part crc="e7b8d87a" name="epr-5521.134"/>
+
+		<!-- sprites, size: 0x20000 -->
+		<part crc="fcc0a88b" name="epr-5514.86"/>
+		<part crc="60908838" name="epr-5515.93"/>
+		<part crc="fcc0a88b" name="epr-5514.86"/>
+		<part crc="60908838" name="epr-5515.93"/>
+		<part crc="fcc0a88b" name="epr-5514.86"/>
+		<part crc="60908838" name="epr-5515.93"/>
+		<part crc="fcc0a88b" name="epr-5514.86"/>
+		<part crc="60908838" name="epr-5515.93"/>
+
+		<!-- tiles, size: 0x18000 -->
+		<interleave output="32">
+			<part name="epr-5527.82" map="0001"/>
+			<part name="epr-5525.81" map="0010"/>
+			<part name="epr-5523.80" map="0100"/>
+			<part name="epr-5523.80" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-5526.65" map="0001"/>
+			<part name="epr-5524.64" map="0010"/>
+			<part name="epr-5522.63" map="0100"/>
+			<part name="epr-5522.63" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-5527.82" map="0001"/>
+			<part name="epr-5525.81" map="0010"/>
+			<part name="epr-5523.80" map="0100"/>
+			<part name="epr-5523.80" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-5526.65" map="0001"/>
+			<part name="epr-5524.64" map="0010"/>
+			<part name="epr-5522.63" map="0100"/>
+			<part name="epr-5522.63" map="1000"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x100 -->
+		<part crc="648350b8" name="pr-5317.106"/>
+
+		<!-- color_proms, size: 0x300 -->
+		<part repeat="0x300">00</part>
+
+		<!-- encryption_device: 315-5030 -->
+		<part>
+			08 88 00 80 a0 20 80 00 a8 a0 28 20 88 a8 80 a0
+			88 80 08 00 28 08 a8 88 88 a8 80 a0 28 08 a8 88
+			88 a8 80 a0 a0 20 80 00 a8 a0 28 20 a8 a0 28 20
+			88 80 08 00 88 a8 80 a0 88 a8 80 a0 88 a8 80 a0
+			a0 20 80 00 a0 20 80 00 08 88 00 80 28 08 a8 88
+			88 a8 80 a0 88 80 08 00 88 a8 80 a0 28 08 a8 88
+			88 a8 80 a0 88 a8 80 a0 88 a8 80 a0 88 a8 80 a0
+			88 80 08 00 88 80 08 00 08 88 00 80 28 08 a8 88
+		</part>
+	</rom>
+	<rom index="1">
+		<part>06</part>
+	</rom>
+	<rom index="3" md5="none">
+		<part>
+		00 0F FF FF 00 FF 00 02 00 02 00 01 00 FF 00 00
+		00 00 C9 3F 00 3F 01 00
+		</part>
+	</rom>
+	<nvram index="4" size="63"/>
+	<switches base="8" default="FF,FE">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		-->
+		<dip name="Lives" bits="9,10" ids="Infinite,5,4,3"/>
+		<dip name="Bonus Life" bits="11,13" ids="None,70k,60k,50k,40k,30k,20k,10k"/>
+		<dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Medium,Easy"/>
+	</switches>
+	<buttons names="Jump,-,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="1"/>
+</misterromdescription>

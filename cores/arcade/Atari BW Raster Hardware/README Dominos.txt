@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+-- 
+-- Arcade: Dominos from james10952001
+-- Port to MiST by Gehstock
+-- 23 November 2018
+-- 
+-- Keyboard inputs :
+--   ESC			: Coin
+--   F1 and F2    		: Start1 / Start2
+--   WASD or Joy 1		: Controls Player1
+--   Arrow Keys or Joy 2	: Controls Player2
+--
+-- Joystick support.
+-- 
+-- 
+----------------------------------------------------------------

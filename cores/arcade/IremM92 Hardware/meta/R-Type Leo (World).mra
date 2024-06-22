@@ -1,0 +1,101 @@
+<misterromdescription>
+    <name>R-Type Leo (World)</name>
+    <mameversion>0245</mameversion>
+    <setname>rtypeleo</setname>
+    <year>1992</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Shooter</category>
+    <rbf>IremM92</rbf>
+    <rotation>horizontal</rotation>
+
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Fire,Psy-Bits Control,-,-,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="00 00 00" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="3,2,4,5" name="Lives"></dip>
+        <dip bits="2,3" ids="Normal,Easy,Hard,Very Easy" name="Difficulty"></dip>
+
+        <dip bits="5" ids="Yes,No" name="Allow Continue"></dip>
+        <dip bits="6" ids="Off,On" name="Demo Sounds"></dip>
+        <dip bits="7" ids="Off,On" name="Service Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Screen"></dip>
+
+        <dip bits="12,15" ids="1C/1C,2C/1C,3C/1C,4C/1C,5C/1C,6C/1C,1C/2C,1C/3C,1C/4C,1C/5C,1C/6C,2C/3C,3C/2C,4C/3C,2S/1C,Free Play" name="Coin Mode"></dip>
+    </switches>
+
+    <rom index="0" zip="rtypeleo.zip" md5="None">
+        <!-- board type -->
+        <part>00</part>
+
+        <!-- maincpu -->
+        <part>00 0c 00 00</part>
+        <interleave output="16">
+            <part name="rtl-h0-c.bin" crc="5fef7fa1" map="10" />
+            <part name="rtl-l0-c.bin" crc="8156456b" map="01" />
+        </interleave>
+        <interleave output="16">
+            <part name="rtl-h1-d.bin" crc="352ff444" map="10" />
+            <part name="rtl-l1-d.bin" crc="fd34ea46" map="01" />
+        </interleave>
+
+        <!-- gfx1 tiles -->
+        <part>01 20 00 00</part>
+        <interleave output="32">
+            <part name="rtl-c0.bin"  crc="fb588d7c" map="0001" />
+            <part name="rtl-c1.bin"  crc="e5541bff" map="0010" />
+            <part name="rtl-c2.bin"  crc="faa9ae27" map="0100" />
+            <part name="rtl-c3.bin"  crc="3a2343f6" map="1000" />
+        </interleave>
+
+        <!-- gfx2 sprites -->
+        <part>02 40 00 00</part>
+        <interleave output="32">
+            <part name="rtl-000.bin" crc="82a06870" map="0001" />
+            <part name="rtl-010.bin" crc="417e7a56" map="0010" />
+            <part name="rtl-020.bin" crc="f9a3f3a1" map="0100" />
+            <part name="rtl-030.bin" crc="03528d95" map="1000" />
+        </interleave>
+
+        <!-- soundcpu -->
+        <part>03 02 00 00</part>
+        <interleave output="16">
+            <part name="rtl-sh0a.bin" crc="e518b4e3" map="10" />
+            <part name="rtl-sl0a.bin" crc="896f0d36" map="01" />
+        </interleave>
+
+        <!-- soundcpu key -->
+        <part>04 00 01 00</part>
+        <part>
+        	5d 90 c6 90 90 90 2a 3a 90 90 90 86 90 22 90 f3
+            90 90 90 90 90 38 f7 42 04 90 90 1f 4b 90 90 58
+            57 2e 90 90 53 90 b9 90 90 90 90 90 20 55 90 3d
+            a0 90 90 0c 03 90 83 90 90 90 8a 00 90 aa 90 90
+            90 90 90 90 90 90 90 90 90 41 0a 26 8b 56 5e 90
+            90 74 90 90 90 90 06 90 90 89 5b c7 43 90 90 90
+            90 b6 90 3b 90 90 90 90 90 36 ea 80 90 90 90 5f
+            90 0f 90 90 90 46 90 90 3c 8e 90 a3 87 90 90 90
+            2b fb 47 0b 90 fc 02 90 90 90 90 90 90 90 72 2c
+            33 90 90 90 90 90 9d bd 90 b2 90 78 75 b8 90 90
+            90 90 90 90 cf 5a 88 90 90 90 c3 90 eb fa 90 32
+            90 90 90 52 b4 90 90 90 90 bc 90 90 90 b1 59 50
+            90 90 b5 90 08 a2 bf bb 1e 9c 90 73 90 d0 90 90
+            90 90 90 90 81 90 79 90 90 24 23 90 90 b0 07 ff
+            90 ba f6 51 90 90 90 fe 90 92 90 90 90 90 e9 90
+            90 90 90 90 90 90 e8 d2 90 18 90 90 90 d1 90 90
+        </part>
+
+        <!-- iremg20 -->
+        <part>05 08 00 00</part>
+        <part name="rtl-da.bin"  crc="dbebd1ff" />
+    </rom>
+     <!--hiscore support. see hiscore.sv for modified header values-->
+     <rom index="3" md5="none">
+       <part>
+       00 00 00 F0 05 FF 00 01 00 0F 00 01 00 01 02 00
+       00 0e 22 1e 00 38 40 20 
+       00 0e 22 56 00 03 40 01
+       </part>
+    </rom>
+    <nvram index="4" size="59"></nvram>
+</misterromdescription>

@@ -1,0 +1,66 @@
+<misterromdescription>
+	<name>Galaxy Wars</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Universal, Set 1</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series>Galaxian</series>
+	<year>1979</year>
+	<manufacturer>Universal</manufacturer>
+	<category>Shooter - Gallery</category>
+
+	<setname>galxwars</setname>
+	<parent>invaders</parent>
+	<mameversion>0226</mameversion>
+	<rbf>spaceinvaders</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (ccw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>2-way horizontal</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="A,Start,Select,R,L" names="Fire,-,-,-,Start 1P,Start 2P,Coin,Pause"></buttons>
+
+	<switches base="16" default="40,80,00">
+		<dip bits="16,17" ids="2,3,4,5" name="Lives"></dip>
+		<dip bits="18" ids="Off,On" name="Unknown"></dip>
+		<dip bits="19" ids="3k,5k" name="Bonus Life"></dip>
+		<dip bits="23" ids="1C_1C,2C_1C" name="Coinage"></dip>
+	</switches>
+
+	<rom index="1">
+		<part>0A</part>
+	</rom>
+	<rom index="0" md5="none" zip="galxwars.zip">
+		<part crc="937796f4" name="univgw3.0"></part>
+		<part crc="4b86e7a6" name="univgw4.1"></part>
+		<part crc="47a187cd" name="univgw5.2"></part>
+		<part crc="7b7d22ff" name="univgw6.3"></part>
+		<part repeat="4096">00</part>
+		<part crc="0871156e" name="univgw1.4"></part>
+		<part crc="6036d7bf" name="univgw2.5"></part>
+		<part repeat="2048">00</part>
+		<part repeat="4096">00</part>
+		<part crc="aac24f34" name="01.1"></part>
+		<part crc="2bdf83a0" name="02.2"></part>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 10 00 00 00 FF 00 02 00 02 00 01 00 FF 02 00
+		00 00 20 05 00 06 00 00
+		</part>
+	</rom>
+
+	<nvram index="4" size="6"></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

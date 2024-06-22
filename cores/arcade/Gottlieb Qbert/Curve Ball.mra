@@ -1,0 +1,43 @@
+
+<misterromdescription>
+	<name>Curve Ball</name>
+	<mameversion>0198</mameversion>
+	<setname>curvebal</setname>
+	<mratimestamp>20201231150731</mratimestamp>
+	<year>1982</year>
+	<manufacturer>Gottlieb</manufacturer>
+	<category>Platform</category>
+	<rbf>qbert</rbf>
+	<buttons names="Swing,Start 1P,Start 2P,Coin,Service Select,Bunt,Pitch Left,Pitch Right" default="A,Start,Select,R,L,X,B,Y"/>
+	<switches default="01"  page_id="1" page_name="Switches" base="16">
+		<dip bits="0" name="Difficulty" ids="Easy,Hard"/>
+		<dip bits="3" name="2 player game" ids="1 credit,2 credits"/>
+		<dip bits="2" name="Demo Sounds" ids="Off,On"/>
+		<dip bits="5" name="Coin Options" ids="Normal,French"/>
+	</switches>
+	<rom index="1">
+		<part>4</part>
+	</rom>
+	<rom index="0" zip="curvebal.zip" md5="none">
+		<part crc="401fc7e3" name="gv-134_rom_0.rom0_c11-12"/>
+		<part crc="eb1e08bd" name="gv-134_rom_1.rom1_c12-13"/>
+		<part crc="d46c3db5" name="gv-134_rom_2.rom2_c13-14"/>
+		<part crc="72ad4d45" name="gv-134_rom_3.rom3_c14-15"/>
+		<part repeat="16384">00</part>
+
+		<part crc="4c313d9b" name="yrom.sbd"/>
+		<part crc="cecece88" name="drom.sbd"/>
+
+		<part crc="d666a179" name="gv-134_bg_0.bg0_e11-12"/>
+		<part crc="5e34ff4e" name="gv-134_bg_1.bg1_e13"/>
+
+		<part crc="e3a8230e" name="gv-134_fg_0.fg0_k4"/>
+		<part crc="e3a8230e" name="gv-134_fg_0.fg0_k4"/>
+		<part crc="1b7b7f94" name="gv-134_fg_1.fg1_k5"/>
+		<part crc="1b7b7f94" name="gv-134_fg_1.fg1_k5"/>
+		<part crc="065131af" name="gv-134_fg_2.fg2_k6"/>
+		<part crc="065131af" name="gv-134_fg_2.fg2_k6"/>
+		<part crc="9c9452fe" name="gv-134_fg_3.fg3_k7-8"/>
+		<part crc="9c9452fe" name="gv-134_fg_3.fg3_k7-8"/>
+	</rom>
+</misterromdescription>

@@ -1,0 +1,78 @@
+<misterromdescription>
+	<name>Finalizer: Super Transformation (bootleg)</name>
+	<region>World</region>
+	<homebrew>no</homebrew>
+	<bootleg>yes</bootleg>
+	<version>Set 2</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1986</year>
+	<manufacturer>Konami</manufacturer>
+	<category>Shooter - Vertical</category>
+
+	<setname>finalizrb</setname>
+	<parent>finalizr</parent>
+	<mameversion>0224</mameversion>
+	<rbf>Finalizr</rbf>
+	<about author="Ace" twitter="@Ace9921Tweets"></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>no</rotation>
+	<flip>no</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>8-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>3</num_buttons>
+	<buttons default="B,A,Start,R,Select,L" names="Fire 1,Fire 2/Shield,Start P1,Coin,Start P2,Pause"></buttons>
+	
+	<switches default="00,25,00" base="8" page_id="1" page_name="Switches">
+		<dip bits="0,3"   name="Credits A" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/7cr,1c/6cr,2c/1cr,2c/3cr,3c/1cr,2c/5cr,3c/2cr,3c/4cr,4c/3cr,4c/1cr,Free Play"/>
+		<dip bits="4,7"   name="Credits B" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Free Play"/>
+		<dip bits="8,9"   name="Lives" ids="2,3,4,7"/>
+		<dip bits="10"    name="Cabinet Type" ids="Cocktail,Upright"/>
+		<dip bits="11,12" name="Bonus" ids="20K/100K+,30K/150K+,20K only,30K only"/>
+		<dip bits="13,14" name="Difficulty" ids="Easy,Normal,Hard,Hardest"/>
+		<dip bits="15"    name="Attract Mode Sound" ids="Off,On"/>
+		<dip bits="16"    name="Flip Screen" ids="Off,On"/>
+		<dip bits="17"    name="Upright Controls" ids="Single,Dual"/>
+		<dip bits="18"    name="Test Mode" ids="Off,On"/>
+	</switches>
+	
+	<rom index="1">
+		<part>0F</part>
+	</rom>
+	<rom index="0" md5="none" type="merged" zip="finalizr.zip|finalizrb.zip">
+		<part crc="a55e3f14" name="finalizrb/finalizr.5"/>
+		<part crc="ce177f6e" name="finalizra/3.13c"/>
+		<part crc="c056d710" name="523h04.5e"/>
+		<part crc="50e512ba" name="523h07.5f"/>
+		<part crc="ae0d0f76" name="523h05.6e"/>
+		<part crc="79f44e17" name="523h08.6f"/>
+		<part crc="d2db9689" name="523h06.7e"/>
+		<part crc="8896dc85" name="523h09.7f"/>
+		<part crc="978dfc33" name="d8749hd.bin"/>
+		<part crc="4e0647a0" name="523h13.11f"/>
+		<part crc="53166a2a" name="523h12.10f"/>
+		<part crc="ec15dd15" name="523h10.2f"/>
+		<part crc="54be2e83" name="523h11.3f"/>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+			09 00 00 00 00 FF 00 02
+			00 02 00 01 00 FF 10 00
+			00 00 3C 08 00 01 00 00
+			00 00 3C 09 00 01 02 02
+			00 00 3C 0A 00 02 00 00
+			00 00 3B C0 00 27 00 12
+		</part>
+	</rom>
+	
+	<nvram index="4" size="43"></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210817165502</mratimestamp>
+</misterromdescription>

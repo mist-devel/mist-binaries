@@ -1,0 +1,34 @@
+<misterromdescription>
+	<name>The Tower of Druaga (New Ver.)</name>
+	<mameversion>0220</mameversion>
+	<setname>todruaga</setname>
+	<mratimestamp>20200427161917</mratimestamp>
+	<year>1984</year>
+	<manufacturer>Namco</manufacturer>
+	<category>Adventure, Knights</category>
+	<category>Maze, Extra</category>
+	<rbf>druaga</rbf>
+	<rom index="1">
+		<part>01</part>
+	</rom>
+	<rom index="0" zip="todruaga.zip" md5="ef0d64d4d3fc4f594389d2b28c677c20">
+		<part crc="fbf16299" name="td2_3.1d"/>
+		<part crc="b238d723" name="td2_1.1b"/>
+		<part crc="e827e787" name="td1_6.3m"/>
+		<part crc="e827e787" name="td1_6.3m"/>
+		<part crc="962bd060" name="td1_7.3n"/>
+		<part crc="962bd060" name="td1_7.3n"/>
+		<part crc="ae9d06d9" name="td1_4.1k"/>
+		<part crc="d32b249f" name="td1_5.3b"/>
+		<part crc="a86c74dd" name="td1-7.5k"/>
+		<part crc="8c661d6a" name="td1-6.4c"/>
+		<part crc="07104c40" name="td1-3.3m"/>
+		<part crc="122cc395" name="td1-5.5b"/>
+	</rom>
+	<switches default="00,00,00" base="8">
+		<dip bits="4,5"    name="Lives" ids="3,2,1,5"/>
+		<dip bits="8"	   name="Freeze" ids="Off,On"></dip>
+		<!-- dip bits="15" name="Cabinet" ids="Upright,Cocktail"></dip -->
+		<dip bits="19"	   name="Service Mode" ids="Off,On"></dip>
+	</switches>
+</misterromdescription>

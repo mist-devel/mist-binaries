@@ -1,0 +1,38 @@
+<misterromdescription>
+	<name>Time Pilot '84 (Set 3)</name>
+	<mameversion>0224</mameversion>
+	<setname>tp84b</setname>
+	<mratimestamp>20201119203022</mratimestamp>
+	<year>1984</year>
+	<manufacturer>Konami</manufacturer>
+	<category>Space / Fighter</category>
+	<rbf>TP84</rbf>
+	<mameinfo parent="tp84" cpp="tp84" input="tp84b"/>
+	<display type="raster" rotate="90"/>
+	<switches default="00,25" base="8">
+		<dip bits="0,3"   name="Credits A" ids="1c/1cr,1c/3cr,1c/2cr,1c/4cr,1c/5cr,1c/7cr,1c/6cr,2c/1cr,2c/3cr,3c/1cr,2c/5cr,3c/2cr,3c/4cr,4c/3cr,4c/1cr,Free Play"/>
+		<dip bits="4,7"   name="Credits B" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Free Play"/>
+		<dip bits="8,9"   name="Lives" ids="2,3,5,7"/>
+		<dip bits="10"    name="Cabinet type" ids="Cocktail,Upright"/>
+		<dip bits="11,12" name="Bonus" ids="10K/50K+,20K/60K+,30K/70K+,40K/80K+"/>
+		<dip bits="13,14" name="Difficulty" ids="Easy,Normal,Hard,Hardest"/>
+		<dip bits="15"    name="Attract mode sound" ids="Off,On"/>
+	</switches>
+	<rom index="1">
+		<part>01</part>
+	</rom>
+	<rom index="0" zip="tp84.zip|tp84b.zip" md5="None">
+		<part crc="a59e2fda" name="388j05.8j"/>
+		<part crc="d25d18e6" name="388j07.10j"/>
+		<part crc="2aea6b42" name="388j08.10d"/>
+		<part crc="c44414da" name="388j13.6a"/>
+		<part crc="e1225f53" name="388j02.2j"/>
+		<part crc="aec90936" name="388j09.12a"/>
+		<part crc="29257f03" name="388j11.14a"/>
+		<part crc="d737eaba" name="388j14.2c"/>
+		<part crc="2f6a9a2a" name="388j15.2d"/>
+		<part crc="2e21329b" name="388j16.1e"/>
+		<part crc="61d2d398" name="388j18.1f"/>
+		<part crc="13c4e198" name="388j17.16c"/>
+	</rom>
+</misterromdescription>

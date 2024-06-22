@@ -1,0 +1,34 @@
+<misterromdescription>
+	<name>Blockade</name>
+	<year>1976</year>
+	<manufacturer>Gremlin</manufacturer>
+
+	<setname>blockade</setname>
+	<mameversion>0229</mameversion>
+	<rbf>blockade</rbf>
+
+	<buttons default="R,L" names="-,-,Coin,Pause"></buttons>
+	<switches default="3"  page_id="1" page_name="Switches" base="8">
+		<dip bits="0,1" name="Lives" ids="3,4,5,6"/>
+		<dip bits="2,3" name="Overlay Colour" ids="Green,White,Yellow,Red"/>
+		<dip bits="4" name="Boom Switch" ids="On,Off"/>
+	</switches>
+
+	<rom index="1"><part>00</part></rom>
+	<rom index="0" md5="none" zip="blockade.zip">
+		<!-- GAME ROMS -->
+		<part crc="none" name="316-0004.u2" />
+		<part crc="none" name="316-0003.u3" />
+		<!-- PADDING -->
+		<part repeat="2048">00</part>
+		<!-- GFX PROMS -->
+		<part crc="none" name="316-0002.u29" repeat="2" />
+		<part crc="none" name="316-0001.u43" repeat="2" />
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+</misterromdescription>

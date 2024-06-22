@@ -1,0 +1,30 @@
+<misterromdescription>
+    <name>Wacko</name>
+    <mameversion>0216</mameversion>
+    <mratimestamp>201912310000</mratimestamp>
+    <year>1983</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Action</category>
+    <rbf>MCR2</rbf>
+    <setname>wacko</setname>
+    <rom index="1">
+	<part>3</part>
+    </rom>
+    <rom index="0" zip="wacko.zip" md5="157209d82b536114e346517818a89184" type="merged|nonmerged">
+	<part crc="c98e29b6" name="wackocpu.2d"/>
+	<part crc="90b89774" name="wackocpu.3d"/>
+	<part crc="515edff7" name="wackocpu.4d"/>
+	<part crc="9b01bf32" name="wackocpu.5d"/>
+	<part repeat="16384">00</part>		
+	<part crc="1a58763f" name="wackosnd.7a"/>			
+	<part crc="a4e3c771" name="wackosnd.8a"/>
+	<part crc="155ba3dd" name="wackosnd.9a"/>
+	<part repeat="4096">00</part>		
+	<part crc="33160eb1" name="wackocpu.3g"/>
+	<part crc="daf37d7c" name="wackocpu.4g"/>		
+	<part crc="dca59be7" name="wackovid.1e"/>
+	<part crc="a02f1672" name="wackovid.1d"/>
+	<part crc="7d899790" name="wackovid.1b"/>
+	<part crc="080be3ad" name="wackovid.1a"/>
+    </rom>
+</misterromdescription>

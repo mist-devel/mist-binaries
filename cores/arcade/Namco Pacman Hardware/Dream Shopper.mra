@@ -1,0 +1,76 @@
+<misterromdescription>
+	<name>Dream Shopper</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1982</year>
+	<manufacturer>Sanritsu</manufacturer>
+	<category>Maze</category>
+
+	<setname>dremshpr</setname>
+	<parent>dremshpr</parent>
+	<mameversion>0220</mameversion>
+	<rbf>pacman</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (ccw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FF,FF,F1,FE" base="8" page_id="1" page_name="Switches">
+		<dip bits="16" ids="Cocktail,Upright" name="Cabinet"></dip>
+		<dip bits="17" ids="On,Off" name="Flip Screen"></dip>
+		<dip bits="18,19" ids="70k,50k,30k,Never" name="Bonus Life after"></dip>
+		<dip bits="20,21" ids="6,5,4,3" name="Lives"></dip>
+		<dip bits="22,23" ids="2c/1cr,1c/3cr,1c/2cr,1c/1cr" name="Coinage"></dip>
+		<dip bits="24" ids="Off,On" name="Invulnerability"></dip>
+		</switches>
+
+	<rom index="1">
+		<part>0E</part>
+		</rom>
+	<rom index="0" md5="3d1ab455cb02580e03249baf556fa3af" zip="dremshpr.zip">
+		<part crc="830c6361" name="red_1.50"></part>
+		<part crc="d22551cc" name="red_2.51"></part>
+		<part crc="0713a34a" name="red_3.52"></part>
+		<part crc="f38bcaaa" name="red_4.53"></part>
+		<part crc="6a382267" name="red_5.39"></part>
+		<part crc="4cf8b121" name="red_6.40"></part>
+		<part crc="bd4fc4ba" name="red_7.41"></part>
+		<part crc="bd4fc4ba" name="red_7.41"></part>
+		<part crc="2d6698dc" name="red-20.18"></part>
+		<part crc="38c9ce9b" name="red-21.19"></part>
+		<part crc="38c9ce9b" name="red-21.19"></part>
+		<part crc="38c9ce9b" name="red-21.19"></part>
+		<part crc="39d6fb5c" name="6301-1.37"></part>
+		<part crc="39d6fb5c" name="6301-1.37"></part>
+		<part crc="39d6fb5c" name="6301-1.37"></part>
+		<part crc="ce1d9503" name="6331-1.6"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+		00 00 4C 00 00 F0 00 01
+		00 00 48 08 00 06 00 00
+		00 00 48 09 00 01 03 03
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="247"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

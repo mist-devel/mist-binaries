@@ -1,0 +1,37 @@
+<misterromdescription>
+    <name>Kick</name>
+    <mameversion>0216</mameversion>
+    <mratimestamp>201912310000</mratimestamp>
+    <year>1980</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Action</category>
+    <rbf>MCR1</rbf>
+    <setname>kick</setname>
+    <switches>
+	<dip bits="7"    name="Music" ids="On,Off"/>
+    </switches>
+    <rom index="1"><part>0</part></rom>
+
+    <rom index="0" zip="kick.zip" md5="9838142bb7d69715cb4329c26dafec5b" type="merged|nonmerged">
+	<part crc="65924917" name="1200a-v2.b3"/>
+	<part crc="27929f52" name="1300b-v2.b4"/>
+	<part crc="69107ce6" name="1400c-v2.b5"/>
+	<part crc="04a23aa1" name="1500d-v2.d4"/>
+	<part crc="1d2834c0" name="1600e-v2.d5"/>
+	<part crc="ddf84ce1" name="1700f-v2.d6"/>
+	<part repeat="0x2000">FF</part>
+
+	<part crc="9e35c02e" name="4200-a.a7"/>
+	<part crc="ca2b7c28" name="4300-b.a8"/>	
+	<part crc="d1901551" name="4400-c.a9"/>
+	<part crc="d36ddcdc" name="4500-d.a10"/>
+
+	<part crc="2c5d6b55" name="2600a-v2.1e"/>
+	<part crc="565ea97d" name="2700b-v2.1d"/>
+	<part crc="f3be56a1" name="2800c-v2.1b"/>
+	<part crc="77da795e" name="2900d-v2.1a"/>
+
+	<part crc="b4d120f3" name="1800g-v2.g4"/>
+	<part crc="c3ba4893" name="1900h-v2.g5"/>
+    </rom>
+</misterromdescription>

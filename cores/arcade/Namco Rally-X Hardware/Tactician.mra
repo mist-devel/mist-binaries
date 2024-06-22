@@ -1,0 +1,35 @@
+<misterromdescription>
+	<name>Tactician</name>
+	<mameversion>0220</mameversion>
+	<setname>tactcian</setname>
+	<year>1980</year>
+	<manufacturer>Sega</manufacturer>
+	<rbf>rallyx</rbf>
+	<switches default="FF,FF" base="8">
+		<dip bits="4,5"   name="Lives" ids="255,5,4,3"/>
+		<dip bits="1,2"   name="Coinage" ids="4C_1C,1C_2C,2C_1C,1C_1C"/>
+		<dip bits="0"     name="Bonus Life" ids="20k/80k/100k,10k/80k/100k"/>
+	</switches>
+	<rom index="1"><part>7</part></rom>
+	<rom index="0" zip="tactcian.zip" md5="7245488c961632efdae1e859eeb707fd">
+		<part name="tacticia.001"/>
+		<part name="tacticia.002"/>
+		<part name="tacticia.003"/>
+		<part name="tacticia.004"/>
+		<part name="tacticia.005"/>
+		<part name="tacticia.006"/>
+
+		<part name="tacticia.s2"/>
+		<part name="tacticia.s1"/>
+
+		<part name="tacticia.c1"/>
+		<part name="tacticia.c2"/>
+
+		<part name="tact6301.004"/>
+
+		<part repeat="0x100">FF</part>
+
+		<part name="tact6301.003"/>
+		<part name="tact6331.002"/>
+	</rom>
+</misterromdescription>

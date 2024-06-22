@@ -1,0 +1,76 @@
+<misterromdescription>
+    <name>Legend of Hero Tonma (Japan)</name>
+    <mameversion>0245</mameversion>
+    <setname>lohtj</setname>
+    <parent>loth</parent>
+    <year>1989</year>
+    <manufacturer>Irem</manufacturer>
+    <category> </category>
+    <rbf>IremM72</rbf>
+
+    <joystick>8-way</joystick>
+    <num_buttons>3</num_buttons>
+    <buttons default="B,A,R,L" names="Shoot,Jump,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="04,02" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="3,2,4,5" name="Lives"></dip>
+        <dip bits="2" ids="Off,On" name="Demo Sound"></dip>
+        <dip bits="4,7" ids="1C/1P,2C/1P,3C/1P,4C/1P,5C/1P,6C/1P,1C/2P,1C/3P,1C/4P,1C/5P,1C/6P,2C/3P,4C/2P,5C/3P,8C/3P,Free Play" name="Coin Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Picture"></dip>
+        <dip bits="9" ids="Cocktail,Upright" name="Cabinet type"></dip>
+        <dip bits="11,12" ids="Normal,Easy,Hard,Very Hard" name="Difficulty"></dip>
+        <dip bits="13" ids="Off,On" name="Freeze Picture"></dip>
+        <dip bits="14" ids="Off,On" name="No Death Mode"></dip>
+        <dip bits="15" ids="Off,On" name="Diagnostic Test"></dip>
+    </switches>
+
+    <rom index="0" zip="lohtj.zip|loht.zip" md5="None">
+        <!-- board type -->
+        <part>01</part>
+
+        <!-- maincpu -->
+        <part>00 08 00 00</part>
+        <interleave output="16">
+            <part name="tom_c-l0-" crc="a224d928" map="01"/>
+            <part name="tom_c-h0-" crc="2a752998" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="tom_c-l3-" crc="2f049b03" map="01"/>
+            <part name="tom_c-h3-" crc="714778b5" map="10"/>
+        </interleave>
+
+        <!-- sprites -->
+        <part>01 08 00 00</part>
+        <interleave output="32">
+            <part name="r200" crc="0b83265f" map="0001"/>
+            <part name="r210" crc="8ec5f6f3" map="0010"/>
+            <part name="r220" crc="a41d3bfd" map="0100"/>
+            <part name="r230" crc="9d81a25b" map="1000"/>
+        </interleave>
+
+        <!-- gfx2 -->
+        <part>02 04 00 00</part>
+        <interleave output="32">
+            <part name="r2a0.a0" crc="3ca3e771" map="0001" />
+            <part name="r2a1.a1" crc="7a05ee2f" map="0010" />
+            <part name="r2a2.a2" crc="79aa2335" map="0100" />
+            <part name="r2a3.a3" crc="789e8b24" map="1000" />
+        </interleave>
+
+        <!-- gfx3 -->
+        <part>03 04 00 00</part>
+        <interleave output="32">
+            <part name="078.b0" crc="44626bf6" map="0001" />
+            <part name="079.b1" crc="464952cf" map="0010" />
+            <part name="080.b2" crc="3db9b2c7" map="0100" />
+            <part name="081.b3" crc="f01fe899" map="1000" />
+        </interleave>
+
+        <!-- mcu -->
+        <part>04 00 10 00</part>
+        <part name="tom_c-pr-.ic1" crc="9fa9b496"/>
+
+        <!-- samples -->
+        <part>05 01 00 00</part>
+        <part name="082" crc="3ed51d1f"/>
+    </rom>
+</misterromdescription>

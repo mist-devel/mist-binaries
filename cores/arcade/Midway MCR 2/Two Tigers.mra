@@ -1,0 +1,47 @@
+<misterromdescription>
+    <name>Two Tigers (Tron conversion)</name>
+    <mameversion>0218</mameversion>
+    <mratimestamp>202002110000</mratimestamp>
+    <year>1984</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Shooter</category>
+    <rbf>MCR2</rbf>
+    <setname>twotigerc</setname>
+    <rom index="1">
+	<part>2</part>
+    </rom>
+    <rom index="0" zip="twotiger.zip" md5="fa00775a4b4c94b464bb402b3aa2c1be" type="merged">
+	<part crc="e77a924b" name="2tgrpg0.bin"/>
+	<part crc="2699ebdc" name="2tgrpg1.bin"/>
+	<part crc="b5ca3f17" name="2tgrpg2.bin"/>
+	<part crc="8aa82049" name="2tgrpg3.bin"/>
+	<part repeat="16384">00</part>		
+	<part crc="4620d970" name="2tgra7.bin"/>
+	<part crc="e95d8cfe" name="2tgra8.bin"/>		
+	<part crc="81e6ce0e" name="2tgra9.bin"/>
+	<part repeat="4096">00</part>	
+	<part crc="52f69068" name="2tgrbg0.bin"/>
+	<part crc="758d4f7d" name="2tgrbg1.bin"/>		
+	<part crc="4abf3ca0" name="2tgrfg0.bin"/>
+	<part crc="fbcaffa5" name="2tgrfg1.bin"/>
+	<part crc="08e3e1a6" name="2tgrfg2.bin"/>
+	<part crc="9b22697b" name="2tgrfg3.bin"/>
+    </rom>
+    <rom index="0" zip="twotigerc.zip" md5="fa00775a4b4c94b464bb402b3aa2c1be" type="nonmerged">
+	<part crc="e77a924b" name="2tgrpg0.bin"/>
+	<part crc="2699ebdc" name="2tgrpg1.bin"/>
+	<part crc="b5ca3f17" name="2tgrpg2.bin"/>
+	<part crc="8aa82049" name="2tgrpg3.bin"/>
+	<part repeat="16384">00</part>		
+	<part crc="4620d970" name="2tgra7.bin"/>
+	<part crc="e95d8cfe" name="2tgra8.bin"/>		
+	<part crc="81e6ce0e" name="2tgra9.bin"/>
+	<part repeat="4096">00</part>	
+	<part crc="52f69068" name="2tgrbg0.bin"/>
+	<part crc="758d4f7d" name="2tgrbg1.bin"/>		
+	<part crc="4abf3ca0" name="2tgrfg0.bin"/>
+	<part crc="fbcaffa5" name="2tgrfg1.bin"/>
+	<part crc="08e3e1a6" name="2tgrfg2.bin"/>
+	<part crc="9b22697b" name="2tgrfg3.bin"/>
+    </rom>
+</misterromdescription>

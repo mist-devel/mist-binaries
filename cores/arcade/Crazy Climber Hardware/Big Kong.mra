@@ -1,0 +1,86 @@
+<misterromdescription>
+	<name>Big Kong</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series>Donkey Kong</series>
+	<year>1981</year>
+	<manufacturer>Falcon</manufacturer>
+	<category>Platform - Climb</category>
+
+	<setname>bigkong</setname>
+	<parent>ckong</parent>
+	<mameversion>0224</mameversion>
+	<rbf>cclimber</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>no</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="A,Start,Select,R" names="Jump,Start 1P,Start 2P,Coin"></buttons>
+
+	<switches default="80" base="8">
+		<dip bits="0,1"   name="Lives" ids="3,4,5,6"/>
+		<dip bits="2,3"   name="Bonus Life" ids="7000,10000,15000,20000"/>
+		<dip bits="4,6"   name="Coinage" ids="1C_1C,2C_1C,1C_2C,3C_1C,1C_3C,4C_1C,1C_4C,5C_1C"/>
+		<dip bits="7"     name="Cabinet" ids="Cocktail,Upright"/>
+	</switches>
+
+	<rom index="1"><part>1</part></rom>
+	<rom index="0" md5="956cf484f73b8d33db390d8e0e74e045" type="merged|nonmerged|split" zip="ckong.zip|bigkong.zip|ckongo.zip">
+		<!-- maincpu -->
+		<part crc="4c9102f1" name="dk01f7_2532.d5"/>
+		<part crc="1683e9ae" name="dk02f8_2532.f5"/>
+		<part crc="073eea32" name="dk03f9_2532.h5"/>
+		<part crc="0aab0334" name="dk04f10_2532.k5"/>
+		<part crc="45be1c6a" name="dk05f11_2532.l5"/>
+		<part crc="966bc9ab" name="n05-12.bin"/>
+		<part repeat="8192">FF</part>
+		<!-- cclimber_audio:samples -->
+		<part crc="5f0bcdfb" name="cc13j.bin"/>
+		<part crc="9003ffbd" name="cc12j.bin"/>
+		<!-- gfx1 -->
+		<part crc="2dcedd12" name="n11-06.bin"/>
+		<part crc="fa7cbd91" name="l11-05.bin"/>
+		<part crc="3375b3bd" name="k11-04.bin"/>
+		<part crc="5655cc11" name="h11-03.bin"/>
+		<!-- gfx2 -->
+		<part crc="d1352c31" name="c11-02.bin"/>
+		<part crc="d1352c31" name="c11-02.bin"/>
+		<part crc="a7a2fdbd" name="a11-01.bin"/>
+		<part crc="a7a2fdbd" name="a11-01.bin"/>
+		<!-- misc 8K -->
+		<part repeat="0x2000">00</part>
+
+		<!-- proms -->
+		<part crc="b3fc1505" name="prom.v6"/>
+		<part crc="26aada9e" name="prom.u6"/>
+		<part crc="b3fc1505" name="prom.v6"/>
+		<part crc="26aada9e" name="prom.u6"/>
+		<part crc="b3fc1505" name="prom.v6"/>
+		<part crc="26aada9e" name="prom.u6"/>
+		<part crc="b3fc1505" name="prom.v6"/>
+		<part crc="26aada9e" name="prom.u6"/>
+
+		<part repeat="0x100">00</part>
+
+		<part crc="676b3166" name="prom.t6"/>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

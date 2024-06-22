@@ -1,0 +1,39 @@
+<misterromdescription>
+	<name>Mr.Jong</name>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<series></series>
+	<year>1983</year>
+	<manufacturer>Kiwako</manufacturer>
+	<category>Puzzle</category>
+	<rbf>mrjong</rbf>
+	<about></about>
+	<resolution>15kHz</resolution>
+	<rotation>vertical</rotation>
+	<flip></flip>
+	<players>2</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons names="Button1,Start1P,Start2P,CoinA,CoinB" default="A,Start,Select,R1,L1"></buttons>
+	<rom index="0" zip="mrjong.zip" md5="none">
+		<!-- main cpu -->
+		<part name="mj00" crc="d211aed3"/>
+		<part name="mj01" crc="49a9ca7e"/>
+		<part name="mj02" crc="4b50ae6a"/>
+		<part name="mj03" crc="2c375a17"/>
+		<!-- gfx -->
+		<part name="mj21" crc="1ea99dab"/>
+		<part name="mj20" crc="7eb1d381"/>
+		<!-- prom -->
+		<part name="mj61" crc="a85e9b27"/>
+		<part name="mj60" crc="dd2b304f"/>
+	</rom>
+	<rom index="1"></rom>
+	<rom index="2"></rom>
+	<rom_3></rom_3>
+	<rom_4></rom_4>
+	<nvram></nvram>
+	<remark></remark>
+	<!-- <mratimestamp></mratimestamp> -->
+</misterromdescription>

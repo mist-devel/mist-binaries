@@ -1,0 +1,102 @@
+<misterromdescription>
+    <name>In The Hunt (World)</name>
+    <mameversion>0245</mameversion>
+    <setname>inthunt</setname>
+    <year>1993</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Shooter</category>
+    <rbf>IremM92</rbf>
+    <rotation>horizontal</rotation>
+
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Torpedo,Mine/Missle,-,-,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="00 00 00" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="3,2,4,5" name="Lives"></dip>
+        <dip bits="2,3" ids="Normal,Easy,Hard,Very Easy" name="Difficulty"></dip>
+
+        <dip bits="5" ids="Start,Any" name="Start Button"></dip>
+
+        <dip bits="6" ids="Off,On" name="Demo Sounds"></dip>
+        <dip bits="7" ids="Off,On" name="Service Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Screen"></dip>
+
+        <dip bits="12,15" ids="1C/1C,2C/1C,3C/1C,4C/1C,5C/1C,6C/1C,1C/2C,1C/3C,1C/4C,1C/5C,1C/6C,2C/3C,3C/2C,4C/3C,2S/1C,Free Play" name="Coin Mode"></dip>
+    </switches>
+
+    <rom index="0" zip="inthunt.zip" md5="None">
+        <!-- board type -->
+        <part>00</part>
+
+        <!-- maincpu -->
+        <part>00 0c 00 00</part>
+        <interleave output="16">
+            <part name="ith-h0-d.ic28" crc="52f8e7a6" map="10" />
+            <part name="ith-l0-d.ic39" crc="5db79eb7" map="01" />
+        </interleave>
+        <interleave output="16">
+            <part name="ith-h1-b.ic38" crc="fc2899df" map="10" />
+            <part name="ith-l1-b.ic27" crc="955a605a" map="01" />
+        </interleave>
+
+        <!-- gfx1 tiles -->
+        <part>01 20 00 00</part>
+        <interleave output="32">
+            <part name="ith_c0.ic26"  crc="4c1818cf" map="0001" />
+            <part name="ith_c1.ic25"  crc="91145bae" map="0010" />
+            <part name="ith_c2.ic24"  crc="fc03fe3b" map="0100" />
+            <part name="ith_c3.ic23"  crc="ee156a0a" map="1000" />
+        </interleave>
+
+        <!-- gfx2 sprites -->
+        <part>02 40 00 00</part>
+        <interleave output="32">
+            <part name="ith_000.ic34" crc="a019766e" map="0001" />
+            <part name="ith_010.ic35" crc="3fca3073" map="0010" />
+            <part name="ith_020.ic36" crc="20d1b28b" map="0100" />
+            <part name="ith_030.ic37" crc="90b6fd4b" map="1000" />
+        </interleave>
+
+        <!-- soundcpu -->
+        <part>03 02 00 00</part>
+        <interleave output="16">
+            <part name="ith-sh0.ic30" crc="209c8b7f" map="10" />
+            <part name="ith-sl0.ic31" crc="18472d65" map="01" />
+        </interleave>
+
+        <!-- soundcpu key -->
+        <part>04 00 01 00</part>
+        <part>
+            1f 90 bb 50 90 58 42 57 90 90 e9 90 90 90 90 0b
+            90 90 9d 9c 90 90 1e 90 90 b4 5b 90 90 90 90 90
+            90 90 78 c7 90 90 83 90 90 0c b0 04 90 90 90 90
+            90 90 90 90 3b c3 b5 47 90 90 90 90 59 90 90 90
+            90 90 90 38 90 90 90 90 5f a3 fa 90 e8 36 75 90
+            88 33 90 90 90 90 43 90 90 87 90 90 90 90 90 90
+            90 90 90 90 8e f3 56 90 90 90 90 26 ff 90 90 90
+            90 90 90 2a 90 8a 90 18 90 90 03 89 24 90 90 90
+            0a 90 eb 90 86 90 90 90 79 3a 90 90 90 90 a0 90
+            ea 90 90 90 90 90 2c 90 c6 90 90 46 90 aa b6 5e
+            90 90 90 90 8b 90 90 90 90 90 ba 90 b9 53 a2 90
+            90 07 90 90 90 3c 32 90 2b 90 b8 90 90 90 90 90
+            bd 90 90 90 90 81 90 d0 08 90 55 06 cf 90 90 fc
+            90 90 90 b1 bf 90 90 51 52 90 5d 90 5a 90 b2 90
+            fe 90 90 22 20 72 f6 80 02 2e 90 74 0f 90 90 90
+            90 90 90 90 bc 41 90 fb 73 90 90 90 23 d2 90 90
+        </part>
+
+        <!-- iremg20 -->
+        <part>05 08 00 00</part>
+        <part name="ith_da.ic9"  crc="318ee71a" />
+     </rom>
+     <!--hiscore support. see hiscore.sv for modified header values-->
+     <rom index="3" md5="none">
+       <part>
+       00 00 00 F0 05 FF 00 01 00 0F 00 01 00 01 02 00
+       00 0e 01 80 00 d8 00 02
+       </part>
+    </rom>
+    <nvram index="4" size="216"></nvram>
+
+</misterromdescription>

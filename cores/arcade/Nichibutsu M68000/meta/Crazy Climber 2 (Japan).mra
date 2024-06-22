@@ -1,0 +1,94 @@
+<misterromdescription>
+  <name>Crazy Climber 2 (Japan)</name>
+  <mameversion>0240</mameversion>
+  <setname>cclimbr2</setname>
+  <year>1988</year>
+  <manufacturer>Nichibutsu</manufacturer>
+  <category>Platformer</category>
+  <rbf>armedf</rbf>
+
+  <switches default="fb,ff" base="16" page_id="1" page_name="Switches">
+  <!-- DSW1 -->
+  <dip name="Lives" bits="0,1" ids="6,5,4,3"/>
+  <dip name="Bonus Life" bits="2,3" ids="60k,30k,60/130k(E),30/100k(E)"/>
+  <dip name="Demo Sounds" bits="4" ids="Off,On"/>
+  <dip name="Cabinet" bits="5" ids="Upright,Cocktail"/>
+  <dip name="Difficulty" bits="6" ids="Normal,Easy"/>
+  <dip name="Unused" bits="7" ids="On,Off"/>
+  <!-- DSW2 -->
+  <dip name="Coin A" bits="8,9" ids="Free Play,2/1,1/2,1/1"/>
+  <dip name="Coin B" bits="10,11" ids="2/3,2/1,1/2,1/1"/>
+  <dip name="Allow Continue" bits="12" ids="No,3"/>
+  <dip name="Flip Screen" bits="13" ids="On,Off"/>
+  <dip name="Invulnerability" bits="14" ids="On,Off"/>
+  <dip name="Unused" bits="15" ids="On,Off"/>
+  </switches>
+
+  <buttons names="Up,Down,Left,Right,Start (1p),Start (2p),Coin (A),Coin (B),Pause" default="A,B,X,Y,R,L,Start,Select"/>
+
+  <rom index="0" zip="cclimbr2.zip" md5="none">
+
+    <!-- maincpu - starts at 0x0 -->
+    <interleave output="16">
+      <part name="4.bin" crc="7922ea14" map="01"/>
+      <part name="1.bin" crc="2ac7ed67" map="10"/>
+    </interleave>
+    <interleave output="16">
+      <part name="6.bin" crc="7905c992" map="01"/>
+      <part name="5.bin" crc="47be6c1e" map="10"/>
+    </interleave>
+    <interleave output="16">
+      <part name="3.bin" crc="1fb110d6" map="01"/>
+      <part name="2.bin" crc="0024c15b" map="10"/>
+    </interleave>
+    <part repeat="0x20000"> ff</part>
+
+    <!-- foreground - starts at 0x80000 -->
+    <part name="7.bin" crc="cbdd3906"/>
+    <part name="8.bin" crc="b2a613c0"/>
+    <part repeat="0x20000"> ff</part>
+
+    <!-- background - starts at 0xc0000 -->
+    <part name="17.bin" crc="e24bb2d7"/>
+    <part name="18.bin" crc="56834554"/>
+    <part repeat="0x20000"> ff</part>
+
+    <!-- sprite - starts at 0x100000 -->
+    <interleave output="16">
+      <part name="15.bin" crc="4bf838be" map="01"/>
+      <part name="13.bin" crc="6b6ec999" map="10"/>
+    </interleave>
+    <interleave output="16">
+      <part name="16.bin" crc="21a265c5" map="01"/>
+      <part name="14.bin" crc="f426a4ad" map="10"/>
+    </interleave>
+
+    <!-- text - starts at 0x140000 -->
+    <part name="10.bin" crc="7f475266"/>
+    <part repeat="0x8000"> ff</part>
+
+    <!-- audiocpu - starts at 0x150000 -->
+    <part name="11.bin" crc="fe0175be"/>
+    <part name="12.bin" crc="5ddf18f2"/>
+    <part repeat="0x4000"> ff</part>
+
+    <!-- extra - starts at 0x160000 -->
+    <part repeat="0x10000"> ff</part>
+
+    <!-- mcu - starts at 0x170000 -->
+    <part repeat="0x10000"> ff</part>
+
+    <!-- nb1414m4 - starts at 0x180000 -->
+    <part name="9.bin" crc="740d260f"/>
+    <part repeat="0xc000"> ff</part>
+
+    <!-- proms - starts at 0x190000 -->
+    <part repeat="0x4000"> ff</part>
+
+    <!-- Total 0x194000 bytes - 1616 kBytes -->
+  </rom>
+
+  <rom index="1">
+    <part>04</part>
+  </rom>
+</misterromdescription>

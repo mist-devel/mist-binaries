@@ -1,0 +1,122 @@
+<misterromdescription>
+	<name>Mister Viking (315-5041)</name>
+	<setname>mrviking</setname>
+	<rbf>segasys1</rbf>
+	<mameversion>0229</mameversion>
+	<year>1984</year>
+	<manufacturer>Sega</manufacturer>
+	<players>2</players>
+	<joystick>8-way</joystick>
+	<rotation>vertical/ccw</rotation>
+	<region>World</region>
+	<buttons names="Arrow,Bomb,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="2"/>
+	<switches base="8" default="FF,CE">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		-->
+		<dip name="Maximum Credits" bits="9" ids="99,9"/>
+		<dip name="Lives" bits="10,11" ids="Infinite,5,4,3"/>
+		<dip name="Bonus Life" bits="12,13" ids="40k/30k,30k/30k/20k,40k/30k/10k,30k/30k"/>
+		<dip name="Difficulty" bits="14" ids="Hard,Easy"/>
+	</switches>
+	<rom index="1">
+		<part>06</part>
+	</rom>
+	<rom index="0" zip="mrviking.zip" type="merged" md5="f4429c4573b2b3d465950f89341170ae">
+		<!-- soundcpu, size: 0x8000 -->
+		<part crc="d712280d" name="epr-5763.3"/>
+		<part crc="d712280d" name="epr-5763.3"/>
+		<part crc="d712280d" name="epr-5763.3"/>
+		<part crc="d712280d" name="epr-5763.3"/>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part crc="14d21624" name="epr-5873.129"/>
+		<part crc="6df7de87" name="epr-5874.130"/>
+		<part crc="ac226100" name="epr-5875.131"/>
+		<part crc="e77db1dc" name="epr-5876.132"/>
+		<part crc="edd62ae1" name="epr-5755.133"/>
+		<part crc="11974040" name="epr-5756.134"/>
+		<part crc="edd62ae1" name="epr-5755.133"/>
+		<part crc="11974040" name="epr-5756.134"/>
+		<part crc="edd62ae1" name="epr-5755.133"/>
+		<part crc="11974040" name="epr-5756.134"/>
+		<part crc="edd62ae1" name="epr-5755.133"/>
+		<part crc="11974040" name="epr-5756.134"/>
+
+		<!-- sprites, size: 0x20000 -->
+		<part crc="e24682cd" name="epr-5749.86"/>
+		<part crc="6564d1ad" name="epr-5750.93"/>
+		<part crc="e24682cd" name="epr-5749.86"/>
+		<part crc="6564d1ad" name="epr-5750.93"/>
+		<part crc="e24682cd" name="epr-5749.86"/>
+		<part crc="6564d1ad" name="epr-5750.93"/>
+		<part crc="e24682cd" name="epr-5749.86"/>
+		<part crc="6564d1ad" name="epr-5750.93"/>
+
+		<!-- tiles, size: 0x18000 -->
+		<interleave output="32">
+			<part name="epr-5762.82" map="0001"/>
+			<part name="epr-5760.81" map="0010"/>
+			<part name="epr-5758.80" map="0100"/>
+			<part name="epr-5758.80" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-5761.65" map="0001"/>
+			<part name="epr-5759.64" map="0010"/>
+			<part name="epr-5757.63" map="0100"/>
+			<part name="epr-5757.63" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-5762.82" map="0001"/>
+			<part name="epr-5760.81" map="0010"/>
+			<part name="epr-5758.80" map="0100"/>
+			<part name="epr-5758.80" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-5761.65" map="0001"/>
+			<part name="epr-5759.64" map="0010"/>
+			<part name="epr-5757.63" map="0100"/>
+			<part name="epr-5757.63" map="1000"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x100 -->
+		<part crc="648350b8" name="pr-5317.106"/>
+
+		<!-- color_proms, size: 0x300 -->
+		<part repeat="0x300">00</part>
+
+		<!-- encryption_device: 315-5041 -->
+		<part>
+		28 a8 08 88 88 80 08 00
+		88 08 80 00 88 80 08 00
+		28 08 a8 88 28 a8 08 88
+		88 08 80 00 88 08 80 00
+		28 08 a8 88 88 80 08 00
+		88 80 08 00 28 a8 08 88
+		a0 80 a8 88 28 08 a8 88
+		a0 80 a8 88 a0 80 a8 88
+		88 80 08 00 88 80 08 00
+		88 08 80 00 88 80 08 00
+		a0 80 20 00 28 08 a8 88
+		a0 80 20 00 88 08 80 00
+		28 08 a8 88 a0 80 20 00
+		a0 80 20 00 a0 80 20 00
+		a0 80 a8 88 28 08 a8 88
+		a0 80 20 00 a0 80 a8 88
+		</part>
+	</rom>
+	<rom index="3" md5="none">
+		<part>
+		00 00 00 FF 00 FF 00 02
+		00 02 00 01 00 FF 00 00
+		00 00 D4 2C 00 15 59 47
+		00 00 D3 00 00 15 00 01
+		00 00 C0 86 00 03 00 02
+		</part>
+	</rom>
+	<nvram index="4" size="45"/>
+</misterromdescription>

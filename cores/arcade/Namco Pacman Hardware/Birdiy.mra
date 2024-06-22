@@ -1,0 +1,65 @@
+<misterromdescription>
+	<name>Birdiy</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1983</year>
+	<manufacturer>Mama Top</manufacturer>
+	<category>Maze</category>
+
+	<setname>birdiy</setname>
+	<parent>birdiy</parent>
+	<mameversion>0220</mameversion>
+	<rbf>pacman</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FF,FF,E9" base="8" page_id="1" page_name="Switches">
+		<dip bits="16,17" ids="2c/1cr,1c/1cr,1c/2cr,Free Play" name="Coinage" values="3,1,2,0"></dip>
+		<dip bits="18,19" ids="1,2,3,4" name="Lives"></dip>
+		</switches>
+
+	<rom index="1">
+		<part>04</part>
+		</rom>
+	<rom index="0" md5="8c4a16c4a9aca0e10a83fd3fbcbf89c3" zip="birdiy.zip">
+		<part crc="3a58f8ad" name="a6.6a"></part>
+		<part crc="fec61ea2" name="c6.6c"></part>
+		<part crc="3392783b" name="a4.4a"></part>
+		<part crc="2391d83d" name="c4.4c"></part>
+		<part crc="3a58f8ad" name="a6.6a"></part>
+		<part crc="fec61ea2" name="c6.6c"></part>
+		<part crc="3392783b" name="a4.4a"></part>
+		<part crc="2391d83d" name="c4.4c"></part>
+		<part crc="8f6bf54f" name="c1.1c"></part>
+		<part crc="10b55440" name="c3.3c"></part>
+		<part crc="8f6bf54f" name="c1.1c"></part>
+		<part crc="10b55440" name="c3.3c"></part>
+		<part crc="a9cc86bf" name="n82s129n.4k"></part>
+		<part crc="63efb927" name="n82s129n.9m"></part>
+		<part crc="77245b66" name="n82s129n.6l"></part>
+		<part crc="ff344446" name="n82s123n.10n"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

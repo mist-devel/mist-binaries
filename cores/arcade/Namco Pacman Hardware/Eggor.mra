@@ -1,0 +1,86 @@
+<misterromdescription>
+	<name>Eggor</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1983</year>
+	<manufacturer>Telko</manufacturer>
+	<category>Maze</category>
+
+	<setname>eggor</setname>
+	<parent>eggor</parent>
+	<mameversion>0220</mameversion>
+	<rbf>pacman</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FF,FF,FB" base="8" page_id="1" page_name="Switches">
+		<dip bits="22" ids="Cocktail,Upright" name="Cabinet"></dip>
+		<dip bits="16,17" ids="2c/1cr,1c/1cr,1c/2cr,Free Play" name="Coinage" values="1,3,2,0"></dip>
+		<dip bits="18,19" ids="5,4,3,2" name="Lives"></dip>
+		<dip bits="20,21" ids="150K,125K,100K,75K" name="Bonus Life after"></dip>
+		</switches>
+
+	<rom index="1">
+		<part>07</part>
+		</rom>
+	<rom index="0" md5="44f515704b366042225aba52b0f53d8b" zip="eggor.zip">
+		<part crc="818ed154" name="1.bin"></part>
+		<part crc="a4b21d93" name="5.bin"></part>
+		<part crc="5d7a23ed" name="2.bin"></part>
+		<part crc="e9dbca8d" name="6.bin"></part>
+		<part crc="4318ab85" name="3.bin"></part>
+		<part crc="03214d7f" name="7.bin"></part>
+		<part crc="dc805be4" name="4.bin"></part>
+		<part crc="f9ae204b" name="8.bin"></part>
+		<part crc="818ed154" name="1.bin"></part>
+		<part crc="a4b21d93" name="5.bin"></part>
+		<part crc="5d7a23ed" name="2.bin"></part>
+		<part crc="e9dbca8d" name="6.bin"></part>
+		<part crc="4318ab85" name="3.bin"></part>
+		<part crc="03214d7f" name="7.bin"></part>
+		<part crc="dc805be4" name="4.bin"></part>
+		<part crc="f9ae204b" name="8.bin"></part>
+		<part crc="96ad8626" name="9.bin"></part>
+		<part crc="cc324017" name="11.bin"></part>
+		<part crc="7c97f513" name="10.bin"></part>
+		<part crc="2e930602" name="12.bin"></part>
+		<part crc="96ad8626" name="9.bin"></part>
+		<part crc="cc324017" name="11.bin"></part>
+		<part crc="7c97f513" name="10.bin"></part>
+		<part crc="2e930602" name="12.bin"></part>
+		<part crc="a9cc86bf" name="82s126.1m"></part>
+		<part crc="3eb3a8e4" name="82s126.4a"></part>
+		<part crc="77245b66" name="82s126.3m"></part>
+		<part crc="2fc650bd" name="82s123.7f"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+		00 00 4C F7 00 3C 4C 00
+		00 00 4D 31 00 01 52 52
+		00 00 43 ED 00 06 00 40
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="67"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

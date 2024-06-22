@@ -1,0 +1,80 @@
+<misterromdescription>
+	<name>Woodpecker</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Set 1</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1981</year>
+	<manufacturer>Amenip</manufacturer>
+	<manufacturer>Palcom Queen River</manufacturer>
+	<category>Platform - Climb</category>
+
+	<setname>woodpeck</setname>
+	<parent>woodpeck</parent>
+	<mameversion>0220</mameversion>
+	<rbf>pacman</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FF,FF,D9" base="8" page_id="1" page_name="Switches">
+		<dip bits="22" ids="Cocktail,Upright" name="Cabinet"></dip>
+		<dip bits="16,17" ids="2c/1cr,1c/1cr,1c/2cr,Free Play" name="Coinage" values="3,1,2,0"></dip>
+		<dip bits="18,19" ids="1,2,3,4" name="Lives"></dip>
+		<dip bits="20,21" ids="5K,10K,15K,Never" name="Bonus Life after"></dip>
+		</switches>
+
+	<rom index="1">
+		<part>08</part>
+		</rom>
+	<rom index="0" md5="00ede6f2234733c7f0d471c7c6edc15f" zip="woodpeck.zip">
+		<part crc="37ea66ca" name="f.bin"></part>
+		<part crc="37ea66ca" name="f.bin"></part>
+		<part crc="37ea66ca" name="f.bin"></part>
+		<part crc="37ea66ca" name="f.bin"></part>
+		<part crc="cd115dba" name="i.bin"></part>
+		<part crc="d40b2321" name="e.bin"></part>
+		<part crc="024092f4" name="g.bin"></part>
+		<part crc="18ef0fc8" name="h.bin"></part>
+		<part crc="15a87f62" name="a.5e"></part>
+		<part crc="ab4abd88" name="c.5h"></part>
+		<part crc="5b9ba95b" name="b.5f"></part>
+		<part crc="d7b80a45" name="d.5j"></part>
+		<part crc="15a87f62" name="a.5e"></part>
+		<part crc="ab4abd88" name="c.5h"></part>
+		<part crc="5b9ba95b" name="b.5f"></part>
+		<part crc="d7b80a45" name="d.5j"></part>
+		<part crc="a9cc86bf" name="pr.1k"></part>
+		<part crc="d8772167" name="pr.4a"></part>
+		<part crc="77245b66" name="pr.3k"></part>
+		<part crc="2fc650bd" name="pr.8h"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 00 00 00 00 FF 00 02 00 02 00 01 00 08 02 08
+		FF FD 00 00 00 00 00 00
+		00 00 4E 88 00 03 00 00
+		00 00 43 ED 00 06 40 40
+		00 00 4D DA 00 01 03 03
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="10"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

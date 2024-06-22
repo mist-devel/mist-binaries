@@ -1,0 +1,33 @@
+<misterromdescription>
+    <name>Colony 7 (set 1)</name>
+    <mameversion>0216</mameversion>
+    <setname>colony7</setname>
+    <mratimestamp>201911270000</mratimestamp>
+    <year>1981</year>
+    <manufacturer>Taito</manufacturer>
+    <category>Space / Shooter</category>
+    <rbf>defender</rbf>
+
+    <rom index="1"><part>1</part></rom>
+
+    <switches>
+	<dip bits="10" name="Lives" ids="2,3"/>
+	<dip bits="11" name="Bonus" ids="20k/40k(30k/50k),30k/50k(40k/70k)"/>
+    </switches>
+
+    <rom index="0" zip="colony7.zip" md5="a7d3286ded800538d379816ade2c0d12" type="merged|nonmerged">
+	<part name="cs03.bin"/>
+	<part name="cs02.bin"/>
+	<part name="cs01.bin"/>
+	<part name="cs06.bin"/>
+	<part name="cs04.bin"/>
+	<part name="cs07.bin"/>
+	<part name="cs05.bin"/>
+	<part name="cs08.bin" repeat="4"/>
+
+	<part name="cs10.bin"/>
+	<part name="decoder.3"/>
+
+	<part name="cs11.bin"/>
+    </rom>
+</misterromdescription>

@@ -1,0 +1,58 @@
+<misterromdescription>
+	<name>Raiders5</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1984</year>
+	<manufacturer>UPL</manufacturer>
+	<manufacturer>Taito</manufacturer>
+	<category>Platform - Climb</category>
+
+	<setname>raiders5</setname>
+	<parent>ninjakun</parent>
+	<mameversion>0220</mameversion>
+	<rbf>ninjakun</rbf>
+
+	<resolution>15kHz</resolution>
+	<rotation>horizontal</rotation>
+	<flip></flip>
+
+	<players>2 (alternating)</players>
+	<joystick>2-way horizontal</joystick>
+	<special_controls></special_controls>
+	<num_buttons>2</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FE,F7" base="8" page_id="1" page_name="Switches">
+		<dip bits="0" name="Cabinet" ids="Upright,Cocktail"/>
+		<dip bits="1,2" name="Lives" ids="5,2,3,4"/>
+		<dip bits="3" name="First Bonus" ids="40000,30000"/>
+		<dip bits="4,5" name="Second Bonus" ids="No Bonus,Every 90000,Every 70000,Every 50000"/>
+		<dip bits="6" name="Excercise" ids="No,Yes"/>
+		<dip bits="7" name="Difficulty" ids="Hard,Normal"/>
+		<dip bits="11" name="High Score Names" ids="3 Letters,8 Letters"/>
+		<dip bits="12" name="Allow Continue" ids="No,Yes"/>
+		<dip bits="14" name="Free Play" ids="Yes,No"/>
+		<dip bits="15" name="Infinite Lives" ids="Yes,No"/>
+	</switches>
+
+	<rom index="1"><part>1</part></rom>
+	<rom index="0" zip="raiders5.zip" md5="83c877496c528fc21fe8a3ec67fea006">
+		<!-- gfx1 -->
+		<part name="raiders3.11f"/>
+		<part name="raiders4.11g"/>
+		<!-- gfx2 -->
+		<part name="raiders5.11n"/>
+		<part name="raiders5.11n"/>
+		<!-- main cpu -->
+		<part name="raiders5.1"/>
+		<part name="raiders5.2"/>
+		<!-- sub cpu -->
+		<part name="raiders5.2"/>
+		<part name="raiders5.2"/>
+	</rom>
+</misterromdescription>

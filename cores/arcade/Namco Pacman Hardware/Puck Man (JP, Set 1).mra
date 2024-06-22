@@ -1,0 +1,88 @@
+<misterromdescription>
+	<name>Puck Man</name>
+	<region>Japan</region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Set 1</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series>Pac-Man</series>
+	<year>1980</year>
+	<manufacturer>Namco</manufacturer>
+	<category>Maze</category>
+
+	<setname>puckman</setname>
+	<parent>puckman</parent>
+	<mameversion>0220</mameversion>
+	<rbf>pacman</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>0</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FF,FF,C9" base="8" page_id="1" page_name="Switches">
+		<dip bits="15" ids="Cocktail,Upright" name="Cabinet"></dip>
+		<dip bits="16,17" ids="2c/1cr,1c/1cr,1c/2cr,Free Play" name="Coinage" values="3,1,2,0"></dip>
+		<dip bits="18,19" ids="1,2,3,5" name="Lives"></dip>
+		<dip bits="20,21" ids="10000,15000,20000,none" name="Bonus Life After"></dip>
+		<dip bits="22" ids="Hard,normal" name="Difficulty"></dip>
+		<dip bits="23" ids="Alternative,normal" name="Ghost Names"></dip>
+		</switches>
+
+	<rom index="1"></rom>
+	<rom index="0" md5="5aa0ab717e241989d06d3af310dcf6c4" zip="puckman.zip">
+		<part crc="f36e88ab" name="pm1_prg1.6e"></part>
+		<part crc="618bd9b3" name="pm1_prg2.6k"></part>
+		<part crc="7d177853" name="pm1_prg3.6f"></part>
+		<part crc="d3e8914c" name="pm1_prg4.6m"></part>
+		<part crc="6bf4f625" name="pm1_prg5.6h"></part>
+		<part crc="a948ce83" name="pm1_prg6.6n"></part>
+		<part crc="b6289b26" name="pm1_prg7.6j"></part>
+		<part crc="17a88c13" name="pm1_prg8.6p"></part>
+		<part crc="f36e88ab" name="pm1_prg1.6e"></part>
+		<part crc="618bd9b3" name="pm1_prg2.6k"></part>
+		<part crc="7d177853" name="pm1_prg3.6f"></part>
+		<part crc="d3e8914c" name="pm1_prg4.6m"></part>
+		<part crc="6bf4f625" name="pm1_prg5.6h"></part>
+		<part crc="a948ce83" name="pm1_prg6.6n"></part>
+		<part crc="b6289b26" name="pm1_prg7.6j"></part>
+		<part crc="17a88c13" name="pm1_prg8.6p"></part>
+
+		<part crc="2066a0b7" name="pm1_chg1.5e"></part>
+		<part crc="3591b89d" name="pm1_chg2.5h"></part>
+		<part crc="9e39323a" name="pm1_chg3.5f"></part>
+		<part crc="1b1d9096" name="pm1_chg4.5j"></part>
+		<part crc="2066a0b7" name="pm1_chg1.5e"></part>
+		<part crc="3591b89d" name="pm1_chg2.5h"></part>
+		<part crc="9e39323a" name="pm1_chg3.5f"></part>
+		<part crc="1b1d9096" name="pm1_chg4.5j"></part>
+
+		<part crc="a9cc86bf" name="pm1-3.1m"></part>
+		<part crc="3eb3a8e4" name="pm1-4.4a"></part>
+		<part crc="77245b66" name="pm1-2.3m"></part>
+		<part crc="2fc650bd" name="pm1-1.7f"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 02 00
+		00 00 4E 88 00 04 00 00
+		00 00 43 ED 00 06 40 40
+		00 00 43 D1 00 01 48 48
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="11"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

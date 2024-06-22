@@ -1,0 +1,41 @@
+<misterromdescription>
+    <name>Tapper (Budweiser, 1-27-84)</name>
+    <mameversion>0218</mameversion>
+    <setname>tapper</setname>
+    <mratimestamp>20200220223714</mratimestamp>
+    <year>1983</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Maze / Food</category>
+    <rbf>mcr3</rbf>
+    <switches>
+	<dip bits="10"   name="Demo Sounds" ids="Off,On"/>
+	<dip bits="9"    name="Cabinet" ids="Upright,Cocktail"/>
+    </switches>
+    <rom index="1">
+	<part>07</part>
+    </rom>
+    <rom index="0" zip="tapper.zip" md5="833ec5cacf009c93119999e704cc34ce">
+	<part crc="bb060bb0" name="tapper_c.p.u._pg_0_1c_1-27-84.1c"/>
+	<part crc="fd9acc22" name="tapper_c.p.u._pg_1_2c_1-27-84.2c"/>
+	<part crc="b3755d41" name="tapper_c.p.u._pg_2_3c_1-27-84.3c"/>
+	<part crc="77273096" name="tapper_c.p.u._pg_3_4c_1-27-84.4c"/>
+	<part repeat="8192">FF</part>
+
+	<part crc="32509011" name="tapper_video_fg_1_a7_12-7-83.a7"/>
+	<part crc="8412c808" name="tapper_video_fg_0_a8_12-7-83.a8"/>
+	<part crc="818fffd4" name="tapper_video_fg_3_a5_12-7-83.a5"/>
+	<part crc="67e37690" name="tapper_video_fg_2_a6_12-7-83.a6"/>
+	<part crc="800f7c8a" name="tapper_video_fg_5_a3_12-7-83.a3"/>
+	<part crc="32674ee6" name="tapper_video_fg_4_a4_12-7-83.a4"/>
+	<part crc="070b4c81" name="tapper_video_fg_7_a1_12-7-83.a1"/>
+	<part crc="a37aef36" name="tapper_video_fg_6_a2_12-7-83.a2"/>
+
+	<part crc="2a30238c" name="tapper_c.p.u._bg_1_6f_12-7-83.6f"/>
+	<part crc="394ab576" name="tapper_c.p.u._bg_0_5f_12-7-83.5f"/>
+
+	<part crc="0e8bb9d5" name="tapper_sound_snd_0_a7_12-7-83.a7"/>
+	<part crc="0cf0e29b" name="tapper_sound_snd_1_a8_12-7-83.a8"/>
+	<part crc="31eb6dc6" name="tapper_sound_snd_2_a9_12-7-83.a9"/>
+	<part crc="01a9be6a" name="tapper_sound_snd_3_a10_12-7-83.a10"/>
+    </rom>
+</misterromdescription>

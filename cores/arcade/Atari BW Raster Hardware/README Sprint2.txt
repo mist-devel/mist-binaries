@@ -1,0 +1,19 @@
+----------------------------------------------------------------
+-- 
+-- Arcade: Sprint 2 from james10952001
+-- Port to MiST by Gehstock
+-- 23 November 2018
+--
+-- Keyboard inputs :
+--   ESC				: Coin
+--   F1 or F2    			: Start
+--   Space or Fire Button1		: Gas
+--   Left ALT or Fire Button2		: Gear Up
+--   Left Control or Fire Button3	: Gear Down
+--   Arrow Keys or Joy 1		: Controls Player1
+--   Joy 2				: Controls Player2
+--
+-- Joystick support.
+-- 
+-- 
+----------------------------------------------------------------

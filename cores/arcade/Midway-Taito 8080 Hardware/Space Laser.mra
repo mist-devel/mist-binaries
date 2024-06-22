@@ -1,0 +1,46 @@
+<misterromdescription>
+	<name>Space Laser</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1980</year>
+	<manufacturer>Midway</manufacturer>
+	<category>Shooter - Vertical</category>
+
+	<setname>spclaser</setname>
+	<parent>spclaser</parent>
+	<mameversion>0226</mameversion>
+	<rbf>spaceinvaders</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical</rotation>
+	<flip></flip>
+
+	<players>1</players>
+	<joystick></joystick>
+	<num_buttons>1</num_buttons>
+	<buttons default="A,Start,Select,R,L" names="Fire,-,-,-,Start 1P,Start 2P,Coin,Pause"></buttons>
+
+	<switches base="16" default="00,00,00,00,00">
+	</switches>
+
+	<rom index="1">
+		<part>08</part>
+	</rom>
+	<rom index="0" md5="none" zip="spclaser.zip|spcewarl.zip">
+		<part crc="bedc0078" name="la01"></part>
+		<part crc="43bc65c5" name="la02"></part>
+		<part crc="1083e9cc" name="la03"></part>
+		<part crc="5116b234" name="la04"></part>
+		<part repeat="8192">FF</part>
+		<part crc="aac24f34" name="01.1"></part>
+		<part crc="2bdf83a0" name="02.2"></part>
+	</rom>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

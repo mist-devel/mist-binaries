@@ -1,0 +1,81 @@
+<misterromdescription>
+	<name>Arkanoid (JP)</name>
+	<region>Japan</region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1986</year>
+	<manufacturer>Taito</manufacturer>
+	<category>Ball and Paddle</category>
+
+	<setname>arkanoidj</setname>
+	<parent>arkanoid</parent>
+	<mameversion>0220</mameversion>
+	<rbf>arkanoid</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick></joystick>
+	<special_controls>spinner</special_controls>
+	<num_buttons>0</num_buttons>
+	<button_names></button_names>
+
+	<switches default="81" page_id="1" page_name="Switches" base="8">
+		<dip bits="0" ids="Cocktail,Upright" name="Cabinet type"></dip>
+		<dip bits="1" ids="1c/1cr,1c/2cr" name="Credits"></dip>
+		<dip bits="2" ids="3,5" name="Lives"></dip>
+		<dip bits="3" ids="20K/60K+,20000 only" name="Bonus"></dip>
+		<dip bits="4" ids="Easy,Hard" name="Difficulty"></dip>
+		<dip bits="5" ids="Off,On" name="Test mode"></dip>
+		<dip bits="6" ids="Off,On" name="Flip screen"></dip>
+		<dip bits="7" ids="Off,On" name="Continues"></dip>
+		</switches>
+
+	<rom index="1"></rom>
+	<rom index="0" md5="none" zip="arkanoid.zip|arkatayt.zip">
+		<part crc="154e2c6f" name="ic81-v.3f"></part>
+		<part crc="4fa8cefa" name="ic82-w.5f"></part>
+		<part crc="038b74ba" name="a75-03.ic64"></part>
+		<part crc="71fae199" name="a75-04.ic63"></part>
+		<part crc="c76374e2" name="a75-05.ic62"></part>
+		<part crc="0af8b289" name="a75-07.ic24"></part>
+		<part crc="abb002fb" name="a75-08.ic23"></part>
+		<part crc="a7c6c277" name="a75-09.ic22"></part>
+		<patch offset="0x33C2">49</patch>
+		<patch offset="0x33F4">49</patch>
+		<patch offset="0x3437">49</patch>
+		<patch offset="0x5042">	
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00 FF 00 00 00 00 00
+			00 00 00 00 00
+		</patch>
+		<patch offset="0x7B82">4E 4F 54 49 43 45 BE 54</patch>
+		<patch offset="0x7D9F">49</patch>
+		<patch offset="0x8000">15</patch>
+		<patch offset="0x9713">EB</patch>
+		<patch offset="0x9769">AF</patch>
+		<patch offset="0xBDA5">ED</patch>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 80 00 00 00 FF 00 02 00 02 00 01 00 FF 02 00
+		00 00 EF 79 00 23 00 52
+		00 00 C4 DF 00 03 00 00
+		</part>
+	</rom>
+	<nvram index="4" size="38"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

@@ -1,0 +1,88 @@
+<misterromdescription>
+    <name>Spelunker 2</name>
+    <mameversion>0216</mameversion>
+    <setname>spelunk2</setname>
+    <manufacturer>Irem</manufacturer>
+    <rbf>iremm62</rbf>
+    <switches>
+        <!-- DSW1 -->
+        <dip bits="8,9"   name="Energy Decrease" ids="Slow,Medium,Fast,Fastest"/>
+        <dip bits="10,11" name="Lives" ids="3,2,4,5"/>
+    </switches>
+    <rom index="1"><part>0A</part></rom>
+    <rom index="0" zip="spelunk2.zip" md5="5052a1aaf3f39b0a40babfcc00e9652d" type="merged|nonmerged">
+      <!-- CPU1, 128k -->
+      <part name="sp2-a.4e"/>
+      <part name="sp2-a.4d"/>
+
+      <part name="sp2-r.7b"/>
+      <part repeat="0x4000">FF</part>
+
+      <part name="sp2-r.7d"/>
+      <part name="sp2-r.7c"/>
+
+      <!-- SND CPU2, 64k -->
+      <part repeat="0x8000">FF</part>
+      <part name="sp2-a.3d"/>
+      <part name="sp2-a.3f"/>
+
+      <!-- GFX1, 128k -->
+      <interleave output="32">
+          <part name="sp2-r.1d" map="0001"/>
+          <part name="sp2-r.3b" map="0010"/>
+          <part name="sp2-r.1b" map="0100"/>
+          <part name="sp2-r.1b" map="1000"/>
+      </interleave>
+
+      <!-- GFX2, 256k -->
+      <interleave output="32">
+          <part name="sp2-b.4k" map="0001"/>
+          <part name="sp2-b.3n" map="0010"/>
+          <part name="sp2-b.4c" map="0100"/>
+          <part name="sp2-b.4c" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="sp2-b.4f" map="0001"/>
+          <part name="sp2-b.4n" map="0010"/>
+          <part name="sp2-b.4e" map="0100"/>
+          <part name="sp2-b.4e" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="sp2-b.4k" map="0001"/>
+          <part name="sp2-b.3n" map="0010"/>
+          <part name="sp2-b.4c" map="0100"/>
+          <part name="sp2-b.4c" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="sp2-b.4f" map="0001"/>
+          <part name="sp2-b.4n" map="0010"/>
+          <part name="sp2-b.4e" map="0100"/>
+          <part name="sp2-b.4e" map="1000"/>
+      </interleave>
+
+      <!-- GFX3, 64k -->
+      <interleave output="32">
+          <part name="sp2-r.4p" map="0001"/>
+          <part name="sp2-r.4m" map="0010"/>
+          <part name="sp2-r.4l" map="0100"/>
+          <part name="sp2-r.4l" map="1000"/>
+      </interleave>
+
+      <!-- spr_color_proms, 3*256b -->
+      <part name="sp2-b.1m"/>
+      <part name="sp2-b.1n"/>
+      <part name="sp2-b.1l"/>
+
+      <!-- chr_color_proms, 3*256b -->
+      <part name="sp2-r.1k"/>
+      <part name="sp2-r.2k"/>
+
+      <!-- fg_color_proms, 3*256b -->
+      <part name="sp2-r.2j"/>
+      <part repeat="0x200">FF</part>
+
+      <!-- spr_height_prom -->
+      <part name="sp2-b.5p"/>
+
+    </rom>
+</misterromdescription>

@@ -1,0 +1,50 @@
+<misterromdescription>
+	<name>Tri-pool</name>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<series></series>
+	<year>1984</year>
+	<manufacturer>Noma (Casino Tech license)</manufacturer>
+	<category></category>
+	<rbf>freeze</rbf>
+	<about></about>
+	<resolution>15kHz</resolution>
+	<rotation>vertical</rotation>
+	<flip></flip>
+	<players>2</players>
+	<joystick>2-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons names="Button1,Button2,Button3,Button4,Button5,Start1P,Start2P,CoinA,CoinB" default="A,Start,Select,R1,L1"></buttons>
+	<switches default="00">
+		<dip bits="0,1" name="CoinB" ids="1C_1C,1C_2C,1C_3C,1C_5C"/>
+		<dip bits="2,3" name="CoinA" ids="4C_1C,3C_1C,2C_1C,1C_1C"/>
+	</switches>
+	<rom index="0" zip="tripool.zip" md5="none">
+		<!-- main cpu -->
+		<part name="tri73a.bin" crc="96893aa7"/>
+		<part repeat="4096">00</part>
+		<part name="tri62a.bin" crc="3299dc65"/>
+		<part name="tri52b.bin" crc="27ef765e"/>
+		<part name="tri33c.bin" crc="d7ef061d"/>
+		<part name="tri45c.bin" crc="51b813b1"/>
+		<part name="tri25d.bin" crc="8e64512d"/>
+		<part name="tri13d.bin" crc="ad268e9b"/>
+		<!-- audio cpu -->
+		<part name="trisnd.bin" crc="945c4b8b"/>
+		<part repeat="4096">00</part>
+		<!-- gfx -->
+		<part name="tri105a.bin" crc="366a753c"/>
+		<part repeat="4096">00</part>
+		<part name="tri93a.bin" crc="35213782"/>
+		<part repeat="4096">00</part>
+	</rom>
+	<!-- decryption scheme - 0 = no encryption, 1 = treahunt, 2 = striv -->
+	<rom index="1"><part>4</part></rom>
+	<rom index="2"></rom>
+	<rom_3></rom_3>
+	<rom_4></rom_4>
+	<nvram></nvram>
+	<remark></remark>
+	<!-- <mratimestamp></mratimestamp> -->
+</misterromdescription>

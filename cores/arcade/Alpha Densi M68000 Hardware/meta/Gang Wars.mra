@@ -1,0 +1,73 @@
+<misterromdescription>
+    <name>Gang Wars</name>
+    <setname>gangwars</setname>
+    <rbf>alpha68k</rbf>
+    <mameversion>0249</mameversion>
+    <year>1989</year>
+    <manufacturer>Alpha Denshi Co.</manufacturer>
+    <region>World</region>
+    <joystick>8-Way</joystick>
+
+    <switches default="ff,ff" base="16" page_id="1" page_name="Switches">
+        <!-- IN3 -->
+        <dip name="Lives" bits="3" ids="4,3"/>
+        <dip name="Timer Speed" bits="4" ids="Slow,Normal"/>
+        <dip name="Difficulty" bits="5,6" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Demo Sounds" bits="7" ids="Off,On"/>
+        <!-- IN4 -->
+        <dip name="Coin Slots" bits="8" ids="1,2"/>
+        <dip name="Coinage" bits="9,11" ids="5/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Flip Screen" bits="12" ids="On,Off"/>
+        <dip name="Freeze" bits="13" ids="On,Off"/>
+    </switches>
+
+    <buttons names="Kick,Punch,Jump,P1 Start,P2 Start,Coin A,Coin B,Pause" default="A,B,X,Y,R,L,Start"/>
+
+    <rom index="0" zip="gangwars.zip" md5="None">
+
+        <part>01 3A</part>
+
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="gw-ver1-e1.19c" crc="7752478e" map="01"/>
+            <part name="gw-ver1-e2.19d" crc="c2f3b85e" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="gw-ver1-e3.18c" crc="2a5fe86e" map="01"/>
+            <part name="gw-ver1-e4.18d" crc="c8b60c53" map="10"/>
+        </interleave>
+
+        <!-- audiocpu - starts at 0x80000 -->
+        <part name="gw-12.10f" crc="e6d6c9cf"/>
+        <part repeat="0x10000"> FF</part>
+        <part name="gw-11.11f" crc="7b9f2608"/>
+        <part repeat="0x10000"> FF</part>
+        <part name="gw-10.13f" crc="eb305d42"/>
+        <part repeat="0x10000"> FF</part>
+        <part name="gw-9.15f" crc="84e5c946"/>
+        <part repeat="0x10000"> FF</part>
+
+        <!-- gfx1 - starts at 0x100000 -->
+        <part name="gw-13.4l" crc="b75bf1d0"/>
+        <part repeat="0xF0000"> FF</part>
+
+        <!-- gfx2 - starts at 0x200000 -->
+        <interleave output="32">
+            <part name="guernica-c3.17h" crc="281a4138" map="0001"/>
+            <part name="guernica-c2.18h" crc="2fcbea97" map="0010"/>
+            <part name="guernica-c1.20h" crc="b0fd1c23" map="0100"/>
+            <part name="guernica-c0.21h" crc="e60c9882" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="gw-5.21f" crc="9ef36031" map="0001"/>
+            <part name="gw-6.20f" crc="ddbbcda7" map="0010"/>
+            <part name="gw-7.18f" crc="4656d377" map="0100"/>
+            <part name="gw-8.17f" crc="798ed82a" map="1000"/>
+        </interleave>
+
+        <!-- mcu - starts at 0x480000 -->
+        <!-- <part name="alpha.mcu" crc=""/> -->
+
+        <!-- Total 0x481000 bytes - 4612 kBytes -->
+    </rom>
+</misterromdescription>

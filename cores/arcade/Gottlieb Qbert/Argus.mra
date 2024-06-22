@@ -1,0 +1,51 @@
+
+<misterromdescription>
+	<name>Argus</name>
+	<mameversion>0228</mameversion>
+	<setname>argusg</setname>
+	<mratimestamp>20201231150731</mratimestamp>
+	<year>1983</year>
+	<manufacturer>Gottlieb</manufacturer>
+	<category>Platform</category>
+	<rbf>qbert</rbf>
+	<buttons names="Service Select,Start 1P,Start 2P,Coin" default="A,Start,Select,R"/>
+	<switches default="01"  page_id="1" page_name="Switches" base="16">
+		<dip bits="0"   name="Demo Sounds" ids="On,Off"></dip>
+		<dip bits="3"   name="Free Play"   ids="Off,On"></dip>
+		<dip bits="6"   name="Difficulty"  ids="Normal,Hard"></dip>
+	</switches>
+	<rom index="1">
+		<part>7</part>
+	</rom>
+	<rom index="0" zip="argusg.zip" md5="none">
+		<!-- 4/5 roms, 8k each -->
+		<part crc="e1906355" name="arg_rom0_2764.c11c12"/>
+		<part crc="733d3d44" name="arg_rom1_2764.c12c13"/>
+		<part crc="b5e9ee77" name="arg_rom2_2764.c13c14"/>
+		<part crc="4dc2914c" name="arg_rom3_2764.c14c15"/>
+		<part crc="2f48bd78" name="arg_rom4_2764.c16"/>
+
+		<!-- ram section used as rom -->
+		<part crc="5d35b83e" name="arg_ram2_2732.c7"/>
+		<part crc="7180e823" name="arg_ram4_2732.c9c10"/>
+
+		<!-- sound -->
+		<part crc="3a6cf455" name="arg_snd1_2716.u5"/>
+		<part crc="ddf32040" name="arg_snd2_2716.u6"/>
+		<part crc="3a6cf455" name="arg_snd1_2716.u5"/>
+		<part crc="ddf32040" name="arg_snd2_2716.u6"/>
+
+		<!-- no bg, used as ram -->
+		<part repeat="8192">00</part>
+
+		<!-- foreground roms -->
+		<part crc="cdb6e25c" name="arg_fg3_2764.k7k8"/>
+		<part crc="cdb6e25c" name="arg_fg3_2764.k7k8"/>
+		<part crc="f10af1be" name="arg_fg2_2764.k6"/>
+		<part crc="f10af1be" name="arg_fg2_2764.k6"/>
+		<part crc="5add96e5" name="arg_fg1_2764.k5"/>
+		<part crc="5add96e5" name="arg_fg1_2764.k5"/>
+		<part crc="5b7bd588" name="arg_fg0_2764.k4"/>
+		<part crc="5b7bd588" name="arg_fg0_2764.k4"/>
+	</rom>
+</misterromdescription>

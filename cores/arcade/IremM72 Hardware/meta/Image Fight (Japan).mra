@@ -1,0 +1,83 @@
+<misterromdescription>
+    <name>Image Fight (Japan)</name>
+    <mameversion>0245</mameversion>
+    <setname>imgfightj</setname>
+    <parent>imgfight</parent>
+    <year>1988</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Shooter</category>
+    <rotation>vertical (ccw)</rotation>
+    <rbf>IremM72</rbf>
+
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,R,L" names="Attack,Speed Change,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="00,0A" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="3,2,4,5" name="Crafts"></dip>
+        <dip bits="2,3" ids="Normal,Hard,Hardest,Debug" name="Difficulty" />
+        <dip bits="4,7" ids="1C/1P,2C/1P,3C/1P,4C/1P,5C/1P,6C/1P,1C/2P,1C/3P,1C/4P,1C/5P,1C/6P,2C/3P,4C/2P,5C/3P,8C/3P,Free Play" name="Coin Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Picture"></dip>
+        <dip bits="9" ids="Cocktail,Upright" name="Cabinet type"></dip>
+        <dip bits="11" ids="Off,On" name="Attract Mode Sound"></dip>
+        <dip bits="13" ids="Off,On" name="Freeze Picture"></dip>
+        <dip bits="15" ids="Off,On" name="Service Mode"></dip>
+    </switches>
+
+    <rom index="1"><part>01</part></rom>
+    <!-- ROM data -->
+    <rom index="0" zip="imgfightj.zip|imgfight.zip" md5="none">
+        <!-- board type -->
+        <part>01</part>
+
+        <!-- maincpu -->
+        <part>00 08 00 00</part>
+        <interleave output="16">
+            <part name="if-c-h0.ic40" crc="592d2d80" map="10" />
+            <part name="if-c-l0.ic37" crc="61f89056" map="01" />
+        </interleave>
+        <interleave output="16">
+            <part name="if-c-h0.ic40" crc="592d2d80" map="10" />
+            <part name="if-c-l0.ic37" crc="61f89056" map="01" />
+        </interleave>
+        <interleave output="16">
+            <part name="if-c-h3.ic43" crc="ea030541" map="10" />
+            <part name="if-c-l3.ic34" crc="c66ae348" map="01" />
+        </interleave>
+
+        <!-- sprites -->
+        <part>01 08 00 00</part>
+        <interleave output="32">
+            <part name="if-c-00.ic53" crc="745e6638" map="0001" />
+            <part name="if-c-10.ic51" crc="b7108449" map="0010" />
+            <part name="if-c-20.ic49" crc="aef33cba" map="0100" />
+            <part name="if-c-30.ic47" crc="1f98e695" map="1000" />
+        </interleave>
+
+        <!-- gfx2 -->
+        <part>02 04 00 00</part>
+        <interleave output="32">
+            <part name="if-a-a0.ic21" crc="34ee2d77" map="0001" />
+            <part name="if-a-a1.ic22" crc="6bd2845b" map="0010" />
+            <part name="if-a-a2.ic20" crc="090d50e5" map="0100" />
+            <part name="if-a-a3.ic23" crc="3a8e3083" map="1000" />
+        </interleave>
+
+        <!-- gfx3 -->
+        <part>03 04 00 00</part>
+        <interleave output="32">
+            <part name="if-a-b0.ic26" crc="b425c829" map="0001" />
+            <part name="if-a-b1.ic27" crc="e9bfe23e" map="0010" />
+            <part name="if-a-b2.ic25" crc="256e50f2" map="0100" />
+            <part name="if-a-b3.ic24" crc="4c682785" map="1000" />
+        </interleave>
+
+        <!-- mcu -->
+        <part>04 00 10 00</part>
+        <part name="if_c-pr-.ic1" crc="ef0d5098" />
+
+        <!-- samples -->
+        <part>05 02 00 00</part>
+        <part name="if-c-v0.ic44" crc="cb64a194" />
+        <part name="if-c-v1.ic45" crc="45b68bf5" />
+    </rom>
+</misterromdescription>

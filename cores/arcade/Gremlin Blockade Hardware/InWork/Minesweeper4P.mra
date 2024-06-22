@@ -1,0 +1,36 @@
+<misterromdescription>
+	<name>Minesweeper 4 Player</name>
+	<year>1977</year>
+	<manufacturer>Gremlin</manufacturer>
+
+	<setname>mineswpr</setname>
+	<mameversion>0229</mameversion>
+	<rbf>blockade</rbf>
+
+	<buttons default="A,Start,R,L" names="Fire,Start,Coin,Pause"></buttons>
+	<switches default="0"  page_id="1" page_name="Switches" base="8">
+		<dip bits="0" name="Cabinet" ids="Upright,Cocktail"/>
+		<dip bits="1" name="Demo Sounds" ids="Off,On"/>
+		<dip bits="2,3" name="Lives" ids="6,5,4,3"/>
+		<dip bits="4,5" name="Overlay Colour" ids="Green,White,Yellow,Red"/>
+	</switches>
+
+	<rom index="1"><part>05</part></rom>
+	<rom index="0" md5="none" zip="mineswpr.zip">
+		<!-- GAME ROMS -->
+		<part crc="none" name="mineswee.h0p"/>
+		<part crc="none" name="mineswee.l0p"/>
+		<part crc="none" name="mineswee.h0p"/>
+		<part crc="none" name="mineswee.l0p"/>
+
+		<!-- GFX PROMS -->
+		<part crc="none" name="mineswee.cms"/>
+		<part crc="none" name="mineswee.cls"/>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+</misterromdescription>

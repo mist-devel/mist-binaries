@@ -1,0 +1,75 @@
+<misterromdescription>
+    <name>Kid no Hore Hore Daisakusen</name>
+    <mameversion>0240</mameversion>
+    <setname>horekid</setname>
+    <year>1987</year>
+    <manufacturer>Nichibutsu</manufacturer>
+    <category>Platformer</category>
+    <rbf>terracresta</rbf>
+
+    <switches default="8F,AF" base="16" page_id="1" page_name="Switches">
+        <!-- DSW -->
+        <dip name="Lives" bits="0,1" ids="6,5,4,3"/>
+        <dip name="Bonus Life" bits="2,3" ids="50k/90k(E),20k/90k(E),50k/60k(E),20k/60k(E)"/>
+        <dip name="Demo Sounds" bits="4" ids="On,Off"/>
+        <dip name="Cabinet" bits="5" ids="Upright,Cocktail"/>
+        <dip name="Difficulty" bits="6,7" ids="Hardest,Hard,Normal,Easy"/>
+        <dip name="Coin A" bits="8,9" ids="Free Play,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="10,11" ids="2/3,2/1,1/2,1/1"/>
+        <dip name="Flip Screen" bits="13" ids="On,Off"/>
+        <dip name="Debug Mode" bits="14,15" ids="Off,Off,On,Off"/>
+    </switches>
+
+    <buttons names="Dig/Burry,Open/Close Door,Start (1p),Start (2p),Coin,Pause" default="A,B,X,R,L,Start"/>
+
+    <rom index="0" zip="horekid.zip" md5="None">
+
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="horekid.01" crc="a282faf8" map="01"/>
+            <part name="horekid.03" crc="90ec840f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="horekid.02" crc="ee7d52bb" map="01"/>
+            <part name="horekid.04" crc="375c0c50" map="10"/>
+        </interleave>
+
+        <!-- gfx2 - starts at 0x20000 -->
+        <part name="horekid.05" crc="da25ae10"/>
+        <part name="horekid.06" crc="616e4321"/>
+        <part name="horekid.07" crc="8c7d2be2"/>
+        <part name="horekid.08" crc="a0066b02"/>
+
+        <!-- gfx3 - starts at 0x40000 -->
+        <part name="horekid.12" crc="a3caa07a"/>
+        <part name="horekid.13" crc="0e48ff8e"/>
+        <part name="horekid.14" crc="e300747a"/>
+        <part name="horekid.15" crc="51105741"/>
+
+        <!-- gfx1 - starts at 0x60000 -->
+        <part name="horekid.16" crc="104b77cc"/>
+        <part repeat="0xE000"> FF</part>
+
+        <!-- audiocpu - starts at 0x70000 -->
+        <part name="horekid.09" crc="49cd3b81"/>
+        <part name="horekid.10" crc="c1eaa938"/>
+        <part name="horekid.11" crc="0a2bc702"/>
+
+        <!-- prot_chip - starts at 0x7C000 -->
+        <part name="horekid.17" crc="1d8d592b"/>
+
+        <!-- proms - starts at 0x7E000 -->
+        <part name="kid_prom.10f" crc="ca13ce23"/>
+        <part name="kid_prom.11f" crc="fb44285a"/>
+        <part name="kid_prom.12f" crc="40d41237"/>
+        <part name="kid_prom.2g" crc="4b9be0ed"/>
+
+        <!-- user1 - starts at 0x7E400 -->
+        <part name="kid_prom.4e" crc="e4fb54ee"/>
+        <!-- Total 0x7E500 bytes - 505 kBytes -->
+    </rom>
+
+    <rom index="1">
+        <part>02</part>
+    </rom>
+</misterromdescription>

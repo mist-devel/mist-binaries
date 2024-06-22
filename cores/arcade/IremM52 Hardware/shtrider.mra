@@ -1,0 +1,32 @@
+<misterromdescription>
+    <name>Shotrider</name>
+    <mameversion>0216</mameversion>
+    <setname>shtrider</setname>
+    <mratimestamp>201911270000</mratimestamp>
+    <year>1983</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Racing / Motorbike</category>
+    <rbf>travrusa</rbf>
+    <rom index="1"><part>1</part></rom>
+    <rom index="0" zip="shtrider.zip" md5="9e4c8423a33f0c5bf558d475d89e041a" type="merged|nonmerged">
+	<part name="sr01a.bin"/>
+	<part name="sr02a.bin"/>
+	<part name="sr03a.bin"/>
+	<part name="sr04a.bin"/>
+
+	<part name="sr11a.bin"/>
+
+	<part name="sr05a.bin"/>
+	<part name="sr06a.bin"/>
+	<part name="sr07a.bin"/>
+
+	<part name="sr08a.bin"/>
+	<part name="sr09a.bin"/>
+	<part name="sr10b.bin"/>
+
+	<part name="1.bpr"/>
+	<part name="2.bpr"/>
+	<part name="3.bpr"/>
+	<part name="4.bpr"/>
+    </rom>
+</misterromdescription>

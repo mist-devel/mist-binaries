@@ -1,0 +1,34 @@
+<misterromdescription>
+	<name>Ozma Wars</name>
+	<mameversion>0226</mameversion>
+	<setname>ozmavars</setname>
+	<mratimestamp>20201030010603</mratimestamp>
+	<year>1980</year>
+	<manufacturer>SNK</manufacturer>
+	<category></category>
+	<rbf>spaceinvaders</rbf>
+	<mameinfo parent="0" cpp="8080bw" input="ozmawars"/>
+	<display type="raster" rotate="270"/>
+	<switches base="16" default="00,00,00,00,00">
+		<dip bits="16,17" name="Energy" ids="15000,20000,25000,35000"/>
+		<dip bits="19"    name="Bonus Energy" ids="15000,10000"/>
+		<dip bits="19"    name="Invincible Test" ids="Off,On"/>
+		<dip bits="23"    name="Coinage" ids="1C_1C,1C_2C"/>
+	</switches>
+	<buttons names="Fire,-,-,-,Start 1P,Start 2P,Coin" default="A,Start,Select,R"/>
+	<rom index="0" zip="ozmawars.zip" md5="none">
+		<part name="mw01"/>
+		<part name="mw02"/>
+		<part name="mw03"/>
+		<part name="mw04"/>
+		<part name="mw05"/>
+		<part name="mw06"/>
+		<part repeat="4096">00</part>
+
+		<part name="01.1"/>
+		<part name="02.2"/>
+	</rom>
+	<rom index="1">
+		<part>07</part>
+	</rom>
+</misterromdescription>

@@ -1,0 +1,38 @@
+<misterromdescription>
+	<name>Squash (Itisa)</name>
+	<mameversion>0220</mameversion>
+	<setname>squaitsa</setname>
+	<mratimestamp>20200427161917</mratimestamp>
+	<year>1984</year>
+	<manufacturer>Itisa</manufacturer>
+	<category>Sports / Squash</category>
+	<rbf>bagman</rbf>
+	<switches default="5F" base="8">
+		<dip bits="0"   name="Coinage" ids="2c/1cr,1c/1cr"/>
+		<dip bits="1,2" name="Max Points" ids="21,15,11,7"/>
+		<dip bits="3,4" name="Difficulty" ids="Level 1,Level 2,Level 3,Level 4"/>
+		<dip bits="5"   name="Language" ids="English,Spanish"/>
+		<dip bits="6"   name="Body Fault" ids="On,Off"/>
+	</switches>
+	<rom index="1">
+		<part>03</part>
+	</rom>
+	<rom index="0" zip="squaitsa.zip" md5="610d4d6ce7a36c42030c54958ca7ab49">
+		<part crc="04128d92" name="sq5.3.9e"/>
+		<part crc="4ff7dd56" name="sq6.4.9f"/>
+		<part crc="e46ecda6" name="sq7.5.9j"/>
+		<part crc="04128d92" name="sq5.3.9e"/>
+		<part crc="4ff7dd56" name="sq6.4.9f"/>
+		<part crc="e46ecda6" name="sq7.5.9j"/>
+		<part crc="04128d92" name="sq5.3.9e"/>
+		<part crc="4ff7dd56" name="sq6.4.9f"/>
+		<part repeat="32768">00</part>
+		<part crc="0eb6ecad" name="sq2.1.1e"/>
+		<part crc="b6d563e5" name="sq1.1c"/>
+		<part crc="8d875b0e" name="sq4.2.1j"/>
+		<part crc="0d9d87e6" name="sq3.1f"/>
+		<part repeat="8192">00</part>
+		<part crc="06eab7ce" name="mmi6331.3p"/>
+		<part crc="86c1e7db" name="mmi6331.3r"/>
+	</rom>
+</misterromdescription>

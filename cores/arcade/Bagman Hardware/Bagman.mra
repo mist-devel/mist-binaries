@@ -1,0 +1,37 @@
+<misterromdescription>
+	<name>Bagman</name>
+	<mameversion>0220</mameversion>
+	<setname>bagman</setname>
+	<mratimestamp>20200427161917</mratimestamp>
+	<year>1982</year>
+	<manufacturer>Valadon Automation</manufacturer>
+	<category>Platform / Extra</category>
+	<rbf>bagman</rbf>
+	<switches default="F6" base="8">
+		<dip bits="0,1" name="Lives" ids="5,4,3,2"/>
+		<dip bits="2"   name="Coinage" ids="2c/1cr,1c/1cr"/>
+		<dip bits="3,4" name="Difficulty" ids="Hardest,Hard,Medium,Easy"/>
+		<dip bits="5"   name="Language" ids="French,English"/>
+		<dip bits="6"   name="Bonus" ids="40000,30000"/>
+	</switches>
+	<rom index="1">
+		<part>00</part>
+	</rom>
+	<rom index="0" zip="bagman.zip" md5="893dab67883c2dbbe4e58488c2cae865">
+		<part crc="e0156191" name="e9_b05.bin"/>
+		<part crc="7b758982" name="f9_b06.bin"/>
+		<part crc="302a077b" name="f9_b07.bin"/>
+		<part crc="f04293cb" name="k9_b08.bin"/>
+		<part crc="68e83e4f" name="m9_b09s.bin"/>
+		<part crc="1d6579f7" name="n9_b10.bin"/>
+		<part repeat="40960">00</part>
+		<part crc="4a0a6b55" name="e1_b02.bin"/>
+		<part crc="705193b2" name="c1_b01.bin"/>
+		<part crc="c680ef04" name="j1_b04.bin"/>
+		<part crc="dba1eda7" name="f1_b03s.bin"/>
+		<part crc="2e0057ff" name="r9_b11.bin"/>
+		<part crc="b2120edd" name="t9_b12.bin"/>
+		<part crc="2a855523" name="p3.bin"/>
+		<part crc="ae6f1019" name="r3.bin"/>
+	</rom>
+</misterromdescription>

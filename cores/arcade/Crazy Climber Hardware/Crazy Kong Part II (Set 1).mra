@@ -1,0 +1,85 @@
+<misterromdescription>
+	<name>Crazy Kong Part II</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Set 1</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series>Donkey Kong</series>
+	<year>1981</year>
+	<manufacturer>Falcon</manufacturer>
+	<category>Platform - Climb</category>
+
+	<setname>ckongpt2</setname>
+	<parent>ckongpt3</parent>
+	<mameversion>0224</mameversion>
+	<rbf>cclimber</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>no</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="A,Start,Select,R" names="Jump,Start 1P,Start 2P,Coin"></buttons>
+
+	<switches default="80" base="8">
+		<dip bits="0,1"   name="Lives" ids="3,4,5,6"/>
+		<dip bits="2,3"   name="Bonus Life" ids="7000,10000,15000,20000"/>
+		<dip bits="4,5,6" name="Coinage" ids="1C_1C,2C_1C,1C_2C,3C_1C,1C_3C,4C_1C,1C_4C,5C_1C"/>
+		<dip bits="7"     name="Cabinet" ids="Cocktail,Upright"/>
+	</switches>
+
+	<rom index="1"><part>1</part></rom>
+	<rom index="0" md5="2a5767e3235e5d3ef8bad89bbf977d82" type="merged|nonmerged|split" zip="ckongpt2.zip">
+		<!-- maincpu -->
+		<part crc="b27df032" name="7.5d"/>
+		<part crc="5dc1aaba" name="8.5e"/>
+		<part crc="c9054c94" name="9.5h"/>
+		<part crc="069c4797" name="10.5k"/>
+		<part crc="ae159192" name="11.5l"/>
+		<part crc="966bc9ab" name="12.5n"/>
+		<part repeat="8192">FF</part>
+		<!-- cclimber_audio:samples -->
+		<part crc="5f0bcdfb" name="14.5s"/>
+		<part crc="9003ffbd" name="13.5p"/>
+		<!-- gfx1 -->
+		<part crc="2dcedd12" name="6.11n"/>
+		<part crc="fa7cbd91" name="5.11l"/>
+		<part crc="3375b3bd" name="4.11k"/>
+		<part crc="5655cc11" name="3.11h"/>
+		<!-- gfx2 -->
+		<part crc="d1352c31" name="2.11c"/>
+		<part crc="d1352c31" name="2.11c"/>
+		<part crc="a7a2fdbd" name="1.11a"/>
+		<part crc="a7a2fdbd" name="1.11a"/>
+		<!-- misc 8K -->
+		<part repeat="0x2000">00</part>
+		<!-- proms -->
+		<part crc="b3fc1505" name="prom.v6"/>
+		<part crc="26aada9e" name="prom.u6"/>
+		<part crc="b3fc1505" name="prom.v6"/>
+		<part crc="26aada9e" name="prom.u6"/>
+		<part crc="b3fc1505" name="prom.v6"/>
+		<part crc="26aada9e" name="prom.u6"/>
+		<part crc="b3fc1505" name="prom.v6"/>
+		<part crc="26aada9e" name="prom.u6"/>
+
+		<part repeat="0x100">00</part>
+
+		<part crc="676b3166" name="prom.t6"/>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

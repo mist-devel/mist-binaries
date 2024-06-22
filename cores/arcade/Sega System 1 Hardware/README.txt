@@ -1,0 +1,81 @@
+-- Arcade: SEGA System 1  port to MiST by Slingshot
+--
+-- Usage:
+-- - Create ROM and ARC files from the MRA files in the meta directory
+--   using the MRA utility.
+--   Example: mra -A -z /path/to/mame/roms "Flicky.mra"
+-- - Copy the ROM files to the root of the SD Card
+-- - Copy the RBF and ARC files to the same folder on the SD Card
+--
+-- MRA utility: https://github.com/sebdel/mra-tools-c/
+--
+-- Keyboard inputs :
+--
+--   ESC         : Coin
+--   F2          : Start 2 players
+--   F1          : Start 1 player
+--   UP,DOWN,LEFT,RIGHT arrows : Movements
+--   Left Ctrl   : Trig1
+--   Left Alt    : Trig2
+--   SPACE       : Trig3
+--
+---------------------------------------------------------------------------------
+-- Original by:
+-- 
+-- Arcade: SEGA System 1  for MiSTer by MiSTer-X
+-- 07 January 2020
+-- 
+---------------------------------------------------------------------------------
+-- T80/T80s - Version : 0242
+--------------------------------
+-- Z80 compatible microprocessor core
+-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)
+---------------------------------------------------------------------------------
+--
+-- System2 based on the work of Blackwine
+--
+--
+-- Games currently supported:
+--
+-- SYSTEM1
+-- -------
+--
+-- 4-D Warriors
+-- Block Gal
+-- Brain
+-- Bullfight
+-- Flicky
+-- Gardia
+-- Heavy Metal
+-- I'm Sorry
+-- Mister Viking
+-- My Hero
+-- Pitfall II
+-- Rafflesia
+-- Regulus
+-- Sega Ninja
+-- Spatter
+-- Star Jacker
+-- SWAT
+-- TeddyBoy Blues
+-- Up'n Down
+-- Water Match
+-- Wonder Boy
+--
+-- SYSTEM2
+-- -------
+--
+-- Choplifter
+-- Toki no Senshi - Chrono Soldier
+-- Ufo Senshi Yohko Chan
+-- Wonder Boy in Monster Land
+--
+--
+-- Currently not supported:
+--
+-- Noboranka / Zippy Bug (bootleg)
+-- DakkoChan House
+-- 119
+-- Senryaku Game Bopeep
+-- Shooting Master
+-- Warball

@@ -1,0 +1,103 @@
+<misterromdescription>
+    <name>Ninja Baseball Bat Man (World)</name>
+    <mameversion>0245</mameversion>
+    <setname>nbbatman</setname>
+    <year>1993</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Fighter</category>
+    <rbf>IremM92</rbf>
+    <rotation>horizontal</rotation>
+
+    <players>4</players>
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Attack,Jump,-,-,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="00 00 00" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="2,3,4,1" name="Lives"></dip>
+        <dip bits="2,3" ids="Normal,Easy,Hard,Very Easy" name="Difficulty"></dip>
+
+        <dip bits="5" ids="Start,Any" name="Start Button"></dip>
+
+        <dip bits="6" ids="Off,On" name="Demo Sounds"></dip>
+        <dip bits="7" ids="Off,On" name="Service Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Screen"></dip>
+
+        <dip bits="9" ids="2 Players,4 Players" name="Cabinet"></dip>
+
+        <dip bits="12,15" ids="1C/1C,2C/1C,3C/1C,4C/1C,5C/1C,6C/1C,1C/2C,1C/3C,1C/4C,1C/5C,1C/6C,2C/3C,3C/2C,4C/3C,2S/1C,Free Play" name="Coin Mode"></dip>
+    </switches>
+
+    <rom index="0" zip="nbbatman.zip" md5="None">
+        <!-- board type -->
+        <part>06</part>
+
+        <!-- maincpu -->
+        <part>00 10 00 00</part>
+        <interleave output="16">
+            <part name="6_h0.34" crc="5c4a1e3f" map="10" />
+            <part name="3_l0.31" crc="3d6d70ae" map="01" />
+        </interleave>
+        <interleave output="16">
+            <part name="a1-h1-.33" crc="3ce2aab5" map="10" />
+            <part name="a1-l1-.32" crc="116d9bcc" map="01" />
+        </interleave>
+
+        <!-- gfx1 tiles -->
+        <part>01 20 00 00</part>
+        <interleave output="32">
+            <part name="lh534k0c.9"   crc="314a0c6d" map="0001" />
+            <part name="lh534k0e.10"  crc="dc31675b" map="0010" />
+            <part name="lh534k0f.11"  crc="e15d8bfb" map="0100" />
+            <part name="lh534k0g.12"  crc="888d71a3" map="1000" />
+        </interleave>
+
+        <!-- gfx2 sprites -->
+        <part>02 40 00 00</part>
+        <interleave output="32">
+            <part name="lh538393.42" crc="26cdd224" map="0001" />
+            <part name="lh538394.43" crc="4bbe94fa" map="0010" />
+            <part name="lh538395.44" crc="2a533b5e" map="0100" />
+            <part name="lh538396.45" crc="863a66fa" map="1000" />
+        </interleave>
+
+        <!-- soundcpu -->
+        <part>03 02 00 00</part>
+        <interleave output="16">
+            <part name="a1-sh0-.14" crc="b7fae3e6" map="10" />
+            <part name="a1-sl0-.17" crc="b26d54fc" map="01" />
+        </interleave>
+
+        <!-- soundcpu key -->
+        <part>04 00 01 00</part>
+        <part>
+        	90 90 90 55 bb 90 23 79 90 90 90 90 90 90 38 90
+            f7 90 90 90 90 90 90 90 3d 90 90 90 ba 90 1e 90
+            2c 46 90 b5 90 4b 90 fe 90 90 fb 2e 90 90 36 04
+            cf 90 f3 5a 8a 0c 9c 90 90 90 b2 50 90 90 90 5f
+            90 90 24 90 90 41 2b 90 e9 90 08 3b 90 90 90 90
+            90 d2 51 90 90 90 22 90 eb 3a 5b a2 b1 80 90 90
+            90 90 90 90 59 b4 88 90 90 bf d1 90 b9 57 90 90
+            72 90 73 90 90 90 90 0f 90 90 90 90 56 90 90 c6
+            90 90 90 90 90 2a 8e 90 81 a3 58 90 aa 78 89 90
+            90 90 90 90 90 90 bd 90 90 90 ff 90 90 90 07 53
+            a0 90 90 5e b0 90 83 f6 90 26 32 90 90 90 74 0a
+            18 90 90 90 75 03 90 90 b6 02 90 90 43 90 b8 90
+            e8 90 fc 90 20 c3 90 06 90 1f 86 00 90 90 90 d0
+            47 90 87 90 90 9d 3c c7 90 90 90 90 90 90 90 90
+            90 90 90 8b 90 90 33 90 90 90 90 90 fa 42 90 90
+            90 90 90 ea 90 52 90 5d 90 90 90 90 bc 90 90 90
+        </part>
+
+        <!-- iremg20 -->
+        <part>05 08 00 00</part>
+        <part name="lh534k0k.8"  crc="735e6380" />
+    </rom>
+     <!--hiscore support. see hiscore.sv for modified header values-->
+     <rom index="3" md5="none">
+       <part>
+       00 00 00 0F 05 FF 00 01 00 0F 00 01 00 01 02 00
+       00 0e 25 d4 00 4f 00 03
+       </part>
+    </rom>
+    <nvram index="4" size="79"></nvram>
+</misterromdescription>

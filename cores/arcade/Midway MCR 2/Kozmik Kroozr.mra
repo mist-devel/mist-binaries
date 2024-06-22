@@ -1,0 +1,31 @@
+<misterromdescription>
+    <name>Kozmik Krooz'r</name>
+    <mameversion>0216</mameversion>
+    <mratimestamp>201912310000</mratimestamp>
+    <year>1983</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Action</category>
+    <rbf>MCR2</rbf>
+    <setname>kroozr</setname>
+    <rom index="1">
+	<part>4</part>
+    </rom>
+    <rom index="0" zip="kroozr.zip" md5="0435ff192c0b93107af54d69d7eaf48f" type="merged|nonmerged">
+	<part crc="61e02045" name="kozmkcpu.2d"/>
+	<part crc="caabed57" name="kozmkcpu.3d"/>
+	<part crc="2bc83fc7" name="kozmkcpu.4d"/>
+	<part crc="a0ec38c1" name="kozmkcpu.5d"/>
+	<part crc="7044f2b6" name="kozmkcpu.6d"/>
+	<part repeat="8192">00</part>		
+	<part crc="6736e433" name="kozmksnd.7a"/>			
+	<part crc="ea9cd919" name="kozmksnd.8a"/>
+	<part crc="9dfa7994" name="kozmksnd.9a"/>
+	<part repeat="4096">00</part>		
+	<part crc="eda6ed2d" name="kozmkcpu.3g"/>
+	<part crc="ddde894b" name="kozmkcpu.4g"/>		
+	<part crc="ca60e2cc" name="kozmkvid.1e"/>
+	<part crc="4e23b35b" name="kozmkvid.1d"/>
+	<part crc="c6041ba7" name="kozmkvid.1b"/>
+	<part crc="b57fb0ff" name="kozmkvid.1a"/>
+    </rom>
+</misterromdescription>

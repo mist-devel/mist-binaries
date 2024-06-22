@@ -1,0 +1,104 @@
+<misterromdescription>
+    <name>Undercover Cops - Alpha Renewal Version (World)</name>
+    <mameversion>0245</mameversion>
+    <setname>uccopsar</setname>
+    <parent>uccops</parent>
+    <year>1992</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Fighter</category>
+    <rbf>IremM92</rbf>
+    <rotation>horizontal</rotation>
+
+    <players>3</players>
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Attack,Jump,-,-,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="00 00 00" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="2,3,4,1" name="Lives"></dip>
+        <dip bits="2,3" ids="Normal,Easy,Hard,Very Easy" name="Difficulty"></dip>
+
+        <dip bits="5" ids="Start,Any" name="Start Button"></dip>
+
+        <dip bits="6" ids="Off,On" name="Demo Sounds"></dip>
+        <dip bits="7" ids="Off,On" name="Service Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Screen"></dip>
+
+        <dip bits="9" ids="2 Players,3 Players" name="Cabinet"></dip>
+        
+        <dip bits="12,15" ids="1C/1C,2C/1C,3C/1C,4C/1C,5C/1C,6C/1C,1C/2C,1C/3C,1C/4C,1C/5C,1C/6C,2C/3C,3C/2C,4C/3C,2S/1C,Free Play" name="Coin Mode"></dip>
+    </switches>
+
+    <rom index="0" zip="uccops.zip|uccopsar.zip" md5="None">
+        <!-- board type -->
+        <part>00</part>
+
+        <!-- maincpu -->
+        <part>00 0c 00 00</part>
+        <interleave output="16">
+            <part name="uc_h0_a.ic28" crc="9e17cada" map="10" />
+            <part name="uc_l0_a.ic39" crc="4a4e3208" map="01" />
+        </interleave>
+        <interleave output="16">
+            <part name="uc_ar_h1.ic27" crc="79d79742" map="10" />
+            <part name="uc_ar_l1.ic38" crc="37211581" map="01" />
+        </interleave>
+
+        <!-- gfx1 tiles -->
+        <part>01 20 00 00</part>
+        <interleave output="32">
+            <part name="uc_c0.ic26"  crc="6a419a36" map="0001" />
+            <part name="uc_c1.ic25"  crc="d703ecc7" map="0010" />
+            <part name="uc_c2.ic24"  crc="96397ac6" map="0100" />
+            <part name="uc_c3.ic23"  crc="5d07d10d" map="1000" />
+        </interleave>
+
+        <!-- gfx2 sprites -->
+        <part>02 40 00 00</part>
+        <interleave output="32">
+            <part name="uc_030.ic37" crc="97f7775e" map="0001" />
+            <part name="uc_020.ic36" crc="5e0b1d65" map="0010" />
+            <part name="uc_010.ic35" crc="bdc224b3" map="0100" />
+            <part name="uc_000.ic34" crc="7526daec" map="1000" />
+        </interleave>
+
+        <!-- soundcpu -->
+        <part>03 02 00 00</part>
+        <interleave output="16">
+            <part name="uc_sh0.ic30" crc="f0ca1b03" map="10" />
+            <part name="uc_sl0.ic31" crc="d1661723" map="01" />
+        </interleave>
+
+        <!-- soundcpu key -->
+        <part>04 00 01 00</part>
+        <part>
+        	1f 51 84 90 3d 09 0d 90 90 57 90 90 90 32 11 90
+            90 9c 90 90 4b 90 90 03 90 90 90 89 b0 90 90 90
+            90 bb 18 be 53 21 55 7c 90 90 47 58 f6 90 90 b2
+            06 90 2b 90 2f 0b fc 91 90 90 fa 81 83 40 38 90
+            90 90 49 85 d1 f5 07 e2 5e 1e 90 04 90 90 90 b1
+            c7 90 96 f2 b6 d2 c3 90 87 ba cb 88 90 b9 d0 b5
+            9a 80 a2 72 90 b4 90 aa 26 7d 52 33 2e bc 08 79
+            48 90 76 36 02 90 5b 12 8b e7 90 90 90 ab 90 4f
+            90 90 a8 e5 39 0e a9 90 90 14 90 ff 7f 90 90 27
+            90 01 90 90 e6 8a d3 90 90 8e 56 a5 92 90 90 f9
+            22 90 5f 90 90 a1 90 74 b8 90 46 05 eb cf bf 5d
+            24 90 9d 90 90 90 90 90 59 8d 3c f8 c5 90 f3 4e
+            90 90 50 c6 e9 fe 0a 90 99 86 90 90 af 8c 42 f7
+            90 41 90 a3 90 3a 2a 43 90 b3 e8 90 c4 35 78 25
+            75 90 b7 90 23 90 90 8f 90 90 2c 90 77 7e 90 0f
+            0c a0 bd 90 90 2d 29 ea 90 3b 73 90 fb 20 90 5a
+        </part>
+
+        <!-- iremg20 -->
+        <part>05 08 00 00</part>
+        <part name="uc_da.bin"  crc="0b2855e9" />
+    </rom>
+     <!--hiscore support. see hiscore.sv for modified header values-->
+     <rom index="3" md5="none">
+       <part>
+       00 00 00 0F 05 FF 00 01 00 0F 00 01 00 01 02 00
+       00 0e 3e 7c 00 49 30 01
+       </part>
+    </rom>
+    <nvram index="4" size="73"></nvram>
+</misterromdescription>

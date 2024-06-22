@@ -1,0 +1,92 @@
+<misterromdescription>
+    <name>Lode Runner 4</name>
+    <mameversion>0216</mameversion>
+    <setname>ldrun4</setname>
+    <manufacturer>Irem</manufacturer>
+    <rbf>iremm62</rbf>
+    <switches>
+        <!-- DSW1 -->
+        <dip bits="6"     name="Joystick Swap"  ids="Off,On"/>
+        <dip bits="8"     name="Timer"          ids="Slow,Fast"/>
+        <dip bits="9"     name="2 Players"      ids="2 Credits, 1 Credit"/>
+        <dip bits="10,11" name="1 Player Lives" ids="3,2,4,5"/>
+    </switches>
+    <rom index="1"><part>3</part></rom>
+    <rom index="0" zip="ldrun4.zip" md5="cd633975a81980cefe104543024cc7ee" type="merged|nonmerged">
+      <!-- CPU1, 128k -->
+      <part name="lr4-a-4e"/>
+      <part name="lr4-a-4d.c"/>
+      <part name="lr4-v-4k"/>
+
+      <part name="lr4-a-4e"/>
+      <part name="lr4-a-4d.c"/>
+      <part name="lr4-v-4k"/>
+
+      <!-- SND CPU2, 64k -->
+      <part name="lr4-a-3d"/>
+      <part name="lr4-a-3f"/>
+
+      <part name="lr4-a-3d"/>
+      <part name="lr4-a-3f"/>
+
+      <!-- GFX1, 128k -->
+      <interleave output="32">
+          <part name="lr4-v-2b" map="0001"/>
+          <part name="lr4-v-2d" map="0010"/>
+          <part name="lr4-v-2c" map="0100"/>
+          <part name="lr4-v-2c" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="lr4-v-2b" map="0001"/>
+          <part name="lr4-v-2d" map="0010"/>
+          <part name="lr4-v-2c" map="0100"/>
+          <part name="lr4-v-2c" map="1000"/>
+      </interleave>
+
+      <!-- GFX2, 256k -->
+      <interleave output="32">
+          <part name="lr4-b-4k" map="0001"/>
+          <part name="lr4-b-3n" map="0010"/>
+          <part name="lr4-b-4c" map="0100"/>
+          <part name="lr4-b-4c" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="lr4-b-4f" map="0001"/>
+          <part name="lr4-b-4n" map="0010"/>
+          <part name="lr4-b-4e" map="0100"/>
+          <part name="lr4-b-4e" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="lr4-b-4k" map="0001"/>
+          <part name="lr4-b-3n" map="0010"/>
+          <part name="lr4-b-4c" map="0100"/>
+          <part name="lr4-b-4c" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="lr4-b-4f" map="0001"/>
+          <part name="lr4-b-4n" map="0010"/>
+          <part name="lr4-b-4e" map="0100"/>
+          <part name="lr4-b-4e" map="1000"/>
+      </interleave>
+
+      <!-- GFX3, 64k -->
+      <part repeat="0x10000">FF</part>
+
+      <!-- spr_color_proms, 3*256b -->
+      <part name="lr4-b-1m"/>
+      <part name="lr4-b-1n"/>
+      <part name="lr4-b-1l"/>
+
+      <!-- chr_color_proms, 3*256b -->
+      <part name="lr4-v-1m"/>
+      <part name="lr4-v-1n"/>
+      <part name="lr4-v-1p"/>
+
+      <!-- fg_color_proms, 3*256b -->
+      <part repeat="0x300">FF</part>
+
+      <!-- spr_height_prom -->
+      <part name="lr4-b-5p"/>
+
+    </rom>
+</misterromdescription>

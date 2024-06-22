@@ -1,0 +1,36 @@
+<misterromdescription>
+	<name>Blasto</name>
+	<year>1978</year>
+	<manufacturer>Gremlin</manufacturer>
+
+	<setname>blasto</setname>
+	<mameversion>0229</mameversion>
+	<rbf>blockade</rbf>
+
+	<buttons default="A,Start,R,L" names="Fire,Start,Coin,Pause"></buttons>
+	<switches default="0"  page_id="1" page_name="Switches" base="8">
+		<dip bits="0,1" name="Coinage" ids="4 coins / 1 credit,3 coins / 1 credit,2 coins / 1 credit,1 coins / 1 credit"/>
+		<dip bits="2" name="Demo Sounds" ids="Off,On"/>
+		<dip bits="3" name="Game Time" ids="70 seconds,90 seconds"/>
+		<dip bits="4,5" name="Overlay Colour" ids="Green,White,Yellow,Red"/>
+	</switches>
+
+	<rom index="1"><part>03</part></rom>
+	<rom index="0" md5="none" zip="blasto.zip">
+		<!-- GAME ROMS -->
+		<part crc="none" name="316-0089.u2"/>
+		<part crc="none" name="316-0090.u3"/>
+		<part crc="none" name="316-0091.u4"/>
+		<part crc="none" name="316-0092.u5"/>
+
+		<!-- GFX PROMS -->
+		<part crc="none" name="316-0093.u29"/>
+		<part crc="none" name="316-0094.u43"/>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+</misterromdescription>

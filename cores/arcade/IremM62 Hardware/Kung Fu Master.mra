@@ -1,0 +1,127 @@
+<misterromdescription>
+    <name>Kung Fu Master</name>
+    <mameversion>0216</mameversion>
+    <setname>kungfum</setname>
+    <manufacturer>Irem</manufacturer>
+    <rbf>iremm62</rbf>
+    <switches>
+        <!-- DSW1 -->
+        <dip bits="8"     name="Difficulty"  ids="Easy,Hard"/>
+        <dip bits="9"     name="Energy Loss" ids="Slow,Fast"/>
+        <dip bits="10,11" name="Lives"       ids="3,2,4,5"/>
+    </switches>
+    <rom index="1"><part>4</part></rom>
+    <rom index="0" zip="kungfum.zip" md5="e4dd9d396dd574a11189c2183cf4cead" type="merged|nonmerged">
+      <!-- CPU1, 128k -->
+      <part name="a-4e-c.bin"/>
+      <part name="a-4d-c.bin"/>
+      <part name="a-4e-c.bin"/>
+      <part name="a-4d-c.bin"/>
+      <part name="a-4e-c.bin"/>
+      <part name="a-4d-c.bin"/>
+      <part name="a-4e-c.bin"/>
+      <part name="a-4d-c.bin"/>
+
+      <!-- SND CPU2, 64k -->
+      <part repeat="0xa000">FF</part>
+      <part name="a-3e-.bin"/>
+      <part name="a-3f-.bin"/>
+      <part name="a-3h-.bin"/>
+
+      <!-- GFX1, 128k -->
+      <interleave output="32">
+          <part name="g-4c-a.bin" map="0001"/>
+          <part name="g-4d-a.bin" map="0010"/>
+          <part name="g-4e-a.bin" map="0100"/>
+          <part name="g-4e-a.bin" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="g-4c-a.bin" map="0001"/>
+          <part name="g-4d-a.bin" map="0010"/>
+          <part name="g-4e-a.bin" map="0100"/>
+          <part name="g-4e-a.bin" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="g-4c-a.bin" map="0001"/>
+          <part name="g-4d-a.bin" map="0010"/>
+          <part name="g-4e-a.bin" map="0100"/>
+          <part name="g-4e-a.bin" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="g-4c-a.bin" map="0001"/>
+          <part name="g-4d-a.bin" map="0010"/>
+          <part name="g-4e-a.bin" map="0100"/>
+          <part name="g-4e-a.bin" map="1000"/>
+      </interleave>
+
+      <!-- GFX2, 256k -->
+      <interleave output="32">
+          <part name="b-4k-.bin" map="0001"/>
+          <part name="b-3n-.bin" map="0010"/>
+          <part name="b-4c-.bin" map="0100"/>
+          <part name="b-4c-.bin" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="b-4f-.bin" map="0001"/>
+          <part name="b-4n-.bin" map="0010"/>
+          <part name="b-4e-.bin" map="0100"/>
+          <part name="b-4e-.bin" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="b-4l-.bin" map="0001"/>
+          <part name="b-4m-.bin" map="0010"/>
+          <part name="b-4d-.bin" map="0100"/>
+          <part name="b-4d-.bin" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="b-4h-.bin" map="0001"/>
+          <part name="b-3m-.bin" map="0010"/>
+          <part name="b-4a-.bin" map="0100"/>
+          <part name="b-4a-.bin" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="b-4k-.bin" map="0001"/>
+          <part name="b-3n-.bin" map="0010"/>
+          <part name="b-4c-.bin" map="0100"/>
+          <part name="b-4c-.bin" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="b-4f-.bin" map="0001"/>
+          <part name="b-4n-.bin" map="0010"/>
+          <part name="b-4e-.bin" map="0100"/>
+          <part name="b-4e-.bin" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="b-4l-.bin" map="0001"/>
+          <part name="b-4m-.bin" map="0010"/>
+          <part name="b-4d-.bin" map="0100"/>
+          <part name="b-4d-.bin" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="b-4h-.bin" map="0001"/>
+          <part name="b-3m-.bin" map="0010"/>
+          <part name="b-4a-.bin" map="0100"/>
+          <part name="b-4a-.bin" map="1000"/>
+      </interleave>
+
+      <!-- GFX3, 64k -->
+      <part repeat="0x10000">FF</part>
+
+      <!-- spr_color_proms, 3*256b -->
+      <part name="b-1m-.bin"/>
+      <part name="b-1n-.bin"/>
+      <part name="b-1l-.bin"/>
+
+      <!-- chr_color_proms, 3*256b -->
+      <part name="g-1j-.bin"/>
+      <part name="g-1f-.bin"/>
+      <part name="g-1h-.bin"/>
+
+      <!-- fg_color_proms, 3*256b -->
+      <part repeat="0x300">FF</part>
+
+      <!-- spr_height_prom -->
+      <part name="b-5f-.bin"/>
+
+    </rom>       
+</misterromdescription>

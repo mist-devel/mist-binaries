@@ -1,0 +1,74 @@
+<misterromdescription>
+	<name>Pac-Man Plus</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series>Pac-Man</series>
+	<year>1980</year>
+	<manufacturer>Namco</manufacturer>
+	<manufacturer>Midway</manufacturer>
+	<category>Maze</category>
+
+	<setname>pacplus</setname>
+	<parent>pacplus</parent>
+	<mameversion>0220</mameversion>
+	<rbf>pacman</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>0</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FF,FF,C9" base="8" page_id="1" page_name="Switches">
+		<dip bits="15" ids="Cocktail,Upright" name="Cabinet"></dip>
+		<dip bits="16,17" ids="2c/1cr,1c/1cr,1c/2cr,Free Play" name="Coinage" values="3,1,2,0"></dip>
+		<dip bits="18,19" ids="1,2,3,5" name="Lives"></dip>
+		<dip bits="20,21" ids="10000,15000,20000,None" name="Bonus Life After"></dip>
+		<dip bits="22" ids="Hard,Normal" name="Difficulty"></dip>
+	</switches>
+
+	<rom index="1"><part>01</part></rom>
+	<rom index="0" md5="64796e1f2a537f8cb03168a5194f8d5b" zip="pacplus.zip">
+		<part name="pacplus.6e"></part>
+		<part name="pacplus.6f"></part>
+		<part name="pacplus.6h"></part>
+		<part name="pacplus.6j"></part>
+		<part name="pacplus.6e"></part>
+		<part name="pacplus.6f"></part>
+		<part name="pacplus.6h"></part>
+		<part name="pacplus.6j"></part>
+		<part name="pacplus.5e"></part>
+		<part name="pacplus.5f"></part>
+		<part name="pacplus.5f"></part>
+		<part name="pacplus.5f"></part>
+		<part name="82s126.1m"></part>
+		<part name="pacplus.4a"></part>
+		<part name="82s126.3m"></part>
+		<part name="pacplus.7f"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 02 00
+		00 00 4E 88 00 04 00 00
+		00 00 43 ED 00 06 40 40
+		00 00 43 D1 00 01 48 48
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="11"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

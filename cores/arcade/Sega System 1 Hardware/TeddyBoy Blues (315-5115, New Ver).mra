@@ -1,0 +1,109 @@
+<misterromdescription>
+	<name>TeddyBoy Blues (315-5115, New Ver.)</name>
+	<setname>teddybb</setname>
+	<rbf>segasys1</rbf>
+	<mameversion>0229</mameversion>
+	<year>1985</year>
+	<manufacturer>Sega</manufacturer>
+	<players>2</players>
+	<joystick>8-way</joystick>
+	<rotation>horizontal</rotation>
+	<region>World</region>
+	<buttons names="Machine-Gun,Jump,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="2"/>
+	<switches base="8" default="FF,FE">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		-->
+		<dip name="Demo Sounds" bits="9" ids="Off,On"/>
+		<dip name="Lives" bits="10,11" ids="252,4,2,3"/>
+		<dip name="Bonus Life" bits="12,13" ids="600k,400k 800k,200k 600k,100k 400k"/>
+		<dip name="Difficulty" bits="14" ids="Hard,Easy"/>
+	</switches>
+	<rom index="1">
+		<part>00</part>
+	</rom>
+	<rom index="0" zip="teddybb.zip" type="merged" md5="c9614c0cac152d12b8f6e29bf66175aa">
+		<!-- soundcpu, size: 0x8000 -->
+		<part crc="c2a1b89d" name="epr6748x.120"/>
+		<part crc="c2a1b89d" name="epr6748x.120"/>
+		<part crc="c2a1b89d" name="epr6748x.120"/>
+		<part crc="c2a1b89d" name="epr6748x.120"/>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part crc="5939817e" name="epr-6768.116"/>
+		<part crc="14a98ddd" name="epr-6769.109"/>
+		<part crc="67b0c7c2" name="epr-6770.96"/>
+		<part crc="67b0c7c2" name="epr-6770.96"/>
+		<part crc="67b0c7c2" name="epr-6770.96"/>
+		<part crc="67b0c7c2" name="epr-6770.96"/>
+
+		<!-- sprites, size: 0x20000 -->
+		<part crc="1be35a97" name="epr-6735.117"/>
+		<part crc="6b53aa7a" name="epr-6737.04"/>
+		<part crc="565c25d0" name="epr-6736.110"/>
+		<part crc="e116285f" name="epr-6738.05"/>
+		<part crc="1be35a97" name="epr-6735.117"/>
+		<part crc="6b53aa7a" name="epr-6737.04"/>
+		<part crc="565c25d0" name="epr-6736.110"/>
+		<part crc="e116285f" name="epr-6738.05"/>
+
+		<!-- tiles, size: 0x18000 -->
+		<interleave output="32">
+			<part name="epr-6747.62" map="0001"/>
+			<part name="epr-6745.64" map="0010"/>
+			<part name="epr-6743.66" map="0100"/>
+			<part name="epr-6743.66" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-6746.61" map="0001"/>
+			<part name="epr-6744.63" map="0010"/>
+			<part name="epr-6742.65" map="0100"/>
+			<part name="epr-6742.65" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-6747.62" map="0001"/>
+			<part name="epr-6745.64" map="0010"/>
+			<part name="epr-6743.66" map="0100"/>
+			<part name="epr-6743.66" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-6746.61" map="0001"/>
+			<part name="epr-6744.63" map="0010"/>
+			<part name="epr-6742.65" map="0100"/>
+			<part name="epr-6742.65" map="1000"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x100 -->
+		<part crc="648350b8" name="pr-5317.76"/>
+
+		<!-- color_proms, size: 0x300 -->
+		<part repeat="0x300">00</part>
+
+		<!-- encryption_device: 315-5115 -->
+		<part>
+		20 28 00 08 80 00 a0 20 20 28 00 08 a0 a8 20 28
+		28 08 a8 88 a0 80 a8 88 a0 a8 20 28 a0 80 a8 88
+		20 28 00 08 28 08 a8 88 a0 a8 20 28 a0 a8 20 28
+		a0 80 a8 88 28 08 a8 88 a0 a8 20 28 28 08 a8 88
+		80 00 a0 20 80 00 a0 20 a0 20 a8 28 a0 a8 20 28
+		a0 20 a8 28 a0 80 a8 88 a0 80 a8 88 a0 80 a8 88
+		80 00 a0 20 20 28 00 08 a0 a8 20 28 a0 20 a8 28
+		80 00 a0 20 a0 80 a8 88 a0 a8 20 28 a0 20 a8 28
+		</part>
+	<!-- jp $3e67 at PC=$0001 to skip self test -->
+	<!-- patch offset="0x8001">63 9e e7</patch -->
+	</rom>
+	<rom index="3" md5="none">
+		<part>
+		55 00 00 00 00 FF 00 02
+		00 02 00 01 00 FF 00 00
+		00 00 C5 78 00 03 00 00
+		00 00 EF 03 00 31 00 49
+		</part>
+	</rom>
+	<nvram index="4" size="52"/>
+</misterromdescription>

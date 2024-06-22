@@ -1,0 +1,36 @@
+<misterromdescription>
+	<name>Commando (SEGA)</name>
+	<mameversion>0220</mameversion>
+	<setname>commsega</setname>
+	<year>1980</year>
+	<manufacturer>SEGA</manufacturer>
+	<rbf>rallyx</rbf>
+	<switches base="8">
+		<dip bits="15"     name="Cabinet" ids="Cocktail,Upright"/>
+		<dip bits="14"     name="Difficulty" ids="Easy,Hard"/>
+		<dip bits="10,12"  name="Coin A" ids="1C_1C,2C_1C,3C_1C,4C_1C,1C_2C,1C_3C,2C_3C,Free Play"/>
+		<dip bits="8,9"    name="Lives" ids="3,4,5,6"/>
+	</switches>
+	<rom index="1"><part>0b</part></rom>
+	<rom index="0" zip="commsega.zip" md5="f28363ca8751084d3477c797d862bbae">
+		<part name="csega1"/>
+		<part name="csega2"/>
+		<part name="csega3"/>
+		<part name="csega4"/>
+		<part name="csega5"/>
+		<part name="csega5"/>
+
+		<part name="csega8"/>
+		<part name="csega8"/>
+
+		<part name="csega7"/>
+		<part name="csega6"/>
+
+		<part name="gg3.bpr"/>
+
+		<part repeat="0x100">FF</part>
+
+		<part name="gg2.bpr"/>
+		<part name="gg1.bpr"/>
+	</rom>
+</misterromdescription>

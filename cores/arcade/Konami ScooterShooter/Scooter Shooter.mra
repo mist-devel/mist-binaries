@@ -1,0 +1,69 @@
+<misterromdescription>
+	<name>Scooter Shooter</name>
+	<region>World</region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1986</year>
+	<manufacturer>Konami</manufacturer>
+	<category>Shooter - Horizontal</category>
+
+	<setname>scotrsht</setname>
+	<parent>scotrsht</parent>
+	<mameversion>0224</mameversion>
+	<rbf>ScotrSht</rbf>
+
+	<resolution>15kHz</resolution>
+	<rotation>no</rotation>
+	<flip>no</flip>
+
+	<players>2 (simultaneous)</players>
+	<joystick>8-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>2</num_buttons>
+	<buttons default="B,Start,R,L" names="Fire,Start,Coin,Pause"></buttons>
+	
+	<switches default="00,11,00" base="8" page_id="1" page_name="Switches">
+		<dip bits="0,3"   name="Credits A" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Free Play"/>
+		<dip bits="4,7"   name="Credits B" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Invalid"/>
+		<dip bits="8,9"   name="Lives" ids="2,3,4,5"/>
+		<dip bits="11"    name="Bonus" ids="30K/80K+,40K/90K+"/>
+		<dip bits="12,13" name="Difficulty" ids="Easy,Normal,Hard,Hardest"/>
+		<dip bits="15"    name="Attract mode sound" ids="Off,On"/>
+		<dip bits="16"    name="Flip screen" ids="Off,On"/>
+	</switches>
+	
+	<rom index="1"></rom>
+	<rom index="0" zip="scotrsht.zip" md5="none">
+		<part crc="b808e0d3" name="gx545_g03_12c.bin"/>
+		<part crc="b22c0586" name="gx545_g02_10c.bin"/>
+		<part crc="46a7cc65" name="gx545_g01_8c.bin"/>
+		<part crc="856c349c" name="gx545_g05_5f.bin"/>
+		<part crc="14ad7601" name="gx545_g06_6f.bin"/>
+		<part crc="c06c11a3" name="gx545_h04_4f.bin"/>
+		<part crc="f584586f" name="gx545_6301_1f.bin"/>
+		<part crc="ad464db1" name="gx545_6301_2f.bin"/>
+		<part crc="bd475d23" name="gx545_6301_3f.bin"/>
+		<part crc="2b0cd233" name="gx545_6301_7f.bin"/>
+		<part crc="c1c7cf58" name="gx545_6301_8f.bin"/>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+			0E 00 00 00 00 FF 00 02
+			00 02 00 01 00 FF 10 00
+			00 00 1C A0 00 46 01 1D
+			00 00 19 9C 00 03 01 40
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="73"></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210910141626</mratimestamp>
+</misterromdescription>

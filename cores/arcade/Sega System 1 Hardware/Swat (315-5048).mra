@@ -1,0 +1,107 @@
+<misterromdescription>
+	<name>SWAT (315-5048)</name>
+	<setname>swat</setname>
+	<rbf>segasys1</rbf>
+	<mameversion>0229</mameversion>
+	<year>1984</year>
+	<manufacturer>Coreland / Sega</manufacturer>
+	<players>2</players>
+	<joystick>8-way</joystick>
+	<rotation>vertical/ccw</rotation>
+	<region>World</region>
+	<buttons names="Fire,Bomb,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="2"/>
+	<switches base="8" default="FF,FE">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		-->
+		<dip name="Lives" bits="9,10" ids="Infinite,5,4,3"/>
+		<dip name="Bonus Life" bits="11,13" ids="None,90k,80k,70k,60k,50k,40k,30k"/>
+	</switches>
+	<rom index="1">
+		<part>06</part>
+	</rom>
+	<rom index="0" zip="swat.zip" type="merged" md5="a2efaabfe3ff8b973720781a26791e8f">
+		<!-- soundcpu, size: 0x8000 -->
+		<part crc="f6afd0fd" name="epr-5819.3"/>
+		<part repeat="0x6000">00</part>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part crc="93db9c9f" name="epr5807b.129"/>
+		<part crc="67116665" name="epr-5808.130"/>
+		<part crc="fd792fc9" name="epr-5809.131"/>
+		<part crc="dc2b279d" name="epr-5810.132"/>
+		<part crc="093e3ab1" name="epr-5811.133"/>
+		<part crc="5bfd692f" name="epr-5812.134"/>
+		<part crc="093e3ab1" name="epr-5811.133"/>
+		<part crc="5bfd692f" name="epr-5812.134"/>
+		<part crc="093e3ab1" name="epr-5811.133"/>
+		<part crc="5bfd692f" name="epr-5812.134"/>
+		<part crc="093e3ab1" name="epr-5811.133"/>
+		<part crc="5bfd692f" name="epr-5812.134"/>
+
+		<!-- sprites, size: 0x20000 -->
+		<part crc="5a732865" name="epr-5805.86"/>
+		<part crc="26ac258c" name="epr-5806.93"/>
+		<part crc="5a732865" name="epr-5805.86"/>
+		<part crc="26ac258c" name="epr-5806.93"/>
+		<part crc="5a732865" name="epr-5805.86"/>
+		<part crc="26ac258c" name="epr-5806.93"/>
+		<part crc="5a732865" name="epr-5805.86"/>
+		<part crc="26ac258c" name="epr-5806.93"/>
+
+		<!-- tiles, size: 0x18000 -->
+		<interleave output="32">
+			<part name="epr-5818.82" map="0001"/>
+			<part name="epr-5816.81" map="0010"/>
+			<part name="epr-5814.80" map="0100"/>
+			<part name="epr-5814.80" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-5817.65" map="0001"/>
+			<part name="epr-5815.64" map="0010"/>
+			<part name="epr-5813.63" map="0100"/>
+			<part name="epr-5813.63" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-5818.82" map="0001"/>
+			<part name="epr-5816.81" map="0010"/>
+			<part name="epr-5814.80" map="0100"/>
+			<part name="epr-5814.80" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-5817.65" map="0001"/>
+			<part name="epr-5815.64" map="0010"/>
+			<part name="epr-5813.63" map="0100"/>
+			<part name="epr-5813.63" map="1000"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x100 -->
+		<part name="pr-5317.106" crc="648350b8"/>
+
+		<!-- color proms - size: 0x300 -->
+		<part repeat="0x300">00</part>
+
+		<!-- encryption_device: 315-5048 -->
+		<part>
+			88 08 80 00 a0 a8 80 88 88 08 80 00 88 a8 80 a0
+			a0 80 20 00 88 08 80 00 a0 a8 80 88 88 08 80 00
+			28 20 a8 a0 a0 a8 80 88 88 a8 80 a0 28 20 a8 a0
+			a0 80 20 00 a0 a8 80 88 28 20 a8 a0 a0 a8 80 88
+			a0 80 20 00 a0 80 20 00 a0 20 80 00 88 a8 80 a0
+			a0 20 80 00 a0 20 80 00 a0 20 80 00 a0 20 80 00
+			a0 80 20 00 a0 80 20 00 88 a8 80 a0 28 20 a8 a0
+			a0 a8 80 88 a0 80 20 00 28 20 a8 a0 a0 a8 80 88
+		</part>
+	</rom>
+	<rom index="3" md5="none">
+		<part>
+			00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+			00 00 D3 00 00 3C 00 49 00 00 C0 14 00 03 00 02
+		</part>
+	</rom>
+	<nvram index="4" size="63"/>
+</misterromdescription>

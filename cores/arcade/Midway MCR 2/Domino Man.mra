@@ -1,0 +1,34 @@
+<misterromdescription>
+    <name>Domino Man</name>
+    <mameversion>0216</mameversion>
+    <mratimestamp>201912310000</mratimestamp>
+    <year>1983</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Action</category>
+    <rbf>MCR2</rbf>
+    <setname>domino</setname>
+    <switches>
+	<dip bits="8"   name="Music" ids="Off,On"/>
+	<dip bits="9"   name="Skin Color" ids="Light,Dark"/>
+    </switches>
+    <rom index="1">
+	<part>5</part>
+    </rom>
+    <rom index="0" zip="domino.zip" md5="112359d5a207884821f6df0f0c1c4d2c" type="merged|nonmerged">
+	<part crc="3bf3bb1c" name="dmanpg0.bin"/>
+	<part crc="85cf1d69" name="dmanpg1.bin"/>
+	<part crc="7dd2177a" name="dmanpg2.bin"/>
+	<part crc="f2e0aa44" name="dmanpg3.bin"/>		
+	<part repeat="16384">00</part>
+	<part crc="fa982dcc" name="dm-a7.snd"/>			
+	<part crc="72839019" name="dm-a8.snd"/>
+	<part crc="ad760da7" name="dm-a9.snd"/>
+	<part crc="958c7287" name="dm-a10.snd"/>		
+	<part crc="9163007f" name="dmanbg0.bin"/>
+	<part crc="28615c56" name="dmanbg1.bin"/>		
+	<part crc="0b1f9f9e" name="dmanfg0.bin"/>
+	<part crc="16aa4b9b" name="dmanfg1.bin"/>
+	<part crc="4a8e76b8" name="dmanfg2.bin"/>
+	<part crc="1f39257e" name="dmanfg3.bin"/>
+    </rom>
+</misterromdescription>

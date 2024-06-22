@@ -1,0 +1,85 @@
+<misterromdescription>
+	<name>Gorkans</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1983</year>
+	<manufacturer>Techstar</manufacturer>
+	<category>Maze</category>
+
+	<setname>gorkans</setname>
+	<parent>mrtnt</parent>
+	<mameversion>0220</mameversion>
+	<rbf>pacman</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FF,FF,FB" base="8" page_id="1" page_name="Switches">
+		<dip bits="22" ids="Cocktail,Upright" name="Cabinet"></dip>
+		<dip bits="16,17" ids="2c/1cr,1c/1cr,1c/2cr,Free Play" name="Coinage" values="1,3,2,0"></dip>
+		<dip bits="18,19" ids="5,4,3,2" name="Lives"></dip>
+		<dip bits="20,21" ids="150K,125K,100K,75K" name="Bonus Life after"></dip>
+		</switches>
+
+	<rom index="1">
+		<part>06</part>
+		</rom>
+	<rom index="0" md5="1843d4f76413b0e00a0aaf129483af5a" zip="mrtnt.zip|gorkans.zip">
+		<part crc="55100b18" name="gorkans8.rom"></part>
+		<part crc="b5c604bf" name="gorkans4.rom"></part>
+		<part crc="b8c6def4" name="gorkans7.rom"></part>
+		<part crc="4602c840" name="gorkans3.rom"></part>
+		<part crc="21412a62" name="gorkans6.rom"></part>
+		<part crc="a013310b" name="gorkans2.rom"></part>
+		<part crc="122969b2" name="gorkans5.rom"></part>
+		<part crc="f2524b11" name="gorkans1.rom"></part>
+		<part crc="55100b18" name="gorkans8.rom"></part>
+		<part crc="b5c604bf" name="gorkans4.rom"></part>
+		<part crc="b8c6def4" name="gorkans7.rom"></part>
+		<part crc="4602c840" name="gorkans3.rom"></part>
+		<part crc="21412a62" name="gorkans6.rom"></part>
+		<part crc="a013310b" name="gorkans2.rom"></part>
+		<part crc="122969b2" name="gorkans5.rom"></part>
+		<part crc="f2524b11" name="gorkans1.rom"></part>
+		<part crc="39cd0dbc" name="gorkgfx4.rom"></part>
+		<part crc="33d52535" name="gorkgfx2.rom"></part>
+		<part crc="4b6b7970" name="gorkgfx3.rom"></part>
+		<part crc="ed70bb3c" name="gorkgfx1.rom"></part>
+		<part crc="39cd0dbc" name="gorkgfx4.rom"></part>
+		<part crc="33d52535" name="gorkgfx2.rom"></part>
+		<part crc="4b6b7970" name="gorkgfx3.rom"></part>
+		<part crc="ed70bb3c" name="gorkgfx1.rom"></part>
+		<part crc="a9cc86bf" name="gorkprom.3"></part>
+		<part crc="3eb3a8e4" name="gorkprom.1"></part>
+		<part crc="77245b66" name="gorkprom.2"></part>
+		<part crc="2fc650bd" name="gorkprom.4"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+		00 00 4C B3 00 3C 4C 01
+		00 00 43 ED 00 06 00 40
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="66"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

@@ -1,0 +1,120 @@
+<misterromdescription>
+	<name>Bullfight (315-5065)</name>
+	<setname>bullfgt</setname>
+	<rbf>segasys1</rbf>
+	<mameversion>0229</mameversion>
+	<year>1984</year>
+	<manufacturer>Coreland / Sega</manufacturer>
+	<players>2</players>
+	<joystick>8-way</joystick>
+	<rotation>horizontal</rotation>
+	<region>World</region>
+	<switches base="8" default="FF,FC">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		-->
+		<dip name="Demo Sounds" bits="9" ids="On,Off"/>
+		<dip name="Lives" bits="10,11" ids="Infinite,5,4,3"/>
+		<dip name="Bonus Life" bits="12,13" ids="None,70k,50k,30k"/>
+	</switches>
+	<buttons names="Sword,Cape,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="2"/>
+	<rom index="0" zip="bullfgt.zip" type="merged" md5="2b9ee07a90e03469d7834c0c9b456176">
+		<!-- soundcpu, size: 0x8000 -->
+		<part crc="02a37602" name="epr-6077.120"/>
+		<part crc="02a37602" name="epr-6077.120"/>
+		<part crc="02a37602" name="epr-6077.120"/>
+		<part crc="02a37602" name="epr-6077.120"/>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part crc="29f19156" name="epr-.129"/>
+		<part crc="e37d2b95" name="epr-.130"/>
+		<part crc="eaf5773d" name="epr-.131"/>
+		<part crc="72c3c712" name="epr-.132"/>
+		<part crc="7d9fa4cd" name="epr-.133"/>
+		<part crc="061f2797" name="epr-.134"/>
+		<part crc="7d9fa4cd" name="epr-.133"/>
+		<part crc="061f2797" name="epr-.134"/>
+		<part crc="7d9fa4cd" name="epr-.133"/>
+		<part crc="061f2797" name="epr-.134"/>
+		<part crc="7d9fa4cd" name="epr-.133"/>
+		<part crc="061f2797" name="epr-.134"/>
+
+		<!-- sprites, size: 0x20000 -->
+		<part crc="fe691e41" name="epr-6069.86"/>
+		<part crc="34f080df" name="epr-6070.93"/>
+		<part crc="fe691e41" name="epr-6069.86"/>
+		<part crc="34f080df" name="epr-6070.93"/>
+		<part crc="fe691e41" name="epr-6069.86"/>
+		<part crc="34f080df" name="epr-6070.93"/>
+		<part crc="fe691e41" name="epr-6069.86"/>
+		<part crc="34f080df" name="epr-6070.93"/>
+
+		<!-- tiles, size: 0x18000 -->
+		<interleave output="32">
+			<part name="epr-.82" map="0001"/>
+			<part name="epr-6087.81" map="0010"/>
+			<part name="epr-6085.80" map="0100"/>
+			<part name="epr-6085.80" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-.65" map="0001"/>
+			<part name="epr-.64" map="0010"/>
+			<part name="epr-.63" map="0100"/>
+			<part name="epr-.63" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-.82" map="0001"/>
+			<part name="epr-6087.81" map="0010"/>
+			<part name="epr-6085.80" map="0100"/>
+			<part name="epr-6085.80" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-.65" map="0001"/>
+			<part name="epr-.64" map="0010"/>
+			<part name="epr-.63" map="0100"/>
+			<part name="epr-.63" map="1000"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x100 -->
+		<part crc="648350b8" name="pr-5317.106"/>
+
+		<!-- color_proms, size: 0x300 -->
+		<part repeat="0x300">00</part>
+
+		<!-- encryption_device: 315-5056 -->
+		<part>
+		a0 a8 20 28 80 a0 00 20
+		20 28 00 08 20 28 00 08
+		a0 a8 20 28 08 28 00 20
+		88 08 a8 28 88 08 a8 28
+		a0 a8 20 28 20 28 00 08
+		28 a8 20 a0 20 28 00 08
+		a0 a8 20 28 08 28 00 20
+		88 08 a8 28 88 08 a8 28
+		28 a8 20 a0 a0 a8 20 28
+		88 08 a8 28 80 a0 00 20
+		28 a8 20 a0 08 28 00 20
+		28 a8 20 a0 80 a0 00 20
+		20 28 00 08 20 28 00 08
+		88 08 a8 28 20 28 00 08
+		08 28 00 20 80 a0 00 20
+		08 28 00 20 88 08 a8 28
+		</part>
+	</rom>
+	<rom index="1">
+		<part>00</part>
+	</rom>
+	<rom index="3" md5="none">
+		<part>
+		00 00 00 00 00 FF 00 02
+		00 02 00 01 00 FF 00 00
+		00 00 D3 00 00 3C 00 49
+		00 00 C0 14 00 03 00 02
+		</part>
+	</rom>
+	<nvram index="4" size="63"/>
+</misterromdescription>

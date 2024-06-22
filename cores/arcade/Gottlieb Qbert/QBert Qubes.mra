@@ -1,0 +1,41 @@
+
+<misterromdescription>
+	<name>Qbert Qubes</name>
+	<mameversion>0198</mameversion>
+	<setname>qbertqub</setname>
+	<mratimestamp>20201231150731</mratimestamp>
+	<year>1982</year>
+	<manufacturer>Gottlieb</manufacturer>
+	<category>Platform</category>
+	<rbf>qbert</rbf>
+	<buttons names="Service Select,Start 1P,Start 2P,Coin" default="A,Start,Select,R"/>
+	<switches default="01"  page_id="1" page_name="Switches" base="16">
+		<dip bits="3" name="Demo Sounds" ids="On,Off"></dip>
+		<dip bits="1" name="Bonus Life" ids="10000,15000"></dip>
+		<dip bits="6" name="Extra Bonus Life" ids="20000,25000"></dip>
+		<dip bits="7" name="Difficulty" ids="Normal,Hard"></dip>
+	</switches>
+	<rom index="1">
+		<part>1</part>
+	</rom>
+	<rom index="0" zip="qbertqub.zip" md5="none">
+		<part crc="8ddbe438" name="qq-rom0.bin"/>
+		<part crc="63e6c43d" name="qq-rom1.bin"/>
+		<part crc="21a6c6cc" name="qq-rom2.bin"/>
+		<part crc="c4dbdcd7" name="qq-rom3.bin"/>
+		<part repeat="16384">00</part>
+
+		<part crc="e704b450" name="qq-snd1.bin"/>
+		<part crc="c6a98bf8" name="qq-snd2.bin"/>
+		<part crc="e704b450" name="qq-snd1.bin"/>
+		<part crc="c6a98bf8" name="qq-snd2.bin"/>
+
+		<part crc="050badde" name="qq-bg0.bin"/>
+		<part crc="8875902f" name="qq-bg1.bin"/>
+
+		<part crc="6192853f" name="qq-fg0.bin"/>
+		<part crc="71c3ac4c" name="qq-fg1.bin"/>
+		<part crc="782d9431" name="qq-fg2.bin"/>
+		<part crc="91a949cc" name="qq-fg3.bin"/>
+	</rom>
+</misterromdescription>

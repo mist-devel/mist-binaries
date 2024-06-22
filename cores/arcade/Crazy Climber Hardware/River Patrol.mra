@@ -1,0 +1,90 @@
+<misterromdescription>
+	<name>River Patrol</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1980</year>
+	<manufacturer>Orca</manufacturer>
+	<category>Platform - Climb</category>
+
+	<setname>rpatrol</setname>
+	<parent>cclimber</parent>
+	<mameversion>0216</mameversion>
+	<rbf>cclimber</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>horizontal</rotation>
+	<flip></flip>
+
+	<players>2 (alternating)</players>
+	<joystick>8-way</joystick>
+	<special_controls>twin stick</special_controls>
+	<num_buttons>4</num_buttons>
+	<button_names></button_names>
+
+	<switches default="10" base="8">
+		<dip bits="0,1"   name="Coinage" ids="1C_1C,1C_2C,2C_1C,Free Play"/>
+		<dip bits="2,3"   name="Lives"   ids="3,4,5,6"/>
+		<dip bits="4"     name="Cabinet" ids="Cocktail,Upright"/>
+	</switches>
+
+	<rom index="1"><part>10</part></rom>
+	<rom index="0" md5="e785289750f07d75bd2187d31b5ed4f0" type="merged|nonmerged" zip="rpatrol.zip">
+		<!-- main cpu 32K -->
+		<part crc="065197f0" name="1.1h"/>
+		<part crc="3614b820" name="2.1f"/>
+		<part crc="ba428bbf" name="3.1d"/>
+		<part crc="41497a94" name="4.1c"/>
+		<part crc="e20ee7e7" name="5.1a"/>
+		<part repeat="0x3000">FF</part>
+
+		<!-- samples 8K -->
+		<part repeat="0x2000">00</part>
+
+		<!-- gfx1 background tiles 16K -->
+		<part crc="b38d8aca" name="6.6l.2732"/>
+		<part crc="b38d8aca" name="6.6l.2732"/>
+		<part crc="bc2bddf9" name="7.6p.2732"/>
+		<part crc="bc2bddf9" name="7.6p.2732"/>
+
+		<!-- gfx2 big sprite tiles 8K -->
+		<part crc="59747c31" name="8.2s"/>
+		<part crc="59747c31" name="8.2s"/>
+		<part crc="065651a5" name="9.2t"/>
+		<part crc="065651a5" name="9.2t"/>
+
+
+		<!-- misc 8K -->
+		<part repeat="0x2000">00</part>
+
+		<!-- palette1 2*256 byte -->
+		<part crc="f9a2383b" name="mb7051.1b"/>
+		<part crc="1743bd26" name="mb7051.1c"/>
+		<part crc="f9a2383b" name="mb7051.1b"/>
+		<part crc="1743bd26" name="mb7051.1c"/>
+		<part crc="f9a2383b" name="mb7051.1b"/>
+		<part crc="1743bd26" name="mb7051.1c"/>
+		<part crc="f9a2383b" name="mb7051.1b"/>
+		<part crc="1743bd26" name="mb7051.1c"/>
+
+		<part repeat="0x100">00</part>
+
+		<!-- palette2 32 byte -->
+		<part crc="ee03bc96" name="mb7051.1u"/>
+
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

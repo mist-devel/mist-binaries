@@ -1,0 +1,87 @@
+<misterromdescription>
+    <name>Mr. HELI no Daibouken (Japan)</name>
+    <mameversion>0245</mameversion>
+    <setname>mrheli</setname>
+    <parent>bchopper</parent>
+    <year>1987</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Shooter</category>
+    <rbf>IremM72</rbf>
+
+    <rotation>horizontal</rotation>
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,R,L" names="Fire,Secondary,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="04,02" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="3,2,4,1" name="Lives"></dip>
+        <dip bits="2" ids="On,Off" name="Demo Sounds"></dip>
+        <dip bits="3" ids="80K,100K" name="Bonus Life"></dip>
+        <dip bits="4,7" ids="1C/1P,2C/1P,3C/1P,4C/1P,5C/1P,6C/1P,1C/2P,1C/3P,1C/4P,1C/5P,1C/6P,2C/3P,4C/2P,5C/3P,8C/3P,Free Play" name="Coin Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Picture"></dip>
+        <dip bits="9" ids="Cocktail,Upright" name="Cabinet type"></dip>
+        <dip bits="11" ids="Normal,Hard" name="Difficulty"></dip>
+        <dip bits="12" ids="Yes,No" name="Continues"></dip>
+        <dip bits="13" ids="Off,On" name="Freeze Picture"></dip>
+        <dip bits="14" ids="Off,On" name="No Death Mode"></dip>
+        <dip bits="15" ids="Off,On" name="Diagnostic Test"></dip>
+    </switches>
+
+    <rom index="0" zip="mrheli.zip|bchopper.zip" md5="None">
+        <!-- board type -->
+        <part>01</part>
+
+        <!-- maincpu -->
+        <part>00 08 00 00</part>
+        <interleave output="16">
+            <part name="mh_c-l0-.ic37" crc="643e23cd" map="01"/>
+            <part name="mh_c-h0-.ic40" crc="e2ca5646" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mh_c-l1-.ic36" crc="5f8bda69" map="01"/>
+            <part name="mh_c-h1-.ic41" crc="8974e84d" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mh_c-l1-.ic36" crc="5f8bda69" map="01"/>
+            <part name="mh_c-h1-.ic41" crc="8974e84d" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mh_c-l3-.ic34" crc="c0982536" map="01"/>
+            <part name="mh_c-h3-.ic43" crc="143f596e" map="10"/>
+        </interleave>
+
+        <!-- sprites -->
+        <part>01 08 00 00</part>
+        <interleave output="32">
+            <part name="mh_c-00.ic53" crc="dec4e121" map="0001"/>
+            <part name="mh_c-10.ic51" crc="7aaa151e" map="0010"/>
+            <part name="mh_c-20.ic49" crc="eae0de74" map="0100"/>
+            <part name="mh_c-30.ic47" crc="01d5052f" map="1000"/>
+        </interleave>
+
+        <!-- gfx2 -->
+        <part>02 04 00 00</part>
+        <interleave output="32">
+            <part name="mh_b-a0.ic21" crc="6a0db256" map="0001"/>
+            <part name="mh_b-a1.ic22" crc="14ec9795" map="0010"/>
+            <part name="mh_b-a2.ic20" crc="dfcb510e" map="0100"/>
+            <part name="mh_b-a3.ic23" crc="957e329b" map="1000"/>
+        </interleave>
+
+        <!-- gfx3 -->
+        <part>03 04 00 00</part>
+        <interleave output="32">
+            <part name="mh_b-b0-.ic26" crc="b5b95776" map="0001"/>
+            <part name="mh_b-b1-.ic27" crc="74ca16ee" map="0010"/>
+            <part name="mh_b-b2-.ic25" crc="b82cca04" map="0100"/>
+            <part name="mh_b-b3-.ic24" crc="a7afc920" map="1000"/>
+        </interleave>
+
+        <!-- mcu -->
+        <part>04 00 10 00</part>
+        <part name="mh_c-pr-.ic1" crc="897dc4ee"/>
+
+        <!-- samples -->
+        <part>05 01 00 00</part>
+        <part name="mh_c-v0-b.ic44" crc="d0c27e58"/>
+    </rom>
+</misterromdescription>

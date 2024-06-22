@@ -1,0 +1,29 @@
+<misterromdescription>
+    <name>Armored Car</name>
+    <mameversion>0209</mameversion>
+    <rbf>scramble</rbf>
+    <switches>
+	<dip bits="7"  name="Lives"       ids="3,5"/>
+	<dip bits="10" name="Demo Sounds" ids="Off,On"/>
+    </switches>
+    <rom index="1"><part>5</part></rom>
+    <rom index="0" zip="armorcar.zip" md5="0b2be19a5fa28e44cf65e157ee0d880c" type="merged|nonmerged">
+	<part name="cpu.2c"/>
+	<part name="cpu.2e"/>
+	<part name="cpu.2f"/>
+	<part name="cpu.2h"/>
+	<part name="cpu.2j"/>
+	<part name="cpu.2j"/>
+	<part name="cpu.2j"/>
+	<part name="cpu.2j"/>
+
+	<part name="sound.5c"/>
+	<part name="sound.5d"/>
+	<part name="sound.5c"/>
+	<part name="sound.5d"/>
+
+	<part name="cpu.5h"/>
+	<part name="cpu.5f"/>
+	<part name="82s123.6e"/>
+    </rom>
+</misterromdescription>

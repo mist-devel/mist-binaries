@@ -1,0 +1,71 @@
+<misterromdescription>
+    <name>Gold Medalist (Set 1, Alpha68k II PCB)</name>
+    <setname>goldmedl</setname>
+    <rbf>alpha68k</rbf>
+    <mameversion>0249</mameversion>
+    <year>1988</year>
+    <manufacturer>Alpha Denshi Co.</manufacturer>
+    <region>World</region>
+    <joystick>8-Way</joystick>
+
+    <switches default="ff,ff" base="16" page_id="1" page_name="Switches">
+        <!-- IN3 -->
+        <dip name="Event Select" bits="2" ids="On,Off"/>
+        <dip name="100M Dash Speed" bits="5" ids="10 Beats,14 Beats"/>
+        <dip name="Computer Demonstration" bits="6" ids="Off,On"/>
+        <dip name="4 Player Cabinet" bits="3" ids="Table,4P"/>
+        <dip name="2 Player Cabinet" bits="7" ids="Table,2P"/>
+        <!-- IN4 -->
+        <dip name="Difficulty" bits="8,9" ids="Very Hard,Hard,Normal,Easy"/>
+        <dip name="Coinage" bits="10,12" ids="A 3C/2C B 8C/1C,A 2C/3C B 7C/1C,A 1C/6C B 6C/1C,A 1C/5C B 5C/1C,A 1C/4C B 4C/1C,A 1C/3C B 3C/1C,A 1C/2C B 2C/1C,A 1C/1C B 1C/1C"/>
+        <dip name="Demo Sounds" bits="13" ids="On,Off"/>
+    </switches>
+
+    <buttons names="Run/Spin/Power,Run/Spin/Hit Power,Jump/Jab/Throw Angle,P1 Start,P2 Start,P3 Start,P4 Start,Coin A,Coin B,Pause" default="A,B,X,Y,R,L,Start,Select,R1,L1"/>
+
+    <rom index="0" zip="goldmedl.zip" md5="None">
+
+        <part>07 0E</part>
+
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="gm.3" crc="ddf0113c" map="01"/>
+            <part name="gm.4" crc="16db4326" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="gm.1" crc="54a11e28" map="01"/>
+            <part name="gm.2" crc="4b6a13e4" map="10"/>
+        </interleave>
+        <part repeat="0x40000"> FF</part>
+
+        <!-- audiocpu - starts at 0x80000 -->
+        <part name="38.bin" crc="4bf251b8"/>
+        <part name="39.bin" crc="1d92be86"/>
+        <part name="40.bin" crc="8dafc4e8"/>
+        <part name="1.bin" crc="1e78062c"/>
+        <part repeat="0x10000"> FF</part>
+        <part repeat="0x10000"> FF</part>
+        <part repeat="0x10000"> FF</part>
+        <part repeat="0x10000"> FF</part>
+
+        <!-- gfx1 - starts at 0x100000 -->
+        <interleave output="16">
+            <part name="gm.5" crc="667f33f1" map="01"/>
+            <part name="gm.6" crc="56020b13" map="10"/>
+        </interleave>
+        <part repeat="0xF0000"> FF</part>
+
+        <!-- gfx2 - starts at 0x200000 -->
+        <interleave output="32">
+            <part name="goldchr3.c46" crc="6faaa07a" map="0001"/>
+            <part name="goldchr2.c45" crc="e6b0aa2c" map="0010"/>
+            <part name="goldchr1.c44" crc="55db41cd" map="0100"/>
+            <part name="goldchr0.c43" crc="76572c3f" map="1000"/>
+        </interleave>
+
+        <!-- mcu - starts at 0x400000 -->
+        <!-- <part name="alpha.mcu" crc=""/> -->
+
+        <!-- Total 0x401000 bytes - 4100 kBytes -->
+    </rom>
+</misterromdescription>

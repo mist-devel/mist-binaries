@@ -1,0 +1,32 @@
+<misterromdescription>
+	<name>Jungler</name>
+	<mameversion>0220</mameversion>
+	<setname>jungler</setname>
+	<year>1980</year>
+	<manufacturer>Konami</manufacturer>
+	<rbf>rallyx</rbf>
+	<rom index="1"><part>1</part></rom>
+	<rom index="0" zip="jungler.zip" md5="d0f3409b8873b05a36668eb9e5ca69a0">
+		<part name="jungr1"/>
+		<part name="jungr2"/>
+		<part name="jungr3"/>
+		<part name="jungr4"/>
+
+		<part name="1b"/>
+		<part name="1b"/>
+		<part name="1b"/>
+		<part name="1b"/>
+
+		<part name="5k"/>
+		<part name="5m"/>
+		<part name="5k"/>
+		<part name="5m"/>
+
+		<part name="82s129.10g"/>
+
+		<part repeat="0x100">FF</part>
+
+		<part name="tbp24s10.9d"/>
+		<part name="18s030.8b"/>
+	</rom>
+</misterromdescription>

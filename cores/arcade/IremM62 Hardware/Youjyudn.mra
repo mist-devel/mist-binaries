@@ -1,0 +1,87 @@
+<misterromdescription>
+    <name>Youjyudn</name>
+    <mameversion>0216</mameversion>
+    <setname>youjyudn</setname>
+    <manufacturer>Irem</manufacturer>
+    <rbf>iremm62</rbf>
+    <switches>
+        <!-- DSW1 -->
+        <dip bits="8,9" name="Lives" ids="3,2,4,5"/>
+    </switches>
+    <rom index="1"><part>0B</part></rom>
+    <rom index="0" zip="youjyudn.zip" md5="88142ed9adb6ffff9643cc7fa6bae82b" type="merged|nonmerged">
+      <!-- CPU1, 128k -->
+      <part name="yju_a4eb.bin"/>
+      <part name="yju_a4db.bin"/>
+      <part repeat="0x8000">FF</part>
+
+      <part name="yju_p4cb.0"/>
+      <part name="yju_p4eb.1"/>
+      <part repeat="0x8000">FF</part>
+
+      <!-- SND CPU2, 64k -->
+      <part repeat="0xC000">FF</part>
+      <part name="yju_a3fb.bin"/>
+
+      <!-- GFX1, 128k -->
+      <interleave output="32">
+          <part name="yju_p3bb.0" map="0001"/>
+          <part name="yju_p1bb.1" map="0010"/>
+          <part name="yju_p1cb.2" map="0100"/>
+          <part name="yju_p1cb.2" map="1000"/>
+      </interleave>
+
+      <!-- GFX2, 256k -->
+      <interleave output="32">
+          <part name="yju_b4ka.00" map="0001"/>
+          <part name="yju_b3na.10" map="0010"/>
+          <part name="yju_b4ca.20" map="0100"/>
+          <part name="yju_b4ca.20" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="yju_b4fa.01" map="0001"/>
+          <part name="yju_b4na.11" map="0010"/>
+          <part name="yju_b4ea.21" map="0100"/>
+          <part name="yju_b4ea.21" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="yju_b4ka.00" map="0001"/>
+          <part name="yju_b3na.10" map="0010"/>
+          <part name="yju_b4ca.20" map="0100"/>
+          <part name="yju_b4ca.20" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="yju_b4fa.01" map="0001"/>
+          <part name="yju_b4na.11" map="0010"/>
+          <part name="yju_b4ea.21" map="0100"/>
+          <part name="yju_b4ea.21" map="1000"/>
+      </interleave>
+
+      <!-- GFX3, 64k -->
+      <interleave output="32">
+          <part name="yju_p4pb.0" map="0001"/>
+          <part name="yju_p4mb.1" map="0010"/>
+          <part name="yju_p4lb.2" map="0100"/>
+          <part name="yju_p4lb.2" map="1000"/>
+      </interleave>
+
+      <!-- spr_color_proms, 3*256b -->
+      <part name="yju_b1ma.r"/>
+      <part name="yju_b1na.g"/>
+      <part name="yju_b1la.b"/>
+
+      <!-- chr_color_proms, 3*256b -->
+      <part name="yju_p2jb.bpr"/>
+      <part name="yju_p2kb.bpr"/>
+      <part name="yju_p2hb.bpr"/>
+
+      <!-- fg_color_proms, 3*256b -->
+      <part name="yju_p2jb.bpr"/>
+      <part name="yju_p2kb.bpr"/>
+      <part name="yju_p2hb.bpr"/>
+
+      <!-- spr_height_prom -->
+      <part name="yju_b-5p.bpr"/>
+
+    </rom>
+</misterromdescription>

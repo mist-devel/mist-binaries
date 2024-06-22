@@ -1,0 +1,57 @@
+<misterromdescription>
+	<name>Jack the Giantkiller</name>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<series></series>
+	<year>1982</year>
+	<manufacturer>Cinematronics</manufacturer>
+	<category>Platform</category>
+	<rbf>freeze</rbf>
+	<about></about>
+	<resolution>15kHz</resolution>
+	<rotation>vertical</rotation>
+	<flip></flip>
+	<players>2</players>
+	<joystick>2-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons names="Button1,Button2,Start1P,Start2P,CoinA,CoinB" default="A,Start,Select,R1,L1"></buttons>
+	<switches default="00,00">
+		<dip bits="0,1" name="CoinB" ids="2C_1C,4C_3C,1C_1C,1C_3C"/>
+		<dip bits="2,3" name="CoinA" ids="3C_1C,2C_1C,4C_3C,1C_1C"/>
+		<dip bits="4" name="Lives" ids="3,5"/>
+		<dip bits="5" name="Bonus Life" ids="10000,x10000"/>
+		<dip bits="6" name="Difficulty" ids="Level1,Level13"/>
+		<dip bits="7" name="Per Bean/Bullets" ids="1,2"/>
+		<dip bits="8" name="Cabinet" ids="Cocktail,Upright"/>
+		<dip bits="13" name="Service" ids="Off,On"/>
+		<dip bits="14" name="Invulnerability" ids="Off,On"/>
+		<dip bits="15" name="255 Lives" ids="Off,On"/>
+	</switches>
+	<rom index="0" zip="jack.zip" md5="none">
+		<!-- main cpu -->
+		<part name="j8" crc="c8e73998"/>
+		<part name="jgk.j6" crc="36d7810e"/>
+		<part name="jgk.j7" crc="b15ff3ee"/>
+		<part name="jgk.j5" crc="4a63d242"/>
+		<part name="jgk.j3" crc="605514a8"/>
+		<part name="jgk.j4" crc="bce489b7"/>
+		<part name="jgk.j2" crc="db21bd55"/>
+		<part name="jgk.j1" crc="49fffe31"/>
+		<!-- audio cpu -->
+		<part name="jgk.j9" crc="c2dc1e00"/>
+		<part repeat="4096">00</part>
+		<!-- gfx -->
+		<part name="jgk.j12" crc="ce726df0"/>
+		<part name="jgk.j13" crc="6aec2c8d"/>
+		<part name="jgk.j11" crc="fd14c525"/>
+		<part name="jgk.j10" crc="eab890b2"/>
+	</rom>
+	<rom index="1"><part>1</part></rom>
+	<rom index="2"></rom>
+	<rom_3></rom_3>
+	<rom_4></rom_4>
+	<nvram></nvram>
+	<remark></remark>
+	<!-- <mratimestamp></mratimestamp> -->
+</misterromdescription>

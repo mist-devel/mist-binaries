@@ -1,0 +1,56 @@
+<misterromdescription>
+    <name>SonSon</name>
+    <mameversion>0216</mameversion>
+    <setname>sonson</setname>
+    <manufacturer>Capcom</manufacturer>
+    <rbf>sonson</rbf>
+
+    <switches base="8" page_id="1" page_name="Switches">
+        <!-- DSW1 -->
+        <dip bits="0,3"   name="Coinage"     ids="1C_1C,1C_2C,1C_3C,1C_4C,1C_5C,1C_6C,1C_7C,2C_1C,2C_3C,2C_5C,3C_1C,3C_2C,3C_4C,4C_1C,4C_3C,Free Play"/>
+        <dip bits="5"     name="Demo Sounds" ids="Off,On"/>
+        <dip bits="6"     name="Service"     ids="Off,On"/>
+        <!-- dip bits="7"     name="Flip Screen" ids="Off,On"/-->
+
+        <!-- DSW2 -->
+        <dip bits="8,9"   name="Lives"       ids="3,4,5,7"/>
+        <dip bits="11,12" name="Bonus_Life"  ids="20000,30000,20k/80k/100k,30k/90k/120k"/>
+        <dip bits="13,14" name="Difficulty"  ids="Easy,Normal,Hard,Very Hard"/>
+        <dip bits="15"    name="Freeze"      ids="Off,On"/>
+    </switches>
+
+    <rom index="0" zip="sonson.zip" md5="d17bc11db95dd6e2d44ac342b3462259" type="merged|nonmerged">
+      <!-- CPU2, 8k -->
+      <part name="ss_6.c11"/>
+      <part repeat="0x2000">FF</part>
+
+      <!-- CPU1, 48k -->
+      <part name="ss.01e"/>
+      <part name="ss.02e"/>
+      <part name="ss.03e"/>
+
+      <!-- gfx1, 16k -->
+      <interleave output="16">
+          <part name="ss_7.b6" map="01"/>
+          <part name="ss_8.b5" map="10"/>
+      </interleave>
+
+      <!-- gfx2, 48k -->
+      <part name="ss_9.m5"/>
+      <part name="ss_10.m6"/>
+      <part name="ss_11.m3"/>
+      <part name="ss_12.m4"/>
+      <part name="ss_13.m1"/>
+      <part name="ss_14.m2"/>
+
+      <!-- other proms --> 
+
+      <part name="ssb2.c4"/>
+      <part name="ssb3.h7"/>
+      <part name="ssb1.k11"/>
+
+      <part name="ssb4.b2"/>
+      <part name="ssb5.b1"/>
+
+    </rom>
+</misterromdescription>

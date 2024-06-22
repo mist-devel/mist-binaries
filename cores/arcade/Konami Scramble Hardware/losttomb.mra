@@ -1,0 +1,30 @@
+<misterromdescription>
+    <name>Lost Tomb</name>
+    <mameversion>0209</mameversion>
+    <rbf>scramble</rbf>
+    <switches>
+	<dip bits="7,8"  name="Lives"       ids="3,5,Free Play,Invuln."/>
+	<dip bits="10"   name="Demo Sounds" ids="Off,On"/>
+    </switches>
+    <rom index="1"><part>0B</part></rom>
+    <rom index="0" zip="losttomb.zip" md5="c62f4d91a165fe79a921e0c6ec85846b" type="merged">
+	<part name="2c"/>
+	<part name="2e"/>
+	<part name="2f"/>
+	<part name="2h-easy"/>
+	<part name="2j"/>
+	<part name="2l"/>
+	<part name="2m"/>
+	<part name="2m"/>
+
+	<part name="5c"/>
+	<part name="5d"/>
+	<part name="5c"/>
+	<part name="5d"/>
+
+	<part name="5h"/>
+	<part name="5f"/>
+
+	<part name="ltprom"/>
+    </rom>
+</misterromdescription>

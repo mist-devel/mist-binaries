@@ -1,0 +1,70 @@
+<misterromdescription>
+	<name>Brain</name>
+	<mameversion>0229</mameversion>
+	<setname>brain</setname>
+	<mratimestamp>20210629000000</mratimestamp>
+	<year>1986</year>
+	<manufacturer>Coreland / Sega</manufacturer>
+	<players>2</players>
+	<joystick>8-way</joystick>
+	<rotation>horizontal</rotation>
+	<category>Shooter</category>
+	<rbf>segasys1</rbf>
+	<buttons names="Shoot,Bomb,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,Start,Select,R,C"/>
+	<switches base="8" default="FF,7C">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		-->
+		<dip bits="9" name="Demo Sound" ids="On,Off"/>
+		<dip bits="10,11" name="Lives" ids="Infinite,5,4,3"/>
+		<dip bits="12,13" name="Extend" ids="90000,70000,50000,30000"/>
+		<dip bits="14" name="Difficulty" ids="Hard,Easy"/>
+	</switches>
+	<rom index="1">
+		<part>00</part>
+	</rom>
+	<rom index="0" md5="none" zip="brain.zip">
+		<!-- soundcpu, size: 0x8000 -->
+		<part crc="c7e50278" name="brain.120"/>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part crc="2d2aec31" name="brain.1"/>
+		<part crc="810a8ab5" name="brain.2"/>
+		<part crc="9a225634" name="brain.3"/>
+
+		<!-- sprites, size: 0x20000 -->
+		<part crc="92ff71a4" name="brain.117"/>
+		<part crc="a1b847ec" name="brain.110"/>
+		<part crc="fd2ea53b" name="brain.4"/>
+		<part repeat="0x8000">ff</part>
+
+		<!-- tiles, size: 0x18000 -->
+		<interleave output="32">
+			<part crc="7dce2302" name="brain.62"/>
+			<part crc="7ce03fd3" name="brain.64"/>
+			<part crc="ea54323f" name="brain.66"/>
+			<part crc="ea54323f" name="brain.66"/>
+		</interleave>
+		<interleave output="32">
+			<part crc="7dce2302" name="brain.62"/>
+			<part crc="7ce03fd3" name="brain.64"/>
+			<part crc="ea54323f" name="brain.66"/>
+			<part crc="ea54323f" name="brain.66"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x0100 -->
+		<part crc="648350b8" name="pr5317.76"/>
+
+		<!-- color_proms, size: 0x0300 -->
+		<part crc="8eee0f72" name="bprom.3"/>
+		<part crc="3e7babd7" name="bprom.2"/>
+		<part crc="371c44a6" name="bprom.1"/>
+
+		<!-- encryption_device: none -->
+		<part repeat="0x100">00</part>
+	</rom>
+</misterromdescription>

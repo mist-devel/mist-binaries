@@ -1,0 +1,101 @@
+<misterromdescription>
+    <name>Major Title 2 (World, set 1)</name>
+    <mameversion>0245</mameversion>
+    <setname>majtitl2</setname>
+    <year>1992</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Sports</category>
+    <rbf>IremM92</rbf>
+    <rotation>horizontal</rotation>
+
+    <players>4</players>
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Attack,Jump,-,-,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="00 00 00" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="2,3,4,1" name="Lives"></dip>
+        <dip bits="2,3" ids="Normal,Easy,Hard,Very Easy" name="Difficulty"></dip>
+
+        <dip bits="5" ids="Start,Any" name="Start Button"></dip>
+
+        <dip bits="6" ids="Off,On" name="Demo Sounds"></dip>
+        <dip bits="7" ids="Off,On" name="Service Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Screen"></dip>
+
+        <dip bits="9" ids="2 Players,4 Players" name="Cabinet"></dip>
+        
+        <dip bits="12,15" ids="1C/1C,2C/1C,3C/1C,4C/1C,5C/1C,6C/1C,1C/2C,1C/3C,1C/4C,1C/5C,1C/6C,2C/3C,3C/2C,4C/3C,2S/1C,Free Play" name="Coin Mode"></dip>
+    </switches>
+
+    <rom index="0" zip="majtitl2.zip" md5="None">
+        <!-- board type -->
+        <part>06</part>
+
+        <!-- maincpu -->
+        <part>00 10 00 00</part>
+        <interleave output="16">
+            <part name="mt2-h0-b.5m" crc="b163b12e" map="10" />
+            <part name="mt2-l0-b.5f" crc="6f3b5d9d" map="01" />
+        </interleave>
+        <interleave output="16">
+            <part name="is-h1.5l"    crc="9ba8e1f2" map="10" />
+            <part name="is-l1.5j"    crc="e4e00626" map="01" />
+        </interleave>
+
+        <!-- gfx1 tiles -->
+        <part>01 10 00 00</part>
+        <interleave output="32">
+            <part name="hr0.ic9"  crc="7e61e4b5" map="0001" />
+            <part name="hr1.ic10" crc="0a667564" map="0010" />
+            <part name="hr2.ic11" crc="5eb44312" map="0100" />
+            <part name="hr3.ic12" crc="f2866294" map="1000" />
+        </interleave>
+
+        <!-- gfx2 sprites -->
+        <part>02 40 00 00</part>
+        <interleave output="32">
+            <part name="k30.ic42" crc="8c9a2678" map="0001" />
+            <part name="k31.ic43" crc="5455df78" map="0010" />
+            <part name="k32.ic44" crc="3a258c41" map="0100" />
+            <part name="k33.ic45" crc="c1e91a14" map="1000" />
+        </interleave>
+
+        <!-- soundcpu -->
+        <part>03 02 00 00</part>
+        <interleave output="16">
+        	<part name="mt2-sh0-.ic14" crc="1ecbea43" map="10" />
+        	<part name="mt2-sl0-.ic17" crc="8fd5b531" map="01" />
+        </interleave>
+
+        <!-- soundcpu key -->
+        <part>04 00 01 00</part>
+        <part>
+        	87 90 78 aa 90 90 90 2c 32 0a 0f 90 5e 90 c6 8a
+        	33 90 90 90 90 ea 90 72 90 90 90 90 90 90 24 55
+        	90 90 90 89 fb 90 59 02 90 90 5d 90 90 90 36 90
+        	90 06 79 90 90 1e 07 90 90 90 83 90 90 90 90 90
+        	9d 90 90 74 90 90 90 0c 58 90 90 90 90 90 90 90
+        	3c 90 03 90 90 fa 43 90 bf 90 90 75 90 88 90 80
+        	90 a3 90 fe 90 90 90 90 90 90 90 90 3a 90 90 90
+        	2b 90 90 90 90 e9 5f 90 46 90 41 90 18 b8 90 90
+        	b4 5a b1 90 90 50 e8 20 90 b2 90 90 90 90 90 51
+        	90 90 90 56 90 90 90 90 90 cf 90 90 90 c3 90 90
+        	90 90 90 90 0b 90 90 b5 57 90 90 c7 3b 90 90 90
+        	90 90 90 90 b6 90 eb 90 38 90 a0 08 90 86 b0 90
+        	42 1f 73 90 f6 90 90 90 53 90 52 90 04 bd 90 90
+        	26 ff 2e 90 81 90 47 90 90 90 90 d0 22 90 90 b9
+        	23 90 f3 90 90 90 90 90 90 d2 8b ba 90 90 90 5b
+        	90 90 9c 90 90 90 90 fc bc a2 2a 90 90 8e bb 90
+        </part>
+
+        <!-- iremg20 -->
+        <part>05 08 00 00</part>
+    	<part name="k0d.ic8" crc="713b9e9f" />
+   
+        <!-- eeprom -->
+        <part>07 00 20 00</part>
+        <part name="mt2eep" crc="208af971" />
+
+    </rom>
+
+</misterromdescription>

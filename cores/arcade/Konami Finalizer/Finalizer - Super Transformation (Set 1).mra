@@ -1,0 +1,150 @@
+<misterromdescription>
+	<name>Finalizer: Super Transformation</name>
+	<region>World</region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Set 1</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1985</year>
+	<manufacturer>Konami</manufacturer>
+	<category>Shooter - Vertical</category>
+
+	<setname>finalizr</setname>
+	<parent>finalizr</parent>
+	<mameversion>0224</mameversion>
+	<rbf>Finalizr</rbf>
+	<about author="Ace" twitter="@Ace9921Tweets"></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>no</rotation>
+	<flip>no</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>8-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>3</num_buttons>
+	<buttons default="B,A,Start,R,Select,L" names="Fire 1,Fire 2/Shield,Start P1,Coin,Start P2,Pause"></buttons>
+	
+	<switches default="00,25,00" base="8" page_id="1" page_name="Switches">
+		<dip bits="0,3"   name="Credits A" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/7cr,1c/6cr,2c/1cr,2c/3cr,3c/1cr,2c/5cr,3c/2cr,3c/4cr,4c/3cr,4c/1cr,Free Play"/>
+		<dip bits="4,7"   name="Credits B" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Free Play"/>
+		<dip bits="8,9"   name="Lives" ids="2,3,4,7"/>
+		<dip bits="10"    name="Cabinet Type" ids="Cocktail,Upright"/>
+		<dip bits="11,12" name="Bonus" ids="30K/150K+,50K/300K+,30K only,50K only"/>
+		<dip bits="13,14" name="Difficulty" ids="Easy,Normal,Hard,Hardest"/>
+		<dip bits="15"    name="Attract Mode Sound" ids="Off,On"/>
+		<dip bits="16"    name="Flip Screen" ids="Off,On"/>
+		<dip bits="17"    name="Upright Controls" ids="Single,Dual"/>
+		<dip bits="18"    name="Test Mode" ids="Off,On"/>
+	</switches>
+	
+	<rom index="1">
+		<part>00</part>
+	</rom>
+	<rom index="0" md5="none" type="merged" zip="finalizr.zip">
+		<part crc="716633cb" name="523k01.9c"/>
+		<part crc="1bccc696" name="523k02.12c"/>
+		<part crc="c48927c6" name="523k03.13c"/>
+		<part crc="c056d710" name="523h04.5e"/>
+		<part crc="50e512ba" name="523h07.5f"/>
+		<part crc="ae0d0f76" name="523h05.6e"/>
+		<part crc="79f44e17" name="523h08.6f"/>
+		<part crc="d2db9689" name="523h06.7e"/>
+		<part crc="8896dc85" name="523h09.7f"/>
+		<part crc="978dfc33" name="d8749hd.bin"/>
+		<patch offset="0x24000">
+			04 09 00 04 1E 00 00 04 E3 55 23 00 39 23 00 3A 23 80 3A 04 F3 BA 00 05 FA 04 C9 00 04 1B
+			C5 80 AA 23 00 3A 23 80 3A B8 08 23 18 A0 B8 09 23 00 A0 23 09 D7 04 36 93 8D 8F 91 93 95
+			97 97 97 97 97 97 97 97 97 97 97 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 9B 9D 9F
+			A1 A3 A5 A7 A9 AB AD AF B1 B3 B5 B7 B9 BB BD BF BF BF BF BF BF BF BF BF BF BF BF BF BF BF
+			BF BF BF BF BF BF BF BF BF BF BF BF BF BF BF BF BF C1 C3 C5 C7 24 1C 84 B6 84 C1 84 CB A4
+			AD C4 DE 84 DD A4 04 24 84 A4 7E 24 26 84 00 24 55 44 68 A4 4D A4 B1 A4 08 A4 EA A4 DF A4
+			E6 A4 45 84 D8 24 98 C4 6C C4 2A C4 C8 24 9C A4 EE 24 A0 44 EF B8 24 F0 C6 DA 18 F0 96 DC
+			FA 03 AA F6 1B 03 8D B3 24 00 24 DB 42 6A 62 58 A3 93 42 6E 62 53 3F A3 AB 93 42 6A 62 53
+			3F A3 93 23 00 AD AC A3 34 F3 96 F7 24 F8 FF FF FA C6 22 B8 27 F0 6A A0 18 F0 17 53 03 C6
+			12 A0 04 1B C8 F0 03 01 96 24 B8 24 B0 01 23 A0 3A 23 00 39 04 1B E4 FC B8 20 F0 AF 18 F0
+			AB 23 06 AC AD A8 BE 00 BA 02 B9 02 54 66 FC 03 10 AC AD EA 38 BA 02 F8 03 01 A8 AC AD E9
+			38 B9 02 FF 17 AF 6B C6 22 24 38 23 12 AC AD A8 B9 20 F1 AF 19 F1 AB BE 00 BA 02 B9 02 54
+			66 FC 03 10 AC AD EA 67 BA 02 F8 03 02 A8 AC AD E9 67 B9 02 FF 17 AF 6B C6 22 24 67 B8 20
+			F0 AF 18 F0 AB 23 06 AC AD A8 BE 00 BA 01 B9 02 44 D2 B8 22 84 C4 B8 22 84 CF C5 BE 00 B8
+			2C F0 AC AD D5 AC C5 18 F0 A9 18 F0 AA AB 18 F0 D5 AB C5 18 F0 AF B8 33 F0 D5 AF C5 B8 39
+			F0 D5 AD C5 18 F0 D5 AA C5 18 F0 D5 AE C5 18 F0 D5 A8 C5 18 F0 D5 A9 E4 00 B8 26 F0 B9 2C
+			69 A9 FA A1 F0 17 A0 03 EB C6 ED 04 1B B8 25 B0 00 04 1B 6D AD 1C FC 93 A3 34 F3 96 F8 44
+			F8 FF 28 2A 2C 2E 30 32 34 36 38 3A 3C 3E 40 42 44 46 48 4A 4C 4E 2E 30 50 52 54 2C 2E 30
+			56 50 58 36 5A 5C 5E 60 40 42 62 64 44 A8 44 AE 44 B2 44 B6 44 BA 44 BE 44 C2 44 C6 84 1E
+			84 3B 84 48 84 52 84 5C 84 66 84 70 84 7A 44 CA 44 CE 84 04 A4 00 84 0C 84 10 84 08 C4 20
+			C4 26 84 14 84 84 84 8E 84 98 84 A2 84 AC FF B3 B8 22 F0 AF 18 F0 AB 23 20 AC AD A8 BE 00
+			BA 02 B9 02 54 66 FC 03 10 AC AD EA 7A BA 02 F8 03 04 A8 AC AD E9 7A B9 02 FF 17 AF 6B C6
+			97 44 7A 04 1B 39 ED 9A FC AD FE 17 53 0F AE 96 A6 93 44 66 23 10 6E E3 44 99 23 20 44 AA
+			23 30 44 AA 23 40 44 AA 23 50 44 AA 23 60 44 AA 23 70 44 AA 23 80 44 AA 23 90 44 AA 23 A0
+			44 AA 54 66 FC 03 10 AC AD EA D2 BA 01 F8 03 00 A8 AC AD E9 D2 B9 02 FF 17 AF 6B C6 97 44
+			D2 B8 25 B0 01 18 B0 00 04 1B A3 34 F3 96 F8 84 F2 FF 70 70 70 70 00 54 00 00 00 00 00 00
+			00 00 00 00 80 80 80 80 00 60 00 00 00 00 00 00 00 00 00 00 0E 1C 2A 38 46 54 62 70 70 62
+			54 46 38 2A 1C 0E 0C 18 24 30 3C 48 54 60 60 54 48 3C 30 24 18 0C 0A 14 1E 28 32 3C 46 50
+			50 46 3C 32 28 1E 14 0A 08 10 18 20 28 30 38 40 40 38 30 28 20 18 10 08 06 0C 12 18 1E 24
+			2A 30 30 2A 24 1E 18 12 0C 06 04 08 0C 10 14 18 1C 20 20 1C 18 14 10 0C 08 04 02 04 06 08
+			0A 0C 0E 10 10 0E 0C 0A 08 06 04 02 AA AA AA AA 00 80 00 00 00 00 00 00 00 00 00 00 12 25
+			38 4A 5D 70 82 95 95 82 70 5D 4A 38 25 12 10 20 30 40 50 60 70 80 80 70 60 50 40 30 20 10
+			0D 1A 28 35 42 50 5D 6A 6A 5D 50 42 35 28 1A 0D 05 0A 10 15 1A 20 25 2A 2A 25 20 1A 15 10
+			0A 05 02 05 08 0A 0D 10 12 15 15 12 10 0D 0A 08 05 02 FF FF FF FF FF FF FF FF FF FF FF FF
+			FF FF 10 57 23 0A 24 57 23 B0 44 AA 23 00 44 AA 23 D0 44 AA 23 E0 44 AA 14 E4 FB 53 7F AB
+			23 00 84 43 14 E4 FB 53 7F AB 23 2B 6E A3 6B 44 99 40 40 40 40 00 20 00 00 00 00 00 00 00
+			00 00 00 14 E4 FB 53 7F AB 23 20 6E E3 6B 44 99 14 E4 FB 53 7F AB 23 30 84 43 14 E4 FB 53
+			3F AB 23 40 84 43 14 E4 FB 53 1F AB 23 50 84 43 14 E4 FB 53 0F AB 23 60 84 43 14 E4 FB 53
+			07 AB 23 70 84 43 14 E4 FB 53 03 AB 23 80 84 43 14 E4 FB 53 7F AB 23 A0 84 43 14 E4 FB 53
+			7F AB 23 B0 84 43 14 E4 FB 53 3F AB 23 C0 84 43 14 E4 FB 53 07 AB 23 D0 84 43 14 E4 FB 53
+			03 AB 23 E0 84 43 85 95 B8 20 23 18 A0 23 E0 84 D4 85 B8 20 23 00 A0 23 F8 84 D4 A5 B5 B8
+			20 23 10 A0 23 E8 18 A0 04 1B A5 B8 22 84 BA FA 53 0F AB B8 29 F0 AC B9 41 69 A9 FB A1 1C
+			FC 53 0F A0 04 1B A3 34 F3 96 F2 A4 F3 FF FF FF FF FF FF FF 23 C0 44 AA BF FF A4 0A BF 7F
+			23 01 AC AD AE B9 04 BA 70 BB 70 14 EC 5F 39 ED 19 FC 17 53 07 C6 38 AC AD EE 15 F9 AE EB
+			15 FA AB FF 77 53 7F AF C6 43 03 C1 C6 3C A4 15 23 04 A4 21 F9 03 10 A9 AE A4 15 04 1B BF
+			08 D5 BB F0 C5 A4 53 BF 20 D5 BB D8 C5 BC 06 BD 06 BE 00 BA 02 B9 02 B8 05 54 66 FC 03 10
+			AC AD EA 5F BA 03 F8 03 01 A8 AC AD E9 5F B9 01 FF 17 AF D5 6B C5 C6 43 A4 5F B8 20 F0 AF
+			18 F0 AB 23 06 AC A8 AD BE 00 BA 02 B9 02 54 66 FC 03 02 AC AD EA 90 BA 02 F8 03 00 A8 AC
+			AD E9 90 B9 02 FF 17 AF 6B C6 43 A4 90 BF 7F A4 B3 BF 3F 23 01 AC AD AE BA 70 BB 70 14 EC
+			5F 39 ED C0 FC 17 53 03 C6 DB AC AD EE BC BE 04 EB BC FA AB FF 77 53 7F AF C6 43 A4 BC 23
+			01 A4 C8 23 00 B8 2B A0 04 1B 23 01 A4 E1 23 02 A4 E1 23 A0 3A E4 EE A3 34 F3 96 F3 C4 E4
+			FF FF FF FF FF FF 07 0E 15 1C 23 2A 31 38 38 31 2A 23 1C 15 0E 07 03 07 0A 0E 11 15 18 1C
+			1C 18 15 11 0E 0A 07 03 23 00 6E A3 44 99 23 10 C4 22 23 F7 AC AD BA 18 B8 2A F0 AB AF BE
+			00 B8 41 FE 68 A8 F0 A9 69 EB 3E A9 FF 37 53 0F 17 AB 69 EB 48 F9 39 ED 4D FC AD FF AB FE
+			17 53 0F AE 96 37 EA 37 23 18 AA FF 03 FF C6 6A E6 6A AB AF C4 37 04 1B 23 F7 AC AD BA 10
+			B8 2A F0 AB AF BE 00 B8 41 FE 68 A8 F0 A9 69 EB 80 A9 FF 37 53 0F 17 AB 69 EB 8A F9 39 ED
+			8F FC AD FF AB FE 17 53 0F AE 96 79 EA 79 23 10 AA B8 2B F0 32 70 04 1B E7 D7 C9 BC B0 A4
+			98 8D 84 7A 71 6A 60 59 52 4B 45 3E 39 34 2F 2A 25 21 1D 19 16 13 10 0C 0A 07 FA 03 CE AB
+			23 A8 6B A3 AD AC 23 A0 3A B8 2B F0 12 70 32 70 C4 2E FA B8 2A A0 04 1B A3 34 F3 96 E4 E4
+			CE E3 6D AD 1C FC 03 10 C6 F7 FC C4 EB FD 03 67 96 FE E4 D5 E4 FC C5 B8 41 FE 68 A8 F0 47
+			69 E6 68 39 ED 0C FC AD FE 17 53 0F AE 96 00 EB 00 FA AB B6 9F FC 6F AC AD B8 3F F0 96 7C
+			D5 CF FF C5 96 00 B8 33 F0 D5 AF C5 B8 3E F0 96 8E F9 D5 6D C5 A9 D5 6A C6 6C 76 00 D5 FC
+			6B AC C5 AC AD D5 C9 F9 C5 96 00 B8 3D F0 D5 A9 C5 F9 D5 6E C5 A9 D5 68 C5 C6 79 B8 2C F0
+			AC AD D5 AC E4 00 23 00 E4 0B C5 B8 2D F0 D5 6E C5 A0 A9 D5 6A 96 42 C5 04 1B 18 F0 96 87
+			FC D5 6F F6 31 E4 00 FC D5 6F E6 31 E4 00 B8 31 F0 6F AF B8 32 60 C6 79 E4 37 B8 34 60 E4
+			A3 FC 76 9A 6F AC AD B8 35 F0 07 A0 96 00 18 F0 C8 A0 76 B5 B5 E4 00 A5 F9 D5 6D C5 A9 D5
+			6A C6 6C C5 B8 37 F0 07 A0 96 00 18 F0 C8 A0 E4 42 98 A3 34 F3 96 CE C4 EB B8 20 23 00 AC
+			AD A0 F0 6C 96 FC 18 F8 53 7F C6 EE 1D FD 37 17 AC FD E4 DB B8 20 B0 00 18 F8 53 7F C6 FA
+			E4 F0 04 15 15 00 E4 FC
+		</patch>
+		<part crc="4e0647a0" name="523h13.11f"/>
+		<part crc="53166a2a" name="523h12.10f"/>
+		<part crc="ec15dd15" name="523h10.2f"/>
+		<part crc="54be2e83" name="523h11.3f"/>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+			09 00 00 00 00 FF 00 02
+			00 02 00 01 00 FF 10 00
+			00 00 3C 08 00 01 00 00
+			00 00 3C 09 00 01 03 03
+			00 00 3C 0A 00 02 00 00
+			00 00 3B C0 00 27 00 12
+		</part>
+	</rom>
+
+	<nvram index="4" size="43"></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210817165502</mratimestamp>
+</misterromdescription>

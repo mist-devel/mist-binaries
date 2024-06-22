@@ -1,0 +1,53 @@
+<misterromdescription>
+	<name>Time Pilot '84 (Set 1)</name>
+	<mameversion>0224</mameversion>
+	<setname>tp84</setname>
+	<mratimestamp>202007120000</mratimestamp>
+	<year>1984</year>
+	<manufacturer>Konami</manufacturer>
+	<category>Space / Fighter</category>
+	<rbf>TP84</rbf>
+	<display type="raster" rotate="90"/>
+	<switches default="00,25" base="8">
+		<dip bits="0,3"   name="Credits A" ids="1c/1cr,1c/3cr,1c/2cr,1c/4cr,1c/5cr,1c/7cr,1c/6cr,2c/1cr,2c/3cr,3c/1cr,2c/5cr,3c/2cr,3c/4cr,4c/3cr,4c/1cr,Free Play"/>
+		<dip bits="4,7"   name="Credits B" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Free Play"/>
+		<dip bits="8,9"   name="Lives" ids="2,3,5,7"/>
+		<dip bits="10"    name="Cabinet type" ids="Cocktail,Upright"/>
+		<dip bits="11,12" name="Bonus" ids="10K/50K+,20K/60K+,30K/70K+,40K/80K+"/>
+		<dip bits="13,14" name="Difficulty" ids="Easy,Normal,Hard,Hardest"/>
+		<dip bits="15"    name="Attract mode sound" ids="Off,On"/>
+	</switches>
+	<rom index="1">
+		<part>00</part>
+	</rom>
+	<rom index='0' type='merged' zip='tp84.zip' md5="None">
+		<!-- Primary CPU -->
+		<part crc="605f61c7" name="388_f04.7j"/>
+		<part crc="4b4629a4" name="388_05.8j"/>
+		<part crc="dbd5333b" name="388_f06.9j"/>
+		<part crc="a45237c4" name="388_07.10j"/>
+
+		<!-- Secondary CPU -->
+		<part crc="36462ff1" name="388_f08.10d"/>
+
+		<!-- Audio CPU -->
+		<part crc="c44414da" name="388j13.6a"/>
+
+		<!-- GFX1 -->
+		<part crc="05c7508f" name="388_h02.2j"/>
+		<part crc="498d90b7" name="388_d01.1j"/>
+
+		<!-- GFX2 -->
+		<part crc="cd682f30" name="388_e09.12a"/>
+		<part crc="888d4bd6" name="388_e10.13a"/>
+		<part crc="9a220b39" name="388_e11.14a"/>
+		<part crc="fac98397" name="388_e12.15a"/>
+
+		<!-- LUTs -->
+		<part crc="d737eaba" name="388d14.2c"/>
+		<part crc="2f6a9a2a" name="388d15.2d"/>
+		<part crc="2e21329b" name="388d16.1e"/>
+		<part crc="61d2d398" name="388d18.1f"/>
+		<part crc="13c4e198" name="388j17.16c"/>
+	</rom>
+</misterromdescription>

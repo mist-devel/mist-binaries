@@ -1,0 +1,47 @@
+
+<misterromdescription>
+	<name>Mad Planets</name>
+	<mameversion>0198</mameversion>
+	<setname>mplanets</setname>
+	<mratimestamp>20201231150731</mratimestamp>
+	<year>1982</year>
+	<manufacturer>Gottlieb</manufacturer>
+	<category>Platform</category>
+	<rbf>qbert</rbf>
+	<buttons names="Button 1,Start 1P,Start 2P,Coin,Button 2,Service Select" default="A,Start,Select,R,B,L"/>
+	<switches default="01"  page_id="1" page_name="Switches" base="16">
+		<dip bits="0" name="Demo Sounds" ids="On,Off"></dip>
+		<dip bits="1" name="Bonus Life" ids="Every 10000,Every 12000"></dip>
+		<dip bits="3" name="Allow Round Select" ids="No,Yes"></dip>
+		<dip bits="5" name="Lives" ids="3,5"></dip>
+		<dip bits="6,7" name="Difficulty" ids="Standard,Easy,Hard,Very Hard"></dip>
+	</switches>
+	<rom index="1">
+		<part>2</part>
+	</rom>
+	<rom index="0" zip="mplanets.zip" md5="none">
+		<part crc="74de78aa" name="rom0.c11-12"/>
+		<part crc="eb515f10" name="rom1.c12-13"/>
+		<part crc="960c3bb1" name="rom2.c13-14"/>
+		<part crc="5d18d740" name="rom3.c14-15"/>
+		<part crc="5402077f" name="rom4.c16"/>
+		<part repeat="8192">0</part>
+
+		<part crc="453193a1" name="snd1"/>
+		<part crc="f5ffc98f" name="snd2"/>
+		<part crc="453193a1" name="snd1"/>
+		<part crc="f5ffc98f" name="snd2"/>
+
+		<part crc="709aa24c" name="bg0.e11-12"/>
+		<part crc="4921e345" name="bg1.e13"/>
+
+		<part crc="a920e325" name="fg0.k4"/>
+		<part crc="a920e325" name="fg0.k4"/>
+		<part crc="6456cc1c" name="fg1.k5"/>
+		<part crc="6456cc1c" name="fg1.k5"/>
+		<part crc="735e2522" name="fg2.k6"/>
+		<part crc="735e2522" name="fg2.k6"/>
+		<part crc="c990b39f" name="fg3.k7-8"/>
+		<part crc="c990b39f" name="fg3.k7-8"/>
+	</rom>
+</misterromdescription>

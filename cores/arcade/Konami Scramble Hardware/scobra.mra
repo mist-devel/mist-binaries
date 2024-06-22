@@ -1,0 +1,29 @@
+<misterromdescription>
+    <name>Super Cobra</name>
+    <mameversion>0209</mameversion>
+    <rbf>scramble</rbf>
+    <switches>
+	<dip bits="7"   name="Lives"       ids="3,4"/>
+	<dip bits="9"   name="Continue"    ids="No,Yes"/>
+    </switches>
+    <rom index="1"><part>3</part></rom>
+    <rom index="0" zip="scobra.zip" md5="0f07fad30514fea4b483d933590ff482" type="merged">
+	<part name="epr1265.2c"/>
+	<part name="2e"/>
+	<part name="epr1267.2f"/>
+	<part name="2h"/>
+	<part name="epr1269.2j"/>
+	<part name="2l"/>
+	<part name="2l"/>
+	<part name="2l"/>
+
+	<part name="5c"/>
+	<part name="5d"/>
+	<part name="5e"/>
+	<part name="5e"/>
+
+	<part name="epr1273.5f"/>
+	<part name="epr1274.5h"/>
+	<part name="82s123.6e"/>
+    </rom>
+</misterromdescription>

@@ -1,0 +1,51 @@
+
+<misterromdescription>
+	<name>Krull</name>
+	<mameversion>0228</mameversion>
+	<setname>krull</setname>
+	<mratimestamp>20201231150731</mratimestamp>
+	<year>1983</year>
+	<manufacturer>Gottlieb</manufacturer>
+	<category>Platform</category>
+	<rbf>qbert</rbf>
+	<buttons names="Service Select,Start 1P,Start 2P,Coin" default="A,Start,Select,R"/>
+	<switches default="01"  page_id="1" page_name="Switches" base="16">
+		<dip bits="0" name="Demo Sounds" ids="On,Off"></dip>
+		<dip bits="1" name="Difficulty" ids="Normal,Hard"></dip>
+		<dip bits="3" name="Lives" ids="3,5"></dip>
+		<dip bits="5" name="Hexagon" ids="Roving,Stationary"></dip>
+		<dip bits="6,7" name="Bonus Life" ids="30k 80k/50k,30k 60k/30k,40k 90k/50k,50k 125k/75k"></dip>
+	</switches>
+	<rom index="1">
+		<part>3</part>
+	</rom>
+	<rom index="0" zip="krull.zip" md5="none">
+		<!-- 4/5 roms, 8k each -->
+		<part crc="a466afae" name="gv-105_rom_0.c11-12"/>
+		<part crc="1ad956a3" name="gv-105_rom_1.c12-13"/>
+		<part crc="b5fad94a" name="gv-105_rom_2.c13-14"/>
+		<part crc="14b0ee42" name="gv-105_rom_3.c14-15"/>
+		<part crc="2b696394" name="gv-105_rom_4.c16"/>
+
+		<!-- ram section used as rom -->
+		<part crc="302feadf" name="gv-105_ram_2.c7"/>
+		<part crc="79355a60" name="gv-105_ram_4.c9-10"/>
+
+		<!-- sound -->
+		<part crc="dd2b30b4" name="snd1.bin"/>
+		<part crc="8cab901b" name="snd2.bin"/>
+
+		<!-- no bg, used as ram -->
+		<part repeat="8192">00</part>
+
+		<!-- foreground roms -->
+		<part crc="7402dc19" name="gv-105_fg_0.k4"/>
+		<part crc="7402dc19" name="gv-105_fg_0.k4"/>
+		<part crc="7e3ad7b0" name="gv-105_fg_1.k5"/>
+		<part crc="7e3ad7b0" name="gv-105_fg_1.k5"/>
+		<part crc="25a24317" name="gv-105_fg_2.k6"/>
+		<part crc="25a24317" name="gv-105_fg_2.k6"/>
+		<part crc="82d77a45" name="gv-105_fg_3.k7-8"/>
+		<part crc="82d77a45" name="gv-105_fg_3.k7-8"/>
+	</rom>
+</misterromdescription>

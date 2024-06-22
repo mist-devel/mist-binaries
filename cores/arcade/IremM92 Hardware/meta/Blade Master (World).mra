@@ -1,0 +1,104 @@
+<misterromdescription>
+    <name>Blade Master (World)</name>
+    <mameversion>0245</mameversion>
+    <setname>bmaster</setname>
+    <year>1991</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Brawler</category>
+    <rbf>IremM92</rbf>
+    <rotation>horizontal</rotation>
+
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Attack,Jump,-,-,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="00 00 00" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="2,3,4,1" name="Lives"></dip>
+        <dip bits="2,3" ids="Normal,Easy,Hard,Very Easy" name="Difficulty"></dip>
+        <dip bits="4" ids="300k,None" name="Bonus Life"></dip>
+
+        <dip bits="5" ids="Yes,No" name="Allow Continue"></dip>
+        <dip bits="6" ids="Off,On" name="Demo Sounds"></dip>
+        <dip bits="7" ids="Off,On" name="Service Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Screen"></dip>
+
+        <dip bits="12,15" ids="1C/1C,2C/1C,3C/1C,4C/1C,5C/1C,6C/1C,1C/2C,1C/3C,1C/4C,1C/5C,1C/6C,2C/3C,3C/2C,4C/3C,2S/1C,Free Play" name="Coin Mode"></dip>
+    </switches>
+
+    <rom index="0" zip="bmaster.zip" md5="None">
+        <!-- board type -->
+        <part>00</part>
+        
+        <!-- maincpu -->
+        <part>00 0a 00 00</part>
+        <interleave output="16">
+        	<part name="bm_d-h0-b.5m" crc="49b257c7" map="10" />
+	        <part name="bm_d-l0-b.5f" crc="a873523e" map="01" />
+        </interleave>
+        <interleave output="16">
+            <part name="bm_d-h1-b.5l" crc="082b7158" map="10" />
+            <part name="bm_d-l1-b.5j" crc="6ff0c04e" map="01" />
+        </interleave>
+
+        <!-- gfx1 tiles -->
+        <part>01 10 00 00</part>
+        <interleave output="32">
+            <part name="bm_c0.rom" crc="2cc966b8" map="0001" />
+            <part name="bm_c1.rom" crc="46df773e" map="0010" />
+            <part name="bm_c2.rom" crc="05b867bd" map="0100" />
+            <part name="bm_c3.rom" crc="0a2227a4" map="1000" />
+        </interleave>
+
+        <!-- gfx2 sprites -->
+        <part>02 20 00 00</part>
+        <interleave output="32">
+            <part name="bm_000.rom" crc="339fc9f3" map="0001" />
+            <part name="bm_010.rom" crc="6a14377d" map="0010" />
+            <part name="bm_020.rom" crc="31532198" map="0100" />
+            <part name="bm_030.rom" crc="d1a041d3" map="1000" />
+        </interleave>
+
+        <!-- soundcpu -->
+        <part>03 02 00 00</part>
+        <interleave output="16">
+           	<part name="bm_d-sh0.rom" crc="9f7c075b" map="10" />
+        	<part name="bm_d-sl0.rom" crc="1fa87c89" map="01" />
+        </interleave>
+
+        <!-- soundcpu key -->
+        <part>04 00 01 00</part>
+        <part>
+            90 90 79 90 9d 48 90 90 90 90 2e 90 90 a5 72 90
+            46 5b b1 3a c3 90 35 90 90 23 90 99 90 05 90 3c
+            3b 76 11 90 90 4b 90 92 90 32 5d 90 f7 5a 9c 90
+            26 40 89 90 90 90 90 57 90 90 90 90 90 ba 53 bb
+            42 59 2f 90 77 90 90 4f bf 4a cb 86 62 7d 90 b8
+            90 34 90 5f 90 7f f8 80 a0 84 12 52 90 90 90 47
+            90 2b 88 f9 90 a3 83 90 75 87 90 ab eb 90 fe 90
+            90 af d0 2c d1 e6 90 43 a2 e7 85 e2 49 22 29 90
+            7c 90 90 9a 90 90 b9 90 14 cf 33 02 90 90 90 73
+            90 c5 90 90 90 f3 f6 24 90 56 d3 90 09 01 90 90
+            03 2d 1b 90 f5 be 90 90 fb 8e 21 8d 0b 90 90 b2
+            fc fa c6 90 e8 d2 90 08 0a a8 78 ff 90 b5 90 90
+            c7 06 18 90 90 1e 7e b0 0e 0f 90 90 0c aa 55 90
+            90 74 3d 90 90 38 27 50 90 b6 5e 8b 07 e5 39 ea
+            bd 90 81 b7 90 8a 0d 90 58 a1 a9 36 90 c4 90 8f
+            8c 1f 51 04 f2 90 b3 b4 e9 2a 90 90 90 25 90 bc
+        </part>
+
+        <!-- iremg20 -->
+        <part>05 08 00 00</part>
+        <part name="bm_da.rom"  crc="62ce5798" />
+    </rom>
+     <!--hiscore support. see hiscore.sv for modified header values-->
+     <!--Blade Master modifies the hiscore table when displaying it
+         This may cause 'extra' hiscore saving, but shouldn't cause any
+         loss of saved scores
+     -->
+     <rom index="3" md5="none">
+       <part>
+       00 00 00 F0 05 FF 00 01 00 0F 00 01 00 01 02 00
+       00 0e 75 0e 00 80 d3 00
+       </part>
+    </rom>
+    <nvram index="4" size="128"></nvram>
+</misterromdescription>

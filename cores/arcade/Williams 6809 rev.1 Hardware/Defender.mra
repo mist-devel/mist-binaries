@@ -1,0 +1,37 @@
+<misterromdescription>
+    <name>Defender (Red label)</name>
+    <mameversion>0216</mameversion>
+    <mratimestamp>201911270000</mratimestamp>
+    <year>1980</year>
+    <manufacturer>Williams</manufacturer>
+    <category>Space / Defender</category>
+    <rbf>defender</rbf>
+
+    <rom index="1"><part>0</part></rom>
+
+    <switches>
+	<dip bits="7" name="Auto up" ids="Off,On"/>
+	<dip bits="8" name="Advance"/>
+	<dip bits="9" name="HS Reset"/>
+    </switches>
+
+    <rom index="0" zip="defender.zip" md5="2173eef0c95ff44752cd36981c909c6d" type="merged|nonmerged">
+	<part name="defend.1"/>
+	<part name="defend.4"/>
+	<part name="defend.2"/>
+	<part name="defend.3"/>
+	<part name="defend.9"/>
+	<part name="defend.12"/>
+	<part name="defend.8"/>
+	<part name="defend.11"/>
+	<part name="defend.7"/>
+	<part name="defend.10"/>
+	<part name="defend.6"/>
+	<part name="defend.6"/>
+
+	<part name="decoder.2"/>
+	<part name="decoder.3"/>
+
+	<part name="defend.snd"/>
+    </rom>
+</misterromdescription>

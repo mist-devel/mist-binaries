@@ -1,0 +1,15 @@
+---------------------------------------------------------------------------------
+-- 
+-- Arcade: Super Breakout from james10952001
+-- Port to MiST by Gehstock
+-- 23 November 2018
+-- 
+
+-- 
+-- Keyboard inputs :
+--   ESC		: Coin	
+--   F1 or F2    	: Start
+--
+-- Joystick support.
+-- OSD And Controls can be Rotated
+----------------------------------------------------------------

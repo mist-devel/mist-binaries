@@ -1,0 +1,36 @@
+-- Congo Bongo port to MiST
+--
+-- Usage:
+-- Create .ROM and ARC files from MAME ROM zip files using the mra utility and the meta/mra files.
+-- Example: mra -A -z /path/to/mame/roms "Congo Bongo.mra"
+-- Copy the resulting ROM and ARC files to the root of the SD Card, next to the Zaxxon.rbf.
+--
+-- MRA utilty: https://github.com/mist-devel/mra-tools-c
+--
+---------------------------------------------------------------------------------
+-- Congo Bongo by Dar (darfpga@aol.fr) (12/11/2022)
+-- http://darfpga.blogspot.fr
+---------------------------------------------------------------------------------
+--
+-- release rev 00 : initial release
+--  (12/11/2022)
+---------------------------------------------------------------------------------
+-- gen_ram.vhd & io_ps2_keyboard
+--------------------------------
+-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)
+-- http://www.syntiac.com/fpga64.html
+---------------------------------------------------------------------------------
+-- T80/T80se - Version : 304
+-----------------------------
+-- Z80 compatible microprocessor core
+-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)
+---------------------------------------------------------------------------------
+-- Synthesizable model of TI's SN76489AN
+-- Copyright (c) 2005, 2006, Arnim Laeuger (arnim.laeuger@gmx.net)
+---------------------------------------------------------------------------------
+--
+-- Educational use only
+-- Do not redistribute synthetized file with roms
+-- Do not redistribute roms whatever the form
+-- Use at your own risk
+---------------------------------------------------------------------------------

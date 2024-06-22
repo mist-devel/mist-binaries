@@ -1,0 +1,30 @@
+<misterromdescription>
+    <name>Ant Eater</name>
+    <mameversion>0209</mameversion>
+    <rbf>scramble</rbf>
+    <switches>
+	<dip bits="7"  name="Lives"       ids="3,5"/>
+	<dip bits="10" name="Demo Sounds" ids="Off,On"/>
+    </switches>
+    <rom index="1"><part>0A</part></rom>
+    <rom index="0" zip="anteater.zip" md5="595cb84d7b7be1fab93958caaa9d593b" type="merged">
+	<part name="ra1-2c"/>
+	<part name="ra1-2e"/>
+	<part name="ra1-2f"/>
+	<part name="ra1-2h"/>
+	<part name="ra1-2c"/>
+	<part name="ra1-2e"/>
+	<part name="ra1-2f"/>
+	<part name="ra1-2h"/>
+
+	<part name="ra4-5c"/>
+	<part name="ra4-5d"/>
+	<part name="ra4-5c"/>
+	<part name="ra4-5d"/>
+
+	<part name="ra6-5h"/>
+	<part name="ra6-5f"/>
+
+	<part name="colr6f.cpu"/>
+    </rom>
+</misterromdescription>

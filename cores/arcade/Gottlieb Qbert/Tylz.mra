@@ -1,0 +1,41 @@
+
+<misterromdescription>
+	<name>Tylz</name>
+	<mameversion>0198</mameversion>
+	<setname>tylz</setname>
+	<mratimestamp>20201231150731</mratimestamp>
+	<year>1982</year>
+	<manufacturer>Gottlieb</manufacturer>
+	<category>Platform</category>
+	<rbf>qbert</rbf>
+	<buttons names="Service Select,Start 1P,Start 2P,Coin,Button" default="L,Start,Select,R,A"/>
+	<switches default="01"  page_id="1" page_name="Switches" base="16">
+		<dip bits="4" name="Demo Sounds" ids="On,Off"></dip>
+		<dip bits="3" name="Lives" ids="3,5"></dip>
+	</switches>
+	<rom index="1">
+		<part>5</part>
+	</rom>
+	<rom index="0" zip="tylz.zip" md5="none">
+		<part crc="b2a15510" name="tylz.n4"/>
+		<part crc="657c3d2e" name="tylz.r4"/>
+		<part crc="18ee09f9" name="tylz.s4b"/>
+		<part crc="28ed146d" name="tylz.s4t"/>
+		<part repeat="16384">00</part>
+
+		<part crc="ebcedba9" name="tylz.f2"/>
+		<part crc="ebcedba9" name="tylz.f2"/>
+
+		<part crc="5e300b9b" name="tylz.m6"/>
+		<part crc="af56292e" name="tylz.n6"/>
+
+		<part crc="ff62bc4b" name="tylz.k12"/>
+		<part crc="ff62bc4b" name="tylz.k12"/>
+		<part crc="bc319067" name="tylz.j12"/>
+		<part crc="bc319067" name="tylz.j12"/>
+		<part crc="1eb26e6f" name="tylz.g12"/>
+		<part crc="1eb26e6f" name="tylz.g12"/>
+		<part crc="6d2c5ad8" name="tylz.f12"/>
+		<part crc="6d2c5ad8" name="tylz.f12"/>
+	</rom>
+</misterromdescription>

@@ -1,0 +1,95 @@
+<misterromdescription>
+	<name>Crazy Climber</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1980</year>
+	<manufacturer>Nichibutsu</manufacturer>
+	<category>Platform - Climb</category>
+
+	<setname>cclimber</setname>
+	<parent>cclimber</parent>
+	<mameversion>0216</mameversion>
+	<rbf>cclimber</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>horizontal</rotation>
+	<flip></flip>
+
+	<players>2 (alternating)</players>
+	<joystick>8-way</joystick>
+	<special_controls>twin stick</special_controls>
+	<num_buttons>4</num_buttons>
+	<button_names></button_names>
+
+	<switches default="00" base="8">
+		<dip bits="0,1"   name="Lives" ids="3,4,5,6"/>
+		<dip bits="3"     name="Rack Test(Cheat)" ids="Off,On"/>
+		<dip bits="4,5"   name="Coin A" ids="1C_1C,2C_1C,3C_1C,4C_1C"/>
+		<dip bits="6,7"   name="Coin B" ids="1C_1C,2C_1C,3C_1C,4C_1C"/>
+	</switches>
+
+	<rom index="1"><part>8</part></rom>
+	<rom index="0" md5="b72214251dbc8789904906e3684cdc46" type="merged|nonmerged" zip="cclimber.zip">
+		<!-- main cpu 32K -->
+		<part crc="217ec4ff" name="cc11"/>
+		<part crc="b3c26cef" name="cc10"/>
+		<part crc="6db0879c" name="cc09"/>
+		<part crc="f48c5fe3" name="cc08"/>
+		<part crc="3e873baf" name="cc07"/>
+		<part repeat="0x3000">FF</part>
+
+		<!-- samples 8K -->
+		<part crc="e0042f75" name="cc13"/>
+		<part crc="5da13aaa" name="cc12"/>
+
+		<!-- gfx1 background tiles 16K -->
+		<part crc="481b64cc" name="cc06"/>
+		<part crc="2c33b760" name="cc05"/>
+		<part crc="481b64cc" name="cc06"/>
+		<part crc="2c33b760" name="cc05"/>
+		<part crc="332347cb" name="cc04"/>
+		<part crc="4e4b3658" name="cc03"/>
+		<part crc="332347cb" name="cc04"/>
+		<part crc="4e4b3658" name="cc03"/>
+
+		<!-- gfx2 big sprite tiles 8K -->
+		<part crc="14f3ecc9" name="cc02"/>
+		<part crc="14f3ecc9" name="cc02"/>
+		<part crc="21c0f9fb" name="cc01"/>
+		<part crc="21c0f9fb" name="cc01"/>
+
+		<!-- misc 8K -->
+		<part repeat="0x2000">00</part>
+
+		<!-- palette1 2*256 byte -->
+		<part crc="751c3325" name="cclimber.pr1"/>
+		<part crc="ab1940fa" name="cclimber.pr2"/>
+		<part crc="751c3325" name="cclimber.pr1"/>
+		<part crc="ab1940fa" name="cclimber.pr2"/>
+		<part crc="751c3325" name="cclimber.pr1"/>
+		<part crc="ab1940fa" name="cclimber.pr2"/>
+		<part crc="751c3325" name="cclimber.pr1"/>
+		<part crc="ab1940fa" name="cclimber.pr2"/>
+
+		<part repeat="0x100">00</part>
+
+		<!-- palette2 32 byte -->
+		<part crc="71317756" name="cclimber.pr3"/>
+
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

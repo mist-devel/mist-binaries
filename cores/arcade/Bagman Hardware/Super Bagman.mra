@@ -1,0 +1,54 @@
+<misterromdescription>
+	<name>Super Bagman</name>
+	<mratimestamp>20200118</mratimestamp>
+	<mameversion>0217</mameversion>
+	<year>1984</year>
+	<manufacturer>Valadon Automation</manufacturer>
+	<category>Platform / Extra</category>
+	<rbf>bagman</rbf>
+	<setname>sbagman</setname>
+	<switches default="F6" base="8">
+		<dip bits="0,1" name="Lives" ids="5,4,3,2"/>
+		<dip bits="2"   name="Coinage" ids="2c/1cr,1c/1cr"/>
+		<dip bits="3,4" name="Difficulty" ids="Hardest,Hard,Medium,Easy"/>
+		<dip bits="5"   name="Language" ids="French,English"/>
+		<dip bits="6"   name="Bonus" ids="40000,30000"/>
+	</switches>
+	<rom index="1">
+		<part>01</part>
+	</rom>
+	<rom index='0' md5='fa8e135d43bfafab71a3b608d825072b' type='merged|nonmerged|split' zip='sbagman.zip|sbagman2.zip'>
+		<!-- CPU, 64k -->
+		<part crc='1b1d6b0a' name='5.9e'/>
+		<part crc='ac49cb82' name='6.9f'/>
+		<part crc='9a1c778d' name='7.9j'/>
+		<part crc='b94fbb73' name='8.9k'/>
+		<part crc='601f34ba' name='9.9m'/>
+		<part crc='5f750918' name='10.9n'/>
+		<part repeat="24576">00</part>
+		<part crc='944a4453' length='3584' name='13.8d'/>
+		<part crc='b77eb1f5' length='512' name='16.8k' offset='3584'/>
+		<part crc='83b10139' length='1024' name='14.8f'/>
+		<part crc='fe924879' length='512' name='15.8j' offset='1024'/>
+		<part crc='83b10139' length='2560' name='14.8f' offset='1536'/>
+		<part crc='fe924879' length='1024' name='15.8j'/>
+		<part crc='83b10139' length='512' name='14.8f' offset='1024'/>
+		<part crc='fe924879' length='2560' name='15.8j' offset='1536'/>
+		<part crc='b77eb1f5' length='3584' name='16.8k'/>
+		<part crc='944a4453' length='512' name='13.8d' offset='3584'/>
+
+		<!-- GFX -->
+		<part crc='f4d3d4e6' name='2.1e'/>
+		<part crc='a046ff44' name='1.1c'/>
+		<part crc='2c6a510d' name='4.1j'/>
+		<part crc='a4422da4' name='3.1f'/>
+
+		<!-- Speech -->
+		<part crc='2e0057ff' name='11.9r'/>
+		<part crc='b2120edd' name='12.9t'/>
+
+		<!-- LUTs -->
+		<part crc='2a855523' name="p3.bin"/>
+		<part crc='ae6f1019' name="r3.bin"/>
+	</rom>
+</misterromdescription>

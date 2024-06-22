@@ -1,0 +1,73 @@
+<misterromdescription>
+	<name>Knightmare</name>
+	<region>USA</region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Set 1</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1982</year>
+	<manufacturer>Gottlieb</manufacturer>
+	<category>Platform - Climb</category>
+
+	<setname>kngtmare</setname>
+	<parent>qbert</parent>
+	<mameversion>0198</mameversion>
+	<rbf>qbert</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (ccw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way diagonal</joystick>
+	<special_controls></special_controls>
+	<num_buttons>0</num_buttons>
+	<buttons default="A,Start,Select,R" names="Service Select,Start 1P,Start 2P,Coin"></buttons>
+
+	<switches default="00" page_id="1" page_name="Switches" base="16">
+		<dip bits="5" ids="3,5" name="Lives"></dip>
+	</switches>
+
+	<rom index="1">
+		<part>8</part>
+	</rom>
+
+	<rom index="0" md5="none" zip="kngtmare.zip">
+		<!-- MAIN CPU ROM 48k -->
+		<part crc="620dc629" name="gv112_rom0_2764.c11c12"></part>
+		<part crc="5b340640" name="gv112_rom1_2764.c12c13"></part>
+		<part crc="53e01f97" name="gv112_rom2_2764.c13c14"></part>
+		<part crc="47351270" name="gv112_rom3_2764.c14c15"></part>
+		<part repeat="16384">00</part>
+
+		<!-- SOUND CPU ROM 8k -->
+		<!-- no sound dump -->
+		<part repeat="8192">00</part>
+
+		<!-- Background ROMs 8k -->
+		<part crc="a74591fd" name="gv112_bg0_2732.e11e12"></part>
+		<part crc="5a226e6a" name="gv112_bg1_2732.e13"></part>
+
+		<!-- Foreground ROMs -->
+		<part crc="d1886658" name="gv112_fg3_2764.k7k8"></part>
+		<part crc="d1886658" name="gv112_fg3_2764.k7k8"></part>
+		<part crc="e1c73f0c" name="gv112_fg2_2764.k6"></part>
+		<part crc="e1c73f0c" name="gv112_fg2_2764.k6"></part>
+		<part crc="724bc3ea" name="gv112_fg1_2764.k5"></part>
+		<part crc="724bc3ea" name="gv112_fg1_2764.k5"></part>
+		<part crc="0311bbd9" name="gv112_fg0_2764.k4"></part>
+		<part crc="0311bbd9" name="gv112_fg0_2764.k4"></part>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

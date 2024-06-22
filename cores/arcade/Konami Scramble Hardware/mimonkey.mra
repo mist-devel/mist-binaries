@@ -1,0 +1,30 @@
+<misterromdescription>
+    <name>Mighty Monkey</name>
+    <mameversion>0209</mameversion>
+    <rbf>scramble</rbf>
+    <switches>
+	<dip bits="7,8"  name="Lives"          ids="3,4,5,6"/>
+	<dip bits="9"    name="Infinite Lives" ids="Off,On"/>
+    </switches>
+    <rom index="1"><part>12</part></rom>
+    <rom index="0" zip="mimonkey.zip" md5="b4b49bd1d6a1b1a4e4d431fc79fc4268" type="merged">
+	<part name="mimonscr/mm1"/>
+	<part name="mimonscr/mm2"/>
+	<part name="mimonscr/mm3"/>
+	<part name="mimonscr/mm4"/>
+	<part name="mimonscr/mm5"/>
+	<part name="mimonscr/mm6"/>
+	<part name="mimonscr/mm7"/>
+	<part name="mimonscr/mm8"/>
+
+	<part name="mm13.11d"/>
+	<part name="mm14.10d"/>
+
+	<part name="mm11.5f"/>
+	<part name="mm9.5f"/>
+	<part name="mm12.5h"/>
+	<part name="mm10.5h"/>
+
+	<part name="82s123.6e"/>
+    </rom>
+</misterromdescription>

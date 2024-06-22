@@ -1,0 +1,69 @@
+<misterromdescription>
+    <name>Gallop - Armed Police Unit (Japan, M72 hardware)</name>
+    <mameversion>0245</mameversion>
+    <setname>gallop</setname>
+    <parent>cosmccop</parent>
+    <year>1991</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Shooter</category>
+    <rbf>IremM72</rbf>
+    <rotation>horizontal</rotation>
+
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,R,L" names="Fire,Secondary,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="40,06" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="3,2,4,5" name="Lives"></dip>
+        <dip bits="2,3" ids="Normal,Easy,Hard,Very Easy" name="Difficulty"></dip>
+        <dip bits="5" ids="Yes,No" name="Allow Continue"></dip>
+        <dip bits="6" ids="Off,On" name="Demo Sounds"></dip>
+        <dip bits="7" ids="Off,On" name="Diagnostic Test"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Picture"></dip>
+        <dip bits="9,10" ids="Cocktail,Upright (2P),Upright (2P),Upright" name="Cabinet type"></dip>
+        <dip bits="12,15" ids="1C/1C,2C/1C,3C/1C,4C/1C,5C/1C,6C/1C,1C/2C,1C/3C,1C/4C,1C/5C,1C/6C,2C/3C,3C/2C,4C/3C,2C/1C,Free Play" name="Coin Mode"></dip>
+    </switches>
+
+    <!-- ROM data -->
+    <rom index="0" zip="cosmccop.zip|gallop.zip" md5="none" type="merged|nonmerged">
+        <part>01</part>
+
+        <!-- maincpu -->
+        <part>00 08 00 00</part>
+        <interleave output="16">
+            <part name="cc-c-h0.ic40" crc="2217dcd0" map="10"/>
+            <part name="cc-c-l0.ic37" crc="ff39d7fb" map="01"/>
+        </interleave>
+        <interleave output="16">
+            <part name="cc-c-h3.ic43" crc="9b2bbab9" map="10"/>
+            <part name="cc-c-l3.ic34" crc="acd3278e" map="01"/>
+        </interleave>
+
+        <!-- sprites -->
+        <part>01 08 00 00</part>
+        <interleave output="32">
+            <part name="cc-c-00.ic53" crc="9d99deaa" map="0001" />
+            <part name="cc-c-10.ic51" crc="7eb083ed" map="0010" />
+            <part name="cc-c-20.ic49" crc="9421489e" map="0100" />
+            <part name="cc-c-30.ic47" crc="920ec735" map="1000" />
+        </interleave>
+
+        <!-- gfx2 -->
+        <part>02 04 00 00</part>
+        <interleave output="32">
+            <part name="cc-b-a0.ic21" crc="a33472bd" map="0001" />
+            <part name="cc-b-a1.ic22" crc="118b1f2d" map="0010" />
+            <part name="cc-b-a2.ic20" crc="83cebf48" map="0100" />
+            <part name="cc-b-a3.ic23" crc="572903fc" map="1000" />
+        </interleave>
+
+        <!-- gfx3 -->
+        <part>03 04 00 00</part>
+        <interleave output="32">
+            <part name="cc-b-b0.ic26" crc="0df5b439" map="0001" />
+            <part name="cc-b-b1.ic27" crc="010b778f" map="0010" />
+            <part name="cc-b-b2.ic25" crc="bda9f6fb" map="0100" />
+            <part name="cc-b-b3.ic24" crc="d361ba3f" map="1000" />
+        </interleave>
+
+    </rom>
+</misterromdescription>

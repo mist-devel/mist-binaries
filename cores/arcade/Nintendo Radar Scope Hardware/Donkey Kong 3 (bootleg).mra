@@ -1,0 +1,45 @@
+<misterromdescription>
+	<name>Donkey Kong 3 (bootleg on DKJr HW)</name>
+	<mameversion>0217</mameversion>
+	<setname>dkong3b</setname>
+	<mratimestamp>201912300000</mratimestamp>
+	<year>1982</year>
+	<manufacturer>Nintendo of America</manufacturer>
+	<category>Maze / Monkeys</category>
+	<category>Platform</category>
+	<category>Platform / Mario Bros.</category>
+	<rbf>dkong</rbf>
+
+	<buttons names="Jump,Start 1P,Start 2P,Coin" default="A,Start,Select,R" />
+
+	<rom index="1"><part>03</part></rom>
+	<rom index="0" zip="dkong3.zip" md5="403f810061c5eda8651b5284af4b92ce" type="merged">
+
+		<!-- Main CPU 32k-->
+		<part crc="dea28158" name="dkong3b/5b.bin"/>
+		<part crc="6fb5faf6" name="dkong3b/5c-2.bin"/>
+		<part crc="d042b6a8" name="dkong3b/5e-2.bin"/>
+		<part crc="d042b6a8" name="dkong3b/5c-1.bin"/>
+		<part crc="d042b6a8" name="dkong3b/5e-1.bin"/>
+
+		<!-- GFX1 8k-->
+		<part crc="4ef64ba5" name="dkong3b/3p.bin"/>
+		<part crc="8d51aca9" name="dkong3b/3n.bin"/>
+
+		<!-- GFX2 16k-->
+		<part crc="dc7f4164" name="dk3v.7c"/>
+		<part crc="dc7f4164" name="dk3v.7d"/>
+		<part crc="dc7f4164" name="dk3v.7e"/>
+		<part crc="dc7f4164" name="dk3v.7f"/>
+
+		<!-- Sound CPU 4k-->
+		<part crc="715da5f8" name="dkong3b/3h.bin"/>
+
+		<!-- LUTs -->
+		<part crc="47ba0042" name="dkc1-c.1c"/>
+		<part crc="463dc7ad" name="dkc1-c.1d"/>
+		<part crc="dbf185bf" name="dkc1-v.2n"/>
+		<part repeat="2816">00</part>
+
+	</rom>
+</misterromdescription>

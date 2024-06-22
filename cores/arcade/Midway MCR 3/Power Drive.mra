@@ -1,0 +1,32 @@
+<misterromdescription>
+    <name>Power Drive</name>
+    <mameversion>0217</mameversion>
+    <mratimestamp>20200202</mratimestamp>
+    <year>1986</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Action</category>
+    <rbf>mcr3</rbf>
+    <setname>powerdrv</setname>
+    <switches>
+	<dip bits="8,9" name="Difficulty"  ids="Factory,Easy,Hard,Hardest"/>
+	<dip bits="10"  name="Demo Sounds" ids="On,Off"/>
+	<dip bits="11"  name="Rack Advance (cheat)" ids="On,Off"/>
+    </switches>
+    <rom index="1">
+	<part>02</part>
+    </rom>
+    <rom index="0" zip="powerdrv.zip" md5="0300242430d958ef5fdce41bc5c1e722" type="merged|nonmerged">
+	<part crc="d870b704" name="pdrv3b.bin"/>
+	<part crc="fa0544ad" name="pdrv5b.bin"/>
+	<part crc="dd3a2adc" name="pdrv8e.bin"/>
+	<part crc="1a1f7f81" name="pdrv6e.bin"/>
+	<part crc="4cb4780e" name="pdrv5e.bin"/>
+	<part crc="de400335" name="pdrv4e.bin"/>
+	<part crc="b858b5a8" name="pdrv15a.bin"/>
+	<part crc="12ee7fc2" name="pdrv14b.bin"/>
+	<part crc="c41de6e4" name="power_drive_snd_u17.u17"/>
+	<part crc="cae14c70" name="power_drive_snd_u18.u18"/>
+	<part crc="78713e78" name="power_drive_snd_u7.u7"/>
+	<part crc="15714036" name="power_drive_snd_u8.u8"/>
+    </rom>
+</misterromdescription>

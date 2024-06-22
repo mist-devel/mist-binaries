@@ -1,0 +1,33 @@
+<misterromdescription>
+	<name>Millipede</name>
+	<mameversion>0218</mameversion>
+	<setname>milliped</setname>
+	<mratimestamp>20200225084106</mratimestamp>
+	<year>1980</year>
+	<manufacturer>Atari</manufacturer>
+	<category>Maze / Bugs</category>
+	<category>Maze / Centipede</category>
+	<category>Maze / Spiders</category>
+	<rbf>centiped</rbf>
+	<switches base="8" default="30">
+		<dip bits="0,1" name="Language"       ids="English,German,French,Spanish"/>
+		<dip bits="2,3" name="Bonus"          ids="0,0 1x,0 1x 2x,0 1x 2x 3x"/>
+		<dip bits="6"   name="Credit minimum" ids="1,2"/>
+		<dip bits="7"   name="Coin Counters"  ids="1,2"/>
+	</switches>
+	<rom index="1"><part>1</part></rom>
+	<rom index="0" zip="milliped.zip" md5="608bf068509574138b195201b359c025">
+		<!-- CPU ROM -->
+		<part name="136013-104.mn1"/>
+		<part name="136013-103.l1"/>
+		<part name="136013-102.jk1"/>
+		<part name="136013-101.h1"/>
+
+		<!-- GFX -->
+		<part name="136013-107.r5"/>
+		<part name="136013-106.p5"/>
+
+		<!-- LUT -->
+		<part name="136001-213.e7"/>
+	</rom>
+</misterromdescription>

@@ -1,0 +1,86 @@
+<misterromdescription>
+    <name>Ninja Spirit (Japan)</name>
+    <mameversion>0245</mameversion>
+    <setname>nspiritj</setname>
+    <parent>nspirit</parent>
+    <year>1989</year>
+    <manufacturer>Irem</manufacturer>
+    <category> </category>
+    <rbf>IremM72</rbf>
+
+    <joystick>8-way</joystick>
+    <num_buttons>3</num_buttons>
+    <buttons default="B,A,X,R,L" names="Switch Weapons,Shoot,Jump,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="00,0A" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="3,2,4,5" name="Lives"></dip>
+        <dip bits="2,3" ids="Normal,Easy,Hard,Very Hard" name="Difficulty"></dip>
+        <dip bits="4,7" ids="1C/1P,2C/1P,3C/1P,4C/1P,5C/1P,6C/1P,1C/2P,1C/3P,1C/4P,1C/5P,1C/6P,2C/3P,4C/2P,5C/3P,8C/3P,Free Play" name="Coin Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Picture"></dip>
+        <dip bits="9" ids="Cocktail,Upright" name="Cabinet type"></dip>
+        <dip bits="11" ids="Off,On" name="Demo Sound"></dip>
+        <dip bits="12" ids="On,Off" name="Continues"></dip>
+        <dip bits="13" ids="Off,On" name="Freeze Picture"></dip>
+        <dip bits="14" ids="Off,On" name="No Death Mode"></dip>
+        <dip bits="15" ids="Off,On" name="Diagnostic Test"></dip>
+    </switches>
+    <!-- ROM data -->
+    <rom index="0" zip="nspirit.zip|nspiritj.zip" md5="none">
+        <!-- board type -->
+        <part>01</part>
+
+        <!-- maincpu -->
+        <part>00 08 00 00</part>
+        <interleave output="16">
+            <part name="nin_c-h0.6h" crc="8603fab2" map="10" />
+            <part name="nin_c-l0.6d" crc="e520fa35" map="01" />
+        </interleave>
+        <interleave output="16">
+            <part name="nin_c-h1.6j" crc="cbc10586" map="10" />
+            <part name="nin_c-l1.6c" crc="b75c9a4d" map="01" />
+        </interleave>
+        <interleave output="16">
+            <part name="nin_c-h2.6l" crc="8ad818fa" map="10" />
+            <part name="nin_c-l2.6b" crc="c52ca78c" map="01" />
+        </interleave>
+        <interleave output="16">
+            <part name="nin_c-h3.6m" crc="95b63a61" map="10" />
+            <part name="nin_c-l3.6a" crc="e754a87a" map="01" />
+        </interleave>
+
+        <!-- sprites -->
+        <part>01 08 00 00</part>
+        <interleave output="32">
+            <part name="nin-r00.7m" crc="5f61d30b" map="0001" />
+            <part name="nin-r10.7j" crc="0caad107" map="0010" />
+            <part name="nin-r20.7f" crc="ef3617d3" map="0100" />
+            <part name="nin-r30.7d" crc="175d2a24" map="1000" />
+        </interleave>
+
+        <!-- gfx2 -->
+        <part>02 04 00 00</part>
+        <interleave output="32">
+            <part name="nin_b-a0.4c" crc="63f8f658" map="0001" />
+            <part name="nin_b-a1.4d" crc="75eb8306" map="0010" />
+            <part name="nin_b-a2.4b" crc="df532172" map="0100" />
+            <part name="nin_b-a3.4e" crc="4dedd64c" map="1000" />
+        </interleave>
+
+        <!-- gfx3 -->
+        <part>03 04 00 00</part>
+        <interleave output="32">
+            <part name="b0.4j" crc="1b0e08a6" map="0001" />
+            <part name="b1.4k" crc="728727f0" map="0010" />
+            <part name="b2.4h" crc="f87efd75" map="0100" />
+            <part name="b3.4f" crc="98856cb4" map="1000" />
+        </interleave>
+
+        <!-- mcu -->
+        <part>04 00 10 00</part>
+        <part name="nin_c-pr-.ic1" crc="802d440a" />
+
+        <!-- samples -->
+        <part>05 01 00 00</part>
+        <part name="nin-v0.7a" crc="a32e8caf" />
+
+    </rom>
+</misterromdescription>

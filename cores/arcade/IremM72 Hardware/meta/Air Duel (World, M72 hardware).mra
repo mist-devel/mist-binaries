@@ -1,0 +1,74 @@
+<misterromdescription>
+    <name>Air Duel (World, M72 hardware)</name>
+    <mameversion>0245</mameversion>
+    <setname>airduelm72</setname>
+    <parent>airduel</parent>
+    <year>1990</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Shooter</category>
+    <rbf>IremM72</rbf>
+    <rotation>vertical (ccw)</rotation>
+
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,R,L" names="Fire,Bomb,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="40,00" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="3,2,4,5" name="Lives"></dip>
+        <dip bits="2,3" ids="Normal,Easy,Hard,Very Easy" name="Difficulty"></dip>
+        <dip bits="6" ids="Off,On" name="Demo Sound"></dip>
+        <dip bits="7" ids="Off,On" name="Diagnostic Test"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Picture"></dip>
+        <dip bits="12,15" ids="1C/1P,2C/1P,3C/1P,4C/1P,5C/1P,6C/1P,1C/2P,1C/3P,1C/4P,1C/5P,1C/6P,2C/3P,3C/2P,4C/3P,Free Play,Free Play" name="Coin Mode"></dip>
+    </switches>
+
+    <rom index="1"><part>01</part></rom>
+    <rom index="0" zip="airduelm72.zip|airduel.zip" md5="None">
+        <!-- board type -->
+        <part>09</part>
+        <!-- maincpu -->
+        <part>00 08 00 00</part>
+        <interleave output="16">
+            <part name="ad-c-l0-c.ic37" crc="b90c4ffd" map="01"/>
+            <part name="ad-c-h0-c.ic40" crc="6467ed0f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ad-c-l3.ic34" crc="9dd343f7" map="01"/>
+            <part name="ad-c-h3.ic43" crc="9f7cfca3" map="10"/>
+        </interleave>
+
+        <!-- sprites -->
+        <part>01 08 00 00</part>
+        <interleave output="32">
+            <part name="ad-00.ic53" crc="2f0d599b" map="0001" />
+            <part name="ad-10.ic51" crc="9865856b" map="0010" />
+            <part name="ad-20.ic49" crc="d392aef2" map="0100" />
+            <part name="ad-30.ic47" crc="923240c3" map="1000" />
+        </interleave>
+
+        <!-- gfx2 -->
+        <part>02 08 00 00</part>
+        <interleave output="32">
+            <part name="ad-a0.ic21" crc="ce134b47" map="0001" />
+            <part name="ad-a1.ic22" crc="097fd853" map="0010" />
+            <part name="ad-a2.ic20" crc="6a94c1b9" map="0100" />
+            <part name="ad-a3.ic23" crc="6637c349" map="1000" />
+        </interleave>
+
+        <!-- gfx3 -->
+        <part>03 08 00 00</part>
+        <interleave output="32">
+            <part name="ad-b0.ic26" crc="ce134b47" map="0001" />
+            <part name="ad-b1.ic27" crc="097fd853" map="0010" />
+            <part name="ad-b2.ic25" crc="6a94c1b9" map="0100" />
+            <part name="ad-b3.ic24" crc="6637c349" map="1000" />
+        </interleave>
+
+        <!-- mcu -->
+        <part>04 00 10 00</part>
+        <part name="ad_c-pr-c.ic1" crc="8785e4e2"/>
+
+        <!-- samples -->
+        <part>05 02 00 00</part>
+        <part name="ad-v0.ic44" crc="339f474d"/>
+    </rom>
+</misterromdescription>

@@ -1,0 +1,78 @@
+<misterromdescription>
+	<name>Qbert</name>
+	<region>USA</region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Set 1</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1982</year>
+	<manufacturer>Gottlieb</manufacturer>
+	<category>Platform - Climb</category>
+
+	<setname>qbert</setname>
+	<parent>qbert</parent>
+	<mameversion>0198</mameversion>
+	<rbf>qbert</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (ccw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way diagonal</joystick>
+	<special_controls></special_controls>
+	<num_buttons>0</num_buttons>
+	<buttons default="A,Start,Select,R" names="Service Select,Start 1P,Start 2P,Coin"></buttons>
+
+	<switches default="01" page_id="1" page_name="Switches" base="16">
+		<dip bits="0" ids="On,Off" name="Demo Sounds"></dip>
+		<dip bits="1" ids="Off,On" name="Kicker"></dip>
+		<dip bits="2" ids="Upright,Cocktail" name="Cabinet"></dip>
+		<dip bits="3" ids="Off,On" name="Demo Mode"></dip>
+		<dip bits="4" ids="Off,On" name="Free Play"></dip>
+		</switches>
+
+	<rom index="1">
+		<part>0</part>
+	</rom>
+
+	<rom index="0" md5="none" zip="qbert.zip">
+		<!-- MAIN CPU ROM 48k -->
+		<part crc="8e318641" name="qb-rom0.bin"></part>
+		<part crc="55635447" name="qb-rom1.bin"></part>
+		<part crc="fe434526" name="qb-rom2.bin"></part>
+		<part repeat="24576">00</part>
+
+		<!-- SOUND CPU ROM 8k -->
+		<part crc="15787c07" name="qb-snd1.bin"></part>
+		<part crc="58437508" name="qb-snd2.bin"></part>
+		<part crc="15787c07" name="qb-snd1.bin"></part>
+		<part crc="58437508" name="qb-snd2.bin"></part>
+
+		<!-- Background ROMs 8k -->
+		<part crc="7a9ba824" name="qb-bg0.bin"></part>
+		<part crc="22e5b891" name="qb-bg1.bin"></part>
+
+		<!-- Foreground ROMs -->
+		<part crc="2f695b85" name="qb-fg0.bin"></part>
+		<part crc="2f695b85" name="qb-fg0.bin"></part>
+		<part crc="224e8356" name="qb-fg1.bin"></part>
+		<part crc="224e8356" name="qb-fg1.bin"></part>
+		<part crc="f69b9483" name="qb-fg2.bin"></part>
+		<part crc="f69b9483" name="qb-fg2.bin"></part>
+		<part crc="dd436d3a" name="qb-fg3.bin"></part>
+		<part crc="dd436d3a" name="qb-fg3.bin"></part>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

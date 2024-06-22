@@ -1,0 +1,63 @@
+<misterromdescription>
+	<name>Super Glob</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>yes</bootleg>
+	<version>Pac-Man, German</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1984</year>
+	<manufacturer>Bootleg</manufacturer>
+	<category>Platform - Climb</category>
+
+	<setname>sprglbpg</setname>
+	<parent>suprglob</parent>
+	<mameversion>0220</mameversion>
+	<rbf>pacman</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>no</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>2</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FF,FF,F3" base="8" page_id="1" page_name="Switches">
+		<dip bits="15" ids="Cocktail,Upright" name="Cabinet"></dip>
+		<dip bits="16,17" ids="6,5,4,3" name="Lives"></dip>
+		<dip bits="18,20" ids="Hardest,Very Hard,Very Difficult,Difficult,Normal,Easy,Very Easy,Easiest" name="Difficulty"></dip>
+		<dip bits="21" ids="On,Off" name="Demo Sounds"></dip>
+		</switches>
+
+	<rom index="1"></rom>
+	<rom index="0" md5="83913a5076b208589e6c41fbaed16058" zip="suprglob.zip|sprglbpg.zip">
+		<part crc="a2df2073" name="ic8.1"></part>
+		<part crc="3d2c22d9" name="ic7.2"></part>
+		<part crc="a252047f" name="ic15.3"></part>
+		<part crc="7efa81f1" name="ic14.4"></part>
+		<part crc="a2df2073" name="ic8.1"></part>
+		<part crc="3d2c22d9" name="ic7.2"></part>
+		<part crc="a252047f" name="ic15.3"></part>
+		<part crc="7efa81f1" name="ic14.4"></part>
+		<part crc="e54f484d" name="ic92.5"></part>
+		<part crc="e54f484d" name="ic92.5"></part>
+		<part crc="c29dea27" name="ic51.prm"></part>
+		<part crc="28faa769" name="ic88.prm"></part>
+		<part crc="77245b66" name="ic70.prm"></part>
+		<part crc="1f617527" name="ic78.prm"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

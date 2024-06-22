@@ -1,0 +1,36 @@
+<misterromdescription>
+	<name>Loco-motion</name>
+	<mameversion>0220</mameversion>
+	<setname>locomotn</setname>
+	<year>1980</year>
+	<manufacturer>Konami</manufacturer>
+	<rbf>rallyx</rbf>
+	<switches base="8">
+		<dip bits="4,5"   name="Lives" ids="3,4,5,255"/>
+		<dip bits="3"     name="Cabinet" ids="Cocktail,Upright"/>
+		<dip bits="1"     name="Intermissions" ids="On,Off"/>
+		<dip bits="0"     name="Demo Sounds" ids="Off,On"/>
+	</switches>
+	<rom index="1"><part>3</part></rom>
+	<rom index="0" zip="locomotn.zip" md5="ffa8d1e4e0ccb462c23a83ef1c2bb041">
+		<part name="1a.cpu"/>
+		<part name="2a.cpu"/>
+		<part name="3.cpu"/>
+		<part name="4.cpu"/>
+		<part name="5.cpu"/>
+		<part name="5.cpu"/>
+
+		<part name="1b_s1.bin"/>
+		<part name="1b_s1.bin"/>
+
+		<part name="5l_c1.bin"/>
+		<part name="c2.cpu"/>
+
+		<part name="10g.bpr"/>
+
+		<part repeat="0x100">FF</part>
+
+		<part name="9d.bpr"/>
+		<part name="8b.bpr"/>
+	</rom>
+</misterromdescription>

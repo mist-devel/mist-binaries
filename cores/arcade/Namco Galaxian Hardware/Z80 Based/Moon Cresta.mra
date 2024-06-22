@@ -1,0 +1,32 @@
+<misterromdescription>
+	<name>Moon Cresta (Galaxian hardware)</name>
+	<mameversion>0216</mameversion>
+	<setname>mooncrgx</setname>
+	<mratimestamp>201911270000</mratimestamp>
+	<year>1980</year>
+	<manufacturer>bootleg</manufacturer>
+	<category>Space / Shooter</category>
+	<rbf>galaxian</rbf>
+        <switches default="00,5F,04">
+                <dip bits="16" name="Bonus Life After" ids="30000,50000"/>
+                <dip bits="19"    name="Cabinet" ids="Upright,Cocktail"/>
+        </switches>
+	<rom index="1">
+		<part>01</part>
+	</rom>  
+	<rom index="0" zip="mooncrst.zip" md5="abd1d6477749713797d44d6425642e58" type="merged">
+		<part name="mooncrgx/1"/>
+		<part name="mooncrgx/2"/>
+		<part name="mooncrgx/3"/>
+		<part name="mooncrgx/4"/>
+		<part name="mooncrgx/5"/>
+		<part name="mooncrgx/6"/>
+		<part name="mooncrgx/7"/>
+		<part name="mooncrgx/8"/>
+		<part name="fantazia/1h_1_10.bin"/>
+		<part name="mooncptc/mc14.bin"/>
+		<part name="mooncrgx/9.chr"/>
+		<part name="mooncptc/mc13.bin"/>
+                <part name="mmi6331.6l"/>
+	</rom>
+</misterromdescription>

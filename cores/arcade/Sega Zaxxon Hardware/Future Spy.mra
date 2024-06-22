@@ -1,0 +1,67 @@
+<misterromdescription>
+	<name>Future Spy</name>
+	<mameversion>0193</mameversion>
+	<mratimestamp>202003290000</mratimestamp>
+	<year>1984</year>
+	<manufacturer>Sega/Gremlin</manufacturer>
+	<category>Isometric Shoot'em up</category>
+	<category>Space</category>
+	<setname>futspy</setname>
+	<rbf>zaxxon</rbf>
+
+	<switches default="01,00,00,00">
+		<dip bits="24"     name="Cabinet" ids="Cocktail,Upright"/>
+		<dip bits="25"     name="Demo Sounds" ids="Off,On"/>
+		<dip bits="26,27"  name="Lives" ids="3,4,5,Free play"/>
+		<dip bits="28,29"  name="Bonus Life" ids="60K,90K,100K,120K"/>
+		<dip bits="30,31"  name="Difficulty" ids="Easy,Medium,Hard,Hardest"/>
+	</switches>
+
+	<rom index="1"><part>22</part></rom>
+	<rom index="0" zip="futspy.zip|zaxxon_samples.zip" md5="3346647da51eacbb89b71d0ca77384cb">
+		<part crc="7578FE7F" name="fs_snd.u27"/>
+		<part crc="8ADE203C" name="fs_snd.u28"/>
+		<part crc="734299C3" name="fs_snd.u29"/>
+		<part crc="734299C3" name="fs_snd.u29"/>
+		<part crc="734299C3" name="fs_snd.u29"/>
+
+		<part crc="86DA01F4" name="fs_vid.u91"/>
+		<part crc="2BD41D2D" name="fs_vid.u90"/>
+		<part crc="B82B4997" name="fs_vid.u93"/>
+		<part crc="AF4015AF" name="fs_vid.u92"/>
+
+		<part crc="305FAE2D" name="fs_snd.u68"/>
+		<part crc="3C5658C0" name="fs_snd.u69"/>
+
+		<interleave output="32">
+			<part crc="36D2BDF6" name="fs_vid.u113" map="0001"/>
+			<part crc="3740946A" name="fs_vid.u112" map="0010"/>
+			<part crc="4CD4DF98" name="fs_vid.u111" map="0100"/>
+			<part crc="4CD4DF98" name="fs_vid.u111" map="1000"/>
+		</interleave>
+
+		<interleave output="32">
+			<part crc="1B93C9EC" name="fs_vid.u77" map="0001"/>
+			<part crc="50E55262" name="fs_vid.u78" map="0010"/>
+			<part crc="BFB02E3E" name="fs_vid.u79" map="0100"/>
+			<part crc="BFB02E3E" name="fs_vid.u79" map="1000"/>
+		</interleave>
+
+		<part crc="9BA2ACAA" name="futrprom.u98"/>
+		<part crc="F9E26790" name="futrprom.u72"/>
+
+		<!-- Sound samples -->
+		<part crc="E6528D9E" name="00.wav"/>
+		<part crc="AC9441DB" name="01.wav"/>
+		<part crc="580B4E60" name="02.wav"/>
+		<part crc="87A820AA" name="03.wav"/>
+		<part crc="F1B68A58" name="04.wav"/>
+		<part crc="CCF9619D" name="05.wav"/>
+		<part crc="67B30407" name="08.wav"/>
+		<part crc="01725AAA" name="10.wav"/>
+		<part crc="9F0E6086" name="11.wav"/>
+		<part crc="1CEBA559" name="20.wav"/>
+		<part crc="2ADCDFBB" name="21.wav"/>
+		<part crc="6AFDE55B" name="23.wav"/>
+	</rom>
+</misterromdescription>

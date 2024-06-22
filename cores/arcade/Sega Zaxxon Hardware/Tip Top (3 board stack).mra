@@ -1,0 +1,65 @@
+<misterromdescription>
+	<name>Tip Top</name>
+	<setname>tiptop</setname>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<mameversion>0248</mameversion>
+	<year>1983</year>
+	<manufacturer>Sega/Gremlin</manufacturer>
+	<category>Isometric Platform</category>
+	<rotation>vertical (cw)</rotation>
+	<rbf>CongoBongo</rbf>
+	<joystick>4-way diagonal</joystick>
+	<buttons names="Jump,Start 1P,Start 2P,Coin,Pause" default="A,Start,Select,R,L" />
+	<switches default="7F" base="16" page_id="1" page_name="Switches">
+		<dip bits="0,1" name="Bonus at" ids="40.000,20.000,30.000,10.000" />
+		<dip bits="2,3" name="Difficulty" ids="Hardest, Medium, Hard, Easy" />
+		<dip bits="4,5" name="Hunter Lives" ids="Free plays,4,5,3" />
+		<dip bits="6" name="Sound" ids="Off,On" />
+		<dip bits="7" name="Cabinet" ids="Upright,Cocktail" />
+	</switches>
+	<rom index="1">
+		<part>00</part>
+	</rom>
+	<rom index="0" zip="congo.zip" md5="4a3661aa61b9d6fc9a2c333ae499978d">
+		<part crc="e19dc77b" name="tiptop1.u35" />
+		<part crc="3fcd3b6e" name="tiptop2.u34" />
+		<part crc="1c94250b" name="tiptop3.u33" />
+		<part crc="577b501b" name="tiptop4.u32" />
+		<part crc="7bf6ba2b" name="tip_top_rom_5.u76" />
+		<part crc="7bf6ba2b" name="tip_top_rom_5.u76" />
+		<part crc="d637f02b" name="tip_top_rom_6.u57" />
+		<part crc="80927943" name="tip_top_rom_7.u58" />
+
+		<interleave output="32">
+			<part crc="db99a619" name="tip_top_rom_8.u93"  map="0001"/>
+			<part crc="93e2309e" name="tip_top_rom_9.u94"  map="0010"/>
+			<part crc="f27a9407" name="tip_top_rom_10.u95" map="0100" />
+			<part crc="f27a9407" name="tip_top_rom_10.u95" map="1000" />
+		</interleave>
+
+		<interleave output="32">
+			<part crc="15e3377a" name="tip_top_rom_12.u78"  map="0001"/>
+			<part crc="73e2709f" name="tip_top_rom_11.u77"  map="0010"/>
+			<part crc="cb6d5775" name="tip_top_rom_16.u106" map="0100"/>
+			<part crc="cb6d5775" name="tip_top_rom_16.u106" map="1000"/>
+		</interleave>
+
+		<interleave output="32">
+			<part crc="1d1321c8" name="tip_top_rom_13.u79"  map="0001"/>
+			<part crc="bf9169fe" name="tip_top_rom_14.u104" map="0010"/>
+			<part crc="7b15a7a4" name="tip_top_rom_15.u105" map="0100"/>
+			<part crc="7b15a7a4" name="tip_top_rom_15.u105" map="1000"/>
+		</interleave>
+
+		<part crc="5024e673" name="tip_top_rom_17.u19" />
+		<part crc="56b9f1ba" name="mr018.u68" />
+	</rom>
+	<rom index="2" md5="none">
+		<part>00</part>
+	</rom>
+	<rom index="3" md5="none">
+		<part>00</part>
+	</rom>
+	<nvram index="4" size="129" />
+</misterromdescription>

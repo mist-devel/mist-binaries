@@ -1,0 +1,197 @@
+<misterromdescription>
+	<name>Crazy Kong Part II (alternative levels)</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>yes</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series>Donkey Kong</series>
+	<year>1981</year>
+	<manufacturer>bootleg</manufacturer>
+	<category>Platform - Climb</category>
+
+	<setname>ckongpt2b</setname>
+	<parent>ckongpt2</parent>
+	<mameversion>0224</mameversion>
+	<rbf>cclimber</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>no</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="A,Start,Select,R" names="Jump,Start 1P,Start 2P,Coin"></buttons>
+
+	<switches default="80" base="8">
+		<dip bits="0,1"   name="Lives" ids="1,2,3,4"/>
+		<dip bits="2,3"   name="Bonus Life" ids="7000,10000,15000,20000"/>
+		<dip bits="4,5,6" name="Coinage" ids="1C_1C,2C_1C,1C_2C,3C_1C,1C_3C,4C_1C,1C_4C,5C_1C"/>
+		<dip bits="7"     name="Cabinet" ids="Cocktail,Upright"/>
+	</switches>
+
+	<rom index="1"><part>1</part></rom>
+	<rom index="0" md5="2a5767e3235e5d3ef8bad89bbf977d82" type="merged|nonmerged|split" zip="ckongpt2.zip">
+		<!-- maincpu -->
+		<part crc="b27df032" name="7.5d"></part>
+		<patch offset="0x3">03</patch>
+		<!--
+		<remark>Commented-out, otherwise game will freeze at boot.</remark>
+		<patch offset="0x70">03</patch>
+		-->
+		<!--
+		<remark>Commented-out, otherwise game will freeze at boot.</remark>
+		<patch offset="0xDC">03</patch>
+		-->
+		<patch offset="0x211">01</patch>
+		<!--
+		<remark>Commented-out, otherwise game will freeze at boot.</remark>
+		<patch offset="0x2BB">03</patch>
+		-->
+		<patch offset="0xCC9">C3605B</patch>
+		<part crc="5dc1aaba" name="8.5e"></part>
+		<part crc="c9054c94" name="9.5h"></part>
+		<part crc="069c4797" name="10.5k"></part>
+		<patch offset="0x3075">05</patch>
+		<patch offset="0x3808">FDFDFDFD</patch>
+		<patch offset="0x3986">2C</patch>
+		<patch offset="0x398E">2F</patch>
+		<patch offset="0x3990">3B</patch>
+		<patch offset="0x3B64">90</patch>
+		<patch offset="0x3B66">90</patch>
+		<patch offset="0x3B69">90</patch>
+		<patch offset="0x3B6B">90</patch>
+		<patch offset="0x3B71">02B098A8980258985098</patch>
+		<patch offset="0x3B81">AB80AB98</patch>
+		<patch offset="0x3B86">5B</patch>
+		<patch offset="0x3B88">5B98</patch>
+		<patch offset="0x3B8B">DB</patch>
+		<patch offset="0x3B8D">DB</patch>
+		<patch offset="0x3B9A">DBD0DBF8</patch>
+		<patch offset="0x3B9F">DBD0DBF8</patch>
+		<patch offset="0x3BA4">DBD0DBF80123</patch>
+		<patch offset="0x3BAB">23</patch>
+		<patch offset="0x3BAE">DB</patch>
+		<patch offset="0x3BB0">DB</patch>
+		<patch offset="0x3BCC">EFF810F8</patch>
+		<patch offset="0x3BD3">EF</patch>
+		<patch offset="0x3BD6">20</patch>
+		<part crc="ae159192" name="11.5l"></part>
+		<patch offset="0x43A4">00000000000000000000000000</patch>
+		<part crc="966bc9ab" name="12.5n"></part>
+		<!--
+		<remark>Commented-out, otherwise cage animation won't display properly.</remark>
+		<patch offset="0x5009">03</patch>
+		-->
+		<patch offset="0x507F">FD</patch>
+		<patch offset="0x5086">FDFDFD</patch>
+		<patch offset="0x508D">FDFDFD</patch>
+		<patch offset="0x5094">FDFDFD</patch>
+		<patch offset="0x509B">FD</patch>
+		<patch offset="0x509F">FDFD</patch>
+		<patch offset="0x50A6">FDFD</patch>
+		<patch offset="0x50AD">FDFD</patch>
+		<patch offset="0x50B4">FDFD</patch>
+		<patch offset="0x50BB">FDFD</patch>
+		<patch offset="0x50C2">FDFD</patch>
+		<patch offset="0x50C9">FDFD</patch>
+		<patch offset="0x50D0">FDFD</patch>
+		<patch offset="0x50D7">FDFD</patch>
+		<patch offset="0x50DE">FDFD</patch>
+		<patch offset="0x50E5">FDFD</patch>
+		<patch offset="0x50EC">FDFD</patch>
+		<patch offset="0x5563">03</patch>
+		<patch offset="0x5723">C3E95A</patch>
+		<patch offset="0x59FA">13261F2E1C</patch>
+		<patch offset="0x5AD0">FDFDFDFDFDFD</patch>
+		<patch offset="0x5AE9">
+FE01C2205B3EFD212A91CD3057213B91
+CD3057218E91CD3057215292CD305721
+DA92CD3057C33357
+		</patch>
+		<patch offset="0x5B20">
+FE02C2505C3EFD21ED90CD3057210A91
+CD3057212E91CD3057211292CD305721
+1692CD3057211A92CD3057215A92CD30
+57C33357
+		</patch>
+		<patch offset="0x5B60">
+3A2762FE02C2EC5B21D4901121000606
+CD815B217992111F000606CD815BC388
+5B3EF0771910FCC921B5907721349377
+21559377C3E65BCD32573EFD211591CD
+325721D590CD325721F590CD32572155
+91CD3257211593CD3257213593CD3257
+3EF021D692CD325721F692CD32572117
+93CD3257213793CD3257215893CD3257
+217993CD32573A2762C3CC0CFE03C29B
+5C3EFD217D93CD325721B893CD325721
+D192CD325721B091CD325721DD91CD32
+57217091CD3257210F91CD3257219A90
+CD32573A2962FE01CA475CFE02CA395C
+3EFD219091CD3257003EFD216B91CD32
+57214B91CD32573A2762C3CC0C
+		</patch>
+		<patch offset="0x5C50">
+3EFD21ED90CD3057210A91CD3057212E
+91CD305721D691CD3057211292CD3057
+211692CD3057211A92CD3057212E92CD
+3057215A92CD3057216E92CD305721B2
+92CD3057C3105D
+		</patch>
+		<patch offset="0x5C9B">
+FE01CA005D3EFD219092772170927721
+50927721309277211092772111927721
+12927721139277211492772175927721
+559277213592772115927721F5917721
+D5917721B59177219591773EB0217492
+77215392772132927721119277C3475C
+		</patch>
+		<patch offset="0x5D00">
+3EF0215B9077217B90773A2762C3CC0C
+3A00B8E610000000C33357
+		</patch>
+		<part repeat="8192">FF</part>
+		<!-- cclimber_audio:samples -->
+		<part crc="5f0bcdfb" name="14.5s"/>
+		<part crc="9003ffbd" name="13.5p"/>
+		<!-- gfx1 -->
+		<part crc="2dcedd12" name="6.11n"/>
+		<part crc="fa7cbd91" name="5.11l"/>
+		<part crc="3375b3bd" name="4.11k"/>
+		<part crc="5655cc11" name="3.11h"/>
+		<!-- gfx2 -->
+		<part crc="d1352c31" name="2.11c"/>
+		<part crc="d1352c31" name="2.11c"/>
+		<part crc="a7a2fdbd" name="1.11a"/>
+		<part crc="a7a2fdbd" name="1.11a"/>
+		<!-- misc 8K -->
+		<part repeat="0x2000">00</part>
+		<!-- proms -->
+		<part crc="b3fc1505" name="prom.v6"/>
+		<part crc="26aada9e" name="prom.u6"/>
+		<part crc="b3fc1505" name="prom.v6"/>
+		<part crc="26aada9e" name="prom.u6"/>
+		<part crc="b3fc1505" name="prom.v6"/>
+		<part crc="26aada9e" name="prom.u6"/>
+		<part crc="b3fc1505" name="prom.v6"/>
+		<part crc="26aada9e" name="prom.u6"/>
+
+		<part repeat="0x100">00</part>
+
+		<part crc="676b3166" name="prom.t6"/>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20230822171530</mratimestamp>
+</misterromdescription>

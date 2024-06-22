@@ -1,0 +1,37 @@
+<misterromdescription>
+    <name>Mr. Goemon</name>
+    <mameversion>0216</mameversion>
+    <setname>mrgoemon</setname>
+    <mratimestamp>201911270000</mratimestamp>
+    <year>1985</year>
+    <manufacturer>Konami</manufacturer>
+    <rbf>jailbrek</rbf>
+
+    <switches default="00,16,00" base="8" page_id="1" page_name="Switches">
+        <dip bits="0,3"   name="Credits A" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Free Play"/>
+        <dip bits="4,7"   name="Credits B" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Invalid"/>
+        <dip bits="8,9"   name="Lives" ids="2,3,5,7"/>
+        <dip bits="10"    name="Cabinet type" ids="Cocktail,Upright"/>
+        <dip bits="11,12" name="Bonus" ids="20K/60K+,30K/70K+,40K/80K+,50K/90K+"/>
+        <dip bits="13,14" name="Difficulty" ids="Easy,Normal,Hard,Hardest"/>
+        <dip bits="15"    name="Attract mode sound" ids="Off,On"/>
+        <dip bits="16"    name="Flip screen" ids="Off,On"/>
+        <dip bits="17"    name="Upright controls" ids="Single,Dual"/>
+    </switches>
+
+    <rom index="1"><part>1</part></rom>
+
+    <rom index="0" zip="mrgoemon.zip" md5="61a1776255ef2a3aef4fc58a9cafbe29" type="merged">
+	<part name="621d01.10c"/>
+	<part name="621d02.12c"/>
+
+	<part name="621a05.6d"/>
+
+	<part name="621d03.4d"/>
+	<part name="621d04.5d"/>
+
+	<part name="621a07.6f"/>
+	<part name="621a08.7f"/>
+	<part name="621a06.5f"/>
+    </rom>
+</misterromdescription>

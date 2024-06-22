@@ -1,0 +1,105 @@
+<misterromdescription>
+	<name>Dorodon</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Set 1</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1982</year>
+	<manufacturer>UPL</manufacturer>
+	<category>Maze</category>
+
+	<setname>dorodon</setname>
+	<parent>dorodon</parent>
+	<mameversion>0220</mameversion>
+	<rbf>ladybug</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (ccw)</rotation>
+	<flip>no</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>0</num_buttons>
+	<buttons default="Start,Select,R,L" names="-,-,Start 1P,Start 2P,Coin,Pause"></buttons>
+
+	<switches default="20" base="8" page_id="1" page_name="Switches">
+		<dip bits="7" name="Lives" ids="3,5"/>
+		<dip bits="6" name="Free play" ids="No,Yes"/>
+		<dip bits="5" name="Cabinet" ids="Cocktail,Upright"/>
+		<dip bits="4" name="Freeze" ids="No,Yes"/>
+		<dip bits="3" name="Rack Test" ids="No,Yes"/>
+		<dip bits="2" name="Bonus Life" ids="20000,30000"/>
+		<dip bits="0,1" name="Difficulty" ids="Easy,Medium,Hard,Hardest"/>
+	</switches>
+
+	<rom index="1">
+		<part>01</part>
+	</rom>
+	<rom index="0" md5="51abcb1c734404f065a6bab4a4b0bee4" zip="dorodon.zip">
+		<part crc="460aaf26" name="dorodon.0"></part>
+		<part crc="d2451eb6" name="dorodon.1"></part>
+		<part crc="d3c6ee6c" name="dorodon.2"></part>
+		<part crc="d70bb50a" name="dorodon.4"></part>
+		<part crc="e44e59e6" name="dorodon.3"></part>
+		<part crc="5eee2b85" name="dorodon.5"></part>
+		<part crc="395ac25a" name="dorodon.6"></part>
+
+		<part crc="3f209be4" name="dorodon.bp1"/>
+		<part crc="8fcf0bc8" name="dorodon.bp0"/>
+		<part crc="27fa3a50" name="dorodon.bp2"/>
+		<part repeat="160">00</part>
+		<part crc="none">
+ 		00 F1 3F 86 4F 66 07 73
+ 		71 64 A7 59 2B 56 FB 8B
+ 		8F B6 9E 9D 04 11 BC 80
+ 		12 CB 18 5D D2 7A 85 75
+ 		B5 BE 7E 05 6E 3E D5 4B
+ 		2E 52 15 84 38 6A 6C 53
+ 		FA C8 08 B8 D4 E9 5C 22
+ 		1D 49 BD AD 46 1F E1 0A
+ 		19 5B 41 45 4A 2A B4 4D
+ 		57 90 8E 3A BB 9B E4 29
+ 		8A EB AA F0 CE EE 88 5F
+ 		33 31 C6 60 3C 9A 3D B7
+ 		63 6D AB 62 E3 78 E5 B9
+ 		EF 5E 7B 83 94 E6 D6 A1
+ 		D9 36 47 3B C4 DF 21 0C
+ 		14 E7 C3 1A 1C 28 4C 9C
+ 		50 40 91 55 D8 A4 76 9F
+ 		98 10 6B 2F A3 43 39 B1
+ 		42 72 7D 65 03 8D F2 F5
+ 		69 27 0D CA CF 1B 35 EC
+ 		A2 F7 93 70 CD 68 97 2D
+ 		37 F9 AE 26 96 E8 48 99
+ 		95 D7 B0 06 DC C9 ED 87
+ 		7F B3 17 A0 0F 25 DB DE
+ 		23 74 79 89 B2 FC 24 13
+ 		81 8C D3 C5 BF A6 16 44
+ 		0B 34 F8 D1 0E E0 09 EA
+ 		02 DD 92 F4 C1 BA 32 D0
+ 		7C 2C FD F3 61 A5 CC DA
+ 		5A 67 30 6F 82 20 AF 54
+ 		AC E2 1E C2 FE A9 58 01
+ 		77 C0 4E C7 A8 51 F6 FF
+		</part>
+	</rom>
+	<rom index="3" md5="none">
+		<part>
+		00 FF FF FF 00 FF 00 02 00 02 00 01 00 FF 02 00
+		00 00 60 73 00 1B 01 00
+		00 00 D3 81 00 46 0F 17
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="97"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

@@ -1,0 +1,106 @@
+<misterromdescription>
+	<name>Spatter (315-5xxx)</name>
+	<setname>spatter</setname>
+	<rbf>segasys1</rbf>
+	<mameversion>0229</mameversion>
+	<year>1984</year>
+	<manufacturer>Sega</manufacturer>
+	<players>2</players>
+	<joystick>8-way</joystick>
+	<rotation>horizontal</rotation>
+	<region>World</region>
+	<buttons names="Jump,-,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="2"/>
+	<switches base="8" default="FF,FC">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		-->
+		<dip name="Demo Sounds" bits="9" ids="On,Off"/>
+		<dip name="Lives" bits="10,11" ids="Infinite,4,2,3"/>
+		<dip name="Bonus Life" bits="12,13" ids="None,100k,50/200k,40/120k/480k"/>
+		<dip name="Reset Timer/Objects" bits="14" ids="Yes,No"/>
+	</switches>
+	<rom index="1">
+		<part>04</part>
+	</rom>
+	<rom index="0" zip="spatter.zip" type="merged" md5="bedaca41ba5153f4990c470757827f0f">
+		<!-- soundcpu, size: 0x8000 -->
+		<part crc="1df95511" name="epr-6316.120"/>
+		<part crc="1df95511" name="epr-6316.120"/>
+		<part crc="1df95511" name="epr-6316.120"/>
+		<part crc="1df95511" name="epr-6316.120"/>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part crc="329b4506" name="epr-6392.116"/>
+		<part crc="3b56e25f" name="epr-6393.109"/>
+		<part crc="647c1301" name="epr-6394.96"/>
+		<part crc="647c1301" name="epr-6394.96"/>
+		<part crc="647c1301" name="epr-6394.96"/>
+		<part crc="647c1301" name="epr-6394.96"/>
+
+		<!-- sprites, size: 0x20000 -->
+		<part crc="e871e132" name="epr-6306.04"/>
+		<part crc="99c2d90e" name="epr-6308.117"/>
+		<part crc="0a5ad543" name="epr-6307.05"/>
+		<part crc="7423ad98" name="epr-6309.110"/>
+		<part crc="e871e132" name="epr-6306.04"/>
+		<part crc="99c2d90e" name="epr-6308.117"/>
+		<part crc="0a5ad543" name="epr-6307.05"/>
+		<part crc="7423ad98" name="epr-6309.110"/>
+
+		<!-- tiles, size: 0x18000 -->
+		<interleave output="32">
+			<part name="epr-6328.62" map="0001"/>
+			<part name="epr-6326.64" map="0010"/>
+			<part name="epr-6324.66" map="0100"/>
+			<part name="epr-6324.66" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-6397.61" map="0001"/>
+			<part name="epr-6396.63" map="0010"/>
+			<part name="epr-6395.65" map="0100"/>
+			<part name="epr-6395.65" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-6328.62" map="0001"/>
+			<part name="epr-6326.64" map="0010"/>
+			<part name="epr-6324.66" map="0100"/>
+			<part name="epr-6324.66" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-6397.61" map="0001"/>
+			<part name="epr-6396.63" map="0010"/>
+			<part name="epr-6395.65" map="0100"/>
+			<part name="epr-6395.65" map="1000"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x100 -->
+		<part crc="648350b8" name="pr-5317.106"/>
+
+		<!-- color_proms, size: 0x300 -->
+		<part repeat="0x300">00</part>
+
+		<!-- encryption_device: 315-spat -->
+		<part>
+			88 08 80 00 00 08 20 28 28 a8 08 88 28 a8 08 88
+			28 20 a8 a0 28 20 a8 a0 88 08 80 00 88 08 80 00
+			00 08 20 28 88 08 80 00 a0 80 20 00 80 88 00 08
+			88 08 80 00 a0 80 20 00 88 08 80 00 28 20 a8 a0
+			28 a8 08 88 80 88 00 08 80 88 00 08 00 08 20 28
+			28 20 a8 a0 28 a8 08 88 00 08 20 28 80 a0 88 a8
+			80 88 00 08 a0 80 20 00 80 a0 88 a8 a0 80 20 00
+			a0 80 20 00 80 a0 88 a8 28 20 a8 a0 00 08 20 28
+		</part>
+	</rom>
+	<rom index="3" md5="none">
+		<part>
+			00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+			00 00 EF 00 00 31 00 52 00 00 C0 0B 00 03 00 00
+			00 00 C0 0C 00 01 10 10
+		</part>
+	</rom>
+	<nvram index="4" size="53"/>
+</misterromdescription>

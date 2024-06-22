@@ -1,0 +1,32 @@
+<misterromdescription>
+	<name>Omega (bootleg)</name>
+	<mameversion>0216</mameversion>
+	<mratimestamp>201911270000</mratimestamp>
+	<year>19??</year>
+	<setname>omegab</setname>
+	<manufacturer>bootleg?</manufacturer>
+        <rbf>galaxian</rbf>
+        <switches default="00,5F,00">
+                <dip bits="16" name="Bonus Life After" ids="10000,20000"/>
+                <dip bits="18" name="Lives" ids="3,5"/>
+                <dip bits="19" name="Cabinet" ids="Upright,Cocktail"/>
+        </switches>
+        <rom index="1">
+                <part>09</part>
+        </rom>
+	<rom index="0" zip="theend.zip" md5="3ac6f3a37b980d0cd669c68379c41db0" type="merged">
+		<part name="omegab/omega1.bin"/>
+		<part name="omegab/omega2.bin"/>
+		<part name="omegab/omega3.bin"/>
+		<part name="omegab/omega4.bin"/>
+		<part name="omegab/omega5.bin"/>
+		<part name="omegab/omega6.bin"/>
+		<part name="omegab/omega6.bin"/>
+		<part name="omegab/omega6.bin"/>
+		<part name="omegab/omega1h.bin"/>
+		<part name="omegab/omega1h.bin"/>
+		<part name="omegab/omega1k.bin"/>
+		<part name="omegab/omega1k.bin"/>
+		<part name="omegab/mmi6331-1j.86"/>
+	</rom>
+</misterromdescription>

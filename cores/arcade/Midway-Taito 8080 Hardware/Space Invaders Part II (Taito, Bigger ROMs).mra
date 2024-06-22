@@ -1,0 +1,69 @@
+<misterromdescription>
+	<name>Space Invaders Part II</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Taito, Bigger ROMs</version>
+	<alternative>Space Invaders</alternative>
+	<platform></platform>
+	<series>Space Invaders</series>
+	<year>1979</year>
+	<manufacturer>Taito</manufacturer>
+	<category>Shooter - Gallery</category>
+
+	<setname>invadpt2</setname>
+	<parent>invaders</parent>
+	<mameversion>0226</mameversion>
+	<rbf>spaceinvaders</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (ccw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>2-way horizontal</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="A,Start,Select,R,L" names="Fire,-,-,-,Start 1P,Start 2P,Coin,Pause"></buttons>
+
+	<switches base="16" default="40,80,00,00,00">
+		<dip bits="16" ids="3,4" name="Lives"></dip>
+		<dip bits="17" ids="On,Off" name="Rotate Images"></dip>
+		<dip bits="18" ids="Off,On" name="Tilt"></dip>
+		<dip bits="19" ids="Off,On" name="Preset Mode"></dip>
+		<dip bits="23" ids="Off,On" name="Coin Info"></dip>
+		<dip bits="32" ids="No,Yes" name="Freeplay"></dip>
+	</switches>
+
+	<rom index="1">
+		<part>0D</part>
+	</rom>
+	<rom index="0" md5="none" zip="invadpt2.zip">
+		<part crc="7288a511" name="pv01"></part>
+		<part crc="097dd8d5" name="pv02"></part>
+		<part crc="1766337e" name="pv03"></part>
+		<part crc="8f0e62e0" name="pv04"></part>
+		<part crc="19b505e9" name="pv05"></part>
+		<part repeat="2048">00</part>
+		<part repeat="2048">00</part>
+		<part repeat="2048">00</part>
+		<part crc="a732810b" name="pv06.1"></part>
+		<part crc="2c5b91cb" name="pv07.2"></part>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 10 00 00 00 FF 00 02 00 02 00 01 00 FF 02 00
+		00 00 20 F4 00 02 00 05
+		00 00 23 40 00 0A 1B 1B
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="12"></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

@@ -1,0 +1,66 @@
+<misterromdescription>
+	<name>Space Chaser </name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1979</year>
+	<manufacturer>Taito</manufacturer>
+	<category>Maze</category>
+
+	<setname>schaser</setname>
+	<parent>schaser</parent>
+	<mameversion>0226</mameversion>
+	<rbf>spaceinvaders</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (ccw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="A,Start,Select,R,L" names="Fire,-,-,-,Start 1P,Start 2P,Coin,Pause"></buttons>
+
+	<switches></switches>
+
+	<rom index="1">
+		<part>23</part>
+	</rom>
+	<rom index="0" md5="none" zip="schaser.zip">
+		<part crc="0dfbde68" name="rt13.bin"></part>
+		<part crc="5a508a25" name="rt14.bin"></part>
+		<part crc="2ac43a93" name="rt15.bin"></part>
+		<part crc="f5583afc" name="rt16.bin"></part>
+		<part crc="51cf1155" name="rt17.bin"></part>
+		<part crc="3f0fc73a" name="rt18.bin"></part>
+		<part crc="b66ea369" name="rt19.bin"></part>
+		<part crc="e3a7466a" name="rt20.bin"></part>
+		<part crc="b368ac98" name="rt21.bin"></part>
+		<part crc="6e060dfb" name="rt22.bin"></part>
+		<part repeat="2048">00</part>
+		<part repeat="4096">00</part>
+		<part crc="950cf973" name="rt06.ic2"></part>
+		<part crc="950cf973" name="rt06.ic2"></part>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 10 00 00 00 FF 00 02 00 02 00 01 00 FF 02 00
+		00 00 22 44 00 0A 1B 1B
+		00 00 23 3F 00 03 01 00
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="13"></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

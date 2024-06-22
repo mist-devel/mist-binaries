@@ -1,0 +1,35 @@
+<misterromdescription>
+    <name>Mars</name>
+    <rbf>scramble</rbf>
+    <switches>
+	<dip bits="7"  name="Lives"       ids="3,Unl"/>
+    </switches>
+    <rom index="1"><part>0C</part></rom>
+    <rom index="0" zip="mars.zip" md5="d2f92c40c12e61bb0b906d0daeab8eee" type="merged|nonmerged">
+	<part name="u26.3"/>
+	<part name="u56.4"/>
+	<part name="u69.5"/>
+	<part name="u98.6"/>
+	<part name="u114.7"/>
+	<part name="u133.8"/>
+	<part name="u114.7"/>
+	<part name="u133.8"/>
+	<part name="u26.3"/>
+	<part name="u56.4"/>
+	<part name="u69.5"/>
+	<part name="u98.6"/>
+	<part name="u114.7"/>
+	<part name="u133.8"/>
+	<part name="u114.7"/>
+	<part name="u133.8"/>
+
+	<part name="u39.9"/>
+	<part name="u51.10"/>
+	<part name="u78.11"/>
+	<part name="u78.11"/>
+
+	<part name="u101.2"/>
+	<part name="u72.1"/>
+	<part name="c01s.6e"/>
+    </rom>
+</misterromdescription>

@@ -1,0 +1,75 @@
+<misterromdescription>
+	<name>Gyruss</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1983</year>
+	<manufacturer>Konami</manufacturer>
+	<category>Shooter - Tube</category>
+
+	<setname>gyruss</setname>
+	<parent>gyruss</parent>
+	<mameversion>0218</mameversion>
+	<rbf>Gyruss</rbf>
+	<about author="MrX-8B" source="https://github.com/MrX-8B/MiSTer-Arcade-Gyruss" twitter="@MrX_8B" webpage="https://patreon.com/MrX_8B"></about>
+	<about author="Ace" twitter="@Ace9921Tweets"></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>no</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,R,Select,L" names="Fire,Start P1,Coin,Start P2,Pause"></buttons>
+
+	<switches default="00,34,00" base="8" page_id="1" page_name="Switches">
+		<dip bits="0,3"   name="Credits A" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/7cr,1c/6cr,2c/1cr,2c/3cr,3c/1cr,2c/5cr,3c/2cr,3c/4cr,4c/3cr,4c/1cr,Free Play"/>
+		<dip bits="4,7"   name="Credits B" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Free Play"/>
+		<dip bits="8,9"   name="Lives" ids="3,4,5,255 (Cheat)"/>
+		<dip bits="10"    name="Cabinet type" ids="Cocktail,Upright"/>
+		<dip bits="11"    name="Bonus" ids="30K/90K/60K+,40K/110K/70K+"/>
+		<dip bits="12,14" name="Difficulty" ids="1 (Easiest),2,3,4,5,6,7,8 (Hardest)"/>
+		<dip bits="15"    name="Attract mode sound" ids="Off,On"/>
+		<dip bits="16"    name="Attract mode music" ids="Off,On"/>
+	</switches>
+
+	<rom index="1"></rom>
+	<rom index="0" md5="none" type="merged" zip="gyruss.zip">
+		<part crc="c673b43d" name="gyrussk.1"></part>
+		<part crc="a4ec03e4" name="gyrussk.2"></part>
+		<part crc="27454a98" name="gyrussk.3"></part>
+		<part crc="822bF27e" name="gyrussk.9"></part>
+		<part crc="27d8329b" name="gyrussk.4"></part>
+		<part crc="c949db10" name="gyrussk.6"></part>
+		<part crc="4f22411a" name="gyrussk.5"></part>
+		<part crc="47cd1fbc" name="gyrussk.8"></part>
+		<part crc="8e8d388c" name="gyrussk.7"></part>
+		<part crc="f4ae1c17" name="gyrussk.1a"></part>
+		<part crc="ba498115" name="gyrussk.2a"></part>
+		<part crc="3f9b5dea" name="gyrussk.3a"></part>
+		<part crc="de823a81" name="gyrussk.pr2"></part>
+		<part crc="7ed057de" name="gyrussk.pr1"></part>
+		<part crc="98782db3" name="gyrussk.pr3"></part>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		01 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+		00 00 94 88 00 28 00 83
+		00 00 94 0B 00 03 00 01
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="43"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

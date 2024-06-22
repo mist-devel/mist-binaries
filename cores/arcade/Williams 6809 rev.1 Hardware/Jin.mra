@@ -1,0 +1,29 @@
+<misterromdescription>
+    <name>Jin</name>
+    <mameversion>0216</mameversion>
+    <setname>jin</setname>
+    <mratimestamp>201911270000</mratimestamp>
+    <year>1982</year>
+    <manufacturer>Falcon</manufacturer>
+    <category>Maze / Qix</category>
+    <rbf>defender</rbf>
+
+    <rom index="1"><part>3</part></rom>
+
+    <switches>
+	<dip bits="10"    name="Lives"          ids="3,4"/>
+	<dip bits="11,12" name="Level complete" ids="85%,75%,65%,55%"/>
+    </switches>
+
+    <rom index="0" zip="jin.zip" md5="9dd8c4ad8ed7f3c9f392d1790c61e4a8" type="merged|nonmerged">
+	<part name="jin11.6c"/>
+	<part name="jin12.7c"/>
+	<part name="jin13.6d"/>
+	<part name="jin14.4c" repeat=4/>
+	
+	<part name="jin.1a"/>
+	<part name="jin.1l"/>
+
+	<part name="jin15.3f"/>
+    </rom>
+</misterromdescription>

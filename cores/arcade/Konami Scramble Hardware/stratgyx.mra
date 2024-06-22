@@ -1,0 +1,27 @@
+<misterromdescription>
+    <name>Strategy X</name>
+    <rbf>scramble</rbf>
+    <switches>
+	<dip bits="7,8" name="Lives"       ids="3,4,5,Unl"/>
+    </switches>
+    <rom index="1"><part>0E</part></rom>
+    <rom index="0" zip="stratgyx.zip" md5="a9f3ca5ff435d48951108c3d469ac695" type="merged|nonmerged">
+	<part name="2c_1.bin"/>
+	<part name="2e_2.bin"/>
+	<part name="2f_3.bin"/>
+	<part name="2h_4.bin"/>
+	<part name="2j_5.bin"/>
+	<part name="2l_6.bin"/>
+	<part name="2l_6.bin"/>
+	<part name="2l_6.bin"/>
+
+	<part name="s1.bin"/>
+	<part name="s2.bin"/>
+
+	<part name="5h_c1.bin"/>
+	<part name="5f_c2.bin"/>
+
+	<part name="strategy.6e"/>
+	<part name="strategy.10k"/>
+    </rom>
+</misterromdescription>

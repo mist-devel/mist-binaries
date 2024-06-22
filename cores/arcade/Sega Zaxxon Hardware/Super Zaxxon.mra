@@ -1,0 +1,73 @@
+<misterromdescription>
+	<name>Super Zaxxon</name>
+	<mameversion>0193</mameversion>
+	<mratimestamp>202003290000</mratimestamp>
+	<year>1982</year>
+	<manufacturer>Sega/Gremlin</manufacturer>
+	<category>Isometric Shoot'em up</category>
+	<category>Space</category>
+	<setname>szaxxon</setname>
+	<rbf>zaxxon</rbf>
+	<switches default="33,30,00,00">
+		<dip bits="16,17"  name="Extra ship" ids="40.000,20.000,30.000,10.000"/>
+		<dip bits="18"     name="Difficulty" ids="Hard,Normal"/>
+		<dip bits="20,21"  name="Lives" ids="Free ships,4,5,3"/>
+		<dip bits="22"     name="Sound" ids="Off,On"/>
+		<dip bits="23"     name="Cabinet" ids="Upright,Cocktail"/>
+	</switches>
+
+	<rom index="1"><part>10</part></rom>
+	<rom index="0" zip="szaxxon.zip|zaxxon_samples.zip" md5="1a44ddef5a1aa4424a28715954d9982d">
+		<part crc="af7221da" name="1804e.u27"/>
+		<part crc="1b90fb2a" name="1803e.u28"/>
+		<part crc="07258b4a" name="1802e.u29"/>
+		<part crc="07258b4a" name="1802e.u29"/>
+		<part crc="07258b4a" name="1802e.u29"/>
+
+		<part crc="dd1b52df" name="1809b.u91"/>
+		<part crc="b5bc07f0" name="1808b.u90"/>
+		<part crc="68e84174" name="1811b.u93"/>
+		<part crc="a509994b" name="1810b.u92"/>
+
+		<part crc="bccf560c" name="1815b.u68"/>
+		<part crc="d28c628b" name="1816b.u69"/>
+
+		<interleave output="32">
+			<part crc="f51af375" name="1807b.u113" map="0001"/>
+			<part crc="a7de021d" name="1806b.u112" map="0010"/>
+			<part crc="5bfb3b04" name="1805b.u111" map="0100"/>
+			<part crc="5bfb3b04" name="1805b.u111" map="1000"/>
+		</interleave>
+
+		<interleave output="32">
+			<part crc="1503ae41" name="1812e.u77" map="0001"/>
+			<part crc="3b53d83f" name="1813e.u78" map="0010"/>
+			<part crc="581e8793" name="1814e.u79" map="0100"/>
+			<part crc="581e8793" name="1814e.u79" map="1000"/>
+		</interleave>
+
+		<interleave output="32">
+			<part crc="1503ae41" name="1812e.u77" map="0001"/>
+			<part crc="3b53d83f" name="1813e.u78" map="0010"/>
+			<part crc="581e8793" name="1814e.u79" map="0100"/>
+			<part crc="581e8793" name="1814e.u79" map="1000"/>
+		</interleave>
+
+		<part crc="15727a9f" name="pr-5168.u98"/>
+		<part crc="deaa21f7" name="pr-5167.u72"/>
+
+		<!-- Sound samples -->
+		<part crc="E6528D9E" name="00.wav"/>
+		<part crc="AC9441DB" name="01.wav"/>
+		<part crc="580B4E60" name="02.wav"/>
+		<part crc="87A820AA" name="03.wav"/>
+		<part crc="F1B68A58" name="04.wav"/>
+		<part crc="CCF9619D" name="05.wav"/>
+		<part crc="67B30407" name="08.wav"/>
+		<part crc="01725AAA" name="10.wav"/>
+		<part crc="9F0E6086" name="11.wav"/>
+		<part crc="1CEBA559" name="20.wav"/>
+		<part crc="2ADCDFBB" name="21.wav"/>
+		<part crc="6AFDE55B" name="23.wav"/>
+	</rom>
+</misterromdescription>

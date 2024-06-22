@@ -1,0 +1,56 @@
+<misterromdescription>
+    <name>Prehistoric Isle in 1930 (World)</name>
+    <setname>prehisle</setname>
+    <mameversion>0245</mameversion>
+    <year>1989</year>
+    <manufacturer>SNK</manufacturer>
+    <region>World</region>
+    <rbf>prehisle</rbf>
+
+    <switches default="04,00" base="16" page_id="1" page_name="Switches">
+        <!-- DSW0 -->
+        <dip name="Flip Picture" bits="0" ids="Off,On"/>
+        <dip name="Level Select" bits="1" ids="Off,On"/>
+        <dip name="Bonus Life" bits="2" ids="2nd Extend Only,Every Extend"/>
+        <dip name="Coinage" bits="4,5" ids="1/1,A 2C/1C B 1C/2C,A 3C/1C B 1C/3C,A 4C/1C B 1C/4C"/>
+        <dip name="Lives" bits="6,7" ids="3,2,4,5"/>
+        <!-- DSW1 -->
+        <dip name="Difficulty Level" bits="8,9" ids="Normal,Easy,Hard,Hardest"/>
+        <dip name="Demo Sound/Cheat" bits="10,11" ids="Sound On,Sound Off,Inf.Lives,Freeze"/>
+        <dip name="Bonus Life" bits="12,13" ids="100/150K,150/300K,300/500K,None"/>
+        <dip name="Continue Mode" bits="14" ids="Yes,No"/>
+    </switches>
+
+    <buttons names="Shot,Option,-,P1 Start,P2 Start,Coin A,Coin B,Pause" default="A,B,X,Y,R,L,Start"/>
+
+    <rom index="0" zip="prehisle.zip" md5="None">
+        <!-- maincpu - starts at 0x0 256K -->
+        <interleave output="16">
+            <part name="gt-e2.2h" crc="7083245a" map="01"/>
+            <part name="gt-e3.3h" crc="6d8cdf58" map="10"/>
+        </interleave>
+
+        <!-- fgtiles - starts at 0x40000 256K -->
+        <part name="pi8916.h16" crc="7cffe0f6"/>
+
+        <!-- bgtiles - starts at 0x80000 256K -->
+        <part name="pi8914.b14" crc="207d6187"/>
+
+        <!-- audiocpu - starts at 0xc0000 64K -->
+        <part name="gt1.1" crc="80a4c093"/>
+
+        <!-- upd - starts at 0xd0000 128K -->
+        <part name="gt4.4" crc="85dfb9ec"/>
+
+        <!-- bgtilemap - starts at 0xf0000 64K -->
+        <part name="gt11.11" crc="b4f0fcf0"/>
+
+        <!-- sprites - starts at 0x100000 1M -->
+        <part name="pi8910.k14" crc="5a101b0b"/>
+        <part name="gt5.5" crc="3d3ab273"/>
+        <part repeat="0x60000"> FF</part>
+
+        <!-- chars - starts at 0x200000 32K -->
+        <part name="gt15.b15" crc="ac652412"/>
+    </rom>
+</misterromdescription>

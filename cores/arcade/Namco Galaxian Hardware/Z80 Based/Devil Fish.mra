@@ -1,0 +1,47 @@
+<misterromdescription>
+	<name>Devil Fish (Galaxian hardware, bootleg)</name>
+	<mameversion>0217</mameversion>
+	<setname>devilfsg</setname>
+	<mratimestamp>20200105004539</mratimestamp>
+	<year>1984</year>
+	<manufacturer>Vision / Artic</manufacturer>
+	<category>Maze</category>
+	<category>Platform / Water Diving</category>
+	<rbf>galaxian</rbf>
+	<switches default="00,5F,00">
+		<dip bits="16" name="Bonus Life After" ids="10000,15000"/>
+		<dip bits="17" name="Difficulty" ids="Easy,Hard"/>
+		<dip bits="18" name="Lives" ids="4,5"/>
+		<dip bits="19" name="Cabinet" ids="Upright,Cocktail"/>
+	</switches>
+        <rom index="1">
+                <part>06</part>
+        </rom>
+	<rom index="0" zip="devilfsh.zip" md5="3af9bea33dc72c07afb13e17e588289d" type="merged">
+		<part name="devilfsg/dfish1.7f"/>
+		<part name="devilfsg/dfish2.7h"/>
+		<part name="devilfsg/dfish3.7k"/>
+		<part name="devilfsg/dfish4.7m"/>
+		<part name="devilfsg/dfish5.1h"/>
+		<part name="devilfsg/dfish6.1k"/>
+		<part name="c01s.6e"/>
+	</rom>
+	<rom index="0" zip="devilfsg.zip" md5="3af9bea33dc72c07afb13e17e588289d" type="nonmerged">
+		<part name="dfish1.7f"/>
+		<part name="dfish2.7h"/>
+		<part name="dfish3.7k"/>
+		<part name="dfish4.7m"/>
+		<part name="dfish5.1h"/>
+		<part name="dfish6.1k"/>
+		<part name="82s123.6e"/>
+	</rom>
+	<rom index="0" zip="devilfsg.zip" md5="3af9bea33dc72c07afb13e17e588289d" type="split">
+		<part name="dfish1.7f"/>
+		<part name="dfish2.7h"/>
+		<part name="dfish3.7k"/>
+		<part name="dfish4.7m"/>
+		<part name="dfish5.1h"/>
+		<part name="dfish6.1k"/>
+		<part name="c01s.6e" zip="devilfsh.zip"/>
+	</rom>
+</misterromdescription>

@@ -1,0 +1,103 @@
+<misterromdescription>
+	<name>Water Match (315-5064)</name>
+	<setname>wmatch</setname>
+	<rbf>segasys1</rbf>
+	<mameversion>0229</mameversion>
+	<year>1984</year>
+	<manufacturer>Sega</manufacturer>
+	<players>2</players>
+	<joystick>4-way</joystick>
+	<rotation>vertical/ccw</rotation>
+	<region>World</region>
+	<buttons names="Right,Left,Down,Up,Dive,Start 1P,Start 2P,Coin,Pause" default="A,B,X,Y,R,L,Start,Select" count="5"/>
+	<switches base="8" default="FF,FC">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		-->
+		<dip name="Demo Sounds" bits="9" ids="On,Off"/>
+		<dip name="Time" bits="10,11" ids="Fastest,Faster,Fast,Normal"/>
+		<dip name="Difficulty" bits="14" ids="Hard,Easy"/>
+	</switches>
+	<rom index="1">
+		<part>0E</part>
+	</rom>
+	<rom index="0" zip="wmatch.zip" type="merged" md5="9538465256bf999f34b70f5ecbfcff09">
+		<!-- soundcpu, size: 0x8000 -->
+		<part crc="50d2afb7" name="wm.3"/>
+		<part crc="50d2afb7" name="wm.3"/>
+		<part crc="50d2afb7" name="wm.3"/>
+		<part crc="50d2afb7" name="wm.3"/>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part crc="b6db4442" name="wm.129"/>
+		<part crc="59a0a7a0" name="wm.130"/>
+		<part crc="4cb3856a" name="wm.131"/>
+		<part crc="e2e44b29" name="wm.132"/>
+		<part crc="43a36445" name="wm.133"/>
+		<part crc="5624794c" name="wm.134"/>
+		<part crc="43a36445" name="wm.133"/>
+		<part crc="5624794c" name="wm.134"/>
+		<part crc="43a36445" name="wm.133"/>
+		<part crc="5624794c" name="wm.134"/>
+		<part crc="43a36445" name="wm.133"/>
+		<part crc="5624794c" name="wm.134"/>
+
+		<!-- sprites, size: 0x20000 -->
+		<part crc="238ae0e5" name="wm.86"/>
+		<part crc="a2f19170" name="wm.93"/>
+		<part crc="238ae0e5" name="wm.86"/>
+		<part crc="a2f19170" name="wm.93"/>
+		<part crc="238ae0e5" name="wm.86"/>
+		<part crc="a2f19170" name="wm.93"/>
+		<part crc="238ae0e5" name="wm.86"/>
+		<part crc="a2f19170" name="wm.93"/>
+
+		<!-- tiles, size: 0x18000 -->
+		<interleave output="32">
+			<part name="wm.82" map="0001"/>
+			<part name="wm.81" map="0010"/>
+			<part name="wm.80" map="0100"/>
+			<part name="wm.80" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="wm.65" map="0001"/>
+			<part name="wm.64" map="0010"/>
+			<part name="wm.63" map="0100"/>
+			<part name="wm.63" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="wm.82" map="0001"/>
+			<part name="wm.81" map="0010"/>
+			<part name="wm.80" map="0100"/>
+			<part name="wm.80" map="1000"/>
+		</interleave>
+		<interleave output="32">
+			<part name="wm.65" map="0001"/>
+			<part name="wm.64" map="0010"/>
+			<part name="wm.63" map="0100"/>
+			<part name="wm.63" map="1000"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x100 -->
+		<part crc="648350b8" name="pr-5317.106"/>
+
+		<!-- color_proms, size: 0x300 -->
+		<part repeat="0x300">00</part>
+
+		<!-- encryption_device: 315-5064 -->
+		<part>
+			88 a8 80 a0 a0 80 20 00 08 88 00 80 88 a8 80 a0
+			20 00 a0 80 20 28 a0 a8 20 28 a0 a8 a0 80 20 00
+			a8 28 88 08 a8 28 88 08 08 88 00 80 a8 28 88 08
+			a8 28 88 08 20 28 a0 a8 a8 28 88 08 a8 28 88 08
+			20 28 a0 a8 88 a8 80 a0 88 a8 80 a0 20 28 a0 a8
+			20 28 a0 a8 a0 80 20 00 20 28 a0 a8 20 28 a0 a8
+			20 00 a0 80 20 28 a0 a8 a8 28 88 08 a0 80 20 00
+			20 28 a0 a8 20 28 a0 a8 a8 28 88 08 a8 28 88 08
+		</part>
+	</rom>
+</misterromdescription>

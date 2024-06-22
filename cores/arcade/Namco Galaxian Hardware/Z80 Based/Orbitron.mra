@@ -1,0 +1,35 @@
+<misterromdescription>
+	<name>Orbitron</name>
+	<mameversion>0216</mameversion>
+	<mratimestamp>201911270000</mratimestamp>
+	<year>1982</year>
+	<manufacturer>Comsoft (Signatron USA license)</manufacturer>
+	<category>Space / Shooter</category>
+	<setname>orbitron</setname>
+        <rbf>galaxian</rbf>
+        <switches default="00,5F,00">
+                <dip bits="16" name="Bonus Life After" ids="10000,20000"/>
+                <dip bits="18" name="Lives" ids="3,5"/>
+                <dip bits="19" name="Cabinet" ids="Upright,Cocktail"/>
+        </switches>
+        <rom index="1">
+                <part>0A</part>
+        </rom>
+	<rom index="0" zip="orbitron.zip" md5="e2d3472c93bde5948f2ec6609e5d4ce4" type="merged|nonmerged">
+		<part name="orbitron.3"/>
+		<part name="orbitron.4"/>
+		<part name="orbitron.1"/>
+		<part name="orbitron.2"/>
+		<part name="orbitron.5"/>
+		<part name="orbitron.5"/>
+		<part name="orbitron.5"/>
+		<part name="orbitron.5"/>
+
+		<part name="orbitron.6"/>
+		<part name="orbitron.6"/>
+		<part name="orbitron.7"/>
+		<part name="orbitron.7"/>
+
+		<part name="l06_prom.bin"/>
+	</rom>
+</misterromdescription>

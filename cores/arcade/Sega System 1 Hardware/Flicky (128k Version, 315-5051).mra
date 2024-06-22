@@ -1,0 +1,114 @@
+<misterromdescription>
+	<name>Flicky (128k Version, 315-5051)</name>
+	<setname>flicky</setname>
+	<rbf>segasys1</rbf>
+	<mameversion>0229</mameversion>
+	<year>1984</year>
+	<manufacturer>Sega</manufacturer>
+	<players>2</players>
+	<joystick>4-way</joystick>
+	<rotation>horizontal</rotation>
+	<region>World</region>
+	<buttons names="Flap,-,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="1"/>
+	<switches base="8" default="FF,FE">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		-->
+		<dip name="Lives" bits="10,11" ids="Infinite,5,4,3"/>
+		<dip name="Bonus Life" bits="12,13" ids="40/140/280k,40/120/240k,30/100/200k,30/80/160k"/>
+		<dip name="Difficulty" bits="14" ids="Hard,Easy"/>
+	</switches>
+	<rom index="0" zip="flicky.zip" type="merged" md5="f1c3018664bda33e11cb2ab50320587e">
+		<!-- soundcpu, size: 0x8000 -->
+		<part crc="6d220d4e" name="epr-5869.120"/>
+		<part crc="6d220d4e" name="epr-5869.120"/>
+		<part crc="6d220d4e" name="epr-5869.120"/>
+		<part crc="6d220d4e" name="epr-5869.120"/>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part crc="296f1492" name="epr-5978a.116"/>
+		<part crc="64b03ef9" name="epr-5979a.109"/>
+		<part repeat="0x10000">00</part>
+
+		<!-- sprites, size: 0x20000 -->
+		<part crc="b5f894a1" name="epr-5855.117"/>
+		<part crc="266af78f" name="epr-5856.110"/>
+		<part crc="b5f894a1" name="epr-5855.117"/>
+		<part crc="266af78f" name="epr-5856.110"/>
+		<part crc="b5f894a1" name="epr-5855.117"/>
+		<part crc="266af78f" name="epr-5856.110"/>
+		<part crc="b5f894a1" name="epr-5855.117"/>
+		<part crc="266af78f" name="epr-5856.110"/>
+
+		<!-- tiles, size: 0x20000 -->
+		<interleave output="32">
+			<part name="epr-5868.62" map="0001"/>
+			<part name="epr-5866.64" map="0010"/>
+			<part name="epr-5864.66" map="0100"/>
+			<part name="epr-5864.66" map="1000"/>
+		</interleave>
+
+		<interleave output="32">
+			<part name="epr-5867.61" map="0001"/>
+			<part name="epr-5865.63" map="0010"/>
+			<part name="epr-5863.65" map="0100"/>
+			<part name="epr-5863.65" map="1000"/>
+		</interleave>
+
+		<interleave output="32">
+			<part name="epr-5868.62" map="0001"/>
+			<part name="epr-5866.64" map="0010"/>
+			<part name="epr-5864.66" map="0100"/>
+			<part name="epr-5864.66" map="1000"/>
+		</interleave>
+
+		<interleave output="32">
+			<part name="epr-5868.62" map="0001"/>
+			<part name="epr-5866.64" map="0010"/>
+			<part name="epr-5864.66" map="0100"/>
+			<part name="epr-5864.66" map="1000"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x100 -->
+		<part crc="648350b8" name="pr-5317.76"/>
+
+		<!-- color_proms, size: 0x300 -->
+		<part repeat="0x300">00</part>
+
+		<!-- encryption_device: 315-5051 -->
+		<part>
+		08 88 00 80 a0 80 a8 88
+		80 00 a0 20 88 80 08 00
+		a0 80 a8 88 28 08 20 00
+		28 08 20 00 a0 80 a8 88
+		08 88 00 80 80 00 a0 20
+		80 00 a0 20 88 80 08 00
+		28 08 20 00 28 08 20 00
+		28 08 20 00 88 80 08 00
+		08 88 00 80 a8 88 28 08
+		a8 88 28 08 80 00 a0 20
+		28 08 20 00 88 80 08 00
+		a8 88 28 08 88 80 08 00
+		08 88 00 80 80 00 a0 20
+		a8 88 28 08 80 00 a0 20
+		28 08 20 00 28 08 20 00
+		08 88 00 80 88 80 08 00
+		</part>
+	</rom>
+	<rom index="1">
+		<part>00</part>
+	</rom>
+	<rom index="3" md5="none">
+		<part>
+		00 8F FF FF 00 FF 00 02
+		00 02 00 01 00 FF 00 00
+		00 00 E7 00 00 31 00 41
+		00 00 C0 D5 00 03 00 00
+		</part>
+	</rom>
+	<nvram index="4" size="52"/>
+</misterromdescription>

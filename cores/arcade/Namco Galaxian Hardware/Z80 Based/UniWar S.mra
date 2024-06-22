@@ -1,0 +1,35 @@
+<misterromdescription>
+	<name>UniWar S</name>
+	<mameversion>0216</mameversion>
+	<setname>uniwars</setname>
+	<mratimestamp>201911270000</mratimestamp>
+	<year>1980</year>
+	<manufacturer>Irem</manufacturer>
+	<category>Space / Galaxian</category>
+        <rbf>galaxian</rbf>
+        <switches default="00,1F,00">
+                <dip bits="7"    name="Service" ids="Off,On"/>
+                <dip bits="6"    name="Test" ids="Off,On"/>
+                <dip bits="5"    name="Cabinet" ids="Upright,Cocktail"/>
+                <dip bits="16,17" name="Bonus Life After" ids="None,4000,5000,7000"/>
+                <dip bits="18" name="Lives" ids="3,5"/>
+        </switches>
+        <rom index="1">
+                <part>0C</part>
+        </rom>
+	<rom index="0" zip="uniwars.zip" md5="b270e45e9d2ca2e73b081fed66d9f3db" type="merged|nonmerged">
+		<part name="f07_1a.bin"/>
+		<part name="h07_2a.bin"/>
+		<part name="k07_3a.bin"/>
+		<part name="m07_4a.bin"/>
+		<part name="d08p_5a.bin"/>
+		<part name="gg6"/>
+		<part name="m08p_7a.bin"/>
+		<part name="n08p_8a.bin"/>
+		<part name="egg10"/>
+		<part name="h01_2.bin"/>
+		<part name="egg9"/>
+		<part name="k01_2.bin"/>
+		<part name="uniwars.clr"/>
+	</rom>
+</misterromdescription>

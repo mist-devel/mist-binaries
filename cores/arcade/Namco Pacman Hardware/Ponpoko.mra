@@ -1,0 +1,77 @@
+<misterromdescription>
+	<name>Ponpoko</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1982</year>
+	<manufacturer>Sigma</manufacturer>
+	<category>Platform - Climb</category>
+
+	<setname>ponpoko</setname>
+	<parent>ponpoko</parent>
+	<mameversion>0220</mameversion>
+	<rbf>pacman</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>horizontal</rotation>
+	<flip></flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FF,FF,FF,D1" base="8" page_id="1" page_name="Switches">
+		<dip bits="16,17" ids="Never,10K,30K,50K" name="Bonus Life after"></dip>
+		<dip bits="20,21" ids="2,3,4,5" name="Lives"></dip>
+		<dip bits="22" ids="Cocktail,Upright" name="Cabinet"></dip>
+		<dip bits="24,27" ids="3c/1cr,2c/1cr,1c/1cr,1c/2cr" name="Coinage" values="4,2,1,3"></dip>
+		<dip bits="30" ids="On,Off" name="Demo Sounds"></dip>
+		</switches>
+
+	<rom index="1">
+		<part>0B</part>
+		</rom>
+	<rom index="0" md5="9000cca41cfa18130798595363a112ec" zip="ponpoko.zip">
+		<part crc="ffa3c004" name="ppokoj1.bin"></part>
+		<part crc="4a496866" name="ppokoj2.bin"></part>
+		<part crc="17da6ca3" name="ppokoj3.bin"></part>
+		<part crc="9d39a565" name="ppokoj4.bin"></part>
+		<part crc="54ca3d7d" name="ppoko5.bin"></part>
+		<part crc="3055c7e0" name="ppoko6.bin"></part>
+		<part crc="3cbe47ca" name="ppoko7.bin"></part>
+		<part crc="04b63fc6" name="ppokoj8.bin"></part>
+		<part crc="b73e1a06" name="ppoko9.bin"></part>
+		<part crc="62069b5d" name="ppoko10.bin"></part>
+		<part crc="b73e1a06" name="ppoko9.bin"></part>
+		<part crc="62069b5d" name="ppoko10.bin"></part>
+		<part crc="a9cc86bf" name="82s126.1m"></part>
+		<part crc="3eb3a8e4" name="82s126.4a"></part>
+		<part crc="77245b66" name="82s126.3m"></part>
+		<part crc="2fc650bd" name="82s123.7f"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 00 00 00 00 FF 00 02 00 02 00 01 00 08 02 08
+		FF FF 00 00 00 00 00 00
+		00 00 4C 40 00 03 00 00
+		00 00 4E 5A 00 13 00 00
+		00 00 40 6C 00 06 0F 00
+		00 00 4C 53 00 01 02 02
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="29"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

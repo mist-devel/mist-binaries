@@ -1,0 +1,83 @@
+<misterromdescription>
+    <name>Time Soldiers (US Rev 3)</name>
+    <setname>timesold</setname>
+    <rbf>alpha68k</rbf>
+    <mameversion>0249</mameversion>
+    <year>1987</year>
+    <manufacturer>Alpha Denshi Co.</manufacturer>
+    <region>US</region>
+    <joystick>Rotary</joystick>
+    <rotation>vertical (cw)</rotation>
+
+    <switches default="ff,ff" base="16" page_id="1" page_name="Switches">
+        <!-- IN3 -->
+        <dip name="Flip Screen" bits="2" ids="On,Off"/>
+        <dip name="Difficulty" bits="3,4" ids="Easy,Hard,Normal"/>
+        <dip name="Language" bits="5" ids="English,Japanese"/>
+        <dip name="Unused" bits="6" ids="On,Off"/>
+        <dip name="Invulnerability" bits="7" ids="On,Off"/>
+        <!-- IN4 -->
+        <dip name="Coinage" bits="8,10" ids="A 3C/2C B 8C/1C,A 2C/3C B 7C/1C,A 1C/6C B 6C/1C,A 1C/5C B 5C/1C,A 1C/4C B 4C/1C,A 1C/3C B 3C/1C,A 1C/2C B 2C/1C,A 1C/1C B 1C/1C"/>
+        <dip name="Demo Sounds" bits="11" ids="On,Off"/>
+        <dip name="Lives" bits="12,13" ids="6,5,4,3"/>
+    </switches>
+
+    <buttons names="Shot,Weapon,-,P1 Start,P2 Start,Coin A,Coin B,Pause,Rotate CW,Rotate CCW" default="A,B,X,Y,R,L,Start,Select,R1,L1"/>
+
+
+    <rom index="0" zip="timesold.zip" md5="None">
+
+        <part>86 01</part>
+
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="bf.3" crc="a491e533" map="01"/>
+            <part name="bf.4" crc="34ebaccc" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="bf.1" crc="158f4cb3" map="01"/>
+            <part name="bf.2" crc="af01a718" map="10"/>
+        </interleave>
+        <part repeat="0x40000"> FF</part>
+
+        <!-- audiocpu - starts at 0x80000 -->
+        <part name="bf.7" crc="f8b293b5"/>
+        <part repeat="0x10000"> FF</part>
+        <part name="bf.8" crc="8a43497b"/>
+        <part repeat="0x10000"> FF</part>
+        <part name="bf.9" crc="1408416f"/>
+        <part repeat="0x30000"> FF</part>
+
+        <!-- gfx1 - starts at 0x100000 -->
+        <interleave output="16">
+            <part name="bf.5" crc="3cec2f55" map="01"/>
+            <part name="bf.6" crc="086a364d" map="10"/>
+        </interleave>
+        <part repeat="0xF0000"> FF</part>
+
+        <!-- gfx2 - starts at 0x200000 -->
+        <interleave output="32">
+            <part name="bf.10" crc="613313ba" map="0001"/>
+            <part name="bf.11" crc="92b42eba" map="0010"/>
+            <part name="bf.12" crc="7ca8bb32" map="0100"/>
+            <part name="bf.13" crc="56a3a26a" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="bf.14" crc="efda5c45" map="0001"/>
+            <part name="bf.15" crc="ba3b9f5a" map="0010"/>
+            <part name="bf.16" crc="2aa74125" map="0100"/>
+            <part name="bf.17" crc="6b37d048" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="bf.18" crc="e886146a" map="0001"/>
+            <part name="bf.19" crc="8994bf10" map="0010"/>
+            <part name="bf.20" crc="bab6a7c5" map="0100"/>
+            <part name="bf.21" crc="bc3b3944" map="1000"/>
+        </interleave>
+
+        <!-- mcu - starts at 0x380000 -->
+        <!-- <part name="alpha.mcu" crc=""/> -->
+
+        <!-- Total 0x381000 bytes - 3588 kBytes -->
+    </rom>
+</misterromdescription>

@@ -1,0 +1,151 @@
+<misterromdescription>
+	<name>Donkey Kong (Spanish Crazy Kong bootleg)</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series>Donkey Kong</series>
+	<year>1981</year>
+	<manufacturer>bootleg</manufacturer>
+	<category>Platform - Climb</category>
+
+	<setname>ckongdks</setname>
+	<parent>ckong</parent>
+	<mameversion>0224</mameversion>
+	<rbf>cclimber</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>no</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="A,Start,Select,R" names="Jump,Start 1P,Start 2P,Coin"></buttons>
+
+	<switches default="80" base="8">
+		<dip bits="0,1"   name="Lives" ids="3,4,5,6"/>
+		<dip bits="2,3"   name="Bonus Life" ids="7000,10000,15000,20000"/>
+		<dip bits="4,6"   name="Coinage" ids="1C_1C,2C_1C,1C_2C,3C_1C,1C_3C,4C_1C,1C_4C,5C_1C"/>
+		<dip bits="7"     name="Cabinet" ids="Cocktail,Upright"/>
+	</switches>
+
+	<rom index="1"><part>1</part></rom>
+	<rom index="0" md5="9018267d11621a9dfe1ea24e7c74a4d6" zip="ckong.zip|ckongdks.zip" type="merged|nonmerged|split">
+		<!-- maincpu -->
+		<part crc="2171cac3" name="falcon7" offset="0" length="396"/>
+		<part>
+C3F437E5C5FE032808CD1C013E033283
+60C1E13600CB48CAB6073A2260322560
+2125601101601AFE90D086C3AD07
+		</part>
+		<part crc="2171cac3" name="falcon7" offset="442" length="111"/>
+		<part>
+CB67280B36032336FF232323C34F0236
+0223360018F33E01322560C3AC013A23
+60C3224C
+		</part>
+		<part crc="2171cac3" name="falcon7" offset="589" length="1196"/>
+		<part>AF</part>
+		<part crc="2171cac3" name="falcon7" offset="1786" length="176"/>
+		<part>
+C9AD072712110004CD9F30C92102607E
+A7C247022F77C33F02
+		</part>
+		<part crc="2171cac3" name="falcon7" offset="1987" length="407"/>
+		<part>CDE437C90B</part>
+		<part crc="2171cac3" name="falcon7" offset="2399" length="1697"/>
+		<part crc="88b83ff7" name="falcon8"/>
+		<part crc="cff2af47" name="falcon9" offset="0" length="1105"/>
+		<part>C3</part>
+		<part crc="cff2af47" name="falcon9" offset="1106" length="2990"/>
+		<part crc="6b2ecf23" name="falcon10" offset="0" length="1690"/>
+		<part>
+1A251711141F22FDFD323F94921A2517
+11141F22FDFD333F8092FDFD2215131F
+2214FDFD3F9F911A2515171F23FDFDFD
+FD3F5E93FDFDFD1325111E241FFD111C
+13111E2A11221123FDFDFD3F2993FDFD
+231F1C1FFD251EFD1A251711141F22FD
+FDFD3F299301FD1FFD02FD1A25171114
+1F221523FDFDFDFDFDFD3F2792FDFDFD
+FD3F069315231322191215FD2425FD1E
+1F1D1222153F8892FDFDFDFDFD
+		</part>
+		<part crc="6b2ecf23" name="falcon10" offset="1847" length="86"/>
+		<part>
+2419151D201FFDFDFDFDFD30060031FD
+3F92932411121C11FD1415FD2215131F
+221423FDFDFDFDFD3F72931F1B1529
+		</part>
+		<part repeat="21">FD</part>
+		<part>
+3FA792201F1EFD1D1F1E15141123FD3F
+0A933F320560AF320260C9FDFDFD131F
+191E3FFEFFCAFC3736FFC93A0560C38F
+01
+		</part>
+		<part crc="6b2ecf23" name="falcon10" offset="2050" length="833"/>
+		<part>00</part>
+		<part crc="6b2ecf23" name="falcon10" offset="2884" length="1212"/>
+		<part crc="327dcadf" name="falcon11" offset="0" length="3106"/>
+		<part>A7CABE07AF773C3C322560C3AC01</part>
+		<part crc="327dcadf" name="falcon11" offset="3120" length="721"/>
+		<part>
+A593018593018A93016593016A930446
+9306059301E59201EA9201C59201CA92
+06A59206659202469202289206059206
+C59102A7910486910265910269910625
+91010591020791010A9101E59002E790
+01EA9001C59001CA9004859003689004
+4590060D9302EF9204CE9202AD9202B1
+92066D92014D92015292012D92013292
+060D9206CD9102AE91029091066D9106
+2D91010D9101129101ED9001F09001F2
+9001CD9003D09000
+		</part>
+		<part crc="327dcadf" name="falcon11" offset="4009" length="87"/>
+		<part repeat="0x3000">FF</part>
+		<!-- cclimber_audio:samples -->
+		<part crc="31c0a7de" name="ckongdks/ck08.bin"/>
+		<part crc="9003ffbd" name="falcon12"/>
+		<!-- gfx1 -->
+		<part crc="a8916dc8" name="falcon6"/>
+		<part crc="cd3b5dde" name="falcon5"/>
+		<part crc="b62a0367" name="falcon4"/>
+		<part crc="61122c5e" name="falcon3"/>
+		<!-- gfx2 -->
+		<part crc="085b5f90" name="ckongdks/ck02.bin"/>
+		<part crc="16fd47e2" name="ckongdks/ck01.bin"/>
+		<part crc="085b5f90" name="ckongdks/ck02.bin"/>
+		<part crc="16fd47e2" name="ckongdks/ck01.bin"/>
+		<!-- misc 8K -->
+		<part repeat="0x2000">00</part>
+		<!-- proms -->
+		<part crc="751c3325" name="ck6v.bin"/>
+		<part crc="ab1940fa" name="ck6u.bin"/>
+		<part crc="751c3325" name="ck6v.bin"/>
+		<part crc="ab1940fa" name="ck6u.bin"/>
+		<part crc="751c3325" name="ck6v.bin"/>
+		<part crc="ab1940fa" name="ck6u.bin"/>
+		<part crc="751c3325" name="ck6v.bin"/>
+		<part crc="ab1940fa" name="ck6u.bin"/>
+
+		<part repeat="0x100">00</part>
+
+		<part crc="b4e827a5" name="ck6t.bin"/>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20230817154630</mratimestamp>
+</misterromdescription>

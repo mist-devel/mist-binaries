@@ -1,0 +1,98 @@
+<misterromdescription>
+	<name>Block Gal (MC-8123B, 317-0029)</name>
+	<setname>blockgal</setname>
+	<rbf>segasys1</rbf>
+	<mameversion>0229</mameversion>
+	<year>1987</year>
+	<manufacturer>Sega / Vic Tokai</manufacturer>
+	<players>2</players>
+	<joystick>4-way</joystick>
+	<rotation>vertical/cw</rotation>
+	<region>World</region>
+	<buttons names="Launch,Fast-Move,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="2"/>
+	<switches base="8" default="FF,CE">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		-->
+		<dip name="Demo Sounds" bits="9" ids="Off,On"/>
+		<dip name="Lives" bits="11" ids="3,2"/>
+		<dip name="Bonus Life" bits="12" ids="30/5/1/2/300k,10/3/6/1/150k"/>
+		<dip name="Allow Continue" bits="13" ids="Yes,No"/>
+		<dip name="Service Mode" bits="15" ids="On,Off"/>
+	</switches>
+	<rom index="0" zip="blockgal.zip" type="merged" md5="987e7e3b5d4b3d2060776e0482f6ac57">
+		<!-- soundcpu, size: 0x8000 -->
+		<part crc="d848faff" name="bg.120"/>
+		<part crc="d848faff" name="bg.120"/>
+		<part crc="d848faff" name="bg.120"/>
+		<part crc="d848faff" name="bg.120"/>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part crc="a99b231a" name="bg.116"/>
+		<part crc="a6b573d5" name="bg.109"/>
+		<part repeat="0x10000">00</part>
+
+		<!-- sprites, size: 0x20000 -->
+		<part crc="e99cc920" name="bg.117"/>
+		<part crc="213057f8" name="bg.04"/>
+		<part crc="064c812c" name="bg.110"/>
+		<part crc="02e0b040" name="bg.05"/>
+		<part crc="e99cc920" name="bg.117"/>
+		<part crc="213057f8" name="bg.04"/>
+		<part crc="064c812c" name="bg.110"/>
+		<part crc="02e0b040" name="bg.05"/>
+
+		<!-- tiles, size: 0x18000 -->
+		<interleave output="32">
+			<part crc="7e3ea4eb" name="bg.62"/>
+			<part crc="17368663" name="bg.64"/>
+			<part crc="2b7dc4fa" name="bg.66"/>
+			<part crc="2b7dc4fa" name="bg.66"/>
+		</interleave>
+		<interleave output="32">
+			<part crc="4dd3d39d" name="bg.61"/>
+			<part crc="0c8bc404" name="bg.63"/>
+			<part crc="ed121306" name="bg.65"/>
+			<part crc="ed121306" name="bg.65"/>
+		</interleave>
+		<interleave output="32">
+			<part crc="7e3ea4eb" name="bg.62"/>
+			<part crc="17368663" name="bg.64"/>
+			<part crc="2b7dc4fa" name="bg.66"/>
+			<part crc="2b7dc4fa" name="bg.66"/>
+		</interleave>
+		<interleave output="32">
+			<part crc="4dd3d39d" name="bg.61"/>
+			<part crc="0c8bc404" name="bg.63"/>
+			<part crc="ed121306" name="bg.65"/>
+			<part crc="ed121306" name="bg.65"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x100 -->
+		<part crc="648350b8" name="pr5317.76"/>
+
+		<!-- color_proms, size: 0x300 -->
+		<part repeat="0x300">00</part>
+
+		<part repeat="0x1C00">00</part>
+
+		<!-- decryption key, size: 0x2000 -->
+		<part name="317-0029.key"/>
+
+	</rom>
+	<rom index="1">
+		<part>32</part>
+	</rom>
+	<rom index="3" md5="none">
+		<part>
+		00 00 00 00 00 FF 00 02
+		00 02 00 01 00 FF 00 00
+		00 00 C0 62 00 03 00 01
+		</part>
+	</rom>
+	<nvram index="4" size="3"/>
+</misterromdescription>

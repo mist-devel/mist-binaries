@@ -1,0 +1,35 @@
+<misterromdescription>
+    <name>Battle of Atlantis</name>
+    <rbf>scramble</rbf>
+    <switches>
+	<dip bits="7"  name="Lives"       ids="3,5"/>
+    </switches>
+    <rom index="1"><part>0D</part></rom>
+    <rom index="0" zip="atlantis.zip" md5="91c419f9b09b9552c798526306f81b01" type="merged|nonmerged">
+	<part name="2c"/>
+	<part name="2e"/>
+	<part name="2f"/>
+	<part name="2h"/>
+	<part name="2j"/>
+	<part name="2l"/>
+	<part name="2l"/>
+	<part name="2l"/>
+	<part name="2c"/>
+	<part name="2e"/>
+	<part name="2f"/>
+	<part name="2h"/>
+	<part name="2j"/>
+	<part name="2l"/>
+	<part name="2l"/>
+	<part name="2l"/>
+
+	<part name="ot1.5c"/>
+	<part name="ot2.5d"/>
+	<part name="ot3.5e"/>
+	<part name="ot3.5e"/>
+
+	<part name="5h"/>
+	<part name="5f"/>
+	<part name="c01s.6e"/>
+    </rom>
+</misterromdescription>

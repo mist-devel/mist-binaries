@@ -1,0 +1,29 @@
+<misterromdescription>
+    <name>Calipso</name>
+    <mameversion>0209</mameversion>
+    <rbf>scramble</rbf>
+    <switches>
+	<dip bits="7"  name="Lives"       ids="3,5"/>
+	<dip bits="10" name="Demo Sounds" ids="Off,On"/>
+    </switches>
+    <rom index="1"><part>8</part></rom>
+    <rom index="0" zip="calipso.zip" md5="7a459dee19c889190e2f570119d0d77b" type="merged">
+	<part name="calipso.2c"/>
+	<part name="calipso.2e"/>
+	<part name="calipso.2f"/>
+	<part name="calipso.2h"/>
+	<part name="calipso.2j"/>
+	<part name="calipso.2l"/>
+	<part name="calipso.2l"/>
+	<part name="calipso.2l"/>
+
+	<part name="calipso.5c"/>
+	<part name="calipso.5d"/>
+	<part name="calipso.5c"/>
+	<part name="calipso.5d"/>
+
+	<part name="calipso.5f"/>
+	<part name="calipso.5h"/>
+	<part name="calipso.clr"/>
+    </rom>
+</misterromdescription>

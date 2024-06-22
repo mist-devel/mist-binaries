@@ -1,0 +1,104 @@
+<misterromdescription>
+    <name>Horizon</name>
+    <mameversion>0216</mameversion>
+    <setname>horizon</setname>
+    <manufacturer>Irem</manufacturer>
+    <rbf>iremm62</rbf>
+    <switches>
+        <!-- DSW1 -->
+        <dip bits="8,9"     name="Lives"      ids="3,5,4,2"/>
+        <dip bits="10,11"   name="Bonus Life" ids="40k/80k,60k/100k,80k/120k,100k/80k"/>
+    </switches>
+    <rom index="1"><part>5</part></rom>
+    <rom index="0" zip="horizon.zip" md5="573ef5ced961ede734cdde94153fcb7a" type="merged|nonmerged">
+      <!-- CPU1, 128k -->
+      <part name="hrza-4e"/>
+      <part name="hrza-4d"/>
+      <part name="hrza-4b"/>
+      <part name="hrza-4b"/>
+
+      <part name="hrza-4e"/>
+      <part name="hrza-4d"/>
+      <part name="hrza-4b"/>
+      <part name="hrza-4b"/>
+
+      <!-- SND CPU2, 64k -->
+      <part name="hrza-3f"/>
+      <part name="hrza-3f"/>
+      <part name="hrza-3f"/>
+      <part name="hrza-3f"/>
+
+      <!-- GFX1, 128k -->
+      <interleave output="32">
+          <part name="hrzd-4d" map="0001"/>
+          <part name="hrzd-4c" map="0010"/>
+          <part name="hrzd-4a" map="0100"/>
+          <part name="hrzd-4a" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="hrzd-4d" map="0001"/>
+          <part name="hrzd-4c" map="0010"/>
+          <part name="hrzd-4a" map="0100"/>
+          <part name="hrzd-4a" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="hrzd-4d" map="0001"/>
+          <part name="hrzd-4c" map="0010"/>
+          <part name="hrzd-4a" map="0100"/>
+          <part name="hrzd-4a" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="hrzd-4d" map="0001"/>
+          <part name="hrzd-4c" map="0010"/>
+          <part name="hrzd-4a" map="0100"/>
+          <part name="hrzd-4a" map="1000"/>
+      </interleave>
+
+      <!-- GFX2, 256k -->
+      <interleave output="32">
+          <part name="hrzb-4k.00" map="0001"/>
+          <part name="hrzb-3n.10" map="0010"/>
+          <part name="hrzb-4c.20" map="0100"/>
+          <part name="hrzb-4c.20" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="hrzb-4f.01" map="0001"/>
+          <part name="hrzb-4n.11" map="0010"/>
+          <part name="hrzb-4e.21" map="0100"/>
+          <part name="hrzb-4e.21" map="1000"/>
+      </interleave>
+
+      <interleave output="32">
+          <part name="hrzb-4k.00" map="0001"/>
+          <part name="hrzb-3n.10" map="0010"/>
+          <part name="hrzb-4c.20" map="0100"/>
+          <part name="hrzb-4c.20" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="hrzb-4f.01" map="0001"/>
+          <part name="hrzb-4n.11" map="0010"/>
+          <part name="hrzb-4e.21" map="0100"/>
+          <part name="hrzb-4e.21" map="1000"/>
+      </interleave>
+
+      <!-- GFX3, 64k -->
+      <part repeat="0x10000">FF</part>
+
+      <!-- spr_color_proms, 3*256b -->
+      <part name="hrzb-1m.r"/>
+      <part name="hrzb-1n.g"/>
+      <part name="hrzb-1l.b"/>
+
+      <!-- chr_color_proms, 3*256b -->
+      <part name="hrzd-1d"/>
+      <part name="hrzd-1c"/>
+      <part name="hrzd-1e"/>
+
+      <!-- fg_color_proms, 3*256b -->
+      <part repeat="0x300">FF</part>
+
+      <!-- spr_height_prom -->
+      <part name="hrzb-5p"/>
+
+    </rom>
+</misterromdescription>

@@ -1,0 +1,113 @@
+<misterromdescription>
+	<name>4-D Warriors (315-5162)</name>
+	<setname>4dwarrio</setname>
+	<rbf>segasys1</rbf>
+	<mameversion>0229</mameversion>
+	<year>1985</year>
+	<manufacturer>Coreland / Sega</manufacturer>
+	<players>2</players>
+	<joystick>8-way</joystick>
+	<rotation>horizontal</rotation>
+	<region>World</region>
+	<buttons names="Leg Weapon,Arm Beam,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="2"/>
+	<switches base="8" default="FF,FE">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		-->
+		<dip name="Lives" bits="9,10" ids="Infinite,5,4,3"/>
+		<dip name="Bonus Life" bits="11,13" ids="None,90k,80k,70k,60k,50k,40k,30k"/>
+		<dip name="Difficulty" bits="14" ids="Hard,Easy"/>
+	</switches>
+	<rom index="1">
+		<part>04</part>
+	</rom>
+	<rom index="0" zip="4dwarrio.zip" type="merged" md5="922fddc7d30c73ae84f64cd5b84c1222">
+		<!-- soundcpu, size: 0x8000 -->
+		<part crc="5241c009" name="4d.120"/>
+		<part crc="5241c009" name="4d.120"/>
+		<part crc="5241c009" name="4d.120"/>
+		<part crc="5241c009" name="4d.120"/>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part crc="546d1bc7" name="4d.116"/>
+		<part crc="f1074ec3" name="4d.109"/>
+		<part crc="387c1e8f" name="4d.96"/>
+		<part crc="387c1e8f" name="4d.96"/>
+		<part crc="387c1e8f" name="4d.96"/>
+		<part crc="387c1e8f" name="4d.96"/>
+
+		<!-- sprites, size: 0x20000 -->
+		<part crc="436e4141" name="4d.117"/>
+		<part crc="8b7cecef" name="4d.04"/>
+		<part crc="6ec5990a" name="4d.110"/>
+		<part crc="f31a1e6a" name="4d.05"/>
+		<part crc="436e4141" name="4d.117"/>
+		<part crc="8b7cecef" name="4d.04"/>
+		<part crc="6ec5990a" name="4d.110"/>
+		<part crc="f31a1e6a" name="4d.05"/>
+
+		<!-- tiles, size: 0x18000 -->
+		<interleave output="32">
+			<part crc="f31b2e09" name="4d.62"/>
+			<part crc="9f442351" name="4d.64"/>
+			<part crc="52bfa2ed" name="4d.66"/>
+			<part crc="52bfa2ed" name="4d.66"/>
+		</interleave>
+		<interleave output="32">
+			<part crc="5430e925" name="4d.61"/>
+			<part crc="633232bd" name="4d.63"/>
+			<part crc="e9ba4658" name="4d.65"/>
+			<part crc="e9ba4658" name="4d.65"/>
+		</interleave>
+		<interleave output="32">
+			<part crc="f31b2e09" name="4d.62"/>
+			<part crc="9f442351" name="4d.64"/>
+			<part crc="52bfa2ed" name="4d.66"/>
+			<part crc="52bfa2ed" name="4d.66"/>
+		</interleave>
+		<interleave output="32">
+			<part crc="5430e925" name="4d.61"/>
+			<part crc="633232bd" name="4d.63"/>
+			<part crc="e9ba4658" name="4d.65"/>
+			<part crc="e9ba4658" name="4d.65"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x100 -->
+		<part crc="648350b8" name="pr5317.76"/>
+
+		<!-- color_proms, size: 0x300 -->
+		<part repeat="0x300">00</part>
+
+		<!-- encryption_device: 315-5162 -->
+		<part>
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+			40 10 50 04 44 14 54 01 41 11 51 05 45 15 55 00
+
+			04 04 04 04 04 04 04 04 04 04 04 04 04 04 04 05
+			05 05 05 05 05 05 05 05 05 05 05 05 05 05 05 06
+			06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 07
+			07 07 07 07 07 07 07 07 07 07 07 07 07 07 07 08
+			08 08 08 08 08 08 08 08 08 08 08 08 08 08 08 09
+			09 09 09 09 09 09 09 09 09 09 09 09 09 09 09 0a
+			0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0b
+			0b 0b 0b 0b 0b 0b 0b 0b 0b 0b 0b 0b 0b 0b 0b 0c
+		</part>
+	</rom>
+	<rom index="3" md5="none">
+		<part>
+			00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+			00 00 D3 00 00 A0 00 20 00 00 C0 17 00 03 00 02
+		</part>
+	</rom>
+	<mratimestamp>20210629000000</mratimestamp>
+</misterromdescription>

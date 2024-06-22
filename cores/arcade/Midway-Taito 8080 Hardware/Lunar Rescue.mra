@@ -1,0 +1,66 @@
+<misterromdescription>
+	<name>Lunar Rescue</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1979</year>
+	<manufacturer>Taito</manufacturer>
+	<category>Lander</category>
+
+	<setname>lrescue</setname>
+	<parent>lrescue</parent>
+	<mameversion>0226</mameversion>
+	<rbf>spaceinvaders</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (ccw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>2-way horizontal</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="A,Start,Select,R,L" names="Fire,-,-,-,Start 1P,Start 2P,Coin,Pause"></buttons>
+
+	<switches base="16" default="00,00,00,00,00">
+		<dip bits="16,17" ids="3,4,5,6" name="Lives"></dip>
+		<dip bits="19" ids="1500,1000" name="Bonus Life"></dip>
+		<dip bits="32" ids="No,Yes" name="Freeplay"></dip>
+	</switches>
+
+	<rom index="1">
+		<part>06</part>
+	</rom>
+	<rom index="0" md5="none" zip="lrescue.zip">
+		<part crc="2bbc4778" name="lrescue.1"></part>
+		<part crc="49e79706" name="lrescue.2"></part>
+		<part crc="1ac969be" name="lrescue.3"></part>
+		<part crc="782fee3c" name="lrescue.4"></part>
+		<part crc="58fde8bc" name="lrescue.5"></part>
+		<part crc="bfb0f65d" name="lrescue.6"></part>
+		<part repeat="4096">00</part>
+		<part crc="8b2e38de" name="7643-1.cpu"></part>
+		<part crc="8b2e38de" name="7643-1.cpu"></part>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		00 1F 90 00 00 FF 00 02 00 02 00 01 00 FF 02 00
+		00 00 20 DB 00 01 0A 0A
+		00 00 20 CF 00 0A 1B 1B
+		00 00 20 F4 00 02 00 05
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="13"></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

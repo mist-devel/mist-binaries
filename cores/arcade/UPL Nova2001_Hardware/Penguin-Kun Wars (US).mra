@@ -1,0 +1,53 @@
+<misterromdescription>
+	<name>Penguin-Kun Wars (US)</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1984</year>
+	<manufacturer>UPL</manufacturer>
+	<manufacturer>Taito</manufacturer>
+	<category>Ping-Pong</category>
+
+	<setname>pkunwar</setname>
+	<parent>ninjakun</parent>
+	<mameversion>0220</mameversion>
+	<rbf>ninjakun</rbf>
+
+	<resolution>15kHz</resolution>
+	<rotation>horizontal</rotation>
+	<flip></flip>
+
+	<players>2 (alternating)</players>
+	<joystick>2-way horizontal</joystick>
+	<special_controls></special_controls>
+	<num_buttons>2</num_buttons>
+	<button_names></button_names>
+
+	<switches default="FF,FB" base="8" page_id="1" page_name="Switches">
+		<dip bits="8,9"   name="Coinage"     ids="3C_1C,2C_1C,1C_2C,1C_1C"/>
+		<dip bits="10"    name="Cabinet"     ids="Upright,Cocktail"/>
+		<dip bits="11"    name="Demo Sounds" ids="No,Yes"/>
+		<dip bits="12,13" name="Difficulty"  ids="Hardest,Easy,Hard,Medium"/>
+		<dip bits="15"    name="Free Play"   ids="Yes,No"/>
+	</switches>
+
+	<rom index="1"><part>3</part></rom>
+	<rom index="0" zip="pkunwar.zip" md5="3b92989220c556eb9b89aa10d630e30a">
+		<!-- gfx1 -->
+		<part name="pkwar.01y"/>
+		<part name="pkwar.02y"/>
+		<part name="pkwar.03y"/>
+		<part name="pkwar.04y"/>
+		<!-- main cpu -->
+		<part name="pkwar.01r"/>
+		<part name="pkwar.02r"/>
+		<!-- sub cpu -->
+		<part name="pkwar.col"/>
+		<part repeat="0x5fe0">AA</part>
+		<part name="pkwar.03r"/>
+	</rom>
+</misterromdescription>

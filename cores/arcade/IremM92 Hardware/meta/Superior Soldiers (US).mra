@@ -1,0 +1,101 @@
+<misterromdescription>
+    <name>Superior Soldiers (US)</name>
+    <mameversion>0245</mameversion>
+    <setname>ssoldier</setname>
+    <year>1993</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Fighter</category>
+    <rbf>IremM92</rbf>
+    <rotation>horizontal</rotation>
+
+    <joystick>8-way</joystick>
+    <num_buttons>6</num_buttons>
+    <buttons default="B,A,R,X,Y,L,Start,Select" names="Soft Punch,Medium Punch,Hard Punch,Soft Kick,Medium Kick,Hard Kick,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="00 00 00" base="16" page_id="1" page_name="Switches">
+        <dip bits="5" ids="Start,Any" name="Start Button"></dip>
+
+        <dip bits="6" ids="Off,On" name="Demo Sounds"></dip>
+        <dip bits="7" ids="Off,On" name="Service Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Screen"></dip>
+
+        <dip bits="12,15" ids="1C/1C,2C/1C,3C/1C,4C/1C,5C/1C,6C/1C,1C/2C,1C/3C,1C/4C,1C/5C,1C/6C,2C/3C,3C/2C,4C/3C,2S/1C,Free Play" name="Coin Mode"></dip>
+    </switches>
+
+    <rom index="0" zip="ssoldier.zip" md5="None">
+        <!-- board type -->
+        <part>40</part>
+        
+        <!-- maincpu -->
+        <part>00 0c 00 00</part>
+        <interleave output="16">
+        	<part name="f3-l0-h.bin" crc="419361a2" map="01" />
+	        <part name="f3-h0-h.bin" crc="b63fb9da" map="10" />
+        </interleave>
+        <interleave output="16">
+        	<part name="f3-l1-a.bin" crc="8cb5c396" map="01" />
+	        <part name="f3-h1-a.bin" crc="e3d9f619" map="10" />
+        </interleave>
+
+        <!-- gfx1 tiles -->
+        <part>01 10 00 00</part>
+        <interleave output="32">
+            <part name="f3_w50.c0" crc="47e788ee" map="0001" />
+            <part name="f3_w51.c1" crc="8e535e3f" map="0010" />
+            <part name="f3_w52.c2" crc="a6eb2e56" map="0100" />
+            <part name="f3_w53.c3" crc="2f992807" map="1000" />
+        </interleave>
+
+        <!-- gfx2 wide sprites -->
+        <part>06 80 00 00</part>
+        <interleave output="64">
+            <part name="f3_w37.000" crc="fd4cda03" map="00010000" />
+            <part name="f3_w38.001" crc="755bab10" map="00000001" />
+            <part name="f3_w39.010" crc="b21ced92" map="00100000" />
+            <part name="f3_w40.011" crc="2e906889" map="00000010" />
+            <part name="f3_w41.020" crc="02455d10" map="01000000" />
+            <part name="f3_w42.021" crc="124589b9" map="00000100" />
+            <part name="f3_w43.030" crc="dae7327a" map="10000000" />
+            <part name="f3_w44.031" crc="d0fc84ac" map="00001000" />
+        </interleave>
+
+        <!-- soundcpu -->
+        <part>03 02 00 00</part>
+        <interleave output="16">
+            <part name="f3_sh0.sh0" crc="90b55e5e" map="10" />
+            <part name="f3_sl0.sl0" crc="77c16d57" map="01" />
+        </interleave>
+
+        <!-- soundcpu key -->
+        <part>04 00 01 00</part>
+        <part>
+	        90 90 90 8a 90 aa 90 90 90 20 23 55 90 b5 0a 90
+	        90 46 90 b6 90 74 8b 90 90 ba f7 90 90 5a 86 fb
+	        b2 90 b0 90 42 06 1e 08 22 9d 90 90 90 90 90 73
+	        90 90 5f 90 90 d0 90 ff 90 90 bd 90 03 90 b9 90
+	        90 90 90 51 5e 24 90 90 90 90 90 58 59 90 90 90
+	        52 90 90 90 a0 90 90 02 d2 90 79 26 3a 0f cf b4
+	        f3 90 90 50 90 75 b1 90 d1 47 90 90 90 90 90 90
+	        c6 90 90 90 90 90 bc 90 90 90 90 90 53 41 90 90
+	        90 90 90 90 90 90 04 90 90 90 90 2c 90 bf 90 90
+	        90 90 e8 90 90 78 90 bb 90 90 1f 2b 87 90 4b 56
+	        36 33 90 90 90 9c c3 90 90 81 90 e9 90 fa 90 90
+	        90 72 90 a2 90 90 c7 90 90 92 90 90 88 90 90 90
+	        3b 90 0c 90 80 90 90 90 90 2e 90 90 90 57 90 8e
+	        07 90 a3 90 90 90 3d 90 fe 90 90 fc ea 90 38 90
+	        3c f6 90 90 90 18 90 90 b8 90 90 90 2a 5d 5b 90
+	        90 43 32 90 90 90 eb 90 90 90 90 90 83 89 90 90
+        </part>
+
+        <!-- iremg20 -->
+        <part>05 08 00 00</part>
+    	<part name="f3_w95.da" crc="f7ca432b" />
+    </rom>
+     <!--hiscore support. see hiscore.sv for modified header values-->
+     <rom index="3" md5="none">
+       <part>
+       00 00 0F 00 05 FF 00 01 00 0F 00 01 00 01 02 00
+       00 0e 1b 0f 00 31 10 31 
+       </part>
+    </rom>
+    <nvram index="4" size="49"></nvram>
+</misterromdescription>

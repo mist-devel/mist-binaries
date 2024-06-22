@@ -1,0 +1,47 @@
+<misterromdescription>
+	<name>Space Walk</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1980</year>
+	<manufacturer>Midway</manufacturer>
+	<category>Shooter - Vertical</category>
+
+	<setname>spacwalk</setname>
+	<parent>spacwalk</parent>
+	<mameversion>0226</mameversion>
+	<rbf>spaceinvaders</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>horizontal</rotation>
+	<flip></flip>
+
+	<players>1</players>
+	<joystick></joystick>
+	<special_controls>positional</special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="A,Start,Select,R,L" names="Fire,-,-,-,Start 1P,Start 2P,Coin,Pause"></buttons>
+
+	<switches></switches>
+
+	<rom index="1">
+		<part>09</part>
+	</rom>
+	<rom index="0" md5="none" zip="spacwalk.zip">
+		<part crc="1b07fc1f" name="sw.h"></part>
+		<part crc="52220910" name="sw.g"></part>
+		<part crc="787d4ef6" name="sw.f"></part>
+		<part crc="d62d324b" name="sw.e"></part>
+		<part crc="17dcc591" name="sw.d"></part>
+		<part crc="61aef726" name="sw.c"></part>
+		<part crc="c59d45d0" name="sw.b"></part>
+		<part crc="d563da07" name="sw.a"></part>
+	</rom>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

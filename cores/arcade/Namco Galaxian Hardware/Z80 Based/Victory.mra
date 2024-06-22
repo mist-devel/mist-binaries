@@ -1,0 +1,31 @@
+<misterromdescription>
+	<name>Victory (Comsoft) (bootleg)</name>
+	<mameversion>0216</mameversion>
+	<mratimestamp>201911270000</mratimestamp>
+	<year>1982</year>
+	<manufacturer>bootleg</manufacturer>
+	<setname>victory</setname>
+        <rbf>galaxian</rbf>
+        <switches default="00,FF,F7">
+                <dip bits="18" name="Lives" ids="2,3"/>
+                <dip bits="19" name="Cabinet" ids="Upright,Cocktail"/>
+        </switches>
+        <rom index="1">
+                <part>0D</part>
+        </rom>
+	<rom index="0" zip="victoryc.zip" md5="86deedc5164beb2252765df36e5a9ed6" type="merged">
+		<part name="victorycb/v1.bin"/>
+		<part name="victorycb/v2.bin"/>
+		<part name="victorycb/v3.bin"/>
+		<part name="victorycb/v4.bin"/>
+		<part name="victorycb/v5.bin"/>
+		<part name="victorycb/v5.bin"/>
+		<part name="victorycb/v5.bin"/>
+		<part name="victorycb/v5.bin"/>
+		<part name="df.1k"/>
+		<part name="df.1k"/>
+		<part name="a4.1h"/>
+		<part name="a4.1h"/>
+		<part name="prom.6l"/>
+	</rom>
+</misterromdescription>

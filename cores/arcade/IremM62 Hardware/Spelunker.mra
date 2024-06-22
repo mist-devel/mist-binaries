@@ -1,0 +1,94 @@
+<misterromdescription>
+    <name>Spelunker</name>
+    <mameversion>0216</mameversion>
+    <setname>spelunkr</setname>
+    <manufacturer>Irem</manufacturer>
+    <rbf>iremm62</rbf>
+    <switches>
+        <!-- DSW1 -->
+        <dip bits="8,9"   name="Energy Decrease" ids="Slow,Medium,Fast,Fastest"/>
+        <dip bits="10,11" name="Lives" ids="3,2,4,5"/>
+    </switches>
+    <rom index="1"><part>9</part></rom>
+    <rom index="0" zip="spelunkr.zip" md5="ec64e30638077a75ff9f6698494057fc" type="merged|nonmerged">
+      <!-- CPU1, 128k -->
+      <part name="spra.4e"/>
+      <part name="spra.4d"/>
+      <part repeat="0x8000">FF</part>
+      <part name="sprm.7c"/>
+      <part name="sprm.7b"/>
+      <part repeat="0x8000">FF</part>
+
+      <!-- SND CPU2, 64k -->
+      <part repeat="0x8000">FF</part>
+      <part name="spra.3d"/>
+      <part name="spra.3f"/>
+
+      <!-- GFX1, 128k -->
+      <interleave output="32">
+          <part name="sprm.1d" map="0001"/>
+          <part name="sprm.3c" map="0010"/>
+          <part name="sprm.1c" map="0100"/>
+          <part name="sprm.1c" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="sprm.1e" map="0001"/>
+          <part name="sprm.3b" map="0010"/>
+          <part name="sprm.1b" map="0100"/>
+          <part name="sprm.1b" map="1000"/>
+      </interleave>
+
+      <!-- GFX2, 256k -->
+      <interleave output="32">
+          <part name="sprb.4k" map="0001"/>
+          <part name="sprb.3p" map="0010"/>
+          <part name="sprb.4c" map="0100"/>
+          <part name="sprb.4c" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="sprb.4f" map="0001"/>
+          <part name="sprb.4p" map="0010"/>
+          <part name="sprb.4e" map="0100"/>
+          <part name="sprb.4e" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="sprb.4k" map="0001"/>
+          <part name="sprb.3p" map="0010"/>
+          <part name="sprb.4c" map="0100"/>
+          <part name="sprb.4c" map="1000"/>
+      </interleave>
+      <interleave output="32">
+          <part name="sprb.4f" map="0001"/>
+          <part name="sprb.4p" map="0010"/>
+          <part name="sprb.4e" map="0100"/>
+          <part name="sprb.4e" map="1000"/>
+      </interleave>
+
+      <!-- GFX3, 64k -->
+      <interleave output="32">
+          <part name="sprm.4m" map="0001"/>
+          <part name="sprm.4l" map="0010"/>
+          <part name="sprm.4p" map="0100"/>
+          <part name="sprm.4p" map="1000"/>
+      </interleave>
+
+      <!-- spr_color_proms, 3*256b -->
+      <part name="sprb.1m"/>
+      <part name="sprb.1n"/>
+      <part name="sprb.1l"/>
+
+      <!-- chr_color_proms, 3*256b -->
+      <part name="sprm.2k"/>
+      <part name="sprm.2j"/>
+      <part name="sprm.2h"/>
+
+      <!-- fg_color_proms, 3*256b -->
+      <part name="sprm.2k"/>
+      <part name="sprm.2j"/>
+      <part name="sprm.2h"/>
+
+      <!-- spr_height_prom -->
+      <part name="sprb.5p"/>
+
+    </rom>
+</misterromdescription>

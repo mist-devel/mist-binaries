@@ -1,0 +1,31 @@
+<misterromdescription>
+    <name>Sarge</name>
+    <mameversion>0217</mameversion>
+    <mratimestamp>20200202</mratimestamp>
+    <year>1985</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Action</category>
+    <rbf>mcr3</rbf>
+    <setname>sarge</setname>
+    <switches>
+	<dip bits="9" name="Controls"  ids="2 sticks, 1 stick"/>
+	<dip bits="8" name="Free Play" ids="On,Off"/>
+    </switches>
+    <rom index="1">
+	<part>01</part>
+    </rom>
+    <rom index="0" zip="sarge.zip" md5="67acd34124ed8659765bd49683f1fc97" type="merged|nonmerged">
+	<part crc="da31a58f" name="cpu_3b.bin"/>
+	<part crc="6800e746" name="cpu_5b.bin"/>
+	<part crc="93fac29d" name="spr_8e.bin"/>
+	<part crc="7cc6fb28" name="spr_6e.bin"/>
+	<part crc="c832375c" name="spr_5e.bin"/>
+	<part crc="c382267d" name="spr_4e.bin"/>
+	<part crc="685001b8" repeat="2" name="til_15a.bin"/>
+	<part crc="8449eb45" repeat="2" name="til_14b.bin"/>
+	<part crc="a894ef8a" name="tcs_u5.bin"/>
+	<part crc="6ca6faf3" name="tcs_u4.bin"/>
+	<part crc="a894ef8a" name="tcs_u5.bin"/>
+	<part crc="6ca6faf3" name="tcs_u4.bin"/>
+    </rom>
+</misterromdescription>

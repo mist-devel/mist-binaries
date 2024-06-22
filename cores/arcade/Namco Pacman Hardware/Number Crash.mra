@@ -1,0 +1,81 @@
+<misterromdescription>
+	<name>Number Crash</name>
+	
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Set 1</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series>Pac-Man</series>
+	<year>1980</year>
+	<manufacturer>Hanshin Goraku / Peni</manufacturer>
+	<category>Platform</category>
+
+	<setname>numcrash</setname>
+	<mameversion>0220</mameversion>
+	<rbf>pacman</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>no</flip>
+
+	<players>1</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<button_names></button_names>
+	<buttons default="A,Start,Select,R,L" names="Jump,Start 1P,Start 2P,Coin,Pause"></buttons>
+
+	<switches default="FF,FF,F8" base="8" page_id="1" page_name="Switches">
+		<dip bits="16,17" ids="1c/1cr,2c/1cr,3c/1cr,4c/1cr" name="Coinage" values="0,1,2,3"></dip>
+		<dip bits="18,19" ids="1,2,3,4" name="Lives"></dip>
+		</switches>
+
+	<rom index="1"><part>11</part></rom>
+	<rom index="0" md5="none" zip="numcrash.zip">
+		<part crc="c85a79ba" name="e"></part>
+		<part crc="20e6c64d" name="k"></part>
+		<part crc="a9d50002" name="f"></part>
+		<part crc="7b8de692" name="m"></part>
+		<part crc="e47f7cf3" name="h"></part>
+		<part crc="e47f7cf3" name="h"></part>
+		<part crc="d9dee8cd" name="j"></part>
+		<part crc="d9dee8cd" name="j"></part>
+
+		<part crc="440c67e4" name="nc-7.6n"></part>
+		<part crc="7dabb3e5" name="nc-8.6p"></part>
+		<part crc="440c67e4" name="nc-7.6n"></part>
+		<part crc="7dabb3e5" name="nc-8.6p"></part>
+
+		<part crc="6a30b507" name="e"></part>
+		<part crc="5f54d8e6" name="h"></part>
+		
+		<part crc="bdd352db" name="f"></part>
+		<part crc="b104a8a9" name="j"></part>
+
+		<part crc="bdd352db" name="f"></part>
+		<part crc="b104a8a9" name="j"></part>
+		<part crc="bdd352db" name="f"></part>
+		<part crc="b104a8a9" name="j"></part>
+
+		<part crc="a9cc86bf" name="pm1-3.1m"></part>
+		<part crc="2bc5d339" name="pm1-4.4a"></part>
+		<part crc="77245b66" name="pm1-2.3m"></part>
+		<part crc="2fc650bd" name="pm1-1.7f"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		02 00 00 00 00 FF 00 02 00 02 00 01 00 FF 08 00
+		00 00 4E 00 00 50 4E 00
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="80"/>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

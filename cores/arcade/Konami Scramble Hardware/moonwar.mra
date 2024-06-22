@@ -1,0 +1,28 @@
+<misterromdescription>
+    <name>Moon War</name>
+    <mameversion>0209</mameversion>
+    <rbf>scramble</rbf>
+    <switches>
+	<dip bits="7,8"  name="Lives"       ids="3,4,5,Unl"/>
+    </switches>
+    <rom index="1"><part>6</part></rom>
+    <rom index="0" zip="moonwar.zip" md5="85ac1993a065a59063bc915270972402" type="merged">
+	<part name="mw2.2c"/>
+	<part name="mw2.2e"/>
+	<part name="mw2.2f"/>
+	<part name="mw2.2h"/>
+	<part name="mw2.2c"/>
+	<part name="mw2.2e"/>
+	<part name="mw2.2f"/>
+	<part name="mw2.2h"/>
+
+	<part name="moon_war_ii_ra20_5c.5c"/>
+	<part name="moon_war_ii_ra20_5d.5d"/>
+	<part name="moon_war_ii_ra20_5c.5c"/>
+	<part name="moon_war_ii_ra20_5d.5d"/>
+
+	<part name="moon_war_ii_ra20_5f.5f"/>
+	<part name="moon_war_ii_ra20_5h.5h"/>
+	<part name="moonwar_ii_color_6ea1.6e"/>
+    </rom>
+</misterromdescription>

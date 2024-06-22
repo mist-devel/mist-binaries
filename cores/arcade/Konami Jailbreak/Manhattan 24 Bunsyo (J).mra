@@ -1,0 +1,80 @@
+<misterromdescription>
+	<name>Manhattan 24 Bunsyo</name>
+	<region>Japan</region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1986</year>
+	<manufacturer>Konami</manufacturer>
+	<category>Army / Fighter</category>
+
+	<setname>manhatan</setname>
+	<parent>jailbrek</parent>
+	<mameversion>0224</mameversion>
+	<rbf>Jailbrek</rbf>
+
+	<resolution>15kHz</resolution>
+	<rotation>no</rotation>
+	<flip>no</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>8-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>2</num_buttons>
+	<buttons default="B,A,Start,R,Select,L" names="Fire,Cycle Weapons,Start P1,Coin,Start P2,Pause"></buttons>
+	
+	<switches default="00,16,00" base="8" page_id="1" page_name="Switches">
+		<dip bits="0,3"   name="Credits A" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Free Play"/>
+		<dip bits="4,7"   name="Credits B" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Invalid"/>
+		<dip bits="8,9"   name="Lives" ids="1,2,3,5"/>
+		<dip bits="10"    name="Cabinet type" ids="Cocktail,Upright"/>
+		<dip bits="11"    name="Bonus" ids="30K/70K+,40K/80K+"/>
+		<dip bits="12,13" name="Difficulty" ids="Easy,Normal,Hard,Hardest"/>
+		<dip bits="15"    name="Attract mode sound" ids="Off,On"/>
+		<dip bits="16"    name="Flip screen" ids="Off,On"/>
+		<dip bits="17"    name="Upright controls" ids="Single,Dual"/>
+	</switches>
+	
+	<rom index="1">
+		<part>00</part>
+	</rom>
+	<rom index="0" zip="jailbrek.zip|manhatan.zip" md5="none">
+		<part crc="e5039f7e" name="507n03.11d"/>
+		<part crc="143cc62c" name="507n02.9d"/>
+
+		<part crc="973fa351" name="507p01.8c"/>
+
+		<part crc="175e1b49" name="507j08.4f"/>
+		<part crc="504f0912" name="507j09.5f"/>
+
+		<part crc="0d269524" name="507j04.3e"/>
+		<part crc="27d4f6f4" name="507j05.4e"/>
+		<part crc="717485cb" name="507j06.5e"/>
+		<part crc="e933086f" name="507j07.3f"/>
+
+
+		<part crc="0266c7db" name="507j12.6f"/>
+		<part crc="d4fe5c97" name="507j13.7f"/>
+		<part crc="f1909605" name="507j10.1f"/>
+		<part crc="f70bb122" name="507j11.2f"/>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+			00 00 00 00 00 FF 00 02
+			00 02 00 01 00 FF 02 00
+			00 00 16 20 00 50 00 11
+			00 00 15 7E 00 03 00 30
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="83"></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210910154606</mratimestamp>
+</misterromdescription>

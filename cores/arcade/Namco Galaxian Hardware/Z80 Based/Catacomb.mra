@@ -1,0 +1,31 @@
+<misterromdescription>
+	<name>Catacomb</name>
+	<mameversion>0216</mameversion>
+	<mratimestamp>201911270000</mratimestamp>
+	<year>1982</year>
+	<manufacturer>MTM Games</manufacturer>
+	<category>Space / Force</category>
+	<setname>catacomb</setname>
+	<rbf>galaxian</rbf>
+	<switches default="00,DF,04">
+		<dip bits="18" name="Lives" ids="5,3"/>
+	</switches>
+	<rom index="1">
+		<part>04</part>
+	</rom>
+	<rom index="0" zip="catacomb.zip" md5="a9c00095b4ccb5183445aa9e67c873af" type="merged|nonmerged">
+		<part crc="35cc28d2" name="catacomb.u"/>
+		<part crc="1d1ce133" name="catacomb.v"/>
+		<part crc="479bbde7" name="catacomb.w"/>
+		<part crc="479bbde7" name="catacomb.w"/>
+		<part crc="5e3da534" name="catacomb.y"/>
+		<part crc="5e3da534" name="catacomb.y"/>
+		<part crc="5e3da534" name="catacomb.y"/>
+		<part crc="5e3da534" name="catacomb.y"/>
+		<part crc="e871e65c" name="cat-gfx1"/>
+		<part crc="e871e65c" name="cat-gfx1"/>
+		<part crc="b14dafaa" name="cat-gfx2"/>
+		<part crc="b14dafaa" name="cat-gfx2"/>
+		<part crc="6a0c7d87" name="mmi6331.6l"/>
+	</rom>
+</misterromdescription>

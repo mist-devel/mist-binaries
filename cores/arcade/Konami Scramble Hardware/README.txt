@@ -1,0 +1,34 @@
+---------------------------------------------------------------------------------
+-- 
+-- Arcade: Scramble port to MiST by Gehstock
+-- 10 November 2017
+-- 
+-- Usage:
+-- Create ROM and ARC files from MAME ROM zip files using the mra utility and the MRA files.
+-- Copy the RBF and the ARC files to the same folder.
+-- Example: mra -A -z /path/to/mame/roms scramble.mra
+-- Copy the ROM files to the root of the SD Card.
+--
+-- MRA utilty: https://github.com/sebdel/mra-tools-c
+--
+---------------------------------------------------------------------------------
+-- A simulation model of Scramble hardware
+-- Copyright (c) MikeJ - Feb 2007
+---------------------------------------------------------------------------------
+-- 
+-- Only controls and OSD are rotated on Video output.
+-- 
+-- 
+-- Keyboard inputs :
+--
+--   ESC         : Coin
+--   F2          : Start 2 players
+--   F1          : Start 1 player
+--   SPACE       : Fire+Bomb
+
+--   UP,DOWN,LEFT,RIGHT arrows : Movements
+--
+-- Joystick support.
+-- 
+---------------------------------------------------------------------------------
+

@@ -1,0 +1,45 @@
+
+<misterromdescription>
+	<name>Insector</name>
+	<mameversion>0198</mameversion>
+	<setname>insector</setname>
+	<mratimestamp>20201231150731</mratimestamp>
+	<year>1982</year>
+	<manufacturer>Gottlieb</manufacturer>
+	<category>Platform</category>
+	<rbf>qbert</rbf>
+	<buttons names="Service Select,Start 1P,Start 2P,Coin,Button 1,Button 2" default="L,Start,Select,R,A,B"/>
+	<switches default="01"  page_id="1" page_name="Switches" base="16">
+		<dip bits="0" name="Bonus Life" ids="25k 75k/50k,20k 90k/60k"></dip>
+		<dip bits="1" name="Demo Sounds" ids="Off,On"></dip>
+		<dip bits="2" name="Demo Mode" ids="On,Off"></dip>
+		<dip bits="3" name="Lives" ids="5,3"></dip>
+		<dip bits="5" name="Free Play" ids="Off,On"></dip>
+	    <dip bits="7" name="Cabinet" ids="Upright,Cocktail"></dip>
+	</switches>
+	<rom index="1">
+		<part>6</part>
+	</rom>
+	<rom index="0" zip="insector.zip" md5="none">
+		<part crc="31cee24b" name="rom0"/>
+		<part crc="706962af" name="rom1"/>
+		<part crc="456bc3f4" name="rom2"/>
+		<part crc="640881fd" name="rom3"/>
+		<part repeat="16384">00</part>
+
+		<part crc="25bcc8bc" name="gv106s.bin"/>
+		<part crc="25bcc8bc" name="gv106s.bin"/>
+
+		<part crc="0dc2037e" name="bg0"/>
+		<part crc="3dd73b94" name="bg1"/>
+
+		<part crc="965f6b76" name="fg0"/>
+		<part crc="965f6b76" name="fg0"/>
+		<part crc="4bb16111" name="fg1"/>
+		<part crc="4bb16111" name="fg1"/>
+		<part crc="5adf9986" name="fg2"/>
+		<part crc="5adf9986" name="fg2"/>
+		<part crc="9bbf5b6b" name="fg3"/>
+		<part crc="9bbf5b6b" name="fg3"/>
+	</rom>
+</misterromdescription>

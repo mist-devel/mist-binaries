@@ -1,0 +1,51 @@
+<misterromdescription>
+	<name>Pest Place</name>
+	<mameversion>0217</mameversion>
+	<setname>pestplce</setname>
+	<mratimestamp>201912300000</mratimestamp>
+	<year>1982</year>
+	<manufacturer>Nintendo of America</manufacturer>
+	<category>Maze / Monkeys</category>
+	<category>Platform</category>
+	<category>Platform / Mario Bros.</category>
+	<rbf>dkong</rbf>
+
+	<buttons names="Jump,Start 1P,Start 2P,Coin" default="A,Start,Select,R" />
+
+	<switches default="80" base="8">
+		<dip bits="0,1" name="Lives" ids="3,4,5,6"/>
+		<dip bits="2,3" name="Bonus" ids="10k,15k,20k,25k"/>
+		<dip bits="4,6" name="Coins" ids="1C1P,2C1P,1C1P,3C1P,1C1P,4C1P,1C1P,5C1P,1C1P"/>
+		<dip bits="7"   name="Lives" ids="Cocktail,Upright"/>
+	</switches>
+
+	<rom index="1"><part>09</part></rom>
+	<rom index="0" zip="pestplce.zip" md5="48576fcf2767241441d662768cc53899" type="merged|nonmerged">
+		<!-- Main CPU 32k-->
+		<part name="pest.1p"/>
+		<part name="pest.2p"/>
+		<part name="pest.3p"/>
+		<part name="pest.0"/>
+		<part name="pest.0"/>
+
+		<!-- GFX1 8k-->
+		<part name="pest.o"/>
+		<part name="pest.k"/>
+
+		<!-- GFX2 16k-->
+		<part name="pest.b"/>
+		<part name="pest.a"/>
+		<part name="pest.d"/>
+		<part name="pest.c"/>
+
+		<!-- Sound CPU 4k-->
+		<part name="pest.4"/>
+
+		<!-- LUTs -->
+		<part name="n82s129a.bin"/>
+		<part name="n82s129a.bin"/>
+		<part name="n82s129b.bin"/>
+		<part name="n82s129b.bin"/>
+		<part repeat="3072">00</part>
+	</rom>
+</misterromdescription>

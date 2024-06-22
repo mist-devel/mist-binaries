@@ -1,0 +1,63 @@
+<misterromdescription>
+	<name>Ufo Senshi Yohko Chan (MC-8123, 317-0064)</name>
+	<mameversion>0229</mameversion>
+	<setname>ufosensi</setname>
+	<mratimestamp>20210706000000</mratimestamp>
+	<year>1985</year>
+	<manufacturer>Sega</manufacturer>
+	<category>Shooter</category>
+	<rbf>segasys1</rbf>
+	<switches base="8" default="DE,FF">
+		<!-- SWA -->
+		<dip name="Coin A" bits="8,11" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="12,15" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip bits="4" name="Cabinet" ids="Upright,Cocktail"/>
+		-->
+		<dip bits="0,1" name="Difficulty" ids="Easy,Normal,Hard,Hardest"/>
+		<dip bits="2,3" name="Lives" ids="5,4,4,3"/>
+		<dip bits="5" name="Allow Continue" ids="Yes,No"/>
+		<dip bits="7" name="Invulnerability" ids="On,Off"/>
+	</switches>
+	<buttons names="Shoot,Direction Change,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,Start,Select,R,L"/>
+	<rom index="1">
+		<part>01</part>
+	</rom>
+	<rom index="0" md5="6e7e495f76cf1cd342918c427b9b4d8a" zip="ufosensi.zip">
+		<!-- soundcpu, size: 0x8000 -->
+		<part name="epr-11667.126"/>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part name="epr-11661.90"/>
+		<part name="epr-11662.91"/>
+		<part name="epr-11663.92"/>
+
+		<!-- sprites, size: 0x20000 -->
+		<part name="epr-11658.87"/>
+		<part name="epr-11657.86"/>
+		<part name="epr-11660.89"/>
+		<part name="epr-11659.88"/>
+
+		<!-- tiles, size: 0x18000 -->
+		<interleave output="32">
+			<part name="epr-11664.4"/>
+			<part name="epr-11665.5"/>
+			<part name="epr-11666.6"/>
+			<part name="epr-11666.6"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x0100 -->
+		<part name="pr5317.28"/>
+
+		<!-- color_proms, size: 0x0300 -->
+		<part name="pr11656.20"/>
+		<part name="pr11655.14"/>
+		<part name="pr11654.8"/>
+
+		<part repeat="0x1C00">00</part>
+
+		<!-- decryption key, size: 0x2000 -->
+		<part name="317-0064.key"/>
+	</rom>
+</misterromdescription>

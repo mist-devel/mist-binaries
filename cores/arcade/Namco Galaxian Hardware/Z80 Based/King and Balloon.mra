@@ -1,0 +1,28 @@
+<misterromdescription>
+	<name>King and Balloon</name>
+	<mameversion>0216</mameversion>
+	<mratimestamp>201911270000</mratimestamp>
+	<setname>kingball</setname>
+	<rbf>galaxian</rbf>
+	<switches>
+		<dip bits="7"    name="Service" ids="Off,On"/>
+		<dip bits="6"    name="Test" ids="Off,On"/>
+		<dip bits="5"    name="Cabinet" ids="Upright,Cocktail"/>
+		<dip bits="16,17" name="Bonus Life After" ids="10000,12000,15000,None"/>
+		<dip bits="18" name="Lives" ids="2,3"/>
+	</switches>
+	<rom index="1"><part>07</part></rom>
+	<rom index="0" zip="kingball.zip" md5="1fcb9ca52df7231e6b49af1c5a264b8b" type="merged|nonmerged">
+		<part name="prg1.7f"/>
+		<part name="prg2.7j"/>
+		<part name="prg3.7l"/>
+		<part repeat="0x1800">FF</part>
+
+		<part name="chg2.1k"/>
+		<part name="chg2.1k"/>
+		<part name="chg1.1h"/>
+		<part name="chg1.1h"/>
+
+		<part name="kb2-1"/>
+	</rom>
+</misterromdescription>

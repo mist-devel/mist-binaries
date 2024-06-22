@@ -1,0 +1,80 @@
+<misterromdescription>
+    <name>R-Type (Japan)</name>
+    <mameversion>0245</mameversion>
+    <setname>rtypej</setname>
+    <parent>rtype</parent>
+    <year>1987</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Shooter</category>
+    <rbf>IremM72</rbf>
+    <rotation>horizontal</rotation>
+
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,R,L" names="Fire,Pod Control,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="0c,02" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="3,2,4,5" name="Crafts"></dip>
+        <dip bits="2" ids="Off,On" name="Demo Sounds"></dip>
+        <dip bits="3" ids="100K,50K" name="Bonus Life"></dip>
+        <dip bits="4,7" ids="1C/1P,2C/1P,3C/1P,4C/1P,5C/1P,6C/1P,1C/2P,1C/3P,1C/4P,1C/5P,1C/6P,2C/3P,4C/2P,5C/3P,8C/3P,Free Play" name="Coin Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Picture"></dip>
+        <dip bits="9" ids="Cocktail,Upright" name="Cabinet type"></dip>
+        <dip bits="11" ids="Normal,Difficult" name="Difficulty"></dip>
+        <dip bits="12" ids="On,Off" name="Continues"></dip>
+        <dip bits="13" ids="Off,On" name="Freeze Picture"></dip>
+        <dip bits="14" ids="Off,On" name="No Death Mode"></dip>
+        <dip bits="15" ids="Off,On" name="Diagnostic Test"></dip>
+    </switches>
+    <!-- ROM data -->
+    <rom index="0" zip="rtype.zip|rtypej.zip" md5="none">
+        <!-- board type -->
+        <part>00</part>
+
+        <!-- maincpu -->
+        <part>00 04 00 00</part>
+        <interleave output="16">
+            <part name="rt_r-h0-.1b" crc="c2940df2" map="10"/>
+            <part name="rt_r-l0-.3b" crc="858cc0f6" map="01"/>
+        </interleave>
+        <interleave output="16">
+            <part name="rt_r-h1-.1c" crc="5bcededa" map="10"/>
+            <part name="rt_r-l1-.3c" crc="4821141c" map="01"/>
+        </interleave>
+
+        <!-- sprites -->
+        <part>01 06 00 00</part>
+        <interleave output="32">
+            <part name="rt_r-00.1h" crc="dad53bc0" map="0001" />
+            <part name="rt_r-10.1k" crc="d6a66298" map="0010" />
+            <part name="rt_r-20.3h" crc="fc247c8a" map="0100" />
+            <part name="rt_r-30.3k" crc="eb02a1cb" map="1000" />
+        </interleave>
+
+        <interleave output="32">
+            <part name="rt_r-01.1j" crc="5e441e7f" map="0001" />
+            <part name="rt_r-11.1l" crc="791df4f8" map="0010" />
+            <part name="rt_r-21.3j" crc="ed793841" map="0100" />
+            <part name="rt_r-31.3l" crc="8558355d" map="1000" />
+        </interleave>
+
+        <!-- gfx2 -->
+        <part>02 02 00 00</part>
+        <interleave output="32">
+            <part name="rt_b-a0.3c" crc="4e212fb0" map="0001" />
+            <part name="rt_b-a1.3d" crc="8a65bdff" map="0010" />
+            <part name="rt_b-a2.3a" crc="5a4ae5b9" map="0100" />
+            <part name="rt_b-a3.3e" crc="73327606" map="1000" />
+        </interleave>
+
+        <!-- gfx3 -->
+        <part>03 02 00 00</part>
+        <interleave output="32">
+            <part name="rt_b-b0.3j" crc="a7b17491" map="0001" />
+            <part name="rt_b-b1.3k" crc="b9709686" map="0010" />
+            <part name="rt_b-b2.3h" crc="433b229a" map="0100" />
+            <part name="rt_b-b3.3f" crc="ad89b072" map="1000" />
+        </interleave>
+
+
+    </rom>
+</misterromdescription>

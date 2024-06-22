@@ -1,0 +1,84 @@
+<misterromdescription>
+	<name>Iron Horse</name>
+	<region>World</region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Version K</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1986</year>
+	<manufacturer>Konami</manufacturer>
+	<category>Platformer</category>
+
+	<setname>ironhors</setname>
+	<parent>ironhors</parent>
+	<mameversion>0224</mameversion>
+	<rbf>IronHors</rbf>
+	<about author="Ace" twitter="@Ace9921Tweets"></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>no</rotation>
+	<flip>no</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>8-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>3</num_buttons>
+	<buttons default="Y,B,A,Start,R,Select,L" names="Power,Attack,Crouch,Start P1,Coin,Start P2,Pause"></buttons>
+	
+	<switches default="00,45,00" base="8" page_id="1" page_name="Switches">
+		<dip bits="0,3"   name="Credits A" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/7cr,1c/6cr,2c/1cr,2c/3cr,3c/1cr,2c/5cr,3c/2cr,3c/4cr,4c/3cr,4c/1cr,Free Play"/>
+		<dip bits="4,7"   name="Credits B" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Free Play"/>
+		<dip bits="8,9"   name="Lives" ids="2,3,5,7"/>
+		<dip bits="10"    name="Cabinet Type" ids="Cocktail,Upright"/>
+		<dip bits="11,12" name="Bonus" ids="30K/70K+,40K/80K+,40K only,50K only"/>
+		<dip bits="13,14" name="Difficulty" ids="Easy,Normal,Hard,Hardest"/>
+		<dip bits="15"    name="Attract Mode Sound" ids="Off,On"/>
+		<dip bits="16"    name="Flip Screen" ids="Off,On"/>
+		<dip bits="17"    name="Upright Controls" ids="Single,Dual"/>
+		<dip bits="18"    name="Swap Power/Crouch" ids="Off,On"/>
+	</switches>
+	
+	<rom index="1">
+		<part>00</part>
+	</rom>
+	<rom index='0' md5="None" type='merged' zip='ironhors.zip'>
+		<part crc="395351b4" name="560_k03.13c"/>
+		<part crc="1cff3d59" name="560_k02.12c"/>
+		<part crc="2b17930f" name="560_h01.10c"/>
+		<part crc="f21d8c93" name="560_h06.08f"/>
+		<part crc="60107859" name="560_h05.07f"/>
+		<part crc="c761ec73" name="560_h07.09f"/>
+		<part crc="c1486f61" name="560_h04.06f"/>
+		<part crc="9f6ddf83" name="03f_h08.bin"/>
+		<part crc="e6773825" name="04f_h09.bin"/>
+		<part crc="30a57860" name="05f_h10.bin"/>
+		<part crc="5eb33e73" name="10f_h12.bin"/>
+		<part crc="a63e37d8" name="10f_h11.bin"/>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+			16 00 00 00 00 FF 00 02
+			00 02 00 01 00 FF 02 00
+			00 00 32 F1 00 03 02 00
+			00 00 33 00 00 40 23 00
+		</part>
+	</rom>
+	<rom index="4">
+		<part>
+		02 58 00 23 2C 1F 01 00 02 58 00 29 2C 29 01 00
+		02 22 00 11 2C 24 00 00 01 95 00 1B 2C 11 00 00
+		01 38 00 19 2C 25 00 00 01 30 00 23 2C 23 00 00
+		01 20 00 1E 2C 1D 00 00 01 10 00 23 2C 19 00 00
+		01 00 00
+		</part>
+	</rom>
+
+	<nvram index="4" size="67"></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210803143815</mratimestamp>
+</misterromdescription>

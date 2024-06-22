@@ -1,0 +1,88 @@
+<misterromdescription>
+	<name>Silver Land</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1981</year>
+	<manufacturer>Falcon</manufacturer>
+	<category>Sports</category>
+
+	<setname>silvland</setname>
+	<parent>rpatrol</parent>
+	<mameversion>0220</mameversion>
+	<rbf>cclimber</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>horizontal</rotation>
+	<flip></flip>
+
+	<players>2 (alternating)</players>
+	<joystick>2-way horizontal</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<button_names></button_names>
+
+	<switches default="10" base="8">
+		<dip bits="0,1"   name="Coinage" ids="1C_1C,1C_2C,2C_1C,Free Play"/>
+		<dip bits="2,3"   name="Lives"   ids="3,4,5,6"/>
+		<dip bits="4"     name="Cabinet" ids="Cocktail,Upright"/>
+	</switches>
+
+	<rom index="1"><part>0</part></rom>
+	<rom index="0" md5="8a5ccd7b62f3c90d12abec7bb5715eda" zip="rpatrol.zip|silvland.zip">
+		<part crc="57e6be62" name="7.2r"/>
+		<part crc="bbb2b287" name="8.1n"/>
+		<part crc="8fa300df" name="rp3.4f"/>
+		<part crc="5536a65d" name="10.2n"/>
+		<part crc="6f23f66f" name="11.1r"/>
+		<part crc="26f1537c" name="12.2k"/>
+		<part repeat="0x2000">FF</part>
+
+		<!-- (NO) samples 8K -->
+		<part repeat="0x2000">00</part>
+
+		<part crc="affb804f" name="6.6n"/>
+		<part crc="ad4642e5" name="5.6l"/>
+		<part crc="affb804f" name="6.6n"/>
+		<part crc="ad4642e5" name="5.6l"/>
+		<part crc="e487579d" name="4.6k"/>
+		<part crc="59125a1a" name="3.6h"/>
+		<part crc="e487579d" name="4.6k"/>
+		<part crc="59125a1a" name="3.6h"/>
+
+		<part crc="c8d32b8e" name="2.6c"/>
+		<part crc="c8d32b8e" name="2.6c"/>
+		<part crc="ee333daf" name="1.6a"/>
+		<part crc="ee333daf" name="1.6a"/>
+
+		<!-- misc 8K -->
+		<part repeat="0x2000">00</part>
+
+		<part crc="1d2343b1" name="mb7051.1v"/>
+		<part crc="c174753c" name="mb7051.1u"/>
+		<part crc="1d2343b1" name="mb7051.1v"/>
+		<part crc="c174753c" name="mb7051.1u"/>
+		<part crc="1d2343b1" name="mb7051.1v"/>
+		<part crc="c174753c" name="mb7051.1u"/>
+		<part crc="1d2343b1" name="mb7051.1v"/>
+		<part crc="c174753c" name="mb7051.1u"/>
+
+		<part repeat="0x100">00</part>
+
+		<part crc="04a1be01" name="mb7051.1t"/>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

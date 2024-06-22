@@ -1,0 +1,101 @@
+<misterromdescription>
+    <name>Gunforce - Battle Fire Engulfed Terror Island (World)</name>
+    <mameversion>0245</mameversion>
+    <setname>gunforce</setname>
+    <year>1991</year>
+    <manufacturer>Irem</manufacturer>
+    <category>Shooter</category>
+    <rbf>IremM92</rbf>
+    <rotation>horizontal</rotation>
+
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Fire,Jump,-,-,-,-,Start,Coin,P2 Start,Pause"></buttons>
+    <switches default="00 00 00" base="16" page_id="1" page_name="Switches">
+        <dip bits="0,1" ids="3,2,4,5" name="Lives"></dip>
+        <dip bits="2,3" ids="Normal,Easy,Hard,Very Easy" name="Difficulty"></dip>
+        <dip bits="4" ids="20k/40k/90k/150k,15k/35k/75k/120k" name="Bonus Life"></dip>
+
+        <dip bits="5" ids="Yes,No" name="Allow Continue"></dip>
+        <dip bits="6" ids="Off,On" name="Demo Sounds"></dip>
+        <dip bits="7" ids="Off,On" name="Service Mode"></dip>
+        <dip bits="8" ids="Off,On" name="Flip Screen"></dip>
+
+        <dip bits="12,15" ids="1C/1C,2C/1C,3C/1C,4C/1C,5C/1C,6C/1C,1C/2C,1C/3C,1C/4C,1C/5C,1C/6C,2C/3C,3C/2C,4C/3C,2S/1C,Free Play" name="Coin Mode"></dip>
+    </switches>
+
+    <rom index="0" zip="gunforce.zip" md5="None">
+        <!-- board type -->
+        <part>00</part>
+
+        <!-- maincpu -->
+        <part>00 08 00 00</part>
+        <interleave output="16">
+        	<part name="gf_h0-c.5m" crc="c09bb634" map="10" />
+	        <part name="gf_l0-c.5f" crc="1bef6f7d" map="01" />
+        </interleave>
+        <interleave output="16">
+            <part name="gf_h1-c.5l" crc="c84188b7" map="10" />
+            <part name="gf_l1-c.5j" crc="b189f72a" map="01" />
+        </interleave>
+
+        <!-- gfx1 tiles -->
+        <part>01 10 00 00</part>
+        <interleave output="32">
+            <part name="gf_c0.rom" crc="b3b74979" map="0001" />
+            <part name="gf_c1.rom" crc="f5c8590a" map="0010" />
+            <part name="gf_c2.rom" crc="30f9fb64" map="0100" />
+            <part name="gf_c3.rom" crc="87b3e621" map="1000" />
+        </interleave>
+
+        <!-- gfx2 sprites -->
+        <part>02 10 00 00</part>
+        <interleave output="32">
+            <part name="gf_000.rom" crc="209e8e8d" map="0001" />
+            <part name="gf_010.rom" crc="6e6e7808" map="0010" />
+            <part name="gf_020.rom" crc="6f5c3cb0" map="0100" />
+            <part name="gf_030.rom" crc="18978a9f" map="1000" />
+        </interleave>
+
+        <!-- soundcpu -->
+        <part>03 02 00 00</part>
+        <interleave output="16">
+           	<part name="gf_sh0.rom" crc="3f8f16e0" map="10" />
+        	<part name="gf_sl0.rom" crc="db0b13a3" map="01" />
+        </interleave>
+
+        <!-- soundcpu key -->
+        <part>04 00 01 00</part>
+        <part>
+            ff 90 90 2c 90 90 43 88 90 13 0a bd ba 60 ea 90
+            90 90 f2 29 b3 22 90 0c a9 5f 9d 07 90 90 0b bb
+            8a 90 90 90 3a 3c 5a 38 99 90 f8 89 90 91 90 55
+            ac 40 73 90 59 90 fc 90 50 fa 90 25 90 34 47 b7
+            90 90 90 49 90 0f 8b 05 c3 a5 bf 83 86 c5 90 90
+            08 77 24 b4 90 92 90 3b 5e b6 80 0d 2e ab e7 90
+            48 90 ad c0 90 1b c6 a3 04 90 90 90 16 b0 7d 98
+            87 46 8c 90 90 fe 90 cf 90 68 84 90 d2 90 18 51
+            76 a4 36 52 fb 90 b9 90 90 b1 1c 21 e6 b5 17 27
+            3d 45 be ae 90 4a 0e e5 90 58 1f 61 f3 02 90 e8
+            90 90 90 f7 56 96 aa bc 4f 90 90 79 d0 90 2a 12
+            4e b8 90 41 90 90 d3 90 2d 33 f6 90 90 14 90 32
+            5d a8 53 26 2b 20 81 75 7f 3e 90 90 00 93 90 b2
+            57 90 a0 90 39 90 90 72 90 01 42 74 9c 1e 90 5b
+            90 f9 90 2f 85 90 eb a2 90 e2 11 90 4b 7e 90 78
+            90 90 09 a1 03 90 23 c1 8e e9 d1 7c 90 90 c7 06
+        </part>
+
+        <!-- iremg20 -->
+        <part>05 02 00 00</part>
+        <part name="gf-da.rom"  crc="933ba935" />
+    </rom>
+     <!--hiscore support. see hiscore.sv for modified header values-->
+     <rom index="3" md5="none">
+       <part>
+       00 00 00 F0 05 FF 00 01 00 0F 00 01 00 01 02 00
+       00 0e 66 33 00 40 44 20
+       </part>
+    </rom>
+    <nvram index="4" size="64"></nvram>
+</misterromdescription>

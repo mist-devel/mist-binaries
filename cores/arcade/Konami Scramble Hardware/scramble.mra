@@ -1,0 +1,36 @@
+<misterromdescription>
+    <name>Scramble (Stern Electronics set 1)</name>
+    <mameversion>0209</mameversion>
+    <rbf>scramble</rbf>
+    <switches>
+	<dip bits="7,8"   name="Lives"       ids="3,4,5,Unl"/>
+    </switches>
+    <rom index="1"><part>0</part></rom>
+    <rom index="0" zip="scramble.zip" md5="cefab5afb2ce5edd0170e96f68759c73" type="merged">
+	<part name="scrambles/2d"/>
+	<part name="scrambles/2e"/>
+	<part name="scrambles/2f"/>
+	<part name="scrambles/2h"/>
+	<part name="scrambles/2j"/>
+	<part name="scrambles/2l"/>
+	<part name="scrambles/2m"/>
+	<part name="scrambles/2p"/>
+	<part name="scrambles/2d"/>
+	<part name="scrambles/2e"/>
+	<part name="scrambles/2f"/>
+	<part name="scrambles/2h"/>
+	<part name="scrambles/2j"/>
+	<part name="scrambles/2l"/>
+	<part name="scrambles/2m"/>
+	<part name="scrambles/2p"/>
+
+	<part name="ot1.5c"/>
+	<part name="ot2.5d"/>
+	<part name="ot3.5e"/>
+	<part name="ot3.5e"/>
+
+	<part name="scrambles/5h"/>
+	<part name="scrambles/5f"/>
+	<part name="c01s.6e"/>
+    </rom>
+</misterromdescription>

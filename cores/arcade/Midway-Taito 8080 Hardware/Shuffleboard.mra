@@ -1,0 +1,58 @@
+<misterromdescription>
+	<name>Shuffleboard</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1978</year>
+	<manufacturer>Midway</manufacturer>
+	<category>Sports</category>
+
+	<setname>shuffle</setname>
+	<parent>shuffle</parent>
+	<mameversion>0226</mameversion>
+	<rbf>spaceinvaders</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>1</players>
+	<joystick></joystick>
+	<special_controls>trackball</special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="A,Start,Select,R,L" names="Fire,-,-,-,Start 1P,Start 2P,Coin,Pause"></buttons>
+
+	<switches base="16" default="D4">
+		<dip bits="00,01" name="Language" ids="English,French,German,German"/>
+		<dip bits="02,03" name="Pts G1/G2" ids="25/11,35/15,40/18,50/21"/>
+		<dip bits="04,05" name="Coinage" ids="1C2P,1C1P,2C2P,2C1P"/>
+		<dip bits="06"    name="Time Limit" ids="Off,On"/>
+	</switches>
+
+	<rom index="1">
+		<part>01</part>
+	</rom>
+	<rom index="0" md5="none" zip="shuffle.zip">
+		<part crc="0d422a18" name="shuffle.h"></part>
+		<part crc="7db7fcf9" name="shuffle.g"></part>
+		<part crc="cd04d848" name="shuffle.f"></part>
+		<part crc="2c118357" name="shuffle.e"></part>
+		<part repeat="4096">00</part>
+		<part repeat="4096">00</part>
+		<part repeat="2048">FF</part>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

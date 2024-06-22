@@ -1,0 +1,25 @@
+<misterromdescription>
+	<name>Triple Draw Poker</name>
+	<setname>tdpgal</setname>
+	<rbf>galaxian</rbf>
+        <rom index="1">
+                <part>10</part>
+        </rom>
+	<rom index="0" zip="tdpgal.zip" md5="dd872a981b4593b79a5439781d1ace00" type="merged|nonmerged">
+		<part name="1.bin"/>
+		<part name="2.bin"/>
+		<part name="3.bin"/>
+		<part name="4.bin"/>
+		<part name="5.bin"/>
+		<part name="6.bin"/>
+		<part name="6.bin"/>
+		<part name="6.bin"/>
+
+		<part name="8.bin"/>
+		<part name="8.bin"/>
+		<part name="7.bin"/>
+		<part name="7.bin"/>
+
+		<part name="bprom.bin"/>
+	</rom>
+</misterromdescription>

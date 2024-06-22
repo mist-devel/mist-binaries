@@ -1,0 +1,81 @@
+<misterromdescription>
+	<name>Galaga (Midway set 1 with fast shoot)</name>
+	<region/>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Fast Shoot, Set 1</version>
+	<alternative>Galaga</alternative>
+	<platform/>
+	<series>Galaxian</series>
+	<year>1981</year>
+	<manufacturer>Namco</manufacturer>
+	<manufacturer>Midway</manufacturer>
+	<category>Shooter - Gallery</category>
+
+	<setname>galagamf</setname>
+	<parent>galaga</parent>
+	<mameversion>0218</mameversion>
+	<rbf>galaga</rbf>
+	<about/>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>2-way horizontal</joystick>
+	<special_controls/>
+	<num_buttons>1</num_buttons>
+	<button_names/>
+
+	<switches default="08,68" base="8" page_id="1" page_name="Switches">
+		<dip bits="0"     name="2 credits"   ids="2P game,1P game"/>
+		<dip bits="1,2"   name="Difficulty"  ids="Easy(Rank A),Hardest(Rank D),Hard(Rank C),Medium(Rank B)"/>
+		<dip bits="3"     name="Demo Sounds" ids="Off,On"/>
+		<dip bits="4"     name="Freeze"      ids="Off,On"/>
+		<dip bits="5"     name="Rack Test"   ids="Off,On"/>
+		<dip bits="7"     name="Cabinet"     ids="Upright,Cocktail"/>
+		<dip bits="8,10"  name="Coinage"     ids="1 Coin/1 Cr.,2 Coins/1 Cr.,1 Coin/3 Cr.,4 Coins/1 Cr.,1 Coin/2 Cr.,3 Coins/1 Cr.,2 Coins/3 Cr.,Free Play"/>
+		<dip bits="11,13" name="Bonus"	     ids="30k 80k,20k 80k every 80k,30k 120k every 120k,20k 60k every 60k,20k 60k,20k 70k every 70k,30k 100k every 100k,Nothing"/>
+		<dip bits="14,15" name="Lives"       ids="5,3,4,2"/>
+	</switches>
+
+	<rom index="1"/>
+	<rom index="0" md5="ad5e3c91e0885df97c3efe39001b611f" zip="galaga.zip|galagamf.zip|namco51.zip|namco54.zip">
+		<!-- main cpu -->
+		<part crc="3ef0b053" name="3200a.bin"/>
+		<part crc="1b280831" name="3300b.bin"/>
+		<part crc="16233d33" name="3400c.bin"/>
+		<part crc="0aaf5c23" name="3500d.bin"/>
+
+		<!-- cpu 2 -->
+		<part crc="23d586e5" name="3600fast.bin"/>
+
+		<!-- cpu 3 -->
+		<part crc="b07f0aa4" name="3700g.bin"/>
+
+		<!-- gfx2 -->
+		<part crc="ad447c80" name="2800l.bin"/>
+		<part crc="dd6f1afc" name="2700k.bin"/>
+
+		<!-- gfx1 -->
+		<part crc="58b2f47c" name="2600j.bin"/>
+		<part crc="58b2f47c" name="2600j.bin"/>
+
+		<!-- namco mcus -->
+		<part crc="c2f57ef8" name="51xx.bin"/>
+		<part crc="ee7357e0" name="54xx.bin"/>
+	</rom>
+	<rom index="2"/>
+	<rom index="3" md5="none">
+		<part>
+			11 2A 88 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+			00 00 8A 20 2D 00 18 00
+			00 00 83 ED 06 00 24 00
+		</part>
+	</rom>
+	<rom index="4"/>
+	<nvram index="4" size="51"/>
+
+	<mratimestamp>20210730102726</mratimestamp>
+</misterromdescription>

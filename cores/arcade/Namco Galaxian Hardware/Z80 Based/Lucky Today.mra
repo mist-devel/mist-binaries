@@ -1,0 +1,25 @@
+<misterromdescription>
+	<name>Lucky Today</name>
+	<setname>luctoday</setname>
+	<rbf>galaxian</rbf>
+        <rom index="1">
+                <part>05</part>
+        </rom>
+	<rom index="0" zip="luctoday.zip" md5="7dd164c166c9346132ed34ae75e9e496" type="merged|nonmerged">
+		<part crc="59c389b9" name="ltprog1.bin"/>
+		<part crc="ac3893b1" name="ltprog2.bin"/>
+		<part crc="ac3893b1" name="ltprog2.bin"/>
+		<part crc="ac3893b1" name="ltprog2.bin"/>
+		<part crc="ac3893b1" name="ltprog2.bin"/>
+		<part crc="ac3893b1" name="ltprog2.bin"/>
+		<part crc="ac3893b1" name="ltprog2.bin"/>
+		<part crc="ac3893b1" name="ltprog2.bin"/>
+		
+		<part crc="8cd73bdc" name="ltchar2.bin"/>
+		<part crc="8cd73bdc" name="ltchar2.bin"/>
+		<part crc="b5ba9946" name="ltchar1.bin"/>
+		<part crc="b5ba9946" name="ltchar1.bin"/>
+
+		<part crc="24652bc4" name="74s288.ch"/>
+	</rom>
+</misterromdescription>

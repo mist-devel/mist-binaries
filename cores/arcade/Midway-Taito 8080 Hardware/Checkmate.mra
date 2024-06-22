@@ -1,0 +1,26 @@
+<misterromdescription>
+	<name>Checkmate</name>
+	<mameversion>0226</mameversion>
+	<setname>checkmat</setname>
+	<mratimestamp>20201030010603</mratimestamp>
+	<year>1977</year>
+	<manufacturer>Dave Nutting Associates / Midway</manufacturer>
+	<category>Maze / Tron</category>
+	<rbf>spaceinvaders</rbf>
+	<mameinfo parent="0" cpp="mw8080bw" input="checkmat"/>
+	<display type="raster" rotate="0"/>
+	<buttons names="-,-,-,-,Start 1P,Start 2P,Coin" default="Start,Select,R"/>
+	<rom index="0" zip="checkmat.zip" md5="none">
+		<part crc="3481a6d1" name="checkmat.h"/>
+		<part crc="df5fa551" name="checkmat.g"/>
+		<part crc="25586406" name="checkmat.f"/>
+		<part crc="59330d84" name="checkmat.e"/>
+		<part repeat="4096">00</part>
+		<part repeat="4096">00</part>
+		<part repeat="4096">00</part>
+		<part repeat="2048">FF</part>
+	</rom>
+	<rom index="1">
+		<part>12</part>
+	</rom>
+</misterromdescription>

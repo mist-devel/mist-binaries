@@ -1,0 +1,75 @@
+<misterromdescription>
+	<name>Jackal (bootleg)</name>
+	<region>World</region>
+	<homebrew>no</homebrew>
+	<bootleg>yes</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1986</year>
+	<manufacturer>Konami</manufacturer>
+	<category>Shooter - Multidirectional</category>
+
+	<setname>jackalbl</setname>
+	<parent>jackal</parent>
+	<mameversion>0224</mameversion>
+	<rbf>Jackal</rbf>
+	<about author="Ace" twitter="@Ace9921Tweets"></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>no</flip>
+
+	<players>2 (simultaneous)</players>
+	<joystick>8-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>2</num_buttons>
+	<buttons default="B,A,Start,Select,X" names="Machine Gun,Grenades/Rockets,-,-,Start,Coin,Pause"></buttons>
+	
+	<switches default="00,21,04" base="8" page_id="1" page_name="Switches">
+		<dip bits="0,3"   name="Credits A" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/7cr,1c/6cr,2c/1cr,2c/3cr,3c/1cr,2c/5cr,3c/2cr,3c/4cr,4c/3cr,4c/1cr,Free Play"/>
+		<dip bits="4,7"   name="Credits B" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Free Play"/>
+		<dip bits="8,9"   name="Lives" ids="2,3,5,7"/>
+		<dip bits="11,12" name="Bonus" ids="30K/150K+,50K/200K+,30K only,50K only"/>
+		<dip bits="13,14" name="Difficulty" ids="Easy,Normal,Hard,Hardest"/>
+		<dip bits="15"    name="Attract Mode Sound" ids="Off,On"/>
+		<dip bits="16"    name="Flip Screen" ids="Off,On"/>
+		<dip bits="17"    name="Cabinet Type" ids="Upright,Cocktail"/>
+		<dip bits="18"    name="Sound mode" ids="Mono,Stereo"/>
+	</switches>
+	
+	<rom index="1">
+		<part>01</part>
+	</rom>
+	<rom index='0' md5="None" type='merged' zip='jackal.zip|jackalbl.zip'>
+		<part crc="5fffee27" name="jackalbl/epr-a-3.bin"/>
+		<part crc="976c8431" name="jackalbl/epr-a-4.bin"/>
+		<part crc="ae2a290a" name="jackalbl/epr-a-2.bin"/>
+		<part crc="ae2a290a" name="jackalbl/epr-a-2.bin"/>
+		<part crc="54aa2d29" name="jackalbl/epr-a-1.bin"/>
+		<part crc="457f42f0" name="631t04.7h"/>
+		<part crc="732b3fc1" name="631t05.8h"/>
+		<part crc="2d10e56e" name="631t06.12h"/>
+		<part crc="4961c397" name="631t07.13h"/>
+		<part crc="7553a172" name="631r08.9h"/>
+		<part crc="a74dd86c" name="631r09.14h"/>
+	</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+			0E 00 00 00 00 FF 00 02
+			00 02 00 01 00 FF 00 00
+			00 00 72 F8 00 27 00 1D
+			00 00 73 40 00 03 00 00
+			00 00 73 41 00 01 02 02
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="43"></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210708094853</mratimestamp>
+</misterromdescription>

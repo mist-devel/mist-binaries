@@ -1,0 +1,63 @@
+<misterromdescription>
+	<name>Pac &amp; Pal</name>
+	<mameversion>0220</mameversion>
+	<setname>pacnpal</setname>
+        <manufacturer>Namco</manufacturer>
+        <year>1983</year>
+	<category>Maze</category>
+	<rbf>druaga</rbf>
+	<mratimestamp>20210326</mratimestamp>
+	<rom index="1">
+		<part>07</part>
+	</rom>
+	<rom index="0" zip="pacnpal.zip" md5="None">
+		<!-- CPU ROM set for the original Pac & Pal.
+		  -
+		  - 	<part repeat="0x2000"> FF </part>
+		  - 	<part crc="ed64a565" name="pap1-3b.1d"/>
+		  - 	<part crc="15308bcf" name="pap1-2b.1c"/>
+		  - 	<part crc="3cac401c" name="pap3-1.1b"/>
+		  -
+		  -  Although playable the attract mode stops early
+		  -  so we'll use pacnpal2 ROM set for now
+		  -  for full experience.
+		  -->
+
+		<!-- main CPU -->
+		<part repeat="0x2000"> FF </part>
+		<part crc="d7ec2719" name="pacnpal2/pap1-3.1d"/>
+		<part crc="0245396e" name="pacnpal2/pap1-2.1c"/>
+		<part crc="7f046b58" name="pacnpal2/pap1-1.1b"/>
+
+		<!-- GFX2 -->
+		<part crc="fb6f56e3" name="pap1-5.3f"/>
+		<part crc="fb6f56e3" name="pap1-5.3f"/>
+		<part crc="fb6f56e3" name="pap1-5.3f"/>
+		<part crc="fb6f56e3" name="pap1-5.3f"/>
+
+		<!-- sound CPU -->
+		<part repeat="0x1000"> FF </part>
+		<part crc="330e20de" name="pap1-4.1k"/>
+
+		<!-- GFX1 -->
+		<part crc="a36b96cb" name="pap1-6.3c"/>
+
+		<part crc="686bde84" name="pap1-4.3l"/>
+		<part crc="686bde84" name="pap1-4.3l"/>
+		<part crc="686bde84" name="pap1-4.3l"/>
+		<part crc="686bde84" name="pap1-4.3l"/>
+
+		<part crc="ac46203c" name="pap1-5.4e"/>
+		<part crc="94782db5" name="pap1-3.3m"/>
+		<part crc="52634b41" name="pap1-6.4c"/>
+	</rom>
+	<switches default="00,00,88" base="8">
+		<dip bits="2,3"    name="Rank" ids="A,B,C,D"/>
+		<dip bits="16,18"  name="Coin A" ids="1 Coin  1 Credit ,1 Coin  2 Credits,1 Coin  3 Credits,1 Coin  6 Credits,1 Coin  7 Credits,2 Coins 1 Credit ,2 Coins 3 Credits,3 Coins 1 Credit "/>
+		<dip bits="0,1"    name="Coin B" ids="1 Coin  1 Credit ,1 Coin 2 Credits,2 Coins 1 Credit ,2 Coins 3 Credits"/>
+		<dip bits="22,23"  name="Lives" ids="1,2,3,5"/>
+		<dip bits="19,21"  name="Bonus Life" ids="Never,30k/80k/80k,40k/100k/100k,30k/80k,30k/100k,40k/120k,30k"/>
+		<dip bits="15"	   name="Service Mode" ids="Off,On"></dip>
+		<!-- dip bits="14" name="Cabinet" ids="Upright,Cocktail"></dip -->
+	</switches>
+</misterromdescription>

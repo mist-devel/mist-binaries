@@ -1,0 +1,88 @@
+<misterromdescription>
+  <name>Kozure Ookami (Japan)</name>
+  <mameversion>0240</mameversion>
+  <setname>kozure</setname>
+  <year>1987</year>
+  <manufacturer>Nichibutsu</manufacturer>
+  <category>Beat 'em up</category>
+  <rbf>armedf</rbf>
+
+  <switches default="fb,ff" base="16" page_id="1" page_name="Switches">
+    <!-- DSW1 -->
+    <dip name="Lives" bits="0,1" ids="6,5,4,3"/>
+    <dip name="Bonus Life" bits="2,3" ids="50/90k(E),90k(E),50/60k(E),60k(E)"/>
+    <dip name="Demo Sounds" bits="4" ids="On,Off"/>
+    <dip name="Cabinet" bits="5" ids="Upright,Cocktail"/>
+    <dip name="Difficulty" bits="6" ids="Hard,Easy"/>
+    <dip name="Unused" bits="7" ids="On,Off"/>
+    <!-- DSW2 -->
+    <dip name="Coin A" bits="8,9" ids="Free Play,2/1,1/2,1/1"/>
+    <dip name="Coin B" bits="10,11" ids="3/1,2/3,1/6,1/3"/>
+    <dip name="Unused" bits="12" ids="On,Off"/>
+    <dip name="Flip Screen" bits="13" ids="On,Off"/>
+    <dip name="Allow Continue" bits="14" ids="No,Yes"/>
+    <dip name="Infinite Timer (Cheat)" bits="15" ids="Yes,No"/>
+  </switches>
+
+  <buttons names="Attack,Block,-,-,Start (1p),Start (2p),Coin (A),Coin (B),Pause" default="A,B,X,Y,R,L,Start,Select"/>
+
+  <rom index="0" zip="kozure.zip" md5="none">
+
+    <!-- maincpu - starts at 0x0 -->
+    <interleave output="16">
+      <part name="kozure8.6e" crc="6bbfb1e6" map="01"/>
+      <part name="kozure3.6h" crc="f9178ec8" map="10"/>
+    </interleave>
+    <interleave output="16">
+      <part name="kozure7.5e" crc="a7ee09bb" map="01"/>
+      <part name="kozure2.5h" crc="236d820f" map="10"/>
+    </interleave>
+    <interleave output="16">
+      <part name="kozure6.3e" crc="9120e728" map="01"/>
+      <part name="kozure1.3h" crc="345fe7a5" map="10"/>
+    </interleave>
+    <part repeat="0x20000"> ff</part>
+
+    <!-- foreground - starts at 0x80000 -->
+    <part name="kozure5.15h" crc="0b510258"/>
+    <part name="kozure4.14h" crc="fb8e13e6"/>
+    <part repeat="0x10000"> ff</part>
+
+    <!-- background - starts at 0xc0000 -->
+    <part name="kozure14.8a" crc="94a9c3d0"/>
+    <part repeat="0x30000"> ff</part>
+
+    <!-- sprite - starts at 0x100000 -->
+    <interleave output="16">
+      <part name="kozure12.8d" crc="15f4021d" map="01"/>
+      <part name="kozure13.9d" crc="b3b6c753" map="10"/>
+    </interleave>
+
+    <!-- text - starts at 0x140000 -->
+    <part name="kozure9.11e" crc="e041356e"/>
+    <part repeat="0x8000"> ff</part>
+
+    <!-- audiocpu - starts at 0x150000 -->
+    <part name="kozure11.17k" crc="dba51e2d"/>
+
+    <!-- extra - starts at 0x160000 -->
+    <part repeat="0x10000"> ff</part>
+
+    <!-- mcu - starts at 0x170000 -->
+    <part repeat="0x10000"> ff</part>
+
+    <!-- nb1414m4 - starts at 0x180000 -->
+    <part name="kozure10.11c" crc="f48be21d"/>
+    <part repeat="0xc000"> ff</part>
+
+    <!-- proms - starts at 0x190000 -->
+    <part name="n82s129an.11j" crc="81244757"/>
+    <part repeat="0x3f00"> ff</part>
+
+    <!-- Total 0x194000 bytes - 1616 kBytes -->
+  </rom>
+
+  <rom index="1">
+    <part>01</part>
+  </rom>
+</misterromdescription>

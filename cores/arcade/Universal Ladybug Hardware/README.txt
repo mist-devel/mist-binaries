@@ -1,0 +1,4 @@
+-- FPGA Lady Bug
+--
+--
+-- Copyright (c) 2005, Arnim Laeuger (arnim.laeuger@gmx.net)

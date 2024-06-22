@@ -1,0 +1,89 @@
+<misterromdescription>
+	<name>Gardia (317-0006)</name>
+	<mameversion>0229</mameversion>
+	<setname>gardia</setname>
+	<year>1986</year>
+	<manufacturer>Coreland / Sega</manufacturer>
+	<players>2</players>
+	<joystick>8-way</joystick>
+	<rotation>vertical</rotation>
+	<category>Shooter</category>
+	<rbf>segasys1</rbf>
+	<switches base="8" default="FF,7C">
+		<!-- SWA -->
+		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+		<!-- SWB -->
+		<!--
+		<dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
+		-->
+		<dip bits="9" name="Demo Sound" ids="On,Off"/>
+		<dip bits="10,11" name="Lives" ids="Infinite,5,4,3"/>
+		<dip bits="12,13" name="Bonus Life" ids="None,15k 30k and 60k,10k 25k and 50k,5k 20k and 30k"/>
+		<dip bits="14" name="Difficulty" ids="Hard,Easy"/>
+	</switches>
+	<buttons names="Shoot,Bomb,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,Start,Select,R,C"/>
+	<rom index="1">
+		<part>02</part>
+	</rom>
+	<rom index="0" md5="53b40f6cde7fe2b20d3eda9f262754e2" zip="gardia.zip" type="merged">
+		<!-- soundcpu, size: 0x8000 -->
+		<part crc="87220660" name="epr-10243.120"/>
+		<part repeat="0x4000">ff</part>
+
+		<!-- maincpu, size: 0x18000 -->
+		<part crc="89282a6b" name="epr-10255.1"/>
+		<part crc="2826b6d8" name="epr-10254.2"/>
+		<part crc="7911260f" name="epr-10253.3"/>
+
+		<!-- sprites, size: 0x20000 -->
+		<part crc="8a6aed33" name="epr-10234.117"/>
+		<part crc="c52784d3" name="epr-10233.110"/>
+		<part crc="b35ab227" name="epr-10236.04"/>
+		<part crc="006a3151" name="epr-10235.5"/>
+
+		<!-- tiles, size: 0x20000 -->
+		<interleave output="32">
+			<part crc="4e0ad0f2" name="epr-10249.61"/>
+			<part crc="3515d124" name="epr-10248.64"/>
+			<part crc="541e1555" name="epr-10247.66"/>
+			<part crc="541e1555" name="epr-10247.66"/>
+		</interleave>
+		<interleave output="32">
+			<part crc="4e0ad0f2" name="epr-10249.61"/>
+			<part crc="3515d124" name="epr-10248.64"/>
+			<part crc="541e1555" name="epr-10247.66"/>
+			<part crc="541e1555" name="epr-10247.66"/>
+		</interleave>
+
+		<!-- lookup_proms, size: 0x0100 -->
+		<part crc="648350b8" name="pr5317.4"/>
+
+		<!-- color_proms, size: 0x0300 -->
+		<part crc="8eee0f72" name="pr-7345.3"/>
+		<part crc="3e7babd7" name="pr-7344.2"/>
+		<part crc="371c44a6" name="pr-7343.1"/>
+
+		<!-- encryption_device: 317-0006 -->
+		<part>
+			44 14 15 15 51 41 41 14 10 50 15 55 54 05 04 41
+			51 01 05 10 55 51 05 05 54 11 45 05 04 14 10 55
+			01 41 51 05 55 04 45 41 55 14 45 10 04 45 55 50
+			40 00 11 45 15 00 01 00 40 00 01 45 11 00 45 00
+			44 54 40 04 05 15 15 10 15 04 01 05 50 11 00 44
+			44 04 04 01 50 05 51 00 45 44 50 15 54 40 41 45
+			40 10 14 15 40 51 50 50 45 00 10 15 05 51 50 44
+			01 15 40 04 01 44 50 44 50 50 50 10 44 04 40 04
+
+			0c 01 12 0b 08 17 15 11 00 17 16 00 15 0f 0d 13
+			15 14 14 0c 0d 0a 14 00 0e 12 06 12 03 05 05 14
+			14 0d 08 00 14 12 04 0e 08 05 11 06 16 0a 00 15
+			00 01 06 0b 11 09 11 03 09 15 00 04 10 01 0d 11
+			15 05 03 07 02 10 12 0d 06 13 0b 17 03 14 03 02
+			12 0a 12 17 13 17 03 0f 00 0a 05 0c 00 00 0b 16
+			08 0e 08 06 01 0f 07 0b 02 11 0a 0f 08 15 0a 00
+			02 06 01 01 03 01 0c 12 10 05 00 0f 11 0f 0a 14
+		</part>
+	</rom>
+	<mratimestamp>20210629000000</mratimestamp>
+</misterromdescription>

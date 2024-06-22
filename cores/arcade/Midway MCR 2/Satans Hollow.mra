@@ -1,0 +1,31 @@
+<misterromdescription>
+    <name>Satan's Hollow</name>
+    <mameversion>0216</mameversion>
+    <mratimestamp>201912310000</mratimestamp>
+    <year>1983</year>
+    <manufacturer>Bally Midway</manufacturer>
+    <category>Action</category>
+    <rbf>MCR2</rbf>
+    <setname>shollow</setname>
+    <rom index="1">
+	<part>0</part>
+    </rom>
+    <rom index="0" zip="shollow.zip" md5="cc2c7141ad992cffa1bd34ee74952152" type="merged|nonmerged">
+	<part crc="95e2b800" name="sh-pro.00"/>
+	<part crc="b99f6ff8" name="sh-pro.01"/>
+	<part crc="1202c7b2" name="sh-pro.02"/>
+	<part crc="0a64afb9" name="sh-pro.03"/>
+	<part crc="22fa9175" name="sh-pro.04"/>
+	<part crc="1716e2bb" name="sh-pro.05"/>		
+	<part crc="55a297cc" name="sh-snd.01"/>
+	<part crc="46fc31f6" name="sh-snd.02"/>
+	<part crc="b1f4a6a8" name="sh-snd.03"/>
+	<part repeat="4096">00</part>
+	<part crc="3e2b333c" name="sh-bg.00"/>
+	<part crc="d1d70cc4" name="sh-bg.01"/>		
+	<part crc="33f4554e" name="sh-fg.00"/>
+	<part crc="ba1a38b4" name="sh-fg.01"/>
+	<part crc="6b57f6da" name="sh-fg.02"/>
+	<part crc="37ea9d07" name="sh-fg.03"/>
+    </rom>
+</misterromdescription>
