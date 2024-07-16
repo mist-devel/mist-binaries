@@ -1,3 +1,7 @@
+**fpgagen_240716.rbf**
+- Fix IO area decoding (Ballz 3D)
+- Auto-detect Virtua Racing cart
+
 **c16_240405.rbf**
 - Open bus reads from some free ares (fixes Giana Sisters)
 - Use PCM sound output from TED instead of PWM for better sound quality
