@@ -1,3 +1,6 @@
+**SMS-Nuked_240716.rbf**
+- New core based on [Nuked-SMS-FPGA](https://github.com/nukeykt/Nuked-SMS-FPGA)
+
 **fpgagen_240716.rbf**
 - Fix IO area decoding (Ballz 3D)
 - Auto-detect Virtua Racing cart
