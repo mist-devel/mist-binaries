@@ -1,3 +1,7 @@
+**C64_240814.rbf**
+- Support Magic Desk 2 format with 2 MiB size
+- Don't disable REU when a cart is attached, but no IOF line used
+
 **SMS-Nuked_240716.rbf**
 - New core based on [Nuked-SMS-FPGA](https://github.com/nukeykt/Nuked-SMS-FPGA)
 
