@@ -4,6 +4,10 @@ This is the port of the FPGA64 C64 core by Peter Wendrich distributed with
 his kind permission. The later ports are based on Dar FPGAs work and includes
 a c1541 floppy implementation.
 
+New in release 240814 :
+- Magic Desk 2 cartridge support (2MB)
+- RAM Expansion Unit remains activated when the cart is not using the IOF line
+
 ## Features
 
 - Can use .CRT, .PRG, .D64 and .G64 files
