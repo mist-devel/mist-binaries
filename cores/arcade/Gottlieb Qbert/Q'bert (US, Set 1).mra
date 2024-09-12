@@ -25,7 +25,7 @@
 	<joystick>4-way diagonal</joystick>
 	<special_controls></special_controls>
 	<num_buttons>0</num_buttons>
-	<buttons default="A,Start,Select,R" names="Service Select,Start 1P,Start 2P,Coin"></buttons>
+	<buttons default="Start,Select" names="-,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 
 	<switches default="01" page_id="1" page_name="Switches" base="16">
 		<dip bits="0" ids="On,Off" name="Demo Sounds"></dip>

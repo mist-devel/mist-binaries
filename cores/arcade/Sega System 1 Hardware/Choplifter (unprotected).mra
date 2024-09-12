@@ -20,7 +20,8 @@
 		<dip bits="4" name="Extend" ids="50k 100k 150k 200k,20k 70k 120k 170k"/>
 		<dip bits="5" name="Difficulty" ids="Hard,Easy"/>
 	</switches>
-	<buttons names="Shoot,Direction Change,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,Start,Select,R,L"/>
+	<num_buttons>2</num_buttons>
+	<buttons default="B,A,Start,Select" names="Shoot,Direction Change,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<rom index="1">
 		<part>41</part>
 	</rom>

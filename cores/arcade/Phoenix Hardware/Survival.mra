@@ -1,0 +1,60 @@
+<misterromdescription>
+	<name>Survival</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1980</year>
+	<category>Shooter - Gallery</category>
+
+	<setname>survival</setname>
+	<parent>phoenix</parent>
+	<mameversion>0220</mameversion>
+	<rbf>phoenix</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>2-way horizontal</joystick>
+	<special_controls></special_controls>
+	<num_buttons>2</num_buttons>
+	<button_names></button_names>
+
+	<switches default="70" base="8">
+		<dip bits="0,1" ids="5,4,3,2" name="Lives"/>
+		<dip bits="2,3" ids="55K,45K,35K,25K" name="Bonus Life"/>
+		<dip bits="4"   ids="On,Off" name="Free Play"/>
+		<dip bits="5,6" ids="5C_1C,3C_1C,2C_1C,1C_1C" name="Coinage"/>
+	</switches>
+
+	<rom index="1"><part>02</part></rom>
+	<rom index="0" md5="94a32036ff47b66c036b8a55be53fd29" zip="survival.zip">
+		<!-- CPU 16k -->
+		<part name="g959-32a_45.u45" crc="0bc53541"/>
+		<part name="g959-33a_46.u46" crc="726e9428"/>
+		<part name="g959-34a_47.u47" crc="78f166ff"/>
+		<part name="g959-35a_48.u48" crc="59dbe099"/>
+		<part name="g959-36a_49.u49" crc="bd5e586e"/>
+		<part name="g959-37a_50.u50" crc="b2de1094"/>
+		<part name="g959-38a_51.u51" crc="131c4440"/>
+		<part name="g959-39a_52.u52" crc="213bc910"/>
+
+		<!-- bg 4k -->
+		<part name="g959-42-23.u23" crc="3d1ce38d"/>
+		<part name="g959-43-24.u24" crc="cd150da9"/>
+
+		<!-- fg 4k -->
+		<part name="g959-40-39.u39" crc="41dee996"/>
+		<part name="g959-41-40.u40" crc="a255d6dc"/>
+
+		<!-- proms 2x256 -->
+		<part name="n82s129n.u40" crc="b3e20669"/>
+		<part name="n82s129n.u41" crc="abddf69a"/>
+	</rom>
+	<rom index="2"></rom>
+</misterromdescription>

@@ -18,9 +18,8 @@
 
 	<players>2 (alternating)</players>
 	<joystick>8-way</joystick>
-	<special_controls>twin stick</special_controls>
-	<num_buttons>4</num_buttons>
-	<button_names></button_names>
+	<num_buttons>2</num_buttons>
+	<buttons default="B,A,Start,Select" names="Fire Torpedo,Fire Missile,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 
 	<switches default="80" base="8">
 		<dip bits="0,1"   name="Lives" ids="3,4,5,6"/>

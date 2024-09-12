@@ -2,6 +2,8 @@
 	<name>Chewing Gum</name>
 	<setname>chewing</setname>
 	<rbf>galaxian</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Action,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
         <rom index="1">
                 <part>05</part>
         </rom>

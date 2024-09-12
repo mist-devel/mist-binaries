@@ -7,6 +7,8 @@
     <manufacturer>Irem</manufacturer>
     <category>Racing / Motorbike</category>
     <rbf>travrusa</rbf>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Brake,Accelerate,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="1"><part>1</part></rom>
     <rom index="0" zip="shtrider.zip" md5="9e4c8423a33f0c5bf558d475d89e041a" type="merged|nonmerged">
 	<part name="sr01a.bin"/>

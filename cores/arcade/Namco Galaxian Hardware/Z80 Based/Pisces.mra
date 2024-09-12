@@ -1,6 +1,8 @@
 <misterromdescription>
 	<setname>pisces</setname>
         <rbf>galaxian</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
         <switches default="00,1F,00">
                 <dip bits="14" name="Lives" ids="3,4"/>
                 <dip bits="15" name="Cabinet" ids="Upright,Cocktail"/>

@@ -3,6 +3,8 @@
     <mameversion>0209</mameversion>
     <rbf>Robotron</rbf>
     <setname>spdball</setname>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="1"><part>9</part></rom>
     <rom index="0" zip="spdball.zip" md5="be03e2856d1650db4fbb8921721f5bc5" type="merged">
 	<part name="speedbal.01"/>

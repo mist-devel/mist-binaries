@@ -9,12 +9,18 @@
 	<category>Maze / Centipede</category>
 	<category>Maze / Spiders</category>
 	<rbf>centiped</rbf>
-	<switches base="8">
-		<dip bits="0,1" name="Language"       ids="English,German,French,Spanish"/>
-		<dip bits="2,3" name="Lives"          ids="2,3,4,5"/>
-		<dip bits="4,5" name="Bonus Life"     ids="10000,12000,15000,20000"/>
-		<dip bits="6"   name="Difficulty"     ids="Hard,Easy"/>
-		<dip bits="7"   name="Credit minimum" ids="1,2"/>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
+	<switches page_id="1" page_name="Switches" base="8" default="00,02">
+		<dip bits="0,1"   name="Language"       ids="English,German,French,Spanish"/>
+		<dip bits="2,3"   name="Lives"          ids="2,3,4,5"/>
+		<dip bits="4,5"   name="Bonus Life"     ids="10000,12000,15000,20000"/>
+		<dip bits="6"     name="Difficulty"     ids="Hard,Easy"/>
+		<dip bits="7"     name="Credit minimum" ids="1,2"/>
+
+		<dip bits="8,9"   name="Coinage"        ids="Free Play,1C_2C,1C_1C,2C_1C"/>
+		<dip bits="10,12" name="Game Time"      ids="Untimed,1 min,2 min,3 min,4 min,5 min,6 min,7 min"/>
+		<dip bits="13,15" name="Bonus Coins"    ids="None,3cr/2c,5cr/4c,6cr/4c,6cr/5c,4cr/3c"/>
 	</switches>
 	<rom index="0" zip="centiped.zip" md5="661b779be0bde8e7ed5ed6318fe7ca0a">
 		<!-- CPU ROM -->

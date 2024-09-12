@@ -1,6 +1,8 @@
 <misterromdescription>
     <name>Mars</name>
     <rbf>scramble</rbf>
+    <num_buttons>4</num_buttons>
+    <buttons default="B,A,X,Y,Start,Select" names="Fire Up,Fire Left,Fire Right,Fire Down,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
 	<dip bits="7"  name="Lives"       ids="3,Unl"/>
     </switches>

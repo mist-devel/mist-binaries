@@ -24,9 +24,8 @@
 	<players>2 (alternating)</players>
 	<joystick>2-way horizontal</joystick>
 	<special_controls></special_controls>
-	<num_buttons>2</num_buttons>
-	<button_names></button_names>
-
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="FF,FB" base="8" page_id="1" page_name="Switches">
 		<dip bits="8,9"   name="Coinage"     ids="3C_1C,2C_1C,1C_2C,1C_1C"/>
 		<dip bits="10"    name="Cabinet"     ids="Upright,Cocktail"/>

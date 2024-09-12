@@ -25,8 +25,7 @@
 	<joystick>8-way</joystick>
 	<special_controls></special_controls>
 	<num_buttons>2</num_buttons>
-	<buttons default="A,B,Start,Select,R,C"
-		 names="Punch,Jump,-,-,-,Start 1P,Start 2P,Coin,Pause"/>
+	<buttons default="B,A,Start,Select" names="Punch,Jump,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches base="8" default="FF,7E">
 		<dip bits="9" ids="On,Off" name="Demo Sound"></dip>
 		<dip bits="10,11" ids="Infinite,5,4,3" name="Lives"></dip>

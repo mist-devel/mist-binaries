@@ -8,6 +8,8 @@
 	<category>Space</category>
 	<setname>szaxxon</setname>
 	<rbf>zaxxon</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="33,30,00,00">
 		<dip bits="16,17"  name="Extra ship" ids="40.000,20.000,30.000,10.000"/>
 		<dip bits="18"     name="Difficulty" ids="Hard,Normal"/>

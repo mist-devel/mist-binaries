@@ -6,6 +6,8 @@
     <manufacturer>Bally Midway</manufacturer>
     <category>Action</category>
     <setname>turbotag</setname>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Brake,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="0" zip="turbotag.zip" md5="dd89b487b8905dc62765b35bdbc322f3" type="merged|nonmerged">
 	<part name="ttprog0.bin"/>
 	<part name="ttprog1.bin"/>

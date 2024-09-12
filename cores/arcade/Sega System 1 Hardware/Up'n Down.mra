@@ -106,5 +106,6 @@
 		<dip name="Bonus Life" bits="11,13" ids="None,70k,60k,50k,40k,30k,20k,10k"/>
 		<dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Medium,Easy"/>
 	</switches>
-	<buttons names="Jump,-,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="1"/>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Jump,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 </misterromdescription>

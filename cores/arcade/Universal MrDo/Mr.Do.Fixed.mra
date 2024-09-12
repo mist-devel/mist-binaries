@@ -8,7 +8,8 @@
   <category>Platform</category>
   <rbf>MrDo</rbf>
 
-  <buttons names="Jump,Start 1P,Start 2P,Coin,Pause" default="A,Start,Select,R,L" />
+  <num_buttons>1</num_buttons>
+  <buttons default="B,Start,Select" names="Jump,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 
   <switches page_id="1" page_name="Switches" default="FF,FF" base="8">
     <dip bits="0,1" name="Difficulty" ids="Hardest, Hard, Medium, Easy"/>
@@ -37,6 +38,5 @@
         <part crc="16ee4ca2" name="f10--1.bin"/>
         <part crc="ff7fe284" name="j10--4.bin"/>
         <part crc="badf5876" name="j2-u001.bin"/>
-        <patch offset="0x049a"> 00 </patch>
   </rom>
 </misterromdescription>

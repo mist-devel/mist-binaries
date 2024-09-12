@@ -7,6 +7,8 @@
     <category>Action</category>
     <rbf>Journey</rbf>
     <setname>journey</setname>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Blast,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="0" zip="journey.zip" md5="95d0859c7922308b094486d0d624c727" type="merged|nonmerged">
 	<part crc="f2618913" name="d2"/>
 	<part crc="2f290d2e" name="d3"/>

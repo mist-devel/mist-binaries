@@ -22,8 +22,7 @@
 	<joystick>4-way horizontal</joystick>
 	<special_controls/>
 	<num_buttons>1</num_buttons>
-	<button_names/>
-
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches base="8" default="08,68" page_id="1" page_name="Switches">
 		<!-- DIP Switch 6K -->
 		<dip bits="0,1"   name="Difficulty"  ids="Easy(Rank A),Hardest(Rank D),Hard(Rank C),Medium(Rank B)"/>

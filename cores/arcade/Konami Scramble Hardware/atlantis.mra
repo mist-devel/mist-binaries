@@ -1,6 +1,8 @@
 <misterromdescription>
     <name>Battle of Atlantis</name>
     <rbf>scramble</rbf>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Fire,Bomb,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
 	<dip bits="7"  name="Lives"       ids="3,5"/>
     </switches>

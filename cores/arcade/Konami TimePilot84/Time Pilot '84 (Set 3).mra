@@ -9,6 +9,8 @@
 	<rbf>TP84</rbf>
 	<mameinfo parent="tp84" cpp="tp84" input="tp84b"/>
 	<display type="raster" rotate="90"/>
+	<num_buttons>2</num_buttons>
+	<buttons default="B,A,Start,Select" names="Fire,Missile,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="00,25" base="8">
 		<dip bits="0,3"   name="Credits A" ids="1c/1cr,1c/3cr,1c/2cr,1c/4cr,1c/5cr,1c/7cr,1c/6cr,2c/1cr,2c/3cr,3c/1cr,2c/5cr,3c/2cr,3c/4cr,4c/3cr,4c/1cr,Free Play"/>
 		<dip bits="4,7"   name="Credits B" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Free Play"/>

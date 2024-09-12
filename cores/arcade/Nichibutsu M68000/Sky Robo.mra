@@ -1,0 +1,87 @@
+<misterromdescription>
+  <name>Sky Robo</name>
+  <mameversion>0240</mameversion>
+  <setname>skyrobo</setname>
+  <year>1989</year>
+  <manufacturer>Nichibutsu</manufacturer>
+  <category>Shoot 'em up</category>
+  <rbf>armedf</rbf>
+
+  <switches default="ff,ff" base="16" page_id="1" page_name="Switches">
+    <!-- DSW0 -->
+    <dip name="Lives" bits="0,1" ids="6,5,4,3"/>
+    <dip name="Bonus Life" bits="2,3" ids="100/100k(E),80/100k(E),100/80k(E),80/80k(E)"/>
+    <dip name="Demo Sounds" bits="4" ids="Off,On"/>
+    <dip name="Cabinet" bits="5" ids="Upright,Cocktail"/>
+    <dip name="Difficulty" bits="6,7" ids="Hardest,Hard,Normal,Easy"/>
+    <!-- DSW1 -->
+    <dip name="Coin A" bits="8,9" ids="Free Play,2/1,1/2,1/1"/>
+    <dip name="Coin B" bits="10,11" ids="2/3,2/1,1/2,1/1"/>
+    <dip name="Unknown" bits="12" ids="On,Off"/>
+    <!-- Debug 2 (requires Debug On) (P2 Start skip stage, Invulnerability) -->
+    <dip name="Debug 2" bits="13" ids="On,Off"/>
+    <dip name="Flip Screen" bits="14" ids="On,Off"/>
+    <!-- Debug 1 (P1 Start to pause) -->
+    <dip name="Debug 1" bits="15" ids="On,Off"/>
+  </switches>
+
+  <num_buttons>2</num_buttons>
+  <buttons default="B,A,Start,Select" names="Weapon,Transform,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
+
+  <rom index="0" zip="skyrobo.zip" md5="none">
+
+    <!-- maincpu - starts at 0x0 -->
+    <interleave output="16">
+      <part name="3" crc="02d8ba9f" map="01"/>
+      <part name="1" crc="fcfd9e2e" map="10"/>
+    </interleave>
+    <interleave output="16">
+      <part name="4" crc="37ced4b7" map="01"/>
+      <part name="2" crc="88d52f8e" map="10"/>
+    </interleave>
+
+    <!-- foreground - starts at 0x80000 -->
+    <part name="5.13f" crc="d440a29f"/>
+    <part name="6.15f" crc="27469a76"/>
+    <part repeat="0x10000"> ff</part>
+
+    <!-- background - starts at 0xc0000 -->
+    <part name="12.8a" crc="a5694ea9"/>
+    <part name="11.6a" crc="10b74e2c"/>
+    <part repeat="0x20000"> ff</part>
+
+    <!-- sprite - starts at 0x100000 -->
+    <interleave output="16">
+      <part name="9.8d" crc="fe67800e" map="01"/>
+      <part name="10.9d" crc="dcb828c4" map="10"/>
+    </interleave>
+
+    <!-- text - starts at 0x140000 -->
+    <part name="7" crc="f556ef28"/>
+    <part repeat="0x8000"> ff</part>
+
+    <!-- audiocpu - starts at 0x150000 -->
+    <part name="8.17k" crc="0aeab61e"/>
+
+    <!-- extra - starts at 0x160000 -->
+    <part repeat="0x10000"> ff</part>
+
+    <!-- mcu - starts at 0x170000 -->
+    <part name="i8751.bin" crc="64a0d225"/>
+    <part repeat="0xf000"> ff</part>
+
+    <!-- nb1414m4 - starts at 0x180000 -->
+    <part repeat="0x4000"> ff</part>
+    <part repeat="0xc000"> ff</part>
+
+    <!-- proms - starts at 0x190000 -->
+    <part name="tf.13h" crc="81244757"/>
+    <part repeat="0x3f00"> ff</part>
+
+    <!-- Total 0x194000 bytes - 1616 kBytes -->
+  </rom>
+
+  <rom index="1">
+    <part>03</part>
+  </rom>
+</misterromdescription>

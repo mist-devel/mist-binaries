@@ -7,6 +7,8 @@
     <manufacturer>Bally Midway</manufacturer>
     <category>Maze / Food</category>
     <rbf>mcr3</rbf>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Serve,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
 	<dip bits="10"   name="Demo Sounds" ids="Off,On"/>
 	<dip bits="9"    name="Cabinet" ids="Upright,Cocktail"/>

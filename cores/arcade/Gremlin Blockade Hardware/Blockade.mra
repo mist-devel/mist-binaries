@@ -7,7 +7,8 @@
 	<mameversion>0229</mameversion>
 	<rbf>blockade</rbf>
 
-	<buttons default="R,L" names="-,-,Coin,Pause"></buttons>
+	<num_buttons>0</num_buttons>
+	<buttons default="Start,Select" names="-,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="3"  page_id="1" page_name="Switches" base="8">
 		<dip bits="0,1" name="Lives" ids="3,4,5,6"/>
 		<dip bits="2,3" name="Overlay Colour" ids="Green,White,Yellow,Red"/>

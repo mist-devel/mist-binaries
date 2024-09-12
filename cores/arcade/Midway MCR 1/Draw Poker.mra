@@ -7,6 +7,8 @@
     <category>Action</category>
     <rbf>MCR1</rbf>
     <setname>dpoker</setname>
+    <num_buttons>5</num_buttons>
+    <buttons default="B,A,X,Y,L,Start,Select" names="Hold Card 1,Hold Card 2,Hold Card 3,Hold Card 4,Hold Card 5,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
 	<dip bits="7"    name="Lamps"   ids="Off,On"/>
 	<dip bits="8"    name="Music"   ids="On,Off"/>

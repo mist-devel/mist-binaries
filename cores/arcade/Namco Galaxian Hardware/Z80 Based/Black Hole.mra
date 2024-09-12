@@ -7,6 +7,8 @@
 	<category>Space / Shooter</category>
 	<setname>blkhole</setname>
 	<rbf>galaxian</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="00,1F,02">
 		<dip bits="16" name="Bonus Life After" ids="5000,10000"/>
 		<dip bits="17"    name="Cabinet" ids="Cocktail,Upright"/>

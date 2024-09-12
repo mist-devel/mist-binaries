@@ -4,6 +4,8 @@
     <setname>kungfum</setname>
     <manufacturer>Irem</manufacturer>
     <rbf>iremm62</rbf>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Kick,Punch,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
         <!-- DSW1 -->
         <dip bits="8"     name="Difficulty"  ids="Easy,Hard"/>

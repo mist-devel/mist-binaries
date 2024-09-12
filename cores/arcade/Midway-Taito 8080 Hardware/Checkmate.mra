@@ -9,7 +9,8 @@
 	<rbf>spaceinvaders</rbf>
 	<mameinfo parent="0" cpp="mw8080bw" input="checkmat"/>
 	<display type="raster" rotate="0"/>
-	<buttons names="-,-,-,-,Start 1P,Start 2P,Coin" default="Start,Select,R"/>
+	<num_buttons>0</num_buttons>
+	<buttons default="Start,Select" names="-,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<rom index="0" zip="checkmat.zip" md5="none">
 		<part crc="3481a6d1" name="checkmat.h"/>
 		<part crc="df5fa551" name="checkmat.g"/>

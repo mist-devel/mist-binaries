@@ -1,0 +1,96 @@
+<misterromdescription>
+	<name>Treasure Island</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1982</year>
+	<manufacturer>Data East</manufacturer>
+	<category> </category>
+
+	<setname>tisland</setname>
+	<parent>btime</parent>
+	<mameversion>0220</mameversion>
+	<rbf>burgertime</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>no</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>8-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Jump,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
+
+	<switches default="00,14" base="8" page_id="1" page_name="Switches">
+		<dip bits="0,1"    name="Coin 1 Credit" ids="1/1,1/2,1/3,2/1"></dip>
+		<dip bits="2,3"    name="Coin 2 Credit" ids="1/1,1/2,1/3,2/1"></dip>
+		<dip bits="4"      name="Test Mode" ids="Off,On"></dip>
+		<dip bits="5"      name="Cross Hatch Test" ids="Off,On"></dip>
+		<!-- In original game manual there are separate cocktail switches
+		   - for control panel and screen. There's no support for this in core
+		   - so let's keep this commented out for now.
+		  -->
+		<!--
+			<dip bits="6"      name="Control Panel" ids="Upright,Cocktail"></dip>
+			<dip bits="7"      name="Screen" ids="Upright,Cocktail"></dip>
+		-->
+		<dip bits="6"      name="Cabinet" ids="Upright,Cocktail"></dip>
+		<dip bits="8"      name="Chefs Per Game" ids="3,5"></dip>
+		<dip bits="9,10"   name="Bonus Chef Every" ids="10k,15k,20k,30k"></dip>
+		<dip bits="11"     name="Difficulty" ids="Easy,Hard"></dip>
+		<dip bits="12"     name="End of Rack Bonus" ids="None,Pepper"></dip>
+	</switches>
+
+	<rom index="1"><part>1</part></rom>
+	<rom index="0" zip="tisland.zip">
+		<!-- main cpu 0x8000-0xFFFF -->
+		<part repeat="0x1000">FF</part>
+		<part name="t-04.b7"  crc="641af7f9"/>
+		<part name="t-04.b7"  crc="641af7f9"/>
+		<part name="t-07.b11" crc="6af00c8b"/>
+		<part name="t-05.b9" crc="95b1a1d3"/>
+		<part name="t-08.b13" crc="b7bbc008"/>
+		<part name="t-06.b10" crc="5a6783cf"/>
+		<part name="t-09.b14" crc="5b26771a"/>
+
+		<!-- audio cpu 0xE000-0xEFFF -->
+		<part name="t-0a.j11" crc="807e1652"/>
+
+		<!-- bg map 4k -->
+		<part name="t-03.b5" crc="68df6d50"/>
+
+		<!-- bg tiles 3x2k (gfx2) -->
+		<part name="t-00.b1" crc="05eaf899"/>
+		<part name="t-01.b2" crc="f692e9e0"/>
+		<part name="t-02.b4" crc="88396cae"/>
+		<part repeat="0x800">00</part>
+
+		<!-- sp/fg tiles 3x8k -->
+		<part name="t-11.k11" crc="779cc47c"/>
+		<part name="t-12.k13" crc="c804a8aa"/>
+		<part name="t-0e.k6" crc="63aa2b22"/>
+		<part name="t-0f.k8" crc="3eeca392"/>
+		<part name="t-0b.k2" crc="ec416f20"/>
+		<part name="t-0c.k4" crc="428513a7"/>
+
+		<!-- fg tiles 3x4k -->
+		<part name="t-13.k14" crc="95bdec2f"/>
+		<part name="t-10.k10" crc="3ba416cb"/>
+		<part name="t-0d.k5" crc="3d3e40b2"/>
+
+		<patch offset="0x22b6">24</patch>
+	</rom>
+
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<remark></remark>
+
+</misterromdescription>

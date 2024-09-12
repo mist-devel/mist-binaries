@@ -7,6 +7,8 @@
     <category>Action</category>
     <rbf>MCR1</rbf>
     <setname>kickman</setname>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Kick,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
 	<dip bits="7"    name="Music" ids="On,Off"/>
     </switches>

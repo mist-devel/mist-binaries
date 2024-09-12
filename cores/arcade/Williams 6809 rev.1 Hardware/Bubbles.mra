@@ -3,6 +3,8 @@
     <mameversion>0209</mameversion>
     <rbf>robotron</rbf>
     <setname>bubbles</setname>
+    <num_buttons>0</num_buttons>
+    <buttons default="Start,Select" names="-,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="1"><part>3</part></rom>
     <rom index="0" zip="bubbles.zip" md5="6b23d478539f579c4ffe30cae83c28d8" type="merged">
 	<part name="bubbles.1b"/>

@@ -26,8 +26,7 @@
 	<joystick>2-way horizontal</joystick>
 	<special_controls></special_controls>
 	<num_buttons>2</num_buttons>
-	<button_names></button_names>
-
+	<buttons default="B,A,Start,Select" names="Jump,Fire,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="FC,C7" base="8" page_id="1" page_name="Switches">
 		<dip bits="0" name="Cabinet" ids="Upright,Cocktail"/>
 		<dip bits="1,2" name="Lives" ids="5,2,3,4"/>

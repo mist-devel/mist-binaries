@@ -6,6 +6,8 @@
     <manufacturer>Bally Midway</manufacturer>
     <category>Action</category>
     <setname>crater</setname>
+    <num_buttons>4</num_buttons>
+    <buttons default="B,A,X,Y,Start,Select" names="Fire,Shield,Turn Left,Turn Right,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="0" zip="crater.zip" md5="a791478c9a65b783be60605fe3fae271" type="merged|nonmerged">
 	<part crc="ad31f127" name="crcpu.6d"/>
 	<part crc="3743c78f" name="crcpu.7d"/>

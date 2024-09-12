@@ -15,7 +15,8 @@
 		<dip bits="19"    name="Invincible Test" ids="Off,On"/>
 		<dip bits="23"    name="Coinage" ids="1C_1C,1C_2C"/>
 	</switches>
-	<buttons names="Fire,-,-,-,Start 1P,Start 2P,Coin" default="A,Start,Select,R"/>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<rom index="0" zip="ozmawars.zip" md5="none">
 		<part name="mw01"/>
 		<part name="mw02"/>

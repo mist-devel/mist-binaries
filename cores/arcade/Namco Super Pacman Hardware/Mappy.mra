@@ -1,0 +1,51 @@
+<misterromdescription>
+	<name>Mappy (US)</name>
+	<mameversion>0220</mameversion>
+	<setname>mappy</setname>
+	<mratimestamp>20200427161917</mratimestamp>
+	<year>1983</year>
+	<manufacturer>Namco</manufacturer>
+	<category>Maze, Cat and Mouse</category>
+	<category>Platform</category>
+	<rbf>druaga</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Door,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
+	<rom index="1">
+		<part>02</part>
+	</rom>
+	<rom index="0" zip="mappy.zip" md5="b276d97b0dc61ca668d140793fac44bf">
+		<part crc="52e6c708" name="mpx_3.1d"/>
+		<part crc="52e6c708" name="mpx_3.1d"/>
+		<part crc="a958a61c" name="mp1_2.1c"/>
+		<part crc="203766d4" name="mpx_1.1b"/>
+
+		<part crc="f2d9647a" name="mp1_6.3m"/>
+		<part crc="f2d9647a" name="mp1_6.3m"/>
+		<part crc="757cf2b6" name="mp1_7.3n"/>
+		<part crc="757cf2b6" name="mp1_7.3n"/>
+
+		<part crc="8182dd5b" name="mp1_4.1k"/>
+
+		<!-- GFX1 -->
+		<part crc="16498b9f" name="mp1_5.3b"/>
+
+		<part crc="5396bd78" name="mp1-7.5k"/>
+		<part crc="5396bd78" name="mp1-7.5k"/>
+		<part crc="5396bd78" name="mp1-7.5k"/>
+		<part crc="5396bd78" name="mp1-7.5k"/>
+
+		<part crc="50765082" name="mp1-6.4c"/>
+		<part crc="16a9166a" name="mp1-3.3m"/>
+		<part crc="56531268" name="mp1-5.5b"/>
+	</rom>
+	<switches default="00,00,00" base="8">
+		<dip bits="0,2"    name="Rank" ids="A,B,C,D,E,F,G,H"/>
+		<dip bits="5"      name="Demo Sounds" ids="On,Off"></dip>
+		<dip bits="6"      name="Round Progress" ids="Off,On"></dip>
+		<dip bits="7"      name="Freeze" ids="Off,On"></dip>
+		<dip bits="11,13"  name="Bonus Life" ids="M1,M2,M3,M4,M5,M6,M7,None"/>
+		<dip bits="14,15"  name="Lives" ids="3,5,1,2"/>
+		<!-- dip bits="18" name="Cabinet" ids="Upright,Cocktail"></dip -->
+		<dip bits="19"	   name="Service Mode" ids="Off,On"></dip>
+	</switches>
+</misterromdescription>

@@ -25,7 +25,7 @@
 	<joystick></joystick>
 	<special_controls>trackball</special_controls>
 	<num_buttons>1</num_buttons>
-	<buttons default="A,Start,Select,R,L" names="Fire,-,-,-,Start 1P,Start 2P,Coin,Pause"></buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 
 	<switches base="16" default="D4">
 		<dip bits="00,01" name="Language" ids="English,French,German,German"/>

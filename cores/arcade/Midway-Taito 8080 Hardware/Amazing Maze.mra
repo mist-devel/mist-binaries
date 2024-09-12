@@ -24,8 +24,8 @@
 	<players>2 (alternating)</players>
 	<joystick>8-way</joystick>
 	<special_controls></special_controls>
-	<num_buttons>0</num_buttons>
-	<buttons default="A,Start,Select,R,L" names="Fire,-,-,-,Start 1P,Start 2P,Coin,Pause"></buttons>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 
 	<switches base="16" default="00,00">
 		<dip bits="5,6" ids="1C_1C,2C_1C,1C_2C,2C_3C" name="Coinage"></dip>

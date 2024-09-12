@@ -25,8 +25,7 @@
 	<joystick>4-way</joystick>
 	<special_controls></special_controls>
 	<num_buttons>1</num_buttons>
-	<button_names></button_names>
-
+	<buttons default="B,Start,Select" names="Jump,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="FF,FF,F0,00" base="8" page_id="1" page_name="Switches">
 		<dip bits="16" ids="Upright,Cocktail" name="Cabinet"></dip>
 		<dip bits="17" ids="On,Off" name="Flip Screen"></dip>

@@ -2,6 +2,8 @@
     <name>Mighty Monkey</name>
     <mameversion>0209</mameversion>
     <rbf>scramble</rbf>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Fire,Transform,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
 	<dip bits="7,8"  name="Lives"          ids="3,4,5,6"/>
 	<dip bits="9"    name="Infinite Lives" ids="Off,On"/>

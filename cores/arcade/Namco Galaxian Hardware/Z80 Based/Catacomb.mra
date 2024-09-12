@@ -7,6 +7,8 @@
 	<category>Space / Force</category>
 	<setname>catacomb</setname>
 	<rbf>galaxian</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="00,DF,04">
 		<dip bits="18" name="Lives" ids="5,3"/>
 	</switches>

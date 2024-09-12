@@ -1,0 +1,66 @@
+<misterromdescription>
+    <name>Street Smart (US version 2)</name>
+    <setname>streetsm</setname>
+    <rbf>SNK68</rbf>
+    <mameversion>0245</mameversion>
+    <year>1989</year>
+    <manufacturer>SNK</manufacturer>
+    <region>World</region>
+
+    <switches default="00,00" base="16" page_id="1" page_name="Switches">
+        <!-- DSW1 -->
+        <dip name="Monitor Screen" bits="7" ids="Normal,Invert"/>
+        <dip name="Unknown" bits="6" ids="Off,On"/>
+        <dip name="Second Bonus" bits="5" ids="Every Extend,2nd Extend"/>
+        <dip name="Unknown" bits="4" ids="Off,On"/>
+        <dip name="Play Pricing" bits="2,3" ids="1/1,3/1 - 1/3,2/1 - 1/2,4/1 - 1/4"/>
+        <dip name="Lives" bits="0,1" ids="2,3,1,4"/>
+        <!-- DSW2 -->
+        <dip name="Difficulty" bits="14,15" ids="Normal,Hard,Easy,Hardest"/>
+        <dip name="Game Mode" bits="12,13" ids="Demo Sound On,Never Finish,Demo Sound Off,Stop Video"/>
+        <dip name="Extend" bits="10,11" ids="200/400K,600/800K,400/600K,None"/>
+        <dip name="Continue" bits="9" ids="Yes,No"/>
+        <dip name="Test Mode" bits="8" ids="Normal Game,Manual Test"/>
+    </switches>
+
+    <num_buttons>3</num_buttons>
+    <buttons default="B,A,X,Start,Select" names="Kick,Jump,Punch,-,-,-,Start,Coin,P2 Start,-"></buttons>
+
+    <rom index="1">
+        <part>02</part>
+    </rom>
+
+    <rom index="0" zip="streetsm.zip" md5="None">
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="s2-1ver2.14h" crc="655f4773" map="01"/>
+            <part name="s2-2ver2.14k" crc="efae4823" map="10"/>
+        </interleave>
+        <part repeat="0x40000"> FF</part>
+        <!-- soundcpu - starts at 0x80000 -->
+        <part name="s2-5.16c" crc="ca4b171e"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- upd - starts at 0xA0000 -->
+        <part name="s2-6.18d" crc="47db1605"/>
+        <!-- gfx1 - starts at 0xC0000 -->
+        <interleave output="16">
+            <part name="s2-9.25l" crc="09b6ac67" map="01"/>
+            <part name="s2-10.25m" crc="89e4ee6f" map="10"/>
+        </interleave>
+        <part repeat="0x30000"> FF</part>
+        <!-- gfx2 - starts at 0x100000 -->
+        <interleave output="32">
+            <part name="stsmart.900" crc="a8279a7e" map="0021"/>
+            <part name="stsmart.901" crc="c305af12" map="2100"/>
+        </interleave>
+        <interleave output="32">
+            <part name="stsmart.902" crc="2f021aa1" map="0021"/>
+            <part name="stsmart.903" crc="73c16d35" map="2100"/>
+        </interleave>
+        <interleave output="32">
+            <part name="stsmart.904" crc="167346f7" map="0021"/>
+            <part name="stsmart.905" crc="a5beb4e2" map="2100"/>
+        </interleave>
+        <!-- Total 0x400000 bytes - 4096 kBytes -->
+    </rom>
+</misterromdescription>

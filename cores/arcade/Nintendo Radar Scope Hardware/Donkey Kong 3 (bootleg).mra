@@ -9,9 +9,8 @@
 	<category>Platform</category>
 	<category>Platform / Mario Bros.</category>
 	<rbf>dkong</rbf>
-
-	<buttons names="Jump,Start 1P,Start 2P,Coin" default="A,Start,Select,R" />
-
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Jump,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<rom index="1"><part>03</part></rom>
 	<rom index="0" zip="dkong3.zip" md5="403f810061c5eda8651b5284af4b92ce" type="merged">
 

@@ -4,7 +4,8 @@
     <setname>sonson</setname>
     <manufacturer>Capcom</manufacturer>
     <rbf>sonson</rbf>
-
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches base="8" page_id="1" page_name="Switches">
         <!-- DSW1 -->
         <dip bits="0,3"   name="Coinage"     ids="1C_1C,1C_2C,1C_3C,1C_4C,1C_5C,1C_6C,1C_7C,2C_1C,2C_3C,2C_5C,3C_1C,3C_2C,3C_4C,4C_1C,4C_3C,Free Play"/>

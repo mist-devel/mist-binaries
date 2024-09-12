@@ -5,6 +5,8 @@
 	<year>1980</year>
 	<manufacturer>Sega</manufacturer>
 	<rbf>rallyx</rbf>
+	<num_buttons>2</num_buttons>
+	<buttons default="B,A,Start,Select" names="Fire,Barricade,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="FF,FF" base="8">
 		<dip bits="4,5"   name="Lives" ids="255,5,4,3"/>
 		<dip bits="1,2"   name="Coinage" ids="4C_1C,1C_2C,2C_1C,1C_1C"/>

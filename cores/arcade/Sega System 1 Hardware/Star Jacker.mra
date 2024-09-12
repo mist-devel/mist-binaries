@@ -10,7 +10,8 @@
 	<rotation>vertical/ccw</rotation>
 	<region>World</region>
 	<about author="MrX-8B" source="https://github.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer" twitter="@MrX_8B" webpage="https://patreon.com/MrX_8B"></about>
-	<buttons names="Fire,Bomb,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="2"/>
+	<num_buttons>2</num_buttons>
+	<buttons default="B,A,Start,Select" names="Fire,Bomb,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches base="8" default="FF,FE">
 		<!-- SWA -->
 		<dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>

@@ -7,6 +7,8 @@
 	<manufacturer>Namco</manufacturer>
 	<category>Racing</category>
 	<rbf>rallyx</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Smoke Screen,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches base="8">
 		<dip bits="6,7"   name="Coinage" ids="1C_1C,1C_2C,2C_1C,Free Play"/>
 		<dip bits="3,5"   name="Difficulty" ids="3 Cars Hard,2 Cars Hard,1 Car Hard,3 Cars Medium,2 Cars Medium,1 Car Medium,4 Cars Easy,3 Cars Easy"/>

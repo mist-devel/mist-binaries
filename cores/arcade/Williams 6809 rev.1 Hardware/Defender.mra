@@ -6,7 +6,8 @@
     <manufacturer>Williams</manufacturer>
     <category>Space / Defender</category>
     <rbf>defender</rbf>
-
+    <num_buttons>5</num_buttons>
+    <buttons default="B,A,X,Y,L,Start,Select" names="Fire,Thrust,Reverse,Hyperspace,Smart Bomb,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="1"><part>0</part></rom>
 
     <switches>

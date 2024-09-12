@@ -4,6 +4,8 @@
 	<mratimestamp>201911270000</mratimestamp>
 	<setname>kingball</setname>
 	<rbf>galaxian</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches>
 		<dip bits="7"    name="Service" ids="Off,On"/>
 		<dip bits="6"    name="Test" ids="Off,On"/>

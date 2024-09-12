@@ -8,6 +8,8 @@
     <category>Space / Asteroids</category>
     <category>Space / Fighter</category>
     <rbf>robotron</rbf>
+    <num_buttons>0</num_buttons>
+    <buttons default="Start,Select" names="-,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="1">
 	<part>7</part>
     </rom>

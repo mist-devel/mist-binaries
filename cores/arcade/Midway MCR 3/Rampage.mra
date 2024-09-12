@@ -12,6 +12,8 @@
 	<dip bits="10"  name="Score Opt"  ids="Lose,Keep"/>
 	<dip bits="11"  name="Rack Advance (cheat)" ids="Off,On"/>
     </switches>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Punch,Jump,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="1">
 	<part>00</part>
     </rom>

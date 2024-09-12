@@ -25,7 +25,7 @@
 	<joystick>4-way</joystick>
 	<special_controls></special_controls>
 	<num_buttons>1</num_buttons>
-	<button_names></button_names>
+	<buttons default="B,Start,Select" names="Rotate,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 
 	<switches></switches>
 

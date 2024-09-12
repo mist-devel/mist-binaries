@@ -22,7 +22,8 @@
 		<dip bits="12,13" name="Bonus Life" ids="None,15k 30k and 60k,10k 25k and 50k,5k 20k and 30k"/>
 		<dip bits="14" name="Difficulty" ids="Hard,Easy"/>
 	</switches>
-	<buttons names="Shoot,Bomb,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,Start,Select,R,C"/>
+	<num_buttons>2</num_buttons>
+	<buttons default="B,A,Start,Select" names="Shoot,Bomb,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<rom index="1">
 		<part>02</part>
 	</rom>

@@ -23,9 +23,8 @@
 	<players>2 (alternating)</players>
 	<joystick>8-way</joystick>
 	<special_controls></special_controls>
-	<num_buttons>2</num_buttons>
-	<buttons default="B,A,Start,R,Select,L" names="Fire,Cycle Weapons,Start P1,Coin,Start P2,Pause"></buttons>
-	
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Fire,Cycle Weapons,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="00,16,00" base="8" page_id="1" page_name="Switches">
 		<dip bits="0,3"   name="Credits A" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Free Play"/>
 		<dip bits="4,7"   name="Credits B" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/6cr,1c/7cr,2c/1cr,2c/3cr,2c/5cr,3c/1cr,3c/2cr,3c/4cr,4c/1cr,4c/3cr,Invalid"/>

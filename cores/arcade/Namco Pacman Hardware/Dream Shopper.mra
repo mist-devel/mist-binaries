@@ -24,9 +24,8 @@
 	<players>2 (alternating)</players>
 	<joystick>4-way</joystick>
 	<special_controls></special_controls>
-	<num_buttons>1</num_buttons>
-	<button_names></button_names>
-
+	<num_buttons>0</num_buttons>
+	<buttons default="Start,Select" names="-,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="FF,FF,F1,FE" base="8" page_id="1" page_name="Switches">
 		<dip bits="16" ids="Cocktail,Upright" name="Cabinet"></dip>
 		<dip bits="17" ids="On,Off" name="Flip Screen"></dip>

@@ -4,6 +4,8 @@
     <setname>horizon</setname>
     <manufacturer>Irem</manufacturer>
     <rbf>iremm62</rbf>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
         <!-- DSW1 -->
         <dip bits="8,9"     name="Lives"      ids="3,5,4,2"/>

@@ -7,7 +7,8 @@
     <manufacturer>Taito</manufacturer>
     <category>Space / Shooter</category>
     <rbf>defender</rbf>
-
+    <num_buttons>3</num_buttons>
+    <buttons default="B,A,X,Start,Select" names="Fire,Megablaster,Eradicator,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="1"><part>1</part></rom>
 
     <switches>

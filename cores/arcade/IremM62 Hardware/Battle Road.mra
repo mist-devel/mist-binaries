@@ -4,6 +4,8 @@
     <setname>battroad</setname>
     <manufacturer>Irem</manufacturer>
     <rbf>iremm62</rbf>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Fire Horizontal,Fire Vertical,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
         <!-- DSW1 -->
         <dip bits="8,9"   name="Fuel Decrease" ids="Slow,Medium,Fast,Fastest"/>

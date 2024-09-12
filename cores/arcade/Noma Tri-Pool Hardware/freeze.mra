@@ -1,0 +1,53 @@
+<misterromdescription>
+	<name>Freeze</name>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<series></series>
+	<year>1984</year>
+	<manufacturer>Cinematronics</manufacturer>
+	<category>Platform</category>
+	<rbf>freeze</rbf>
+	<about></about>
+	<resolution>15kHz</resolution>
+	<rotation>vertical</rotation>
+	<flip></flip>
+	<players>2</players>
+	<joystick>2-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons names="Button1,Button2,-,-,-,Start1P,Start2P,CoinA,CoinB" default="A,Start,Select,R1,L1"></buttons>
+	<switches default="00" base=16 page_id="1" page_name="Switches">
+		<dip bits="0" name="Flip Screen" ids="Off,On"/>
+		<dip bits="1" name="Service Mode" ids="Off,On"/>
+		<dip bits="2" name="Difficulty" ids="Easy,Hard"/>
+		<dip bits="3" name="Lives" ids="3,5"/>
+		<dip bits="4,5" name="Bonus Life" ids="10000,1000/40000,10000/60000,20000/100000"/>
+		<dip bits="6,7" name="Coinage" ids="1C_1C,1C_2C,2C_1C,Free_Play"/>
+	</switches>
+	<rom index="0" zip="freeze.zip" md5="none">
+		<!-- main cpu -->
+		<part name="freeze.f2" crc="0a431665"/>
+		<part name="freeze.f3" crc="1189b8ad"/>
+		<part name="freeze.f4" crc="10c4a5ea"/>
+		<part name="freeze.f5" crc="16024c53"/>
+		<part name="freeze.f7" crc="ea0b0765"/>
+		<part name="freeze.e7" crc="1155c00b"/>
+		<part name="freeze.e5" crc="95c18d75"/>
+		<part name="freeze.e4" crc="7e8f5afc"/>
+		<!-- audio cpu -->
+		<part name="freeze.a1" crc="7771f5b9"/>
+		<part repeat="4096">00</part>
+		<!-- gfx -->
+		<part name="freeze.5a" crc="6c8a98a0"/>
+		<part name="freeze.3a" crc="6d2125e4"/>
+		<part name="freeze.1a" crc="3a7f2fa9"/>
+		<part name="freeze.2a" crc="dd70ddd6"/>
+	</rom>
+	<rom index="1"><part>0</part></rom>
+	<rom index="2"></rom>
+	<rom_3></rom_3>
+	<rom_4></rom_4>
+	<nvram></nvram>
+	<remark></remark>
+	<!-- <mratimestamp></mratimestamp> -->
+</misterromdescription>

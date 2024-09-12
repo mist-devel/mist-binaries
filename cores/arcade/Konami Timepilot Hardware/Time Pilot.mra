@@ -7,6 +7,8 @@
 	<manufacturer>Konami</manufacturer>
 	<category>Army / Dog-Fight</category>
 	<rbf>timeplt</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="FF,FF" base="8">
 		<dip bits="8,9"   name="Lives"      ids="255 (Cheat),5,4,3"/>
 		<dip bits="10"    name="Cabinet"    ids="Upright, Cocktail"/>

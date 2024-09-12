@@ -1,0 +1,89 @@
+<misterromdescription>
+	<name>BankPanic</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1984</year>
+	<manufacturer>Sanritsu/Sega</manufacturer>
+	<category>Shooter/1stPerson</category>
+
+	<setname>bankp</setname>
+	<mameversion>0247</mameversion>
+	<rbf>bankpanic</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>horizontal</rotation>
+	<flip></flip>
+
+	<players>2</players>
+	<joystick>2-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>3</num_buttons>
+	<buttons default="B,A,X,Start,Select" names="Fire1,Fire2,Fire3,-,-,-,Start,Coin,P2 Start,-"></buttons>
+
+	<switches default="fc" base="8" page_id="1" page_name="Switches">
+
+		<dip bits="0,1" name="Coin Switch1" ids="1C/1C,1C/2C,2C/1C,3C/1C"/>
+		<dip bits="2" name="Coin Switch2" ids="1C/1C,2C/1C"/>
+		<dip bits="3" name="Lives" ids="3,4"/>
+		<dip bits="4" name="Bonus Life" ids="70K 200K 500K,100K 400K 800K"/>
+		<dip bits="5" name="Difficulty" ids="Easy,Hard"/>
+		<dip bits="6" name="Demo Sounds" ids="Off,On"/>
+		<dip bits="7" name="Cabinet" ids="Cocktail,Upright"/>
+
+	</switches>
+
+	<rom index="0" zip="bankp.zip" md5="none">
+
+		<!-- main cpu -->
+		<part name="epr-6175.7e" crc="044552b8"/>
+		<part name="epr-6174.7f" crc="d29b1598"/>
+		<part name="epr-6173.7h" crc="b8405d38"/>
+		<part name="epr-6176.7d" crc="c98ac200"/>
+		<part repeat="8192">00</part>
+
+		<!-- fg tiles -->
+		<part name="epr-6165.5l" crc="aef34a93"/>
+		<part name="epr-6166.5k" crc="ca13cb11"/>
+
+		<!-- bg tiles -->
+		<interleave output="32">
+			<part name="epr-6172.5b" crc="c4c4878b"/>
+			<part name="epr-6170.5e" crc="b58aa8fa"/>
+			<part name="epr-6168.5h" crc="05f3a867"/>
+			<part name="epr-6168.5h" crc="05f3a867"/>
+		</interleave>
+		<interleave output="32">
+			<part name="epr-6171.5d" crc="a18165a1"/>
+			<part name="epr-6169.5f" crc="1aa37fce"/>
+			<part name="epr-6167.5i" crc="3fa337e1"/>
+			<part name="epr-6167.5i" crc="3fa337e1"/>
+		</interleave>
+
+		<!-- proms -->
+		<part name="pr-6177.8a" crc="eb70c5ae"/>
+		<part name="pr-6178.6f" crc="0acca001"/>
+		<part name="pr-6179.5a" crc="e53bafdb"/>
+
+	</rom>
+
+	<rom index="1">
+	</rom>
+
+	<rom index="2">
+	</rom>
+
+	<rom_3></rom_3>
+	<rom_4></rom_4>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>202108231828</mratimestamp>
+</misterromdescription>

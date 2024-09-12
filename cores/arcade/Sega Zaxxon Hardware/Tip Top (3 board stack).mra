@@ -10,7 +10,8 @@
 	<rotation>vertical (cw)</rotation>
 	<rbf>CongoBongo</rbf>
 	<joystick>4-way diagonal</joystick>
-	<buttons names="Jump,Start 1P,Start 2P,Coin,Pause" default="A,Start,Select,R,L" />
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Jump,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="7F" base="16" page_id="1" page_name="Switches">
 		<dip bits="0,1" name="Bonus at" ids="40.000,20.000,30.000,10.000" />
 		<dip bits="2,3" name="Difficulty" ids="Hardest, Medium, Hard, Easy" />

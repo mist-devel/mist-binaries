@@ -3,6 +3,8 @@
     <mameversion>0209</mameversion>
     <rbf>robotron</rbf>
     <setname>stargate</setname>
+    <num_buttons>6</num_buttons>
+    <buttons default="B,A,X,Y,L,R,Start,Select" names="Reverse,Thrust,Fire,Hyperspace,Smart Bomb,Inviso,Start,Coin,P2 Start,-"></buttons>
     <rom index="1"><part>4</part></rom>
     <rom index="0" zip="stargate.zip" md5="764a1192d52ef54eead60849d11dfcaa" type="merged">
 	<part name="01"/>

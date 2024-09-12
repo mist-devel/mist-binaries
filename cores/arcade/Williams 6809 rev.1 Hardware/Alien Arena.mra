@@ -3,6 +3,8 @@
     <mameversion>0209</mameversion>
     <rbf>Robotron</rbf>
     <setname>alienar</setname>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Place,Flush,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="1"><part>5</part></rom>
     <rom index="0" zip="alienar.zip" md5="342b7d5d91dc2cd81f7f193b076555d2" type="merged">
 	<part name="aarom01"/>

@@ -20,7 +20,8 @@
 		<dip bits="5" name="Allow Continue" ids="Yes,No"/>
 		<dip bits="7" name="Invulnerability" ids="On,Off"/>
 	</switches>
-	<buttons names="Shoot,Direction Change,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,Start,Select,R,L"/>
+	<num_buttons>2</num_buttons>
+	<buttons default="B,A,Start,Select" names="Shoot,Direction Change,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<rom index="1">
 		<part>01</part>
 	</rom>

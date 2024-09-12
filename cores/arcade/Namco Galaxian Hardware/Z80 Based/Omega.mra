@@ -6,6 +6,8 @@
 	<setname>omegab</setname>
 	<manufacturer>bootleg?</manufacturer>
         <rbf>galaxian</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
         <switches default="00,5F,00">
                 <dip bits="16" name="Bonus Life After" ids="10000,20000"/>
                 <dip bits="18" name="Lives" ids="3,5"/>

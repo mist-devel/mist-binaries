@@ -1,0 +1,50 @@
+<misterromdescription>
+	<name>Super Casino</name>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<series></series>
+	<year>1984</year>
+	<manufacturer>Data Amusement</manufacturer>
+	<category>Platform</category>
+	<rbf>freeze</rbf>
+	<about></about>
+	<resolution>15kHz</resolution>
+	<rotation>vertical</rotation>
+	<flip></flip>
+	<players>2</players>
+	<joystick>2-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons names="Button1,Button2,-,-,-,Start1P,Start2P,CoinA,CoinB" default="A,Start,Select,R1,L1"></buttons>
+	<switches default="00" base=16 page_id="1" page_name="Switches">
+		<dip bits="0,1" name="Coinage" ids="1C_1C,1C_2C,1C_3C,1C_4C"/>
+		<dip bits="2" name="Cabinet" ids="Upright,Cocktail"/>
+		<dip bits="3" name="FlipScreen" ids="Off,On"/>
+	</switches>
+	<rom index="0" zip="sucasino.zip" md5="none">
+		<!-- main cpu -->
+		<part name="1" crc="e116e979"/>
+		<part name="2" crc="2a2635f5"/>
+		<part name="3" crc="69864d90"/>
+		<part name="4" crc="174c9373"/>
+		<part name="5" crc="115bcb1e"/>
+		<part name="6" crc="434caa17"/>
+		<part name="7" crc="67c68b82"/>
+		<part name=8" crc="f5b63006"/>
+		<!-- audio cpu -->
+		<part name="9" crc="67cf8aec"/>
+		<part repeat="4096">00</part>
+		<!-- gfx -->
+		<part name="11" crc="f92c4c5b"/>
+		<part repeat="4096">00</part>
+		<part name=10" crc="3b0783ce"/>
+		<part repeat="4096">00</part>
+	</rom>
+	<rom index="1"><part>3</part></rom>
+	<rom index="2"></rom>
+	<rom_3></rom_3>
+	<rom_4></rom_4>
+	<nvram></nvram>
+	<remark></remark>
+	<!-- <mratimestamp></mratimestamp> -->
+</misterromdescription>

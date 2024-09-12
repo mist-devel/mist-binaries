@@ -18,7 +18,8 @@
 		<dip bits="6"		name="Sound"		ids="Off,On"/>
 		<dip bits="7"		name="Cabinet"		ids="Upright,Cocktail"/>
 	</switches>
-	<buttons names="Jump,Start 1P,Start 2P,Coin,Pause" default="A,Start,Select,R,L"/>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Jump,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<rom index="1">
 		<part>00</part>
 	</rom>

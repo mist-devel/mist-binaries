@@ -7,7 +7,8 @@
     <manufacturer>Hoei</manufacturer>
     <category>Space / Defender</category>
     <rbf>defender</rbf>
-
+    <num_buttons>3</num_buttons>
+    <buttons default="B,A,X,Start,Select" names="Fire Forward,Fire Back,Mayday,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="1"><part>2</part></rom>
 
     <rom index="0" zip="mayday.zip" md5="732cf6e3f85c3ff6e37a8e6c84fad349" type="merged|nonmerged">

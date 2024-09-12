@@ -1,0 +1,82 @@
+<misterromdescription>
+    <name>P.O.W. - Prisoners of War (US Version 1)</name>
+    <setname>pow</setname>
+    <rbf>SNK68</rbf>
+    <mameversion>0245</mameversion>
+    <year>1988</year>
+    <manufacturer>SNK</manufacturer>
+    <region>US</region>
+
+    <switches default="00,00" base="16" page_id="1" page_name="Switches">
+        <!-- DSW1 -->
+        <dip name="Monitor Screen" bits="7" ids="Normal,Invert"/>
+        <dip name="Unknown" bits="6" ids="Off,On"/>
+        <dip name="Bonus Occurence" bits="5" ids="Second,Every"/>
+        <dip name="Hero Count" bits="4" ids="Two,Three"/>
+        <dip name="Play Pricing 1" bits="2,3" ids="1/1,3/1,2/1,4/1"/>
+        <dip name="Play Pricing 2" bits="0,1" ids="1/1,1/3,1/2,1/4"/>
+        <!-- DSW2 -->
+        <dip name="Difficulty" bits="14,15" ids="Standard,Hard,Easy,Hardest"/>
+        <dip name="Game Mode" bits="12,13" ids="Demo Sound On,Never Finish,Demo Sound Off,Stop Video"/>
+        <dip name="Extend" bits="10,11" ids="20/50K,60/150K,40/100K,None"/>
+        <dip name="Continue" bits="9" ids="Yes,No"/>
+        <dip name="Test Mode" bits="8" ids="Normal Game,Manual Test"/>
+    </switches>
+
+    <num_buttons>3</num_buttons>
+    <buttons default="B,A,X,Start,Select" names="Kick/Shoot Gun,Jump,Punch/Butt Stroke,-,-,-,Start,Coin,P2 Start,-"></buttons>
+
+    <rom index="1">
+        <part>01</part>
+    </rom>
+
+    <rom index="0" zip="pow.zip" md5="None">
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="dg1ver1.j14" crc="8e71a8af" map="01"/>
+            <part name="dg2ver1.l14" crc="4287affc" map="10"/>
+        </interleave>
+        <part repeat="0x40000"> FF</part>
+        <!-- soundcpu - starts at 0x80000 -->
+        <part name="dg8.e25" crc="d1d61da3"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- upd - starts at 0xA0000 -->
+        <part name="dg7.d20" crc="aba9a9d3"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- gfx1 - starts at 0xC0000 -->
+        <interleave output="16">
+            <part name="dg9.l25" crc="df864a08" map="01"/>
+            <part name="dg10.m25" crc="9e470d53" map="10"/>
+        </interleave>
+        <part repeat="0x30000"> FF</part>
+        <!-- gfx2 - starts at 0x100000 -->
+        <interleave output="32">
+            <part name="snk88011a.1a" crc="e70fd906" map="0001"/>
+            <part name="snk88015a.2a" crc="7a90e957" map="0010"/>
+            <part name="snk88019a.3a" crc="1775b8dd" map="0100"/>
+            <part name="snk88023a.4a" crc="adb6ad68" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="snk88012a.1b" crc="628b1aed" map="0001"/>
+            <part name="snk88016a.2b" crc="e40a6c13" map="0010"/>
+            <part name="snk88020a.3b" crc="f8e752ec" map="0100"/>
+            <part name="snk88024a.4b" crc="dd41865a" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="snk88013a.1c" crc="19dc8868" map="0001"/>
+            <part name="snk88017a.2c" crc="c7931cc2" map="0010"/>
+            <part name="snk88021a.3c" crc="27e9fffe" map="0100"/>
+            <part name="snk88025a.4c" crc="055759ad" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="snk88014a.1d" crc="47cd498b" map="0001"/>
+            <part name="snk88018a.2d" crc="eed72232" map="0010"/>
+            <part name="snk88022a.3d" crc="aa9c00d8" map="0100"/>
+            <part name="snk88026a.4d" crc="9bc261c5" map="1000"/>
+        </interleave>
+        <part repeat="0x80000"> FF</part>
+        <!-- plds - starts at 0x380000 -->
+        <part name="pal20l10.a6" crc="c3d9e729"/>
+        <!-- Total 0x3800CC bytes - 3584 kBytes -->
+    </rom>
+</misterromdescription>

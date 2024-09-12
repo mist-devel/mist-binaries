@@ -21,7 +21,8 @@
 		<dip name="Lives" bits="10,11" ids="Infinite,5,4,3"/>
 		<dip name="Bonus Life" bits="12,13" ids="None,70k,50k,30k"/>
 	</switches>
-	<buttons names="Sword,Cape,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="2"/>
+	<num_buttons>2</num_buttons>
+	<buttons default="B,A,Start,Select" names="Sword,Cape,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<rom index="0" zip="bullfgt.zip" type="merged" md5="2b9ee07a90e03469d7834c0c9b456176">
 		<!-- soundcpu, size: 0x8000 -->
 		<part crc="02a37602" name="epr-6077.120"/>

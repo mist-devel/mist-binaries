@@ -1,0 +1,90 @@
+<misterromdescription>
+  <name>Terra Force (Japan, bootleg with additional Z80)</name>
+  <mameversion>0240</mameversion>
+  <setname>terrafjb</setname>
+  <year>1987</year>
+  <manufacturer>Nichibutsu</manufacturer>
+  <category>Shoot 'em up</category>
+  <rbf>armedf</rbf>
+
+  <switches default="8f,3f" base="16" page_id="1" page_name="Switches">
+  <!-- DSW1 -->
+  <dip name="Lives" bits="0,1" ids="6,5,4,3"/>
+  <dip name="Bonus Life" bits="2,3" ids="50k/90k(E),20k/90k(E),50k/60k(E),20k/60k(E)"/>
+  <dip name="Demo Sounds" bits="4" ids="On,Off"/>
+  <dip name="Cabinet" bits="5" ids="Upright,Cocktail"/>
+  <dip name="Difficulty" bits="6,7" ids="Hardest,Hard,Normal,Easy"/>
+  <!-- DSW2 -->
+  <dip name="Coin A" bits="8,9" ids="Free Play,2/1,1/2,1/1"/>
+  <dip name="Coin B" bits="10,11" ids="2/3,2/1,1/2,1/1"/>
+  <dip name="Unused" bits="12" ids="On,Off"/>
+  <dip name="Flip Screen" bits="13" ids="On,Off"/>
+  <dip name="Allow Continue" bits="14,15" ids="Yes,Only 5 Times,Only 3 Times,No"/>
+  </switches>
+
+  <num_buttons>2</num_buttons>
+  <buttons default="B,A,Start,Select" names="Cannon Beam,Hyper Missile,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
+
+  <rom index="0" zip="terrafjb.zip|terraf.zip" md5="none">
+
+    <!-- maincpu - starts at 0x0 -->
+    <interleave output="16">
+      <part name="tfj-8.bin" crc="b11a6fa7" map="01"/>
+      <part name="tfj-3.bin" crc="6c6aa7ed" map="10"/>
+    </interleave>
+    <interleave output="16">
+      <part name="tfj-7.bin" crc="fde8de7e" map="01"/>
+      <part name="tfj-2.bin" crc="db987414" map="10"/>
+    </interleave>
+    <interleave output="16">
+      <part name="tfb-6.bin" crc="552c3c63" map="01"/>
+      <part name="tfb-1.bin" crc="6a0b94c7" map="10"/>
+    </interleave>
+    <part repeat="0x30000"> ff</part>
+
+    <!-- foreground - starts at 0x80000 -->
+    <part name="5.15h" crc="25d23dfd"/>
+    <part name="4.13h" crc="b9b0fe27"/>
+    <part repeat="0x20000"> ff</part>
+
+    <!-- background - starts at 0xc0000 -->
+    <part name="15.8a" crc="2144d8e0"/>
+    <part name="14.6a" crc="744f5c9e"/>
+    <part repeat="0x20000"> ff</part>
+
+    <!-- sprite - starts at 0x100000 -->
+    <interleave output="16">
+      <part name="tfj-12.7d" crc="d74085a1" map="01"/>
+      <part name="tfj-13.9d" crc="148aa0c5" map="10"/>
+    </interleave>
+    <part repeat="0x20000"> ff</part>
+
+    <!-- text - starts at 0x140000 -->
+    <part name="9.11e" crc="bc6f7cbc"/>
+    <part repeat="0x8000"> ff</part>
+
+    <!-- audiocpu - starts at 0x150000 -->
+    <part name="tf-001.17k" crc="eb6b4138"/>
+
+    <!-- extra - starts at 0x160000 -->
+    <part name="tfb-10.bin" crc="3f9aa367"/>
+    <part repeat="0xc000"> ff</part>
+
+    <!-- mcu - starts at 0x170000 -->
+    <part repeat="0x10000"> ff</part>
+
+    <!-- nb1414m4 - starts at 0x180000 -->
+    <part repeat="0x4000"> ff</part>
+    <part repeat="0xc000"> ff</part>
+
+    <!-- proms - starts at 0x190000 -->
+    <part name="n82s129an.11j" crc="81244757"/>
+    <part repeat="0x3f00"> ff</part>
+
+    <!-- Total 0x194000 bytes - 1616 kBytes -->
+  </rom>
+
+  <rom index="1">
+    <part>08</part>
+  </rom>
+</misterromdescription>

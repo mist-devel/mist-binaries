@@ -1,0 +1,77 @@
+<misterromdescription>
+	<name>Bomb Jack </name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1984</year>
+	<manufacturer>Tehkan</manufacturer>
+	<category>Puzzle - Platform</category>
+
+	<setname>bombjack</setname>
+	<parent>bombjack</parent>
+	<mameversion>0220</mameversion>
+	<rbf>bombjack</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical (cw)</rotation>
+	<flip>yes</flip>
+
+	<players>2 (alternating)</players>
+	<joystick>8-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Jump,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
+	<switches></switches>
+
+	<rom index="1"></rom>
+	<rom index="0" md5="3e6d478011cdb2c3d04d9b1caad6da1a" zip="bombjack.zip">
+		<part crc="8407917d" name="01_h03t.bin"></part>
+		<part crc="398d4a02" name="02_p04t.bin"></part>
+		<part crc="9f0470d5" name="03_e08t.bin"></part>
+		<part crc="81ec12e6" name="04_h08t.bin"></part>
+		<part crc="e87ec8b1" name="05_k08t.bin"></part>
+
+		<part crc="51eebd89" name="06_l08t.bin"></part>
+		<part crc="9dd98e9d" name="07_n08t.bin"></part>
+		<part crc="3155ee7d" name="08_r08t.bin"></part>
+
+		<part crc="c668dc30" name="09_j01b.bin"></part>
+		<part crc="52a1e5fb" name="10_l01b.bin"></part>
+		<part crc="b68a062a" name="11_m01b.bin"></part>
+		<part crc="1d3ecee5" name="12_n01b.bin"></part>
+		<part repeat="16384">FF</part>
+		<part crc="70e0244d" name="13.1r"></part>
+
+		<part crc="101c858d" name="14_j07b.bin"></part>
+		<part crc="013f58f2" name="15_l07b.bin"></part>
+		<part crc="94694097" name="16_m07b.bin"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3" md5="none">
+		<part>
+		 00 00 FF FF 00 AA 00 02 00 02 00 01 00 00 1F 00 
+		 00 00 90 5F 00 01 30 30 
+		 00 00 90 7F 00 01 30 30 
+		 00 00 90 9F 00 01 30 30 
+		 00 00 90 BF 00 01 30 30 
+		 00 00 90 DE 00 03 53 24 
+		 00 00 90 FE 00 03 2D 24 
+		 00 00 91 1F 00 01 00 00 
+		 00 00 91 3F 00 01 00 00 
+		 00 00 80 E2 00 04 00 00 
+		 00 00 81 00 00 96 00 FF 
+		</part>
+	</rom>
+	<rom index="4"></rom>
+
+	<nvram index="4" size="166"></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>20210430005030</mratimestamp>
+</misterromdescription>

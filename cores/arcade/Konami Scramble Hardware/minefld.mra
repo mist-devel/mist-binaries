@@ -1,6 +1,8 @@
 <misterromdescription>
     <name>Minefield</name>
     <rbf>scramble</rbf>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Fire Missiles,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
 	<dip bits="7"   name="Lives"       ids="3,5"/>
 	<dip bits="8,9" name="Difficulty"  ids="Easy,Medium,Hard,Hardest"/>

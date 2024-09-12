@@ -6,6 +6,8 @@
 	<manufacturer>bootleg</manufacturer>
 	<setname>victory</setname>
         <rbf>galaxian</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
         <switches default="00,FF,F7">
                 <dip bits="18" name="Lives" ids="2,3"/>
                 <dip bits="19" name="Cabinet" ids="Upright,Cocktail"/>

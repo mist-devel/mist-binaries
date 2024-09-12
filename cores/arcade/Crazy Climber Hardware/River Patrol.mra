@@ -22,10 +22,9 @@
 	<flip></flip>
 
 	<players>2 (alternating)</players>
-	<joystick>8-way</joystick>
-	<special_controls>twin stick</special_controls>
-	<num_buttons>4</num_buttons>
-	<button_names></button_names>
+	<joystick>4-way</joystick>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Accelerate,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 
 	<switches default="10" base="8">
 		<dip bits="0,1"   name="Coinage" ids="1C_1C,1C_2C,2C_1C,Free Play"/>

@@ -1,0 +1,63 @@
+<misterromdescription>
+	<name>Pleiads (Tehkan)</name>
+	<mameversion>0220</mameversion>
+	<setname>pleiads</setname>
+	<mratimestamp>20200430150001</mratimestamp>
+	<year>1981</year>
+	<manufacturer>Tehkan</manufacturer>
+	<category>Space / Shooter</category>
+	<rbf>phoenix</rbf>
+	<num_buttons>2</num_buttons>
+	<buttons default="B,A,Start,Select" names="Fire,Hyperspace,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
+	<switches default="0" base="8">
+		<dip bits="0,1" ids="3,4,5,6" name="Lives"></dip>
+		<dip bits="2,3" ids="3K 30K,4K 40K,5K 50K,6K 60K" name="Bonus Life"></dip>
+		<dip bits="4"   ids="Off,On" name="Demo Sounds"></dip>
+	</switches>
+
+	<rom index="1"><part>01</part></rom>
+	<rom index="0" zip="pleiads.zip" md5="7ef2e34b4f4c55dbfb991b4728f4d798">
+		<part crc="960212c8" name="ic47.r1"/>
+		<part crc="b254217c" name="ic48.r2"/>
+		<part crc="87e700bb" name="ic47.bin"/>
+		<part crc="2d5198d0" name="ic48.bin"/>
+		<part crc="49c629bc" name="ic51.r5"/>
+		<part crc="f1a8a00d" name="ic50.bin"/>
+		<part crc="b5f07fbc" name="ic53.r7"/>
+		<part crc="b1b5a8a6" name="ic52.bin"/>
+		<part crc="4e30f9e7" name="ic23.bin"/>
+		<part crc="5188fc29" name="ic24.bin"/>
+		<part crc="85866607" name="ic39.bin"/>
+		<part crc="a841d511" name="ic40.bin"/>
+
+		<part crc="e38eeb83" name="7611-5.33"/>
+		<part crc="7a1bcb1e" name="7611-5.26"/>
+	</rom>
+	<rom index="3" md5="none">
+		<part>
+		 00 00 00 00 00 FF 00 02 00 02 00 01 00 FF 00 00
+		 00 00 43 89 00 03 00 00 
+		 00 00 41 E1 00 01 20 20 
+		 00 00 41 C1 00 01 20 20 
+		 00 00 41 A1 00 01 20 20 
+		 00 00 41 81 00 01 20 20 
+		 00 00 41 61 00 01 20 20 
+		 00 00 41 41 00 01 20 20 
+		 00 00 43 81 00 03 00 00 
+		 00 00 43 01 00 01 20 20 
+		 00 00 42 E1 00 01 20 20 
+		 00 00 42 C1 00 01 20 20 
+		 00 00 42 A1 00 01 20 20 
+		 00 00 42 81 00 01 20 20 
+		 00 00 42 61 00 01 20 20 
+		 00 00 43 85 00 03 00 00 
+		 00 00 40 C1 00 01 20 20 
+		 00 00 40 A1 00 01 20 20 
+		 00 00 40 81 00 01 20 20 
+		 00 00 40 61 00 01 20 20 
+		 00 00 40 41 00 01 20 20 
+		 00 00 40 21 00 01 20 20 
+		</part>
+	</rom>
+	<nvram index="4" size="27"/>
+</misterromdescription>

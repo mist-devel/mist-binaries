@@ -18,7 +18,8 @@
 		<dip bits="1" name="Demo Sound" ids="On,Off"/>
 		<dip bits="2,3" name="Lives" ids="1,4,2,3"/>
 	</switches>
-	<buttons names="Shoot,Direction Change,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,Start,Select,R,L"/>
+	<num_buttons>2</num_buttons>
+	<buttons default="B,A,Start,Select" names="Shoot,Direction Change,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<rom index="1">
 		<part>13</part>
 	</rom>

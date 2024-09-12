@@ -7,6 +7,8 @@
 	<manufacturer>Valadon Automation</manufacturer>
 	<category>Maze</category>
 	<rbf>bagman</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Grab/Release,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="FD" base="8">
 		<dip bits="0"   name="Coinage" ids="2c/1cr,1c/1cr"/>
 		<dip bits="1,2" name="Lives" ids="5,4,3,2"/>

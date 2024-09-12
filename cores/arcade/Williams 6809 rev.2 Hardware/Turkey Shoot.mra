@@ -1,0 +1,61 @@
+<misterromdescription>
+    <name>Turkey Shoot</name>
+    <mameversion>0216</mameversion>
+    <mratimestamp>201911270000</mratimestamp>
+    <year>1980</year>
+    <manufacturer>Williams</manufacturer>
+    <setname>tshoot</setname>
+    <rbf>williams2</rbf>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Gobble,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
+    <rom index="1"><part>0</part></rom>
+
+    <rom index="0" zip="tshoot.zip" md5="e729f3020b61ddf39d1c77a649e5249f" type="merged|nonmerged">
+	<!-- bank A -->
+	<part name="rom17.ic26"/>
+	<part name="rom15.ic24"/>
+	<part name="rom17.ic26"/>
+	<part name="rom15.ic24"/>
+
+	<!-- bank B -->
+	<part name="rom16.ic25"/>
+	<part name="rom14.ic23"/>
+	<part name="rom13.ic21"/>
+	<part name="rom12.ic19"/>
+
+	<!-- bank C -->
+	<part name="rom11.ic18"/>
+	<part name="rom9.ic16"/>
+	<part name="rom7.ic14"/>
+	<part name="rom5.ic12"/>
+
+	<!-- bank D -->
+	<part name="rom10.ic17"/>
+	<part name="rom8.ic15"/>
+	<part name="rom6.ic13"/>
+	<part name="rom4.ic11"/>
+
+	<!-- offset: 20000 -->
+
+	<!-- prog2 -->
+	<part name="rom2.ic9"/>
+	<part name="rom3.ic10"/>
+
+	<!-- prog1 -->
+	<part name="rom18.ic55"/>
+
+	<!-- sound -->
+	<part name="rom1.ic8"/>
+
+	<!-- offset: 25000 -->
+
+	<!-- graph1,2,3 -->
+	<interleave output="32">
+		<part name="rom20.ic57" map="0001"/>
+		<part name="rom21.ic58" map="0010"/>
+		<part name="rom19.ic41" map="0100"/>
+		<part name="rom19.ic41" map="1000"/>
+	</interleave>
+
+    </rom>
+</misterromdescription>

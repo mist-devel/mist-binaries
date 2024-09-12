@@ -8,6 +8,8 @@
     <category>Movie / TV / Comic</category>
     <category>Sports / Speed Ball</category>
     <rbf>mcr3</rbf>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Fire,Deflect,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="1">
 	<part>08</part>
     </rom>

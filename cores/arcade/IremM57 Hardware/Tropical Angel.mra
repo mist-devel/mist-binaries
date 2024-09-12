@@ -25,7 +25,7 @@
   <joystick>2-way</joystick>
   <special_controls></special_controls>
   <num_buttons>2</num_buttons>
-  <buttons default="A,B,Start,Select" names="Gas,Reverse,Start,Coin"></buttons>
+  <buttons default="B,A,Start,Select" names="Gas,Reverse,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 
   <switches default="00,02" base="8" page_id="1" page_name="Switches">
     <!-- DSW1 -->

@@ -7,6 +7,8 @@
     <category>Action</category>
     <rbf>MCR2</rbf>
     <setname>tron</setname>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Fire/Throttle,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
 	<dip bits="8"    name="Allow Continue" ids="No,Yes"/>
     </switches>

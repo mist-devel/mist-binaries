@@ -1,0 +1,66 @@
+<misterromdescription>
+    <name>Joust 2 - Survival of the Fittest (revision 2)</name>
+    <mameversion>0216</mameversion>
+    <mratimestamp>201911270000</mratimestamp>
+    <year>1980</year>
+    <manufacturer>Williams</manufacturer>
+    <setname>joust2</setname>
+    <rbf>williams2</rbf>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Flap,Transform,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
+    <rom index="1"><part>1</part></rom>
+
+    <rom index="0" zip="joust2.zip" md5="343c8f3f760b87535732525c747ac2b9" type="merged|nonmerged">
+	<!-- bank A -->
+	<part name="cpu_2732_ic26_rom19_rev1.10j"/>
+	<part name="cpu_2732_ic24_rom17_rev1.10h"/>
+	<part name="cpu_2732_ic22_rom15_rev1.9j"/>
+	<part name="cpu_2732_ic20_rom13_rev1.9h"/>
+
+	<!-- bank B -->
+	<part name="cpu_2732_ic25_rom18_rev1.10i"/>
+	<part name="cpu_2732_ic23_rom16_rev1.10g"/>
+	<part name="cpu_2732_ic21_rom14_rev1.9i"/>
+	<part name="cpu_2732_ic19_rom12_rev1.9g"/>
+
+	<!-- bank C -->
+	<part name="cpu_2732_ic18_rom11_rev1.8j"/>
+	<part name="cpu_2732_ic16_rom9_rev2.8h"/>
+	<part name="cpu_2732_ic14_rom7_rev2.6j"/>
+	<part name="cpu_2732_ic12_rom5_rev2.6h"/>
+
+	<!-- bank D -->
+	<part name="cpu_2732_ic17_rom10_rev1.8i"/>
+	<part name="cpu_2732_ic15_rom8_rev1.8g"/>
+	<part name="cpu_2732_ic13_rom6_rev2.6i"/>
+	<part name="cpu_2732_ic13_rom6_rev2.6i"/>
+
+	<!-- offset: 20000 -->
+
+	<!-- prog2 -->
+	<part name="cpu_2732_ic9_rom3_rev2.4d"/>
+	<part name="cpu_2732_ic10_rom4_rev2.4f"/>
+
+	<!-- prog1 -->
+	<part name="cpu_2732_ic55_rom2_rev1.4c"/>
+
+	<!-- sound -->
+	<part name="cpu_2764_ic8_rom1_rev1.0f"/>
+
+	<!-- offset: 25000 -->
+
+	<!-- graph1,2,3 -->
+	<interleave output="32">
+		<part name="vid_27128_ic57_rom20_rev1.8f" map="0001"/>
+		<part name="vid_27128_ic58_rom21_rev1.9f" map="0010"/>
+		<part name="vid_27128_ic41_rom22_rev1.9d" map="0100"/>
+		<part name="vid_27128_ic41_rom22_rev1.9d" map="1000"/>
+	</interleave>
+
+	<!-- extra sound board -->
+	<part name="snd_27256_rom23_rev1.u4"/>
+	<part name="snd_27256_rom24_rev1.u19"/>
+	<part name="snd_27256_rom25_rev1.u20"/>
+
+    </rom>
+</misterromdescription>

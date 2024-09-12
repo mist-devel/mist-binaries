@@ -25,7 +25,7 @@
 	<joystick>8-way</joystick>
 	<special_controls></special_controls>
 	<num_buttons>3</num_buttons>
-	<buttons default="Y,B,A,Start,R,Select,L" names="Power,Attack,Crouch,Start P1,Coin,Start P2,Pause"></buttons>
+	<buttons default="B,A,X,Start,Select" names="Power,Attack,Crouch,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	
 	<switches default="00,45,00" base="8" page_id="1" page_name="Switches">
 		<dip bits="0,3"   name="Credits A" ids="1c/1cr,1c/2cr,1c/3cr,1c/4cr,1c/5cr,1c/7cr,1c/6cr,2c/1cr,2c/3cr,3c/1cr,2c/5cr,3c/2cr,3c/4cr,4c/3cr,4c/1cr,Free Play"/>

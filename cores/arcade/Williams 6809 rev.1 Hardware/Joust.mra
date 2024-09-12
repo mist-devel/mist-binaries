@@ -3,6 +3,8 @@
     <mameversion>0209</mameversion>
     <rbf>robotron</rbf>
     <setname>joust</setname>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Flap,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="1"><part>1</part></rom>
     <rom index="0" zip="joust.zip" md5="190c1b26e2103232a58405f8ebdd752c" type="merged">
 	<part name="3006-13.1b"/>

@@ -24,9 +24,8 @@
 	<players>2 (alternating)</players>
 	<joystick>4-way</joystick>
 	<special_controls></special_controls>
-	<num_buttons>1</num_buttons>
-	<button_names></button_names>
-
+	<num_buttons>0</num_buttons>
+	<buttons default="Start,Select" names="-,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="FF,FF,E9" base="8" page_id="1" page_name="Switches">
 		<dip bits="16,17" ids="2c/1cr,1c/1cr,1c/2cr,Free Play" name="Coinage" values="3,1,2,0"></dip>
 		<dip bits="18,19" ids="1,2,3,4" name="Lives"></dip>

@@ -8,6 +8,8 @@
 	<category>Maze</category>
 	<category>Platform / Water Diving</category>
 	<rbf>galaxian</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Action,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="00,5F,00">
 		<dip bits="16" name="Bonus Life After" ids="10000,15000"/>
 		<dip bits="17" name="Difficulty" ids="Easy,Hard"/>

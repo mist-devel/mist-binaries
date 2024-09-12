@@ -2,6 +2,8 @@
     <name>Lost Tomb</name>
     <mameversion>0209</mameversion>
     <rbf>scramble</rbf>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Whip,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
 	<dip bits="7,8"  name="Lives"       ids="3,5,Free Play,Invuln."/>
 	<dip bits="10"   name="Demo Sounds" ids="Off,On"/>

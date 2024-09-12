@@ -4,6 +4,8 @@
     <mratimestamp>201912310000</mratimestamp>
     <manufacturer>Bally Midway</manufacturer>
     <setname>spyhunt</setname>
+    <num_buttons>5</num_buttons>
+    <buttons default="B,A,X,Y,L,Start,Select" names="Oil Slick,Smoke Screen,Machine Gun,Missiles,Weapons Van,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="0" zip="spyhunt.zip" md5="83494589c7ec76729e0d776d999e3a70" type="merged|nonmerged">
 	<part name="spy-hunter_cpu_pg0_2-9-84.6d"/>
 	<part name="spy-hunter_cpu_pg1_2-9-84.7d"/>

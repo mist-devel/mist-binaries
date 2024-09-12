@@ -25,8 +25,8 @@
 	<players>1</players>
 	<joystick></joystick>
 	<special_controls>paddle</special_controls>
-	<num_buttons>0</num_buttons>
-	<buttons default="A,Start,Select,R,L" names="Gear,-,-,-,Start 1P,Start 2P,Coin,Pause"></buttons>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Gear,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 
 	<switches base="16" default="00,00,00">
 		<dip bits="16,17" ids="1C_1C,2C_1C,1C_2C,2C_3C" name="Coinage"></dip>

@@ -19,7 +19,8 @@
 		<dip bits="32" ids="No,Yes" name="Freeplay"></dip>
 		<dip bits="25" ids="Off,On" name="Overclock (flicker)"></dip>
 	</switches>
-	<buttons names="Fire,-,-,-,Start 1P,Start 2P,Coin" default="A,Start,Select,R"/>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<rom index="0" zip="polaris.zip" md5="none">
 		<part crc="7d41007c" name="ps01-1.ic71"/>
 		<part crc="9a5c8cb2" name="ps02-9.ic70"/>

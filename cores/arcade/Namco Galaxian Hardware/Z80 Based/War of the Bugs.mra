@@ -8,6 +8,8 @@
 	<category>Maze / Bugs</category>
 	<category>Maze / Centipede</category>
         <rbf>galaxian</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
         <switches default="00,3F,F2">
                 <dip bits="5"     name="Cabinet" ids="Upright,Cocktail"/>
                 <dip bits="16,17" name="Lives" ids="1,2,3,4"/>

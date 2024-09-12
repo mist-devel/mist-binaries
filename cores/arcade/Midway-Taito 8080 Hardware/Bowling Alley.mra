@@ -17,7 +17,8 @@
 		<dip bits="5"   name="Difficulty" ids="Hard,Easy"/>
 		<dip bits="6"   name="Cabinet" ids="Upright,Cocktail(not working)"/>
 	</switches>
-	<buttons names="Fire,-,-,-,Start 1P,Start 2P,Coin" default="A,Start,Select,R"/>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<rom index="0" zip="bowler.zip" md5="none">
 		<part crc="74c29b93" name="h.cpu"/>
 		<part crc="ca26d8b4" name="g.cpu"/>

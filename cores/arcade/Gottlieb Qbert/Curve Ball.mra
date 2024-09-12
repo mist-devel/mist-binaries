@@ -8,7 +8,8 @@
 	<manufacturer>Gottlieb</manufacturer>
 	<category>Platform</category>
 	<rbf>qbert</rbf>
-	<buttons names="Swing,Start 1P,Start 2P,Coin,Service Select,Bunt,Pitch Left,Pitch Right" default="A,Start,Select,R,L,X,B,Y"/>
+	<num_buttons>4</num_buttons>
+	<buttons default="B,A,X,Y,Start,Select" names="Swing,Bunt,Pitch Left,Pitch Right,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="01"  page_id="1" page_name="Switches" base="16">
 		<dip bits="0" name="Difficulty" ids="Easy,Hard"/>
 		<dip bits="3" name="2 player game" ids="1 credit,2 credits"/>

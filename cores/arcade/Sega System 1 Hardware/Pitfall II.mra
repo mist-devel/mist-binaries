@@ -100,5 +100,6 @@
 		<dip name="Allow Continue" bits="13" ids="Yes,No"/>
 		<dip name="Time" bits="14" ids="2 Minutes,3 Minutes"/>
 	</switches>
-	<buttons names="Jump,-,-,-,-,Start 1P,Start 2P,Coin,Pause" default="A,B,X,R,L,Start,Select" count="1"/>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Jump,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 </misterromdescription>

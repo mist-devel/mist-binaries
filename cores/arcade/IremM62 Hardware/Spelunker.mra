@@ -4,6 +4,8 @@
     <setname>spelunkr</setname>
     <manufacturer>Irem</manufacturer>
     <rbf>iremm62</rbf>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Jump,Shoot,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
         <!-- DSW1 -->
         <dip bits="8,9"   name="Energy Decrease" ids="Slow,Medium,Fast,Fastest"/>

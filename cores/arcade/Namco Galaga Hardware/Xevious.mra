@@ -1,7 +1,8 @@
 <misterromdescription>
   <name>Xevious</name>
   <rbf>Xevious</rbf>
-
+  <num_buttons>2</num_buttons>
+  <buttons default="B,A,Start,Select" names="Blaster,Zapper,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
   <switches default="FF,FF" base=8>
       <dip bits="0,1"   name="Coin A"  ids="2C_3C,2C_1C,1C_2C,1C_1C"/>
       <dip bits="5,6"   name="Lives"   ids="5,2,1,3"/>

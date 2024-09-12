@@ -3,6 +3,8 @@
     <mameversion>0209</mameversion>
     <rbf>robotron</rbf>
     <setname>sinistar</setname>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Fire,Sinibomb,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="1"><part>6</part></rom>
     <rom index="0" zip="sinistar.zip" md5="d1801e21859efdeabb8d713acbe5db99" type="merged">
 	<part name="sinistar.01"/>

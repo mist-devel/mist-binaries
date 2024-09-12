@@ -7,6 +7,8 @@
     <category>Action</category>
     <rbf>mcr3</rbf>
     <setname>demoderm</setname>
+    <num_buttons>2</num_buttons>
+    <buttons default="B,A,Start,Select" names="Forward,Reverse,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
 	<dip bits="8"    name="Cabinet" ids="2P Upright,4P Cocktail"/>
 	<dip bits="9"    name="Difficulty" ids="Normal,Hard"/>

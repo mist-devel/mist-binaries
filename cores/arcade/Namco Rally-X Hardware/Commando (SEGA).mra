@@ -5,6 +5,8 @@
 	<year>1980</year>
 	<manufacturer>SEGA</manufacturer>
 	<rbf>rallyx</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches base="8">
 		<dip bits="15"     name="Cabinet" ids="Cocktail,Upright"/>
 		<dip bits="14"     name="Difficulty" ids="Easy,Hard"/>

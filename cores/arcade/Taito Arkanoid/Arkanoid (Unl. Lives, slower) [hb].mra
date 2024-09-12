@@ -24,9 +24,8 @@
 	<players>2 (alternating)</players>
 	<joystick></joystick>
 	<special_controls>spinner</special_controls>
-	<num_buttons>0</num_buttons>
-	<button_names></button_names>
-
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="80" page_id="1" page_name="Switches" base="8">
 		<dip bits="0,1" ids="1c/1cr,2c/1cr,1c/2cr,1c/6cr" name="Credits"></dip>
 		<dip bits="2" ids="3,5" name="Lives"></dip>

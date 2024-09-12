@@ -8,7 +8,8 @@
 	<category>Space</category>
 	<setname>futspy</setname>
 	<rbf>zaxxon</rbf>
-
+	<num_buttons2</num_buttons>
+	<buttons default="B,A,Start,Select" names="Fire,Missiles,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="01,00,00,00">
 		<dip bits="24"     name="Cabinet" ids="Cocktail,Upright"/>
 		<dip bits="25"     name="Demo Sounds" ids="Off,On"/>

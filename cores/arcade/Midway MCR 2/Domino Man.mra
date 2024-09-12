@@ -7,6 +7,8 @@
     <category>Action</category>
     <rbf>MCR2</rbf>
     <setname>domino</setname>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Set Domino/Swat,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
 	<dip bits="8"   name="Music" ids="Off,On"/>
 	<dip bits="9"   name="Skin Color" ids="Light,Dark"/>

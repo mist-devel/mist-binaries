@@ -1,0 +1,98 @@
+<misterromdescription>
+	<name>Cosmo Police Galivan (12/26/1985)</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1985</year>
+	<manufacturer>Nichibutsu</manufacturer>
+	<category>Platform</category>
+
+	<setname>galivan</setname>
+	<mameversion>0246</mameversion>
+	<rbf>galivan</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>vertical</rotation>
+	<flip></flip>
+
+	<players>2</players>
+	<joystick>8-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>3</num_buttons>
+	<buttons default="B,A,X,Start,Select" names="Button1,Button2,Button3,-,-,-,Start,Coin,P2 Start,-"></buttons>
+
+	<switches default="30,0e" base="16" page_id="1" page_name="Switches">
+
+		<dip bits="0,1" name="Lives" ids="2,3,4,5"/>
+		<dip bits="2,3" name="Bonus Life" ids="20k/60k,50k/60k,20k/90k,50k/90k"/>
+		<dip bits="4" name="Demo Sounds" ids="On,Off"/>
+		<dip bits="5" name="Cabinet" ids="Upright,Cocktail"/>
+		<dip bits="6" name="Power Invulnerability" ids="No,Yes"/>
+		<dip bits="7" name="Life Invulnerability" ids="No,Yes"/>
+
+		<dip bits="8,9" name="CoinA" ids="2C/1C,1C/1C,1C/2C,Free Play"/>
+		<dip bits="10,11" name="CoinB" ids="3C/1C,2C/3C,1C/3C,1C/6C"/>
+		<dip bits="12" name="Difficulty" ids="Easy,Hard"/>
+		<dip bits="13" name="Flip Screen" ids="Off,On"/>
+
+	</switches>
+
+	<rom index="0" zip="galivan.zip" md5="none">
+
+		<!-- main cpu -->
+		<part name="1.1b" crc="1e66b3f8"/>
+		<part name="2.3b" crc="a45964f1"/>
+		<part name="gv3.4b" crc="82f0c5e6"/>
+
+		<!-- audio cpu -->
+		<part name="gv11.14b" crc="05f1a0e3"/>
+		<part name="gv12.15b" crc="5b7a0d6d"/>
+
+		<!-- gfx1 - chars -->
+		<part name="gv4.13d" crc="162490b4"/>
+
+		<!-- gfx2 - tiles -->
+		<part name="gv7.14f"  crc="eaa1a0db"/>
+		<part name="gv8.15f"  crc="f174a41e"/>
+		<part name="gv9.17f"  crc="edc60f5d"/>
+		<part name="gv10.19f" crc="41f27fca"/>
+
+		<!-- gfx3 - sprites -->
+		<part name="gv14.4f"  crc="03e2229f"/>
+		<part name="gv13.1f"  crc="bca9e66b"/>
+
+		<!-- gfx4 - bg tilemaps -->
+		<part name="gv6.19d"  crc="da38168b"/>
+		<part name="gv5.17d"  crc="22492d2a"/>
+
+		<!-- proms -->
+		<part name="mb7114e.9f"  crc="de782b3e"/>
+		<part name="mb7114e.10f" crc="0ae2a857"/>
+		<part name="mb7114e.11f" crc="7ba8b9d1"/>
+		<part name="mb7114e.2d"  crc="75466109"/>
+
+		<!-- user1 - sprite palette bank -->
+		<part name="mb7114e.7f"  crc="06538736"/>
+
+	</rom>
+
+	<rom index="1">
+	</rom>
+
+	<rom index="2">
+	</rom>
+
+	<rom_3></rom_3>
+	<rom_4></rom_4>
+
+	<nvram></nvram>
+
+	<remark></remark>
+
+	<mratimestamp>202108231828</mratimestamp>
+</misterromdescription>

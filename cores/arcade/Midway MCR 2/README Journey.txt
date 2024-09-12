@@ -16,7 +16,7 @@
 -- Tape Support by Alastair M. Robinson
 
 
-For Use oft the Tape Audio, you need the Sample File sepways.wav. Rename it to Journey.vhd and Copy it to the SD Card
+For Use of the Tape Audio, you need the Sample File sepways.wav. Rename it to Journey.vhd and Copy it to the SD Card
 
 
 ---------------------------------------------------------------------------------

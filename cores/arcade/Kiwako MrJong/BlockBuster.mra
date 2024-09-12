@@ -1,0 +1,39 @@
+<misterromdescription>
+	<name>BlockBuster</name>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<series></series>
+	<year>1983</year>
+	<manufacturer>Kiwako (ECI license)</manufacturer>
+	<category>Puzzle</category>
+	<rbf>mrjong</rbf>
+	<about></about>
+	<resolution>15kHz</resolution>
+	<rotation>vertical</rotation>
+	<flip></flip>
+	<players>2</players>
+	<joystick>4-way</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Button 1,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
+	<rom index="0" zip="blkbustr.zip|mrjong.zip" md5="none">
+		<!-- main cpu -->
+		<part name="6a.bin" crc="9e4b426c"/>
+		<part name="c2.a7"  crc="75070978"/>
+		<part name="8a.bin" crc="0e803777"/>
+		<part name="c4.a8"  crc="c7f5a247"/>
+		<!-- gfx -->
+		<part name="5h.bin" crc="50fba1d4"/>
+		<part name="4h.bin" crc="67dd6c19"/>
+		<!-- prom -->
+		<part name="clr.j7" crc="ee1cf1d5"/>
+		<part name="clr.g5" crc="bcb1e2e3"/>
+	</rom>
+	<rom index="1"></rom>
+	<rom index="2"></rom>
+	<rom_3></rom_3>
+	<rom_4></rom_4>
+	<nvram></nvram>
+	<remark></remark>
+	<!-- <mratimestamp></mratimestamp> -->
+</misterromdescription>

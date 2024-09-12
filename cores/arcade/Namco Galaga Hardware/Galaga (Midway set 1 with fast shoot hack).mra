@@ -26,8 +26,7 @@
 	<joystick>2-way horizontal</joystick>
 	<special_controls/>
 	<num_buttons>1</num_buttons>
-	<button_names/>
-
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="08,68" base="8" page_id="1" page_name="Switches">
 		<dip bits="0"     name="2 credits"   ids="2P game,1P game"/>
 		<dip bits="1,2"   name="Difficulty"  ids="Easy(Rank A),Hardest(Rank D),Hard(Rank C),Medium(Rank B)"/>

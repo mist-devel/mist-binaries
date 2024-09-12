@@ -24,8 +24,8 @@
 	<players>2 (alternating)</players>
 	<joystick></joystick>
 	<special_controls>positional</special_controls>
-	<num_buttons>0</num_buttons>
-	<buttons default="A,Start,Select,R,L" names="Fire,-,-,-,Start 1P,Start 2P,Coin,Pause"></buttons>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 
 	<switches base="16" default="00,00,00">
 		<dip bits="18,19" ids="None,9000,11000,13000" name="Bonus game"></dip>

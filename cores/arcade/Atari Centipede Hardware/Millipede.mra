@@ -9,11 +9,25 @@
 	<category>Maze / Centipede</category>
 	<category>Maze / Spiders</category>
 	<rbf>centiped</rbf>
-	<switches base="8" default="30">
-		<dip bits="0,1" name="Language"       ids="English,German,French,Spanish"/>
-		<dip bits="2,3" name="Bonus"          ids="0,0 1x,0 1x 2x,0 1x 2x 3x"/>
-		<dip bits="6"   name="Credit minimum" ids="1,2"/>
-		<dip bits="7"   name="Coin Counters"  ids="1,2"/>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
+	<switches page_id="1" page_name="Switches" base="8" default="30">
+		<dip bits="0,1"   name="Language"       ids="English,German,French,Spanish"/>
+		<dip bits="2,3"   name="Bonus"          ids="0,0 1x,0 1x 2x,0 1x 2x 3x"/>
+		<dip bits="6"     name="Credit minimum" ids="1,2"/>
+		<dip bits="7"     name="Coin Counters"  ids="1,2"/>
+
+		<dip bits="8"     name="Millipede Head" ids="Easy,Hard"/>
+		<dip bits="9"     name="Beetle"         ids="Easy,Hard"/>
+		<dip bits="10,11" name="Lives"          ids="2,3,4,5"/>
+		<dip bits="12,13" name="Bonus Life"     ids="12000,15000,20000"/>
+		<dip bits="14"    name="Spider"         ids="Easy,Hard"/>
+		<dip bits="15"    name="Starting Score Select" ids="On,Off"/>
+
+		<dip bits="16,17" name="Coinage"        ids="Free Play,1C_2C,1C_1C,2C_1C"/>
+		<dip bits="18,19" name="Right Coin"     ids="*1,*4,*5,*6"/>
+		<dip bits="20"    name="Left Coin"      ids="*1,*2"/>
+		<dip bits="21,23" name="Bonus Coins"    ids="None,3cr/2c,5cr/4c,6cr/4c,6cr/5c,4cr/3c,Demo Mode"/>
 	</switches>
 	<rom index="1"><part>1</part></rom>
 	<rom index="0" zip="milliped.zip" md5="608bf068509574138b195201b359c025">

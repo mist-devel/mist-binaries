@@ -7,6 +7,8 @@
     <category>Action</category>
     <rbf>mcr3</rbf>
     <setname>maxrpm</setname>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Accelerate,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
 	<dip bits="8" name="Free Play" ids="On,Off"/>
     </switches>

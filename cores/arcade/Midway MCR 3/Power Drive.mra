@@ -12,6 +12,8 @@
 	<dip bits="10"  name="Demo Sounds" ids="On,Off"/>
 	<dip bits="11"  name="Rack Advance (cheat)" ids="On,Off"/>
     </switches>
+    <num_buttons>4</num_buttons>
+    <buttons default="B,A,X,Y,Start,Select" names="Right Tire,Left Tire,Low Gear,High Gear,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="1">
 	<part>02</part>
     </rom>

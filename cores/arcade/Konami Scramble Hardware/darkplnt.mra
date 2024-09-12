@@ -2,6 +2,8 @@
     <name>Dark Planet</name>
     <mameversion>0209</mameversion>
     <rbf>scramble</rbf>
+    <num_buttons>3</num_buttons>
+    <buttons default="B,A,X,Start,Select" names="Thrust,Fire,Laser,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <switches>
 	<dip bits="7" name="Lives" ids="3,5"/>
     </switches>

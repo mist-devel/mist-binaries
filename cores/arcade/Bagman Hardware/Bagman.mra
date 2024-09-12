@@ -7,6 +7,8 @@
 	<manufacturer>Valadon Automation</manufacturer>
 	<category>Platform / Extra</category>
 	<rbf>bagman</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Pick Up/Grab Bar,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="F6" base="8">
 		<dip bits="0,1" name="Lives" ids="5,4,3,2"/>
 		<dip bits="2"   name="Coinage" ids="2c/1cr,1c/1cr"/>

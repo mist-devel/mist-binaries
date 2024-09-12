@@ -6,6 +6,8 @@
 	<year>1982</year>
 	<manufacturer>Konami</manufacturer>
 	<rbf>timeplt</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="FF,FF" base="8">
 		<dip bits="3"     name="Intital Energy"    ids="4,6"/>
 		<dip bits="4,5"   name="Lives"             ids="6,5,4,3"/>

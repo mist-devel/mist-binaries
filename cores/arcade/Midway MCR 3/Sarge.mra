@@ -11,6 +11,8 @@
 	<dip bits="9" name="Controls"  ids="2 sticks, 1 stick"/>
 	<dip bits="8" name="Free Play" ids="On,Off"/>
     </switches>
+    <num_buttons>3</num_buttons>
+    <buttons default="B,A,X,Start,Select" names="Fire,Bomb,Switch,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="1">
 	<part>01</part>
     </rom>

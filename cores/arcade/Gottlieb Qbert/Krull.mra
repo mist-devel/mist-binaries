@@ -8,7 +8,8 @@
 	<manufacturer>Gottlieb</manufacturer>
 	<category>Platform</category>
 	<rbf>qbert</rbf>
-	<buttons names="Service Select,Start 1P,Start 2P,Coin" default="A,Start,Select,R"/>
+	<num_buttons>0</num_buttons>
+	<buttons default="Start,Select" names="-,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="01"  page_id="1" page_name="Switches" base="16">
 		<dip bits="0" name="Demo Sounds" ids="On,Off"></dip>
 		<dip bits="1" name="Difficulty" ids="Normal,Hard"></dip>

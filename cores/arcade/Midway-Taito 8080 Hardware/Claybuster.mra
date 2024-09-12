@@ -12,7 +12,8 @@
 	<switches base="16" default="00,00,40">
 		<dip bits="21,22,23"   name="Coinage" ids="1C_1C" values="2"/>
 	</switches>
-	<buttons names="Fire,-,-,-,Start 1P,Start 2P,Coin" default="A,Start,Select,R"/>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<rom index="0" zip="claybust.zip" md5="none">
 		<part crc="90810582" name="0.a1"/>
 		<part crc="5ce6fb0e" name="1.a2"/>

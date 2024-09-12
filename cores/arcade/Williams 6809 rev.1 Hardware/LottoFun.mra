@@ -3,6 +3,8 @@
     <mameversion>0209</mameversion>
     <rbf>Robotron</rbf>
     <setname>lottofun</setname>
+    <num_buttons>1</num_buttons>
+    <buttons default="B,Start,Select" names="Pick Choice,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
     <rom index="1"><part>8</part></rom>
     <rom index="0" zip="lottofun.zip" md5="254f883acf3a9169ef649ea3b5c273c4" type="merged">
 	<part name="vl4e.dat"/>

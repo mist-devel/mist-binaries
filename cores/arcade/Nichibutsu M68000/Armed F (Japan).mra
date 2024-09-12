@@ -1,0 +1,86 @@
+<misterromdescription>
+  <name>Armed F (Japan)</name>
+  <mameversion>0240</mameversion>
+  <setname>armedf</setname>
+  <year>1988</year>
+  <manufacturer>Nichibutsu</manufacturer>
+  <category>Shoot 'em up</category>
+  <rbf>armedf</rbf>
+
+  <switches default="bf,cf" base="16" page_id="1" page_name="Switches">
+    <!-- DSW1 -->
+    <dip name="Lives" bits="0,1" ids="6,5,4,3"/>
+    <dip name="Bonus Life" bits="2,3" ids="40k/80k(E),20k/80k(E),40k/60k(E),20k/60k(E)"/>
+    <dip name="Demo Sounds" bits="4" ids="Off,On"/>
+    <dip name="Cabinet" bits="5" ids="Upright,Cocktail"/>
+    <dip name="Difficulty" bits="6,7" ids="Hardest,Hard,Normal,Easy"/>
+    <!-- DSW2 -->
+    <dip name="Coin A" bits="8,9" ids="Free Play,2/1,1/2,1/1"/>
+    <dip name="Coin B" bits="10,11" ids="2/3,2/1,1/2,1/1"/>
+    <dip name="Allow Continue" bits="12,13" ids="Yes,5,3,No"/>
+    <dip name="Flip Screen" bits="14" ids="On,Off"/>
+    <dip name="Unused" bits="15" ids="On,Off"/>
+  </switches>
+  <num_buttons>2</num_buttons>
+  <buttons default="B,A,Start,Select" names="Beam,Formation,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
+
+  <rom index="0" zip="armedf.zip" md5="none">
+
+    <!-- maincpu - starts at 0x0 -->
+    <interleave output="16">
+      <part name="06.3d" crc="0f9015e2" map="01"/>
+      <part name="01.3f" crc="816ff7c5" map="10"/>
+    </interleave>
+    <interleave output="16">
+      <part name="07.5d" crc="5b3144a5" map="01"/>
+      <part name="02.4f" crc="fa10c29d" map="10"/>
+    </interleave>
+    <interleave output="16">
+      <part name="af_08.rom" crc="d1d43600" map="01"/>
+      <part name="af_03.rom" crc="bbe1fe2d" map="10"/>
+    </interleave>
+    <part repeat="0x20000"> ff</part>
+
+    <!-- foreground - starts at 0x80000 -->
+    <part name="af_04.rom" crc="44d3af4f"/>
+    <part name="af_05.rom" crc="92076cab"/>
+    <part repeat="0x20000"> ff</part>
+
+    <!-- background - starts at 0xc0000 -->
+    <part name="af_14.rom" crc="8c5dc5a7"/>
+    <part name="af_13.rom" crc="136a58a3"/>
+    <part repeat="0x20000"> ff</part>
+
+    <!-- sprite - starts at 0x100000 -->
+    <interleave output="16">
+      <part name="af_11.rom" crc="b46c473c" map="01"/>
+      <part name="af_12.rom" crc="23cb6bfe" map="10"/>
+    </interleave>
+
+    <!-- text - starts at 0x140000 -->
+    <part name="09.11c" crc="5c6993d5"/>
+    <part repeat="0x8000"> ff</part>
+
+    <!-- audiocpu - starts at 0x150000 -->
+    <part name="af_10.rom" crc="c5eacb87"/>
+
+    <!-- extra - starts at 0x160000 -->
+    <part repeat="0x10000"> ff</part>
+
+    <!-- mcu - starts at 0x170000 -->
+    <part repeat="0x10000"> ff</part>
+
+    <!-- nb1414m4 - starts at 0x180000 -->
+    <part repeat="0x4000"> ff</part>
+    <part repeat="0xc000"> ff</part>
+
+    <!-- proms - starts at 0x190000 -->
+    <part repeat="0x4000"> ff</part>
+
+    <!-- Total 0x194000 bytes - 1616 kBytes -->
+  </rom>
+
+  <rom index="1">
+    <part>02</part>
+  </rom>
+</misterromdescription>

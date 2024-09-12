@@ -7,6 +7,8 @@
 	<category>Space / Galaxian</category>
 	<setname>galaxian</setname>
 	<rbf>galaxian</rbf>
+	<num_buttons>1</num_buttons>
+	<buttons default="B,Start,Select" names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
 	<switches default="00,1F,04">
 		<dip bits="7"    name="Service" ids="Off,On"/>
 		<dip bits="6"    name="Test" ids="Off,On"/>
