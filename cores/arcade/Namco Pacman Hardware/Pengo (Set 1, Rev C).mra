@@ -14,7 +14,7 @@
 	<setname>pengo</setname>
 	<parent>pengo</parent>
 	<mameversion>0220</mameversion>
-	<rbf>pacman</rbf>
+	<rbf>pengo</rbf>
 	<about></about>
 
 	<resolution>15kHz</resolution>
