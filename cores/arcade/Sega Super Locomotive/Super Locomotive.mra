@@ -1,0 +1,65 @@
+<misterromdescription>
+    <name>Super Locomotive</name>
+    <mameversion>0266</mameversion>
+    <setname>suprloco</setname>
+    <mratimestamp>20240614</mratimestamp>
+    <year>1982</year>
+    <manufacturer>Sega</manufacturer>
+    <category>Labyrinth / Maze</category>
+    <rbf>SuprLoco</rbf>
+    <about author="Raki" twitter="@RCAVictorCo"></about>
+    <resolution>15kHz</resolution>
+    <rotation>Horizontal</rotation>
+    <players>1</players>
+    <joystick>4-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>2</num_buttons>
+    
+    <switches default="00,7C" base="16" page_id="1" page_name="Switches">
+        <!-- DSW1 -->
+        <dip bits="0,2"         name="Coinage A"    ids="1C1P,1C2P,1C3P,1C6P,2C1P,3C1P,4C1P,5C1P"/>
+        <dip bits="3,5"         name="Coinage B"    ids="1C1P,1C2P,1C3P,1C6P,2C1P,3C1P,4C1P,5C1P"/>
+        <dip bits="6,7"         name="Lives"        ids="2,3,4,5"/>
+        
+        <!-- DSW2 -->
+        <dip bits="8,9"         name="Bonus points" ids="20000,30000,40000,50000"/>
+        <dip bits="11"          name="Free play"    ids="on,off"/>
+        <dip bits="12"          name="Difficulty"   ids="hard,normal"/>
+        <dip bits="13"          name="Invinciblity" ids="on,off"/>
+        <dip bits="14"          name="Name entry"   ids="off,on"/>
+        <dip bits="15"          name="Cabinet type" ids="upright,cocktail"/>
+    </switches>
+
+    <rom index='0' md5="None" type='nonmerged' zip='suprloco.zip'>
+        <!-- game program 0     0x00000-0x03fff -->
+        <part crc="33b02368" name="epr-5226a.37"/>
+        <!-- game program 1     0x04000-0x07fff -->
+        <part crc="a5e67f50" name="epr-5227a.15"/>
+        <!-- game data          0x08000-0x0bfff -->
+        <part crc="a597828a" name="epr-5228.28"/>
+
+        <!-- sprite rom 0       0x0c000-0x0ffff -->
+        <part crc="ee2d3ed3" name="epr-5229.55"/>
+        <!-- sprite rom 1       0x10000-0x11fff -->
+        <part crc="f04a4b50" name="epr-5230.56"/>
+
+        <!-- tile rom 0         0x12000-0x13fff -->
+        <part crc="3b03004e" name="epr-5223.61"/>
+        <!-- tile rom 1         0x14000-0x15fff -->
+        <part crc="6130f93c" name="epr-5224.62"/>
+        <!-- tile rom 2         0x16000-0x17fff -->
+        <part crc="e571fe81" name="epr-5225.63"/>
+        
+        <!-- sound program      0x18000-0x19fff -->
+        <part crc="0aa57207" name="epr-5222.64"/>
+
+        <!-- bpp conversion lut 0x1a000-0x1a3ff -->
+        <part crc="1d4b02cb" name="pr-5219.89"/>
+        <!-- palette rom        0x1a400-0x1a5ff -->
+        <part crc="7b0c8ce5" name="pr-5220.100"/>
+        <!-- tilemap sequencer  0x1a600-0x1a61f -->
+        <part crc="89ba674f" name="pr-5221.7"/>
+    </rom>
+
+    <buttons default="A,B,Start,Select,R,L" names="Attack,Power up,Test,Service,Coin,Start"></buttons>
+</misterromdescription>
