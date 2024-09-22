@@ -1,3 +1,9 @@
+firmware_240922
+===============
+- Minimig: load boot art files from the current directory
+- Lot of USB/HID improvements from Eugene Lozovoy (UzixLS). For a list of changes, refer to https://github.com/mist-devel/mist-firmware/pull/118
+- Helper function for SNES to auto-detect ROM type. This needs an updated core, too.
+
 firmware_240405
 ===============
 - Enable middle mouse button for minimig core (by retrofun)
