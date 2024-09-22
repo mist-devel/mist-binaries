@@ -1,3 +1,6 @@
+**snes_mist_240922.rbf**
+- Auto-detect option for ROM files. Needs fw version *240922*
+
 **TSConf_240921.rbf**
 - New core
 
