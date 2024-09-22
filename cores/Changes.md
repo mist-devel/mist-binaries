@@ -1,3 +1,6 @@
+**TSConf_240921.rbf**
+- New core
+
 **C64_240814.rbf**
 - Support Magic Desk 2 format with 2 MiB size
 - Don't disable REU when a cart is attached, but no IOF line used
