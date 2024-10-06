@@ -1,3 +1,14 @@
+**TSConf_241005.rbf**
+- Mouse: add scroll support
+- Tune JT49 to match sound output as on ZX-Multisound and zxtune
+- Fix covox output to the left channel only
+- Fix time counting when there is no USB-RTC on MIST
+- Fix glitches while reading RTC in Basic
+- Keyboard: change keyboard layout to same as in ZX Evolution
+- Keyboard: fix arrow keys in Basic
+- Keyboard: better handling of simultaneously pressed keys
+- Keyboard: add fifo for scancodes to improve compatibility with some picky software
+
 **snes_mist_240922.rbf**
 - Auto-detect option for ROM files. Needs fw version *240922*
 
