@@ -1,3 +1,9 @@
+**nes_241008.rbf**
+- Real Zapper support (by UzixLS)
+- X/Y as turbo fire buttons (by UzixLS)
+- FAMICON keyboard support
+- A few mapper support enhancements
+
 **TSConf_241005.rbf**
 - Mouse: add scroll support
 - Tune JT49 to match sound output as on ZX-Multisound and zxtune
