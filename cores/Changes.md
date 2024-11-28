@@ -1,3 +1,6 @@
+**colecovision_241128.rbf**
+- Fix 'blend' setting
+
 **nes_241008.rbf**
 - Real Zapper support (by UzixLS)
 - X/Y as turbo fire buttons (by UzixLS)
