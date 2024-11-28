@@ -1,0 +1,24 @@
+<misterromdescription>
+    <name>ABC80_11273</name>
+    <mameversion>0245</mameversion>
+    <setname>abc80_11273</setname>
+    <manufacturer>Luxor</manufacturer>
+    <category>BIOS</category>
+    <rbf>ABC80</rbf>
+    <rotation>horizontal</rotation>
+
+    <rom index="0" zip="abc80.zip|sn74s262.zip" md5="None">
+      <part name="za3506_11273.a5"/>
+      <part name="za3507_11273.a3"/>
+      <part name="za3508_11273.a4"/>
+      <part name="za3509_11273.a2"/>
+
+      <part name="sn74s262"/>
+      <part name="abc80_22.k1"/>
+      <part name="abc80_21.k2"/>
+      <part name="abc80_11.k5"/>
+      <part name="abc80_12.j3"/>
+      <part name="abc80_13.e7"/>
+    </rom>
+
+</misterromdescription>

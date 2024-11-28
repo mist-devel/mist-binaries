@@ -1,3 +1,6 @@
+**ABC80_241128.rbf**
+- New core
+
 **zxspectrum_241128.rbf**
 - Add ZXUNO WiFi support (with the help of an ESP board on UART - thanks to  Eugene Lozovoy)
 - Use X/Y buttons as 7th/8th bits in kempston joystick (Eugene Lozovoy)
