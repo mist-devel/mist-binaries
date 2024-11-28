@@ -1,3 +1,10 @@
+**zxspectrum_241128.rbf**
+- Add ZXUNO WiFi support (with the help of an ESP board on UART - thanks to  Eugene Lozovoy)
+- Use X/Y buttons as 7th/8th bits in kempston joystick (Eugene Lozovoy)
+- Use the MIDI OUT pin for the AY GPIO (like on the original 128K machine)
+- Some small tweaks and menu options (Eugene Lozovoy)
+- Tweak SDRAM to try avoid contention when using the General Sound interface
+
 **colecovision_241128.rbf**
 - Fix 'blend' setting
 

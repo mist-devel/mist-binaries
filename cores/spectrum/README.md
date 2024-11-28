@@ -1,4 +1,4 @@
-# ZX Spectrum 128K for [MIST Board](https://github.com/mist-devel/mist-board/wiki)
+# ZX Spectrum 128K for [MIST](https://github.com/mist-devel/mist-board/wiki) and [SiDi](https://github.com/ManuFerHi/SiDi-FPGA) FPGAs.
 
 Some verilog models from Till Harbaum [Spectrum](https://github.com/mist-devel/mist-board/tree/master/cores/spectrum) core were used in this project.
 
@@ -23,7 +23,9 @@ Some verilog models from Till Harbaum [Spectrum](https://github.com/mist-devel/m
 - Covox at #FB port and SounDrive at #0F,#1F,#4F,#5F ports.
 - Currah uSpeech interface.
 - General Sound Interface.
-- Audio in from real [tape device](http://www.atari-forum.com/viewtopic.php?p=298401#p298401).
+- WiFi support.
+- Audio in/out to real [tape device](http://www.atari-forum.com/viewtopic.php?p=298401#p298401).
+- MIDI output.
 
 **Core requires MiST firmware update to build 2016/06/26 or newer!**
 
@@ -31,8 +33,6 @@ Some verilog models from Till Harbaum [Spectrum](https://github.com/mist-devel/m
 Copy the *.rbf file at the root of the SD card. You can rename the file to core.rbf if you want the MiST to load it automatically at startup.
 Copy [spectrum.rom](https://github.com/mist-devel/mist-binaries/tree/master/cores/spectrum/spectrum.rom) file to the root of SD card.
 **Note:** always update spectrum.rom together with core to make sure you're using compatible ROM version. ROM is not always compatible with all releases (but always compatible with latest release), thus you need to keep the ROM if you want to use older version of core.
-
-For PAL mode (RGBS output) you need to put [mist.ini](https://github.com/sorgelig/ZX_Spectrum-128K_MIST/tree/master/releases/mist.ini) file to the root of SD card. Set the option **scandoubler_disable** for desired video output.
 
 ### Notes about supported formats:
 **TRD** is TR-DOS image used with Beta Disk Interface (BDI). To use TR-DOS you need to choose TRD image in OSD first. In 128K mode use menu to enter TR-DOS.
@@ -73,6 +73,8 @@ You can control CPU speed by following keys:
 - F8 - 56MHz
 - F9 - pause/continue
 
+Also you can control CPU speed within OSD menu. Latest used control method takes priority.
+
 It's useful to switch to maximum speed when you are loading tape in normal mode. Due to SDRAM speed limitation 28MHz and 56MHz speeds include wait states, so effective CPU speed is lower than nominal.
 
 ### Memory Configurations with extra RAM:
@@ -103,6 +105,13 @@ You will be able to use bare Multiface ROM by simple subsequent presses of **RSh
 **Note:** Multiface 128 expose its port, thus if game has protection against Multiface, it won't work, unless you press (o)ff before you exit from the Multiface menu. Thus using +D snapshot is prefered.
 When using the Spectrum +2A/3 mode, the Multiface 3 is supported. There's no Genie for the +3, but there are useful toolkit routines in the stock ROM.
 
+### WiFi:
+You can use ESP8266 WiFi module connected to MIST's UART.
+Recommended ESP's firmware version is ESP8266_NONOS_SDK-3.0.6 or newer.
+WiFi is implemented in way compatible with ZX-UNO, so all software is compatible.
+For example you can use [Moon Rabbit](https://github.com/nihirash/moon-rabbit-zx) gopher browser to play some music online or watch images.
+For reliable operation you should set high CPU frequency using F8 key.
+
 ### MMC Cards:
 DivMMC or ZXMMC compatible SD Card interfaces can be enabled in the OSD. DivMMC optionally supports 8K built in ROM and 256K RAM. The default **spectrum.rom** file contains ESXDOS 0.8.8 preloaded
 into the ROM. This is only DIVMMC.BIN, you'll need /BIN /SYS and /TMP also on the default SD Card (or in a **spectrum.vhd** file). Multiface and PlusD NMI menus are disabled when
@@ -120,9 +129,6 @@ Each part is 16k, except uSpeech, which is 4k.
 - Alt+F11 - cold reset
 - Ctrl+F11 - warm reset with auto load
 - F12 - OSD menu
-
-### Download precompiled binaries and system ROMs:
-Go to [mist-binaries](https://github.com/mist-devel/mist-binaries/tree/master/cores/spectrum).
 
 ### Source code
 - https://github.com/sorgelig/ZX_Spectrum-128K_MIST
