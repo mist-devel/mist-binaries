@@ -1,3 +1,6 @@
+**zxspectrum_241203.rbf**
+- Allow disabling Covox/SounDrive
+
 **ABC80_241128.rbf**
 - New core
 
