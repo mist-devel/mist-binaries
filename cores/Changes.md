@@ -1,3 +1,6 @@
+**c16_250114.rbf**
+- Implement the MOS 6551 UART
+
 **Sorcerer_250114.rbf**
 - New core
 
