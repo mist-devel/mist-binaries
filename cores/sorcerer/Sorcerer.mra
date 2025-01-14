@@ -1,0 +1,18 @@
+<misterromdescription>
+    <name>Exidy Sorcerer</name>
+    <mameversion>0245</mameversion>
+    <setname>sorcerer</setname>
+    <manufacturer>Exidy</manufacturer>
+    <category>BIOS</category>
+    <rbf>Sorcerer</rbf>
+    <rotation>horizontal</rotation>
+
+    <rom index="0" zip="sorcerer.zip" md5="None">
+      <part name="exmo1-1.1e"/>
+      <part name="exmo1-2.2e"/>
+
+      <part name="exchr-1.20d"/>
+      <part name="bruce.15b"/>
+    </rom>
+
+</misterromdescription>

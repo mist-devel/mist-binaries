@@ -1,3 +1,6 @@
+**Sorcerer_250114.rbf**
+- New core
+
 **zxspectrum_241203.rbf**
 - Allow disabling Covox/SounDrive
 
