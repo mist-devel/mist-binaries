@@ -1,3 +1,10 @@
+firmware_250117
+===============
+- Fix incorrect joystick numbering when joystick_disable_swap=1 (by UzixLS)
+- Fix handling multiple report ID's in the HID descriptors
+- Fix the obsolete PLAY AUDIO TRACK/INDEX ATAPI command
+- Clean up USB button reporting
+
 firmware_240922
 ===============
 - Minimig: load boot art files from the current directory
