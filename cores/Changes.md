@@ -1,3 +1,6 @@
+**CoCo2_250212.rbf**
+- New core
+
 **tgfx16_250115.rbf**
 - Updates from upstream (by dshadoff and srg320)
 
