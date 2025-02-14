@@ -1,0 +1,21 @@
+<misterromdescription>
+    <name>ColorComputer/Dragon</name>
+    <mameversion>0245</mameversion>
+    <setname>coco2</setname>
+    <manufacturer>Tandy/Dragon</manufacturer>
+    <category>BIOS</category>
+    <rbf>Coco2</rbf>
+    <rotation>horizontal</rotation>
+
+    <rom index="0" zip="coco.zip|coco_fdc.zip|dragon32.zip|dragon_fdc.zip" md5="None">
+      <part name="bas12.rom"/>
+      <part name="extbas11.rom"/>
+      <part name="disk11.rom"/>
+
+      <part name="d32.rom"/>
+      <part name="d64plus/d64_1.rom"/>
+      <part name="d64plus/d64_2.rom"/>
+      <part name="ddos10.rom"/>
+    </rom>
+
+</misterromdescription>
