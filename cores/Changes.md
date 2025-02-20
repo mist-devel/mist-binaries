@@ -1,3 +1,7 @@
+**TSConf_250219.rbf**
+- Always use cache for ROM - this fixes Bomberman Evolution
+- MIDI output is now handled on both AY chips
+
 **CoCo2_250212.rbf**
 - New core
 
