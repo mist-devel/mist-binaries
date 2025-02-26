@@ -1,3 +1,8 @@
+**apple2e_250226.rbf**
+- Selectable color palettes by Newsdee
+- CFFA 2.0 compatible IDE interface in Slot 7
+- Super Serial Card RS232 interface in Slot 2
+
 **TSConf_250219.rbf**
 - Always use cache for ROM - this fixes Bomberman Evolution
 - MIDI output is now handled on both AY chips
