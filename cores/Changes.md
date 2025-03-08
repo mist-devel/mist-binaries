@@ -1,3 +1,8 @@
+**C64_250308.rbf**
+- Exchange control port connections (port1 -> PB, port2 -> PA)
+- Implement NEOS Mouse
+- Fix 1351 for Duck Hunt (MSB always '1')
+
 **apple2e_250226.rbf**
 - Selectable color palettes by Newsdee
 - CFFA 2.0 compatible IDE interface in Slot 7
