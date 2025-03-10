@@ -1,3 +1,8 @@
+**plusToo_250310.rbf**
+- Fix scancode for up-arrow and numpad key mappings (by robinsonb5)
+- Fix sound with direct VIA control (by darylrichards)
+- Control the Caps Lock LED on the keyboard
+
 **C64_250308.rbf**
 - Exchange control port connections (port1 -> PB, port2 -> PA)
 - Implement NEOS Mouse
