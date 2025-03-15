@@ -1,3 +1,8 @@
+firmware_250315
+===============
+- Support prof'I'le strings in cores
+- Allow selecting IDE hardfiles from the OSD
+
 firmware_250117
 ===============
 - Fix incorrect joystick numbering when joystick_disable_swap=1 (by UzixLS)
