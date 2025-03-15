@@ -27,7 +27,7 @@ Some verilog models from Till Harbaum [Spectrum](https://github.com/mist-devel/m
 - Audio in/out to real [tape device](http://www.atari-forum.com/viewtopic.php?p=298401#p298401).
 - MIDI output.
 
-**Core requires MiST firmware update to build 2016/06/26 or newer!**
+**Core requires firmware build 2025/03/14 or newer!**
 
 ### Installation:
 Copy the *.rbf file at the root of the SD card. You can rename the file to core.rbf if you want the MiST to load it automatically at startup.

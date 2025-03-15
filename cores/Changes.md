@@ -1,3 +1,7 @@
+**zxspectrum_250315.rbf**
+- Add profile strings to quicly select a machine
+- Connect the AY PIO used for RS232 to UART RX/TX pins
+
 **plusToo_250310.rbf**
 - Fix scancode for up-arrow and numpad key mappings (by robinsonb5)
 - Fix sound with direct VIA control (by darylrichards)
