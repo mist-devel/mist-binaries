@@ -38,4 +38,4 @@ For further settings, please refer to the [CFFA 2.1 manual](https://dreher.net/p
 When the core boots, the IDE interface automatically mounts appleII.hd0 as master IDE drive and appleII.hd1 as slave.
 Later on, you can select different images via the OSD menu.
 
-The core requires firmware version **2501314** or later.
+The core requires firmware version **250314** or later.
