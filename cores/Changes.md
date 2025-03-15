@@ -1,3 +1,8 @@
+**apple2e_250315.rbf**
+- Support saving/loading of CFFA's EEPROM
+- Allow selecting the IDE image in the OSD (need fw 250315)
+- AppleMouse // support in Slot 5
+
 **zxspectrum_250315.rbf**
 - Add profile strings to quicly select a machine
 - Connect the AY PIO used for RS232 to UART RX/TX pins
