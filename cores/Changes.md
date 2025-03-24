@@ -1,3 +1,6 @@
+**minimig_mist_rtg_250324.rbf**
+- Major update, refer to git history for changes
+
 **apple2e_250315.rbf**
 - Support saving/loading of CFFA's EEPROM
 - Allow selecting the IDE image in the OSD (need fw 250315)
