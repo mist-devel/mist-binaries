@@ -1,3 +1,11 @@
+firmware_250604
+===============
+- Reconfigurable DB9 mapping in OSD
+- usb: fix possible hang during parsing malformed device descriptor
+- Fix extension handling in file selection (affects Gameboy core)
+- Add 68EC020 to Minimig CPU types
+- Add IMG extension to hardfile selection in Atari ST cores
+
 firmware_250315
 ===============
 - Support prof'I'le strings in cores
