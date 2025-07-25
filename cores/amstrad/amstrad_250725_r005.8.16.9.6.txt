@@ -1,0 +1,8 @@
+Realise (debug hexa unplugged so it's more stable)
+
+Manual installation tests :
+Use a 32GB SDCARD Alloc 32KB SDHC + Windows 11 + "Mobility Lab" Hub (USB+SDCARD+)
+Defrag using WinContig : select File>object>Folder and .. select your sdcard device, then do Action>Defrag
+
+Test :
+"come join us" 2024 pouet.net
