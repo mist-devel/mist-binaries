@@ -1,0 +1,8 @@
+version alpha
+
+3 modes ! color, green, orange
+Wait_n removed from menu OSD
+
+TODO :
+-relink original signal in conf
+-and add via menu OSD, for old VGA screen
