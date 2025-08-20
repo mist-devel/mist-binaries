@@ -1,0 +1,4 @@
+Experimental version
+Revision of 16kHz (4th menu : VGA:scandb50Hz) => not tested
+Revision of 32kHz (3th menu : VGA:original (scart signal, you can press enter if screen turn black) => not tested,
+cool osd menu
