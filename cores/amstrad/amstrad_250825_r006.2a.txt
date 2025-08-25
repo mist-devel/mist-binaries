@@ -1,0 +1,5 @@
+scandoubler Sorgelig, wip (I don't have a good 32kHz screen, so I'm blind)
+scandoubler is on MiST menu (F12) => press VGA: 3 times, and another one time for give up. Not tested.
+I removed 16kHz output because once again : I don't have screen ^^'
+
+I fill scandoubler before here didn't run a true 32kHz.
