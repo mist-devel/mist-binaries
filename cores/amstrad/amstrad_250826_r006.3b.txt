@@ -1,0 +1,3 @@
+scanlines in orange mode (VGA: scanlines72Hz and Screen: THSF_orange
+
+SCART not testable by me yet, I still don't get TV, but it's a refactor scandoubler copied from sorgelig, but 2x, not 4x, so I don't know if it is running, blind another type. Choose OSD VGA:, press 3x "enter", if signal is off, just press another time "enter" to come back into VGA vram version.
