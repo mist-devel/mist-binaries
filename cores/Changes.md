@@ -1,3 +1,11 @@
+**C64_250908.rbf**
+- IDX file support (need new firmware)
+- Profile strings for quick machine selection
+- Reset doesn't reset current tape position
+- Fully connect external UART pins
+- Replace MIDI ACIA
+- Press the right SHIFT for combined keys (like F2/F4/F6/F8)
+
 **ABC80_250908.rbf**
 - Support the swedish caracter set (regenerate ROMs!)
 - Keyboard update

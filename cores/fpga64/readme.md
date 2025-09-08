@@ -37,7 +37,7 @@ memory of the embedded c64. After injection the program can simply be
 started using the basic "run" command. As shown in the beginning of this
 video: https://www.youtube.com/watch?v=tnboiECYXVo
 
-You need at least firmware version **200311**!
+You need at least firmware version **250908**!
 
 ## Dual-SID
 
