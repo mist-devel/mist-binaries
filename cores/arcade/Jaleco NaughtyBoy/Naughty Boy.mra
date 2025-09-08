@@ -1,0 +1,39 @@
+<misterromdescription>
+	<name>Naughty Boy</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Jaleco</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1982</year>
+	<manufacturer>Jaleco</manufacturer>
+	<category>Shooter - Gallery</category>
+	<setname>naughtyb</setname>
+	<rbf>NBoy</rbf>
+
+	<buttons names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
+
+	<rom index="1"><part>0</part></rom>
+	<rom index='0' md5='8dbe444fd490d709c29e618340fcca0c' type='merged|nonmerged|split' zip='naughtyb.zip'>
+		<part crc="f6e1178e" name="1.30"></part>
+		<part crc="b803eb8c" name="2.29"></part>
+		<part crc="004d0ba7" name="3.28"></part>
+		<part crc="3c7bcac6" name="4.27"></part>
+		<part crc="ea80f39b" name="5.26"></part>
+		<part crc="66d9f942" name="6.25"></part>
+		<part crc="00caf9be" name="7.24"></part>
+		<part crc="17c3b6fb" name="8.23"></part>
+
+		<part crc="d692f9c7" name="15.44"></part>
+		<part crc="d3ba8b27" name="16.43"></part>
+		<part crc="c1669cd5" name="13.46"></part>
+		<part crc="eef2c8e5" name="14.45"></part>
+
+		<part crc="75ec9710" name="11.48"></part>
+		<part crc="ef0706c3" name="12.47"></part>
+		<part crc="8c8db764" name="9.50"></part>
+		<part crc="c97c97b9" name="10.49"></part>
+		</rom>
+</misterromdescription>

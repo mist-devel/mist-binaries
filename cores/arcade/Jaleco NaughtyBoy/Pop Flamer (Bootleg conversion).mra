@@ -1,0 +1,33 @@
+<misterromdescription>
+  <name>Pop Flamer (Bootleg conversion)</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Jaleco</version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1982</year>
+	<manufacturer>Jaleco</manufacturer>
+	<category>Shooter - Gallery</category>
+	<setname>popflame</setname>
+	<rbf>NBoy</rbf>
+
+	<buttons names="Fire,-,-,-,-,-,Start,Coin,P2 Start,-"></buttons>
+
+	<rom index="1"><part>1</part></rom>
+	<rom index='0' md5='fdc3e6937e974389705145449ec71d2c' type='merged|nonmerged|split' zip='popflame.zip|popflamea.zip'>
+		<part crc="5e32bbdf" name="ic86.pop"></part>
+		<part crc="b77abf3d" name="ic80.pop"></part>
+		<part crc="945a3c0f" name="ic94.pop"></part>
+		<part crc="f9f2343b" name="ic100.pop"></part>
+
+
+		<part crc="2367131e" name="ic13.pop"></part>
+		<part crc="deed0a8b" name="ic3.pop"></part>
+
+		<part crc="7b54f60f" name="ic29.pop"></part>
+		<part crc="dd2d9601" name="ic38.pop"></part>
+		</rom>
+
+</misterromdescription>
