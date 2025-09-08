@@ -1,3 +1,9 @@
+firmware_250908
+===============
+- Add CFG_FILE_N option to arc files for Minimig (by UzixLS)
+- Custom file processor framework (Manuel Teira)
+- Handle Ultimate2-style IDX files for C64 TAP files
+
 firmware_250604
 ===============
 - Reconfigurable DB9 mapping in OSD
