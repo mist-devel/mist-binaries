@@ -1,3 +1,8 @@
+**ABC80_250908.rbf**
+- Support the swedish caracter set (regenerate ROMs!)
+- Keyboard update
+- Sound chip fixes
+
 **minimig_mist_rtg_250324.rbf**
 - Major update, refer to git history for changes
 

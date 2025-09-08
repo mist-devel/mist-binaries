@@ -1,20 +1,19 @@
 <misterromdescription>
-    <name>ABC80_9913</name>
+    <name>ABC80_SW_9913</name>
     <mameversion>0245</mameversion>
-    <setname>abc80_9913</setname>
+    <setname>abc80_9913_sw</setname>
     <manufacturer>Luxor</manufacturer>
     <category>BIOS</category>
     <rbf>ABC80</rbf>
     <rotation>horizontal</rotation>
 
-    <rom index="0" zip="abc80.zip|sn74s262.zip" md5="None">
+    <rom index="0" zip="abc80.zip|sn74s263.zip" md5="None">
       <part name="za3506_9913.a5"/>
       <part name="za3507_9913.a3"/>
       <part name="za3508_9913.a4"/>
       <part name="za3509_9913.a2"/>
 
-      <part name="sn74s262"/>
-      <part name="sn74s262"/>
+      <part name="sn74s263"/>
       <part name="abc80_22.k1"/>
       <part name="abc80_21.k2"/>
       <part name="abc80_11.k5"/>
