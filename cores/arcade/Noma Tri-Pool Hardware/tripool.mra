@@ -19,6 +19,11 @@
 	<switches default="00" base=16 page_id="1" page_name="Switches">
 		<dip bits="0,1" name="CoinB" ids="1C_1C,1C_2C,1C_3C,1C_5C"/>
 		<dip bits="2,3" name="CoinA" ids="4C_1C,3C_1C,2C_1C,1C_1C"/>
+		<dip bits="4"   name="Lives" ids="3,5"/>
+		<dip bits="5"   name="Bonus Life (A)" ids="Every 100,Every 200"/>
+		<dip bits="6"   name="Bonus Life (B)" ids="100/200/Every 150,Every 200"/>
+		<dip bits="7"   name="Bonus Life (C)" ids="20/50/Every 50,50/100/Every 100"/>
+		<dip bits="8"   name="Cabinet" ids="Cocktail,Upright"/>
 	</switches>
 	<rom index="0" zip="tripool.zip" md5="none">
 		<!-- main cpu -->

@@ -17,12 +17,19 @@
 	<num_buttons>1</num_buttons>
 	<buttons names="Button1,Button2,-,-,-,Start1P,Start2P,CoinA,CoinB" default="A,Start,Select,R1,L1"></buttons>
 	<switches default="00" base=16 page_id="1" page_name="Switches">
-		<dip bits="0" name="Flip Screen" ids="Off,On"/>
-		<dip bits="1" name="Service Mode" ids="Off,On"/>
-		<dip bits="2" name="Difficulty" ids="Easy,Hard"/>
-		<dip bits="3" name="Lives" ids="3,5"/>
-		<dip bits="4,5" name="Bonus Life" ids="10000,1000/40000,10000/60000,20000/100000"/>
-		<dip bits="6,7" name="Coinage" ids="1C_1C,1C_2C,2C_1C,Free_Play"/>
+		<dip bits="0,1" name="Coinage" ids="1C_1C,2C_1C,1C_3C,4C_3C"/>
+		<dip bits="2" name="Lives" ids="3,2"/>
+		<dip bits="3" name="2 Credits on Reset" ids="Off,On"/>
+		<dip bits="4" name="Demo Sounds" ids="On,Off"/>
+		<dip bits="5" name="Cabinet" ids="Cocktail,Upright"/>
+		<dip bits="7" name="Free Play" ids="Off,On"/>
+
+		<dip bits="8,9" name="Bonus Life" ids="1000 50000,25000 100000,None,100000 300000"/>
+		<dip bits="10" name="2nd Bonus Given" ids="No,Yes"/>
+		<dip bits="11" name="Starting Laps" ids="2,3"/>
+		<dip bits="12" name="Pleasing Difficulty" ids="Easy,Hard"/>
+		<dip bits="13" name="Show Intermissions" ids="No,Yes"/>
+		<dip bits="14,15" name="Extra Lives" ids="3 under 4000pt,None,5 under 4000pt"/>
 	</switches>
 	<rom index="0" zip="zzyzzyxx.zip" md5="none">
 		<!-- main cpu -->
