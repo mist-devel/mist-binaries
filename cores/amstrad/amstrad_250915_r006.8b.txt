@@ -1,0 +1,2 @@
+C64 palette algo.
+Tested with Winzards Lair
