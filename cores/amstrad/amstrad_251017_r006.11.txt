@@ -1,0 +1,3 @@
+palette C64
+rollback OSD "Original", use the setting files to enable original signal.
+thanks to Robert Kacsich for tests and ideas :)
