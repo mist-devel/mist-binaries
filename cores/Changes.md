@@ -1,3 +1,6 @@
+**Amstrad_260109.rbf**
+- Dandantor mini-ROM support
+
 **bbc_260109.rbf**
 - ACIA with partial Serproc support
 - Music5000 synthesizer (from David Banks)
