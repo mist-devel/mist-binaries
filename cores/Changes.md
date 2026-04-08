@@ -1,3 +1,6 @@
+**C64_260408.rbf**
+- Fix for 1351 mouse buttons handling in some games (bricks 'n ball, duck hunt)
+
 **vic20_260408.rbf**
 - IDX tape file index support
 
