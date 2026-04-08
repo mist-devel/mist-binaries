@@ -1,3 +1,6 @@
+**vic20_260408.rbf**
+- IDX tape file index support
+
 **Amstrad_260109.rbf**
 - Dandantor mini-ROM support
 
