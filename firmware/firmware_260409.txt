@@ -1,3 +1,11 @@
+firmware_260409
+===============
+- New RTC driver for PCF85263,DS3231 via MCP2221 USB/I2C bridge (thx to Eugene Azarov)
+- 64 bit core_mod for ARC files
+- Serial sink support (by teiram)
+- Menu Page plugins (by teiram)
+- Refactoring of IDX file support (Maverick-Shark)
+
 firmware_250908
 ===============
 - Add CFG_FILE_N option to arc files for Minimig (by UzixLS)
