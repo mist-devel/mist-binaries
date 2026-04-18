@@ -1,0 +1,100 @@
+<misterromdescription>
+	<name>Reactor</name>
+	<region>USA</region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version></version>
+	<alternative></alternative>
+	<platform></platform>
+	<series></series>
+	<year>1982</year>
+	<manufacturer>Gottlieb</manufacturer>
+	<category>Shooter</category>
+
+	<setname>reactor</setname>
+	<parent>reactor</parent>
+	<mameversion>0198</mameversion>
+	<rbf>qbert</rbf>
+	<about></about>
+
+	<resolution>15kHz</resolution>
+	<rotation>horizontal</rotation>
+	<flip></flip>
+
+	<players>1</players>
+	<joystick>trackball</joystick>
+	<special_controls></special_controls>
+	<num_buttons>1</num_buttons>
+	<buttons default="A,Start,Select,R" names="Energy,Decoy,-,-,-,-,-,Start 1P,Coin,Start 2P"></buttons>
+
+	<switches default="ff"  page_id="1" page_name="Switches" base="16">
+		<dip bits="0" ids="Off,On" name="Demo Sounds"></dip>
+		<dip bits="1" ids="10,15" name="Bounce Chambers Points"></dip>
+		<dip bits="2" ids="On,Off" name="Free Play"></dip>
+		<dip bits="3" ids="Off,On" name="Sound with Instructions"></dip>
+		<dip bits="4" ids="Cocktail,Upright" name="Cabinet"></dip>
+		<dip bits="5" ids="2C/1C,1C/1C" name="Coinage"></dip>
+		<dip bits="6,7" ids="10000,12000,20000,15000" name="Bonus Life"></dip>
+	</switches>
+
+	<rom index="1">
+		<part>9</part>
+	</rom>
+	<rom index="0" md5="none" zip="reactor.zip">
+		<!-- Program ROMs (2x 4KB each slot) -->
+		<!-- C11_12: CPU 0xE000-0xFFFF -->
+		<part crc="944e1ddf" name="gv_100_rom1.rom1.c16"></part>
+		<part crc="55930aed" name="gv_100_rom0.rom0.c17"></part>
+		<!-- C12_13: CPU 0xC000-0xDFFF -->
+		<part crc="f8881385" name="gv_100_rom3.rom3.c13-14"></part>
+		<part crc="3caba35b" name="gv_100_rom2.rom2.c14-15"></part>
+		<!-- C13_14: CPU 0xA000-0xBFFF -->
+		<part crc="d90576a3" name="gv_100_rom5.rom5.c11-12"></part>
+		<part crc="0155daae" name="gv_100_rom4.rom4.c12-13"></part>
+		<!-- C14_15: CPU 0x8000-0x9FFF -->
+		<part crc="a62d86fd" name="gv_100_rom7.rom7.c9-10"></part>
+		<part crc="6ed841f3" name="gv_100_rom6.rom6.c10-11"></part>
+		<!-- C16: CPU 0x6000-0x7FFF not used by Reactor (8KB zeros) -->
+		<part repeat="8192">00</part>
+
+		<part repeat="8192">00</part>
+
+		<!-- Sound ROMs -->
+		<part crc="d958a0fd" name="snd1"></part>
+		<part crc="5dc86942" name="snd2"></part>
+		<part crc="d958a0fd" name="snd1"></part>
+		<part crc="5dc86942" name="snd2"></part>
+
+		<!-- BG tiles: none for Reactor (8KB zeros padding for E11_12) -->
+		<part repeat="8192">00</part>
+
+		<!-- FG sprite ROMs: 4KB each, placed at RA[12]=1 position -->
+		<!-- K4 (16KB): [zeros 4KB][fg0 4KB][zeros 4KB][fg0 4KB] -->
+		<part repeat="4096">00</part>
+		<part crc="d1f20e15" name="gv_100_fg_0.fg0.k4-5"></part>
+		<part repeat="4096">00</part>
+		<part crc="d1f20e15" name="gv_100_fg_0.fg0.k4-5"></part>
+		<!-- K5 (16KB): [zeros 4KB][fg1 4KB][zeros 4KB][fg1 4KB] -->
+		<part repeat="4096">00</part>
+		<part crc="18396c57" name="gv_100_fg_1.fg1.k5-6"></part>
+		<part repeat="4096">00</part>
+		<part crc="18396c57" name="gv_100_fg_1.fg1.k5-6"></part>
+		<!-- K6 (16KB): [zeros 4KB][fg2 4KB][zeros 4KB][fg2 4KB] -->
+		<part repeat="4096">00</part>
+		<part crc="5489605a" name="gv_100_fg_2.fg2.k6-7"></part>
+		<part repeat="4096">00</part>
+		<part crc="5489605a" name="gv_100_fg_2.fg2.k6-7"></part>
+		<!-- K7_8 (16KB): [zeros 4KB][fg3 4KB][zeros 4KB][fg3 4KB] -->
+		<part repeat="4096">00</part>
+		<part crc="8416ad53" name="gv_100_fg_3.fg3.k7-8"></part>
+		<part repeat="4096">00</part>
+		<part crc="8416ad53" name="gv_100_fg_3.fg3.k7-8"></part>
+		</rom>
+	<rom index="2"></rom>
+	<rom index="3"></rom>
+	<rom index="4"></rom>
+
+	<nvram></nvram>
+
+	<mratimestamp>20260313000000</mratimestamp>
+</misterromdescription>
