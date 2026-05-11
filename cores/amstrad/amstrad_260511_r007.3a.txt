@@ -1,0 +1,1 @@
+scandb50Hz resolution ok but missing great output of LineCounter into PPI I suppose
