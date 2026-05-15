@@ -1,0 +1,1 @@
+tempest @50Hz
