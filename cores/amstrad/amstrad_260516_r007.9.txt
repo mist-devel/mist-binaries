@@ -1,0 +1,4 @@
+calibrate cpc gatearray using doc LOGON SYSTEM - THE AMSTRAD CPC CRTC COMPENDIUM V1.8 pdf
+p35
+
+better quality.
