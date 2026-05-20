@@ -1,0 +1,1 @@
+revert CRTC (no double shift cursor running)
