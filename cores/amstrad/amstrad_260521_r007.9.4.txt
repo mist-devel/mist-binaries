@@ -1,0 +1,2 @@
+CRTC1, a way to go, R12.
+pull up ok, but using mask !
