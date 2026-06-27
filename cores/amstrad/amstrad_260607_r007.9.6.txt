@@ -1,0 +1,2 @@
+Still the one - impact CRTC1 nicely detect
+CRTC0 is badly implemented (no buffers)
