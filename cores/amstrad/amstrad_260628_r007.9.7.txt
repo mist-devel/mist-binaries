@@ -1,0 +1,2 @@
+CRTC read Sogely
+TODO CRTC write masks
