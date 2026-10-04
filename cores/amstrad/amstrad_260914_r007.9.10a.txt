@@ -1,0 +1,10 @@
+Artificial Inteligencee:
+no more resource2()
+state machine for CRTC0
+
+regression:
+no interlace
+
+bug:
+crtc_VSYNC<=etat_vsync; -- no way
+vsync_int<=etat_vsync;
