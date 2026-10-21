@@ -1,0 +1,3 @@
+back to CRTC0 FSM,
+screen is displayed, but I have one char offset
+Test "Megablasters" demo, somes glinch.
