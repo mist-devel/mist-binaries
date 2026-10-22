@@ -1,0 +1,3 @@
+VDisp/HDisp CRTC0 ok
+still problem of VSYNC
+brucelee run too fast
