@@ -1,0 +1,5 @@
+CRTC0
+Buggy Boy has strange char line at Bottom +bad color streets
+Arkanoid ball sometimes desapear
+Bruce lee is too fast while no ennemis comesI think it is about VAdjust
+border 4,5 is too quick
