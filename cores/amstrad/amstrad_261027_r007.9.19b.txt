@@ -5,3 +5,4 @@ CRTC0 Arkanoid speed OK
 CRTC0 buggy boy palette OK
 
 CRTC0 WakeUp KO
+CRTC0 ecole OK
