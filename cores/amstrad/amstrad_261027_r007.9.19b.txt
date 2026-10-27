@@ -2,5 +2,6 @@ CRTC0 Brucelee speed ok
 CRTC0 Fruity speed OK
 CRTC0 Tempest speed OK
 CRTC0 Arkanoid speed OK
+CRTC0 buggy boy palette OK
 
 CRTC0 WakeUp KO
