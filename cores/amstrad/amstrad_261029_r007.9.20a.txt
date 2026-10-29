@@ -1,4 +1,5 @@
 CRTC0 Bruce lee OK
 CRTC0 Arkanoid OK
 CRTC0 Buggy boy KO : at center, at top of road, a char-line with bad palette
-CRTC0 Logon's run KO : no 3D -- R3Vwidth=x"0"
+CRTC0 Logon's run KO : no 3D -- R3Vwidth=x"0" not implemented
+CRTC0 border 4,5 OK
