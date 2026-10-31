@@ -1,0 +1,7 @@
+CTRC0
+trap for R3VWitdh
+Buggy boy not trapped so not a problem of Vsync
+Logon's trapped x"0"
+Tempest OK
+Arkanoid OK
+Bruce lee not trapped
