@@ -1,0 +1,4 @@
+CRTC0 VSYNC logical, not official
+candidat - logical (not using nibble)
+
+Base for long tests
