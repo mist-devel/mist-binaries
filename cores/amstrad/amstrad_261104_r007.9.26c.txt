@@ -1,0 +1,1 @@
+CRTC0 R3Hsync/=x"0"
