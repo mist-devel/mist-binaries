@@ -1,0 +1,7 @@
+Same as amstrad_261104_r007.9.26c
+but show 4 lines HEXA :
+
+R0 R1 R2 R3 R16
+R4 R5 R6 R7 R17
+R8 R9 R10 R11 x00
+R12 R13 R14 R15 CRTC0_state
